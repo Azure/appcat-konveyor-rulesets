@@ -13,12 +13,25 @@
   links:
   - title: The application uses Quartz to scheduled jobs
     url: https://docs.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-app-service#determine-whether-application-relies-on-scheduled-jobs
-  message: "\n \n Scheduled jobs, such as Quartz Scheduler tasks or cron jobs, can't
-    be used with App Service.\n App Service won't prevent you from deploying an application
-    containing scheduled tasks internally.\n However, if your application is scaled
-    out, the same scheduled job may run more than once per scheduled period.\n This
-    situation can lead to unintended consequences.\n\n Inventory any scheduled jobs,
-    inside or outside the application process.\n \n "
+  - title: Jobs in Azure Container Apps
+    url: https://learn.microsoft.com/azure/container-apps/jobs
+  - title: Create a job with Azure Container Apps
+    url: https://learn.microsoft.com/azure/container-apps/jobs-get-started-cli
+  message: "The application uses Quartz scheduled jobs. Scheduled jobs, such as Quartz
+    Scheduler tasks or Unix cron jobs can't be used with cloud service like Azure
+    App Service, Azure Spring Apps, Azure Kubernetes Service.\n These Azure services
+    won't prevent you from deploying an application containing scheduled tasks internally.\n
+    However, if your application is scaled out, the same scheduled job may run more
+    than once per scheduled period.\n This situation can lead to unintended consequences.\n
+    \n To migrate a Java application that uses scheduled jobs to Azure, you can follow
+    these recommendations:\n\n * **Identify scheduled jobs**: Inventory any scheduled
+    tasks running on the production server(s), inside or outside your application
+    code. Search the application code for references to Quartz, @Scheduled annotation,
+    or cron expressions.\n \n * **Remove scheduled jobs**: Remove the scheduled jobs.
+    If you need to run scheduled jobs, you can use Azure Container Apps jobs. Azure
+    Container Apps jobs allow you to run containerized tasks that execute for a finite
+    duration and exit. You can trigger a job manually, schedule their execution, or
+    trigger their execution based on events."
   ruleID: spring-boot-to-azure-schedule-job-01000
   when:
     or:

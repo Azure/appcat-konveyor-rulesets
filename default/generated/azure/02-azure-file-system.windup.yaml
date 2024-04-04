@@ -1,37 +1,5 @@
 - category: optional
   customVariables: []
-  description: The application uses Java APIs to read/write from the file system
-  effort: 5
-  labels:
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - file-system
-  links:
-  - title: Java APIs found in the application to read/write from the file system
-    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-apps?pivots=sc-standard-tier#determine-whether-and-how-the-file-system-is-used
-  - title: Azure Spring Boot Starter for Azure Storage
-    url: https://search.maven.org/artifact/com.azure.spring/azure-spring-boot-starter-storage
-  message: "\n \n The application uses Java APIs to read/write from the file system.\n
-    \n Any usage of the file system on the application will require reconfiguration
-    or, in rare cases, architectural changes.\n \n "
-  ruleID: azure-file-system-01000
-  when:
-    or:
-    - java.referenced:
-        pattern: java.io.(File|FileWriter|FileReader|FileInputStream|FileOutputStream)
-    - java.referenced:
-        location: PACKAGE
-        pattern: java.nio*
-    - java.referenced:
-        location: PACKAGE
-        pattern: org.apache.commons.io*
-- category: optional
-  customVariables: []
   description: Relative path found
   effort: 5
   labels:
@@ -46,8 +14,29 @@
   links:
   - title: Relative path found in the application
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-apps?pivots=sc-standard-tier#determine-whether-and-how-the-file-system-is-used
-  message: "\n \n Relative path found.\n \n Any usage of the file system on the application
-    will require reconfiguration or, in rare cases, architectural changes.\n \n "
+  - title: Azure Storage documentation
+    url: https://learn.microsoft.com/azure/storage
+  - title: Azure Monitor Logs overview
+    url: https://learn.microsoft.com/azure/azure-monitor/logs/data-platform-logs
+  - title: Azure Cache for Redis documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: Azure App Configuration documentation
+    url: https://learn.microsoft.com/azure/azure-app-configuration
+  message: |-
+    Relative path found in the application. An application running inside a container could lose access to a file in local storage.
+     To migrate a Java application that uses file system to Azure:
+
+     * **Identify the usage of the file system**: Find any instances where your services write to and/or read from the local file system. Identify where short-term/temporary files are written and read and where long-lived files are written and read.
+
+     The following recommendations depend on the function of the file in local storage:
+
+     * **Reading/writing files**: Use Azure Storage services for object, block, and file storage to meet your data's highest demands.
+
+     * **Logging**: Log to standard output and use Azure Monitor to collect and analyze the logs.
+
+     * **Caching**: Use Azure Cache for Redis as a cache backing service.
+
+     * **Configuration**: Store configuration in Azure App Configuration instead of using the file system. Also store configuration settings in environment variables so that they can be updated without code changes.
   ruleID: azure-file-system-02000
   when:
     builtin.filecontent:
@@ -69,8 +58,29 @@
   links:
   - title: Home path found in the application
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-apps?pivots=sc-standard-tier#determine-whether-and-how-the-file-system-is-used
-  message: "\n \n Home path found.\n \n Any usage of the file system on the application
-    will require reconfiguration or, in rare cases, architectural changes.\n \n "
+  - title: Azure Storage documentation
+    url: https://learn.microsoft.com/azure/storage
+  - title: Azure Monitor Logs overview
+    url: https://learn.microsoft.com/azure/azure-monitor/logs/data-platform-logs
+  - title: Azure Cache for Redis documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: Azure App Configuration documentation
+    url: https://learn.microsoft.com/azure/azure-app-configuration
+  message: |-
+    Home path found in the application. An application running inside a container could lose access to a file in local storage.
+     To migrate a Java application that uses file system to Azure:
+
+     * **Identify the usage of the file system**: Find any instances where your services write to and/or read from the local file system. Identify where short-term/temporary files are written and read and where long-lived files are written and read.
+
+     The following recommendations depend on the function of the file in local storage:
+
+     * **Reading/writing files**: Use Azure Storage services for object, block, and file storage to meet your data's highest demands.
+
+     * **Logging**: Log to standard output and use Azure Monitor to collect and analyze the logs.
+
+     * **Caching**: Use Azure Cache for Redis as a cache backing service.
+
+     * **Configuration**: Store configuration in Azure App Configuration instead of using the file system. Also store configuration settings in environment variables so that they can be updated without code changes.
   ruleID: azure-file-system-03000
   when:
     builtin.filecontent:
