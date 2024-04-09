@@ -1,4 +1,4 @@
-- category: optional
+- category: potential
   customVariables: []
   description: Java Mail API
   effort: 3
@@ -8,19 +8,20 @@
   - konveyor.io/target=cloud-readiness
   - mail
   links:
-  - title: Twelve-factor app - Backing services
-    url: https://12factor.net/backing-services
-  - title: Twelve-factor app - Config
-    url: https://12factor.net/config
-  - title: 'OpenShift Container Platform: Input secrets and ConfigMaps'
-    url: https://docs.openshift.com/container-platform/4.5/builds/creating-build-inputs.html#builds-input-secrets-configmaps_creating-build-inputs
-  message: "\n The configuration parameters of SMTP services for outbound mail may
-    contain environment-specific values such as static IP addresses, host names, properties,
-    credentials, or certificates.\n\n Recommendations\n\n * In a cloud environment,
-    mail systems should be considered backing services and treated like attached resources.\n
-    * Ensure that the configuration of the underlying outbound mail connection is
-    not environment-specific.\n * In OpenShift Container Platform, store configuration
-    parameters as environment variables or in a ConfigMap.\n "
+  - title: Azure Communication Services documentation
+    url: https://learn.microsoft.com/azure/communication-services
+  - title: 'Quickstart: How to send an email using Azure Communication Service'
+    url: https://learn.microsoft.com/azure/communication-services/quickstarts/email/send-email
+  - title: Troubleshoot outbound SMTP connectivity problems in Azure
+    url: https://learn.microsoft.com/azure/virtual-network/troubleshoot-outbound-smtp-connectivity
+  message: |-
+    The application uses email APIs to send or receive emails.
+     In a cloud environment, mail systems should be considered backing services and treated like attached resources.
+     You can either use SMTP directly, or use Azure Communication Services Email and migrate the email functionality of your application to Azure.
+
+     * Using **Azure Communication Services**: Create an Azure Communication Services resource in your Azure subscription. This will provide you with the necessary capabilities to send emails. pdate your application's email sending code to use the Azure Communication Services Email SDK or REST API. This involves integrating the Azure Communication Services Email client libraries into your application and configuring the required settings, such as the sender's email address, recipient addresses, subject, and email content.
+
+     * Using **SMTP directly**: You can also use your own SMTP provider. In this case, check if port 25 is open in the App Service SKU.
   ruleID: mail-00000
   when:
     or:

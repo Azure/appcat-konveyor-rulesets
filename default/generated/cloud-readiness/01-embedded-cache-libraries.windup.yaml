@@ -4,7 +4,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-01000
+  ruleID: embedded-cache-01000
   tag:
   - Ehcache
   - Caching - Ehcache embedded library
@@ -17,7 +17,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-02000
+  ruleID: embedded-cache-02000
   tag:
   - Coherence
   - Caching - Coherence embedded library
@@ -30,7 +30,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-03000
+  ruleID: embedded-cache-03000
   tag:
   - Apache Commons JCS
   - Caching - Apache Commons JCS embedded library
@@ -47,7 +47,7 @@
     \                       An embedded cache library is problematic because state
     information might not be persisted to a backing service.\n\n                        Recommendation:
     Use a cache backing service.\n                    "
-  ruleID: embedded-cache-libraries-04000
+  ruleID: embedded-cache-04000
   tag:
   - Dynacache
   - Caching - Dynacache embedded library
@@ -60,7 +60,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-05000
+  ruleID: embedded-cache-05000
   tag:
   - Cache API
   - Caching - Embedded library
@@ -73,7 +73,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-06000
+  ruleID: embedded-cache-06000
   tag:
   - Hazelcast
   - Caching - Hazelcast embedded library
@@ -86,7 +86,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-07000
+  ruleID: embedded-cache-07000
   tag:
   - Apache Ignite
   - Caching - Apache Ignite embedded library
@@ -99,7 +99,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-08000
+  ruleID: embedded-cache-08000
   tag:
   - Infinispan
   - Caching - Infinispan embedded library
@@ -112,7 +112,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-09000
+  ruleID: embedded-cache-09000
   tag:
   - JBoss Cache
   - Caching - JBoss Cache embedded library
@@ -125,7 +125,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-10000
+  ruleID: embedded-cache-10000
   tag:
   - JCache
   - Caching - JCache embedded library
@@ -138,7 +138,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-11000
+  ruleID: embedded-cache-11000
   tag:
   - Memcached client
   - Caching - Memcached client embedded library
@@ -151,7 +151,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-12000
+  ruleID: embedded-cache-12000
   tag:
   - Oscache
   - Caching - Oscache embedded library
@@ -164,7 +164,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-13000
+  ruleID: embedded-cache-13000
   tag:
   - ShiftOne
   - Caching - ShiftOne (Java Object Cache) embedded library
@@ -177,7 +177,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-14000
+  ruleID: embedded-cache-14000
   tag:
   - SwarmCache
   - Caching - SwarmCache embedded library
@@ -190,7 +190,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-15000
+  ruleID: embedded-cache-15000
   tag:
   - Spring Boot Cache
   - Caching - Spring Boot Cache library
@@ -208,7 +208,7 @@
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   links: []
-  ruleID: embedded-cache-libraries-16000
+  ruleID: embedded-cache-16000
   tag:
   - Redis
   - Caching - Redis Cache library

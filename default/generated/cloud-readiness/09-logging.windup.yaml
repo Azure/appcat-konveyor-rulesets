@@ -1,6 +1,6 @@
 - category: mandatory
   customVariables: []
-  description: Logging to file system
+  description: Don't log to file system
   effort: 1
   labels:
   - konveyor.io/source=java
@@ -8,10 +8,17 @@
   - konveyor.io/target=cloud-readiness
   - logging
   links: []
-  message: "\n If the application writes logs to a file system, local log files may
-    be lost if an instance terminates or restarts.\n\n Recommendations\n\n * Use a
-    centralized log management system.\n * Log to standard output and allow the cloud
-    platform to manage the logging.\n * Use shared storage for log files.\n "
+  message: |-
+    Logging to the file system is not recommended when running applications in the cloud.
+     Instead, use Azure Monitor for efficient and scalable logging.
+
+     * Integrate with **Azure Monitor**: Configure your application to send logs to Azure Monitor. Azure Monitor provides a centralized platform for collecting, analyzing, and visualizing log data from various sources.
+
+     * Use **Azure Monitor Logging**: Utilize the Azure Monitor Logs feature, which enables you to query and analyze log data using the Kusto Query Language (KQL). KQL provides powerful querying capabilities to extract insights and perform advanced log analysis.
+
+     * Leverage **Log Analytics** workspaces: Create a Log Analytics workspace within Azure Monitor to store and analyze your log data effectively. Configure your application to send logs to the designated workspace, enabling centralized log storage and analysis.
+
+     * Utilize **KQL** for log analysis: Familiarize yourself with the Kusto Query Language (KQL) to write powerful queries for log analysis in Azure Monitor. KQL provides a flexible and efficient way to extract insights, perform aggregations, and create visualizations from your log data. 
   ruleID: logging-0000
   tag:
   - Logging to file system
