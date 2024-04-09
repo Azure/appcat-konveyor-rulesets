@@ -284,3 +284,15 @@
   when:
     builtin.hasTags:
     - Qpid Client
+- customVariables: []
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: technology-usage-connect-02900
+  tag:
+  - Connect=Kafka Client
+  - Embedded=Kafka Client
+  - Streaming=Kafka Client
+  when:
+    builtin.hasTags:
+    - Kafka Client

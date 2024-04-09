@@ -194,7 +194,7 @@
   labels:
   - konveyor.io/include=always
   links: []
-  ruleID: technology-usage-database-03100
+  ruleID: technology-usage-database-03000
   tag:
   - Store=Apache Accumulo Client
   - Database Driver=Apache Accumulo Client
@@ -206,7 +206,7 @@
   labels:
   - konveyor.io/include=always
   links: []
-  ruleID: technology-usage-database-03200
+  ruleID: technology-usage-database-03100
   tag:
   - Store=Spring Data JPA
   - Persistence=Spring Data JPA
@@ -214,3 +214,15 @@
   when:
     builtin.hasTags:
     - Spring Data JPA
+- customVariables: []
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: technology-usage-database-03200
+  tag:
+  - Store=MariaDB Driver
+  - Database Driver=MariaDB Driver
+  - Embedded=MariaDB Driver
+  when:
+    builtin.hasTags:
+    - MariaDB Driver

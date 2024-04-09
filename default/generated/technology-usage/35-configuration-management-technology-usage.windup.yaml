@@ -34,3 +34,15 @@
   when:
     builtin.hasTags:
     - Spring Properties
+- customVariables: []
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: configuration-management-technology-usage-0400
+  tag:
+  - Sustain=Spring Cloud Vault
+  - Configuration Management=Spring Cloud Vault
+  - Embedded=Spring Cloud Vault
+  when:
+    builtin.hasTags:
+    - Spring Cloud Vault

@@ -226,3 +226,15 @@
   when:
     builtin.hasTags:
     - Apache Mahout
+- customVariables: []
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: technology-usage-3rd-party-21000
+  tag:
+  - Execute=Splunk
+  - Embedded=Splunk
+  - 3rd party=Splunk
+  when:
+    builtin.hasTags:
+    - Splunk
