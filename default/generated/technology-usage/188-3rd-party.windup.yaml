@@ -3,6 +3,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Liferay framework.
   ruleID: 3rd-party-01000
   tag:
   - Liferay
@@ -15,6 +16,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Oracle Forms framework.
   ruleID: 3rd-party-02000
   tag:
   - Oracle Forms
@@ -27,6 +29,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Spring Boot framework.
   ruleID: 3rd-party-03000
   tag:
   - Spring Boot
@@ -39,6 +42,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Elasticsearch framework.
   ruleID: 3rd-party-04000
   tag:
   - Elasticsearch
@@ -46,23 +50,43 @@
   when:
     builtin.file:
       pattern: .*elasticsearch.*\.jar
-- customVariables: []
-  description: Embedded framework - Logstash
+- category: potential
+  customVariables: []
+  description: Embedded library - Logstash
+  effort: 3
   labels:
   - konveyor.io/include=always
-  links: []
+  links:
+  - title: Ensure console logging and configure diagnostic settings
+    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-apps?pivots=sc-standard-tier#ensure-console-logging-and-configure-diagnostic-settings
+  - title: Azure Event Hub
+    url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
+  - title: Logstash EventHub plugin
+    url: https://github.com/logstash-plugins/logstash-input-azure_event_hubs
+  message: |-
+    The application embeds the Logstash framework. To migrate a Java application that uses LogStash/ELK Stack for log aggregation to Azure, you can follow this recommendation:
+
+     * Ensure your logging output is routed to the console and not to files.
+
+     * Configure the diagnostic setting to stream the console output to an Azure Event Hub.
+
+     * Use the LogStash EventHub plugin to ingest logged events into LogStash.
   ruleID: 3rd-party-05000
   tag:
   - Logstash
-  - Embedded framework - Logstash
   when:
-    builtin.file:
-      pattern: .*logstash.*\.jar
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*logstash.*
+    - builtin.file:
+        pattern: .*logstash.*\.jar
 - customVariables: []
   description: Embedded framework - Jetty
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Jetty framework.
   ruleID: 3rd-party-06000
   tag:
   - Jetty
@@ -75,6 +99,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Tomcat framework.
   ruleID: 3rd-party-07000
   tag:
   - Tomcat
@@ -87,6 +112,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Kibana framework.
   ruleID: 3rd-party-08000
   tag:
   - Kibana
@@ -99,6 +125,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Apache Karaf framework.
   ruleID: 3rd-party-09000
   tag:
   - Apache Karaf
@@ -111,6 +138,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Neo4j framework.
   ruleID: 3rd-party-10000
   tag:
   - Neo4j
@@ -123,6 +151,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Spark framework.
   ruleID: 3rd-party-11000
   tag:
   - Spark
@@ -135,6 +164,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Apache Hadoop framework.
   ruleID: 3rd-party-12000
   tag:
   - Apache Hadoop
@@ -147,6 +177,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Apache Geronimo framework.
   ruleID: 3rd-party-13000
   tag:
   - Apache Geronimo
@@ -159,6 +190,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Apache Aries framework.
   ruleID: 3rd-party-14000
   tag:
   - Apache Aries
@@ -171,6 +203,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Cloudera framework.
   ruleID: 3rd-party-15000
   tag:
   - Cloudera
@@ -183,6 +216,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the MapR framework.
   ruleID: 3rd-party-16000
   tag:
   - MapR
@@ -195,6 +229,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the TensorFlow framework.
   ruleID: 3rd-party-17000
   tag:
   - TensorFlow
@@ -207,6 +242,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Weka framework.
   ruleID: 3rd-party-18000
   tag:
   - Weka
@@ -219,6 +255,7 @@
   labels:
   - konveyor.io/include=always
   links: []
+  message: The application embeds the Apache Mahout framework.
   ruleID: 3rd-party-19000
   tag:
   - Apache Mahout
@@ -226,3 +263,79 @@
   when:
     builtin.file:
       pattern: .*mahout.*\.jar
+- category: potential
+  customVariables: []
+  description: Embedded library - Splunk
+  effort: 3
+  labels:
+  - konveyor.io/include=always
+  links:
+  - title: Ensure console logging and configure diagnostic settings
+    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-apps?pivots=sc-standard-tier#ensure-console-logging-and-configure-diagnostic-settings
+  - title: Azure Blob Storage
+    url: https://learn.microsoft.com/azure/storage/blobs/
+  - title: Splunk Add-on for Microsoft Cloud Services
+    url: https://splunkbase.splunk.com/app/3757
+  message: |-
+    The application embeds the Splunk framework. To migrate a Java application that uses Splunk for log aggregation to Azure, you can follow this recommendation:
+
+     * Ensure your logging output is routed to the console and not to files.
+
+     * Configure the diagnostic setting to stream the console output to Azure Blob Storage.
+
+     * Use the Splunk Add-on for Microsoft Cloud Services to ingest logged events into Splunk.
+  ruleID: 3rd-party-20000
+  tag:
+  - Splunk
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*splunk.*
+    - builtin.file:
+        pattern: .*splunk.*\.jar
+- customVariables: []
+  description: Embedded framework - Nacos
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Nacos framework.
+  ruleID: 3rd-party-30000
+  tag:
+  - Nacos
+  - Embedded framework - Nacos
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.nacos.nacos-client
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.alibaba\.cloud\.spring-cloud-starter-alibaba-nacos-.*
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.alibaba\.boot\.nacos-.*-spring-boot-starter
+- customVariables: []
+  description: Embedded framework - Sentinel
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Sentinel framework.
+  ruleID: 3rd-party-30100
+  tag:
+  - Sentinel
+  - Embedded framework - Sentinel
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.alibaba\.csp\.sentinel-.*
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.alibaba\.cloud\.spring-cloud-alibaba-sentinel-.*
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-starter-alibaba-sentinel
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-circuitbreaker-sentinel

@@ -94,11 +94,25 @@
   when:
     builtin.file:
       pattern: .*xacml.*\.jar
-- customVariables: []
+- category: potential
+  customVariables: []
   description: Embedded library - SAML
+  effort: 0
   labels:
   - konveyor.io/include=always
-  links: []
+  links:
+  - title: SAML authentication with Azure Active Directory
+    url: https://learn.microsoft.com/azure/active-directory/fundamentals/auth-saml
+  - title: How the Microsoft identity platform uses the SAML protocol
+    url: https://learn.microsoft.com/azure/active-directory/develop/saml-protocol-reference
+  - title: Microsoft identity platform documentation
+    url: https://learn.microsoft.com/azure/active-directory/develop
+  - title: Azure Active Directory documentation
+    url: https://learn.microsoft.com/azure/active-directory
+  message: |-
+    The application embeds a SAML library. The Microsoft identity platform uses SAML and other protocols to enable applications to provide a Single Sign-On experience.
+
+     By migrating your SSO implementation to Azure AD with SAML, you leverage the capabilities of Azure AD for managing identities and enabling secure SSO across your applications. Azure AD offers features like multi-factor authentication, conditional access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
   ruleID: security-01900
   tag:
   - SAML
@@ -213,11 +227,25 @@
   when:
     builtin.file:
       pattern: .*wss4j.*\.jar
-- customVariables: []
+- category: potential
+  customVariables: []
   description: Embedded library - OpenSAML
+  effort: 0
   labels:
   - konveyor.io/include=always
-  links: []
+  links:
+  - title: SAML authentication with Azure Active Directory
+    url: https://learn.microsoft.com/azure/active-directory/fundamentals/auth-saml
+  - title: How the Microsoft identity platform uses the SAML protocol
+    url: https://learn.microsoft.com/azure/active-directory/develop/saml-protocol-reference
+  - title: Microsoft identity platform documentation
+    url: https://learn.microsoft.com/azure/active-directory/develop
+  - title: Azure Active Directory documentation
+    url: https://learn.microsoft.com/azure/active-directory
+  message: |-
+    The application embeds an OpenSAML library. The Microsoft identity platform uses SAML and other protocols to enable applications to provide a Single Sign-On experience.
+
+     By migrating your SSO implementation to Azure AD with SAML, you leverage the capabilities of Azure AD for managing identities and enabling secure SSO across your applications. Azure AD offers features like multi-factor authentication, conditional access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
   ruleID: security-02800
   tag:
   - OpenSAML
@@ -309,11 +337,25 @@
   when:
     builtin.file:
       pattern: .*jguard.*\.jar
-- customVariables: []
+- category: potential
+  customVariables: []
   description: Embedded framework - Spring Security
+  effort: 0
   labels:
   - konveyor.io/include=always
-  links: []
+  links:
+  - title: Spring Security-related dependencies found in the project
+    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-app-service#identity-providers
+  - title: Azure Active Directory (Azure AD) identity provider for External Identities
+    url: https://docs.microsoft.com/azure/active-directory/external-identities/azure-ad-account
+  - title: Spring Security
+    url: https://docs.spring.io/spring-security/reference/index.html
+  - title: 'Spring Boot API: Authorization'
+    url: https://auth0.com/docs/quickstart/backend/java-spring-security5/01-authorization
+  message: |-
+    The application embeds a Spring Security library. Ensure that the application is configured to access the identity provider.
+
+     Consider using Azure Active Directory as an identity provider.
   ruleID: security-03600
   tag:
   - Spring Security
@@ -329,3 +371,66 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.security.spring-security-core
+- category: potential
+  customVariables: []
+  description: Embedded library - OAuth 2.0
+  effort: 0
+  labels:
+  - konveyor.io/include=always
+  links:
+  - title: OAuth 2.0 authentication with Azure Active Directory
+    url: https://learn.microsoft.com/azure/active-directory/architecture/auth-oauth2
+  - title: OAuth 2.0 and OpenID Connect protocols on the Microsoft Identity Platform
+    url: https://learn.microsoft.com/azure/active-directory/develop/v2-protocols
+  - title: Application types and OAuth2
+    url: https://learn.microsoft.com/azure/active-directory/develop/v2-app-types
+  - title: Spring Cloud Security quickstart
+    url: https://spring.io/projects/spring-cloud-security/
+  - title: Microsoft identity platform documentation
+    url: https://learn.microsoft.com/azure/active-directory/develop
+  - title: Azure Active Directory documentation
+    url: https://learn.microsoft.com/azure/active-directory
+  message: |-
+    The application embeds an OAuth 2.0 library. For Spring Boot applications, please ensure that the application is configured to use Spring Security OAuth2.
+
+     The Microsoft identity platform uses OAuth 2.0 and other protocols to enable applications to provide a Single Sign-On experience.
+
+     By migrating your SSO implementation to Azure AD with OAuth 2.0, you leverage the capabilities of Azure AD for managing identities and enabling secure SSO across your applications.
+     Azure AD offers features like multi-factor authentication, conditional access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
+  ruleID: security-03700
+  tag:
+  - OAuth 2.0
+  when:
+    builtin.file:
+      pattern: .*oauth2.*\.jar
+- category: potential
+  customVariables: []
+  description: Embedded library - OpenID
+  effort: 0
+  labels:
+  - konveyor.io/include=always
+  links:
+  - title: OpenID Connect authentication with Azure Active Directory
+    url: https://learn.microsoft.com/azure/active-directory/architecture/auth-oidc
+  - title: OAuth 2.0 and OpenID Connect protocols on the Microsoft Identity Platform
+    url: https://learn.microsoft.com/azure/active-directory/develop/v2-protocols
+  - title: OpenID Connect on the Microsoft identity platform
+    url: https://learn.microsoft.com/azure/active-directory/develop/v2-protocols-oidc
+  - title: Microsoft identity platform documentation
+    url: https://learn.microsoft.com/azure/active-directory/develop
+  - title: Azure Active Directory documentation
+    url: https://learn.microsoft.com/azure/active-directory
+  message: |-
+    The application embeds an OpenID library. The Microsoft identity platform uses OpenID and other protocols to enable applications to provide a Single Sign-On experience.
+
+     By migrating your SSO implementation to Azure AD with OpenID, you leverage the capabilities of Azure AD for managing identities and enabling secure SSO across your applications.
+     Azure AD offers features like multi-factor authentication, conditional access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
+  ruleID: security-03800
+  tag:
+  - OpenID
+  when:
+    or:
+    - builtin.file:
+        pattern: .*openid4java.*\.jar
+    - builtin.file:
+        pattern: .*pac4j-oidc.*\.jar
