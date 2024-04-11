@@ -1,0 +1,43 @@
+- category: potential
+  customVariables: []
+  description: Redis Cache connection string found
+  effort: 0
+  labels:
+  - konveyor.io/target=azure-spring-apps
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - cache
+  - redis
+  links:
+  - title: Connect Azure Cache for Redis to your application in Azure Spring Apps
+    url: https://learn.microsoft.com/azure/spring-apps/how-to-bind-redis?tabs=Java%2CService-Connector
+  - title: Azure Cache for Redis documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: Caching guidance
+    url: https://learn.microsoft.com/azure/architecture/best-practices/caching
+  - title: Redis Cache found in the application
+    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-spring-apps#identify-external-caches
+  message: "Redis Cache connection string, username, or password used in this application.
+    To migrate a Java application that uses a Redis Cache connection string to Azure,
+    you can follow these recommendations:\n \n * **Provision an Azure Cache for Redis**:
+    Checkout Azure Cache for Redis for a fully managed cache on Azure. You can take
+    advantage of a managed Redis service that offers scalability, high availability,
+    and monitoring capabilities. **Azure Cache for Redis** provides features like
+    data persistence, automatic failover, and built-in support for Redis commands,
+    allowing you to leverage the benefits of Redis caching in your application running
+    on Azure. Configure the cache size and other relevant settings based on your application's
+    requirements.\n \n * **Update your Java code**: Replace the embedded Redis cache
+    code in your Java application with the Azure Cache for Redis client libraries
+    or SDKs. Update the code that establishes a connection to the Redis cache and
+    performs cache-related operations.\n \n * **Connect to Azure Cache for Redis**:
+    Connect your app to Azure Cache for Redis on azure by **Service Connector**. Instead
+    of manually configuring connection string in your applications, you can automatically
+    connect Azure Cache for Redis to your applications."
+  ruleID: azure-cache-redis-01000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: .*\.(properties|yaml|yml)
+        pattern: (redis|jedis|lettuce)\.(.*\.)?(url|host|nodes|username|password)

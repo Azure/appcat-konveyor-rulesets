@@ -1,0 +1,122 @@
+- category: potential
+  customVariables: []
+  description: Kafka connection string, username or password found in configuration
+    file
+  effort: 0
+  labels:
+  - konveyor.io/target=azure-spring-apps
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - message queue
+  - kafka
+  links:
+  - title: Spring Boot app to Kafka on Confluent Cloud
+    url: https://learn.microsoft.com/azure/service-connector/tutorial-java-spring-confluent-kafka
+  - title: Apache Kafka on Confluent Cloud - Azure Native ISV Service Documentation
+    url: https://learn.microsoft.com/azure/partner-solutions/apache-kafka-confluent-cloud
+  - title: Passwordless connections for Azure services
+    url: https://learn.microsoft.com/azure/developer/intro/passwordless-overview
+  message: "The application uses a Kafka connection string or password. To migrate
+    a Java application that uses a Kafka connection string to Azure, you can follow
+    these recommendations:\n\n * **Provision an Apache Kafka for Confluent Cloud**:
+    Consider moving to Apache Kafka for Confluent Cloud to reduce the burden of cross-platform
+    management. Microsoft partnered with Confluent Cloud to build an integrated provisioning
+    layer from Azure to Confluent Cloud. You can easily integrate and manage Confluent
+    Cloud with your Azure applications.\n\n * **Connect to Apache Kafka for Confluent
+    Cloud using Service Connector**: Create service connection using **Service Connector**
+    to connect your Apache Kafka on Confluent Cloud to your azure app. Instead of
+    manually configuring connection string in your applications, you can automatically
+    connect Apache Kafka for Confluent Cloud using Service Connector. \n\n * **Passwordless
+    connections for Azure services**: Consider using passwordless connections for
+    Azure services. You can provide an additional layer of security and convenience
+    for accessing resources in Azure by eliminating the need for passwords. This way
+    you can reduce the risk of password-related vulnerabilities, such as weak passwords
+    or password theft."
+  ruleID: azure-mq-config-kafka-01000
+  tag:
+  - Kafka Client
+  when:
+    builtin.filecontent:
+      filePattern: .*\.(properties|yaml|yml)
+      pattern: kafka\.(.*\.)?(properties\.)?(bootstrap[\.-]servers|sasl\.jaas\.config|schema\.registry)
+- category: potential
+  customVariables: []
+  description: RabbitMQ connection string, username or password found in configuration
+    file
+  effort: 0
+  labels:
+  - konveyor.io/target=azure-spring-apps
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - message queue
+  - RabbitMQ Client
+  links:
+  - title: Azure Service Bus documentation
+    url: https://learn.microsoft.com/azure/service-bus-messaging
+  - title: Service connection in Azure Spring Apps
+    url: https://learn.microsoft.com/azure/service-connector/quickstart-portal-spring-cloud-connection
+  - title: Passwordless connections for Azure services
+    url: https://learn.microsoft.com/azure/developer/intro/passwordless-overview
+  message: "The application uses a RabbitMQ connection string, username, or password.
+    To migrate a Java application that uses a RabbitMQ connection string to Azure,
+    you can follow these recommendations:\n\n * Provision **Azure Service Bus**: Replace
+    RabbitMQ with Azure Service Bus, a fully managed messaging service that offers
+    reliable message queuing and publish/subscribe capabilities.\n\n * **Connect to
+    Azure Service Bus using Service Connector**: Create service connection using **Service
+    Connector** to connect your Azure Service Bus to your azure app. Instead of manually
+    configuring connection string in your applications, you can automatically connect
+    Azure Service Bus using Service Connector.\n \n * **Passwordless connections for
+    Azure services**: Consider using passwordless connections for Azure services.
+    You can provide an additional layer of security and convenience for accessing
+    resources in Azure by eliminating the need for passwords. This way you can reduce
+    the risk of password-related vulnerabilities, such as weak passwords or password
+    theft."
+  ruleID: azure-mq-config-rabbitmq-01000
+  tag:
+  - RabbitMQ Client
+  when:
+    builtin.filecontent:
+      filePattern: .*\.(properties|yaml|yml)
+      pattern: rabbitmq\.(.*\.)?(addresses|host|virtual-host|username|password)
+- category: potential
+  customVariables: []
+  description: ActiveMQ Artemis connection string, username or password found in configuration
+    file
+  effort: 0
+  labels:
+  - konveyor.io/target=azure-spring-apps
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - message queue
+  - ActiveMQ
+  links:
+  - title: Azure Service Bus documentation
+    url: https://learn.microsoft.com/azure/service-bus-messaging
+  - title: Migrate existing Java Message Service applications from Apache ActiveMQ
+      to Azure Service Bus
+    url: https://learn.microsoft.com/azure/service-bus-messaging/migrate-jms-activemq-to-servicebus
+  - title: Service connection in Azure Spring Apps
+    url: https://learn.microsoft.com/azure/service-connector/quickstart-portal-spring-cloud-connection
+  - title: Passwordless connections for Azure services
+    url: https://learn.microsoft.com/azure/developer/intro/passwordless-overview
+  message: |-
+    The application uses an ActiveMQ Artemis connection string, username, or password. To migrate a Java application that uses an ActiveMQ Artemis connection string to Azure, you can follow these recommendations:
+
+     * Provision **Azure Service Bus**: Replace ActiveMQ with Azure Service Bus, a fully managed messaging service that offers reliable message queuing and publish/subscribe capabilities.
+
+     * **Connect to Azure Service Bus using Service Connector**: Create service connection using **Service Connector** to connect your Azure Service Bus to your azure app. Instead of manually configuring connection string in your applications, you can automatically connect Azure Service Bus using Service Connector.
+
+     * **Passwordless connections for Azure services**: Consider using passwordless connections for Azure services. You can provide an additional layer of security and convenience for accessing resources in Azure by eliminating the need for passwords. This way you can reduce the risk of password-related vulnerabilities, such as weak passwords or password theft.
+  ruleID: azure-mq-config-artemis-01000
+  tag:
+  - ActiveMQ
+  when:
+    builtin.filecontent:
+      filePattern: .*\.(properties|yaml|yml)
+      pattern: artemis\.(broker-url|user|password)
