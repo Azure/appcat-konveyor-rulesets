@@ -1,5 +1,5 @@
 # Overview
-This reporsitory is a downstream distribution of the https://github.com/konveyor/rulesets. 
+This repository is a downstream distribution of the https://github.com/konveyor/rulesets. 
 
 This repository is a future home for Azure Migrate application and code assessment for Java (AppCAT for Java) static code analysis Rulesets.  It is intended to contain future rules to aid static code analysis as well as issues shared by subject matter experts to aid creation of richer Rulesets.
 * Intended for [Rules](https://github.com/konveyor/analyzer-lsp/blob/main/docs/rules.md) compatible with [konveyor/analyzer-lsp](https://github.com/konveyor/analyzer-lsp)
