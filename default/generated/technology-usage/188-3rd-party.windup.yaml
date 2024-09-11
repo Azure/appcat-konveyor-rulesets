@@ -35,8 +35,12 @@
   - Spring Boot
   - Embedded framework - Spring Boot
   when:
-    builtin.file:
-      pattern: spring-boot.*\.jar
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.spring-boot
+    - builtin.file:
+        pattern: spring-boot.*\.jar
 - customVariables: []
   description: Embedded framework - Elasticsearch
   labels:
@@ -339,3 +343,114 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: com.alibaba.cloud.spring-cloud-circuitbreaker-sentinel
+- customVariables: []
+  description: Embedded framework - Rocket MQ
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Rocket MQ framework.
+  ruleID: 3rd-party-30200
+  tag:
+  - Rocket MQ
+  - Embedded framework - Rocket MQ
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.apache.rocketmq.rocketmq-client
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.apache.rocketmq.rocketmq-acl
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-starter-stream-rocketmq
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-starter-bus-rocketmq
+- customVariables: []
+  description: Embedded framework - Cloud Seata
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Cloud Seata framework.
+  ruleID: 3rd-party-30300
+  tag:
+  - Cloud Seata
+  - Embedded framework - Cloud Seata
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: io.seata.seata-spring-boot-starter
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.>spring-cloud-starter-alibaba-seata
+- customVariables: []
+  description: Embedded framework - Scheduler X
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Scheduler X framework.
+  ruleID: 3rd-party-30400
+  tag:
+  - Scheduler X
+  - Embedded framework - Scheduler X
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.schedulerx.schedulerx2-worker
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.schedulerx.schedulerx2-spring-boot-starter
+- customVariables: []
+  description: Embedded framework - Cloud SMS
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Sentinel framework.
+  ruleID: 3rd-party-30500
+  tag:
+  - Cloud SMS
+  - Embedded framework - Cloud SMS
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.dysmsapi20170525
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-alicloud-sms
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.aliyun-sms-spring-boot-starter
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-starter-alicloud-sms
+- customVariables: []
+  description: Embedded framework - Cloud OSS
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Cloud OSS framework.
+  ruleID: 3rd-party-30600
+  tag:
+  - Cloud OSS
+  - Embedded framework - Cloud OSS
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.aliyun-sdk-oss
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.aliyun-sdk-oss-private
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.aliyun-sdk-oss-console
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.hadoop-aliyun
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.kafka-connect-oss

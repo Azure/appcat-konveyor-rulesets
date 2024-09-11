@@ -79,6 +79,7 @@
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
   - AWS
+  - storage
   links:
   - title: Azure Blob Storage documentation
     url: https://learn.microsoft.com/azure/storage/blobs
@@ -103,9 +104,21 @@
   ruleID: azure-aws-config-s3-03000
   when:
     or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: software.amazon.awssdk.s3
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.amazonaws.aws-java-sdk-s3
     - builtin.filecontent:
-        filePattern: ""
+        filePattern: .*\.properties
         pattern: aws.s3
+    - java.referenced:
+        location: IMPORT
+        pattern: software.amazon.awssdk.services.s3*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.amazonaws.services.s3*
 - category: mandatory
   customVariables: []
   description: Amazon Simple Queue Service configuration
@@ -117,6 +130,7 @@
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
   - AWS
+  - servicebus
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -135,9 +149,15 @@
   ruleID: azure-aws-config-sqs-04000
   when:
     or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.amazonaws.aws-java-sdk-sqs
     - builtin.filecontent:
         filePattern: ""
         pattern: aws.sqs
+    - java.referenced:
+        location: IMPORT
+        pattern: com.amazonaws.services.sqs*
 - category: mandatory
   customVariables: []
   description: AWS Secrets Manager configuration

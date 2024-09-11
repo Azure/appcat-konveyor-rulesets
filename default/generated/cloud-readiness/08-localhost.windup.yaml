@@ -1,23 +1,4 @@
 - category: mandatory
-  customVariables:
-  - name: class
-    nameOfCaptureGroup: class
-    pattern: java.net.(?P<class>(URL|URI))?(.*)
-  description: Local Host Calls
-  effort: 7
-  labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
-  - localhost
-  links: []
-  message: The app is trying to access local resource, please try to migrate the resource
-    to cloud
-  ruleID: localhost-java-00001
-  when:
-    java.referenced:
-      location: PACKAGE
-      pattern: java.net.(URL|URI)*
-- category: mandatory
   customVariables: []
   description: Local HTTP Calls
   effort: 7

@@ -40,7 +40,7 @@
   ruleID: azure-file-system-02000
   when:
     builtin.filecontent:
-      filePattern: .*\.(java|properties|yaml|yml)
+      filePattern: .*\.(java|properties|yaml|yml|xml)
       pattern: \.\/.
 - category: optional
   customVariables: []
