@@ -9,6 +9,10 @@
   - Ehcache
   - Caching - Ehcache embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*ehcache.*
     builtin.file:
       pattern: .*ehcache.*\.jar$
 - customVariables: []
@@ -22,6 +26,10 @@
   - Coherence
   - Caching - Coherence embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*coherence.*
     builtin.file:
       pattern: .*coherence.*\.jar$
 - customVariables: []
@@ -35,6 +43,10 @@
   - Apache Commons JCS
   - Caching - Apache Commons JCS embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*commons-jcs.*
     builtin.file:
       pattern: .*commons-jcs.*\.jar$
 - customVariables: []
@@ -52,6 +64,10 @@
   - Dynacache
   - Caching - Dynacache embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*dynacache.*
     builtin.file:
       pattern: .*dynacache.*\.jar$
 - customVariables: []
@@ -65,6 +81,10 @@
   - Cache API
   - Caching - Embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*cache-api.*
     builtin.file:
       pattern: .*cache-api.*\.jar$
 - customVariables: []
@@ -78,6 +98,10 @@
   - Hazelcast
   - Caching - Hazelcast embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*hazelcast.*
     builtin.file:
       pattern: .*hazelcast.*\.jar$
 - customVariables: []
@@ -91,6 +115,10 @@
   - Apache Ignite
   - Caching - Apache Ignite embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*ignite.*
     builtin.file:
       pattern: .*ignite.*\.jar$
 - customVariables: []
@@ -102,8 +130,12 @@
   ruleID: embedded-cache-libraries-08000
   tag:
   - Infinispan
-  - Caching - Infinispan embedded library
+  - Caching - Infinispan embedded library  
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*infinispan.*
     builtin.file:
       pattern: .*infinispan.*\.jar$
 - customVariables: []
@@ -117,6 +149,10 @@
   - JBoss Cache
   - Caching - JBoss Cache embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*jbosscache.*
     builtin.file:
       pattern: .*jbosscache.*\.jar$
 - customVariables: []
@@ -130,6 +166,10 @@
   - JCache
   - Caching - JCache embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*jcache.*
     builtin.file:
       pattern: .*jcache.*\.jar$
 - customVariables: []
@@ -143,6 +183,10 @@
   - Memcached client
   - Caching - Memcached client embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*memcached.*
     builtin.file:
       pattern: .*memcached.*\.jar$
 - customVariables: []
@@ -156,6 +200,10 @@
   - Oscache
   - Caching - Oscache embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*oscache.*
     builtin.file:
       pattern: .*oscache.*\.jar$
 - customVariables: []
@@ -169,6 +217,10 @@
   - ShiftOne
   - Caching - ShiftOne (Java Object Cache) embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*shiftone.*
     builtin.file:
       pattern: .*shiftone.*\.jar$
 - customVariables: []
@@ -182,6 +234,10 @@
   - SwarmCache
   - Caching - SwarmCache embedded library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*swarmcache.*
     builtin.file:
       pattern: .*swarmcache.*\.jar$
 - customVariables: []
@@ -213,5 +269,9 @@
   - Redis
   - Caching - Redis Cache library
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*redis.*
     builtin.file:
       pattern: .*redis.*\.jar

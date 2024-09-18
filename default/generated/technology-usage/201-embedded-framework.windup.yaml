@@ -30,8 +30,12 @@
   ruleID: embedded-framework-01100
   tag:
   - Apache CXF
-  - Embedded framework - Apache CXF
+  - Embedded framework - Apache CXF  
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*cxf.*
     builtin.file:
       pattern: .*cxf.*\.jar
 - customVariables: []
@@ -224,6 +228,10 @@
   - AOP Alliance
   - Embedded framework - AOP Alliance
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: .*aopalliance.*
     builtin.file:
       pattern: .*aopalliance.*\.jar
 - customVariables: []

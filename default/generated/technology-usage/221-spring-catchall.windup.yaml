@@ -8,5 +8,9 @@
   - Spring
   - Embedded framework - Spring
   when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: spring.*
     builtin.file:
       pattern: spring.*\.jar
