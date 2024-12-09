@@ -26,7 +26,7 @@
   - title: Azure Spring Apps Spring Boot Version Support
     url: https://learn.microsoft.com/azure/spring-apps/concept-app-customer-responsibilities#spring-boot-and-spring-cloud-versions
   - title: Spring Cloud
-    url: https://spring.io/projects/spring-cloud
+    url: https://spring.io/projects/spring-cloud/
   - title: Spring Cloud Supported Versions
     url: https://github.com/spring-cloud/spring-cloud-release/wiki/Supported-Versions
   - title: Use Rewrite to migrate to Spring Cloud 2022
@@ -64,7 +64,7 @@
   - title: Azure Spring Apps Spring Boot Version Support
     url: https://learn.microsoft.com/azure/spring-apps/concept-app-customer-responsibilities#spring-boot-and-spring-cloud-versions
   - title: Spring Cloud
-    url: https://spring.io/projects/spring-cloud
+    url: https://spring.io/projects/spring-cloud/
   - title: Spring Cloud Supported Versions
     url: https://github.com/spring-cloud/spring-cloud-release/wiki/Supported-Versions
   - title: Use Rewrite to migrate to Spring Cloud 2022
