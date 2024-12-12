@@ -1,0 +1,284 @@
+- category: potential
+  customVariables: []
+  description: EHCache library
+  effort: 5
+  labels:
+  - konveyor.io/include=always
+  links:
+  - title: Azure Cache for Redis documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: Caching guidance
+    url: https://learn.microsoft.com/azure/architecture/best-practices/caching
+  message: |-
+    The application uses EHCache. Azure does not have a managed service for EHCache. You either have to set up the EHCache distribution on Azure yourself, or you can take advantage of a managed Redis service if you are ready to migrate from EHCache to Redis. Azure Cache for Redis offers scalability, high availability, and monitoring capabilities. **Azure Cache for Redis** provides features like data persistence, automatic failover, and built-in support for Redis commands, allowing you to leverage the benefits of Redis caching in your application running on Azure.
+
+     * **Provision an Azure Cache for Redis**: Configure the cache size and other relevant settings based on your application's requirements.
+
+     * **Update your Java code**: Replace the EHCache code in your Java application with the Azure Cache for Redis client libraries or SDKs. Update the code that establishes a connection to the Redis cache and performs cache-related operations.
+
+     * **Connect to Azure Cache for Redis**: Update the connection details in your Java application to point to the Azure Cache for Redis instance. Use the connection information provided by Azure (hostname, port, access keys, etc.) to establish a connection from your application.
+  ruleID: embedded-cache-libraries-01000
+  tag:
+  - Ehcache
+  when:
+    builtin.file:
+      pattern: .*ehcache.*\.jar
+- category: potential
+  customVariables: []
+  description: Redis Cache library
+  effort: 3
+  labels:
+  - konveyor.io/include=always
+  links:
+  - title: Azure Cache for Redis documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: Caching guidance
+    url: https://learn.microsoft.com/azure/architecture/best-practices/caching
+  - title: Connect Azure Cache for Redis to your application in Azure Spring Apps
+    url: https://learn.microsoft.com/azure/spring-apps/how-to-bind-redis?tabs=Java%2CService-Connector
+  - title: Redis Cache found in the application
+    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-spring-apps#identify-external-caches
+  - title: Spring Data Redis
+    url: https://spring.io/projects/spring-data-redis/
+  - title: Azure Spring Cloud Starter Cache
+    url: https://search.maven.org/artifact/com.azure.spring/azure-spring-cloud-starter-cache
+  message: |-
+    The application uses a Redis cache. You can take advantage of a managed Redis service that offers scalability, high availability, and monitoring capabilities. **Azure Cache for Redis** provides features like data persistence, automatic failover, and built-in support for Redis commands, allowing you to leverage the benefits of Redis caching in your application running on Azure.
+
+     * **Provision an Azure Cache for Redis**: Configure the cache size and other relevant settings based on your application's requirements.
+
+     * **Update your Java code**: Replace the embedded Redis cache code in your Java application with the Azure Cache for Redis client libraries or SDKs. Update the code that establishes a connection to the Redis cache and performs cache-related operations.
+
+     * **Connect to Azure Cache for Redis**: Connect your app to Azure Cache for Redis on azure by **Service Connector**. Use the connection information provided by Azure (hostname, port, access keys, etc.) to create a connection from your application.
+  ruleID: embedded-cache-libraries-16000
+  tag:
+  - Redis
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-data-redis
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.data.spring-data-redis
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.session.spring-session-data-redis
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.integration.spring-integration-redis
+    - builtin.file:
+        pattern: .*redis.*\.jar
+- customVariables: []
+  description: Coherence embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds a Coherence library.\n
+    \                   "
+  ruleID: embedded-cache-libraries-02000
+  tag:
+  - Coherence
+  - Coherence embedded library
+  when:
+    builtin.file:
+      pattern: .*coherence.*\.jar$
+- customVariables: []
+  description: Apache Commons JCS embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds an Apache Commons JCS
+    library.\n                    "
+  ruleID: embedded-cache-libraries-03000
+  tag:
+  - Apache Commons JCS
+  - Apache Commons JCS embedded library
+  when:
+    builtin.file:
+      pattern: .*commons-jcs.*\.jar$
+- customVariables: []
+  description: Dynacache embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds a Dynacache library.\n
+    \                   "
+  ruleID: embedded-cache-libraries-04000
+  tag:
+  - Dynacache
+  - Dynacache embedded library
+  when:
+    builtin.file:
+      pattern: .*dynacache.*\.jar$
+- customVariables: []
+  description: Embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds a library that provides
+    caching.\n                   "
+  ruleID: embedded-cache-libraries-05000
+  tag:
+  - Cache API
+  - Embedded library
+  when:
+    builtin.file:
+      pattern: .*cache-api.*\.jar$
+- customVariables: []
+  description: Hazelcast embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds a Hazelcast library.\n
+    \                   "
+  ruleID: embedded-cache-libraries-06000
+  tag:
+  - Hazelcast
+  - Hazelcast embedded library
+  when:
+    builtin.file:
+      pattern: .*hazelcast.*\.jar$
+- customVariables: []
+  description: Apache Ignite embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds an Apache Ignite library.\n
+    \                   "
+  ruleID: embedded-cache-libraries-07000
+  tag:
+  - Apache Ignite
+  - Apache Ignite embedded library
+  when:
+    builtin.file:
+      pattern: .*ignite.*\.jar$
+- customVariables: []
+  description: Infinispan embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds an Infinispan library.\n
+    \                   "
+  ruleID: embedded-cache-libraries-08000
+  tag:
+  - Infinispan
+  - Infinispan embedded library
+  when:
+    builtin.file:
+      pattern: .*infinispan.*\.jar$
+- customVariables: []
+  description: JBoss Cache embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embedds a JBoss Cache library.\n
+    \                   "
+  ruleID: embedded-cache-libraries-09000
+  tag:
+  - JBoss Cache
+  - JBoss Cache embedded library
+  when:
+    builtin.file:
+      pattern: .*jbosscache.*\.jar$
+- customVariables: []
+  description: JCache embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds a JCache library.\n                    "
+  ruleID: embedded-cache-libraries-10000
+  tag:
+  - JCache
+  - JCache embedded library
+  when:
+    builtin.file:
+      pattern: .*jcache.*\.jar$
+- customVariables: []
+  description: Memcached client embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds a Memcached client library.\n
+    \                   "
+  ruleID: embedded-cache-libraries-11000
+  tag:
+  - Memcached client
+  - Memcached client embedded library
+  when:
+    builtin.file:
+      pattern: .*memcached.*\.jar$
+- customVariables: []
+  description: Oscache embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds an Oscache library.\n
+    \                   "
+  ruleID: embedded-cache-libraries-12000
+  tag:
+  - Oscache
+  - Oscache embedded library
+  when:
+    builtin.file:
+      pattern: .*oscache.*\.jar$
+- customVariables: []
+  description: ShiftOne (Java Object Cache) embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds a ShiftOne library (Java
+    Object Cache or JOCache).\n                    "
+  ruleID: embedded-cache-libraries-13000
+  tag:
+  - ShiftOne
+  - ShiftOne (Java Object Cache) embedded library
+  when:
+    builtin.file:
+      pattern: .*shiftone.*\.jar$
+- customVariables: []
+  description: SwarmCache embedded library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds a SwarmCache library.\n
+    \                   "
+  ruleID: embedded-cache-libraries-14000
+  tag:
+  - SwarmCache
+  - SwarmCache embedded library
+  when:
+    builtin.file:
+      pattern: .*swarmcache.*\.jar$
+- customVariables: []
+  description: Spring Boot Cache library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds the Spring Boot Cache
+    library.\n                    "
+  ruleID: embedded-cache-libraries-15000
+  tag:
+  - Spring Boot Cache
+  - Spring Boot Cache library
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-cache
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-cache
+- customVariables: []
+  description: Redis Cache library
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: "\n                        The application embeds the Redis client.\n                    "
+  ruleID: embedded-cache-libraries-16000-01
+  tag:
+  - Redis
+  - Redis Cache library
+  when:
+    builtin.file:
+      pattern: .*redis.*\.jar
