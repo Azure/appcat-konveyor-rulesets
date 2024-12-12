@@ -9,7 +9,7 @@
   - logging
   links: []
   message: |-
-    Logging to the file system is not recommended when running applications in the cloud.
+    Found JAVA APIs that log to the file system. Logging to the file system is not recommended when running applications in the cloud.
      Instead, use Azure Monitor for efficient and scalable logging.
 
      * Integrate with **Azure Monitor**: Configure your application to send logs to Azure Monitor. Azure Monitor provides a centralized platform for collecting, analyzing, and visualizing log data from various sources.
@@ -18,18 +18,15 @@
 
      * Leverage **Log Analytics** workspaces: Create a Log Analytics workspace within Azure Monitor to store and analyze your log data effectively. Configure your application to send logs to the designated workspace, enabling centralized log storage and analysis.
 
-     * Utilize **KQL** for log analysis: Familiarize yourself with the Kusto Query Language (KQL) to write powerful queries for log analysis in Azure Monitor. KQL provides a flexible and efficient way to extract insights, perform aggregations, and create visualizations from your log data. 
+     * Utilize **KQL** for log analysis: Familiarize yourself with the Kusto Query Language (KQL) to write powerful queries for log analysis in Azure Monitor. KQL provides a flexible and efficient way to extract insights, perform aggregations, and create visualizations from your log data.
   ruleID: logging-0000
   tag:
   - Logging to file system
   when:
     or:
-    - builtin.filecontent:
-        filePattern: log4j\.(xml|properties)
-        pattern: ((Daily)?Rolling)?FileAppender
     - java.referenced:
         location: IMPORT
-        pattern: org.apache*log4j*FileAppender*
+        pattern: org.apache.*log4j.*FileAppender*
     - java.referenced:
         location: IMPORT
         pattern: java.util.logging.FileHandler*
@@ -49,15 +46,51 @@
   - konveyor.io/target=cloud-readiness
   - logging
   links: []
-  message: "\n If an application writes logs with `SocketHandler`, an alternative
-    method is required. Socket communication is not suitable for a cloud environment
-    because it requires fixed communication with a target host.\n\n Recommendations\n\n
-    * Use a centralized log management system.\n * Log to standard output and allow
-    the cloud platform to manage the logging.\n * Use shared storage for log files.\n "
+  message: |-
+    If an application writes logs with `SocketHandler`, an alternative method is required. Socket communication is not suitable for a cloud environment because it requires fixed communication with a target host.
+
+     Recommendations
+
+     * Use a centralized log management system.
+     * Log to standard output and allow the cloud platform to manage the logging.
+     * Use shared storage for log files.
   ruleID: logging-0001
   tag:
   - Logging to Socket Handler
   when:
     java.referenced:
-      location: PACKAGE
+      location: IMPORT
       pattern: java.util.logging.SocketHandler*
+- category: mandatory
+  customVariables: []
+  description: Don't log to file system
+  effort: 1
+  labels:
+  - konveyor.io/source=java
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=cloud-readiness
+  - logging
+  links:
+  - title: Azure Monitor Logs overview
+    url: https://learn.microsoft.com/azure/azure-monitor/logs/data-platform-logs
+  - title: Log queries in Azure Monitor
+    url: https://learn.microsoft.com/azure/azure-monitor/logs/log-query-overview
+  - title: Enable diagnostics logging for apps in Azure App Service
+    url: https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs
+  - title: Log Analytics tutorial
+    url: https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-tutorial
+  message: |-
+    Found a logging configuration that logs to the file system. Logging to the file system is not recommended when running applications in the cloud.
+     Change your logging configuration to log to console.
+     We recommended you to use Azure Monitor for efficient and scalable logging.
+  ruleID: logging-0002
+  tag:
+  - Logging to file system
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: log{back,4j}.*\.(xml|properties)
+        pattern: '{filePattern}'
+    - builtin.filecontent:
+        filePattern: log{back,4j}.*\.(xml|properties)
+        pattern: appender-ref ref=.FILE
