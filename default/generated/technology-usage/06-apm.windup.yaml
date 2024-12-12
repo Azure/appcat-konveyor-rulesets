@@ -65,7 +65,7 @@
   - title: Deploy and manage Elastic on Azure
     url: https://www.elastic.co/blog/getting-started-with-the-azure-integration-enhancement
   - title: Integrate Elastic APM on Azure
-    url: https://docs.elastic.co/integrations/azure
+    url: https://www.elastic.co/docs/current/integrations/azure
   - title: Microsoft Azure monitoring with Elastic Observability
     url: https://www.elastic.co/observability/azure-monitoring
   message: |-
