@@ -3,8 +3,13 @@
   description: JavaFX usage
   effort: 0
   labels:
+  - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
+  - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - oracle-jdk
+  - jdk
+  - JavaFX
   links:
   - title: Knowledge base article about JavaFX support in RHEL
     url: https://access.redhat.com/solutions/3299701
@@ -22,8 +27,13 @@
   description: Fonts usage
   effort: 0
   labels:
+  - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
+  - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - oracle-jdk
+  - jdk
+  - fonts
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -41,14 +51,19 @@
         pattern: (java.awt|javafx.scene.text)*Font*
     - java.referenced:
         location: METHOD_CALL
-        pattern: javax.swing*Font*
+        pattern: javax.swing.*Font*
 - category: potential
   customVariables: []
   description: Resource management API usage
   effort: 0
   labels:
+  - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
+  - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - oracle-jdk
+  - jdk
+  - Oracle-JDK-resource-management
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -63,8 +78,13 @@
   description: Color management usage
   effort: 0
   labels:
+  - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
+  - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - oracle-jdk
+  - jdk
+  - JDK-color-management
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -85,8 +105,13 @@
   description: Java 2D library usage
   effort: 0
   labels:
+  - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
+  - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - oracle-jdk
+  - jdk
+  - 2DLibrary
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -103,8 +128,13 @@
   description: 'Crypto: elliptic curves usage'
   effort: 0
   labels:
+  - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
+  - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - oracle-jdk
+  - jdk
+  - crypto
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -152,3 +182,42 @@
     - java.referenced:
         location: VARIABLE_DECLARATION
         pattern: java.security.spec.EllipticCurve*
+- category: mandatory
+  customVariables: []
+  description: Oracle JDK JPEG image encoder/decoder usage
+  effort: 3
+  labels:
+  - konveyor.io/source=oraclejdk7+
+  - konveyor.io/source=oraclejdk
+  - konveyor.io/target=openjdk7+
+  - konveyor.io/target=openjdk
+  - oracle-jdk
+  - jdk
+  links:
+  - title: 'java.lang.NoClassDefFoundError: com/sun/image/codec/jpeg/ImageFormatException
+      when using OpenJDK'
+    url: https://access.redhat.com/solutions/443673
+  - title: Java Image I/O tutorial
+    url: https://docs.oracle.com/javase/tutorial/2d/images/saveimage.html
+  - title: Java Image I/O API Guide
+    url: https://docs.oracle.com/javase/8/docs/technotes/guides/imageio/spec/imageio_guideTOC.fm.html
+  message: Replace the use of classes and methods from the `com.sun.image.codec.jpeg`
+    package with `javax.imageio.ImageIO`
+  ruleID: oracle2openjdk-00006
+  when:
+    or:
+    - java.referenced:
+        location: CONSTRUCTOR_CALL
+        pattern: com.sun.image.codec.jpeg*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.image.codec.jpeg*
+    - java.referenced:
+        location: INHERITANCE
+        pattern: com.sun.image.codec.jpeg*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: com.sun.image.codec.jpeg*
+    - java.referenced:
+        location: VARIABLE_DECLARATION
+        pattern: com.sun.image.codec.jpeg*
