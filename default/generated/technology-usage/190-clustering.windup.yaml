@@ -11,12 +11,15 @@
     url: https://learn.microsoft.com/azure/app-service/environment/app-service-app-service-environment-custom-settings
   - title: Identify session persistence mechanism
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-tomcat-to-azure-container-apps#identify-session-persistence-mechanism
-  message: |-
-    To migrate a distributed application that is clustered around several servers to Azure, you can follow these recommendations:
-
-     * **Configure multiple instances **: Deploy your Java application to Azure App Service and configure multiple instances within the same App Service Plan to create a cluster-like setup. Azure App Service automatically load-balances incoming requests across the available instances, ensuring scalability and high availability.
-
-     * **Manage sessions in a clustered environment**: Consider using an external session store such as Azure Cache for Redis. Configure your Java application to connect to the Azure Cache for Redis and to replicate sessions across the instances.
+  message: "To migrate a distributed application that is clustered around several\
+    \ servers to Azure, you can follow these recommendations:\n\n * **Configure multiple\
+    \ instances **: Deploy your Java application to Azure App Service and configure\
+    \ multiple instances within the same App Service Plan to create a cluster-like\
+    \ setup. Azure App Service automatically load-balances incoming requests across\
+    \ the available instances, ensuring scalability and high availability.\n\n * **Manage\
+    \ sessions in a clustered environment**: Consider using an external session store\
+    \ such as Azure Cache for Redis. Configure your Java application to connect to\
+    \ the Azure Cache for Redis and to replicate sessions across the instances."
   ruleID: clustering-00000
   tag:
   - Clustering Web Session
@@ -26,6 +29,7 @@
         w: http://java.sun.com/xml/ns/javaee
       xpath: /w:web-app/w:distributable
 - customVariables: []
+  description: Clustering EJB
   labels:
   - konveyor.io/include=always
   links: []

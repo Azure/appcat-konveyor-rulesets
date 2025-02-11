@@ -102,6 +102,8 @@
   - webservice
   links: []
   ruleID: xml-webservices-06000
+  tag:
+  - webservice
   when:
     and:
     - as: webservices
@@ -130,6 +132,8 @@
   - webservice
   links: []
   ruleID: xml-webservices-06001
+  tag:
+  - webservice
   when:
     and:
     - as: webservices
