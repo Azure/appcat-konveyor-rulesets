@@ -139,9 +139,9 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=rhr
   links: []
-  message: "Migrate `org.amqphub.spring:amqp-10-jms-spring-boot-starter` dependency
+  message: Migrate `org.amqphub.spring:amqp-10-jms-spring-boot-starter` dependency
     to a version compatible with the supported versions of the RHOAR components provided
-    in the link.\n "
+    in the link.
   ruleID: springboot-associated-00008
   when:
     as: dependencies-block
@@ -161,9 +161,9 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=rhr
   links: []
-  message: "Migrate `org.apache.cxf:cxf-spring-boot-starter-jaxrs` dependency to a
+  message: Migrate `org.apache.cxf:cxf-spring-boot-starter-jaxrs` dependency to a
     version compatible with the supported versions of the RHOAR components provided
-    in the link.\n "
+    in the link.
   ruleID: springboot-associated-00009
   when:
     as: dependencies-block
@@ -182,9 +182,9 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=rhr
   links: []
-  message: "Migrate `org.jboss.resteasy:resteasy-spring-boot-starter` dependency to
+  message: Migrate `org.jboss.resteasy:resteasy-spring-boot-starter` dependency to
     a version compatible with the supported versions of the RHOAR components provided
-    in the link.\n "
+    in the link.
   ruleID: springboot-associated-00010
   when:
     as: dependencies-block
@@ -203,9 +203,9 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=rhr
   links: []
-  message: "Migrate `org.infinispan:infinispan-spring-boot-starter-embedded` dependency
+  message: Migrate `org.infinispan:infinispan-spring-boot-starter-embedded` dependency
     to a version compatible with the supported versions of the RHOAR components provided
-    in the link.\n "
+    in the link.
   ruleID: springboot-associated-00011
   when:
     as: dependencies-block
@@ -225,9 +225,9 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=rhr
   links: []
-  message: "Migrate `org.infinispan:infinispan-spring-boot-starter-remote` dependency
+  message: Migrate `org.infinispan:infinispan-spring-boot-starter-remote` dependency
     to a version compatible with the supported versions of the RHOAR components provided
-    in the link.\n "
+    in the link.
   ruleID: springboot-associated-00012
   when:
     as: dependencies-block
@@ -247,9 +247,9 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=rhr
   links: []
-  message: "Migrate `org.keycloak:keycloak-spring-boot-starter` dependency to a version
+  message: Migrate `org.keycloak:keycloak-spring-boot-starter` dependency to a version
     compatible with the supported versions of the RHOAR components provided in the
-    link.\n "
+    link.
   ruleID: springboot-associated-00013
   when:
     as: dependencies-block
@@ -268,9 +268,9 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=rhr
   links: []
-  message: "Migrate `me.snowdrop:narayana-spring-boot-starter` dependency to a version
+  message: Migrate `me.snowdrop:narayana-spring-boot-starter` dependency to a version
     compatible with the supported versions of the RHOAR components provided in the
-    link.\n "
+    link.
   ruleID: springboot-associated-00014
   when:
     as: dependencies-block
@@ -289,9 +289,9 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=rhr
   links: []
-  message: "Migrate `io.opentracing.contrib:opentracing-spring-jaeger-web-starter`
+  message: Migrate `io.opentracing.contrib:opentracing-spring-jaeger-web-starter`
     dependency to a version compatible with the supported versions of the RHOAR components
-    provided in the link.\n "
+    provided in the link.
   ruleID: springboot-associated-00015
   when:
     as: dependencies-block
