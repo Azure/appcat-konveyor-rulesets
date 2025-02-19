@@ -41,8 +41,8 @@
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
       5.3'
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/migration_guide/#migrating_from_hibernate_5_1_to_5_3
-  message: 'change reference to hibernate-java8 to hibernate-core (since hibernate-java8
-    has been merged into hibernate-core module) '
+  message: change reference to hibernate-java8 to hibernate-core (since hibernate-java8
+    has been merged into hibernate-core module)
   ruleID: hibernate51-53-00100
   when:
     or:
@@ -89,8 +89,8 @@
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
       5.3'
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/migration_guide/#exception_handling_changes_between_51_53
-  message: |2-
-     If the `SessionFactory` is built via Hibernate’s native bootstrapping and `org.hibernate.HibernateException` or a subclass is referenced by the application
+  message: |-
+    If the `SessionFactory` is built via Hibernate’s native bootstrapping and `org.hibernate.HibernateException` or a subclass is referenced by the application
      then set `hibernate.native_exception_handling_51_compliance` configuration property to `true`.
   ruleID: hibernate51-53-00300
   when:
@@ -229,13 +229,13 @@
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
       5.3'
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/migration_guide/#migrating_from_hibernate_5_1_to_5_3
-  message: "\n Depending on the type of region, the appropriate method should be used
+  message: "Depending on the type of region, the appropriate method should be used
     instead: \n\n * For an entity cache region, `org.hibernate.engine.spi.SessionFactoryImplementor.getMetamodel().entityPersister(
     entityName ).getCacheAccessStrategy()` should be used instead\n * For a collection
     region, `org.hibernate.engine.spi.SessionFactoryImplementor.getMetamodel().collectionPersister(
     role ).getCacheAccessStrategy()` should be used instead\n * For a natural ID region,
     `org.hibernate.engine.spi.SessionFactoryImplementor.getMetamodel().entityPersister(
-    entityName ).getNaturalIdCacheAccessStrategy()` should be used instead\n "
+    entityName ).getNaturalIdCacheAccessStrategy()` should be used instead"
   ruleID: hibernate51-53-00404
   when:
     java.referenced:
@@ -308,9 +308,9 @@
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
       5.3'
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/migration_guide/#migrating_from_hibernate_5_1_to_5_3
-  message: "\n `org.hibernate.engine.spi.SessionFactoryImplementor.getCache().getCacheRegionNames()`
+  message: '`org.hibernate.engine.spi.SessionFactoryImplementor.getCache().getCacheRegionNames()`
     should be used to obtain all cache region names, then `org.hibernate.engine.spi.SessionFactoryImplementor.getCache().getRegion(String
-    regionName)` should be used to look up each region.\n "
+    regionName)` should be used to look up each region.'
   ruleID: hibernate51-53-00407
   when:
     java.referenced:
@@ -365,13 +365,13 @@
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/migration_guide/#hibernate_orm_5_3_features
   - title: 'HHH-11356: Adjust the 2nd-Cache SPIs to better reflect supported uses'
     url: https://hibernate.atlassian.net/browse/HHH-11356
-  message: "\n One potential upgrade concern is any custom `org.hibernate.cache.spi.QueryCacheFactory`
+  message: "One potential upgrade concern is any custom `org.hibernate.cache.spi.QueryCacheFactory`
     implementations. \n `org.hibernate.cache.spi.QueryCacheFactory` was meant as a
     means to allow service providers the ability to define query result caching, generally
     with more stale-tolerant query result invalidation handling. \n However, the contract
     also bound it to the old second level cache contracts so they had to be updated.
     \n Its responsibilities also changed so we also decided to \"rename it\" to `org.hibernate.cache.spi.TimestampsCacheFactory`.
-    \n Details can be found in HHH-11356 JIRA issue (link below).\n "
+    \n Details can be found in HHH-11356 JIRA issue (link below)."
   ruleID: hibernate51-53-00600
   when:
     java.referenced:
@@ -401,12 +401,12 @@
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/migration_guide/#hibernate_orm_5_3_features
   - title: 'HHH-11356: Adjust the 2nd-Cache SPIs to better reflect supported uses'
     url: https://hibernate.atlassian.net/browse/HHH-11356
-  message: "\n A change to be aware of is accessing cache entries via `SecondLevelCacheStatistics.getEntries()`
+  message: "A change to be aware of is accessing cache entries via `SecondLevelCacheStatistics.getEntries()`
     and `NaturalIdCacheStatistics.getEntries()`. \n These methods have been deprecated,
     however the new caching SPI does not really require caching providers to support
     this. \n As of Hibernate 5.3 these methods inherently return an empty Map (`Collections#emptyMap`).
     \n This has always been something that providers did not implement \"correctly\"
-    anyway. \n Details can be found in HHH-11356 JIRA issue (link below).\n "
+    anyway. \n Details can be found in HHH-11356 JIRA issue (link below)."
   ruleID: hibernate51-53-00700
   when:
     java.referenced:
@@ -425,12 +425,12 @@
   - konveyor.io/target=eap
   - hibernate
   links: []
-  message: "\n A change to be aware of is accessing cache entries via `NaturalIdCacheStatistics.getEntries()`.
+  message: "A change to be aware of is accessing cache entries via `NaturalIdCacheStatistics.getEntries()`.
     \n This method has been deprecated, however the new caching SPI does not really
     require caching providers to support this. \n As of Hibernate 5.3 this method
     inherently return an empty Map (`Collections#emptyMap`). \n This has always been
     something that providers did not implement \"correctly\" anyway. \n Details can
-    be found in HHH-11356 JIRA issue (link below).\n "
+    be found in HHH-11356 JIRA issue (link below)."
   ruleID: hibernate51-53-00701
   when:
     java.referenced:
@@ -450,12 +450,12 @@
   - konveyor.io/target=eap
   - hibernate
   links: []
-  message: "\n A change to be aware of is accessing cache entries via `SecondLevelCacheStatistics.getEntries()`.
+  message: "A change to be aware of is accessing cache entries via `SecondLevelCacheStatistics.getEntries()`.
     \n This method has been deprecated, however the new caching SPI does not really
     require caching providers to support this. \n As of Hibernate 5.3 these methods
     inherently return an empty Map (`Collections#emptyMap`). \n This has always been
     something that providers did not implement \"correctly\" anyway. \n Details can
-    be found in HHH-11356 JIRA issue (link below).\n "
+    be found in HHH-11356 JIRA issue (link below)."
   ruleID: hibernate51-53-00702
   when:
     java.referenced:
@@ -482,9 +482,9 @@
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/migration_guide/#migrating_from_hibernate_5_1_to_5_3
   - title: Hibernate 5.3 JavaDoc
     url: http://docs.jboss.org/hibernate/orm/5.3/javadocs/
-  message: "\n The SPIs in the `org.hibernate.{{packages}}` package have changed.
-    \n Any custom classes using those SPIs will need to be reviewed and updated. \n
-    See Javadoc for these packages for details.\n "
+  message: "The SPIs in the `org.hibernate.{{packages}}` package have changed. \n
+    Any custom classes using those SPIs will need to be reviewed and updated. \n See
+    Javadoc for these packages for details."
   ruleID: hibernate51-53-00800
   when:
     java.referenced:

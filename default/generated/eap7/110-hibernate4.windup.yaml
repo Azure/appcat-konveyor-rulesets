@@ -462,15 +462,16 @@
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
   - title: Hibernate and JPA migration changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#hibernate_and_jpa_migration_changes
-  message: "\n Historically Hibernate provided just a singular contract for applying
-    a \"naming strategy\".\n Starting in 5.0 this has been split into 2 distinct contracts:\n\n
-    * ImplicitNamingStrategy - is used whenever a table or column is not explicitly
-    named to determine the name to use.\n * PhysicalNamingStrategy - is used to convert
-    a \"logical name\" (either implicit or explicit) name of a table or column into
-    a physical name (e.g. following corporate naming guidelines)\n\n Use methods `org.hibernate.boot.MetadataBuilder#setImplicitNamingStrategy(ImplicitNamingStrategy
-    implicitNamingStrategy)` or\n `org.hibernate.boot.MetadataBuilder#setPhysicalNamingStrategy(PhysicalNamingStrategy
-    physicalNamingStrategy)`\n instead of `public Configuration setNamingStrategy(NamingStrategy
-    namingStrategy)()`\n "
+  message: |-
+    Historically Hibernate provided just a singular contract for applying a "naming strategy".
+     Starting in 5.0 this has been split into 2 distinct contracts:
+
+     * ImplicitNamingStrategy - is used whenever a table or column is not explicitly named to determine the name to use.
+     * PhysicalNamingStrategy - is used to convert a "logical name" (either implicit or explicit) name of a table or column into a physical name (e.g. following corporate naming guidelines)
+
+     Use methods `org.hibernate.boot.MetadataBuilder#setImplicitNamingStrategy(ImplicitNamingStrategy implicitNamingStrategy)` or
+     `org.hibernate.boot.MetadataBuilder#setPhysicalNamingStrategy(PhysicalNamingStrategy physicalNamingStrategy)`
+     instead of `public Configuration setNamingStrategy(NamingStrategy namingStrategy)()`
   ruleID: hibernate4-00018
   when:
     java.referenced:
@@ -661,8 +662,8 @@
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#deprecations
   - title: Removed and Deprecated Classes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_deprecations
-  message: "\n All functionality from `org.hibernate.cfg.AnnotationConfiguration`
-    has been moved to `org.hibernate.cfg.Configuration`.\n "
+  message: All functionality from `org.hibernate.cfg.AnnotationConfiguration` has
+    been moved to `org.hibernate.cfg.Configuration`.
   ruleID: hibernate4-00027
   when:
     java.referenced:
@@ -791,10 +792,9 @@
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_other_classes
   - title: Hibernate 5 Changed or Moved Contracts
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#changedmoved-contracts
-  message: "Hibernate 5 changed contract `org.hibernate.integrator.spi.Integrator`
-    to account for bootstrap redesign.\n Check if you implement method `integrate(Configuration
-    configuration, SessionFactoryImplementor sessionFactory, SessionFactoryServiceRegistry
-    serviceRegistry)` which is no longer there.\n "
+  message: |-
+    Hibernate 5 changed contract `org.hibernate.integrator.spi.Integrator` to account for bootstrap redesign.
+     Check if you implement method `integrate(Configuration configuration, SessionFactoryImplementor sessionFactory, SessionFactoryServiceRegistry serviceRegistry)` which is no longer there.
   ruleID: hibernate4-00033
   when:
     java.referenced:
@@ -985,19 +985,13 @@
   - configuration
   - Hibernate
   links: []
-  message: "\n Previous versions of Hibernate have mapped `byte[]` and `Byte[]` to
-    Oracle’s `LONG RAW` data type (via the JDBC `LONGVARBINARY` type). Oracle have
-    deprecated the `LONG RAW` data type for many releases - possibly as far back as
-    8i.\n\n Therefore it was decided to start having Hibernate map `byte[]` and `Byte[]`
-    to `BLOB` for Oracle.\n\n However, in the interest of backwards compatibility
-    and not breaking existing applications it was also decided to limit this change
-    to just the `Oracle12cDialect`. So starting in 5.1 applications using `Oracle12cDialect`
-    and implicitly mapping `byte[]` and `Byte[]` values will start seeing those handled
-    as `BLOB` data rather than `LONG RAW` data.\n For existing applications that want
-    to continue to use `Oracle12cDialect` and still continue to implicitly map `byte[]`
-    and `Byte[]` attributes to `LONG RAW`, there is a new configuration setting you
-    can use to enable that: `hibernate.dialect.oracle.prefer_longvarbinary`, which
-    is `false `by default (map to `BLOB`).\n "
+  message: |-
+    Previous versions of Hibernate have mapped `byte[]` and `Byte[]` to Oracle’s `LONG RAW` data type (via the JDBC `LONGVARBINARY` type). Oracle have deprecated the `LONG RAW` data type for many releases - possibly as far back as 8i.
+
+     Therefore it was decided to start having Hibernate map `byte[]` and `Byte[]` to `BLOB` for Oracle.
+
+     However, in the interest of backwards compatibility and not breaking existing applications it was also decided to limit this change to just the `Oracle12cDialect`. So starting in 5.1 applications using `Oracle12cDialect` and implicitly mapping `byte[]` and `Byte[]` values will start seeing those handled as `BLOB` data rather than `LONG RAW` data.
+     For existing applications that want to continue to use `Oracle12cDialect` and still continue to implicitly map `byte[]` and `Byte[]` attributes to `LONG RAW`, there is a new configuration setting you can use to enable that: `hibernate.dialect.oracle.prefer_longvarbinary`, which is `false `by default (map to `BLOB`).
   ruleID: hibernate4-00039
   when:
     or:

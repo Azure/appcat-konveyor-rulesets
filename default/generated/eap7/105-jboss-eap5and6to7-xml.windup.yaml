@@ -14,8 +14,8 @@
   - cluster
   - configuration
   links: []
-  message: "\n The `clustered` element is ignored in EAP 7 and is not useful. In case
-    the application is started using HA profile, the replication will be done automatically.\n "
+  message: The `clustered` element is ignored in EAP 7 and is not useful. In case
+    the application is started using HA profile, the replication will be done automatically.
   ruleID: jboss-eap5and6to7-xml-37000
   when:
     builtin.xml:
@@ -413,8 +413,8 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration deprecates `replication-trigger`
-    element in `jboss-web.xml` file descriptor.\n "
+  message: The EAP 7 Web Session Clustering configuration deprecates `replication-trigger`
+    element in `jboss-web.xml` file descriptor.
   ruleID: jboss-eap5and6to7-xml-38000
   when:
     builtin.xml:
@@ -441,8 +441,8 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration deprecates element `replication-mode`
-    element without replacement in `jboss-web.xml` file descriptor.\n "
+  message: The EAP 7 Web Session Clustering configuration deprecates element `replication-mode`
+    element without replacement in `jboss-web.xml` file descriptor.
   ruleID: jboss-eap5and6to7-xml-38001
   when:
     builtin.xml:
@@ -469,8 +469,8 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration deprecates `backups`
-    element without replacement in `jboss-web.xml` file descriptor.\n "
+  message: The EAP 7 Web Session Clustering configuration deprecates `backups` element
+    without replacement in `jboss-web.xml` file descriptor.
   ruleID: jboss-eap5and6to7-xml-38002
   when:
     builtin.xml:
@@ -497,12 +497,12 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration deprecates `use-jk`
-    element without replacement in `jboss-web.xml` file descriptor.\n\n Previously
-    by specifying `use-jk` element, the instance-id of the node handling a given request
-    was appended to the jsessionid (foruse by load balancers such as mod_jk, mod_proxy_balancer,
-    mod_cluster, etc.) depending on the value specified for `use-jk`.\n\n In the new
-    implementation, the instance-id, if defined, is always appended to the jsessionid.\n "
+  message: |-
+    The EAP 7 Web Session Clustering configuration deprecates `use-jk` element without replacement in `jboss-web.xml` file descriptor.
+
+     Previously by specifying `use-jk` element, the instance-id of the node handling a given request was appended to the jsessionid (foruse by load balancers such as mod_jk, mod_proxy_balancer, mod_cluster, etc.) depending on the value specified for `use-jk`.
+
+     In the new implementation, the instance-id, if defined, is always appended to the jsessionid.
   ruleID: jboss-eap5and6to7-xml-38003
   when:
     builtin.xml:
@@ -530,14 +530,13 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration deprecates `max-unreplicated-interval`
-    element in `jboss-web.xml` file descriptor.\n\n Previously, this configuration
-    option was an optimization that would prevent the replication of a session’s timestamp
-    if no session attribute was changed. While this sounds nice, in practice it doesn't
-    prevent any RPCs, since session access requires cache transaction RPCs regardless
-    of whether any session attributes changed.\n\n In the new implementation, the
-    timestamp of a session is replicated on every request.\n This prevents stale session
-    metadata following failover.\n "
+  message: |-
+    The EAP 7 Web Session Clustering configuration deprecates `max-unreplicated-interval` element in `jboss-web.xml` file descriptor.
+
+     Previously, this configuration option was an optimization that would prevent the replication of a session’s timestamp if no session attribute was changed. While this sounds nice, in practice it doesn't prevent any RPCs, since session access requires cache transaction RPCs regardless of whether any session attributes changed.
+
+     In the new implementation, the timestamp of a session is replicated on every request.
+     This prevents stale session metadata following failover.
   ruleID: jboss-eap5and6to7-xml-38004
   when:
     builtin.xml:
@@ -564,10 +563,10 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration deprecates `snapshot-mode`
-    element in `jboss-web.xml` file descriptor.\n\n Previously, one could configure
-    `snapshot-mode` as INSTANT or INTERVAL. Infinispan’s replication queue renders
-    this configuration option obsolete.\n "
+  message: |-
+    The EAP 7 Web Session Clustering configuration deprecates `snapshot-mode` element in `jboss-web.xml` file descriptor.
+
+     Previously, one could configure `snapshot-mode` as INSTANT or INTERVAL. Infinispan’s replication queue renders this configuration option obsolete.
   ruleID: jboss-eap5and6to7-xml-38005
   when:
     builtin.xml:
@@ -594,10 +593,9 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration removed `snapshot-interval`
-    element from `jboss-web.xml` file descriptor.\n This option was only relevant
-    for `<snapshot-mode>INTERVAL</snapshot-mode>`. Since `snapshot-mode` is no longer
-    used, this option is no longer used as well.\n "
+  message: |-
+    The EAP 7 Web Session Clustering configuration removed `snapshot-interval` element from `jboss-web.xml` file descriptor.
+     This option was only relevant for `<snapshot-mode>INTERVAL</snapshot-mode>`. Since `snapshot-mode` is no longer used, this option is no longer used as well.
   ruleID: jboss-eap5and6to7-xml-38006
   when:
     builtin.xml:
@@ -625,10 +623,12 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration deprecates `session-notification-policy`
-    element in `jboss-web.xml` file descriptor.\n\n Previously `session-notification-policy`
-    element defined a policy for triggering session events.\n\n In the new implementation,
-    this behaviour is specification driven and not configurable.\n "
+  message: |-
+    The EAP 7 Web Session Clustering configuration deprecates `session-notification-policy` element in `jboss-web.xml` file descriptor.
+
+     Previously `session-notification-policy` element defined a policy for triggering session events.
+
+     In the new implementation, this behaviour is specification driven and not configurable.
   ruleID: jboss-eap5and6to7-xml-38007
   when:
     builtin.xml:
@@ -655,15 +655,14 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration deprecates `passivation-config`
-    element and its sub-elements `use-session-passivation`, `passivation-min-idle-time`
-    and `passivation-max-idle-time` completely in `jboss-web.xml` file descriptor.\n\n
-    * `use-session-passivation` enabled the passivation, but now passivation is enabled
-    by specifying a non-negative value for `max-active-sessions` element.\n\n * `passivation-min-idle-time`
-    is not supported and the new implementation avoids waiting some time before the
-    passivation.\n\n * `passivation-max-idle-time` is not supported and the new implementation
-    supports only lazy passivation. Sessions are only passivated when necessary to
-    comply with `max-active-sessions`.\n "
+  message: |-
+    The EAP 7 Web Session Clustering configuration deprecates `passivation-config` element and its sub-elements `use-session-passivation`, `passivation-min-idle-time` and `passivation-max-idle-time` completely in `jboss-web.xml` file descriptor.
+
+     * `use-session-passivation` enabled the passivation, but now passivation is enabled by specifying a non-negative value for `max-active-sessions` element.
+
+     * `passivation-min-idle-time` is not supported and the new implementation avoids waiting some time before the passivation.
+
+     * `passivation-max-idle-time` is not supported and the new implementation supports only lazy passivation. Sessions are only passivated when necessary to comply with `max-active-sessions`.
   ruleID: jboss-eap5and6to7-xml-39000
   when:
     builtin.xml:
@@ -690,14 +689,13 @@
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
-  message: "\n The EAP 7 Web Session Clustering configuration changed `max-active-sessions`
-    element meaning in `jboss-web.xml` file descriptor.\n\n Previously, session creation
-    would fail if an additional session would cause the number of active sessions
-    to exceed the value specified by `<max-active-sessions/>`.\n\n In the new implementation,
-    `<max-active-sessions/>` is used to enable session passivation. If session creation
-    would cause the number of active sessions to exceed `<max-active-sessions/>`,\n
-    then the oldest session known to the session manager will passivate to make room
-    for the new session.\n "
+  message: |-
+    The EAP 7 Web Session Clustering configuration changed `max-active-sessions` element meaning in `jboss-web.xml` file descriptor.
+
+     Previously, session creation would fail if an additional session would cause the number of active sessions to exceed the value specified by `<max-active-sessions/>`.
+
+     In the new implementation, `<max-active-sessions/>` is used to enable session passivation. If session creation would cause the number of active sessions to exceed `<max-active-sessions/>`,
+     then the oldest session known to the session manager will passivate to make room for the new session.
   ruleID: jboss-eap5and6to7-xml-40000
   when:
     builtin.xml:

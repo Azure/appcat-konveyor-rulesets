@@ -18,9 +18,9 @@
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
-  message: "Caching in the RESTEasy client framework in resteasy-jaxrs is replaced
-    by caching in the JAX-RS 2.0 compliant resteasy-client module.\n Use `org.jboss.resteasy.client.jaxrs.cache`
-    package instead of `org.jboss.resteasy.client.cache`.\n "
+  message: |-
+    Caching in the RESTEasy client framework in resteasy-jaxrs is replaced by caching in the JAX-RS 2.0 compliant resteasy-client module.
+     Use `org.jboss.resteasy.client.jaxrs.cache` package instead of `org.jboss.resteasy.client.cache`.
   ruleID: resteasy-eap6-000001
   when:
     java.referenced:
@@ -42,17 +42,27 @@
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
-  message: "\n Replace class `org.jboss.resteasy.client.ClientRequest` with `org.jboss.resteasy.client.jaxrs.ResteasyClient`.\n\n
-    The following is an example of how to send a link header with the RESTEasy client
-    in EAP 6 with RESTEasy 2.3.x.\n\n ```java\n ClientRequest request = new ClientRequest(generateURL(\"/linkheader/str\"));\n
-    request.addLink(\"previous chapter\", \"previous\", \"http://example.com/TheBook/chapter2\",
-    null);\n ClientResponse response = request.post();\n LinkHeader header = response.getLinkHeader();\n
-    ```\n\n The following is an example of how to accomplish the same task with the
-    RESTEasy client in RESTEasy 3.\n\n ```java\n ResteasyClient client = new ResteasyClientBuilder().build();\n
-    Response response = client.target(generateURL(\"/linkheader/str\")).request()\n
-    .header(\"Link\", \"<http://example.com/TheBook/chapter2>; rel=\"previous\";\n
-    title=\"previous chapter\">\").post(Entity.text(new String()));\n javax.ws.rs.core.Link
-    link = response.getLink(\"previous\");\n ```\n\n "
+  message: |-
+    Replace class `org.jboss.resteasy.client.ClientRequest` with `org.jboss.resteasy.client.jaxrs.ResteasyClient`.
+
+     The following is an example of how to send a link header with the RESTEasy client in EAP 6 with RESTEasy 2.3.x.
+
+     ```java
+     ClientRequest request = new ClientRequest(generateURL("/linkheader/str"));
+     request.addLink("previous chapter", "previous", "http://example.com/TheBook/chapter2", null);
+     ClientResponse response = request.post();
+     LinkHeader header = response.getLinkHeader();
+     ```
+
+     The following is an example of how to accomplish the same task with the RESTEasy client in RESTEasy 3.
+
+     ```java
+     ResteasyClient client = new ResteasyClientBuilder().build();
+     Response response = client.target(generateURL("/linkheader/str")).request()
+     .header("Link", "<http://example.com/TheBook/chapter2>; rel="previous";
+     title="previous chapter">").post(Entity.text(new String()));
+     javax.ws.rs.core.Link link = response.getLink("previous");
+     ```
   ruleID: resteasy-eap6-000002
   when:
     java.referenced:
@@ -121,10 +131,12 @@
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
-  message: "\n There is no direct replacement for `org.jboss.resteasy.client.EntityTypeFactory`
-    class.\n\n `org.jboss.resteasy.client.ClientResponse<T>` is a generic type in
-    the RESTEasy client framework,\n but `org.jboss.resteasy.client.jaxrs.internal.ClientResponse`
-    in the resteasy-client module is not, so\n `EntityTypeFactory` is no longer useful.\n "
+  message: |-
+    There is no direct replacement for `org.jboss.resteasy.client.EntityTypeFactory` class.
+
+     `org.jboss.resteasy.client.ClientResponse<T>` is a generic type in the RESTEasy client framework,
+     but `org.jboss.resteasy.client.jaxrs.internal.ClientResponse` in the resteasy-client module is not, so
+     `EntityTypeFactory` is no longer useful.
   ruleID: resteasy-eap6-000005
   when:
     java.referenced:
@@ -1165,7 +1177,7 @@
     like to use YAML Resteasy Provider even it is not recommended, \n you need to
     add the SnakeYAML library (Maven dependency) into your application and enable
     it by creating file `META-INF/services/javax.ws.rs.ext.Providers` with line `org.jboss.resteasy.plugins.providers.YamlProvider`
-    in that file and your application.\n "
+    in that file and your application."
   ruleID: resteasy-eap6-000140
   when:
     java.referenced:
@@ -1191,7 +1203,7 @@
     is disabled by default, and it is not recommended to use this provider. \n If
     you need to enable it even against the recommendation, create or update file `META-INF/services/javax.ws.rs.ext.Providers`
     with adding line with `org.jboss.resteasy.plugins.providers.SerializableProvider`
-    string.\n "
+    string."
   ruleID: resteasy-eap6-000141
   when:
     or:
@@ -1229,7 +1241,7 @@
     The behavior is controlled by `resteasy.add.charset` parameter which is set to
     `true` by default and you can customize the `resteasy.add.charset` parameter to
     `false` in _web.xml_'s `context-param` element \n in case of wanting to keep previous
-    behavior.\n "
+    behavior."
   ruleID: resteasy-eap6-000142
   when:
     or:
