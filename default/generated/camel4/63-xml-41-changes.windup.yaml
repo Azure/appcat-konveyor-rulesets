@@ -90,7 +90,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineOperation.*
+        pattern: setHeader\("CamelAwsStateMachineOperation.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -117,7 +117,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachinesMaxResults.*
+        pattern: setHeader\("CamelAwsStateMachinesMaxResults.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -145,7 +145,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStepFunctionsStateMachineActivityName.*
+        pattern: setHeader\("CamelAwsStepFunctionsStateMachineActivityName.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -173,7 +173,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStepFunctionsStateMachineActivityArn.*
+        pattern: setHeader\("CamelAwsStepFunctionsStateMachineActivityArn.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -201,7 +201,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineActivitiesMaxResults.*
+        pattern: setHeader\("CamelAwsStateMachineActivitiesMaxResults.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -229,7 +229,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineExecutionArn.*
+        pattern: setHeader\("CamelAwsStateMachineExecutionArn.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -257,7 +257,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineExecutionName.*
+        pattern: setHeader\("CamelAwsStateMachineExecutionName.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -285,7 +285,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineExecutionInput.*
+        pattern: setHeader\("CamelAwsStateMachineExecutionInput.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -313,7 +313,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineExecutionTraceHeader.*
+        pattern: setHeader\("CamelAwsStateMachineExecutionTraceHeader.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -341,7 +341,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineExecutionHistoryMaxResults.*
+        pattern: setHeader\("CamelAwsStateMachineExecutionHistoryMaxResults.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -369,7 +369,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineExecutionHistoryIncludeExecutionData.*
+        pattern: setHeader\("CamelAwsStateMachineExecutionHistoryIncludeExecutionData.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -397,7 +397,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineExecutionHistoryReverseOrder.*
+        pattern: setHeader\("CamelAwsStateMachineExecutionHistoryReverseOrder.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
@@ -425,7 +425,7 @@
     or:
     - builtin.filecontent:
         filePattern: .*\.java
-        pattern: setHeader("CamelAwsStateMachineExecutionMaxResults.*
+        pattern: setHeader\("CamelAwsStateMachineExecutionMaxResults.*
     - builtin.xml:
         namespaces:
           c: http://camel.apache.org/schema/blueprint
