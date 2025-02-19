@@ -21,7 +21,7 @@
         filePattern: .*\.java
         pattern: \"[^\"]*java\:comp/websphere/UserActivitySession[^\"]*\"
     - java.referenced:
-        location: PACKAGE
+        location: IMPORT
         pattern: com.ibm.websphere.ActivitySession*
     - builtin.xml:
         filepaths:
@@ -293,7 +293,7 @@
     return false;\"> Liberty:Runtime environment known issues and restrictions</a>
     </li> \n <li> <a href=\"https://mediacenter.ibm.com/media/Dynamic+cache+in+Liberty/0_bnh3uidz\"
     title=\"Opens a new window\" onclick=\"javascript:helpWindow('https://mediacenter.ibm.com/media/Dynamic+cache+in+Liberty/0_bnh3uidz');
-    return false;\"> Dynamic cache in Liberty</a> document </li>\n </div> \n"
+    return false;\"> Dynamic cache in Liberty</a> document </li>\n </div>"
   ruleID: DynamicCacheRule
   when:
     java.referenced:
@@ -1389,11 +1389,11 @@
       pattern: (com.ibm.websphere.webservices*|com.ibm.websphere.websvcs.rm*|com.ibm.websphere.wsaddressing*|com.ibm.websphere.wsrf*|com.ibm.websphere.wssecurity*|com.ibm.websphere.cache.webservices*|com.ibm.ws.webservices*|com.ibm.ws.websvcs*|com.ibm.ws.wssecurity*|com.ibm.wsspi.soapcontainer*|com.ibm.wsspi.webservices*|com.ibm.wsspi.wssecurity*|com.ibm.wsspi.wsaddressing*|com.ibm.wsspi.wsrm*)
 - category: optional
   customVariables:
-  - name: WebSphereWebServicesGeneratedClassesRule_0_files
-    nameOfCaptureGroup: WebSphereWebServicesGeneratedClassesRule_0_files
-    pattern: (?P<WebSphereWebServicesGeneratedClassesRule_0_packages>(com.ibm.websphere.webservices\.[^.]+|com.ibm.websphere.websvcs.rm\.[^.]+|com.ibm.websphere.wsaddressing\.[^.]+|com.ibm.websphere.wsrf\.[^.]+|com.ibm.websphere.wssecurity\.[^.]+|com.ibm.websphere.cache.webservices\.[^.]+|com.ibm.ws.webservices\.[^.]+|com.ibm.ws.websvcs\.[^.]+|com.ibm.ws.wssecurity\.[^.]+|com.ibm.wsspi.soapcontainer\.[^.]+|com.ibm.wsspi.webservices\.[^.]+|com.ibm.wsspi.wssecurity\.[^.]+|com.ibm.wsspi.wsaddressing\.[^.]+|com.ibm.wsspi.wsrm\.[^.]+))
   - name: WebSphereWebServicesGeneratedClassesRule_0_packages
     nameOfCaptureGroup: WebSphereWebServicesGeneratedClassesRule_0_packages
+    pattern: (?P<WebSphereWebServicesGeneratedClassesRule_0_packages>(com.ibm.websphere.webservices\.[^.]+|com.ibm.websphere.websvcs.rm\.[^.]+|com.ibm.websphere.wsaddressing\.[^.]+|com.ibm.websphere.wsrf\.[^.]+|com.ibm.websphere.wssecurity\.[^.]+|com.ibm.websphere.cache.webservices\.[^.]+|com.ibm.ws.webservices\.[^.]+|com.ibm.ws.websvcs\.[^.]+|com.ibm.ws.wssecurity\.[^.]+|com.ibm.wsspi.soapcontainer\.[^.]+|com.ibm.wsspi.webservices\.[^.]+|com.ibm.wsspi.wssecurity\.[^.]+|com.ibm.wsspi.wsaddressing\.[^.]+|com.ibm.wsspi.wsrm\.[^.]+))
+  - name: WebSphereWebServicesGeneratedClassesRule_0_files
+    nameOfCaptureGroup: WebSphereWebServicesGeneratedClassesRule_0_files
     pattern: (?P<WebSphereWebServicesGeneratedClassesRule_0_packages>(com.ibm.websphere.webservices\.[^.]+|com.ibm.websphere.websvcs.rm\.[^.]+|com.ibm.websphere.wsaddressing\.[^.]+|com.ibm.websphere.wsrf\.[^.]+|com.ibm.websphere.wssecurity\.[^.]+|com.ibm.websphere.cache.webservices\.[^.]+|com.ibm.ws.webservices\.[^.]+|com.ibm.ws.websvcs\.[^.]+|com.ibm.ws.wssecurity\.[^.]+|com.ibm.wsspi.soapcontainer\.[^.]+|com.ibm.wsspi.webservices\.[^.]+|com.ibm.wsspi.wssecurity\.[^.]+|com.ibm.wsspi.wsaddressing\.[^.]+|com.ibm.wsspi.wsrm\.[^.]+))
   description: Application contains WSDL2Java generated classes
   effort: 0
