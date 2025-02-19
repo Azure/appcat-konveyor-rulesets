@@ -10,11 +10,13 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk17+
   - konveyor.io/target=openjdk
+  - konveyor.io/source=spring5
+  - konveyor.io/target=spring6+
   links:
   - title: 'JEP 411: Deprecate the Security Manager for Removal'
     url: https://openjdk.org/jeps/411
-  message: "\n The Java Security Manager API is deprecated in Java 17. Any references
-    to it should be removed. \n See the link for further information.\n "
+  message: "The Java Security Manager API is deprecated in Java 17. Any references
+    to it should be removed. \n See the link for further information."
   ruleID: security-manager-deprecation-00000
   when:
     java.referenced:
@@ -34,8 +36,8 @@
   links:
   - title: 'JEP 411: Deprecate the Security Manager for Removal'
     url: https://openjdk.org/jeps/411
-  message: "\n References to Java Security Manager API classes deprecated in Java
-    17. Any references to it should be removed. \n See the link for further information.\n "
+  message: "References to Java Security Manager API classes deprecated in Java 17.
+    Any references to it should be removed. \n See the link for further information."
   ruleID: security-manager-deprecation-00010
   when:
     java.referenced:
@@ -55,8 +57,8 @@
   links:
   - title: 'JEP 411: Deprecate the Security Manager for Removal'
     url: https://openjdk.org/jeps/411
-  message: "\n The java.lang.System::getSecurityManager and java.lang.System::setSecurityManager
-    methods have been deprecated in Java 17. \n See the link for further information.\n "
+  message: "The java.lang.System::getSecurityManager and java.lang.System::setSecurityManager
+    methods have been deprecated in Java 17. \n See the link for further information."
   ruleID: security-manager-deprecation-00020
   when:
     java.referenced:
@@ -74,8 +76,8 @@
   links:
   - title: 'JEP 411: Deprecate the Security Manager for Removal'
     url: https://openjdk.org/jeps/411
-  message: "\n The java.lang.Thread::checkAccess method has been deprecated in Java
-    17. \n See the link for further information.\n "
+  message: "The java.lang.Thread::checkAccess method has been deprecated in Java 17.
+    \n See the link for further information."
   ruleID: security-manager-deprecation-00030
   when:
     java.referenced:
@@ -93,8 +95,8 @@
   links:
   - title: 'JEP 411: Deprecate the Security Manager for Removal'
     url: https://openjdk.org/jeps/411
-  message: "\n The java.lang.ThreadGroup::checkAccess method has been deprecated in
-    Java 17. \n See the link for further information.\n "
+  message: "The java.lang.ThreadGroup::checkAccess method has been deprecated in Java
+    17. \n See the link for further information."
   ruleID: security-manager-deprecation-00040
   when:
     java.referenced:
@@ -112,8 +114,8 @@
   links:
   - title: 'JEP 411: Deprecate the Security Manager for Removal'
     url: https://openjdk.org/jeps/411
-  message: "\n The java.util.logging.LogManager::checkAccess method has been deprecated
-    in Java 17. \n See the link for further information.\n "
+  message: "The java.util.logging.LogManager::checkAccess method has been deprecated
+    in Java 17. \n See the link for further information."
   ruleID: security-manager-deprecation-00050
   when:
     java.referenced:
@@ -134,8 +136,8 @@
   links:
   - title: 'JEP 411: Deprecate the Security Manager for Removal'
     url: https://openjdk.org/jeps/411
-  message: "\n The java.util.concurrent.Executors::{{methodNames}} method has been
-    deprecated in Java 17. \n See the link for further information.\n "
+  message: "The java.util.concurrent.Executors::{{methodNames}} method has been deprecated
+    in Java 17. \n See the link for further information."
   ruleID: security-manager-deprecation-00060
   when:
     java.referenced:
@@ -156,8 +158,8 @@
   links:
   - title: 'JEP 411: Deprecate the Security Manager for Removal'
     url: https://openjdk.org/jeps/411
-  message: "\n The javax.security.auth.Subject::{{methName}} method has been deprecated
-    in Java 17. \n See the link for further information.\n "
+  message: "The javax.security.auth.Subject::{{methName}} method has been deprecated
+    in Java 17. \n See the link for further information."
   ruleID: security-manager-deprecation-00070
   when:
     java.referenced:
