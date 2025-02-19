@@ -212,7 +212,7 @@
         pattern: javax.faces.view.facelets.FaceletsResourceResolver
     - java.referenced:
         pattern: javax.faces.view.facelets.ResourceResolver
-- category: mandatory
+- category: potential
   customVariables: []
   description: JSP support has been removed in Jakarta EE 10
   effort: 5
@@ -230,15 +230,23 @@
     url: https://github.com/jakartaee/faces/issues/1581
   - title: Faces and JSPs
     url: https://access.redhat.com/articles/6980265#faces_jsp
-  message: JSP support has been removed in Jakarta EE 10. Facelets will remain as
-    the only default view language, and views can also now be created solely using
-    java.
+  message: As of Jakarta EE 10, Jakarta Faces does no longer support JSP as a faces
+    view technology. JSP usage within Jakarta Faces must be removed/substituted. Facelets
+    will remain as the only default view language, and views can also now be created
+    solely using java.
   ruleID: eap8-faces-00009
   when:
-    or:
-    - builtin.filecontent:
-        filePattern: .*\.jsp
-        pattern: <jsp
-    - builtin.filecontent:
-        filePattern: .*\.jsp
-        pattern: <%
+    and:
+    - or:
+      - builtin.filecontent:
+          filePattern: .*\.jsp
+          pattern: <jsp
+      - builtin.filecontent:
+          filePattern: .*\.jsp
+          pattern: <%
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: org\.jboss\.spec\.javax\.faces\..*
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: com\.sun\.faces\..*

@@ -5,6 +5,8 @@
   labels:
   - konveyor.io/target=eap8
   - konveyor.io/target=eap
+  - konveyor.io/target=jws6+
+  - konveyor.io/target=jws
   - konveyor.io/source
   links: []
   message: '`javax.xml.soap.SOAPElementFactory.newInstance()` must be replaced with
@@ -21,6 +23,8 @@
   labels:
   - konveyor.io/target=eap8
   - konveyor.io/target=eap
+  - konveyor.io/target=jws6+
+  - konveyor.io/target=jws
   - konveyor.io/source
   links: []
   message: '`javax.xml.soap.SOAPElementFactory.create()` must be replaced with `jakarta.xml.soap.SOAPFactory.createElement()`.

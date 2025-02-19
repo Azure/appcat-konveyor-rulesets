@@ -8,6 +8,8 @@
   - konveyor.io/source=eap
   - konveyor.io/target=eap8
   - konveyor.io/target=eap
+  - konveyor.io/target=jws6+
+  - konveyor.io/target=jws
   - JakartaEE
   - eap8
   links: []
@@ -29,6 +31,8 @@
   - konveyor.io/source=eap
   - konveyor.io/target=eap8
   - konveyor.io/target=eap
+  - konveyor.io/target=jws6+
+  - konveyor.io/target=jws
   - JakartaEE
   - eap8
   links:
@@ -52,6 +56,8 @@
   - konveyor.io/source=eap
   - konveyor.io/target=eap8
   - konveyor.io/target=eap
+  - konveyor.io/target=jws6+
+  - konveyor.io/target=jws
   - JakartaEE
   - eap8
   links:
@@ -75,6 +81,8 @@
   - konveyor.io/source=eap
   - konveyor.io/target=eap8
   - konveyor.io/target=eap
+  - konveyor.io/target=jws6+
+  - konveyor.io/target=jws
   - JakartaEE
   - eap8
   links: []

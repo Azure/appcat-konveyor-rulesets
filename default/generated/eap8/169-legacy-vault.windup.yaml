@@ -7,8 +7,8 @@
   - konveyor.io/target=eap
   - konveyor.io/source
   links: []
-  message: "\n Vault support has been removed in EAP8; migration to Elytron credential
-    store is mandatory.\n "
+  message: Vault support has been removed in EAP8; migration to Elytron credential
+    store is mandatory.
   ruleID: legacy-vault-00010
   when:
     builtin.filecontent:
