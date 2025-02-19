@@ -9,8 +9,8 @@
   - konveyor.io/target=java-ee
   - konveyor.io/source
   links: []
-  message: "\n Empty import definition in .jsp or .jspf files would fail in compilation
-    time and needs to be removed.\n "
+  message: Empty import definition in .jsp or .jspf files would fail in compilation
+    time and needs to be removed.
   ruleID: jsp-01000
   when:
     builtin.filecontent:

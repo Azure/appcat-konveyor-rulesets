@@ -34,9 +34,10 @@
     url: https://access.redhat.com/documentation/en-us/JBoss_Enterprise_Application_Platform/6.4/html/Administration_and_Configuration_Guide/sect-Configuration1.html#Configure_the_JMS_Server1
   - title: JavaEE 6 - JMS Interfaces
     url: https://docs.oracle.com/javaee/6/api/javax/jms/package-summary.html#package_description
-  message: "\n \n `QueueConnectionFactory` was used to obtain connection to JMS queues.\n\n
-    Replace the lookup string `QueueConnectionFactory` with `ConnectionFactory`.\n
-    \n "
+  message: |-
+    `QueueConnectionFactory` was used to obtain connection to JMS queues.
+
+     Replace the lookup string `QueueConnectionFactory` with `ConnectionFactory`.
   ruleID: jboss-eap5-java-02000
   when:
     or:
@@ -70,9 +71,9 @@
     url: https://docs.jboss.org/ejb3/docs/reference/build/reference/en/html/jboss_extensions.html
   - title: JBoss EJB 3.0 Javadoc
     url: https://docs.jboss.org/ejb3/embedded/api/org/jboss/annotation/ejb/package-summary.html
-  message: "\n The `@Service` annotation is one of JBoss EJB 3.0 extensions which
-    creates a singleton EJB.\n To achieve the singleton nature of the `@Service` annotation,
-    use the EJB3.1 spec `@Singleton` bean\n "
+  message: |-
+    The `@Service` annotation is one of JBoss EJB 3.0 extensions which creates a singleton EJB.
+     To achieve the singleton nature of the `@Service` annotation, use the EJB3.1 spec `@Singleton` bean
   ruleID: jboss-eap5-java-04000
   when:
     java.referenced:
@@ -103,10 +104,10 @@
     url: https://docs.jboss.org/ejb3/docs/reference/build/reference/en/html/jboss_extensions.html
   - title: JBoss EJB 3.0 Javadoc
     url: https://docs.jboss.org/ejb3/embedded/api/org/jboss/annotation/ejb/package-summary.html
-  message: "\n The `@Management` annotation is one of JBoss EJB 3.0 extensions which
-    wraps the the bean\n as an MBean and install it in the JBoss MBean Server.\n To
-    achieve the singleton nature of the `@Service` and `@Management` annotations,
-    use the EJB3.1 spec `@Singleton` bean.\n "
+  message: |-
+    The `@Management` annotation is one of JBoss EJB 3.0 extensions which wraps the the bean
+     as an MBean and install it in the JBoss MBean Server.
+     To achieve the singleton nature of the `@Service` and `@Management` annotations, use the EJB3.1 spec `@Singleton` bean.
   ruleID: jboss-eap5-java-05000
   when:
     java.referenced:
@@ -129,9 +130,10 @@
     url: https://docs.jboss.org/ejb3/docs/reference/build/reference/en/html/jboss_extensions.html
   - title: JBoss EJB 3.0 Javadoc
     url: https://docs.jboss.org/ejb3/embedded/api/org/jboss/annotation/ejb/package-summary.html
-  message: "\n The `@LocalBinding` annotation is one of JBoss EJB 3.0 extensions\n
-    which specifies the local jndi binding for an EJB local interface.\n Migrate to
-    `org.jboss.ejb3.annotation.LocalBinding`.\n "
+  message: |-
+    The `@LocalBinding` annotation is one of JBoss EJB 3.0 extensions
+     which specifies the local jndi binding for an EJB local interface.
+     Migrate to `org.jboss.ejb3.annotation.LocalBinding`.
   ruleID: jboss-eap5-java-06000
   when:
     java.referenced:
@@ -154,9 +156,10 @@
     url: https://docs.jboss.org/ejb3/docs/reference/build/reference/en/html/jboss_extensions.html
   - title: JBoss EJB 3.0 Javadoc
     url: https://docs.jboss.org/ejb3/embedded/api/org/jboss/annotation/ejb/package-summary.html
-  message: "\n The `@Depends` annotation is one of JBoss EJB 3.0 extensions\n which
-    specifies a deployment dependency for a bean.\n Validate that a JBoss EAP 6 Dependency
-    exists.\n "
+  message: |-
+    The `@Depends` annotation is one of JBoss EJB 3.0 extensions
+     which specifies a deployment dependency for a bean.
+     Validate that a JBoss EAP 6 Dependency exists.
   ruleID: jboss-eap5-java-07000
   when:
     java.referenced:
@@ -178,8 +181,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This package has been relocated to `org.jboss.ws.api.annotation` as
-    specified in the\n migration guide.\n "
+  message: |-
+    This package has been relocated to `org.jboss.ws.api.annotation` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08000
   when:
     java.referenced:
@@ -201,8 +205,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This package has been relocated to `org.jboss.ws.api.binding` as specified
-    in the\n migration guide.\n "
+  message: |-
+    This package has been relocated to `org.jboss.ws.api.binding` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08100
   when:
     java.referenced:
@@ -224,8 +229,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This package has been relocated to `org.jboss.ws.api.monitoring` as
-    specified in the\n migration guide.\n "
+  message: |-
+    This package has been relocated to `org.jboss.ws.api.monitoring` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08200
   when:
     java.referenced:
@@ -247,8 +253,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This package has been relocated to `org.jboss.ws.tools.ant` as specified
-    in the\n migration guide.\n "
+  message: |-
+    This package has been relocated to `org.jboss.ws.tools.ant` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08300
   when:
     java.referenced:
@@ -270,8 +277,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This package has been relocated to `org.jboss.ws.tools.cmd` as specified
-    in the\n migration guide.\n "
+  message: |-
+    This package has been relocated to `org.jboss.ws.tools.cmd` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08400
   when:
     java.referenced:
@@ -291,8 +299,9 @@
   - ejb
   - jbossws
   links: []
-  message: "\n This package has been relocated to `org.jboss.ws.api.tools` as specified
-    in the\n migration guide.\n "
+  message: |-
+    This package has been relocated to `org.jboss.ws.api.tools` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08500
   when:
     java.referenced:
@@ -314,8 +323,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This class has been relocated to `org.jboss.ws.api.util.ServiceLoader`
-    as specified in the\n migration guide.\n "
+  message: |-
+    This class has been relocated to `org.jboss.ws.api.util.ServiceLoader` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08600
   when:
     java.referenced:
@@ -336,8 +346,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This package has been relocated to `org.jboss.ws.api.handler` as specified
-    in the\n migration guide.\n "
+  message: |-
+    This package has been relocated to `org.jboss.ws.api.handler` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08700
   when:
     java.referenced:
@@ -359,8 +370,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This package has been relocated to `org.jboss.ws.api.addressing` as
-    specified in the\n migration guide.\n "
+  message: |-
+    This package has been relocated to `org.jboss.ws.api.addressing` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08800
   when:
     java.referenced:
@@ -382,8 +394,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This class has been relocated to `org.jboss.ws.api.util.DOMUtils` as
-    specified in the\n migration guide.\n "
+  message: |-
+    This class has been relocated to `org.jboss.ws.api.util.DOMUtils` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-08900
   when:
     java.referenced:
@@ -402,8 +415,9 @@
   - ejb
   - jbossws
   links: []
-  message: "\n This package has been relocated to `org.jboss.ws.common` as specified
-    in the\n migration guide.\n "
+  message: |-
+    This package has been relocated to `org.jboss.ws.common` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-09000
   when:
     java.referenced:
@@ -425,8 +439,9 @@
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
-  message: "\n This class has been relocated to `org.jboss.ws.api.annotation.EndpointConfig`
-    as specified in the\n migration guide.\n "
+  message: |-
+    This class has been relocated to `org.jboss.ws.api.annotation.EndpointConfig` as specified in the
+     migration guide.
   ruleID: jboss-eap5-java-09100
   when:
     java.referenced:

@@ -13,9 +13,9 @@
   - konveyor.io/target=eap
   - catchall
   links: []
-  message: "\n This is an old Doug Lea Concurrency util type and needs to be migrated
-    to a compatible `java.util.concurrent` API.\n There is currently no detailed information
-    about this type.\n "
+  message: |-
+    This is an old Doug Lea Concurrency util type and needs to be migrated to a compatible `java.util.concurrent` API.
+     There is currently no detailed information about this type.
   ruleID: generic-catchall-00000
   when:
     java.referenced:
@@ -33,9 +33,9 @@
   - konveyor.io/target=eap
   - catchall
   links: []
-  message: "\n This type is the backport of java.util.concurrent API, introduced in
-    Java 5.0 and further refined in Java 6.0, to older Java platforms.\n You should
-    use java.util.concurrent API instead.\n "
+  message: |-
+    This type is the backport of java.util.concurrent API, introduced in Java 5.0 and further refined in Java 6.0, to older Java platforms.
+     You should use java.util.concurrent API instead.
   ruleID: generic-catchall-00001
   when:
     java.referenced:
@@ -60,8 +60,9 @@
   - catchall
   - mule
   links: []
-  message: "\n Mule API `org.mule.{{packageRemainder}}.{{type}}` was used.\n You should
-    convert these types to Apache Camel.\n "
+  message: |-
+    Mule API `org.mule.{{packageRemainder}}.{{type}}` was used.
+     You should convert these types to Apache Camel.
   ruleID: generic-catchall-00002
   when:
     java.referenced:
@@ -153,8 +154,9 @@
   - catchall
   - tibco
   links: []
-  message: "\n Tibco `com.tibco.{{packageRemainder}}.{{type}}` reference found.\n
-    No specific details available.\n "
+  message: |-
+    Tibco `com.tibco.{{packageRemainder}}.{{type}}` reference found.
+     No specific details available.
   ruleID: generic-catchall-00300
   when:
     java.referenced:
@@ -240,14 +242,14 @@
       pattern: org.apache.(activeio|activemq)*
 - category: potential
   customVariables:
-  - name: type
-    nameOfCaptureGroup: type
-    pattern: org.(?P<subpackage>(jboss|jbpm).)?(?P<packageRemainder>([a-z]+\.)*)?(?P<type>[^.()]+)
   - name: subpackage
     nameOfCaptureGroup: subpackage
     pattern: org.(?P<subpackage>(jboss|jbpm).)?(?P<packageRemainder>([a-z]+\.)*)?(?P<type>[^.()]+)
   - name: packageRemainder
     nameOfCaptureGroup: packageRemainder
+    pattern: org.(?P<subpackage>(jboss|jbpm).)?(?P<packageRemainder>([a-z]+\.)*)?(?P<type>[^.()]+)
+  - name: type
+    nameOfCaptureGroup: type
     pattern: org.(?P<subpackage>(jboss|jbpm).)?(?P<packageRemainder>([a-z]+\.)*)?(?P<type>[^.()]+)
   description: JBoss API reference
   effort: 0
