@@ -10,7 +10,7 @@
   links:
   - title: 'Camel 3 - Migration Guide: Zip and Gzip dafaformats'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_zip_and_gzip_dataformat
-  message: "`zip` and `gzip` dataformats were renamed to `zipdeflater` and `gzipdeflater`\n\n "
+  message: '`zip` and `gzip` dataformats were renamed to `zipdeflater` and `gzipdeflater`'
   ruleID: xml-dsl-changes-00001
   when:
     or:
@@ -34,7 +34,7 @@
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_xml_dsl_migration
-  message: "`custom` load balancer was renamed to `customLoadBalancer`\n\n "
+  message: '`custom` load balancer was renamed to `customLoadBalancer`'
   ruleID: xml-dsl-changes-00002
   when:
     or:
@@ -58,7 +58,7 @@
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_xml_dsl_migration
-  message: "`zipFile` data format was renamed to `zipfile`\n\n "
+  message: '`zipFile` data format was renamed to `zipfile`'
   ruleID: xml-dsl-changes-00003
   when:
     or:
@@ -90,7 +90,7 @@
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_xml_dsl_migration
-  message: "`keyOrTrustStoreParametersId` attribute was renamed to `keyOrTrustStoreParametersRef`\n\n "
+  message: '`keyOrTrustStoreParametersId` attribute was renamed to `keyOrTrustStoreParametersRef`'
   ruleID: xml-dsl-changes-00004
   when:
     or:
@@ -114,8 +114,9 @@
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_xml_dsl_migration
-  message: "Hystrix circuit breaker has been generalized as circuit breaker. Use `circuitBreaker`\n
-    instead of `hystrix'.\n "
+  message: |-
+    Hystrix circuit breaker has been generalized as circuit breaker. Use `circuitBreaker`
+     instead of `hystrix'.
   ruleID: xml-dsl-changes-00005
   when:
     or:
@@ -139,8 +140,9 @@
   links:
   - title: Camel 3 - Migration Guide - Aggregate EIP changes
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_aggregate_eip_in_xml_dsl
-  message: "Use `completionSizeExpression` instead of `completionSize`. Expressions
-    (not the attributes) for\n setting correlation size/timeout were renamed.\n "
+  message: |-
+    Use `completionSizeExpression` instead of `completionSize`. Expressions (not the attributes) for
+     setting correlation size/timeout were renamed.
   ruleID: xml-dsl-changes-00006
   when:
     or:
@@ -164,8 +166,10 @@
   links:
   - title: Camel 3 - Migration Guide - Aggregate EIP changes
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_aggregate_eip_in_xml_dsl
-  message: "Use `completionTimeoutExpression` instead of `completionTimeout`. Expressions
-    (not the\n attributes) for\n setting correlation size/timeout were renamed.\n "
+  message: |-
+    Use `completionTimeoutExpression` instead of `completionTimeout`. Expressions (not the
+     attributes) for
+     setting correlation size/timeout were renamed.
   ruleID: xml-dsl-changes-00007
   when:
     or:

@@ -11,8 +11,8 @@
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
-  message: "\n The class `org.apache.camel.processor.aggregate.AggregationStrategy`
-    has been moved to `org.apache.camel.AggregationStrategy`.\n "
+  message: The class `org.apache.camel.processor.aggregate.AggregationStrategy` has
+    been moved to `org.apache.camel.AggregationStrategy`.
   ruleID: java-generic-information-00000
   when:
     java.referenced:
@@ -33,9 +33,8 @@
   links:
   - title: 'Camel 3 - Migration Guide: Migrating custom Components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_migrating_custom_components
-  message: "\n The class `org.apache.camel.impl.{{SupportClass}}` has been moved to
-    `org.apache.camel.support.{{SupportClass}}`. It has been moved out of `org.apache.camel:camel-core`
-    and into `org.apache.camel:camel-support`.\n "
+  message: The class `org.apache.camel.impl.{{SupportClass}}` has been moved to `org.apache.camel.support.{{SupportClass}}`.
+    It has been moved out of `org.apache.camel:camel-core` and into `org.apache.camel:camel-support`.
   ruleID: java-generic-information-00001
   when:
     java.referenced:
@@ -51,7 +50,7 @@
   - konveyor.io/target=camel3+
   - konveyor.io/target=camel
   links: []
-  message: "`zip` and `gzip` dataformats were renamed to `zipdeflater and `gzipdeflater`\n "
+  message: '`zip` and `gzip` dataformats were renamed to `zipdeflater and `gzipdeflater`'
   ruleID: java-generic-information-00002
   when:
     or:
@@ -81,8 +80,8 @@
   - konveyor.io/target=camel3+
   - konveyor.io/target=camel
   links: []
-  message: "\n The class `org.apache.camel.impl.{{registry}}` has been removed. Use
-    `org.apache.camel.support.DefaultRegistry` instead.\n "
+  message: The class `org.apache.camel.impl.{{registry}}` has been removed. Use `org.apache.camel.support.DefaultRegistry`
+    instead.
   ruleID: java-generic-information-00004
   when:
     as: javaClass
@@ -102,9 +101,9 @@
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
-  message: "\n The class `org.apache.camel.processor.loadbalancer.SimpleLoadBalancerSupport`
-    has been removed. Use\n `org.apache.camel.processor.loadbalancer.LoadBalancerSupport`
-    instead.\n "
+  message: |-
+    The class `org.apache.camel.processor.loadbalancer.SimpleLoadBalancerSupport` has been removed. Use
+     `org.apache.camel.processor.loadbalancer.LoadBalancerSupport` instead.
   ruleID: java-generic-information-00005
   when:
     as: javaClass
@@ -126,7 +125,7 @@
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
-  message: "\n The class `org.apache.camel.{{removed}}` has been removed.\n "
+  message: The class `org.apache.camel.{{removed}}` has been removed.
   ruleID: java-generic-information-00006
   when:
     as: javaClass
@@ -145,8 +144,8 @@
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
-  message: "\n The class `org.apache.camel.util.toolbox.AggregationStrategies` has
-    been moved to `org.apache.camel.builder.AggregationStrategies`.\n "
+  message: The class `org.apache.camel.util.toolbox.AggregationStrategies` has been
+    moved to `org.apache.camel.builder.AggregationStrategies`.
   ruleID: java-generic-information-00008
   when:
     java.referenced:
@@ -164,8 +163,8 @@
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
-  message: "\n The class `org.apache.camel.management.JmxSystemPropertyKeys` has been
-    moved to ` org.apache.camel.api.management.JmxSystemPropertyKeys`.\n "
+  message: The class `org.apache.camel.management.JmxSystemPropertyKeys` has been
+    moved to ` org.apache.camel.api.management.JmxSystemPropertyKeys`.
   ruleID: java-generic-information-00009
   when:
     java.referenced:
@@ -183,7 +182,7 @@
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
-  message: "`includeRoutes` method has been removed\n "
+  message: '`includeRoutes` method has been removed'
   ruleID: java-generic-information-00010
   when:
     builtin.filecontent:
@@ -536,9 +535,9 @@
   links:
   - title: 'Camel 3 - Migration Guide: Idempotent repositories'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_idempotent_repositories
-  message: "\n The class `org.apache.camel.processor.idempotent.{{moved}}` has been
-    moved to `org.apache.camel.support.processor.idempotent.{{moved}}`. It has been
-    moved out of `org.apache.camel:camel-core` and into `org.apache.camel:camel-support`.\n "
+  message: The class `org.apache.camel.processor.idempotent.{{moved}}` has been moved
+    to `org.apache.camel.support.processor.idempotent.{{moved}}`. It has been moved
+    out of `org.apache.camel:camel-core` and into `org.apache.camel:camel-support`.
   ruleID: java-generic-information-00029
   when:
     or:
@@ -665,11 +664,13 @@
   links:
   - title: Camel 3 - Managed Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_jmx
-  message: "The method `org.apache.camel.CamelContext.{{method}}` has been moved to
-    `org.apache.camel.api.management.ManagedCamelContext.{{method}}`. You can access
-    it by adapting your CamelContext like so:\n\n `ManagedCamelContext managed = context.adapt(ManagedCamelContext.class);`\n
-    `managed.{{method}}(...);`\n\n If you want JMX to be enabled out of the box, `org.apache.camel:camel-management`
-    needs to be on the classpath.\n "
+  message: |-
+    The method `org.apache.camel.CamelContext.{{method}}` has been moved to `org.apache.camel.api.management.ManagedCamelContext.{{method}}`. You can access it by adapting your CamelContext like so:
+
+     `ManagedCamelContext managed = context.adapt(ManagedCamelContext.class);`
+     `managed.{{method}}(...);`
+
+     If you want JMX to be enabled out of the box, `org.apache.camel:camel-management` needs to be on the classpath.
   ruleID: java-generic-information-00045
   when:
     java.referenced:
@@ -772,9 +773,11 @@
   links:
   - title: Camel 3 - Catalog Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_camelcontext
-  message: "The method `org.apache.camel.CamelContext.{{method}}` has moved to `org.apache.camel.CatalogCamelContext.{{method}}`.
-    You can access it by adapting your `CamelContext` like so:\n\n `CatalogCamelContext
-    ccc = context.adapt(CatalogCamelContext.class);`\n `ccc.{{method}}(...);`\n "
+  message: |-
+    The method `org.apache.camel.CamelContext.{{method}}` has moved to `org.apache.camel.CatalogCamelContext.{{method}}`. You can access it by adapting your `CamelContext` like so:
+
+     `CatalogCamelContext ccc = context.adapt(CatalogCamelContext.class);`
+     `ccc.{{method}}(...);`
   ruleID: java-generic-information-00049
   when:
     java.referenced:
@@ -795,9 +798,9 @@
   links:
   - title: Camel 3 - Catalog Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_camelcontext
-  message: "The duplicate method `org.apache.camel.CamelContext.{{method}}` has been
+  message: The duplicate method `org.apache.camel.CamelContext.{{method}}` has been
     removed. You should use the `static` method `org.apache.camel.model.ModelHelper{{method}}`
-    instead.\n "
+    instead.
   ruleID: java-generic-information-00050
   when:
     java.referenced:
@@ -819,10 +822,11 @@
   links:
   - title: Camel 3 - Model Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_modelcamelcontext
-  message: "The method `org.apache.camel.CamelContext.{{method}}` has been moved to
-    `org.apache.camel.model.Model.{{method}}`. You can access it by adapting your
-    `CamelContext` like so:\n\n `ModelCamelContext ccc = context.adapt(ModelCamelContext.class);`\n
-    `mcc.{{method}}(...);`\n "
+  message: |-
+    The method `org.apache.camel.CamelContext.{{method}}` has been moved to `org.apache.camel.model.Model.{{method}}`. You can access it by adapting your `CamelContext` like so:
+
+     `ModelCamelContext ccc = context.adapt(ModelCamelContext.class);`
+     `mcc.{{method}}(...);`
   ruleID: java-generic-information-00051
   when:
     java.referenced:
@@ -844,10 +848,11 @@
   links:
   - title: Camel 3 - Extended Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_extended_camelcontext
-  message: "The method `org.apache.camel.CamelContext.{{method}}` has been moved to
-    `org.apache.camel.ExtendedCamelContext.{{method}}`. You can access it by adapting
-    your `CamelContext` like so:\n\n `ExtendedCamelContext ecc = context.adapt(ExtendedCamelContext.class);`\n
-    `ecc.{{method}}(...);`\n "
+  message: |-
+    The method `org.apache.camel.CamelContext.{{method}}` has been moved to `org.apache.camel.ExtendedCamelContext.{{method}}`. You can access it by adapting your `CamelContext` like so:
+
+     `ExtendedCamelContext ecc = context.adapt(ExtendedCamelContext.class);`
+     `ecc.{{method}}(...);`
   ruleID: java-generic-information-00052
   when:
     java.referenced:
