@@ -8,8 +8,8 @@
   - konveyor.io/target=openjdk19+
   - konveyor.io/target=openjdk
   links: []
-  message: "\n Several classes under `javax.swing.plaf.basic` have been deprecated
-    in JDK 19 for removal in a future release.\n "
+  message: Several classes under `javax.swing.plaf.basic` have been deprecated in
+    JDK 19 for removal in a future release.
   ruleID: deprecation-00010
   when:
     or:

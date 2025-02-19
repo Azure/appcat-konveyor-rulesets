@@ -8,8 +8,8 @@
   - konveyor.io/target=openjdk21+
   - konveyor.io/target=openjdk
   links: []
-  message: "\n The `load(URL)` method under `SynthLookAndFeel` has been deprecated
-    in JDK 21 for removal in a future release.\n "
+  message: The `load(URL)` method under `SynthLookAndFeel` has been deprecated in
+    JDK 21 for removal in a future release.
   ruleID: deprecation-00030
   when:
     or:

@@ -8,8 +8,8 @@
   - konveyor.io/target=openjdk18+
   - konveyor.io/target=openjdk
   links: []
-  message: "\n This `doAs` signature has been deprecated in JDK18 for removal in a
-    future release.\n "
+  message: This `doAs` signature has been deprecated in JDK18 for removal in a future
+    release.
   ruleID: deprecation-00000
   when:
     java.referenced:
@@ -25,8 +25,8 @@
   - konveyor.io/target=openjdk18+
   - konveyor.io/target=openjdk
   links: []
-  message: "\n The `Thread.stop()` signature has been deprecated in JDK18 for removal
-    in a future release.\n "
+  message: The `Thread.stop()` signature has been deprecated in JDK18 for removal
+    in a future release.
   ruleID: deprecation-00005
   when:
     java.referenced:
