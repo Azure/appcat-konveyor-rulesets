@@ -376,4 +376,5 @@
   ruleID: java-removals-00150
   when:
     java.referenced:
+      location: VARIABLE_DECLARATION
       pattern: java.lang.ClassLoader
