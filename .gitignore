@@ -1,2 +1,8 @@
+*.iml
 .idea
 .venv
+.classpath
+.factorypath
+.project
+.settings
+target

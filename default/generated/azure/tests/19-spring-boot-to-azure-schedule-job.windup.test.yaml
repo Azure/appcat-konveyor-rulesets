@@ -1,0 +1,13 @@
+rulesPath: ../19-spring-boot-to-azure-schedule-job.windup.yaml
+providers:
+- name: java
+  dataPath: ./data/19-spring-boot-to-azure-schedule-job
+- name: builtin
+  dataPath: ./data/19-spring-boot-to-azure-schedule-job
+tests:
+- ruleID: spring-boot-to-azure-schedule-job-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 3
+      messageMatches: The application uses Quartz scheduled jobs

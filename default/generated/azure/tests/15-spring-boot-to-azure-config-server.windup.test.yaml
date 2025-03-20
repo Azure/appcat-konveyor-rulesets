@@ -1,0 +1,20 @@
+rulesPath: ../15-spring-boot-to-azure-config-server.windup.yaml
+providers:
+- name: java
+  dataPath: ./data/15-spring-boot-to-azure-config-server
+- name: builtin
+  dataPath: ./data/15-spring-boot-to-azure-config-server
+tests:
+- ruleID: spring-boot-to-azure-config-server-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 3
+      messageMatches: The application uses a Spring Cloud Config Server connection
+        string
+- ruleID: spring-boot-to-azure-config-server-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: The application uses Spring Cloud Config Server
