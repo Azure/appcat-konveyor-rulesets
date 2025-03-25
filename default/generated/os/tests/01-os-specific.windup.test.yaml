@@ -1,0 +1,19 @@
+rulesPath: ../01-os-specific.windup.yaml
+providers:
+- name: java
+  dataPath: ./data/01-os-specific
+- name: builtin
+  dataPath: ./data/01-os-specific
+tests:
+- ruleID: os-specific-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 4
+      messageMatches: The application currently relies on a file system path
+- ruleID: os-specific-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application currently relies on a Dynamic-Link Library
