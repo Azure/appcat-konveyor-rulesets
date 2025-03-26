@@ -9,6 +9,7 @@ public class SQSExample {
     // Replace with your AWS region and SQS queue URL
     private static final String AWS_REGION = "us-west-2";
     private static final String QUEUE_URL = "your_sqs_queue_url";
+    private static final String AWSRegion = "us-west-2";
 
     public static void main(String[] args) {
         // Create SQS client

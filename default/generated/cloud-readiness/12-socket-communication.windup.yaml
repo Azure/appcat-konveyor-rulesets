@@ -18,16 +18,16 @@
     or:
     - java.referenced:
         location: IMPORT
-        pattern: java.net.(Socket|MulticastSocket|DatagramSocket|InetSocketAddress)
+        pattern: java.net.(Socket|MulticastSocket|DatagramSocket|InetSocketAddress)*
     - java.referenced:
         location: IMPORT
-        pattern: java.net.ServerSocket
+        pattern: java.net.ServerSocket*
     - java.referenced:
         location: IMPORT
-        pattern: java.nio.channels.AsynchronousServerSocketChannel
+        pattern: java.nio.channels.AsynchronousServerSocketChannel*
     - java.referenced:
         location: IMPORT
-        pattern: java.nio.channels.ServerSocketChannel
+        pattern: java.nio.channels.ServerSocketChannel*
 - category: optional
   customVariables:
   - name: niochannelclass

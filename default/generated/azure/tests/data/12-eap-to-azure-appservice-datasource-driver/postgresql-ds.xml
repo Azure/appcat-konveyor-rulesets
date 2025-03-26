@@ -5,7 +5,7 @@
         <driver>postgres</driver>
         <security>
             <user-name>application</user-name>
-            <password>s3cr3t</password>
+            <password>dummy_password</password>
         </security>
     </datasource>
 </datasources>
