@@ -4,6 +4,8 @@
   effort: 5
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=cache-service-migration
   links:
   - title: Azure Cache for Redis documentation
     url: https://learn.microsoft.com/azure/azure-cache-for-redis
@@ -29,6 +31,8 @@
   effort: 3
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=cache-service-migration
   links:
   - title: Azure Cache for Redis documentation
     url: https://learn.microsoft.com/azure/azure-cache-for-redis
@@ -74,6 +78,8 @@
   description: Coherence embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a Coherence library.\n
     \                   "
@@ -88,6 +94,8 @@
   description: Apache Commons JCS embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds an Apache Commons JCS
     library.\n                    "
@@ -102,6 +110,8 @@
   description: Dynacache embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a Dynacache library.\n
     \                   "
@@ -116,6 +126,8 @@
   description: Embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a library that provides
     caching.\n                   "
@@ -130,6 +142,8 @@
   description: Hazelcast embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a Hazelcast library.\n
     \                   "
@@ -144,6 +158,8 @@
   description: Apache Ignite embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds an Apache Ignite library.\n
     \                   "
@@ -158,6 +174,8 @@
   description: Infinispan embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds an Infinispan library.\n
     \                   "
@@ -172,6 +190,8 @@
   description: JBoss Cache embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embedds a JBoss Cache library.\n
     \                   "
@@ -186,6 +206,8 @@
   description: JCache embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a JCache library.\n                    "
   ruleID: embedded-cache-libraries-10000
@@ -199,6 +221,8 @@
   description: Memcached client embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a Memcached client library.\n
     \                   "
@@ -213,6 +237,8 @@
   description: Oscache embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds an Oscache library.\n
     \                   "
@@ -227,6 +253,8 @@
   description: ShiftOne (Java Object Cache) embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a ShiftOne library (Java
     Object Cache or JOCache).\n                    "
@@ -241,6 +269,8 @@
   description: SwarmCache embedded library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a SwarmCache library.\n
     \                   "
@@ -255,6 +285,8 @@
   description: Spring Boot Cache library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds the Spring Boot Cache
     library.\n                    "
@@ -274,6 +306,8 @@
   description: Redis Cache library
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds the Redis client.\n                    "
   ruleID: embedded-cache-libraries-16000-01

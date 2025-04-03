@@ -4,6 +4,8 @@
   effort: 0
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=spring-migration
   links:
   - title: Prepare the Spring Cloud Config server
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-apps?pivots=sc-standard-tier#prepare-the-spring-cloud-config-server
@@ -36,6 +38,8 @@
   description: Application properties file detected
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - domain=configuration-management
   links: []
   message: Application properties file detected
   ruleID: configuration-management-0200
@@ -49,6 +53,8 @@
   description: Spring datasource properties detected
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   message: Spring datasource properties detected
   ruleID: configuration-management-0300
@@ -63,6 +69,8 @@
   description: Spring logging properties detected
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - category=logging-management
   links: []
   message: Spring logging properties detected
   ruleID: configuration-management-0400
@@ -77,6 +85,8 @@
   description: Spring configuration properties annotation detected
   labels:
   - konveyor.io/include=always
+  - domain=cloud-native
+  - domain=configuration-management
   links: []
   message: Spring configuration properties annotation detected
   ruleID: configuration-management-0500
@@ -93,6 +103,8 @@
   effort: 0
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - domain=credential-management
   links:
   - title: Load a secret from Azure Key Vault in a Spring Boot application
     url: https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-key-vault
