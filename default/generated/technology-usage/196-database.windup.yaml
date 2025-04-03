@@ -2,6 +2,8 @@
   description: Embedded HSQLDB Driver
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-01400
   tag:
@@ -16,6 +18,8 @@
   effort: 3
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   - database
   links:
   - title: Azure Database for MySQL documentation
@@ -59,6 +63,8 @@
   description: Embedded Derby Driver
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-01600
   tag:
@@ -73,6 +79,8 @@
   effort: 3
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   - database
   links:
   - title: Azure PostgreSQL Flexible Server documentation
@@ -116,6 +124,8 @@
   description: Embedded H2 Driver
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-01800
   tag:
@@ -128,6 +138,8 @@
   description: Embedded Microsoft SQL Driver
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-01805
   tag:
@@ -145,6 +157,8 @@
   effort: 3
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   - database
   links:
   - title: Azure SQL documentation
@@ -184,6 +198,8 @@
   description: Embedded Oracle DB Driver
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-02000
   tag:
@@ -199,6 +215,8 @@
   description: Embedded Cassandra Client
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-02100
   tag:
@@ -230,6 +248,8 @@
   effort: 3
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   - database
   links:
   - title: Azure Managed Instance for Apache Cassandra documentation
@@ -279,6 +299,8 @@
   description: Embedded MckoiSQLDB Driver
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-02300
   tag:
@@ -291,6 +313,8 @@
   description: Embedded MongoDB Client
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-02400
   tag:
@@ -316,6 +340,8 @@
   effort: 3
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   - database
   links:
   - title: Azure Cosmos DB for MongoDB documentation
@@ -361,6 +387,8 @@
   description: Embedded framework - Morphia
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-02600
   tag:
@@ -373,6 +401,8 @@
   description: Embedded LevelDB Client
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-02700
   tag:
@@ -385,6 +415,8 @@
   description: Embedded Apache HBase Client
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-02800
   tag:
@@ -397,6 +429,8 @@
   description: Embedded Apache Accumulo Client
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-02900
   tag:
@@ -409,6 +443,8 @@
   description: Embedded Spring Data JPA
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   ruleID: database-03000
   tag:
@@ -429,6 +465,8 @@
   description: Embedded MariaDB Driver
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   links: []
   message: The application embeds an MariaDB Driver library.
   ruleID: database-03100
@@ -444,6 +482,8 @@
   effort: 3
   labels:
   - konveyor.io/include=always
+  - domain=azure-readiness
+  - category=database-migration
   - database
   links:
   - title: Azure Database for MariaDB documentation
