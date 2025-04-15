@@ -51,13 +51,13 @@
           pattern: ^([a-zA-Z0-9._-]*)mysql-connector([a-zA-Z0-9._-]*)\.jar$
       - builtin.filecontent:
           filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-          pattern: '(?i)jdbc:mysql'
+          pattern: (?i)jdbc:mysql
       - builtin.filecontent:
           filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-          pattern: '(?i)r2dbc:mysql'
+          pattern: (?i)r2dbc:mysql
       - builtin.filecontent:
           filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-          pattern: '(?i)r2dbc:pool:mysql'
+          pattern: (?i)r2dbc:pool:mysql
     - not: true
       or:
       - builtin.filecontent:
@@ -119,13 +119,13 @@
           pattern: ^([a-zA-Z0-9._-]*)postgresql([a-zA-Z0-9._-]*)\.jar$
       - builtin.filecontent:
           filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-          pattern: '(?i)jdbc:postgresql'
+          pattern: (?i)jdbc:postgresql
       - builtin.filecontent:
           filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-          pattern: '(?i)r2dbc:postgresql'
+          pattern: (?i)r2dbc:postgresql
       - builtin.filecontent:
           filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-          pattern: '(?i)r2dbc:pool:postgresql'
+          pattern: (?i)r2dbc:pool:postgresql
     - not: true
       or:
       - builtin.filecontent:
@@ -142,6 +142,7 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
   - domain=azure-readiness
   - category=database-migration
   - source-category=microsoft-sql
@@ -181,13 +182,13 @@
         pattern: ^mssql-jdbc([a-zA-Z0-9._-]*)\.jar$
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: '(?i)jdbc:sqlserver'
+        pattern: (?i)jdbc:sqlserver
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: '(?i)r2dbc:mssql'
+        pattern: (?i)r2dbc:mssql
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: '(?i)r2dbc:pool:mssql'
+        pattern: (?i)r2dbc:pool:mssql
 - category: potential
   customVariables: []
   description: Cassandra database found
@@ -196,6 +197,7 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
   - domain=azure-readiness
   - category=database-migration
   - source-category=cassandra
@@ -251,6 +253,7 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
   - domain=azure-readiness
   - category=database-migration
   - source-category=mongodb
@@ -302,6 +305,7 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
   - domain=azure-readiness
   - category=database-migration
   - source-category=mariadb
@@ -339,10 +343,10 @@
         pattern: ^([a-zA-Z0-9._-]*)mariadb([a-zA-Z0-9._-]*)\.jar$
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: '(?i)jdbc:mariadb'
+        pattern: (?i)jdbc:mariadb
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: '(?i)r2dbc:mariadb'
+        pattern: (?i)r2dbc:mariadb
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: '(?i)r2dbc:pool:mariadb'
+        pattern: (?i)r2dbc:pool:mariadb
