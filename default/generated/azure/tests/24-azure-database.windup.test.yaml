@@ -1,0 +1,43 @@
+rulesPath: ../24-azure-database.windup.yaml
+providers:
+- name: java
+  dataPath: ./data/24-azure-database
+- name: builtin
+  dataPath: ./data/24-azure-database
+tests:
+- ruleID: azure-database-mysql-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses a MySQL database to Azure
+- ruleID: azure-database-postgresql-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses a PostgreSQL database to Azure
+- ruleID: azure-database-microsoft-sql-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses a Microsoft SQL database to Azure
+- ruleID: azure-database-microsoft-cassandra-04000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses a Cassandra database to Azure
+- ruleID: azure-database-microsoft-mongodb-05000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses a MongoDB database to Azure
+- ruleID: azure-database-microsoft-mariadb-06000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses a MariaDB database to Azure

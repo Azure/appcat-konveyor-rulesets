@@ -2,308 +2,307 @@
   description: Embedded HSQLDB Driver
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
+  links: []
   ruleID: database-01400
   tag:
   - HSQLDB Driver
   - Embedded HSQLDB Driver
   when:
     builtin.file:
-      pattern: .*hsqldb.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)hsqldb([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
-  description: Embedded MySQL Driver
+  description: MySQL database found
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
+  links: []
+  message: MySQL database found
   ruleID: database-01500
   tag:
   - MySQL Driver
-  - Embedded MySQL Driver
   when:
-    builtin.file:
-      pattern: .*mysql-connector.*\.jar
+    and:
+    - or:
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: ([a-zA-Z0-9._-]*)mysql([a-zA-Z0-9._-]*)
+      - builtin.filecontent:
+          filePattern: build\.gradle$
+          pattern: mysql
+      - builtin.file:
+          pattern: ^([a-zA-Z0-9._-]*)mysql-connector([a-zA-Z0-9._-]*)\.jar$
+    - not: true
+      or:
+      - builtin.filecontent:
+          filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+          pattern: ([a-zA-Z0-9-]+)\.mysql\.database\.azure\.com$
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: ([a-zA-Z0-9._-]*)spring-cloud-azure-starter-jdbc-mysql([a-zA-Z0-9._-]*)
 - customVariables: []
   description: Embedded Derby Driver
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
+  links: []
   ruleID: database-01600
   tag:
   - Derby Driver
   - Embedded Derby Driver
   when:
     builtin.file:
-      pattern: .*derby.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)derby([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
-  description: Embedded PostgreSQL Driver
+  description: PostgreSQL database found
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
+  links: []
+  message: PostgreSQL database found
   ruleID: database-01700
   tag:
   - PostgreSQL Driver
-  - Embedded PostgreSQL Driver
   when:
-    builtin.file:
-      pattern: .*postgresql.*\.jar
+    and:
+    - or:
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: ([a-zA-Z0-9._-]*)postgresql([a-zA-Z0-9._-]*)
+      - builtin.filecontent:
+          filePattern: build\.gradle$
+          pattern: postgresql
+      - builtin.file:
+          pattern: ^([a-zA-Z0-9._-]*)postgresql([a-zA-Z0-9._-]*)\.jar$
+    - not: true
+      or:
+      - builtin.filecontent:
+          filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+          pattern: ([a-zA-Z0-9-]+)\.postgres\.database\.azure\.com$
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: ([a-zA-Z0-9._-]*)spring-cloud-azure-starter-jdbc-postgresql([a-zA-Z0-9._-]*)
 - customVariables: []
   description: Embedded H2 Driver
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
+  links: []
   ruleID: database-01800
   tag:
   - H2 Driver
   - Embedded H2 Driver
   when:
     builtin.file:
-      pattern: .*h2.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)h2([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded Microsoft SQL Driver
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-01900
+  links: []
+  ruleID: database-01805
   tag:
   - Microsoft SQL Driver
   - Embedded Microsoft SQL Driver
   when:
     or:
     - builtin.file:
-        pattern: sqljdbc.*\.jar
+        pattern: ^sqljdbc([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: mssql-jdbc.*\.jar
+        pattern: ^mssql-jdbc([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
-  description: Embedded SQLite Driver
+  description: Microsoft SQL database found
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-02000
+  links: []
+  message: Microsoft SQL database found
+  ruleID: database-01900
   tag:
-  - SQLite Driver
-  - Embedded SQLite Driver
+  - Microsoft SQL Driver
   when:
-    builtin.file:
-      pattern: .*sqlite-jdbc.*\.jar
+    or:
+    - builtin.file:
+        pattern: ^sqljdbc([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^mssql-jdbc([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded Oracle DB Driver
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-02100
+  links: []
+  ruleID: database-02000
   tag:
   - Oracle DB Driver
   - Embedded Oracle DB Driver
   when:
     or:
     - builtin.file:
-        pattern: .*jodbc.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)jodbc([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*ojdbc.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)ojdbc([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded Cassandra Client
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-02200
+  links: []
+  ruleID: database-02100
   tag:
   - Cassandra Client
   - Embedded Cassandra Client
   when:
     or:
     - builtin.file:
-        pattern: .*cassandra.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)sqlite-jdbc([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*hector.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)cassandra([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*astyanax.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)hector([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*phantom-dsl.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)astyanax([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*cql.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)phantom-dsl([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*hecuba-client.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)cql([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*c-star-path.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)hecuba-client([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*scale7-pelops.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)c-star-path([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)scale7-pelops([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
-  description: Embedded Axion Driver
+  description: Cassandra database found
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-02300
+  links: []
+  message: Cassandra database found
+  ruleID: database-02200
   tag:
-  - Axion Driver
-  - Embedded Axion Driver
+  - Cassandra Client
   when:
-    builtin.file:
-      pattern: .*axion.*\.jar
+    or:
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)cassandra([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)hector([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)astyanax([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)phantom-dsl([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)cql([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)hecuba-client([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)c-star-path([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)scale7-pelops([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded MckoiSQLDB Driver
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-02400
+  links: []
+  ruleID: database-02300
   tag:
   - MckoiSQLDB Driver
   - Embedded MckoiSQLDB Driver
   when:
     builtin.file:
-      pattern: .*mckoisqldb.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)mckoisqldb([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded MongoDB Client
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-02500
+  links: []
+  ruleID: database-02400
   tag:
   - MongoDB Client
   - Embedded MongoDB Client
   when:
     or:
     - builtin.file:
-        pattern: .*mongodb.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)mongodb([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*casbah.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)casbah([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*reactivemongo.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)reactivemongo([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*jongo.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)jongo([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*gmongo.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)gmongo([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*rogue.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)rogue([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
-  description: Embedded framework - Spring Data
+  description: MongoDB database found
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: MongoDB database found
+  ruleID: database-02500
+  tag:
+  - MongoDB Client
+  when:
+    or:
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)mongodb([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)casbah([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)reactivemongo([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)jongo([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)gmongo([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)rogue([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Morphia
   labels:
   - konveyor.io/include=always
   links: []
   ruleID: database-02600
   tag:
-  - Spring Data
-  - Embedded framework - Spring Data
-  when:
-    builtin.file:
-      pattern: spring-data.*\.jar
-- customVariables: []
-  description: Embedded framework - Morphia
-  labels:
-  - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-02700
-  tag:
   - Morphia
   - Embedded framework - Morphia
   when:
     builtin.file:
-      pattern: .*morphia.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)morphia([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded LevelDB Client
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-02800
+  links: []
+  ruleID: database-02700
   tag:
   - LevelDB Client
   - Embedded LevelDB Client
   when:
     builtin.file:
-      pattern: .*leveldb.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)leveldb([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded Apache HBase Client
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-02900
+  links: []
+  ruleID: database-02800
   tag:
   - Apache HBase Client
   - Embedded Apache HBase Client
   when:
     builtin.file:
-      pattern: .*hbase.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)hbase([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded Apache Accumulo Client
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 6 Supported Configurations
-    url: https://access.redhat.com/articles/111663
-  - title: Red Hat JBoss Enterprise Application Platform (EAP) 7 Supported Configurations
-    url: https://access.redhat.com/articles/2026253
-  ruleID: database-03100
+  links: []
+  ruleID: database-02900
   tag:
   - Apache Accumulo Client
   - Embedded Apache Accumulo Client
   when:
     builtin.file:
-      pattern: .*accumulo.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)accumulo([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded Spring Data JPA
   labels:
   - konveyor.io/include=always
   links: []
-  ruleID: database-03200
+  ruleID: database-03000
   tag:
   - Spring Data JPA
   - Embedded Spring Data JPA
@@ -318,3 +317,28 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.data.spring-data-jpa
+- customVariables: []
+  description: Embedded MariaDB Driver
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds an MariaDB Driver library.
+  ruleID: database-03100
+  tag:
+  - MariaDB Driver
+  - Embedded MariaDB Driver
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)mariadb([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: MariaDB database found
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: MariaDB database found
+  ruleID: database-03200
+  tag:
+  - MariaDB Driver
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)mariadb([a-zA-Z0-9._-]*)\.jar$

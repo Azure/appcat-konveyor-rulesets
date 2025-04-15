@@ -7,6 +7,8 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk20+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   links: []
   message: "\n Several classes under `javax` have been deprecated in JDK 20 for removal
     in a future release.\n "

@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    aws:
+      s3:
+        region: us-west-2
+      sqs:
+        enabled: true

@@ -1,0 +1,13 @@
+rulesPath: ../03-removed-classes.windup.yaml
+providers:
+- name: java
+  dataPath: ./data/03-removed-classes
+- name: builtin
+  dataPath: ./data/03-removed-classes
+tests:
+- ruleID: removed-classes-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: After being deprecated in OpenJDK 11, the pack20.*

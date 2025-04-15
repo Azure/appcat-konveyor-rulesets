@@ -1,0 +1,322 @@
+# rulesPath: ../26-embedded-framework-technology-usage.windup.yaml
+# providers:
+# - name: java
+#   dataPath: ./data/26-embedded-framework-technology-usage
+# - name: builtin
+#   dataPath: ./data/26-embedded-framework-technology-usage
+# tests:
+# - ruleID: technology-usage-embedded-framework-01000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Axis
+# - ruleID: technology-usage-embedded-framework-01010
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Axis2
+# - ruleID: technology-usage-embedded-framework-01100
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - CXF
+# - ruleID: technology-usage-embedded-framework-01200
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - XFire
+# - ruleID: technology-usage-embedded-framework-01300
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Jersey
+# - ruleID: technology-usage-embedded-framework-01400
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Unirest
+# - ruleID: technology-usage-embedded-framework-01500
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Hibernate
+# - ruleID: technology-usage-embedded-framework-01600
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Hibernate OGM
+# - ruleID: technology-usage-embedded-framework-01700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - EclipseLink
+# - ruleID: technology-usage-embedded-framework-02000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Spring Batch
+# - ruleID: technology-usage-embedded-framework-02200
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - AspectJ
+# - ruleID: technology-usage-embedded-framework-02300
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - JBPM
+# - ruleID: technology-usage-embedded-framework-02400
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - iLog
+# - ruleID: embedded-framework-embedded-framework-02700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - ehcache
+# - ruleID: embedded-framework-embedded-framework-02800
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - infinispan
+# - ruleID: embedded-framework-embedded-framework-02900
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Drools
+# - ruleID: embedded-framework-embedded-framework-03000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Camunda
+# - ruleID: embedded-framework-embedded-framework-03100
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Pega
+# - ruleID: embedded-framework-embedded-framework-03200
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Blaze
+# - ruleID: embedded-framework-embedded-framework-03300
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - MRules
+# - ruleID: embedded-framework-embedded-framework-03400
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Easy Rules
+# - ruleID: embedded-framework-embedded-framework-03800
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Cache API
+# - ruleID: technology-usage-embedded-framework-04700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - AOP Alliance
+# - ruleID: technology-usage-embedded-framework-05000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - SNMP4J
+# - ruleID: technology-usage-embedded-framework-05100
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - HTTP Client
+# - ruleID: technology-usage-embedded-framework-05300
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Javax Inject
+# - ruleID: technology-usage-embedded-framework-05400
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Google Guice
+# - ruleID: technology-usage-embedded-framework-05600
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Plexus Container
+# - ruleID: technology-usage-embedded-framework-05700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Weld
+# - ruleID: technology-usage-embedded-framework-05800
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Dagger
+# - ruleID: technology-usage-embedded-framework-05900
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - GIN
+# - ruleID: technology-usage-embedded-framework-06000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - PicoContainer
+# - ruleID: technology-usage-embedded-framework-06100
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Scaldi
+# - ruleID: technology-usage-embedded-framework-06200
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Macros
+# - ruleID: technology-usage-embedded-framework-06300
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Injekt for Kotlin
+# - ruleID: technology-usage-embedded-framework-06400
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Kodein
+# - ruleID: technology-usage-embedded-framework-06500
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Peaberry
+# - ruleID: technology-usage-embedded-framework-06600
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Sticky Configured
+# - ruleID: technology-usage-embedded-framework-06700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Ka DI
+# - ruleID: technology-usage-embedded-framework-06800
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Polyforms DI
+# - ruleID: technology-usage-embedded-framework-06900
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - JayWire
+# - ruleID: technology-usage-embedded-framework-07000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Silk DI
+# - ruleID: technology-usage-embedded-framework-07100
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Grapht DI
+# - ruleID: technology-usage-embedded-framework-07200
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Syringe
+# - ruleID: technology-usage-embedded-framework-07300
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Cfg Engine
+# - ruleID: technology-usage-embedded-framework-07400
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - BeanInject
+# - ruleID: technology-usage-embedded-framework-07500
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Tornado Inject
+# - ruleID: technology-usage-embedded-framework-07600
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Airframe
+# - ruleID: technology-usage-embedded-framework-07700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Winter
+# - ruleID: technology-usage-embedded-framework-07800
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - KouInject
+# - ruleID: technology-usage-embedded-framework-07900
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Iroh
+# - ruleID: technology-usage-embedded-framework-08000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Micro DI
+# - ruleID: technology-usage-embedded-framework-08100
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - SubCut
+# - ruleID: technology-usage-embedded-framework-08200
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Spring DI
+# - ruleID: technology-usage-embedded-framework-08300
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Micrometer
+# - ruleID: technology-usage-embedded-framework-08400
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Spring Web
+# - ruleID: technology-usage-embedded-framework-08600
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Spring Shell
+# - ruleID: technology-usage-embedded-framework-08700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Spring Scheduled
+# - ruleID: technology-usage-embedded-framework-08800
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Spring Cloud Function
+# - ruleID: technology-usage-embedded-framework-08900
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Quartz
+# - ruleID: technology-usage-embedded-framework-09000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Feign
+# - ruleID: technology-usage-embedded-framework-09100
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Zipkin
+# - ruleID: embedded-framework-embedded-framework-09300
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Eureka

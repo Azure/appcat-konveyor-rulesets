@@ -1,0 +1,14 @@
+# rulesPath: ../14-jetty-to-azure-external-resources.windup.yaml
+# providers:
+# - name: java
+#   dataPath: ./data/14-jetty-to-azure-external-resources
+# - name: builtin
+#   dataPath: ./data/14-jetty-to-azure-external-resources
+# tests:
+# - ruleID: jetty-to-azure-external-resources-01000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       atLeast: 2
+#       messageMatches: External resources are injected via Java Naming and Directory
+#         Interface (JNDI).*

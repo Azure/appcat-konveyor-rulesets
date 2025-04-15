@@ -1,0 +1,43 @@
+# Copyright (c) Microsoft Corporation.   
+
+# Licensed under the Apache License, Version 2.0 (the "License"); 
+# you may not use this file except in compliance with the License. 
+# You may obtain a copy of the License at 
+#     http://www.apache.org/licenses/LICENSE-2.0  
+
+# Unless required by applicable law or agreed to in writing, software 
+# distributed under the License is distributed on an "AS IS" BASIS, 
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+
+# See the License for the specific language governing permissions and 
+# limitations under the License. 
+- category: potential
+  customVariables: []
+  description: Restricted configurations found
+  effort: 1
+  labels:
+  - konveyor.io/source=springboot
+  - domain=azure-readiness
+  - category=spring-migration
+  links:
+  - title: Migrate Spring Boot applications to Azure Container Apps - Remove restricted configurations
+    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps#remove-restricted-configurations
+  - title: Connect to a managed Config Server for Spring in Azure Container Apps
+    url: https://learn.microsoft.com/azure/container-apps/java-config-server?tabs=azure-cli
+  - title: Connect to a managed Eureka Server for Spring in Azure Container Apps
+    url: https://learn.microsoft.com/azure/container-apps/java-eureka-server?tabs=azure-cli
+  message: "The application uses restricted configurations for Azure Container Apps.\n
+    These properties can be automatically injected into your application environment
+    by Azure Container Apps to access managed Config Server and managed Eureka Server.\n Please remove
+    them from your application, including configuration files, config server files,
+    command line parameters, Java system attributes, and environment variables.\n\n
+    If configured in **configuration files**: they will be ignored and overrided by
+    Azure Container Apps.\n \n If configured in **Config Server files**, **command line
+    parameters**, **Java system attribute**, **environment variable**: they need to
+    be removed or you might experience conflicts and unexpected behavior."
+  ruleID: spring-boot-to-azure-restricted-config-01000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        pattern: (eureka\.client\.(serviceUrl\.defaultZone|service-url\.defaultZone))|(eureka\.client\.tls\.keystore)|(eureka\.instance\.preferIpAddress)|(eureka\.instance\.instance-id)|(server\.port)|(spring\.cloud\.config\.tls\.keystore)|(spring\.config\.import)|(spring\.application\.name)|(spring\.jmx\.enabled)|(management\.endpoints\.jmx\.exposure\.include)

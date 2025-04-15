@@ -6,6 +6,9 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
+  - domain=cloud-native
+  - category=remote-communication
+  - source-category=java-mail
   - mail
   links:
   - title: Azure Communication Services documentation

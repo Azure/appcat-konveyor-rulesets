@@ -1,0 +1,84 @@
+rulesPath: ../01-embedded-cache.windup.yaml
+providers:
+- name: java
+  dataPath: ./data/01-embedded-cache
+- name: builtin
+  dataPath: ./data/01-embedded-cache
+tests:
+- ruleID: embedded-cache-01000
+  testCases: []
+- ruleID: embedded-cache-02000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Coherence embedded library
+- ruleID: embedded-cache-03000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Apache Commons JCS embedded library
+- ruleID: embedded-cache-04000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Dynacache embedded library
+- ruleID: embedded-cache-05000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Embedded library
+- ruleID: embedded-cache-06000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Hazelcast embedded library
+- ruleID: embedded-cache-07000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Apache Ignite embedded library
+- ruleID: embedded-cache-08000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Infinispan embedded library
+- ruleID: embedded-cache-09000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - JBoss Cache embedded library
+- ruleID: embedded-cache-10000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - JCache embedded library
+- ruleID: embedded-cache-11000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Memcached client embedded library
+- ruleID: embedded-cache-12000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Oscache embedded library
+- ruleID: embedded-cache-13000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - ShiftOne (Java Object Cache) embedded library
+- ruleID: embedded-cache-14000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - SwarmCache embedded library
+- ruleID: embedded-cache-15000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Spring Boot Cache library
+- ruleID: embedded-cache-16000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Caching - Redis Cache library

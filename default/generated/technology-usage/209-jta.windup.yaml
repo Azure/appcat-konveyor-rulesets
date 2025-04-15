@@ -9,7 +9,7 @@
   - Embedded library - Mycontainer JTA
   when:
     builtin.file:
-      pattern: mycontainer-jta.*\.jar
+      pattern: ^mycontainer-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Geronimo JTA
   labels:
@@ -21,7 +21,7 @@
   - Embedded library - Geronimo JTA
   when:
     builtin.file:
-      pattern: geronimo-jta.*\.jar
+      pattern: ^geronimo-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - OW2 JTA
   labels:
@@ -33,7 +33,7 @@
   - Embedded library - OW2 JTA
   when:
     builtin.file:
-      pattern: ow2-jta.*\.jar
+      pattern: ^ow2-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Evo JTA
   labels:
@@ -45,7 +45,7 @@
   - Embedded library - Evo JTA
   when:
     builtin.file:
-      pattern: evo-jta.*\.jar
+      pattern: ^evo-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - AKKA JTA
   labels:
@@ -57,7 +57,7 @@
   - Embedded library - AKKA JTA
   when:
     builtin.file:
-      pattern: akka-jta.*\.jar
+      pattern: ^akka-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - KumuluzEE JTA
   labels:
@@ -69,7 +69,7 @@
   - Embedded library - KumuluzEE JTA
   when:
     builtin.file:
-      pattern: kumuluzee-jta.*\.jar
+      pattern: ^kumuluzee-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Ignite JTA
   labels:
@@ -81,7 +81,7 @@
   - Embedded library - Ignite JTA
   when:
     builtin.file:
-      pattern: ignite-jta.*\.jar
+      pattern: ^ignite-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Nuxeo JTA/JCA
   labels:
@@ -93,7 +93,7 @@
   - Embedded library - Nuxeo JTA/JCA
   when:
     builtin.file:
-      pattern: nuxeo-runtime-jtajca.*\.jar
+      pattern: ^nuxeo-runtime-jtajca([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Everit JTA
   labels:
@@ -105,7 +105,7 @@
   - Embedded library - Everit JTA
   when:
     builtin.file:
-      pattern: org\.everit\.transaction\.propagator\.jta.*\.jar
+      pattern: ^org\.everit\.transaction\.propagator\.jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Demoiselle JTA
   labels:
@@ -117,7 +117,7 @@
   - Embedded library - Demoiselle JTA
   when:
     builtin.file:
-      pattern: demoiselle-jta.*\.jar
+      pattern: ^demoiselle-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Apache Meecrowave JTA
   labels:
@@ -129,7 +129,7 @@
   - Embedded library - Apache Meecrowave JTA
   when:
     builtin.file:
-      pattern: meecrowave-jta.*\.jar
+      pattern: ^meecrowave-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Apache Sirona JTA
   labels:
@@ -141,7 +141,7 @@
   - Embedded library - Apache Sirona JTA
   when:
     builtin.file:
-      pattern: sirona-jta.*\.jar
+      pattern: ^sirona-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Lift JTA
   labels:
@@ -153,7 +153,7 @@
   - Embedded library - Lift JTA
   when:
     builtin.file:
-      pattern: lift-jta.*\.jar
+      pattern: ^lift-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - WF Core JTA
   labels:
@@ -165,7 +165,7 @@
   - Embedded library - WF Core JTA
   when:
     builtin.file:
-      pattern: wf-core-jta.*\.jar
+      pattern: ^wf-core-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Java Transaction API (JTA)
   labels:
@@ -178,9 +178,9 @@
   when:
     or:
     - builtin.file:
-        pattern: jta.*\.jar
+        pattern: ^jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: javax-jta.*\.jar
+        pattern: ^javax-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - JBoss Transactions
   labels:
@@ -193,21 +193,21 @@
   when:
     or:
     - builtin.file:
-        pattern: jboss.*jta.*\.jar
+        pattern: ^jboss([a-zA-Z0-9._-]*)jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: jboss.*jts.*\.jar
+        pattern: ^jboss([a-zA-Z0-9._-]*)jts([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: jbossxts.*\.jar
+        pattern: ^jbossxts([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: jbossts.*\.jar
+        pattern: ^jbossts([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: arquillian-transaction-jta.*\.jar
+        pattern: ^arquillian-transaction-jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: weld-jta.*\.jar
+        pattern: ^weld-jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: wildfly.*jta.*\.jar
+        pattern: ^wildfly([a-zA-Z0-9._-]*)jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: transactions.*\.jar
+        pattern: ^transactions([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - GlassFish JTA
   labels:
@@ -220,11 +220,11 @@
   when:
     or:
     - builtin.file:
-        pattern: glassfish-jta.*\.jar
+        pattern: ^glassfish-jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: osgi-jta.*\.jar
+        pattern: ^osgi-jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: jta-l10n.*\.jar
+        pattern: ^jta-l10n([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Atomikos JTA
   labels:
@@ -237,11 +237,11 @@
   when:
     or:
     - builtin.file:
-        pattern: transactions-jta.*\.jar
+        pattern: ^transactions-jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: ks-jta.*\.jar
+        pattern: ^ks-jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: evo-jta-atomikos.*\.jar
+        pattern: ^evo-jta-atomikos([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Narayana Arjuna
   labels:
@@ -254,11 +254,11 @@
   when:
     or:
     - builtin.file:
-        pattern: .*narayana.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)narayana([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*arjuna.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)arjuna([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: tomcat-jta.*\.jar
+        pattern: ^tomcat-jta([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Spring Transactions
   labels:
@@ -271,6 +271,6 @@
   when:
     or:
     - builtin.file:
-        pattern: spring-.*jta.*\.jar
+        pattern: ^spring-([a-zA-Z0-9._-]*)jta([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: insight-plugin-jta.*\.jar
+        pattern: ^insight-plugin-jta([a-zA-Z0-9._-]*)\.jar$

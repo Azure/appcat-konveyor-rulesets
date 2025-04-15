@@ -10,7 +10,7 @@
   - Embedded technology - Java Server Faces
   when:
     builtin.filecontent:
-      filePattern: .*\.(jsp|xhtml|jspx)
+      filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(jsp|xhtml|jspx)$
       pattern: (java\.sun\.com/jsf/)|(xmlns\.jcp\.org/jsf)
 - customVariables: []
   description: Embedded technology - Java Server Pages
@@ -25,10 +25,10 @@
   when:
     or:
     - builtin.filecontent:
-        filePattern: .*\.(jsp|jspx|tag|tagx)
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(jsp|jspx|tag|tagx)$
         pattern: <%@\s*page\s+[^>]*\s*import\s*=\s*['"]([^'"]+)['"].*?%>
     - builtin.filecontent:
-        filePattern: .*\.(jsp|jspx|tag|tagx)
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(jsp|jspx|tag|tagx)$
         pattern: <%@\s*taglib\s+[^>]*\s*uri\s*=\s*['"]([^'"]+)['"].*?%>
 - customVariables: []
   description: Embedded technology - WebSocket
@@ -60,7 +60,7 @@
         location: INHERITANCE
         pattern: java.applet.Applet
     - builtin.file:
-        pattern: .*applet.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)applet([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded technology - JNLP
   labels:
@@ -73,7 +73,7 @@
   - Embedded technology - JNLP
   when:
     builtin.file:
-      pattern: .*\.jnlp
+      pattern: ^([a-zA-Z0-9._-]+)\.jnlp$
 - customVariables: []
   description: Embedded technology - JNLP
   labels:
@@ -87,9 +87,9 @@
   when:
     or:
     - builtin.file:
-        pattern: .*jnlp.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)jnlp([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*webstart.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)webstart([a-zA-Z0-9._-]*)\.jar$
 - category: potential
   customVariables: []
   description: Java Swing usage
@@ -121,7 +121,7 @@
         location: IMPORT
         pattern: javax.swing*
     - builtin.file:
-        pattern: .*swing.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)swing([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded technology - MiGLayout
   labels:
@@ -134,7 +134,7 @@
   - Embedded technology - MiGLayout
   when:
     builtin.file:
-      pattern: .*miglayout.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)miglayout([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded technology - JGoodies
   labels:
@@ -147,7 +147,7 @@
   - Embedded technology - JGoodies
   when:
     builtin.file:
-      pattern: .*jgoodies.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)jgoodies([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded technology - FormLayoutMaker
   labels:
@@ -160,7 +160,7 @@
   - Embedded technology - FormLayoutMaker
   when:
     builtin.file:
-      pattern: .*formlayoutmakerx.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)formlayoutmakerx([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded technology - MagicGroupLayout
   labels:
@@ -173,7 +173,7 @@
   - Embedded technology - MagicGroupLayout
   when:
     builtin.file:
-      pattern: .*magicgrouplayout.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)magicgrouplayout([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded technology - Standard Widget Toolkit (SWT)
   labels:
@@ -186,7 +186,7 @@
   - Embedded technology - Standard Widget Toolkit (SWT)
   when:
     builtin.file:
-      pattern: .*swt.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)swt([a-zA-Z0-9._-]*)\.jar$
 - category: potential
   customVariables: []
   description: JavaFX usage
@@ -214,7 +214,7 @@
   - JavaFX
   when:
     builtin.file:
-      pattern: .*javafx.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)javafx([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded technology - Eclipse RCP
   labels:
@@ -228,10 +228,10 @@
   when:
     or:
     - builtin.file:
-        pattern: rcp.*\.jar
+        pattern: ^rcp([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*eclipse\.rcp.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)eclipse\.rcp([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*eclipse.*runtime.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)eclipse([a-zA-Z0-9._-]*)runtime([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
-        pattern: .*eclipse\.ui.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)eclipse\.ui([a-zA-Z0-9._-]*)\.jar$

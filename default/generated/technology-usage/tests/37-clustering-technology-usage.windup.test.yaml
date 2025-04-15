@@ -1,0 +1,12 @@
+# rulesPath: ../37-clustering-technology-usage.windup.yaml
+# providers:
+# - name: java
+#   dataPath: ./data/37-clustering-technology-usage
+# - name: builtin
+#   dataPath: ./data/37-clustering-technology-usage
+# tests:
+# - ruleID: technology-usage-clustering-01000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Web Session

@@ -9,7 +9,7 @@
   - Embedded library - Apache Log4J
   when:
     builtin.file:
-      pattern: .*log4j.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)log4j([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Apache Commons Logging
   labels:
@@ -21,7 +21,7 @@
   - Embedded library - Apache Commons Logging
   when:
     builtin.file:
-      pattern: .*commons-logging.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)commons-logging([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - SLF4J
   labels:
@@ -33,7 +33,7 @@
   - Embedded library - SLF4J
   when:
     builtin.file:
-      pattern: .*slf4j.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)slf4j([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - tinylog
   labels:
@@ -45,7 +45,7 @@
   - Embedded library - tinylog
   when:
     builtin.file:
-      pattern: .*tinylog.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)tinylog([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Logback
   labels:
@@ -57,7 +57,7 @@
   - Embedded library - Logback
   when:
     builtin.file:
-      pattern: .*logback.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)logback([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - JBoss logging
   labels:
@@ -69,7 +69,7 @@
   - Embedded library - JBoss logging
   when:
     builtin.file:
-      pattern: .*jboss-logging.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)jboss-logging([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Monolog
   labels:
@@ -81,7 +81,7 @@
   - Embedded library - Monolog
   when:
     builtin.file:
-      pattern: .*monolog.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)monolog([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Jcabi Log
   labels:
@@ -93,7 +93,7 @@
   - Embedded library - Jcabi Log
   when:
     builtin.file:
-      pattern: .*jcabi-log.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)jcabi-log([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - NLOG4J
   labels:
@@ -105,7 +105,7 @@
   - Embedded library - NLOG4J
   when:
     builtin.file:
-      pattern: .*nlog4j.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)nlog4j([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Log4s
   labels:
@@ -117,7 +117,7 @@
   - Embedded library - Log4s
   when:
     builtin.file:
-      pattern: log4s.*\.jar
+      pattern: ^log4s([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Kotlin Logging
   labels:
@@ -129,7 +129,7 @@
   - Embedded library - Kotlin Logging
   when:
     builtin.file:
-      pattern: .*kotlin-logging.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)kotlin-logging([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Airlift Log Manager
   labels:
@@ -141,7 +141,7 @@
   - Embedded library - Airlift Log Manager
   when:
     builtin.file:
-      pattern: log-manager.*\.jar
+      pattern: ^log-manager([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - MinLog
   labels:
@@ -153,7 +153,7 @@
   - Embedded library - MinLog
   when:
     builtin.file:
-      pattern: .*minilog.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)minilog([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Logging Utils
   labels:
@@ -165,7 +165,7 @@
   - Embedded library - Logging Utils
   when:
     builtin.file:
-      pattern: logging.*\.jar
+      pattern: ^logging([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - OCPsoft Logging Utils
   labels:
@@ -177,7 +177,7 @@
   - Embedded library - OCPsoft Logging Utils
   when:
     builtin.file:
-      pattern: logging-api.*\.jar
+      pattern: ^logging-api([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Scribe
   labels:
@@ -189,7 +189,7 @@
   - Embedded library - Scribe
   when:
     builtin.file:
-      pattern: .*scribe.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)scribe([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - GFC Logging
   labels:
@@ -201,7 +201,7 @@
   - Embedded library - GFC Logging
   when:
     builtin.file:
-      pattern: .*gfc-logging.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)gfc-logging([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Blitz4j
   labels:
@@ -213,7 +213,7 @@
   - Embedded library - Blitz4j
   when:
     builtin.file:
-      pattern: .*blitz4j.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)blitz4j([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Avalon Logkit
   labels:
@@ -225,7 +225,7 @@
   - Embedded library - Avalon Logkit
   when:
     builtin.file:
-      pattern: .*avalon-logkit.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)avalon-logkit([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - KLogger
   labels:
@@ -237,7 +237,7 @@
   - Embedded library - KLogger
   when:
     builtin.file:
-      pattern: .*klogger.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)klogger([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Lumberjack
   labels:
@@ -249,7 +249,7 @@
   - Embedded library - Lumberjack
   when:
     builtin.file:
-      pattern: .*lumberjack.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)lumberjack([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Log.io
   labels:
@@ -261,7 +261,7 @@
   - Embedded library - Log.io
   when:
     builtin.file:
-      pattern: .*logio.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)logio([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - OPS4J Pax Logging Service
   labels:
@@ -273,7 +273,7 @@
   - Embedded library - OPS4J Pax Logging Service
   when:
     builtin.file:
-      pattern: .*pax-logging-service.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)pax-logging-service([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - OW2 Log Util
   labels:
@@ -285,7 +285,7 @@
   - Embedded library - OW2 Log Util
   when:
     builtin.file:
-      pattern: util-log.*\.jar
+      pattern: ^util-log([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Twitter Util Logging
   labels:
@@ -297,7 +297,7 @@
   - Embedded library - Twitter Util Logging
   when:
     builtin.file:
-      pattern: util-logging.*\.jar
+      pattern: ^util-logging([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Composite Logging JCL
   labels:
@@ -309,7 +309,7 @@
   - Embedded library - Composite Logging JCL
   when:
     builtin.file:
-      pattern: composite-logging-api.*\.jar
+      pattern: ^composite-logging-api([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Apache Flume
   labels:
@@ -321,4 +321,4 @@
   - Embedded library - Apache Flume
   when:
     builtin.file:
-      pattern: .*flume.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)flume([a-zA-Z0-9._-]*)\.jar$

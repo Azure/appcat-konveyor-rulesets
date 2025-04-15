@@ -9,7 +9,7 @@
   - Embedded framework - EasyMock
   when:
     builtin.file:
-      pattern: .*easymock.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)easymock([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - PowerMock
   labels:
@@ -21,7 +21,7 @@
   - Embedded framework - PowerMock
   when:
     builtin.file:
-      pattern: .*powermock.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)powermock([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Mockito
   labels:
@@ -33,7 +33,7 @@
   - Embedded framework - Mockito
   when:
     builtin.file:
-      pattern: .*mockito.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)mockito([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - TestNG
   labels:
@@ -45,7 +45,7 @@
   - Embedded framework - TestNG
   when:
     builtin.file:
-      pattern: .*testng.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)testng([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Hamcrest
   labels:
@@ -57,7 +57,7 @@
   - Embedded framework - Hamcrest
   when:
     builtin.file:
-      pattern: .*hamcrest.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)hamcrest([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Spring Test
   labels:
@@ -69,7 +69,7 @@
   - Embedded framework - Spring Test
   when:
     builtin.file:
-      pattern: spring.*test.*\.jar
+      pattern: ^spring([a-zA-Z0-9._-]*)test([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Spock
   labels:
@@ -81,7 +81,7 @@
   - Embedded framework - Spock
   when:
     builtin.file:
-      pattern: spock.*\.jar
+      pattern: ^spock([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - XMLUnit
   labels:
@@ -93,7 +93,7 @@
   - Embedded framework - XMLUnit
   when:
     builtin.file:
-      pattern: xmlunit.*\.jar
+      pattern: ^xmlunit([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Akka Testkit
   labels:
@@ -105,7 +105,7 @@
   - Embedded framework - Akka Testkit
   when:
     builtin.file:
-      pattern: akka-testkit.*\.jar
+      pattern: ^akka-testkit([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - REST Assured
   labels:
@@ -117,7 +117,7 @@
   - Embedded framework - REST Assured
   when:
     builtin.file:
-      pattern: rest-assured.*\.jar
+      pattern: ^rest-assured([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - DbUnit
   labels:
@@ -129,7 +129,7 @@
   - Embedded library - DbUnit
   when:
     builtin.file:
-      pattern: dbunit.*\.jar
+      pattern: ^dbunit([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Mule Functional Test Framework (TCK)
   labels:
@@ -141,7 +141,7 @@
   - Embedded framework - Mule Functional Test Framework (TCK)
   when:
     builtin.file:
-      pattern: mule-test.*\.jar
+      pattern: ^mule-test([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Guava Testing Library
   labels:
@@ -153,7 +153,7 @@
   - Embedded framework - Guava Testing Library
   when:
     builtin.file:
-      pattern: guava-testlib.*\.jar
+      pattern: ^guava-testlib([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - RandomizedTesting Randomized Runner
   labels:
@@ -165,7 +165,7 @@
   - Embedded framework - RandomizedTesting Randomized Runner
   when:
     builtin.file:
-      pattern: randomizedtesting-runner.*\.jar
+      pattern: ^randomizedtesting-runner([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - HttpUnit
   labels:
@@ -177,7 +177,7 @@
   - Embedded framework - HttpUnit
   when:
     builtin.file:
-      pattern: httpunit.*\.jar
+      pattern: ^httpunit([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - JCUnit
   labels:
@@ -189,7 +189,7 @@
   - Embedded framework - JCUnit
   when:
     builtin.file:
-      pattern: jcunit.*\.jar
+      pattern: ^jcunit([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - JPA Matchers
   labels:
@@ -201,7 +201,7 @@
   - Embedded framework - JPA Matchers
   when:
     builtin.file:
-      pattern: jpa-matchers.*\.jar
+      pattern: ^jpa-matchers([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - MultithreadedTC
   labels:
@@ -213,7 +213,7 @@
   - Embedded framework - MultithreadedTC
   when:
     builtin.file:
-      pattern: multithreadedtc.*\.jar
+      pattern: ^multithreadedtc([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Specsy
   labels:
@@ -225,7 +225,7 @@
   - Embedded framework - Specsy
   when:
     builtin.file:
-      pattern: specsy.*\.jar
+      pattern: ^specsy([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - JFunk
   labels:
@@ -237,7 +237,7 @@
   - Embedded framework - JFunk
   when:
     builtin.file:
-      pattern: jfunk.*\.jar
+      pattern: ^jfunk([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Restito
   labels:
@@ -249,7 +249,7 @@
   - Embedded framework - Restito
   when:
     builtin.file:
-      pattern: restito.*\.jar
+      pattern: ^restito([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Test Interface
   labels:
@@ -261,7 +261,7 @@
   - Embedded framework - Test Interface
   when:
     builtin.file:
-      pattern: test-interface.*\.jar
+      pattern: ^test-interface([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Play Test
   labels:
@@ -273,7 +273,7 @@
   - Embedded framework - Play Test
   when:
     builtin.file:
-      pattern: play-test.*\.jar
+      pattern: ^play-test([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Arquillian
   labels:
@@ -285,7 +285,7 @@
   - Embedded framework - Arquillian
   when:
     builtin.file:
-      pattern: .*arquillian.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)arquillian([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Cactus
   labels:
@@ -297,7 +297,7 @@
   - Embedded framework - Cactus
   when:
     builtin.file:
-      pattern: .*cactus.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)cactus([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Concordion
   labels:
@@ -309,7 +309,7 @@
   - Embedded framework - Concordion
   when:
     builtin.file:
-      pattern: .*concordion.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)concordion([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Cucumber
   labels:
@@ -321,7 +321,7 @@
   - Embedded framework - Cucumber
   when:
     builtin.file:
-      pattern: .*cucumber.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)cucumber([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - EtlUnit
   labels:
@@ -333,7 +333,7 @@
   - Embedded framework - EtlUnit
   when:
     builtin.file:
-      pattern: .*etlunit.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)etlunit([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - HavaRunner
   labels:
@@ -345,7 +345,7 @@
   - Embedded framework - HavaRunner
   when:
     builtin.file:
-      pattern: .*havarunner.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)havarunner([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - JBehave
   labels:
@@ -357,7 +357,7 @@
   - Embedded framework - JBehave
   when:
     builtin.file:
-      pattern: .*jbehave.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)jbehave([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - JMock
   labels:
@@ -369,7 +369,7 @@
   - Embedded framework - JMock
   when:
     builtin.file:
-      pattern: .*jmock-.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)jmock-([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - JMockit
   labels:
@@ -381,7 +381,7 @@
   - Embedded framework - JMockit
   when:
     builtin.file:
-      pattern: .*jmockit.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)jmockit([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Jukito
   labels:
@@ -393,7 +393,7 @@
   - Embedded framework - Jukito
   when:
     builtin.file:
-      pattern: .*jukito.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)jukito([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Needle
   labels:
@@ -405,7 +405,7 @@
   - Embedded framework - Needle
   when:
     builtin.file:
-      pattern: .*needle.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)needle([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - OpenPojo
   labels:
@@ -417,7 +417,7 @@
   - Embedded framework - OpenPojo
   when:
     builtin.file:
-      pattern: .*openpojo.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)openpojo([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Unitils
   labels:
@@ -429,7 +429,7 @@
   - Embedded framework - Unitils
   when:
     builtin.file:
-      pattern: .*unitils.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)unitils([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - JUnit
   labels:
@@ -441,4 +441,4 @@
   - Embedded framework - JUnit
   when:
     builtin.file:
-      pattern: .*junit.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)junit([a-zA-Z0-9._-]*)\.jar$

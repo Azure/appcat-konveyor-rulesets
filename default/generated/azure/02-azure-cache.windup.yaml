@@ -1,0 +1,66 @@
+# Copyright (c) Microsoft Corporation.   
+
+# Licensed under the Apache License, Version 2.0 (the "License"); 
+# you may not use this file except in compliance with the License. 
+# You may obtain a copy of the License at 
+#     http://www.apache.org/licenses/LICENSE-2.0  
+
+# Unless required by applicable law or agreed to in writing, software 
+# distributed under the License is distributed on an "AS IS" BASIS, 
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+
+# See the License for the specific language governing permissions and 
+# limitations under the License.
+- category: potential
+  customVariables: []
+  description: Redis Cache connection string found
+  effort: 5
+  labels:
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=azure-readiness
+  - category=cache-service-migration
+  - source-category=redis
+  - cache
+  - redis
+  links:
+  - title: Connect Azure Cache for Redis to your application in Azure Container Apps
+    url: https://learn.microsoft.com/azure/container-apps/services
+  - title: Create a service connection in Azure Container Apps from the Azure portal
+    url: https://learn.microsoft.com/azure/service-connector/quickstart-portal-container-apps
+  - title: Azure Cache for Redis documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: Caching guidance
+    url: https://learn.microsoft.com/azure/architecture/best-practices/caching
+  - title: Use Azure Cache for Redis in Java with Jedis Redis client
+    url: https://learn.microsoft.com/azure/redis/java-get-started?tabs=entraid&pivots=azure-cache-redis
+  message: |-
+    Redis Cache connection string, username, or password used in this application. To migrate a Java application that uses a Redis Cache connection string to Azure, you can follow these recommendations:
+    
+    * **Provision an Azure Cache for Redis**: Checkout Azure Cache for Redis for a fully managed cache on Azure. You can take advantage of a managed Redis service that offers scalability, high availability, and monitoring capabilities. **Azure Cache for Redis** provides features like data persistence, automatic failover, and built-in support for Redis commands, allowing you to leverage the benefits of Redis caching in your application running on Azure. Configure the cache size and other relevant settings based on your application's requirements.
+    
+    * **Update your Java code**: Replace the embedded Redis cache code in your Java application with the Azure Cache for Redis client libraries or SDKs. Update the code that establishes a connection to the Redis cache and performs cache-related operations.
+    
+    * **Connect to Azure Cache for Redis**: Connect your app to Azure Cache for Redis on azure by **Service Connector**. Instead of manually configuring connection string in your applications, you can automatically connect Azure Cache for Redis to your applications. 
+  ruleID: azure-cache-redis-01000
+  when:
+    and:
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        pattern: (redis|jedis|lettuce)\.(.*\.)?(url|host|nodes|username|password)
+    - or:
+      - builtin.filecontent:
+          filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+          pattern: ([a-zA-Z0-9-]+\.redis\.cache\.windows\.net)$
+      - builtin.filecontent:
+          filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+          pattern: ([a-zA-Z0-9-]+\.redis\.cache\.chinacloudapi\.cn)$
+      - builtin.filecontent:
+          filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+          pattern: ([a-zA-Z0-9-]+\.[a-z]+\.redis\.azure\.net)$
+      - builtin.filecontent:
+          filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+          pattern: ([a-zA-Z0-9-]+\.[a-z]+\.redisenterprise\.cache\.azure\.net)$
+      not: true

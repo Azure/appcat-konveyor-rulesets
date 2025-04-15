@@ -1,0 +1,456 @@
+- customVariables: []
+  description: Embedded framework - Liferay
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Liferay framework.
+  ruleID: 3rd-party-01000
+  tag:
+  - Liferay
+  - Embedded framework - Liferay
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)liferay([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Oracle Forms
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Oracle Forms framework.
+  ruleID: 3rd-party-02000
+  tag:
+  - Oracle Forms
+  - Embedded framework - Oracle Forms
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)frm([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Spring Boot
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Spring Boot framework.
+  ruleID: 3rd-party-03000
+  tag:
+  - Spring Boot
+  - Embedded framework - Spring Boot
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.spring-boot
+    - builtin.file:
+        pattern: ^spring-boot([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Elasticsearch
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Elasticsearch framework.
+  ruleID: 3rd-party-04000
+  tag:
+  - Elasticsearch
+  - Embedded framework - Elasticsearch
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)elasticsearch([a-zA-Z0-9._-]*)\.jar$
+- category: potential
+  customVariables: []
+  description: Embedded library - Logstash
+  effort: 3
+  labels:
+  - konveyor.io/include=always
+  links:
+  - title: Ensure console logging and configure diagnostic settings
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#ensure-console-logging-and-configure-diagnostic-settings
+  - title: Azure Event Hub
+    url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
+  - title: Logstash EventHub plugin
+    url: https://github.com/logstash-plugins/logstash-input-azure_event_hubs
+  message: |-
+    The application embeds the Logstash framework. To migrate a Java application that uses LogStash/ELK Stack for log aggregation to Azure, you can follow this recommendation:
+
+     * Ensure your logging output is routed to the console and not to files.
+
+     * Configure the diagnostic setting to stream the console output to an Azure Event Hub.
+
+     * Use the LogStash EventHub plugin to ingest logged events into LogStash.
+  ruleID: 3rd-party-05000
+  tag:
+  - Logstash
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: ([a-zA-Z0-9._-]*)logstash([a-zA-Z0-9._-]*)
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)logstash([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Jetty
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Jetty framework.
+  ruleID: 3rd-party-06000
+  tag:
+  - Jetty
+  - Embedded framework - Jetty
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)jetty([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Tomcat
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Tomcat framework.
+  ruleID: 3rd-party-07000
+  tag:
+  - Tomcat
+  - Embedded framework - Tomcat
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)tomcat([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Kibana
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Kibana framework.
+  ruleID: 3rd-party-08000
+  tag:
+  - Kibana
+  - Embedded framework - Kibana
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)kibana([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Apache Karaf
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Apache Karaf framework.
+  ruleID: 3rd-party-09000
+  tag:
+  - Apache Karaf
+  - Embedded framework - Apache Karaf
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)karaf([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Neo4j
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Neo4j framework.
+  ruleID: 3rd-party-10000
+  tag:
+  - Neo4j
+  - Embedded framework - Neo4j
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)neo4j([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Spark
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Spark framework.
+  ruleID: 3rd-party-11000
+  tag:
+  - Spark
+  - Embedded framework - Spark
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)spark-([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Apache Hadoop
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Apache Hadoop framework.
+  ruleID: 3rd-party-12000
+  tag:
+  - Apache Hadoop
+  - Embedded framework - Apache Hadoop
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)hadoop([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Apache Geronimo
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Apache Geronimo framework.
+  ruleID: 3rd-party-13000
+  tag:
+  - Apache Geronimo
+  - Embedded framework - Apache Geronimo
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)geronimo([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Apache Aries
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Apache Aries framework.
+  ruleID: 3rd-party-14000
+  tag:
+  - Apache Aries
+  - Embedded framework - Apache Aries
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)aries([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Cloudera
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Cloudera framework.
+  ruleID: 3rd-party-15000
+  tag:
+  - Cloudera
+  - Embedded framework - Cloudera
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)cloudera([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - MapR
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the MapR framework.
+  ruleID: 3rd-party-16000
+  tag:
+  - MapR
+  - Embedded framework - MapR
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)mapr([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - TensorFlow
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the TensorFlow framework.
+  ruleID: 3rd-party-17000
+  tag:
+  - TensorFlow
+  - Embedded framework - TensorFlow
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)tensorflow([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Weka
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Weka framework.
+  ruleID: 3rd-party-18000
+  tag:
+  - Weka
+  - Embedded framework - Weka
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)weka([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Apache Mahout
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Apache Mahout framework.
+  ruleID: 3rd-party-19000
+  tag:
+  - Apache Mahout
+  - Embedded framework - Apache Mahout
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)mahout([a-zA-Z0-9._-]*)\.jar$
+- category: potential
+  customVariables: []
+  description: Embedded library - Splunk
+  effort: 3
+  labels:
+  - konveyor.io/include=always
+  links:
+  - title: Ensure console logging and configure diagnostic settings
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#ensure-console-logging-and-configure-diagnostic-settings
+  - title: Azure Blob Storage
+    url: https://learn.microsoft.com/azure/storage/blobs/
+  - title: Splunk Add-on for Microsoft Cloud Services
+    url: https://splunkbase.splunk.com/app/3757
+  message: |-
+    The application embeds the Splunk framework. To migrate a Java application that uses Splunk for log aggregation to Azure, you can follow this recommendation:
+
+     * Ensure your logging output is routed to the console and not to files.
+
+     * Configure the diagnostic setting to stream the console output to Azure Blob Storage.
+
+     * Use the Splunk Add-on for Microsoft Cloud Services to ingest logged events into Splunk.
+  ruleID: 3rd-party-20000
+  tag:
+  - Splunk
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: ([a-zA-Z0-9._-]*)splunk([a-zA-Z0-9._-]*)
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)splunk([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Nacos
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Nacos framework.
+  ruleID: 3rd-party-30000
+  tag:
+  - Nacos
+  - Embedded framework - Nacos
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.nacos.nacos-client
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.alibaba\.cloud\.spring-cloud-starter-alibaba-nacos-([a-zA-Z0-9._-]*)
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.alibaba\.boot\.nacos-([a-zA-Z0-9._-]*)-spring-boot-starter
+- customVariables: []
+  description: Embedded framework - Sentinel
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Sentinel framework.
+  ruleID: 3rd-party-30100
+  tag:
+  - Sentinel
+  - Embedded framework - Sentinel
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.alibaba\.csp\.sentinel-([a-zA-Z0-9._-]*)
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.alibaba\.cloud\.spring-cloud-alibaba-sentinel-([a-zA-Z0-9._-]*)
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-starter-alibaba-sentinel
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-circuitbreaker-sentinel
+- customVariables: []
+  description: Embedded framework - Rocket MQ
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Rocket MQ framework.
+  ruleID: 3rd-party-30200
+  tag:
+  - Rocket MQ
+  - Embedded framework - Rocket MQ
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.apache.rocketmq.rocketmq-client
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.apache.rocketmq.rocketmq-acl
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-starter-stream-rocketmq
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-starter-bus-rocketmq
+- customVariables: []
+  description: Embedded framework - Cloud Seata
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Cloud Seata framework.
+  ruleID: 3rd-party-30300
+  tag:
+  - Cloud Seata
+  - Embedded framework - Cloud Seata
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: io.seata.seata-spring-boot-starter
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.>spring-cloud-starter-alibaba-seata
+- customVariables: []
+  description: Embedded framework - Scheduler X
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Scheduler X framework.
+  ruleID: 3rd-party-30400
+  tag:
+  - Scheduler X
+  - Embedded framework - Scheduler X
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.schedulerx.schedulerx2-worker
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.schedulerx.schedulerx2-spring-boot-starter
+- customVariables: []
+  description: Embedded framework - Cloud SMS
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Sentinel framework.
+  ruleID: 3rd-party-30500
+  tag:
+  - Cloud SMS
+  - Embedded framework - Cloud SMS
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.dysmsapi20170525
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-alicloud-sms
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.aliyun-sms-spring-boot-starter
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.alibaba.cloud.spring-cloud-starter-alicloud-sms
+- customVariables: []
+  description: Embedded framework - Cloud OSS
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application embeds the Cloud OSS framework.
+  ruleID: 3rd-party-30600
+  tag:
+  - Cloud OSS
+  - Embedded framework - Cloud OSS
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.aliyun-sdk-oss
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.aliyun-sdk-oss-private
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.aliyun-sdk-oss-console
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.hadoop-aliyun
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.aliyun.oss.kafka-connect-oss

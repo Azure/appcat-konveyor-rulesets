@@ -1,0 +1,54 @@
+# Copyright (c) Microsoft Corporation.   
+
+# Licensed under the Apache License, Version 2.0 (the "License"); 
+# you may not use this file except in compliance with the License. 
+# You may obtain a copy of the License at 
+#     http://www.apache.org/licenses/LICENSE-2.0  
+
+# Unless required by applicable law or agreed to in writing, software 
+# distributed under the License is distributed on an "AS IS" BASIS, 
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+
+# See the License for the specific language governing permissions and 
+# limitations under the License. 
+# - category: optional
+#   customVariables: []
+#   description: Static content found in the application
+#   effort: 5
+#   labels:
+#   - konveyor.io/target=azure-appservice
+#   - konveyor.io/target=azure-aks
+#   - konveyor.io/target=azure-container-apps
+#   - konveyor.io/source
+#   - domain=cloud-native
+#   - category=local-resource-access
+#   - static-content
+#   links:
+#   - title: Azure Front Door and CDN documentation
+#     url: https://learn.microsoft.com/azure/frontdoor
+#   - title: Configuring TLS for an application in Azure
+#     url: https://learn.microsoft.com/azure/cloud-services/cloud-services-configure-ssl-certificate-portal
+#   - title: Static content found in the application
+#     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#read-only-static-content
+#   - title: Static website hosting in Azure Storage
+#     url: https://docs.microsoft.com/azure/storage/blobs/storage-blob-static-website
+#   - title: 'Quickstart: Integrate an Azure Storage account with Azure CDN'
+#     url: https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn
+#   message: |-
+#     Your application currently serves static content directly. You may wish to consider moving static content to Azure Blob Storage and adding Azure CDN for lightning-fast downloads globally, and to also enable quicker changes to static content without the need of redeploying the entire application.
+
+#      * **Azure Storage to store your static content**: Create an Azure Storage account to store your static content such as HTML, CSS, JavaScript, images, and other assets.
+
+#      * **Provision an Azure CDN**: Configure the Azure Content Delivery Network endpoint to use your Blob Storage container as the origin. Enable the CDN caching and content delivery optimizations to improve performance and reduce latency.
+
+#      * **Security**: Ensure that the appropriate access controls are applied to the Blob Storage container to secure your static content.
+
+#      * **Global Distribution**: Azure CDN has a network of edge servers located globally. This ensures that your static content is cached and delivered from the nearest edge server to the end users, reducing latency and improving download speeds.
+
+#      * **Performace**: Azure CDN handles dynamic content compression and optimization, further enhancing the delivery performance.
+
+#      * **HTTPS Support**: Enable HTTPS support for your Azure CDN endpoint to ensure secure content delivery. Obtain an TLS certificate for your custom domain if needed, or use the Azure CDN default domain.
+#   ruleID: azure-static-content-01000
+#   when:
+#     builtin.file:
+#       pattern: ^([a-zA-Z0-9._-]+)\.(htm|html)$

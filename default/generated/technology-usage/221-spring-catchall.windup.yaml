@@ -9,4 +9,4 @@
   - Embedded framework - Spring
   when:
     builtin.file:
-      pattern: spring.*\.jar
+      pattern: ^spring([a-zA-Z0-9._-]*)\.jar$

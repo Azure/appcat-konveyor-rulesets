@@ -22,7 +22,7 @@
   - Ehcache
   when:
     builtin.file:
-      pattern: .*ehcache.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)ehcache([a-zA-Z0-9._-]*)\.jar$
 - category: potential
   customVariables: []
   description: Redis Cache library
@@ -34,10 +34,12 @@
     url: https://learn.microsoft.com/azure/azure-cache-for-redis
   - title: Caching guidance
     url: https://learn.microsoft.com/azure/architecture/best-practices/caching
-  - title: Connect Azure Cache for Redis to your application in Azure Spring Apps
-    url: https://learn.microsoft.com/azure/spring-apps/how-to-bind-redis?tabs=Java%2CService-Connector
+  - title: Connect Azure Cache for Redis to your application in Azure Container Apps
+    url: https://learn.microsoft.com/en-us/azure/container-apps/services
+  - title: Create a service connection in Azure Container Apps from the Azure portal
+    url: https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-container-apps
   - title: Redis Cache found in the application
-    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-spring-apps#identify-external-caches
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#identify-external-caches
   - title: Spring Data Redis
     url: https://spring.io/projects/spring-data-redis/
   - title: Azure Spring Cloud Starter Cache
@@ -53,6 +55,7 @@
   ruleID: embedded-cache-libraries-16000
   tag:
   - Redis
+  - Redis Cache library
   when:
     or:
     - java.dependency:
@@ -68,7 +71,7 @@
         lowerbound: 0.0.0
         name: org.springframework.integration.spring-integration-redis
     - builtin.file:
-        pattern: .*redis.*\.jar
+        pattern: ^([a-zA-Z0-9._-]*)redis([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Coherence embedded library
   labels:
@@ -82,7 +85,7 @@
   - Coherence embedded library
   when:
     builtin.file:
-      pattern: .*coherence.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)coherence([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Apache Commons JCS embedded library
   labels:
@@ -96,7 +99,7 @@
   - Apache Commons JCS embedded library
   when:
     builtin.file:
-      pattern: .*commons-jcs.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)commons-jcs([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Dynacache embedded library
   labels:
@@ -110,7 +113,7 @@
   - Dynacache embedded library
   when:
     builtin.file:
-      pattern: .*dynacache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)dynacache([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library
   labels:
@@ -124,7 +127,7 @@
   - Embedded library
   when:
     builtin.file:
-      pattern: .*cache-api.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)cache-api([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Hazelcast embedded library
   labels:
@@ -138,7 +141,7 @@
   - Hazelcast embedded library
   when:
     builtin.file:
-      pattern: .*hazelcast.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)hazelcast([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Apache Ignite embedded library
   labels:
@@ -152,7 +155,7 @@
   - Apache Ignite embedded library
   when:
     builtin.file:
-      pattern: .*ignite.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)ignite([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Infinispan embedded library
   labels:
@@ -166,7 +169,7 @@
   - Infinispan embedded library
   when:
     builtin.file:
-      pattern: .*infinispan.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)infinispan([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: JBoss Cache embedded library
   labels:
@@ -180,7 +183,7 @@
   - JBoss Cache embedded library
   when:
     builtin.file:
-      pattern: .*jbosscache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)jbosscache([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: JCache embedded library
   labels:
@@ -193,7 +196,7 @@
   - JCache embedded library
   when:
     builtin.file:
-      pattern: .*jcache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)jcache([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Memcached client embedded library
   labels:
@@ -207,7 +210,7 @@
   - Memcached client embedded library
   when:
     builtin.file:
-      pattern: .*memcached.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)memcached([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Oscache embedded library
   labels:
@@ -221,7 +224,7 @@
   - Oscache embedded library
   when:
     builtin.file:
-      pattern: .*oscache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)oscache([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: ShiftOne (Java Object Cache) embedded library
   labels:
@@ -235,7 +238,7 @@
   - ShiftOne (Java Object Cache) embedded library
   when:
     builtin.file:
-      pattern: .*shiftone.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)shiftone([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: SwarmCache embedded library
   labels:
@@ -249,7 +252,7 @@
   - SwarmCache embedded library
   when:
     builtin.file:
-      pattern: .*swarmcache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)swarmcache([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Spring Boot Cache library
   labels:
@@ -281,4 +284,4 @@
   - Redis Cache library
   when:
     builtin.file:
-      pattern: .*redis.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)redis([a-zA-Z0-9._-]*)\.jar$

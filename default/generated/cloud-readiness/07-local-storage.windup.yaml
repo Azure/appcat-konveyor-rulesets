@@ -5,6 +5,9 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=file-system-management
+  - source-category=local-file-system
   - storage
   links:
   - title: Azure Storage documentation
@@ -40,13 +43,13 @@
     or:
     - java.referenced:
         location: CONSTRUCTOR_CALL
-        pattern: java.io.(FileWriter|FileReader|PrintStream|File|PrintWriter|RandomAccessFile)*
+        pattern: java.io.(FileWriter|FileReader|PrintStream|File|PrintWriter|RandomAccessFile)
     - java.referenced:
         location: CONSTRUCTOR_CALL
-        pattern: java.util.zip.ZipFile*
+        pattern: java.util.zip.ZipFile
     - java.referenced:
         location: METHOD_CALL
-        pattern: java.io.File.createTempFile(*)
+        pattern: java.io.File.createTempFile
     - java.referenced:
         location: METHOD_CALL
         pattern: java.nio.file.Paths.get*
@@ -60,6 +63,9 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=file-system-management
+  - source-category=local-file-system
   - storage
   links:
   - title: Azure Storage documentation
@@ -102,6 +108,9 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=file-system-management
+  - source-category=local-file-system
   - storage
   links:
   - title: Azure Storage documentation
@@ -134,7 +143,7 @@
   ruleID: local-storage-00003
   when:
     builtin.filecontent:
-      filePattern: .*(\\.java|\\.properties|\\.jsp|\\.jspf|\\.tag|[^pom]\\.xml|\\.txt)
+      filePattern: (/|\\)(?!pom\.xml$)([a-zA-Z0-9._-]+)\.(java|properties|jsp|jspf|tag|xml|txt)$
       pattern: (\W|\s|^)([a-zA-Z]\:|\\\\(\w+\.?)+)([\\\/][^\n\t]+)+
 - category: mandatory
   customVariables: []
@@ -143,6 +152,9 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=file-system-management
+  - source-category=local-file-system
   - storage
   links:
   - title: Azure Storage documentation
@@ -175,7 +187,7 @@
   ruleID: local-storage-00004
   when:
     builtin.filecontent:
-      filePattern: .*\.(\\\.java|\\\.properties|\\\.jsp|\\\.jspf|\\\.tag|[^pom]\\\.xml|\\\.txt)
+      filePattern: (/|\\)(?!pom\.xml$)([a-zA-Z0-9._-]+)\.(java|properties|jsp|jspf|tag|xml|txt)$
       pattern: file://
 - category: mandatory
   customVariables: []
@@ -184,6 +196,9 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=file-system-management
+  - source-category=local-file-system
   - storage
   links: []
   message: "When migrating an application that relies on the file system to Azure,
@@ -224,6 +239,9 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=file-system-management
+  - source-category=local-file-system
   - storage
   links: []
   message: "When migrating an application that relies on the file system to Azure,

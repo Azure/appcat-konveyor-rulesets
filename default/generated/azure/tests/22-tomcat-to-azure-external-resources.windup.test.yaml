@@ -1,0 +1,14 @@
+# rulesPath: ../22-tomcat-to-azure-external-resources.windup.yaml
+# providers:
+# - name: java
+#   dataPath: ./data/22-tomcat-to-azure-external-resources
+# - name: builtin
+#   dataPath: ./data/22-tomcat-to-azure-external-resources
+# tests:
+# - ruleID: tomcat-to-azure-external-resources-01000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       atLeast: 2
+#       messageMatches: External resources are injected via Java Naming and Directory
+#         Interface (JNDI).*

@@ -9,7 +9,7 @@
   - Embedded library - Apache Camel
   when:
     builtin.file:
-      pattern: .*camel.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)camel([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded library - Teiid
   labels:
@@ -21,7 +21,7 @@
   - Embedded library - Teiid
   when:
     builtin.file:
-      pattern: .*teiid.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)teiid([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Spring Integration
   labels:
@@ -33,7 +33,7 @@
   - Embedded framework - Spring Integration
   when:
     builtin.file:
-      pattern: spring-integration.*\.jar
+      pattern: ^spring-integration([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Ikasan
   labels:
@@ -45,7 +45,7 @@
   - Embedded framework - Ikasan
   when:
     builtin.file:
-      pattern: .*ikasan.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)ikasan([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Swagger
   labels:
@@ -57,7 +57,7 @@
   - Embedded framework - Swagger
   when:
     builtin.file:
-      pattern: .*swagger.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)swagger([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Apiman
   labels:
@@ -69,7 +69,7 @@
   - Embedded framework - Apiman
   when:
     builtin.file:
-      pattern: .*apiman.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)apiman([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - 3scale
   labels:
@@ -81,7 +81,7 @@
   - Embedded framework - 3scale
   when:
     builtin.file:
-      pattern: .*3scale.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)3scale([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Istio
   labels:
@@ -93,7 +93,7 @@
   - Embedded framework - Istio
   when:
     builtin.file:
-      pattern: .*istio.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)istio([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - ServiceMix
   labels:
@@ -105,7 +105,7 @@
   - Embedded framework - ServiceMix
   when:
     builtin.file:
-      pattern: .*servicemix.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)servicemix([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Mule
   labels:
@@ -117,7 +117,7 @@
   - Embedded framework - Mule
   when:
     builtin.file:
-      pattern: .*mule.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)mule([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Petals EIP
   labels:
@@ -129,7 +129,7 @@
   - Embedded framework - Petals EIP
   when:
     builtin.file:
-      pattern: .*petals.*eip.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)petals([a-zA-Z0-9._-]*)eip([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - SwitchYard
   labels:
@@ -141,7 +141,7 @@
   - Embedded framework - SwitchYard
   when:
     builtin.file:
-      pattern: .*switchyard.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)switchyard([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Apache Synapse
   labels:
@@ -153,7 +153,7 @@
   - Embedded framework - Apache Synapse
   when:
     builtin.file:
-      pattern: .*synapse.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)synapse([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - WSO2
   labels:
@@ -165,7 +165,7 @@
   - Embedded framework - WSO2
   when:
     builtin.file:
-      pattern: .*wso2.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)wso2([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Talend ESB
   labels:
@@ -177,7 +177,7 @@
   - Embedded framework - Talend ESB
   when:
     builtin.file:
-      pattern: .*talend.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)talend([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: Embedded framework - Spring Integration
   labels:

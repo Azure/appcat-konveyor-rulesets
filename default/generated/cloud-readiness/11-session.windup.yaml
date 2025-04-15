@@ -6,6 +6,9 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
+  - domain=cloud-native
+  - category=session-management
+  - source-category=http-session
   - clustering
   links:
   - title: 'JBoss EAP: Clustering in Web Applications'
@@ -45,6 +48,9 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
+  - domain=cloud-native
+  - category=session-management
+  - source-category=http-session
   - clustering
   links:
   - title: Azure Cache for Redis Documentation
@@ -69,7 +75,7 @@
     or:
     - java.referenced:
         location: METHOD_CALL
-        pattern: javax.servlet.http.HttpSession.setAttribute(*)
+        pattern: javax.servlet.http.HttpSession.setAttribute
     - java.referenced:
         location: METHOD_CALL
-        pattern: javax.servlet.http.HttpSession.putValue(*)
+        pattern: javax.servlet.http.HttpSession.putValue

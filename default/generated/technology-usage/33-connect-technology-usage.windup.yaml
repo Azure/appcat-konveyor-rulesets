@@ -1,4 +1,23 @@
 - customVariables: []
+  description: Java Connect
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: technology-usage-connect-01000
+  tag:
+  - Connect=RMI
+  - Other=RMI
+  - Java EE=RMI
+  when:
+    or:
+    - java.referenced:
+        location: ANNOTATION
+        pattern: javax.ws.rs.Path
+    - java.referenced:
+        location: ANNOTATION
+        pattern: jakarta.ws.rs.Path
+- customVariables: []
+  description: JNI usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -7,17 +26,24 @@
   - Connect=JNI
   - Other=JNI
   - Java EE=JNI
+# TODO: make FQN when static method calls work as fully qualified
   when:
     or:
     - java.referenced:
         location: METHOD_CALL
-        pattern: java.lang.System.(load|loadLibrary|mapLibraryName)*
+        pattern: java.lang.System.load*
     - java.referenced:
         location: METHOD_CALL
-        pattern: java.lang.Runtime.load(*)
+        pattern: loadLibrary
     - java.referenced:
         location: METHOD_CALL
-        pattern: java.lang.Runtime.loadLibrary(*)
+        pattern: java.lang.System.mapLibraryName*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Runtime.load
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Runtime.loadLibrary
 - customVariables: []
   description: JNA usage
   labels:
@@ -42,7 +68,7 @@
         pattern: com.sun.jna*
     - java.referenced:
         location: METHOD_CALL
-        pattern: com.sun.jna(*)
+        pattern: com.sun.jna
     - java.referenced:
         location: VARIABLE_DECLARATION
         pattern: com.sun.jna*
@@ -103,9 +129,9 @@
         namespaces: {}
         xpath: //*[local-name()='jms-jca-provider']
     - builtin.file:
-        pattern: ra\.xml
+        pattern: ^ra\.xml$
 - customVariables: []
-  description: Resource Adapter
+  description: Resource Adapter usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -118,7 +144,7 @@
     builtin.hasTags:
     - Resource Adapter
 - customVariables: []
-  description: ActiveMQ
+  description: ActiveMQ library usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -131,7 +157,7 @@
     builtin.hasTags:
     - ActiveMQ
 - customVariables: []
-  description: OpenWS
+  description: OpenWS usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -144,7 +170,7 @@
     builtin.hasTags:
     - OpenWS
 - customVariables: []
-  description: WSDL
+  description: WSDL usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -157,7 +183,7 @@
     builtin.hasTags:
     - WSDL
 - customVariables: []
-  description: RabbitMQ Client
+  description: RabbitMQ Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -170,7 +196,7 @@
     builtin.hasTags:
     - RabbitMQ Client
 - customVariables: []
-  description: Spring Messaging Client
+  description: Spring Messaging Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -183,7 +209,7 @@
     builtin.hasTags:
     - Spring Messaging Client
 - customVariables: []
-  description: Camel Messaging Client
+  description: Camel Messaging Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -196,7 +222,7 @@
     builtin.hasTags:
     - Camel Messaging Client
 - customVariables: []
-  description: Amazon SQS Client
+  description: Amazon SQS Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -209,7 +235,7 @@
     builtin.hasTags:
     - Amazon SQS Client
 - customVariables: []
-  description: HornetQ Client
+  description: HornetQ Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -222,7 +248,7 @@
     builtin.hasTags:
     - HornetQ Client
 - customVariables: []
-  description: AMQP Client
+  description: AMQP Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -235,7 +261,7 @@
     builtin.hasTags:
     - AMQP Client
 - customVariables: []
-  description: RocketMQ Client
+  description: RocketMQ Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -248,7 +274,7 @@
     builtin.hasTags:
     - RocketMQ Client
 - customVariables: []
-  description: 0MQ Client
+  description: 0MQ Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -261,7 +287,7 @@
     builtin.hasTags:
     - 0MQ Client
 - customVariables: []
-  description: JBossMQ Client
+  description: JBossMQ Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -274,7 +300,7 @@
     builtin.hasTags:
     - JBossMQ Client
 - customVariables: []
-  description: Zbus Client
+  description: Zbus Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -287,7 +313,7 @@
     builtin.hasTags:
     - Zbus Client
 - customVariables: []
-  description: Qpid Client
+  description: Qpid Client usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -300,7 +326,7 @@
     builtin.hasTags:
     - Qpid Client
 - customVariables: []
-  description: Kafka Client
+  description: Kafka Client usage
   labels:
   - konveyor.io/include=always
   links: []

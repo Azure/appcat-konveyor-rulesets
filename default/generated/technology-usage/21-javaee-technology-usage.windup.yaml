@@ -26,7 +26,7 @@
     or:
     - as: xmlfiles1
       builtin.file:
-        pattern: .*\.xml
+        pattern: ^([a-zA-Z0-9._-]+)\.xml$
       ignore: true
     - builtin.xml:
         filepaths: '{{xmlfiles1.filepaths}}'
@@ -168,7 +168,7 @@
   - Java EE Application Deployment
   when:
     builtin.file:
-      pattern: .*\.ear
+      pattern: ^([a-zA-Z0-9._-]+)\.ear$
 - customVariables: []
   description: Web Services Metadata
   labels:
@@ -195,13 +195,23 @@
   - Common Annotations
   - Common Annotations
   when:
-    java.referenced:
-      location: IMPORT
-      pattern: javax.annotation.PreDestroy|PostConstruct|Resource|Resources
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.annotation.PreDestroy
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.annotation.PostConstruct
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.annotation.Resource
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.annotation.Resources
 - customVariables:
   - name: package
     nameOfCaptureGroup: package
-    pattern: (?P<package>java|javax.)?xml.bind..*
+    pattern: (?P<package>java|javax.)?xml.bind.([a-zA-Z0-9._-]*)
   description: JAXB
   labels:
   - konveyor.io/include=always

@@ -1,0 +1,37 @@
+rulesPath: ../196-database.windup.yaml
+providers:
+- name: java
+  dataPath: ./data/196-database
+- name: builtin
+  dataPath: ./data/196-database
+tests:
+- ruleID: database-01500
+  testCases:
+  - name: tc-1
+    hasTags:
+    - MySQL Driver
+- ruleID: database-01700
+  testCases:
+  - name: tc-1
+    hasTags:
+    - PostgreSQL Driver
+- ruleID: database-01900
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Microsoft SQL Driver
+- ruleID: database-02200
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Cassandra Client
+- ruleID: database-02500
+  testCases:
+  - name: tc-1
+    hasTags:
+    - MongoDB Client
+- ruleID: database-03200
+  testCases:
+  - name: tc-1
+    hasTags:
+    - MariaDB Driver

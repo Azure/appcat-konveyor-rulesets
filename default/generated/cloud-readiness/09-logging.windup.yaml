@@ -1,11 +1,13 @@
 - category: mandatory
   customVariables: []
-  description: Don't log to file system
+  description: Avoid File System Logging in Java Code
   effort: 1
   labels:
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
+  - domain=cloud-native
+  - category=logging-management
   - logging
   links: []
   message: |-
@@ -44,6 +46,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
+  - domain=cloud-native
+  - category=logging-management
   - logging
   links: []
   message: |-
@@ -63,12 +67,14 @@
       pattern: java.util.logging.SocketHandler*
 - category: mandatory
   customVariables: []
-  description: Don't log to file system
+  description: Avoid File System Logging in Configuration
   effort: 1
   labels:
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
+  - domain=cloud-native
+  - category=logging-management
   - logging
   links:
   - title: Azure Monitor Logs overview
@@ -89,8 +95,8 @@
   when:
     or:
     - builtin.filecontent:
-        filePattern: log{back,4j}.*\.(xml|properties)
-        pattern: '{filePattern}'
+        filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
+        pattern: (?i)\b(?:Daily)?Rolling?FileAppender\b|type\s*=\s*['"]?(?:Daily)?Rolling?File['"]?|<\/\s*(?:Daily)?Rolling?File\s*>
     - builtin.filecontent:
-        filePattern: log{back,4j}.*\.(xml|properties)
+        filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
         pattern: appender-ref ref=.FILE

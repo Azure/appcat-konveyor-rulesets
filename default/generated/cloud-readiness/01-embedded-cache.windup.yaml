@@ -5,6 +5,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds an Ehcache library.\n\n
     \                       An embedded cache library is problematic because state
@@ -16,7 +18,7 @@
   - Caching - Ehcache embedded library
   when:
     builtin.file:
-      pattern: .*ehcache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)ehcache([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Coherence embedded library
@@ -24,6 +26,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a Coherence library.\n\n
     \                       An embedded cache library is problematic because state
@@ -35,7 +39,7 @@
   - Caching - Coherence embedded library
   when:
     builtin.file:
-      pattern: .*coherence.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)coherence([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Apache Commons JCS embedded library
@@ -43,6 +47,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds an Apache Commons JCS
     library.\n\n                        An embedded cache library is problematic because
@@ -54,7 +60,7 @@
   - Caching - Apache Commons JCS embedded library
   when:
     builtin.file:
-      pattern: .*commons-jcs.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)commons-jcs([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Dynacache embedded library
@@ -62,6 +68,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a Dynacache library.\n\n
     \                       An embedded cache library is problematic because state
@@ -73,7 +81,7 @@
   - Caching - Dynacache embedded library
   when:
     builtin.file:
-      pattern: .*dynacache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)dynacache([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Embedded library
@@ -81,6 +89,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a library that provides
     caching.\n\n                        An embedded cache library is problematic because
@@ -92,7 +102,7 @@
   - Caching - Embedded library
   when:
     builtin.file:
-      pattern: .*cache-api.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)cache-api([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Hazelcast embedded library
@@ -100,6 +110,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a Hazelcast library.\n\n
     \                       An embedded cache library is problematic because state
@@ -111,7 +123,7 @@
   - Caching - Hazelcast embedded library
   when:
     builtin.file:
-      pattern: .*hazelcast.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)hazelcast([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Apache Ignite embedded library
@@ -119,6 +131,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds an Apache Ignite library.\n\n
     \                       An embedded cache library is problematic because state
@@ -130,7 +144,7 @@
   - Caching - Apache Ignite embedded library
   when:
     builtin.file:
-      pattern: .*ignite.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)ignite([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Infinispan embedded library
@@ -138,6 +152,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds an Infinispan library.\n\n
     \                       An embedded cache library is problematic because state
@@ -149,7 +165,7 @@
   - Caching - Infinispan embedded library
   when:
     builtin.file:
-      pattern: .*infinispan.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)infinispan([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - JBoss Cache embedded library
@@ -157,6 +173,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embedds a JBoss Cache library.\n\n
     \                       An embedded cache library is problematic because state
@@ -168,7 +186,7 @@
   - Caching - JBoss Cache embedded library
   when:
     builtin.file:
-      pattern: .*jbosscache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)jbosscache([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - JCache embedded library
@@ -176,6 +194,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a JCache library.\n\n
     \                       An embedded cache library is problematic because state
@@ -187,7 +207,7 @@
   - Caching - JCache embedded library
   when:
     builtin.file:
-      pattern: .*jcache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)jcache([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Memcached client embedded library
@@ -195,6 +215,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a Memcached client library.\n\n
     \                       An embedded cache library is problematic because state
@@ -206,7 +228,7 @@
   - Caching - Memcached client embedded library
   when:
     builtin.file:
-      pattern: .*memcached.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)memcached([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Oscache embedded library
@@ -214,6 +236,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds an Oscache library.\n\n
     \                       An embedded cache library is problematic because state
@@ -225,7 +249,7 @@
   - Caching - Oscache embedded library
   when:
     builtin.file:
-      pattern: .*oscache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)oscache([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - ShiftOne (Java Object Cache) embedded library
@@ -233,6 +257,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a ShiftOne library (Java
     Object Cache or JOCache).\n\n                        An embedded cache library
@@ -244,7 +270,7 @@
   - Caching - ShiftOne (Java Object Cache) embedded library
   when:
     builtin.file:
-      pattern: .*shiftone.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)shiftone([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - SwarmCache embedded library
@@ -252,6 +278,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds a SwarmCache library.\n\n
     \                       An embedded cache library is problematic because state
@@ -263,7 +291,7 @@
   - Caching - SwarmCache embedded library
   when:
     builtin.file:
-      pattern: .*swarmcache.*\.jar$
+      pattern: ^([a-zA-Z0-9._-]*)swarmcache([a-zA-Z0-9._-]*)\.jar$
 - category: mandatory
   customVariables: []
   description: Caching - Spring Boot Cache library
@@ -271,6 +299,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
   links: []
   message: "\n                        The application embeds the Spring Boot Cache
     library.\n\n                        An embedded cache library is problematic because
@@ -295,6 +325,9 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=cache-service-migration
+  - source-category=redis
   links: []
   message: "\n                        The application embeds the Redis client.\n                    \n
     \                       An embedded cache library is problematic because state
@@ -306,4 +339,4 @@
   - Caching - Redis Cache library
   when:
     builtin.file:
-      pattern: .*redis.*\.jar
+      pattern: ^([a-zA-Z0-9._-]*)redis([a-zA-Z0-9._-]*)\.jar$

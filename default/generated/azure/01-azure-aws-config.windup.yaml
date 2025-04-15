@@ -3,11 +3,13 @@
   description: AWS credential configuration
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=credential-migration
+  - source-category=aws-credentials
   - AWS
   links:
   - title: Azure Key Vault documentation
@@ -41,11 +43,13 @@
   description: AWS region configuration
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=region-configuration
+  - source-category=aws-region-configuration
   - AWS
   links:
   - title: Azure geographies
@@ -73,11 +77,13 @@
   description: AWS S3 usage found
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=storage-migration
+  - source-category=aws-s3
   - AWS
   - storage
   links:
@@ -111,62 +117,30 @@
         lowerbound: 0.0.0
         name: io.awspring.cloud.spring-cloud-aws-starter-s3
     - builtin.filecontent:
-        filePattern: .*\.properties
-        pattern: aws.s3
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        # currently no support multi-lines regex matching for yaml, so only match "s3:"
+        pattern: (aws.s3|s3:\s*)
     - java.referenced:
         location: PACKAGE
         pattern: com.amazonaws.services.s3*
     - java.referenced:
         location: PACKAGE
         pattern: io.awspring.cloud.s3*
+    - java.referenced:
+        location: PACKAGE
+        pattern: software.amazon.awssdk.services.s3*
 - category: mandatory
   customVariables: []
-  description: AWS S3 usage found
+  description: AWS S3 dependency usage found
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - AWS
-  - storage
-  links:
-  - title: Azure Blob Storage documentation
-    url: https://learn.microsoft.com/azure/storage/blobs
-  - title: 'Quickstart: Azure Blob Storage client library for Java'
-    url: https://learn.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-java
-  - title: Move your data from AWS S3 to Azure Storage using AzCopy
-    url: https://azure.microsoft.com/blog/move-your-data-from-aws-s3-to-azure-storage-using-azcopy
-  message: |-
-    The application contains AWS S3 usage. Consider using Azure Blob Storage instead.
-
-     * Provision **Azure Blob Storage**: Create an Azure Blob Storage account in the Azure portal. Choose the appropriate storage tier (Hot, Cool, or Archive) based on your application's data access patterns and cost considerations.
-
-     * **Update application code**: Modify the Java application's code to replace AWS SDK calls with the equivalent Azure Storage SDK calls for Azure Blob Storage. Update the code to authenticate and interact with Azure Blob Storage using the Azure SDK for Java.
-
-     * **Map S3 functionality** to Azure Blob Storage: Understand the differences between AWS S3 and Azure Blob Storage, and adjust your application logic accordingly. Map S3 concepts (buckets, objects, permissions, etc.) to their Azure Blob Storage equivalents (containers, blobs, shared access signatures, etc.).
-
-     * **Migrate data** from S3 to Azure Blob Storage: Plan and execute the migration of your data from AWS S3 to Azure Blob Storage. You can use Azure Storage Data Transfer Tool, AzCopy, or other migration tools to copy the data from S3 buckets to Azure Blob Storage containers.
-
-     * Update **access permissions**: Adjust the access permissions and policies in Azure Blob Storage to match your application's requirements. Azure provides various options for controlling access, including shared access signatures (SAS), Azure AD authentication, and role-based access control (RBAC).
-
-     * Validate functionality and **performance**: Thoroughly test the updated application to ensure that it can read from and write to Azure Blob Storage correctly. Validate the performance of data transfer and any other operations to ensure they meet your application's requirements.
-  ruleID: azure-aws-config-s3-03002
-  when:
-    java.referenced:
-      location: PACKAGE
-      pattern: software.amazon.awssdk.services.s3*
-- category: mandatory
-  customVariables: []
-  description: AWS S3 usage found
-  effort: 3
-  labels:
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - domain=azure-readiness
+  - category=storage-migration
+  - source-category=aws-s3
   - AWS
   - storage
   links:
@@ -190,7 +164,7 @@
      * Update **access permissions**: Adjust the access permissions and policies in Azure Blob Storage to match your application's requirements. Azure provides various options for controlling access, including shared access signatures (SAS), Azure AD authentication, and role-based access control (RBAC).
 
      * Validate functionality and **performance**: Thoroughly test the updated application to ensure that it can read from and write to Azure Blob Storage correctly. Validate the performance of data transfer and any other operations to ensure they meet your application's requirements.
-  ruleID: azure-aws-config-s3-03003
+  ruleID: azure-aws-config-s3-03001
   when:
     java.dependency:
       lowerbound: 0.0.0
@@ -200,11 +174,13 @@
   description: AWS S3 operations found
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=storage-migration
+  - source-category=aws-s3
   - AWS
   - storage
   links:
@@ -228,7 +204,7 @@
      * Update **access permissions**: Adjust the access permissions and policies in Azure Blob Storage to match your application's requirements. Azure provides various options for controlling access, including shared access signatures (SAS), Azure AD authentication, and role-based access control (RBAC).
 
      * Validate functionality and **performance**: Thoroughly test the updated application to ensure that it can read from and write to Azure Blob Storage correctly. Validate the performance of data transfer and any other operations to ensure they meet your application's requirements.
-  ruleID: azure-aws-config-s3-03001
+  ruleID: azure-aws-config-s3-03002
   when:
     or:
     - java.referenced:
@@ -246,23 +222,23 @@
   description: Amazon Simple Queue Service Java 1.x SDK dependency
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=messaging-service-migration
+  - source-category=aws-sqs
   - AWS
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
   - title: Azure Service Bus libraries for Java
     url: https://learn.microsoft.com/java/api/overview/azure/service-bus
-  message: "The application contains dependencies for Amazon Simple Queue Service
-    by using the AWS SDK Java 1.x. Consider using Azure Service Bus by Java SDK instead.
-    \n\n * **Replace AWS SDK dependency**: Update the Java application's dependencies
-    to include the Azure Service Bus client libraries and APIs (com.azure.azure-sdk-bom
-    and com.azure.azure-messaging-servicebus). Remove the AWS SDK Java 2.x dependency
-    and add the Azure SDK for Java dependency to interact with Azure Service Bus."
+  message: |-
+    The application contains dependencies for Amazon Simple Queue Service by using the AWS SDK Java 1.x. Consider using Azure Service Bus by Java SDK instead. 
+
+     * **Replace AWS SDK dependency**: Update the Java application's dependencies to include the Azure Service Bus client libraries and APIs (com.azure.azure-sdk-bom and com.azure.azure-messaging-servicebus). Remove the AWS SDK Java 2.x dependency and add the Azure SDK for Java dependency to interact with Azure Service Bus.
   ruleID: azure-aws-config-sqs-04000
   when:
     java.dependency:
@@ -273,31 +249,29 @@
   description: Amazon Simple Queue Service Java 1.x API
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=messaging-service-migration
+  - source-category=aws-sqs
   - AWS
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
   - title: Azure Service Bus libraries for Java
     url: https://learn.microsoft.com/java/api/overview/azure/service-bus
-  message: "The application contains Amazon Simple Queue Service by using the AWS
-    SDK Java 1.x. Consider using Azure Service Bus by Java SDK instead. \n\n * **Provision
-    Azure Service Bus**: Create an Azure Service Bus namespace in Azure. Azure Service
-    Bus provides reliable message queuing and publish/subscribe capabilities, serving
-    as an equivalent messaging service to Amazon SQS.\n\n * **Update application code**:
-    Modify the Java application's code to replace the AWS SDK calls with the equivalent
-    Azure Service Bus client libraries and APIs. Update the code to authenticate and
-    interact with Azure Service Bus using the Azure SDK for Java.\n\n * **Map SQS
-    functionality** to Azure Service Bus: Understand the differences between Amazon
-    SQS and Azure Service Bus and adjust your application logic accordingly. Map SQS
-    concepts (queues, messages, visibility timeouts, etc.) to their Azure Service
-    Bus equivalents (queues, messages, lock duration, etc.).\n\n * **Migrate queues
-    and messages**: Plan and execute the migration of your queues and messages from
-    Amazon SQS to Azure Service Bus."
+  message: |-
+    The application contains Amazon Simple Queue Service by using the AWS SDK Java 1.x. Consider using Azure Service Bus by Java SDK instead. 
+
+     * **Provision Azure Service Bus**: Create an Azure Service Bus namespace in Azure. Azure Service Bus provides reliable message queuing and publish/subscribe capabilities, serving as an equivalent messaging service to Amazon SQS.
+
+     * **Update application code**: Modify the Java application's code to replace the AWS SDK calls with the equivalent Azure Service Bus client libraries and APIs. Update the code to authenticate and interact with Azure Service Bus using the Azure SDK for Java.
+
+     * **Map SQS functionality** to Azure Service Bus: Understand the differences between Amazon SQS and Azure Service Bus and adjust your application logic accordingly. Map SQS concepts (queues, messages, visibility timeouts, etc.) to their Azure Service Bus equivalents (queues, messages, lock duration, etc.).
+
+     * **Migrate queues and messages**: Plan and execute the migration of your queues and messages from Amazon SQS to Azure Service Bus.
   ruleID: azure-aws-config-sqs-04001
   when:
     java.referenced:
@@ -308,23 +282,23 @@
   description: Amazon Simple Queue Service Java 2.x SDK dependency
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=messaging-service-migration
+  - source-category=aws-sqs
   - AWS
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
   - title: Azure Service Bus libraries for Java
     url: https://learn.microsoft.com/java/api/overview/azure/service-bus
-  message: "The application contains dependencies for Amazon Simple Queue Service
-    by using the AWS SDK Java 2.x. Consider using Azure Service Bus by Java SDK instead.
-    \n\n * **Replace AWS SDK dependency**: Update the Java application's dependencies
-    to include the Azure Service Bus client libraries and APIs (com.azure.azure-sdk-bom
-    and com.azure.azure-messaging-servicebus). Remove the AWS SDK Java 2.x dependency
-    and add the Azure SDK for Java dependency to interact with Azure Service Bus."
+  message: |-
+    The application contains dependencies for Amazon Simple Queue Service by using the AWS SDK Java 2.x. Consider using Azure Service Bus by Java SDK instead. 
+
+     * **Replace AWS SDK dependency**: Update the Java application's dependencies to include the Azure Service Bus client libraries and APIs (com.azure.azure-sdk-bom and com.azure.azure-messaging-servicebus). Remove the AWS SDK Java 2.x dependency and add the Azure SDK for Java dependency to interact with Azure Service Bus.
   ruleID: azure-aws-config-sqs-04002
   when:
     java.dependency:
@@ -335,31 +309,29 @@
   description: Amazon Simple Queue Service Java 2.x API
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=messaging-service-migration
+  - source-category=aws-sqs
   - AWS
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
   - title: Azure Service Bus libraries for Java
     url: https://learn.microsoft.com/java/api/overview/azure/service-bus
-  message: "The application contains Amazon Simple Queue Service by using the AWS
-    SDK Java 2.x. Consider using Azure Service Bus by Java SDK instead. \n\n * **Provision
-    Azure Service Bus**: Create an Azure Service Bus namespace in Azure. Azure Service
-    Bus provides reliable message queuing and publish/subscribe capabilities, serving
-    as an equivalent messaging service to Amazon SQS.\n\n * **Update application code**:
-    Modify the Java application's code to replace the AWS SDK calls with the equivalent
-    Azure Service Bus client libraries and APIs. Update the code to authenticate and
-    interact with Azure Service Bus using the Azure SDK for Java.\n\n * **Map SQS
-    functionality** to Azure Service Bus: Understand the differences between Amazon
-    SQS and Azure Service Bus and adjust your application logic accordingly. Map SQS
-    concepts (queues, messages, visibility timeouts, etc.) to their Azure Service
-    Bus equivalents (queues, messages, lock duration, etc.).\n\n * **Migrate queues
-    and messages**: Plan and execute the migration of your queues and messages from
-    Amazon SQS to Azure Service Bus."
+  message: |-
+    The application contains Amazon Simple Queue Service by using the AWS SDK Java 2.x. Consider using Azure Service Bus by Java SDK instead. 
+
+     * **Provision Azure Service Bus**: Create an Azure Service Bus namespace in Azure. Azure Service Bus provides reliable message queuing and publish/subscribe capabilities, serving as an equivalent messaging service to Amazon SQS.
+
+     * **Update application code**: Modify the Java application's code to replace the AWS SDK calls with the equivalent Azure Service Bus client libraries and APIs. Update the code to authenticate and interact with Azure Service Bus using the Azure SDK for Java.
+
+     * **Map SQS functionality** to Azure Service Bus: Understand the differences between Amazon SQS and Azure Service Bus and adjust your application logic accordingly. Map SQS concepts (queues, messages, visibility timeouts, etc.) to their Azure Service Bus equivalents (queues, messages, lock duration, etc.).
+
+     * **Migrate queues and messages**: Plan and execute the migration of your queues and messages from Amazon SQS to Azure Service Bus.
   ruleID: azure-aws-config-sqs-04003
   when:
     java.referenced:
@@ -370,11 +342,13 @@
   description: Amazon Simple Queue Service configuration
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=messaging-service-migration
+  - source-category=aws-sqs
   - AWS
   links:
   - title: Azure Service Bus documentation
@@ -388,18 +362,20 @@
   ruleID: azure-aws-config-sqs-04004
   when:
     builtin.filecontent:
-      filePattern: .*\.properties
-      pattern: aws.sqs
+      filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+      pattern: (aws.sqs|sqs:\s*)
 - category: mandatory
   customVariables: []
   description: AWS Secrets Manager configuration
   effort: 3
   labels:
-  - konveyor.io/target=azure-spring-apps
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
+  - domain=azure-readiness
+  - category=credential-migration
+  - source-category=aws-secrets-manager
   - AWS
   links:
   - title: Azure Key Vault documentation

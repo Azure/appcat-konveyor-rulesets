@@ -6,6 +6,9 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
+  - domain=cloud-native
+  - category=remote-communication
+  - source-category=java-socket
   - socket
   links: []
   message: "\n Java sockets are internal endpoints of two-way communications. They
@@ -39,6 +42,9 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
+  - domain=cloud-native
+  - category=remote-communication
+  - source-category=java-socket
   - socket
   links: []
   message: "\n Java NIO channels provide bulk data transfer to and from NIO buffers.

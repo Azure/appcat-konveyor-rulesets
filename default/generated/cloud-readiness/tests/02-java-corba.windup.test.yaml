@@ -1,0 +1,13 @@
+rulesPath: ../02-java-corba.windup.yaml
+providers:
+- name: java
+  dataPath: ./data/02-java-corba
+- name: builtin
+  dataPath: ./data/02-java-corba
+tests:
+- ruleID: java-corba-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 3
+      messageMatches: Common Object Request Broker Architecture

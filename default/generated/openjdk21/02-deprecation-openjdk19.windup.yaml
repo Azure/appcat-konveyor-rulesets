@@ -7,9 +7,11 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk19+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   links: []
-  message: "\n Several classes under `javax.swing.plaf.basic` have been deprecated
-    in JDK 19 for removal in a future release.\n "
+  message: Several classes under `javax.swing.plaf.basic` have been deprecated in
+    JDK 19 for removal in a future release.
   ruleID: deprecation-00010
   when:
     or:
@@ -25,13 +27,14 @@
         pattern: javax.swing.plaf.basic.BasicScrollPaneUI.VSBChangeListener
     - java.referenced:
         location: METHOD_CALL
-        pattern: javax.swing.plaf.basic.BasicDirectoryModel.intervalAdded(*)
+        pattern: javax.swing.plaf.basic.BasicDirectoryModel.intervalAdded
     - java.referenced:
         location: METHOD_CALL
-        pattern: javax.swing.plaf.basic.BasicDirectoryModel.intervalRemoved(*)
+        pattern: javax.swing.plaf.basic.BasicDirectoryModel.intervalRemoved
     - java.referenced:
         location: METHOD_CALL
-        pattern: javax.swing.plaf.basic.BasicDirectoryModel.lt(*)
+        pattern: javax.swing.plaf.basic.BasicDirectoryModel.lt
     - java.referenced:
         location: METHOD_CALL
-        pattern: javax.swing.plaf.basic.BasicToolBarUI.createFloatingFrame(*)
+        pattern: javax.swing.plaf.basic.BasicToolBarUI.createFloatingFrame
+

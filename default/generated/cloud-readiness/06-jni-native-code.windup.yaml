@@ -5,6 +5,9 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=java-native-code
+  - source-category=jni-native-code
   - jni
   links: []
   message: |-
@@ -19,23 +22,24 @@
 
      * **Test and validate**: Thoroughly test the updated application to ensure it works correctly with the new libraries or services. Perform functional, performance, and stress tests to validate that the application meets its requirements and can handle the expected workload.
   ruleID: jni-native-code-00000
+#  TODO: Static method calls are not properly detected for some reason
   when:
     or:
+    # - java.referenced:
+    #    location: METHOD_CALL
+    #    pattern: System.load
     - java.referenced:
         location: METHOD_CALL
-        pattern: java.lang.System.load(*)
+        pattern: loadLibrary
     - java.referenced:
         location: METHOD_CALL
-        pattern: java.lang.System.loadLibrary(*)
+        pattern: mapLibraryName
+    # - java.referenced:
+    #    location: METHOD_CALL
+    #    pattern: Runtime.load
     - java.referenced:
         location: METHOD_CALL
-        pattern: java.lang.System.mapLibraryName(*)
-    - java.referenced:
-        location: METHOD_CALL
-        pattern: java.lang.Runtime.load(*)
-    - java.referenced:
-        location: METHOD_CALL
-        pattern: java.lang.Runtime.loadLibrary(*)
+        pattern: loadLibrary
     - java.referenced:
         location: CONSTRUCTOR_CALL
         pattern: com.sun.jna*
@@ -58,6 +62,9 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
+  - domain=cloud-native
+  - category=java-native-code
+  - source-category=jni-native-code
   - jni
   links: []
   message: |-

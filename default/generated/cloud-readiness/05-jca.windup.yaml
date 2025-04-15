@@ -6,6 +6,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
+  - domain=cloud-native
+  - category=jakartaee-to-azure
   - jca
   links:
   - title: Resource adapter compatibility with JBoss EAP
@@ -21,4 +23,4 @@
   ruleID: jca-00000
   when:
     builtin.file:
-      pattern: ra\.xml
+      pattern: ^ra\.xml$
