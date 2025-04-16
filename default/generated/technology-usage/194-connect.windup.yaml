@@ -10,45 +10,11 @@
   when:
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]+)\.rar$
-- category: potential
-  customVariables: []
+- customVariables: []
   description: ActiveMQ found
-  effort: 3
   labels:
   - konveyor.io/include=always
-  - connect
-  links:
-  - title: Spring Boot application using an Active MQ Broker
-    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#jms-message-brokers
-  - title: Azure Service Bus documentation
-    url: https://learn.microsoft.com/azure/service-bus-messaging
-  - title: Migrate existing Java Message Service applications from Apache ActiveMQ
-      to Azure Service Bus
-    url: https://learn.microsoft.com/azure/service-bus-messaging/migrate-jms-activemq-to-servicebus
-  - title: Azure Monitor documentation
-    url: https://learn.microsoft.com/azure/azure-monitor
-  - title: Passwordless connections for Azure services
-    url: https://learn.microsoft.com/azure/developer/intro/passwordless-overview
-  - title: Microsoft Defender for Cloud
-    url: https://learn.microsoft.com/azure/defender-for-cloud
-  - title: How to use the Spring Boot Starter for Azure Service Bus JMS
-    url: https://docs.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-service-bus
-  - title: Azure Spring Boot Starter for Azure Service Bus JMS
-    url: https://search.maven.org/artifact/com.azure.spring/azure-spring-boot-starter-servicebus-jms
-  message: |-
-    To migrate a Java application that uses ActiveMQ to Azure, you can follow these recommendations:
-
-     * Provision **Azure Service Bus**: Replace ActiveMQ with Azure Service Bus, a fully managed messaging service that offers reliable message queuing and publish/subscribe capabilities.
-
-     * Update the application's **messaging connection** details: Modify the Java application's configuration updating the connection information and message queues/topics.
-
-     * Configure Azure Service Bus **queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
-
-     * Handle **message persistence**: ActiveMQ often relies on disk storage for message persistence. Azure Service Bus offers built-in message persistence, ensuring reliable message delivery. Ensure your application's messaging code handles message persistence appropriately.
-
-     * Enable **monitoring and diagnostics**: Utilize Azure Monitor and Microsoft Defender for Cloud to monitor and detect any potential security threats or anomalies in your Azure Service Bus environment. Enable diagnostics logging and set up alerts for suspicious activities.
-
-     * Apply **security** measures: Implement Azure Active Directory (Azure AD) authentication and authorization for accessing Azure Service Bus resources. Enable TLS encryption for communication between your Java application and Azure Service Bus. Enable passwordless connections for Azure services to improve security and reduce the risk of credential theft.
+  links: []
   ruleID: connect-01500
   tag:
   - ActiveMQ
@@ -62,6 +28,9 @@
         nameregex: org\.apache\.activemq\.([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)activemq([a-zA-Z0-9._-]*)$
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        pattern: artemis\.(broker-url|user|password)
 - customVariables: []
   description: Embedded library - OpenWS
   labels:
@@ -107,6 +76,19 @@
         pattern: ^([a-zA-Z0-9._-]*)lyra([a-zA-Z0-9._-]*)$
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)conduit([a-zA-Z0-9._-]*)$
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        pattern: rabbitmq\.(.*\.)?(addresses|host|virtual-host|username|password)
+    - java.referenced:
+        location: PACKAGE
+        pattern: org.springframework.amqp.rabbit*
+    - and:
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: org\.springframework.*jms
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: com\.rabbitmq.*\.rabbitmq-jms
 - customVariables: []
   description: Embedded library - Spring Messaging Client
   labels:
@@ -165,11 +147,23 @@
   links: []
   ruleID: connect-02300
   tag:
-  - ' Client'
+  - AMQP Client
   - Embedded library - AMQP Client
   when:
-    builtin.file:
-      pattern: ^([a-zA-Z0-9._-]*)amqp([a-zA-Z0-9._-]*)$
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-amqp
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.amqp.spring-rabbit
+    - builtin.filecontent:
+        filePattern: (/|\\)build\.gradle$
+        pattern: spring-boot-starter-amqp
+    - builtin.file:
+        pattern: .*amqp.*
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)amqp([a-zA-Z0-9._-]*)$
 - customVariables: []
   description: Embedded library - RocketMQ Client
   labels:
@@ -177,7 +171,7 @@
   links: []
   ruleID: connect-02400
   tag:
-  - ' Client'
+  - RocketMQ Client
   - Embedded library - RocketMQ Client
   when:
     builtin.file:
@@ -248,3 +242,6 @@
         pattern: ^([a-zA-Z0-9._-]*)kafka-clients([a-zA-Z0-9._-]*)$
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)spring-kafka([a-zA-Z0-9._-]*)$
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        pattern: kafka\.(.*\.)?(properties\.)?(bootstrap[\.-]servers|sasl\.jaas\.config|schema\.registry)

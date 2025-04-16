@@ -22,8 +22,6 @@
 
      * Utilize **KQL** for log analysis: Familiarize yourself with the Kusto Query Language (KQL) to write powerful queries for log analysis in Azure Monitor. KQL provides a flexible and efficient way to extract insights, perform aggregations, and create visualizations from your log data.
   ruleID: logging-0000
-  tag:
-  - Logging to file system
   when:
     or:
     - java.referenced:
@@ -59,8 +57,6 @@
      * Log to standard output and allow the cloud platform to manage the logging.
      * Use shared storage for log files.
   ruleID: logging-0001
-  tag:
-  - Logging to Socket Handler
   when:
     java.referenced:
       location: IMPORT
@@ -90,8 +86,6 @@
      Change your logging configuration to log to console.
      We recommended you to use Azure Monitor for efficient and scalable logging.
   ruleID: logging-0002
-  tag:
-  - Logging to file system
   when:
     or:
     - builtin.filecontent:

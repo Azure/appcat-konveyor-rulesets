@@ -54,27 +54,12 @@
   when:
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]*)elasticsearch([a-zA-Z0-9._-]*)\.jar$
-- category: potential
-  customVariables: []
+- customVariables: []
   description: Embedded library - Logstash
-  effort: 3
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Ensure console logging and configure diagnostic settings
-    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#ensure-console-logging-and-configure-diagnostic-settings
-  - title: Azure Event Hub
-    url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
-  - title: Logstash EventHub plugin
-    url: https://github.com/logstash-plugins/logstash-input-azure_event_hubs
-  message: |-
-    The application embeds the Logstash framework. To migrate a Java application that uses LogStash/ELK Stack for log aggregation to Azure, you can follow this recommendation:
-
-     * Ensure your logging output is routed to the console and not to files.
-
-     * Configure the diagnostic setting to stream the console output to an Azure Event Hub.
-
-     * Use the LogStash EventHub plugin to ingest logged events into LogStash.
+  links: []
+  message: The application embeds the Logstash framework.
   ruleID: 3rd-party-05000
   tag:
   - Logstash
@@ -267,27 +252,12 @@
   when:
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]*)mahout([a-zA-Z0-9._-]*)\.jar$
-- category: potential
-  customVariables: []
+- customVariables: []
   description: Embedded library - Splunk
-  effort: 3
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Ensure console logging and configure diagnostic settings
-    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#ensure-console-logging-and-configure-diagnostic-settings
-  - title: Azure Blob Storage
-    url: https://learn.microsoft.com/azure/storage/blobs/
-  - title: Splunk Add-on for Microsoft Cloud Services
-    url: https://splunkbase.splunk.com/app/3757
-  message: |-
-    The application embeds the Splunk framework. To migrate a Java application that uses Splunk for log aggregation to Azure, you can follow this recommendation:
-
-     * Ensure your logging output is routed to the console and not to files.
-
-     * Configure the diagnostic setting to stream the console output to Azure Blob Storage.
-
-     * Use the Splunk Add-on for Microsoft Cloud Services to ingest logged events into Splunk.
+  links: []
+  message: The application embeds the Splunk framework.
   ruleID: 3rd-party-20000
   tag:
   - Splunk

@@ -1,11 +1,11 @@
-rulesPath: ../08-clustering.windup.yaml
+rulesPath: ../08-clustering-usage.windup.yaml
 providers:
 - name: java
-  dataPath: ./data/08-clustering
+  dataPath: ./data/08-clustering-usage
 - name: builtin
-  dataPath: ./data/08-clustering
+  dataPath: ./data/08-clustering-usage
 tests:
-- ruleID: clustering-00000
+- ruleID: clustering-usage-00000
   testCases:
   - name: tc-1
     hasTags:
@@ -13,7 +13,7 @@ tests:
   - name: tc-2
     hasTags:
     - Clustering Web Session
-- ruleID: clustering-00001
+- ruleID: clustering-usage-00001
   testCases:
   - name: tc-1
     hasTags:

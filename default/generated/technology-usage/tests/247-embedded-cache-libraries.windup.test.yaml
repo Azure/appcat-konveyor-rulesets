@@ -8,9 +8,8 @@ tests:
 - ruleID: embedded-cache-libraries-01000
   testCases:
   - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: The application uses EHCache
+    hasTags:
+    - Ehcache
 - ruleID: embedded-cache-libraries-02000
   testCases:
   - name: tc-1
@@ -97,7 +96,7 @@ tests:
   testCases:
   - name: tc-1
     hasTags:
-    - ShiftOne (Java Object Cache) embedded library
+    - Caching - ShiftOne (Java Object Cache) embedded library
   - name: tc-2
     hasTags:
     - ShiftOne

@@ -322,3 +322,43 @@
   when:
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]*)flume([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Logging to file system
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: logging-usage-00300
+  tag:
+  - Logging to file system
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: org.apache.*log4j.*FileAppender*
+    - java.referenced:
+        location: IMPORT
+        pattern: java.util.logging.FileHandler*
+    - java.referenced:
+        location: IMPORT
+        pattern: ch.qos.logback.core.FileAppender
+    - java.referenced:
+        location: IMPORT
+        pattern: org.pmw.tinylog.writers.FileWriter
+    - builtin.filecontent:
+        filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
+        pattern: (?i)\b(?:Daily)?Rolling?FileAppender\b|type\s*=\s*['"]?(?:Daily)?Rolling?File['"]?|<\/\s*(?:Daily)?Rolling?File\s*>
+    - builtin.filecontent:
+        filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
+        pattern: appender-ref ref=.FILE
+- customVariables: []
+  description: Logging to Socket Handler
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: logging-usage-00310
+  tag:
+  - Logging to Socket Handler
+  when:
+    java.referenced:
+      location: IMPORT
+      pattern: java.util.logging.SocketHandler*

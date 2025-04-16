@@ -3,7 +3,11 @@
   description: Application Performance Management (APM) tool - Application Insights
   effort: 1
   labels:
-  - konveyor.io/include=always
+  - konveyor.io/target=azure-spring-apps
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
   - apm
   links:
   - title: Configure Application Insights to connect with Azure App Service
@@ -19,8 +23,6 @@
 
      * **Configure Application Insights**: To connect Application Insights with Java applications deployed on Azure, you can turn on Application Insights in the portal page of your app or configure it through Azure CLI. For a detailed guide, please refer to the following documentation links.
   ruleID: apm-00000
-  tag:
-  - Application Insights
   when:
     or:
     - java.dependency:
@@ -33,7 +35,11 @@
   description: Application Performance Management (APM) tool - New Relic
   effort: 1
   labels:
-  - konveyor.io/include=always
+  - konveyor.io/target=azure-spring-apps
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
   - apm
   links:
   - title: Configure New Relic for Azure App Service
@@ -43,8 +49,6 @@
 
      * **Configure New Relic**: Connect New Relic with Java applications deployed on Azure by Azure portal or Azure CLI. For a detailed guide, please refer to the following documentation links.
   ruleID: apm-00001
-  tag:
-  - New Relic
   when:
     or:
     - java.dependency:
@@ -57,7 +61,11 @@
   description: Application Performance Management (APM) tool - Elastic APM
   effort: 3
   labels:
-  - konveyor.io/include=always
+  - konveyor.io/target=azure-spring-apps
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
   - apm
   links:
   - title: Deploy and manage Elastic on Azure
@@ -73,8 +81,6 @@
 
      * **Integrate Elastic APM**: To connect Elastic APM with your Java applications deployed on Azure, you can configure the integration based on the specific Azure service you want to use.
   ruleID: apm-00002
-  tag:
-  - Elastic APM
   when:
     or:
     - java.dependency:
@@ -87,7 +93,11 @@
   description: Application Performance Management (APM) tool - Dynatrace
   effort: 3
   labels:
-  - konveyor.io/include=always
+  - konveyor.io/target=azure-spring-apps
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
   - apm
   links:
   - title: Monitor Azure App Service using Dynatrace OneAgent
@@ -103,8 +113,6 @@
 
      * **Integrate Dynatrace**: To connect Dynatrace with your Java applications deployed on Azure, you can configure the integration based on the specific Azure service you want to use.
   ruleID: apm-00003
-  tag:
-  - Dynatrace
   when:
     or:
     - builtin.file:

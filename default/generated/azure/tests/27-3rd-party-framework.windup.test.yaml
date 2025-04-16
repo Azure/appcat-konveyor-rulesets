@@ -1,0 +1,43 @@
+rulesPath: ../27-3rd-party-framework.windup.yaml
+providers:
+- name: java
+  dataPath: ./data/27-3rd-party-framework
+- name: builtin
+  dataPath: ./data/27-3rd-party-framework
+tests:
+- ruleID: 3rd-party-framework-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Logstash framework.
+- ruleID: 3rd-party-framework-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Splunk framework.
+- ruleID: 3rd-party-framework-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Feign framework.
+- ruleID: 3rd-party-framework-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Zipkin framework.
+- ruleID: 3rd-party-framework-04000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Eureka client.
+- ruleID: 3rd-party-framework-05000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Eureka server.

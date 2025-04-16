@@ -44,3 +44,9 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: The application uses Spring JMS RabbitMQ dependency.
+- ruleID: azure-message-queue-activemq-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses ActiveMQ to Azure

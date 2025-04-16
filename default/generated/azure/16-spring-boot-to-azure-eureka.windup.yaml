@@ -23,8 +23,6 @@
     system attribute**, **environment variable**: they need to be removed or you might
     experience conflicts and unexpected behavior."
   ruleID: spring-boot-to-azure-eureka-01000
-  tag:
-  - Eureka
   when:
     builtin.filecontent:
       filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$

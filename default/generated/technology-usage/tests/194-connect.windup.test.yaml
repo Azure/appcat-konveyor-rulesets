@@ -8,7 +8,5 @@ tests:
 - ruleID: connect-01500
   testCases:
   - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: To migrate a Java application that uses ActiveMQ to Azure, you
-        can follow these recommendations
+    hasTags:
+    - ActiveMQ

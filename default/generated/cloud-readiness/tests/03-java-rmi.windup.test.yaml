@@ -14,5 +14,6 @@ tests:
 - ruleID: java-rmi-00001
   testCases:
   - name: tc-1
-    hasTags:
-    - Java Remote Method Invocation (RMI) API
+    hasIncidents:
+      atLeast: 1
+      messageMatches: When migrating an application that uses Java Remote Method Invocation (RMI) API

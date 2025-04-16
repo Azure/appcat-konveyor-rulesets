@@ -90,31 +90,15 @@
         pattern: ^([a-zA-Z0-9._-]*)jnlp([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)webstart([a-zA-Z0-9._-]*)\.jar$
-- category: potential
-  customVariables: []
-  description: Java Swing usage
-  effort: 3
+- customVariables: []
+  description: Embedded technology - Swing
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Azure Container Registry documentation
-    url: https://learn.microsoft.com/azure/container-registry
-  - title: Azure Container Instances documentation
-    url: https://learn.microsoft.com/azure/container-instances
-  - title: Azure Container Apps documentation
-    url: https://learn.microsoft.com/azure/container-apps/overview
-  message: |-
-    The application uses Java Swing for the graphical user interface.
-     Java Swing requires the JRE on the remote device.
-
-     * **Containerize** the Java Swing application: Build the Docker image so that it packages the application and the JRE, and push it to Azure Container Registry (ACR). Then you can deploy the container to Azure using Azure Container Instances (ACI), Azure Container Apps (ACA) or Azure Kubernetes Service (AKS).
-
-     * **Leverage Azure Virtual Machines (VMs)**: Create a Windows or Linux-based Azure VM with the appropriate configuration for hosting your Java Swing application. For this, install the required Java Development Kit (JDK) and Java Swing runtime on the Azure VM.
-
-     * **Consider performance**: Java Swing applications require the GUI to be rendered, which may bring performance and scalability limitations. Also check the networking requirements when selecting the appropriate Azure service for your Java Swing application.
+  links: []
   ruleID: technology-usage-web-01700
   tag:
   - Swing
+  - Embedded technology - Swing
   when:
     or:
     - java.referenced:
@@ -187,31 +171,15 @@
   when:
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]*)swt([a-zA-Z0-9._-]*)\.jar$
-- category: potential
-  customVariables: []
-  description: JavaFX usage
-  effort: 3
+- customVariables: []
+  description: Embedded technology - JavaFX
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Azure Container Registry documentation
-    url: https://learn.microsoft.com/azure/container-registry
-  - title: Azure Container Instances documentation
-    url: https://learn.microsoft.com/azure/container-instances
-  - title: Azure Container Apps documentation
-    url: https://learn.microsoft.com/azure/container-apps/overview
-  message: |-
-    The application uses JavaFX for the graphical user interface.
-     JavaFX requires the JRE on the remote device.
-
-     * **Containerize** the JavaFX application: Build the Docker image so that it packages the application and the JRE, and push it to Azure Container Registry (ACR). Then you can deploy the container to Azure using Azure Container Instances (ACI), Azure Container Apps (ACA) or Azure Kubernetes Service (AKS).
-
-     * **Leverage Azure Virtual Machines (VMs)**: Create a Windows or Linux-based Azure VM with the appropriate configuration for hosting your JavaFX application. For this, install the required Java Development Kit (JDK) and JavaFX runtime on the Azure VM.
-
-     * **Consider performance**: JavaFX applications require the GUI to be rendered, which may bring performance and scalability limitations. Also check the networking requirements when selecting the appropriate Azure service for your JavaFX application.
+  links: []
   ruleID: technology-usage-web-02300
   tag:
   - JavaFX
+  - Embedded technology - JavaFX
   when:
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]*)javafx([a-zA-Z0-9._-]*)\.jar$
@@ -235,3 +203,30 @@
         pattern: ^([a-zA-Z0-9._-]*)eclipse([a-zA-Z0-9._-]*)runtime([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)eclipse\.ui([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded technology - Java Remote Method Invocation (RMI) service
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application uses Java Remote Method Invocation (RMI) service
+  ruleID: technology-usage-web-02500
+  tag:
+  - Java Remote Method Invocation (RMI) service
+  when:
+    java.referenced:
+      location: INHERITANCE
+      pattern: java.rmi.Remote
+- customVariables: []
+  description: Embedded technology - Java Remote Method Invocation (RMI) API
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application uses Java Remote Method Invocation (RMI) API
+  ruleID: technology-usage-web-02600
+  tag:
+  - rmi
+  - Java Remote Method Invocation (RMI) API
+  when:
+    java.referenced:
+        location: PACKAGE
+        pattern: java.rmi*

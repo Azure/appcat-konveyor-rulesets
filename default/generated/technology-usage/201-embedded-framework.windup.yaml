@@ -773,21 +773,11 @@
   when:
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]*)quartz([a-zA-Z0-9._-]*)\.jar$
-- category: potential
-  customVariables: []
+- customVariables: []
   description: Embedded framework - Feign
-  effort: 0
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Migrate clients bypassing the service registry
-    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps
-  - title: Spring Cloud OpenFeign
-    url: https://spring.io/projects/spring-cloud-openfeign/
-  message: |-
-    The application embeds the Feign framework. If you are migrating to Azure Container Apps, it is recommended to use Spring Cloud OpenFeign instead (Spring Cloud Feign has been deprecated).
-
-     When migrating to Azure Container Apps, you can provision the managed Eureka Server. Spring Cloud OpenFeign will easily discover the service registry and invoke the services.
+  links: []
   ruleID: embedded-framework-09000
   tag:
   - Feign
@@ -801,25 +791,11 @@
         name: org.springframework.cloud.spring-cloud-starter-feign
     - builtin.file:
         pattern: ^feign-([a-zA-Z0-9._-]*)\.jar$
-- category: potential
-  customVariables: []
+- customVariables: []
   description: Embedded framework - Zipkin
-  effort: 0
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Azure Monitor
-    url: https://learn.microsoft.com/azure/azure-monitor/
-  - title: Observability in Azure Container Apps
-    url: https://learn.microsoft.com/en-us/azure/container-apps/observability
-  - title: Distributed Tracing
-    url: https://learn.microsoft.com/azure/azure-monitor/app/distributed-trace-data
-  message: |-
-    The application embeds the Zipkin framework. To migrate a Java application that uses Zipkin to Azure, it is recommended to use Azure Monitor instead.
-
-     * **Identify Zipkin dependencies**: Identify the Zipkin dependencies in your application.
-
-     * **Replace with Azure Monitor**: Azure Monitor provides distributed tracing capabilities. Azure services such as Azure Container Apps, Azure Kubernetes Service, Azure App Service support auto-instrumentation for Azure Monitor.
+  links: []
   ruleID: embedded-framework-09100
   tag:
   - Zipkin
@@ -833,29 +809,11 @@
         nameregex: io\.zipkin([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)zipkin([a-zA-Z0-9._-]*)\.jar$
-- category: potential
-  customVariables: []
+- customVariables: []
   description: Embedded framework - Eureka Client
-  effort: 0
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Connect to a managed Eureka Server for Spring in Azure Container Apps
-    url: https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server?tabs=azure-cli
-  - title: Create a highly available Eureka server component cluster in Azure Container Apps
-    url: https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server-highly-available
-  - title: Integrate Admin for Spring with Eureka Server for Spring in Azure Container Apps
-    url: https://learn.microsoft.com/en-us/azure/container-apps/java-admin-eureka-integration
-  - title: Remove restricted configurations
-    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps#remove-restricted-configurations
-  message: |-
-    The application embeds the Eureka client. If you are migrating to Azure Container Apps, the connection info of Eureka can be injected upon app start.
-
-     Find any explicit configurations of config server connection info:
-
-     If configured in **configuration files**: they will be ignored and overrided by Azure Container Apps.
-
-     If configured in **command line parameters**, **Java system attribute**, **environment variable**: they need to be removed or you might experience conflicts and unexpected behavior.
+  links: []
   ruleID: embedded-framework-09300
   tag:
   - Eureka
@@ -866,24 +824,14 @@
         nameregex: ([a-zA-Z0-9._-]*)eureka-client([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)eureka-client([a-zA-Z0-9._-]*)\.jar$
-- category: potential
-  customVariables: []
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        pattern: eureka\.client\.(service-url|serviceUrl)
+- customVariables: []
   description: Embedded framework - Eureka Server
-  effort: 0
   labels:
   - konveyor.io/include=always
-  links:
-  - title: Connect to a managed Eureka Server for Spring in Azure Container Apps
-    url: https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server?tabs=azure-cli
-  - title: Create a highly available Eureka server component cluster in Azure Container Apps
-    url: https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server-highly-available
-  - title: Integrate Admin for Spring with Eureka Server for Spring in Azure Container Apps
-    url: https://learn.microsoft.com/en-us/azure/container-apps/java-admin-eureka-integration
-  - title: Remove restricted configurations
-    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps#remove-restricted-configurations
-  message: The application embeds the Eureka server. If you are migrating to Azure
-    Container Apps, the managed Eureka Server can be used. The managed Eureka Server is a fully managed service that can
-    be hosted for you.
+  links: []
   ruleID: embedded-framework-09400
   tag:
   - Eureka

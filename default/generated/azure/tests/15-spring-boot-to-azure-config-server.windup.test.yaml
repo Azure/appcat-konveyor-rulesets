@@ -18,3 +18,9 @@ tests:
     hasIncidents:
       atLeast: 2
       messageMatches: The application uses Spring Cloud Config Server
+- ruleID: spring-boot-to-azure-config-server-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds Spring Cloud Config

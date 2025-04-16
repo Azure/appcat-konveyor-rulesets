@@ -50,8 +50,6 @@
     you can reduce the risk of password-related vulnerabilities, such as weak passwords
     or password theft."
   ruleID: azure-message-queue-config-kafka-01000
-  tag:
-  - Kafka Client
   when:
     builtin.filecontent:
       filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
@@ -93,8 +91,6 @@
     the risk of password-related vulnerabilities, such as weak passwords or password
     theft."
   ruleID: azure-message-queue-config-rabbitmq-01000
-  tag:
-  - RabbitMQ Client
   when:
     builtin.filecontent:
       filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
@@ -133,8 +129,6 @@
 
      * **Passwordless connections for Azure services**: Consider using passwordless connections for Azure services. You can provide an additional layer of security and convenience for accessing resources in Azure by eliminating the need for passwords. This way you can reduce the risk of password-related vulnerabilities, such as weak passwords or password theft.
   ruleID: azure-message-queue-config-artemis-01000
-  tag:
-  - ActiveMQ
   when:
     builtin.filecontent:
       filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
@@ -167,8 +161,6 @@
 
      * Configure Azure Service Bus **queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
   ruleID: azure-message-queue-rabbitmq-01000
-  tag:
-  - RabbitMQ Client
   when:
     java.referenced:
       location: PACKAGE
@@ -201,8 +193,6 @@
 
      * Configure Azure Service Bus **queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
   ruleID: azure-message-queue-amqp-02000
-  tag:
-  - AMQP Client
   when:
     or:
     - java.dependency:
@@ -245,8 +235,6 @@
      * Replace RabbitMQ dependencies with Azure Service Bus dependencies: Remove RabbitMQ dependencies and add Azure Service Bus dependencies: com.azure.spring spring-cloud-azure-dependencies, com.azure.spring spring-cloud-azure-starter-servicebus-jms.
      * Replace RabbitMQ connection details with Azure Service Bus connection details: Modify the Java application's configuration updating the connection information and message queues/topics.
   ruleID: azure-message-queue-spring-jms-rabbitmq-01000
-  tag:
-  - RabbitMQ Client
   when:
     and:
     - java.dependency:
@@ -255,3 +243,60 @@
     - java.dependency:
         lowerbound: 0.0.0
         nameregex: com\.rabbitmq.*\.rabbitmq-jms
+- category: potential
+  customVariables: []
+  description: ActiveMQ found
+  effort: 3
+  labels:
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=azure-readiness
+  - category=messaging-service-migration
+  - source-category=activemq
+  - message-queue
+  - ActiveMQ
+  links:
+  - title: Spring Boot application using an Active MQ Broker
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#jms-message-brokers
+  - title: Azure Service Bus documentation
+    url: https://learn.microsoft.com/azure/service-bus-messaging
+  - title: Migrate existing Java Message Service applications from Apache ActiveMQ
+      to Azure Service Bus
+    url: https://learn.microsoft.com/azure/service-bus-messaging/migrate-jms-activemq-to-servicebus
+  - title: Azure Monitor documentation
+    url: https://learn.microsoft.com/azure/azure-monitor
+  - title: Passwordless connections for Azure services
+    url: https://learn.microsoft.com/azure/developer/intro/passwordless-overview
+  - title: Microsoft Defender for Cloud
+    url: https://learn.microsoft.com/azure/defender-for-cloud
+  - title: How to use the Spring Boot Starter for Azure Service Bus JMS
+    url: https://docs.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-service-bus
+  - title: Azure Spring Boot Starter for Azure Service Bus JMS
+    url: https://search.maven.org/artifact/com.azure.spring/azure-spring-boot-starter-servicebus-jms
+  message: |-
+    To migrate a Java application that uses ActiveMQ to Azure, you can follow these recommendations:
+
+     * Provision **Azure Service Bus**: Replace ActiveMQ with Azure Service Bus, a fully managed messaging service that offers reliable message queuing and publish/subscribe capabilities.
+
+     * Update the application's **messaging connection** details: Modify the Java application's configuration updating the connection information and message queues/topics.
+
+     * Configure Azure Service Bus **queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
+
+     * Handle **message persistence**: ActiveMQ often relies on disk storage for message persistence. Azure Service Bus offers built-in message persistence, ensuring reliable message delivery. Ensure your application's messaging code handles message persistence appropriately.
+
+     * Enable **monitoring and diagnostics**: Utilize Azure Monitor and Microsoft Defender for Cloud to monitor and detect any potential security threats or anomalies in your Azure Service Bus environment. Enable diagnostics logging and set up alerts for suspicious activities.
+
+     * Apply **security** measures: Implement Azure Active Directory (Azure AD) authentication and authorization for accessing Azure Service Bus resources. Enable TLS encryption for communication between your Java application and Azure Service Bus. Enable passwordless connections for Azure services to improve security and reduce the risk of credential theft.
+  ruleID: azure-message-queue-activemq-01000
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-activemq
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: org\.apache\.activemq\.([a-zA-Z0-9._-]*)
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)activemq([a-zA-Z0-9._-]*)$
