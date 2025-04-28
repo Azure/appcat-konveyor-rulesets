@@ -1,0 +1,2 @@
+name: openjdk8/openjdk8-
+description: This ruleset provides analysis with respect to API removals between OpenJDK 8 and lower than 8.

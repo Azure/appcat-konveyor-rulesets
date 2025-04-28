@@ -1,0 +1,13 @@
+rulesPath: ../11-java-thread.yaml
+providers:
+- name: java
+  dataPath: ./data/11-java-thread
+- name: builtin
+  dataPath: ./data/11-java-thread
+tests:
+- ruleID: java-thread-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The Thread.stop method has been deprecated since release 1.2. This method now throws an UnsupportedOperationException.

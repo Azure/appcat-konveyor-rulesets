@@ -10,11 +10,15 @@
   - domain=java-modernization
   - category=java-version-upgrade
   - version
-  links: []
+  links:
+  - title: Java support on Azure and Azure Stack
+    url: https://learn.microsoft.com/en-us/azure/developer/java/fundamentals/java-support-on-azure
+  - title: Support roadmap for the Microsoft Build of OpenJDK
+    url: https://learn.microsoft.com/en-us/java/openjdk/support
   message: |-
-    The application is using non-LTS version Java. JDK on LTS version is recommended, i.e. **Java 8**, **Java 11** or **Java 17**.
+    The application is using non-LTS version Java. JDK on LTS version is recommended, i.e. **Java 8**, **Java 11**, **Java 17** or **Java 21**.
 
-     * Choose a **supported Java version**: Determine the most suitable supported Java version provided by Azure. As of now, Azure supports Java 8, Java 11, and Java 17.
+     * Choose a **supported Java version**: Determine the most suitable supported Java version provided by Azure. As of now, Azure supports Java 8, Java 11, Java 17, and Java 21.
 
      * **Update Java Development Kit** (JDK): Update the JDK in your development environment and build pipelines to the chosen supported version. This ensures that your application is built and packaged using the compatible Java version.
 
@@ -31,10 +35,10 @@
       - pom.xml
       namespaces:
         m: http://maven.apache.org/POM/4.0.0
-      xpath: //m:java.version[matches(text(), '(9|10|12|13|14|15|16|19|20).*')]
+      xpath: //m:java.version[matches(text(), '(9|10|12|13|14|15|16|18|19|20).*')]
 - category: mandatory
   customVariables: []
-  description: Java version found to be lower than JAVA_8
+  description: Java version found to be lower than Java 8
   effort: 3
   labels:
   - konveyor.io/target=azure-appservice
@@ -44,12 +48,16 @@
   - domain=java-modernization
   - category=java-version-upgrade
   - version
-  links: []
+  links:
+  - title: Java support on Azure and Azure Stack
+    url: https://learn.microsoft.com/en-us/azure/developer/java/fundamentals/java-support-on-azure
+  - title: Support roadmap for the Microsoft Build of OpenJDK
+    url: https://learn.microsoft.com/en-us/java/openjdk/support
   message: |-
-    The application is using a Java version lower than Java 8. JDK on LTS version is recommended, i.e. **Java 8**, **Java 11** or **Java 17**.
+    The application is using a Java version lower than Java 8. JDK on LTS version is recommended, i.e. **Java 8**, **Java 11**, **Java 17** or **Java 21**.
      It is strongly recommended to plan and execute a migration strategy to upgrade your application to a newer supported Java version.
 
-     * **Unsupported Java versions**: Azure supports Java 8, Java 11, and Java 17. Versions of Java older than Java 8 are not supported, which means you may encounter compatibility issues and security vulnerabilities.
+     * **Unsupported Java versions**: Azure supports Java 8, Java 11, Java 17, and Java 21. Versions of Java older than Java 8 are not supported, which means you may encounter compatibility issues and security vulnerabilities.
 
      * **Security risks**: Older Java versions may have known security vulnerabilities that can expose your application and infrastructure to potential attacks. Migrating to a supported version ensures that you benefit from the latest security patches and updates.
 

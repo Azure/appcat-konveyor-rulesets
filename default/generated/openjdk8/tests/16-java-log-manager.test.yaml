@@ -1,0 +1,13 @@
+rulesPath: ../16-java-log-manager.yaml
+providers:
+- name: java
+  dataPath: ./data/16-java-log-manager
+- name: builtin
+  dataPath: ./data/16-java-log-manager
+tests:
+- ruleID: java-log-manager-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The addPropertyChangeListener and removePropertyChangeListener methods under LogManager are expected to be removed 

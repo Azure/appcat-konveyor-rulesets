@@ -1,0 +1,19 @@
+rulesPath: ../08-java-security.yaml
+providers:
+- name: java
+  dataPath: ./data/08-java-security
+- name: builtin
+  dataPath: ./data/08-java-security
+tests:
+- ruleID: java-security-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: com.sun.media.sound has been added to list of restricted packages in JDK 8.
+- ruleID: java-security-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The `java.security.SecurityPermission insertProvider.{provider name}`

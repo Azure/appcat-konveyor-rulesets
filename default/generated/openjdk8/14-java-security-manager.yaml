@@ -1,0 +1,54 @@
+- category: mandatory
+  customVariables: []
+  description: The SecurityManager.checkMemberAccess method is deprecated.
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The SecurityManager.checkMemberAccess method is deprecated. It has been error-prone to depend on the caller on a stack frame at depth 4. The JDK implementation no longer calls the SecurityManager.checkMemberAccess method to perform member access check; instead it calls the SecurityManager.checkPermission method.
+
+    Custom SecurityManager implementation that overrides the checkMemberAccess method may be impacted by this change as the overridden version will not be called.
+  ruleID: java-security-manager-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: checkMemberAccess
+- category: mandatory
+  customVariables: []
+  description: The checkTopLevelWindow, checkSystemClipboardAccess, and checkAwtEventQueueAccess methods under SecurityManager class are deprecated.
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The checkTopLevelWindow, checkSystemClipboardAccess, and checkAwtEventQueueAccess methods under SecurityManager class are deprecated. 
+    
+    Instead use the SecurityManager.checkPermission method.
+  ruleID: java-security-manager-00002
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: checkTopLevelWindow
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: checkSystemClipboardAccess
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: checkAwtEventQueueAccess

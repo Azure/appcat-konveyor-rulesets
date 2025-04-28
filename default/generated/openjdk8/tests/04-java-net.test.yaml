@@ -1,0 +1,13 @@
+rulesPath: ../04-java-net.yaml
+providers:
+- name: java
+  dataPath: ./data/04-java-net
+- name: builtin
+  dataPath: ./data/04-java-net
+tests:
+- ruleID: java-net-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Prior to Java 8, the `java.net.DatagramPacket` constructors that accept a `java.net.SocketAddress` argument 

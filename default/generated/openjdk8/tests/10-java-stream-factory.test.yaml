@@ -1,0 +1,13 @@
+rulesPath: ../10-java-stream-factory.yaml
+providers:
+- name: java
+  dataPath: ./data/10-java-stream-factory
+- name: builtin
+  dataPath: ./data/10-java-stream-factory
+tests:
+- ruleID: java-stream-factory-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The ClassLoader parameter is no longer ignored in javax.xml.stream factories.

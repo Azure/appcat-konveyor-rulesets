@@ -1,0 +1,25 @@
+rulesPath: ../02-java-reflect.yaml
+providers:
+- name: java
+  dataPath: ./data/02-java-reflect
+- name: builtin
+  dataPath: ./data/02-java-reflect
+tests:
+- ruleID: java-reflect-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The `java.lang.reflect.Proxy` class that implements non-public interface will be
+- ruleID: java-reflect-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The `java.lang.reflect.Proxy(InvocationHandler h)` constructor now throws a `NullPointerException` 
+- ruleID: java-reflect-00003
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The javadoc for the `Class.getMethod` and `Class.getMethods` refer to the definition

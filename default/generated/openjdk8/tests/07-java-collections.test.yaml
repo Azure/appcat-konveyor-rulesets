@@ -1,0 +1,13 @@
+rulesPath: ../07-java-collections.yaml
+providers:
+- name: java
+  dataPath: ./data/07-java-collections
+- name: builtin
+  dataPath: ./data/07-java-collections
+tests:
+- ruleID: java-collections-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: In previous releases, some implementations of Collection.removeAll(Collection) and retainAll(Collection) 

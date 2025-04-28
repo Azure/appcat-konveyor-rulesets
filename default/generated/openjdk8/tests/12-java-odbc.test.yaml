@@ -1,0 +1,13 @@
+rulesPath: ../12-java-odbc.yaml
+providers:
+- name: java
+  dataPath: ./data/12-java-odbc
+- name: builtin
+  dataPath: ./data/12-java-odbc
+tests:
+- ruleID: java-odbc-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: Starting with JDK 8, the JDBC-ODBC Bridge is no longer included with the JDK. 

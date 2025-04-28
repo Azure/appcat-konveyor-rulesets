@@ -1,0 +1,13 @@
+rulesPath: ../06-java-awt.yaml
+providers:
+- name: java
+  dataPath: ./data/06-java-awt
+- name: builtin
+  dataPath: ./data/06-java-awt
+tests:
+- ruleID: java-awt-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Prior to the Java SE 8 release, a manual check was required to ensure that keystrokes were of type `AWTKeyStroke`.

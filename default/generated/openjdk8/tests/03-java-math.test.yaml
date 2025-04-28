@@ -1,0 +1,13 @@
+rulesPath: ../03-java-math.yaml
+providers:
+- name: java
+  dataPath: ./data/03-java-math
+- name: builtin
+  dataPath: ./data/03-java-math
+tests:
+- ruleID: java-math-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 3
+      messageMatches: Prior to Java SE 8, when `BigDecimal.stripTrailingZeros` was called on a value numerically equal to zero

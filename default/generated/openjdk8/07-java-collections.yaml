@@ -1,0 +1,25 @@
+- category: potential
+  customVariables: []
+  description: NullPointerException for Null Arguments in Collection.removeAll() and retainAll()
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=java-version-upgrade
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    In previous releases, some implementations of Collection.removeAll(Collection) and retainAll(Collection) would silently ignore a null parameter if the collection itself was empty. As of this release, collections will consistently throw a NullPointerException if null is provided as a parameter.
+  ruleID: java-collections-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern:  java.util.Collection.removeAll
+    - java.referenced:
+        location: METHOD_CALL
+        pattern:  java.util.Collection.retainAll

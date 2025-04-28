@@ -1,0 +1,19 @@
+rulesPath: ../15-java-pack200.yaml
+providers:
+- name: java
+  dataPath: ./data/15-java-pack200
+- name: builtin
+  dataPath: ./data/15-java-pack200
+tests:
+- ruleID: java-pack200-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The addPropertyChangeListener and removePropertyChangeListener methods under Pack200.Packer interface
+- ruleID: java-pack200-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The addPropertyChangeListener and removePropertyChangeListener methods under Pack200.Unpacker interface 

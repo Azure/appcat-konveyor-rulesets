@@ -1,0 +1,82 @@
+- category: potential
+  customVariables: []
+  description: The java.lang.reflect.Proxy class that implements non-public interface will be non-public, final, and not abstract.
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=java-version-upgrade
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The `java.lang.reflect.Proxy` class that implements non-public interface will be **non-public**, final, and not abstract. Prior to Java SE 8, the proxy class was **public**, final and not abstract.
+
+    * If existing code is using `Proxy.getProxyClass` and the `Constructor.newInstance` method to create a proxy instance, it will fail with `IllegalAccessException` if the caller is not in the same runtime package as the non-public proxy interface. For such code, it requires a source change to either (1) call `Constructor.setAccessible` to set the accessible flag to true, or (2) use the `Proxy.newProxyInstance` convenience method.
+
+    * The new `permission ReflectPermission("newProxyInPackage.{package name}")` permission may need to granted if existing code attempts to create a proxy to implement a non-public interface from a different runtime package.
+  ruleID: java-reflect-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.reflect.Proxy.getProxyClass*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.reflect.Constructor.newInstance*
+- category: potential
+  customVariables: []
+  description: The `java.lang.reflect.Proxy(InvocationHandler h)` constructor throws a `NullPointerException` if null `InvocationHandler` parameter.
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=java-version-upgrade
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The `java.lang.reflect.Proxy(InvocationHandler h)` constructor now throws a `NullPointerException` if the given `InvocationHandler` parameter is null.
+
+    Existing code that constructs a dynamic proxy instance with a null argument will now get `NullPointerException`. Such usage is expected to rarely exist since a null proxy instance has no use and will throw a `NullPointerException` when its method is invoked anyway.
+  ruleID: java-reflect-00002
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.reflect.Proxy.newProxyInstance*
+- category: potential
+  customVariables: []
+  description: Default methods affect the result of Class.getMethod and Class.getMethods
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=java-version-upgrade
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The javadoc for the `Class.getMethod` and `Class.getMethods` refer to the definition of inheritance in the Java Language Specification. Java SE 8 changed these rules in order to support default methods and reduce the number of redundant methods inherited from superinterfaces (see JLS 8, 8.4.8). For example, say a class has two superinterfaces, I and J, each of which declare "int length();". Generally, we consider both methods to be members of the class; but if J also extends I, then as of Java SE 8, the class only inherits one method: `J.length()`.
+
+    `Class.getMethod` and `Class.getMethods` were not updated with the 8 release to match the new inheritance definition (both may return non-inherited superinterface methods). Typically, the distinction is of no consequence; and for compatibility, it is preferred that the identity and number of returned methods match Java SE 7 as closely as possible. However, when the overriding method ("J.length", above) is a default method, it is important to filter out other overridden methods ("I.length" above).
+
+    Starting with JDK 8u20, the implementation has been changed to perform this filtering step when the overrider is a default method.
+  ruleID: java-reflect-00003
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Class.getMethod*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Class.getMethods*

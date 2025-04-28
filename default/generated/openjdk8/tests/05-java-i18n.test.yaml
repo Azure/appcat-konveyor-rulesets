@@ -1,0 +1,13 @@
+rulesPath: ../05-java-i18n.yaml
+providers:
+- name: java
+  dataPath: ./data/05-java-i18n
+- name: builtin
+  dataPath: ./data/05-java-i18n
+tests:
+- ruleID: java-i18n-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The mechanism to select a `LocaleServiceProvider` has changed.

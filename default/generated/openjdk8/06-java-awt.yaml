@@ -1,0 +1,25 @@
+- category: mandatory
+  customVariables: []
+  description: Stricter Type Checking for Focus Traversal Keys Introduced in Java 8
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=java-version-upgrade
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    Prior to the Java SE 8 release, a manual check was required to ensure that keystrokes were of type `AWTKeyStroke`. This check has been replaced by a generic check in the `Component.setFocusTraversalKeys()` and `KeyboardFocusManager.setDefaultFocusTraversalKeys()` methods. A `ClassCastException` is now thrown if any `Object` is not of type `AWTKeyStroke`.
+  ruleID: java-awt-00001
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\).*\.java$
+        pattern: instanceof AWTKeyStroke
+    - builtin.filecontent:
+        filePattern: (/|\\).*\.java$
+        pattern: instanceof java.awt.AWTKeyStroke

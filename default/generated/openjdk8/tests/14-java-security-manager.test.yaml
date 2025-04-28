@@ -1,0 +1,19 @@
+rulesPath: ../14-java-security-manager.yaml
+providers:
+- name: java
+  dataPath: ./data/14-java-security-manager
+- name: builtin
+  dataPath: ./data/14-java-security-manager
+tests:
+- ruleID: java-security-manager-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The SecurityManager.checkMemberAccess method is deprecated.
+- ruleID: java-security-manager-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 6
+      messageMatches: The checkTopLevelWindow, checkSystemClipboardAccess, and checkAwtEventQueueAccess methods under SecurityManager class are deprecated.

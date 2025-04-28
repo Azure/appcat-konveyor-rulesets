@@ -1,0 +1,13 @@
+rulesPath: ../09-java-corba.yaml
+providers:
+- name: java
+  dataPath: ./data/09-java-corba
+- name: builtin
+  dataPath: ./data/09-java-corba
+tests:
+- ruleID: java-corba-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The JDK internal package com.sun.corba.se and sub-packages have been added to the restricted package

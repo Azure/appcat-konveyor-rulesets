@@ -1,0 +1,13 @@
+rulesPath: ../17-java-callback.yaml
+providers:
+- name: java
+  dataPath: ./data/17-java-callback
+- name: builtin
+  dataPath: ./data/17-java-callback
+tests:
+- ruleID: java-callback-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The class com.sun.security.auth.callback.DialogCallbackHandler has been deprecated and is expected to be removed 

@@ -1,0 +1,13 @@
+rulesPath: ../01-java-type-variable.yaml
+providers:
+- name: java
+  dataPath: ./data/01-java-type-variable
+- name: builtin
+  dataPath: ./data/01-java-type-variable
+tests:
+- ruleID: java-type-variable-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: In Java 8, the value returned from `javax.lang.model.type.TypeVariable.getUpperBound` for `TypeVariables` with multiple bounds is different

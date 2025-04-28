@@ -1,0 +1,24 @@
+- category: potential
+  customVariables: []
+  description: The `java.net.DatagramPacket` constructors that accept a `java.net.SocketAddress` argument no longer declare that a `java.net.SocketException` can be thrown.
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=java-version-upgrade
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    Prior to Java 8, the `java.net.DatagramPacket` constructors that accept a `java.net.SocketAddress` argument declared that a `java.net.SocketException` can be thrown. However, that exception was never thrown by those constructors. 
+    
+    In the Java 8 release, these constructors do not declare that a `java.net.SocketException` can be thrown. If you have existing code that explicitly catches `SocketException` or its superclass `java.io.IOException`, remove the catch block for the exception before compiling with Java SE 8.
+  ruleID: java-net-00001
+  when:
+    or:
+    - java.referenced:
+        location: CONSTRUCTOR_CALL
+        pattern: java.net.DatagramPacket*

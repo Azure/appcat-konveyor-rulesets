@@ -1,0 +1,27 @@
+- category: potential
+  customVariables: []
+  description: TypeVariable.getUpperBound returns IntersectionType for multiple bounds in Java 8
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=java-version-upgrade
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    In Java 8, the value returned from `javax.lang.model.type.TypeVariable.getUpperBound` for `TypeVariables` with multiple bounds is different from the return value in earlier releases. An instance of the newly introduced `IntersectionType` is now returned, while originally an instance of `DeclaredType` was returned. 
+    
+    This may cause a change in behavior of existing implementations of `javax.lang.model.util.TypeVisitor`: before, the `visitDeclared` method was invoked for the return value of `TypeVariable.getUpperBound` for type variables with multiple bounds, now `visitIntersection` is invoked. The difference can also observed by calling `getKind()` of the returned value.
+  ruleID: java-type-variable-00001
+  when:
+    and:
+    - java.referenced:
+        location: PACKAGE
+        pattern: javax.lang.model.util.TypeVisitor
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: getUpperBound

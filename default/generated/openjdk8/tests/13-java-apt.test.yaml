@@ -1,0 +1,13 @@
+rulesPath: ../13-java-apt.yaml
+providers:
+- name: java
+  dataPath: ./data/13-java-apt
+- name: builtin
+  dataPath: ./data/13-java-apt
+tests:
+- ruleID: java-apt-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The apt tool and its associated API contained in the package com.sun.mirror have been removed in this release.
