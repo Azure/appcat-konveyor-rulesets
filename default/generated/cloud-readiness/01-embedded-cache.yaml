@@ -1,0 +1,361 @@
+- category: mandatory
+  customVariables: []
+  description: Caching - Ehcache embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links:
+  - title: Azure Cache for Redis documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: Caching guidance
+    url: https://learn.microsoft.com/azure/architecture/best-practices/caching
+  message: |-
+    The application uses EHCache. Azure does not have a managed service for EHCache. You either have to set up the EHCache distribution on Azure yourself, or you can take advantage of a managed Redis service if you are ready to migrate from EHCache to Redis. Azure Cache for Redis offers scalability, high availability, and monitoring capabilities. **Azure Cache for Redis** provides features like data persistence, automatic failover, and built-in support for Redis commands, allowing you to leverage the benefits of Redis caching in your application running on Azure.
+
+     * **Provision an Azure Cache for Redis**: Configure the cache size and other relevant settings based on your application's requirements.
+
+     * **Update your Java code**: Replace the EHCache code in your Java application with the Azure Cache for Redis client libraries or SDKs. Update the code that establishes a connection to the Redis cache and performs cache-related operations.
+
+     * **Connect to Azure Cache for Redis**: Update the connection details in your Java application to point to the Azure Cache for Redis instance. Use the connection information provided by Azure (hostname, port, access keys, etc.) to establish a connection from your application.                "
+  ruleID: embedded-cache-01000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)ehcache([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Coherence embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds a Coherence library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.                   "
+  ruleID: embedded-cache-02000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)coherence([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Apache Commons JCS embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds an Apache Commons JCS library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.        
+  ruleID: embedded-cache-03000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)commons-jcs([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Dynacache embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds a Dynacache library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.       
+  ruleID: embedded-cache-04000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)dynacache([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds a library that provides caching.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-05000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)cache-api([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Hazelcast embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds a Hazelcast library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-06000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)hazelcast([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Apache Ignite embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds an Apache Ignite library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-07000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)ignite([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Infinispan embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds an Infinispan library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-08000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)infinispan([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - JBoss Cache embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embedds a JBoss Cache library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-09000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)jbosscache([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - JCache embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds a JCache library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-10000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)jcache([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Memcached client embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds a Memcached client library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-11000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)memcached([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Oscache embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds an Oscache library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-12000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)oscache([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - ShiftOne (Java Object Cache) embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds a ShiftOne library (Java Object Cache or JOCache).
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-13000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)shiftone([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - SwarmCache embedded library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds a SwarmCache library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-14000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)swarmcache([a-zA-Z0-9._-]*)\.jar$
+- category: mandatory
+  customVariables: []
+  description: Caching - Spring Boot Cache library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=embedded-cache-management
+  links: []
+  message: |-
+    The application embeds the Spring Boot Cache library.
+
+    An embedded cache library is problematic because state information might not be persisted to a backing service.
+
+    Recommendation: Use a cache backing service.
+  ruleID: embedded-cache-15000
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-cache
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-cache
+- category: mandatory
+  customVariables: []
+  description: Caching - Redis Cache library
+  effort: 5
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=azure-readiness
+  - category=cache-service-migration
+  - source-category=redis
+  links:
+  - title: Azure Cache for Redis documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: Caching guidance
+    url: https://learn.microsoft.com/azure/architecture/best-practices/caching
+  - title: Connect Azure Cache for Redis to your application in Azure Container Apps
+    url: https://learn.microsoft.com/en-us/azure/container-apps/services
+  - title: Create a service connection in Azure Container Apps from the Azure portal
+    url: https://learn.microsoft.com/en-us/azure/service-connector/quickstart-portal-container-apps
+  - title: Redis Cache found in the application
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#identify-external-caches
+  - title: Spring Data Redis
+    url: https://spring.io/projects/spring-data-redis/
+  - title: Azure Spring Cloud Starter Cache
+    url: https://search.maven.org/artifact/com.azure.spring/azure-spring-cloud-starter-cache
+  message: |-
+    The application uses a Redis cache. You can take advantage of a managed Redis service that offers scalability, high availability, and monitoring capabilities. **Azure Cache for Redis** provides features like data persistence, automatic failover, and built-in support for Redis commands, allowing you to leverage the benefits of Redis caching in your application running on Azure.
+
+     * **Provision an Azure Cache for Redis**: Configure the cache size and other relevant settings based on your application's requirements.
+
+     * **Update your Java code**: Replace the embedded Redis cache code in your Java application with the Azure Cache for Redis client libraries or SDKs. Update the code that establishes a connection to the Redis cache and performs cache-related operations.
+
+     * **Connect to Azure Cache for Redis**: Connect your app to Azure Cache for Redis on azure by **Service Connector**. Use the connection information provided by Azure (hostname, port, access keys, etc.) to create a connection from your application.                   "
+  ruleID: embedded-cache-16000
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-data-redis
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.data.spring-data-redis
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.session.spring-session-data-redis
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.integration.spring-integration-redis
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)redis([a-zA-Z0-9._-]*)\.jar$

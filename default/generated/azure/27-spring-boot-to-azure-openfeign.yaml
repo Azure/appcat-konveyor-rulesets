@@ -1,0 +1,33 @@
+- category: potential
+  customVariables: []
+  description: Embedded framework - Feign
+  effort: 1
+  labels:
+  - konveyor.io/target=azure-spring-apps
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=spring-migration
+  - source-category=spring-cloud
+  links:
+  - title: Migrate clients bypassing the service registry
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps
+  - title: Spring Cloud OpenFeign
+    url: https://spring.io/projects/spring-cloud-openfeign/
+  message: |-
+    The application embeds the Feign framework. If you are migrating to Azure Container Apps, it is recommended to use Spring Cloud OpenFeign instead (Spring Cloud Feign has been deprecated).
+
+     When migrating to Azure Container Apps, you can provision the managed Eureka Server. Spring Cloud OpenFeign will easily discover the service registry and invoke the services.
+  ruleID: spring-boot-to-azure-openfeign-01000
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.netflix\.feign\.([a-zA-Z0-9._-]*)
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.cloud.spring-cloud-starter-feign
+    - builtin.file:
+        pattern: ^feign-([a-zA-Z0-9._-]*)\.jar$

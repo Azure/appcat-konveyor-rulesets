@@ -1,0 +1,103 @@
+rulesPath: ../01-embedded-cache.yaml
+providers:
+- name: java
+  dataPath: ./data/01-embedded-cache
+- name: builtin
+  dataPath: ./data/01-embedded-cache
+tests:
+- ruleID: embedded-cache-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application uses EHCache. 
+- ruleID: embedded-cache-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a Coherence library.
+- ruleID: embedded-cache-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds an Apache Commons JCS library.
+- ruleID: embedded-cache-04000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a Dynacache library.
+- ruleID: embedded-cache-05000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a library that provides caching.
+- ruleID: embedded-cache-06000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a Hazelcast library.
+- ruleID: embedded-cache-07000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds an Apache Ignite library.
+- ruleID: embedded-cache-08000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds an Infinispan library.
+- ruleID: embedded-cache-09000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embedds a JBoss Cache library.
+- ruleID: embedded-cache-10000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a JCache library.
+- ruleID: embedded-cache-11000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a Memcached client library.
+- ruleID: embedded-cache-12000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds an Oscache library.
+- ruleID: embedded-cache-13000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a ShiftOne library (Java Object Cache or JOCache).
+- ruleID: embedded-cache-14000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a SwarmCache library.
+- ruleID: embedded-cache-15000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Spring Boot Cache library.
+- ruleID: embedded-cache-16000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application uses a Redis cache.

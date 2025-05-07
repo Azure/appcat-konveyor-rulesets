@@ -1,0 +1,26 @@
+rulesPath: ../07-local-storage.yaml
+providers:
+- name: java
+  dataPath: ./data/07-local-storage
+- name: builtin
+  dataPath: ./data/07-local-storage
+tests:
+- ruleID: local-storage-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 262
+      messageMatches: An application running inside a container could lose access
+        to a file in local storage
+- ruleID: local-storage-00003
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 6
+      messageMatches: Found absolute file path in the code.
+- ruleID: local-storage-00004
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: Found 'file://' path in the code.

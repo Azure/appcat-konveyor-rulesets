@@ -26,6 +26,16 @@
         <dependency>
             <groupId>com.netflix.eureka</groupId>
             <artifactId>eureka-client</artifactId>
+            <version>1.10.17</version> 
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.eureka</groupId>
+            <artifactId>eureka-server</artifactId>
+            <version>1.10.17</version> 
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.eureka</groupId>
+            <artifactId>eureka-client</artifactId>
             <version>5.0.10.Final</version>
             <scope>runtime</scope>
         </dependency>

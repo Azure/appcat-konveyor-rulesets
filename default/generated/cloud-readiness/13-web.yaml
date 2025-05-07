@@ -1,0 +1,64 @@
+- category: potential
+  customVariables: []
+  description: Java Swing usage
+  effort: 3
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=java-client-app
+  - source-category=javax-swing
+  links:
+  - title: Azure Container Registry documentation
+    url: https://learn.microsoft.com/azure/container-registry
+  - title: Azure Container Instances documentation
+    url: https://learn.microsoft.com/azure/container-instances
+  - title: Azure Container Apps documentation
+    url: https://learn.microsoft.com/azure/container-apps/overview
+  message: |-
+    The application uses Java Swing for the graphical user interface.
+     Java Swing requires the JRE on the remote device.
+
+     * **Containerize** the Java Swing application: Build the Docker image so that it packages the application and the JRE, and push it to Azure Container Registry (ACR). Then you can deploy the container to Azure using Azure Container Instances (ACI), Azure Container Apps (ACA) or Azure Kubernetes Service (AKS).
+
+     * **Leverage Azure Virtual Machines (VMs)**: Create a Windows or Linux-based Azure VM with the appropriate configuration for hosting your Java Swing application. For this, install the required Java Development Kit (JDK) and Java Swing runtime on the Azure VM.
+
+     * **Consider performance**: Java Swing applications require the GUI to be rendered, which may bring performance and scalability limitations. Also check the networking requirements when selecting the appropriate Azure service for your Java Swing application.
+  ruleID: web-10000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.swing*
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)swing([a-zA-Z0-9._-]*)\.jar$
+- category: potential
+  customVariables: []
+  description: JavaFX usage
+  effort: 3
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=java-client-app
+  - source-category=javafx
+  links:
+  - title: Azure Container Registry documentation
+    url: https://learn.microsoft.com/azure/container-registry
+  - title: Azure Container Instances documentation
+    url: https://learn.microsoft.com/azure/container-instances
+  - title: Azure Container Apps documentation
+    url: https://learn.microsoft.com/azure/container-apps/overview
+  message: |-
+    The application uses JavaFX for the graphical user interface.
+     JavaFX requires the JRE on the remote device.
+
+     * **Containerize** the JavaFX application: Build the Docker image so that it packages the application and the JRE, and push it to Azure Container Registry (ACR). Then you can deploy the container to Azure using Azure Container Instances (ACI), Azure Container Apps (ACA) or Azure Kubernetes Service (AKS).
+
+     * **Leverage Azure Virtual Machines (VMs)**: Create a Windows or Linux-based Azure VM with the appropriate configuration for hosting your JavaFX application. For this, install the required Java Development Kit (JDK) and JavaFX runtime on the Azure VM.
+
+     * **Consider performance**: JavaFX applications require the GUI to be rendered, which may bring performance and scalability limitations. Also check the networking requirements when selecting the appropriate Azure service for your JavaFX application.
+  ruleID: web-11000
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)javafx([a-zA-Z0-9._-]*)\.jar$

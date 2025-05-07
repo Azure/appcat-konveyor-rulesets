@@ -1,0 +1,27 @@
+rulesPath: ../06-apm-usage.yaml
+providers:
+- name: java
+  dataPath: ./data/06-apm-usage
+- name: builtin
+  dataPath: ./data/06-apm-usage
+tests:
+- ruleID: apm-usage-00000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Application Insights
+- ruleID: apm-usage-00001
+  testCases:
+  - name: tc-1
+    hasTags:
+    - New Relic
+- ruleID: apm-usage-00002
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Elastic APM
+- ruleID: apm-usage-00003
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Dynatrace

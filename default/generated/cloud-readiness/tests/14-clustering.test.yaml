@@ -1,0 +1,13 @@
+rulesPath: ../14-clustering.yaml
+providers:
+- name: java
+  dataPath: ./data/14-clustering
+- name: builtin
+  dataPath: ./data/14-clustering
+tests:
+- ruleID: clustering-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a distributed application that is clustered around several

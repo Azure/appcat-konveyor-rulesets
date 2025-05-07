@@ -1,0 +1,13 @@
+rulesPath: ../26-spring-boot-to-azure-key-vault.yaml
+providers:
+- name: java
+  dataPath: ./data/26-spring-boot-to-azure-key-vault
+- name: builtin
+  dataPath: ./data/26-spring-boot-to-azure-key-vault
+tests:
+- ruleID: spring-boot-to-azure-key-vault-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds Spring Cloud Vault

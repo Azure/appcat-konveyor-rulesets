@@ -1,0 +1,12 @@
+# rulesPath: ../20-javase-technology-usage.yaml
+# providers:
+# - name: java
+#   dataPath: ./data/20-javase-technology-usage
+# - name: builtin
+#   dataPath: ./data/20-javase-technology-usage
+# tests:
+# - ruleID: javase-technology-usage-01000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Java Threads

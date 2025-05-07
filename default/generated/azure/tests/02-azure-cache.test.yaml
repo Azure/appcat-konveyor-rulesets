@@ -1,0 +1,14 @@
+rulesPath: ../02-azure-cache.yaml
+providers:
+- name: java
+  dataPath: ./data/02-azure-cache
+- name: builtin
+  dataPath: ./data/02-azure-cache
+tests:
+- ruleID: azure-cache-redis-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 4
+      messageMatches: Redis Cache connection string, username, or password used in
+        this application
