@@ -1,0 +1,13 @@
+rulesPath: ../04-java-21-deprecate-signer.yaml
+providers:
+- name: java
+  dataPath: ./data/04-java-21-deprecate-signer
+- name: builtin
+  dataPath: ./data/04-java-21-deprecate-signer
+tests:
+- ruleID: java-21-deprecate-signer-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The jarsigner options -altsigner and -altsignerpath have been removed
