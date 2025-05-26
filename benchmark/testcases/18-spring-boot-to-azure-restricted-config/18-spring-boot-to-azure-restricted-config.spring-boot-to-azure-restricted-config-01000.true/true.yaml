@@ -1,0 +1,31 @@
+```yaml
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: "http://localhost:8761/eureka/"
+    tls:
+      keystore: "path/to/keystore.jks"
+  instance:
+    preferIpAddress: true
+    instance-id: "instance-1"
+
+server:
+  port: 8080
+
+spring:
+  cloud:
+    config:
+      tls:
+        keystore: "path/to/keystore.jks"
+    import: "optional:file:./config.yaml"
+  application:
+    name: "my-spring-boot-app"
+  jmx:
+    enabled: true
+
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: "*"
+```

@@ -1,0 +1,14 @@
+# Configuration file for an application NOT using AWS regions
+
+# Define a sample environment variable
+app.version = 2.3.1
+
+# Configuration for database connection
+db.host = localhost
+db.port = 5432
+
+# Define Azure-specific settings
+azure.region = eastus
+
+# Other unrelated settings
+logging.level = DEBUG

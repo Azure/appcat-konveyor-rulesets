@@ -1,0 +1,35 @@
+# Content for `.false` file that does NOT match the rule conditions
+
+# Example 1: Irrelevant Java dependency, not matching MySQL patterns
+<dependency>
+  <groupId>postgresql</groupId>
+  <artifactId>postgresql-connector-java</artifactId>
+  <version>42.5.1</version>
+</dependency>
+
+# Example 2: `build.gradle` file without "mysql"
+dependencies {
+  implementation 'org.postgresql:postgresql:42.5.1'
+}
+
+# Example 3: File named with a pattern not matching "mysql-connector"
+postgresql-connector-java-42.5.1.jar
+
+# Example 4: Configuration file with a pattern that describes Postgres but not MySQL
+jdbc:postgresql://localhost:5432/mydatabase?user=admin&password=admin123
+
+# Example 5: Configuration file with irrelevant R2DBC pattern
+r2dbc:postgresql://localhost:5432/mydatabase
+
+# Example 6: Configuration file with an irrelevant R2DBC Pool not referencing MySQL
+r2dbc:pool:postgresql://localhost:5432/mydatabase
+
+# Example 7: Configuration file containing Azure-specific MySQL hostname (excluded by NOT condition)
+spring.datasource.url=jdbc:mysql://mydatabase.mysql.database.azure.com:3306/mydatabase
+
+# Example 8: Java dependency for Azure-specific MySQL starter (excluded by NOT condition)
+<dependency>
+  <groupId>com.azure</groupId>
+  <artifactId>spring-cloud-azure-starter-jdbc-mysql</artifactId>
+  <version>4.0.2</version>
+</dependency>

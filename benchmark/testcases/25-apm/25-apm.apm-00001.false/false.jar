@@ -1,0 +1,20 @@
+{
+  "dependencies": [
+    {
+      "name": "azure-monitor-sdk",
+      "version": "1.2.1"
+    },
+    {
+      "name": "com.tracing.tool",
+      "version": "3.5.0"
+    }
+  ],
+  "files": [
+    {
+      "name": "custom-monitor-tool.jar"
+    },
+    {
+      "name": "logging-framework.jar"
+    }
+  ]
+}

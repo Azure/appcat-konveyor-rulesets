@@ -1,0 +1,10 @@
+<datasources>
+    <datasource>
+        <connection-url>jdbc:sqlite://localhost:50000/sample</connection-url>
+    </datasource>
+    <drivers>
+        <driver>
+            <xa-datasource-class>org.sqlite.JDBC</xa-datasource-class>
+        </driver>
+    </drivers>
+</datasources>

@@ -1,0 +1,21 @@
+# File name: sqljdbc.jar (Matches the builtin.file pattern "^sqljdbc([a-zA-Z0-9._-]*)\.jar$")
+sqljdbc.jar
+
+# File name: mssql-jdbc-9.4.0.jre8.jar (Matches the builtin.file pattern "^mssql-jdbc([a-zA-Z0-9._-]*)\.jar$")
+mssql-jdbc-9.4.0.jre8.jar
+
+# File content with file name pattern containing xml, yml, properties (Matches builtin.filecontent filePattern "/|\\([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$" and content pattern "(?i)jdbc:sqlserver")
+app-config.xml:
+<configuration>
+    <database>
+        <connectionString>jdbc:sqlserver://hostname:1433</connectionString>
+    </database>
+</configuration>
+
+# File content with connection string for R2DBC MSSQL (Matches builtin.filecontent filePattern "/|\\([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$" and content pattern "(?i)r2dbc:mssql")
+r2dbc-config.yaml:
+connectionString: r2dbc:mssql://hostname/database
+
+# File content with connection string for R2DBC MSSQL pool (Matches builtin.filecontent filePattern "/|\\([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$" and content pattern "(?i)r2dbc:pool:mssql")
+application.properties:
+spring.r2dbc.url=r2dbc:pool:mssql://hostname/database

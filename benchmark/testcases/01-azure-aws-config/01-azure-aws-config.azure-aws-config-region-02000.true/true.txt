@@ -1,0 +1,10 @@
+# Configuration file for an application using AWS
+
+# Define the AWS region for deployment
+aws.region = us-east-1
+
+# Alternatively, environment variable configuration is also supported
+AWS_REGION=us-west-2
+
+# Setting the AWSRegion attribute for application-specific logic
+AWSRegion=ap-south-1

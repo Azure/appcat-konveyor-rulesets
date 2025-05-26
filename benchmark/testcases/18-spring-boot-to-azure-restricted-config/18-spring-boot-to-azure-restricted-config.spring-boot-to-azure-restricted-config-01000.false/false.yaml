@@ -1,0 +1,18 @@
+```yaml
+my-custom-config:
+  server:
+    address: "localhost"
+    permissions: "read-write"
+
+custom:
+  application:
+    debug: true
+    users:
+      - name: "admin"
+        role: "SUPERUSER"
+
+logging:
+  level:
+    ROOT: "DEBUG"
+    customLogger: "INFO"
+```

@@ -1,0 +1,34 @@
+# This file should NOT trigger the azure-database-postgresql-02000 rule
+
+# Dependency on a non-relevant library
+<dependency>
+    <groupId>org.example</groupId>
+    <artifactId>example-library</artifactId>
+    <version>1.0.0</version>
+</dependency>
+
+# Gradle file without PostgreSQL
+dependencies {
+    implementation 'org.example:example-library:1.0.0'
+}
+
+# Non-matching jar file
+libs/example-library-1.0.0.jar
+
+# Database connection string without PostgreSQL
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.username=root
+spring.datasource.password=secret
+
+# R2DBC connection string without PostgreSQL
+spring.r2dbc.url=r2dbc:mysql://localhost:3306/mydb
+
+# Application properties for Azure PostgreSQL (excluded as per the "not" condition)
+spring.datasource.url=something.postgres.database.azure.com
+
+# Dependency on Azure Spring starter for PostgreSQL (excluded as per the "not" condition)
+<dependency>
+    <groupId>com.azure.spring</groupId>
+    <artifactId>spring-cloud-azure-starter-jdbc-postgresql</artifactId>
+    <version>1.0.0</version>
+</dependency>

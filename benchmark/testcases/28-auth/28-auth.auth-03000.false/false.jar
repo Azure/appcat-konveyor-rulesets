@@ -1,0 +1,7 @@
+# This file lacks a dependency matching the rule condition and does not trigger the rule.
+myapp-lib.jar
+customauthconnector.jar
+foo_security_bar.jar
+app-embedded-library.jar
+spring-implementation.jar
+```

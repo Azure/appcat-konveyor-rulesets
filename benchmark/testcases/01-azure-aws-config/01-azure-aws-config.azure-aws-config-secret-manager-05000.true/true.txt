@@ -1,0 +1,9 @@
+# AWS Secrets Manager configuration file
+
+[default]
+region = us-west-2
+
+[secrets-manager]
+endpoint = https://secretsmanager.us-west-2.amazonaws.com
+description = "This configuration uses AWS Secrets Manager"
+aws.secretsmanager.enable = true

@@ -1,0 +1,6 @@
+# This file includes a dependency matching the rule condition to trigger the rule.
+myapp-oauth2-lib.jar
+custom.oauth2.connector.jar
+foo_oauth2_bar.jar
+app_oauth2-embedded.jar
+spring_oauth2_implementation.jar

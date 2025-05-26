@@ -1,0 +1,9 @@
+```yaml
+spring:
+  rabbitmq:
+    addresses: amqp://username:password@rabbitmq.example.com:5672/vhost
+    host: rabbitmq.example.com
+    username: someusername
+    password: somepassword
+    virtual-host: /example-vhost
+```

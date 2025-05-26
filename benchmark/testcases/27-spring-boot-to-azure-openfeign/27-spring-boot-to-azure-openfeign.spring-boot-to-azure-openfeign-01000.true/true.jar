@@ -1,0 +1,23 @@
+{
+  "name": "sample-app",
+  "dependencies": [
+    {
+      "name": "com.netflix.feign.feign-core",
+      "version": "11.2.0"
+    },
+    {
+      "name": "org.springframework.cloud.spring-cloud-starter-feign",
+      "version": "3.0.1"
+    }
+  ],
+  "files": [
+    {
+      "path": "/libs/feign-client.jar",
+      "content": "binary-data"
+    },
+    {
+      "path": "/libs/feign-http-11.2.0.jar",
+      "content": "binary-data"
+    }
+  ]
+}

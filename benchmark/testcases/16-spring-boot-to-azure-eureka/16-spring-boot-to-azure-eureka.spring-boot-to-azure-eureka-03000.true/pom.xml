@@ -1,0 +1,13 @@
+<pom>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>eureka-server-app</artifactId>
+  <version>1.0.0</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-eureka-server</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+  </dependencies>
+</pom>

@@ -1,0 +1,8 @@
+# This YAML file contains a configuration that does not match the rule
+db:
+  connections:
+    default:
+      url: jdbc:mysql://localhost:3306/mydb
+      username: user
+      password: pass
+```

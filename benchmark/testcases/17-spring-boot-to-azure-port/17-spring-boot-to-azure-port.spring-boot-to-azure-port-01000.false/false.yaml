@@ -1,0 +1,7 @@
+```yaml
+application:
+  name: demo-app
+logging:
+  level:
+    root: INFO
+```

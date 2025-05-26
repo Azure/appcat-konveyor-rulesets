@@ -1,0 +1,34 @@
+# Content that does NOT match the rule conditions
+
+# Example 1: Java dependency NOT related to "postgresql"
+dependencies {
+    implementation 'com.mysql:mysql-connector-java:8.0.32'
+}
+
+# Example 2: Gradle build file contains other database reference
+dependencies {
+    compile 'org.hibernate:hibernate-core:5.6.15.Final'
+}
+
+# Example 3: JAR file without "postgresql" in the name
+database-library-mysql-driver.jar
+
+# Example 4: Properties file with JDBC connection NOT related to PostgreSQL
+spring.datasource.url=jdbc:mysql://localhost:3306/mydatabase
+
+# Example 5: YAML file with no mention of "postgresql"
+spring.datasource:
+  url: jdbc:sqlserver://localhost:1433;database=mydb
+  username: sa
+  password: mypassword
+
+# Example 6: YAML file for Azure PostgreSQL database connection (negated condition)
+azure-postgres-database.database.azure.com:
+  username: myuser
+  password: mypassword
+
+# Example 7: Java dependency mentioning Azure starter for PostgreSQL (negated condition)
+dependencies {
+    implementation 'com.azure:spring-cloud-azure-starter-jdbc-postgresql:4.0.0'
+}
+```

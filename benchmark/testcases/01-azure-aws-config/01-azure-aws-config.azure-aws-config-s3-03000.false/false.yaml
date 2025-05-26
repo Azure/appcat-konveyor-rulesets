@@ -1,0 +1,16 @@
+dependencies:
+  - groupId: com.azure
+    artifactId: azure-storage-blob
+    version: 12.15.0
+
+application.yaml:
+  cloud:
+    azure:
+      blob:
+        container-name: "example-container"
+        
+features:
+  - blob: true
+  
+javaReferences:
+  - com.azure.storage.blob.BlobServiceClient

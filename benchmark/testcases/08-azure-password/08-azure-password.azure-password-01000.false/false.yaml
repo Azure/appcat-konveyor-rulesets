@@ -1,0 +1,5 @@
+```yaml
+spring:
+  datasource:
+    username: admin_user
+```

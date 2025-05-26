@@ -1,0 +1,22 @@
+# Case where the rule should trigger
+
+# A MariaDB JDBC driver .jar file is present
+lib/mariadb-connector-java-2.7.3.jar
+
+# A configuration file contains a JDBC MariaDB connection string
+config/application.properties:
+  spring.datasource.url=jdbc:mariadb://localhost:3306/mydatabase
+
+# Another file contains an R2DBC MariaDB connection string
+config/application.yaml:
+  r2dbc:
+    url: r2dbc:mariadb://localhost:3306/mydatabase
+    username: user
+    password: password
+
+# A file contains an R2DBC pooled MariaDB connection string
+config/db-config.yaml:
+  r2dbc:
+    url: r2dbc:pool:mariadb://localhost:3306/mydatabase
+    username: admin
+    password: secret

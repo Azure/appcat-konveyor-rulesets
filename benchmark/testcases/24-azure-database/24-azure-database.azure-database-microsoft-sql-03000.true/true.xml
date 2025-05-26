@@ -1,0 +1,21 @@
+# A file matching the first condition: sqljdbc*.jar
+sqljdbc42.jar
+
+# A file matching the second condition: mssql-jdbc*.jar
+mssql-jdbc-9.2.1.jre11.jar
+
+# A file and content matching the third condition: jdbc:sqlserver in an XML file
+config/database.xml:
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+  <connectionString>jdbc:sqlserver://localhost:1433;databaseName=mydb</connectionString>
+</database>
+
+# A file and content matching the fourth condition: r2dbc:mssql in a YAML file
+config/settings.yaml:
+database:
+  connection: r2dbc:mssql://localhost:1433/mydb
+
+# A file and content matching the fifth condition: r2dbc:pool:mssql in a properties file
+application.properties:
+spring.r2dbc.url=r2dbc:pool:mssql://localhost:1433/mydb

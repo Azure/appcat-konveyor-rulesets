@@ -1,0 +1,15 @@
+{
+  "java": {
+    "dependencies": [
+      {
+        "name": "co.elastic.apm",
+        "version": "1.25.0"
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "/lib/elastic-apm-agent.jar"
+    }
+  ]
+}

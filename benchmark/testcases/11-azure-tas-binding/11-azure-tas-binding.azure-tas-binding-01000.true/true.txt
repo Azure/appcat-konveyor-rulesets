@@ -1,0 +1,14 @@
+# Configuration file for the application
+
+# This application uses Tanzu Application Service binding via VCAP_SERVICES:
+VCAP_SERVICES = {
+  "service1": {
+    "credentials": {
+      "username": "user1",
+      "password": "pass1"
+    }
+  }
+}
+
+# Additional configurations that might be present in the environment
+custom_variable = true

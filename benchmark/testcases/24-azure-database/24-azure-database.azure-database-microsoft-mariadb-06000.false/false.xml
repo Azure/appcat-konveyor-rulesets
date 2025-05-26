@@ -1,0 +1,27 @@
+# Case where the rule should NOT trigger
+
+# A non-MariaDB JDBC driver .jar file is present
+lib/mysql-connector-java-8.0.25.jar
+
+# Configuration file lacks any MariaDB-related connection strings
+config/application.properties:
+  spring.datasource.url=jdbc:mysql://localhost:3306/mydatabase
+
+# R2DBC configuration without any MariaDB references
+config/application.yaml:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/mydatabase
+    username: user
+    password: password
+
+# Completely unrelated files not matching file patterns or content patterns
+README.md:
+  This is a normal readme file, no database connection details here.
+
+config/settings.xml:
+  <configuration>
+    <database>
+      <url>jdbc:oracle:thin:@localhost:1521:orcl</url>
+    </database>
+  </configuration>
+```

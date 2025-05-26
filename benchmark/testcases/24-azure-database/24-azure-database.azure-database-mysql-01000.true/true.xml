@@ -1,0 +1,31 @@
+# Contents triggering the rule
+# This example includes various components that fulfill one or more `or` conditions.
+
+# Java project dependency with MySQL
+dependencies {
+    implementation 'mysql:mysql-connector-java:8.0.23'
+}
+
+# MySQL-related file content in build.gradle
+apply plugin: 'java'
+dependencies {
+    implementation 'mysql:mysql-connector-java:8.0.23'
+}
+
+# MySQL connector JAR file in project
+mysql-connector-java-8.0.23.jar
+
+# Application configuration with JDBC MySQL connection
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.username=root
+spring.datasource.password=password
+
+# Application configuration with R2DBC MySQL connection
+spring.r2dbc.url=r2dbc:mysql://localhost:3306/mydb
+spring.r2dbc.username=root
+spring.r2dbc.password=password
+
+# Application configuration with R2DBC pool MySQL connection
+spring.r2dbc.url=r2dbc:pool:mysql://localhost:3306/mydb
+spring.r2dbc.username=root
+spring.r2dbc.password=password

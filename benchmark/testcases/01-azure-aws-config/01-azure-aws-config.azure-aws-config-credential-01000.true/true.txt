@@ -1,0 +1,8 @@
+# This is a configuration file with AWS credentials.
+
+[default]
+aws_access_key_id = AKIAEXAMPLE12345
+aws_secret_access_key = EXAMPlEKEY67890
+
+# Additional configuration for AWS services using credentials
+aws.credentials = /path/to/aws_credentials

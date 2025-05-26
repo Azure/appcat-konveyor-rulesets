@@ -1,0 +1,8 @@
+mysql-connector-java-8.0.27.jar
+hibernate-core-5.4.0.jar
+pgjdbc-42.2.18.jar
+mongodb-driver-core-4.2.3.jar
+redis-client-3.1.6.jar
+oracle-driver-12.2.0.1.jar
+neo4j-java-driver-4.3.6.jar
+db2-jdbc-driver-4.26.jar

@@ -1,0 +1,7 @@
+# File 1: application.yaml
+mongodb:
+  uri: mongodb://username:password@host:27017/dbname
+
+# File 2: database.properties
+mongodb.username=myUsername
+mongodb.password=myPassword

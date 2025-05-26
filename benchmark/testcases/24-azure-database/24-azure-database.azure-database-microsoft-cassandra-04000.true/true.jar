@@ -1,0 +1,8 @@
+cassandra-driver-core.jar
+hector-client.jar
+astyanax-thrift.jar
+phantom-dsl-2.10.4.jar
+cql-driver-3.7.1.jar
+hecuba-client-1.0.jar
+c-star-path-helper.jar
+scale7-pelops-1.0.jar

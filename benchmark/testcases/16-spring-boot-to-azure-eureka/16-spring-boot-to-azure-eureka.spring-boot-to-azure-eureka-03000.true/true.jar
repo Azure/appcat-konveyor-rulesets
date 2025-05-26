@@ -1,0 +1,10 @@
+{
+  "java": {
+    "dependencies": [
+      {
+        "name": "com.example.eureka-server",
+        "version": "1.4.2"
+      }
+    ]
+  }
+}

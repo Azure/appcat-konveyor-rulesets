@@ -1,0 +1,16 @@
+dependencies:
+  - groupId: com.amazonaws
+    artifactId: aws-java-sdk-s3
+    version: 1.11.999
+
+application.yaml:
+  cloud:
+    aws:
+      s3:
+        bucket-name: "example-bucket"
+        
+features:
+  - s3: true
+  
+javaReferences:
+  - com.amazonaws.services.s3.AmazonS3

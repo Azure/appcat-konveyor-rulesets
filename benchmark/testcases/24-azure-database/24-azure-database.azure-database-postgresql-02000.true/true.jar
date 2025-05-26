@@ -1,0 +1,23 @@
+# Content that matches the rule conditions
+
+# Example 1: Java dependency with "postgresql" in the name
+dependencies {
+    implementation 'org.postgresql:postgresql:42.2.23'
+}
+
+# Example 2: Gradle build file containing "postgresql"
+dependencies {
+    compile 'org.postgresql:postgresql:42.2.23'
+}
+
+# Example 3: Existing JAR file named with "postgresql"
+database-library-postgresql-driver.jar
+
+# Example 4: Properties file with JDBC connection string for PostgreSQL
+spring.datasource.url=jdbc:postgresql://localhost:5432/mydatabase
+
+# Example 5: Properties file with R2DBC connection string for PostgreSQL
+spring.r2dbc.url=r2dbc:postgresql://localhost:5432/mydatabase
+
+# Example 6: YAML file with R2DBC connection with pooling
+spring.r2dbc.url=r2dbc:pool:postgresql://localhost:5432/mydatabase

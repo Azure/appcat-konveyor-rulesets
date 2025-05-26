@@ -1,0 +1,5 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <properties>
+        <java.version>11</java.version>
+    </properties>
+</project>

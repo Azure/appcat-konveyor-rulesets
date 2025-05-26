@@ -1,0 +1,11 @@
+```yaml
+spring:
+  kafka:
+    bootstrap-servers: kafka.example.com:9092
+    security:
+      protocol: SASL_SSL
+      sasl:
+        mechanism: PLAIN
+        username: kafkauser
+        password: kafkapassword
+```

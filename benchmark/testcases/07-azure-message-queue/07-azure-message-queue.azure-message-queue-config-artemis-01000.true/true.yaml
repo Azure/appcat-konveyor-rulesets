@@ -1,0 +1,7 @@
+# This YAML configuration file triggers the rule.
+# It contains ActiveMQ Artemis properties in a matching file pattern.
+
+artemis:
+  broker-url: tcp://localhost:61616
+  user: admin
+  password: secret123

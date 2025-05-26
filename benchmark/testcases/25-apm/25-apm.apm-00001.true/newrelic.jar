@@ -1,0 +1,20 @@
+{
+  "dependencies": [
+    {
+      "name": "newrelic-api",
+      "version": "6.0.0"
+    },
+    {
+      "name": "com.newrelic.agent",
+      "version": "5.16.0"
+    }
+  ],
+  "files": [
+    {
+      "name": "newrelic-agent.jar"
+    },
+    {
+      "name": "plugins/newrelic-core-extension.jar"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+```yaml
+spring:
+  datasource:
+    password: secure_password_123
+```

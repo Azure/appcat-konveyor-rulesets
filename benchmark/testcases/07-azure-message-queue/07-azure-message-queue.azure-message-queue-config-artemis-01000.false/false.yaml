@@ -1,0 +1,8 @@
+# This YAML configuration file does not trigger the rule.
+# It does not contain any ActiveMQ Artemis properties or does not match the file pattern.
+
+message-queue:
+  broker-url: tcp://localhost:61616
+  user: admin
+  password: secret123
+```

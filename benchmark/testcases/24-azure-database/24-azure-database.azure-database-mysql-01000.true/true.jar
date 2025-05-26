@@ -1,0 +1,25 @@
+# Content for `.true` file that matches the rule conditions
+
+# Example 1: Java dependency with a matching name for MySQL
+<dependency>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <version>8.0.33</version>
+</dependency>
+
+# Example 2: `build.gradle` file containing "mysql"
+dependencies {
+  implementation 'mysql:mysql-connector-java:8.0.33'
+}
+
+# Example 3: File named with a pattern matching "mysql-connector"
+mysql-connector-java-8.0.33.jar
+
+# Example 4: Configuration file containing a pattern that matches JDBC MySQL
+jdbc:mysql://localhost:3306/mydatabase?user=admin&password=admin123
+
+# Example 5: Configuration file containing a pattern that matches R2DBC MySQL
+r2dbc:mysql://localhost:3306/mydatabase
+
+# Example 6: Configuration file containing a pattern that matches R2DBC Pool with MySQL
+r2dbc:pool:mysql://localhost:3306/mydatabase

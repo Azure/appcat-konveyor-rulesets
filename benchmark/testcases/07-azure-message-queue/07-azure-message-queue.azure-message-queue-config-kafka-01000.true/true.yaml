@@ -1,0 +1,7 @@
+# Valid YAML configuration file that matches the rule condition
+kafka:
+  properties:
+    bootstrap-servers: broker1.example.com:9092,broker2.example.com:9092
+    sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="test-user" password="test-password";
+    schema:
+      registry: http://schema-registry.example.com

@@ -1,0 +1,6 @@
+```yaml
+azure:
+  servicebus:
+    endpoint: "sb://my-servicebus.servicebus.windows.net/"
+    connectionString: "Endpoint=sb://my-servicebus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=your-access-key"
+```

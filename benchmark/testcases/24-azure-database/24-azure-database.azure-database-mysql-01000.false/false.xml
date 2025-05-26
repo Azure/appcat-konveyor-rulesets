@@ -1,0 +1,33 @@
+# Contents NOT triggering the rule
+# These contents do not fulfill the provided rule conditions.
+
+# Irrelevant Java dependencies
+dependencies {
+    implementation 'org.postgresql:postgresql:42.2.18'
+}
+
+# Random content in build.gradle unrelated to MySQL
+apply plugin: 'java'
+dependencies {
+    implementation 'com.example:random-library:1.0.0'
+}
+
+# Non-MySQL database JAR file in project
+postgresql-connector-java-42.2.18.jar
+
+# Application configuration pointing to PostgreSQL instead of MySQL
+spring.datasource.url=jdbc:postgresql://localhost:5432/mydb
+spring.datasource.username=root
+spring.datasource.password=password
+
+# Application configuration with unrelated content
+spring.some.random.property=value
+
+# Cloud-specific MySQL database URL indicating Azure usage, violating the `not` condition
+spring.datasource.url=jdbc:mysql://mydb.mysql.database.azure.com
+spring.cloud.azure.jdbc.property=value
+
+# Irrelevant configuration with unrelated starter dependency
+dependencies {
+    implementation 'com.azure:spring-cloud-azure-starter:4.0.0'
+}

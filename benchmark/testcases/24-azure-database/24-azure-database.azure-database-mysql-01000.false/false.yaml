@@ -1,0 +1,13 @@
+# This YAML file contains content that does NOT match the conditions to trigger the rule: azure-database-mysql-01000
+database:
+  jdbc:
+    url: jdbc:postgresql://localhost:3306/mydb
+    driver: org.postgresql.Driver
+r2dbc:
+  url: r2dbc:postgresql://localhost:3306/mydb
+pool:
+  url: r2dbc:pool:postgresql://localhost:3306/mydb
+dependencies:
+  - postgresql
+---true---
+```

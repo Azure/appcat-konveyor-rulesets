@@ -1,0 +1,19 @@
+# Content that matches the rule. This will trigger the `azure-database-microsoft-mongodb-05000` rule.
+
+# Example of a file that has a MongoDB library.
+libs/mongodb-driver-3.12.7.jar
+
+# Another example of a file pattern that matches Casbah.
+libs/scala-casbah-3.1.0_1.jar
+
+# Example file that matches ReactiveMongo.
+libs/reactivemongo-0.20.13.jar
+
+# Example file that matches Jongo.
+libs/jongo-1.5.0.jar
+
+# Example file that matches GMongo.
+libs/gmongo-1.5.jar
+
+# Example file that matches Rogue.
+libs/rogue_2.11-2.5.3.jar

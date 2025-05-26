@@ -1,0 +1,14 @@
+# File name that matches the first condition (builtin.file)
+mariadb-connector.jar
+
+# File containing content that matches the second condition (builtin.filecontent)
+application.properties  
+jdbc:mariadb://localhost:3306/testdb
+
+# File containing content that matches the third condition (builtin.filecontent)
+database-config.yaml  
+r2dbc:mariadb://localhost:3306/testdb
+
+# File containing content that matches the fourth condition (builtin.filecontent)
+database-pool.xml  
+r2dbc:pool:mariadb://localhost:3306/testdb

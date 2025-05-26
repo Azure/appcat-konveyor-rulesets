@@ -1,0 +1,7 @@
+# This is a configuration file without AWS credentials.
+
+[default]
+region = us-west-1
+output = json
+
+# No AWS access key or secret access key is defined here.

@@ -1,0 +1,13 @@
+# Valid YAML configuration file that does NOT match the rule condition
+database:
+  type: mysql
+  host: localhost
+  port: 3306
+
+spring:
+  application:
+    name: sample-app
+
+logging:
+  level:
+    root: INFO

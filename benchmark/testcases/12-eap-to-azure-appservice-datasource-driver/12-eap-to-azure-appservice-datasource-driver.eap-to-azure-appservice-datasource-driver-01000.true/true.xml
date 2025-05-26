@@ -1,0 +1,10 @@
+<datasources>
+    <datasource>
+        <connection-url>jdbc:db2://localhost:50000/sample</connection-url>
+    </datasource>
+    <drivers>
+        <driver>
+            <xa-datasource-class>com.ibm.db2.jcc.DB2XADataSource</xa-datasource-class>
+        </driver>
+    </drivers>
+</datasources>

@@ -1,0 +1,27 @@
+# This file should trigger the azure-database-postgresql-02000 rule
+
+# Dependency on PostgreSQL in a Maven project
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.2.5</version>
+</dependency>
+
+# PostgreSQL in a Gradle file
+dependencies {
+    implementation 'org.postgresql:postgresql:42.2.5'
+}
+
+# Matching jar file
+libs/postgresql-42.2.5.jar
+
+# JDBC connection string
+spring.datasource.url=jdbc:postgresql://localhost:5432/mydb
+spring.datasource.username=postgres
+spring.datasource.password=secret
+
+# R2DBC connection string
+spring.r2dbc.url=r2dbc:postgresql://localhost:5432/mydb
+
+# R2DBC pool connection string
+spring.r2dbc.url=r2dbc:pool:postgresql://localhost:5432/mydb

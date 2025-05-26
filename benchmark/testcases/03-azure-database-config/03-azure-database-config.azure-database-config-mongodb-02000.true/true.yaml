@@ -1,0 +1,7 @@
+# This file contains a MongoDB connection string configuration that matches the rule conditions.
+
+database:
+  mongodb:
+    uri: mongodb://username:password@localhost:27017/mydatabase
+    username: username
+    password: password

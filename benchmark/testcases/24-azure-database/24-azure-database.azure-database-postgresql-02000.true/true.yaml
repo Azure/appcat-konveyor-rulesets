@@ -1,0 +1,14 @@
+dependencies:
+  database:
+    - postgresql
+    - version: "42.3.1"
+    
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: myuser
+    password: mypassword
+
+r2dbc:
+  url: r2dbc:postgresql://localhost:5432/mydb
+  pool: r2dbc:pool:postgresql://localhost:5432/mydb

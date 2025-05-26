@@ -1,0 +1,9 @@
+# This file does not contain any MongoDB-related configuration and does not match the rule conditions.
+
+database:
+  mysql:
+    host: localhost
+    port: 3306
+    username: mysqluser
+    password: mysqlpassword
+```

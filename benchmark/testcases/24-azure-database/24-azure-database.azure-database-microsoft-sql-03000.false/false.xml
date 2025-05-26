@@ -1,0 +1,22 @@
+# A file that does not match any conditions
+randomfile.txt
+
+# A file with unrelated content (does not match any filecontent rules)
+config/unrelated.yaml:
+apiVersion: v1
+kind: ConfigMap
+
+# A file that matches the filePattern but contains unrelated content
+config/not-matching.xml:
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+  <connectionString>jdbc:mysql://localhost:3306/mydb</connectionString>
+</database>
+
+# A file with SQL server-like name but incorrect file extension
+sqljdbc.txt
+
+# A file matching the filePattern but unrelated content pattern
+settings/random.properties:
+random.property=true
+```

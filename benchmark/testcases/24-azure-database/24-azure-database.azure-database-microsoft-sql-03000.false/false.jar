@@ -1,0 +1,23 @@
+# A file name that doesn't match any built-in file patterns (No match for builtin.file patterns)
+random-library.jar
+
+# File content using patterns unrelated to the rule, with an unsupported database connection string (No match for builtin.filecontent patterns)
+app-config.xml:
+<configuration>
+    <database>
+        <connectionString>jdbc:mysql://hostname:3306</connectionString>
+    </database>
+</configuration>
+
+# File content with no connection string or irrelevant text (No match for builtin.file, filePattern, or content patterns)
+metadata.yaml:
+apiVersion: v1
+kind: ConfigMap
+data:
+  key: value
+
+# File name pattern matches, but the content does not match (No match for builtin.filecontent patterns)
+application.properties:
+some.unused.property=value
+another.property=value-just-for-testing
+```

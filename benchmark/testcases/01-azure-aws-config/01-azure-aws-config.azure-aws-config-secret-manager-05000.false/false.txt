@@ -1,0 +1,14 @@
+# General application configuration file
+
+[default]
+region = us-east-1
+
+[logging]
+level = debug
+output = console
+
+[storage]
+type = s3
+bucket = my-app-storage
+
+# No references to aws.secretsmanager or aws-secretsmanager found here.

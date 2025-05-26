@@ -1,0 +1,16 @@
+```yaml
+dependencies:
+  - name: oracle-jdbc.jar
+    path: ./libs/oracle-jdbc.jar
+configuration:
+  database:
+    connectionString: "jdbc:oracle:thin:@localhost:1521:mydb"
+---
+metadata:
+  applicationName: MyApp
+  environment: development
+properties:
+  db.connectionURL: "jdbc:mysql://mysql-server:3306/dbname"
+```
+
+The `true` test case contains file patterns and content matching the rule conditions, while the `false` test case deliberately avoids such patterns to not trigger the rule. Both files are valid YAML configurations as requested.

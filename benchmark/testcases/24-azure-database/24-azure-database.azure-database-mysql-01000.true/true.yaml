@@ -1,0 +1,12 @@
+# This YAML file contains content that matches the conditions to trigger the rule: azure-database-mysql-01000
+database:
+  jdbc:
+    url: jdbc:mysql://localhost:3306/mydb
+    driver: com.mysql.cj.jdbc.Driver
+r2dbc:
+  url: r2dbc:mysql://localhost:3306/mydb
+pool:
+  url: r2dbc:pool:mysql://localhost:3306/mydb
+dependencies:
+  - mysql
+  - mysql-connector.jar

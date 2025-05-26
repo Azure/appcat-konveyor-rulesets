@@ -1,0 +1,7 @@
+# This YAML file contains a configuration that matches the rule
+db:
+  connections:
+    default:
+      url: jdbc:mariadb://localhost:3306/mydb
+      username: user
+      password: pass

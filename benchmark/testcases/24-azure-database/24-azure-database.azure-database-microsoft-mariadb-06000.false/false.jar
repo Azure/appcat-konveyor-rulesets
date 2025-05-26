@@ -1,0 +1,15 @@
+# File name that does NOT match the first condition (builtin.file)
+example-connector.jar
+
+# File containing content that does NOT match the second condition (builtin.filecontent)
+application.properties  
+jdbc:mysql://localhost:3306/testdb
+
+# File containing content that does NOT match the third condition (builtin.filecontent)
+database-config.yaml  
+r2dbc:mysql://localhost:3306/testdb
+
+# File containing content that does NOT match the fourth condition (builtin.filecontent)
+database-pool.xml  
+r2dbc:pool:mysql://localhost:3306/testdb
+```

@@ -1,0 +1,10 @@
+# File 1: database.config
+mysql:
+  uri: jdbc:mysql://username:password@host:3306/dbname
+
+# File 2: appsettings.json
+{
+  "sqlserver": {
+    "connection-string": "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;"
+  }
+}

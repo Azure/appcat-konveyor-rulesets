@@ -1,0 +1,19 @@
+```yaml
+dependencies:
+  - name: sqljdbc.jar
+    path: ./libs/sqljdbc.jar
+configuration:
+  database:
+    connectionString: "jdbc:sqlserver://localhost:1433;databaseName=mydb;user=myuser;password=mypass"
+---
+metadata:
+  applicationName: MyApp
+  environment: local
+properties:
+  db.connectionURL: "r2dbc:mssql://database-server:1433/dbname"
+---
+resources:
+  - type: jdbc-pool
+    config:
+      connectionString: "r2dbc:pool:mssql://database-server:1433/dbname"
+```

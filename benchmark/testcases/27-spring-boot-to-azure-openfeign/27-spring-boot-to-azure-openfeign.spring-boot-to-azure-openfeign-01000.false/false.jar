@@ -1,0 +1,23 @@
+{
+  "name": "sample-app",
+  "dependencies": [
+    {
+      "name": "org.springframework.cloud.spring-cloud-starter-openfeign",
+      "version": "3.0.1"
+    },
+    {
+      "name": "com.example.library",
+      "version": "1.2.3"
+    }
+  ],
+  "files": [
+    {
+      "path": "/libs/custom-library.jar",
+      "content": "binary-data"
+    },
+    {
+      "path": "/libs/http-client-2.1.0.jar",
+      "content": "binary-data"
+    }
+  ]
+}
