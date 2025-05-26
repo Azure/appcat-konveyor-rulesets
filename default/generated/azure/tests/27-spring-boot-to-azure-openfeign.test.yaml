@@ -1,0 +1,13 @@
+rulesPath: ../27-spring-boot-to-azure-openfeign.yaml
+providers:
+- name: java
+  dataPath: ./data/27-spring-boot-to-azure-openfeign
+- name: builtin
+  dataPath: ./data/27-spring-boot-to-azure-openfeign
+tests:
+- ruleID: spring-boot-to-azure-openfeign-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Feign framework.

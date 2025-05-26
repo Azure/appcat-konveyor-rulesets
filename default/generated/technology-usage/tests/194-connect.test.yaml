@@ -1,0 +1,12 @@
+rulesPath: ../194-connect.yaml
+providers:
+- name: java
+  dataPath: ./data/194-connect
+- name: builtin
+  dataPath: ./data/194-connect
+tests:
+- ruleID: connect-01500
+  testCases:
+  - name: tc-1
+    hasTags:
+    - ActiveMQ

@@ -46,6 +46,8 @@ public class LocalFileUsage {
 
     final static String filename = "C:/some.tmp";
 
+    final static String filename2 = "C:\\Users\\Public\\Documents\\file.txt";
+
     final static String filename1 = "/tmp/output/123.txt";
 
     public static void main(String[] args) {

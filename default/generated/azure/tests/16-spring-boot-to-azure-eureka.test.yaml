@@ -1,0 +1,25 @@
+rulesPath: ../16-spring-boot-to-azure-eureka.yaml
+providers:
+- name: java
+  dataPath: ./data/16-spring-boot-to-azure-eureka
+- name: builtin
+  dataPath: ./data/16-spring-boot-to-azure-eureka
+tests:
+- ruleID: spring-boot-to-azure-eureka-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: The application uses a Eureka connection string.
+- ruleID: spring-boot-to-azure-eureka-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Eureka client.
+- ruleID: spring-boot-to-azure-eureka-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds the Eureka server.

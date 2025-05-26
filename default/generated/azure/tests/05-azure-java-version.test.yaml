@@ -1,0 +1,19 @@
+rulesPath: ../05-azure-java-version.yaml
+providers:
+- name: java
+  dataPath: ./data/05-azure-java-version
+- name: builtin
+  dataPath: ./data/05-azure-java-version
+tests:
+- ruleID: azure-java-version-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The application is using non-LTS Java version.
+- ruleID: azure-java-version-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The application is using an old Java version.

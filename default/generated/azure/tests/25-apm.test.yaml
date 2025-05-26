@@ -1,0 +1,25 @@
+rulesPath: ../25-apm.yaml
+providers:
+- name: java
+  dataPath: ./data/25-apm
+- name: builtin
+  dataPath: ./data/25-apm
+tests:
+- ruleID: apm-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses New Relic to Azure
+- ruleID: apm-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses Elastic APM
+- ruleID: apm-00003
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses Dynatrace

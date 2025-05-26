@@ -1,0 +1,26 @@
+rulesPath: ../15-spring-boot-to-azure-config-server.yaml
+providers:
+- name: java
+  dataPath: ./data/15-spring-boot-to-azure-config-server
+- name: builtin
+  dataPath: ./data/15-spring-boot-to-azure-config-server
+tests:
+- ruleID: spring-boot-to-azure-config-server-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 3
+      messageMatches: The application uses a Spring Cloud Config Server connection
+        string
+- ruleID: spring-boot-to-azure-config-server-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: The application uses Spring Cloud Config Server
+- ruleID: spring-boot-to-azure-config-server-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds Spring Cloud Config

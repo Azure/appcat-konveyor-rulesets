@@ -3,6 +3,8 @@
 // eap-to-azure-appservice-environment-variables-001
 package org.sample;
 
+import java.lang.System;
+
 public class SystemGetEnvGetProperty {
 
     public static void main(String[] args) {

@@ -1,0 +1,19 @@
+rulesPath: ../13-web.yaml
+providers:
+- name: java
+  dataPath: ./data/13-web
+- name: builtin
+  dataPath: ./data/13-web
+tests:
+- ruleID: web-10000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application uses Java Swing for the graphical user interface.
+- ruleID: web-11000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application uses JavaFX for the graphical user interface.

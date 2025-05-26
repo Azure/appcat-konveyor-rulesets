@@ -1,0 +1,145 @@
+rulesPath: ../31-database-technology-usage.yaml
+providers:
+- name: java
+  dataPath: ./data/31-database-technology-usage
+- name: builtin
+  dataPath: ./data/31-database-technology-usage
+tests:
+- ruleID: technology-usage-database-01000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - JDBC datasources
+  - name: tc-2
+    hasTags:
+    - JDBC datasources
+  - name: tc-3
+    hasTags:
+    - JDBC
+- ruleID: technology-usage-database-01001
+  testCases:
+  - name: tc-1
+    hasTags:
+    - JDBC XA datasources
+  - name: tc-2
+    hasTags:
+    - JDBC XA datasources
+- ruleID: technology-usage-database-01100
+  testCases:
+  - name: tc-1
+    hasTags:
+    - JPA entities
+  - name: tc-2
+    hasTags:
+    - JPA entities
+- ruleID: technology-usage-database-01200
+  testCases:
+  - name: tc-1
+    hasTags:
+    - JPA named queries
+  - name: tc-2
+    hasTags:
+    - JPA named queries
+- ruleID: technology-usage-database-01300
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Persistence units
+  - name: tc-2
+    hasTags:
+    - Persistence units
+# - ruleID: technology-usage-database-01400
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - HSQLDB Driver
+# - ruleID: technology-usage-database-01500
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - MySQL Driver
+# - ruleID: technology-usage-database-01600
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Derby Driver
+# - ruleID: technology-usage-database-01700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - PostgreSQL Driver
+# - ruleID: technology-usage-database-01800
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - H2 Driver
+# - ruleID: technology-usage-database-01900
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Microsoft SQL Driver
+# - ruleID: technology-usage-database-02000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - SQLite Driver
+# - ruleID: technology-usage-database-02100
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Oracle DB Driver
+# - ruleID: technology-usage-database-02200
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Cassandra Client
+# - ruleID: technology-usage-database-02300
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Axion Driver
+# - ruleID: technology-usage-database-02400
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - MckoiSQLDB Driver
+# - ruleID: technology-usage-database-02500
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - MongoDB Client
+# - ruleID: technology-usage-database-02600
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Spring Data
+# - ruleID: technology-usage-database-02700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Morphia
+# - ruleID: technology-usage-database-02800
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - LevelDB Client
+# - ruleID: technology-usage-database-02900
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Apache HBase Client
+# - ruleID: technology-usage-database-03000
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Apache Accumulo Client
+# - ruleID: technology-usage-database-03100
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Spring Data JPA
+# - ruleID: technology-usage-database-03200
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - MariaDB Driver

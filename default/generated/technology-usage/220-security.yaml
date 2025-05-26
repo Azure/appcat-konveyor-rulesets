@@ -1,0 +1,353 @@
+- customVariables: []
+  description: Embedded framework - Spring Security
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-01100
+  tag:
+  - Spring Security
+  - Embedded framework - Spring Security
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)spring-security([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Apache Shiro
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-01200
+  tag:
+  - Apache Shiro
+  - Embedded library - Apache Shiro
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)shiro([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Hdiv
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-01300
+  tag:
+  - Hdiv
+  - Embedded library - Hdiv
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)hdiv([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - OACC
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-01400
+  tag:
+  - OACC
+  - Embedded library - OACC
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)acciente-oacc([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - PicketLink
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-01500
+  tag:
+  - PicketLink
+  - Embedded library - PicketLink
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)picketlink([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - PicketBox
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-01600
+  tag:
+  - PicketBox
+  - Embedded library - PicketBox
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)picketbox([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Keyczar
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-01700
+  tag:
+  - Keyczar
+  - Embedded library - Keyczar
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)keyczar([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - XACML
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-01800
+  tag:
+  - XACML
+  - Embedded library - XACML
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)xacml([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - SAML
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-01900
+  tag:
+  - SAML
+  - Embedded library - SAML
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)saml([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Bouncy Castle
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02000
+  tag:
+  - Bouncy Castle
+  - Embedded library - Bouncy Castle
+  when:
+    or:
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)lcrypto([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)bcprov([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)bcpg([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)bcmail([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)bcpkix([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)bctls([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Jasypt
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02100
+  tag:
+  - Jasypt
+  - Embedded library - Jasypt
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)jasypt([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Apache Santuario
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02200
+  tag:
+  - Apache Santuario
+  - Embedded library - Apache Santuario
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)xmlsec([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - SSL
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02300
+  tag:
+  - SSL
+  - Embedded library - SSL
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)ssl([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Vlad
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02400
+  tag:
+  - Vlad
+  - Embedded library - Vlad
+  when:
+    builtin.file:
+      pattern: ^vlad([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Apache Commons Validator
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02500
+  tag:
+  - Apache Commons Validator
+  - Embedded library - Apache Commons Validator
+  when:
+    builtin.file:
+      pattern: ^commons-validator([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - OWASP ESAPI
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02600
+  tag:
+  - OWASP ESAPI
+  - Embedded library - OWASP ESAPI
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)esapi([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - WSS4J
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02700
+  tag:
+  - WSS4J
+  - Embedded library - WSS4J
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)wss4j([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - OpenSAML
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02800
+  tag:
+  - OpenSAML
+  - Embedded library - OpenSAML
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)opensaml([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - OTR4J
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-02900
+  tag:
+  - OTR4J
+  - Embedded library - OTR4J
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)otr4j([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - OWASP CSRF Guard
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-03000
+  tag:
+  - OWASP CSRF Guard
+  - Embedded library - OWASP CSRF Guard
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)csrfguard([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - OAUTH
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-03100
+  tag:
+  - OAUTH
+  - Embedded library - OAUTH
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)oauth([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Acegi Security
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-03200
+  tag:
+  - Acegi Security
+  - Embedded library - Acegi Security
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)acegi-security([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - JSecurity
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-03300
+  tag:
+  - JSecurity
+  - Embedded library - JSecurity
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)jsecurity([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - AcrIS Security
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-03400
+  tag:
+  - AcrIS Security
+  - Embedded library - AcrIS Security
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)acris-security([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - Trunk JGuard
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-03500
+  tag:
+  - Trunk JGuard
+  - Embedded library - Trunk JGuard
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)jguard([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded framework - Spring Security
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-03600
+  tag:
+  - Spring Security
+  - Embedded framework - Spring Security
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.security.spring-security-core
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-security
+- customVariables: []
+  description: Embedded library - OAuth 2.0
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-03700
+  tag:
+  - OAuth 2.0
+  when:
+    builtin.file:
+      pattern: ^([a-zA-Z0-9._-]*)oauth2([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Embedded library - OpenID
+  labels:
+  - konveyor.io/include=always
+  links: []
+  ruleID: security-03800
+  tag:
+  - OpenID
+  when:
+    or:
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)openid4java([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)pac4j-oidc([a-zA-Z0-9._-]*)\.jar$

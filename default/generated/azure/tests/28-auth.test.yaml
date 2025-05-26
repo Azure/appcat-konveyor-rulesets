@@ -1,0 +1,37 @@
+rulesPath: ../28-auth.yaml
+providers:
+- name: java
+  dataPath: ./data/28-auth
+- name: builtin
+  dataPath: ./data/28-auth
+tests:
+- ruleID: auth-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a SAML library.
+- ruleID: auth-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds an OpenSAML library.
+- ruleID: auth-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds a Spring Security library.
+- ruleID: auth-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds an OAuth 2.0 library.
+- ruleID: auth-04000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application embeds an OpenID library.

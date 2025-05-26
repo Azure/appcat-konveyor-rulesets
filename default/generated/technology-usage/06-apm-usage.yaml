@@ -1,0 +1,70 @@
+- customVariables: []
+  description: Application Performance Management (APM) tool - Application Insights
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application uses Application Insights.
+  ruleID: apm-usage-00000
+  tag:
+  - Application Insights
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.microsoft\.azure\.([a-zA-Z0-9._-]*)applicationinsights([a-zA-Z0-9._-]*)
+    - builtin.file:
+        pattern: ^applicationinsights([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Application Performance Management (APM) tool - New Relic
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: The application use New Relic.
+  ruleID: apm-usage-00001
+  tag:
+  - New Relic
+  - Application Performance Management (APM) tool - New Relic
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: ([a-zA-Z0-9._-]*)newrelic([a-zA-Z0-9._-]*)
+    - builtin.file:
+        pattern: ^newrelic([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Application Performance Management (APM) tool - Elastic APM
+  labels:
+  - konveyor.io/include=always
+  - apm
+  links: []
+  message: The application uses Elastic APM.
+  ruleID: apm-usage-00002
+  tag:
+  - Elastic APM
+  - Application Performance Management (APM) tool - Elastic APM
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: ([a-zA-Z0-9._-]*)elastic\.apm([a-zA-Z0-9._-]*)
+    - builtin.file:
+        pattern: ^elastic-apm([a-zA-Z0-9._-]*)\.jar$
+- customVariables: []
+  description: Application Performance Management (APM) tool - Dynatrace
+  labels:
+  - konveyor.io/include=always
+  - apm
+  links: []
+  message: The application uses Dynatrace.
+  ruleID: apm-usage-00003
+  tag:
+  - Dynatrace
+  - Application Performance Management (APM) tool - Dynatrace
+  when:
+    or:
+    - builtin.file:
+        pattern: ^dynatrace([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^liboneagent\.so$
+    - builtin.file:
+        pattern: ^dtjavaagent\.jar$
