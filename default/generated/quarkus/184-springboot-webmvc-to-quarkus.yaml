@@ -38,6 +38,3 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-webflux
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.spring-webflux

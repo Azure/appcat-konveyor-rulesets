@@ -347,9 +347,6 @@
     - java.referenced:
         location: METHOD_CALL
         pattern: runFinalizersOnExit
-    - java.referenced:
-        location: METHOD_CALL
-        pattern: runFinalizersOnExit
 - category: mandatory
   customVariables: []
   description: The `java.awt.Font.getPeer()` and `java.awt.Component.getPeer()` methods

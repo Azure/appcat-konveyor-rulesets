@@ -326,9 +326,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-security
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.security.spring-security-core
 - customVariables: []
   description: Embedded library - OAuth 2.0
   labels:

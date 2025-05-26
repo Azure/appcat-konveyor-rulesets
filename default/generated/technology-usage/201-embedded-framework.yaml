@@ -697,9 +697,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-web
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.spring-web
 - customVariables: []
   description: Embedded framework - Spring Shell
   labels:
@@ -754,9 +751,6 @@
   - Embedded framework - Spring Cloud Function
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.cloud.spring-cloud-function-context
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-function-context

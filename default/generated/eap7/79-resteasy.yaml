@@ -1236,6 +1236,3 @@
     - java.referenced:
         location: ANNOTATION
         pattern: javax.ws.rs.Produces
-    - java.referenced:
-        location: ANNOTATION
-        pattern: javax.ws.rs.Produces

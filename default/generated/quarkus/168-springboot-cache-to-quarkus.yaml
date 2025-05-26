@@ -16,6 +16,3 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-cache
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.boot.spring-boot-starter-cache

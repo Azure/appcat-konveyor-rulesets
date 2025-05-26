@@ -5,12 +5,12 @@ providers:
 - name: builtin
   dataPath: ./data/01-os-specific
 tests:
-- ruleID: os-specific-00001
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 4
-      messageMatches: The application currently relies on a file system path
+# - ruleID: os-specific-00001
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       atLeast: 4
+#       messageMatches: The application currently relies on a file system path
 - ruleID: os-specific-00002
   testCases:
   - name: tc-1

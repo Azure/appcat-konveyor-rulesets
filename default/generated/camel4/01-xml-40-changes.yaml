@@ -18,9 +18,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-activemq
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-activemq
 - category: mandatory
   customVariables: []
   description: camel-any23 component has been removed
@@ -40,9 +37,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-any23
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-any23
 - category: mandatory
   customVariables: []
   description: camel-atmos component has been removed
@@ -59,9 +53,6 @@
   ruleID: xml-removed-camel4-00003
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-atmos
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-atmos
@@ -85,9 +76,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-caffeine-lrucache
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-caffeine-lrucache
 - category: mandatory
   customVariables: []
   description: camel-cdi component has been removed
@@ -105,9 +93,6 @@
   ruleID: xml-removed-camel4-00005
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-cdi
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-cdi
@@ -131,9 +116,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-directvm
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-directvm
 - category: mandatory
   customVariables: []
   description: camel-dozer component has been removed
@@ -151,9 +133,6 @@
   ruleID: xml-removed-camel4-00007
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-dozer
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-dozer
@@ -177,9 +156,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-elasticsearch-rest
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-elasticsearch-rest
 - category: mandatory
   customVariables: []
   description: camel-gora component has been removed
@@ -196,9 +172,6 @@
   ruleID: xml-removed-camel4-00010
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-gora
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-gora
@@ -221,9 +194,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-hbase
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-hbase
 - category: mandatory
   customVariables: []
   description: camel-iota component has been removed
@@ -240,9 +210,6 @@
   ruleID: xml-removed-camel4-00012
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-iota
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-iota
@@ -265,9 +232,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-ipfs
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-ipfs
 - category: mandatory
   customVariables: []
   description: camel-jbpm component has been removed
@@ -287,9 +251,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-jbpm
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-jbpm
 - category: mandatory
   customVariables: []
   description: camel-jclouds component has been removed
@@ -306,9 +267,6 @@
   ruleID: xml-removed-camel4-00015
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-jclouds
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-jclouds
@@ -332,9 +290,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-johnzon
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-johnzon
 - category: mandatory
   customVariables: []
   description: camel-microprofile-metrics component has been removed
@@ -355,9 +310,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-microprofile-metrics
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-microprofile-metrics
 - category: mandatory
   customVariables: []
   description: camel-milo component has been removed
@@ -374,9 +326,6 @@
   ruleID: xml-removed-camel4-00018
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-milo
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-milo
@@ -400,9 +349,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-opentracing
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-opentracing
 - category: mandatory
   customVariables: []
   description: camel-optaplanner component has been removed
@@ -419,9 +365,6 @@
   ruleID: xml-removed-camel4-00020
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-optaplanner
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-optaplanner
@@ -445,9 +388,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-rabbitmq
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-rabbitmq
 - category: mandatory
   customVariables: []
   description: camel-rest-swagger component has been removed
@@ -465,9 +405,6 @@
   ruleID: xml-removed-camel4-00022
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-rest-swagger
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-rest-swagger
@@ -491,9 +428,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-restdsl-swagger-plugin
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-restdsl-swagger-plugin
 - category: mandatory
   customVariables: []
   description: camel-resteasy component has been removed
@@ -514,9 +448,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-resteasy
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-resteasy
 - category: mandatory
   customVariables: []
   description: camel-spark component has been removed
@@ -533,9 +464,6 @@
   ruleID: xml-removed-camel4-00025
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-spark
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-spark
@@ -559,9 +487,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-spring-integration
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-spring-integration
 - category: mandatory
   customVariables: []
   description: camel-swift component has been removed
@@ -578,9 +503,6 @@
   ruleID: xml-removed-camel4-00027
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-swift
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-swift
@@ -604,9 +526,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-swagger-java
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-swagger-java
 - category: mandatory
   customVariables: []
   description: camel-websocket component has been removed
@@ -624,9 +543,6 @@
   ruleID: xml-removed-camel4-00029
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-websocket
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-websocket
@@ -650,9 +566,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-websocket-jsr356
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-websocket-jsr356
 - category: mandatory
   customVariables: []
   description: camel-vertx-kafka component has been removed
@@ -670,9 +583,6 @@
   ruleID: xml-removed-camel4-00031
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-vertx-kafka
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-vertx-kafka
@@ -696,9 +606,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-vm
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-vm
 - category: mandatory
   customVariables: []
   description: camel-xstream component has been removed
@@ -719,9 +626,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-xstream
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-xstream
 - category: mandatory
   customVariables: []
   description: camel-zipkin component has been removed
@@ -739,9 +643,6 @@
   ruleID: xml-removed-camel4-00034
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-zipkin
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-zipkin
@@ -767,9 +668,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.springboot.camel-platform-http-starter
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.springboot.camel-platform-http-starter
 - category: mandatory
   customVariables: []
   description: camel-micrometer-starter has been changed - the uri tags are now static
@@ -790,9 +688,6 @@
   ruleID: xml-changedcomponent-camel4-00002
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.springboot.camel-micrometer-starter
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.springboot.camel-micrometer-starter

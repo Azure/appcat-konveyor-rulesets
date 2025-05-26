@@ -38,9 +38,6 @@
     #    location: METHOD_CALL
     #    pattern: Runtime.load
     - java.referenced:
-        location: METHOD_CALL
-        pattern: loadLibrary
-    - java.referenced:
         location: CONSTRUCTOR_CALL
         pattern: com.sun.jna*
     - java.referenced:

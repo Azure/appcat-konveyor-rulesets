@@ -2512,6 +2512,3 @@
     - java.dependency:
         lowerbound: 0.0.0
         nameregex: org\.hibernate\.hibernate-search.*
-    - java.dependency:
-        lowerbound: 0.0.0
-        nameregex: org\.hibernate\.hibernate-search.*

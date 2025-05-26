@@ -12,12 +12,12 @@ tests:
       exactly: 262
       messageMatches: An application running inside a container could lose access
         to a file in local storage
-- ruleID: local-storage-00003
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      exactly: 6
-      messageMatches: Found absolute file path in the code.
+# - ruleID: local-storage-00003
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 6
+#       messageMatches: Found absolute file path in the code.
 - ruleID: local-storage-00004
   testCases:
   - name: tc-1

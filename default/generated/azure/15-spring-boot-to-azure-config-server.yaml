@@ -97,6 +97,3 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-starter-config
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.cloud.spring-cloud-config-client

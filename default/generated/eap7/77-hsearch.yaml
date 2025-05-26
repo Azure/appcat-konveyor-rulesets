@@ -744,9 +744,6 @@
         location: ANNOTATION
         pattern: org.hibernate.search.annotations.Field
     - java.referenced:
-        location: ANNOTATION
-        pattern: org.hibernate.search.annotations.Field
-    - java.referenced:
         pattern: java.util.(Calendar|Date)
     - java.referenced:
         pattern: java.lang.(Integer|Long|Float|Double)

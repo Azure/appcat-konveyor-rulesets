@@ -23,9 +23,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-actuator-autoconfigure
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.boot.spring-boot-actuator
 - category: mandatory
   customVariables: []
   description: Replace Spring Health endpoint mapping

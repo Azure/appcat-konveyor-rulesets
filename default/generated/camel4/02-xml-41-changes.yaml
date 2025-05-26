@@ -16,9 +16,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-management
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-management
 - category: mandatory
   customVariables: []
   description: The scheduler no longer includes header with the timestamp of when
@@ -39,9 +36,6 @@
   ruleID: xml-removed-camel41-00001
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-scheduler
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-scheduler
@@ -66,9 +60,6 @@
   ruleID: xml-removed-camel41-00002
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-timer
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-timer
@@ -452,9 +443,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-aws2-sns
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-aws2-sns
 - category: mandatory
   customVariables: []
   description: The Camel-PDF component has been updated to Apache PDFBox 3.0.0.
@@ -476,9 +464,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-aws2-pdf
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-aws2-pdf
 - category: mandatory
   customVariables: []
   description: The default value for sessionTimeoutMs has been updated to 45000 ms,
@@ -496,9 +481,6 @@
   ruleID: xml-removed-camel41-00018
   when:
     or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.apache.camel.camel-kafka
     - java.dependency:
         lowerbound: 0.0.0
         name: org.apache.camel.camel-kafka

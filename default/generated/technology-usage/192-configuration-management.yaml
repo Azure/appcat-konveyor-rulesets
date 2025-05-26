@@ -17,9 +17,6 @@
         name: org.springframework.cloud.spring-cloud-starter-config
     - java.dependency:
         lowerbound: 0.0.0
-        name: org.springframework.cloud.spring-cloud-config-client
-    - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-config-server
     - java.referenced:
         location: IMPORT
@@ -96,9 +93,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-starter-vault-config
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.cloud.spring-cloud-vault-config
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-vault-config
