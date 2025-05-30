@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="OpenLiberty Server with File Paths">
+    <!-- Enable features -->
+    <featureManager>
+        <feature>servlet-4.0</feature>
+        <feature>jaxrs-2.1</feature>
+        <feature>cdi-2.0</feature>
+        <feature>jdbc-4.2</feature>
+        <feature>jpa-2.2</feature>
+    </featureManager>
+    
+    <!-- HTTP ports -->
+    <httpEndpoint id="defaultHttpEndpoint" host="*" httpPort="9080" httpsPort="9443" />
+    
+    <!-- Logging configuration with file paths -->
+    <logging logDirectory="${server.output.dir}/logs"
+             messageFormat="basic"
+             consoleFormat="basic"
+             consoleLogLevel="info"
+             copySystemStreams="true" />
+             
+    <!-- File storage configuration -->
+    <fileService storageDirectory="/opt/ibm/wlp/storage" />
+    
+    <!-- Document service with path -->
+    <documentRepository path="/mnt/documents" autoCreate="true" />
+    
+    <!-- File Access Service -->
+    <fileAccessService directory="/mnt/data" temporaryDirectory="/tmp/uploads" />
+    
+    <!-- Application definition with custom directories -->
+    <webApplication id="myApp" location="myApp.war" name="myApp" contextRoot="/"
+        uploadDir="/opt/uploads" 
+        extractDirectory="/opt/extracted" />
+</server> 

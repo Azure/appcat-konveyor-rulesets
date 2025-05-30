@@ -40,3 +40,5 @@
     - java.referenced:
         location: PACKAGE
         pattern: org.apache.commons.mail*
+    - builtin.xml:
+        xpath: //server/mailSession
