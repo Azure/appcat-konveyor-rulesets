@@ -1,0 +1,13 @@
+rulesPath: ../15-external-config.yaml
+providers:
+- name: java
+  dataPath: ./data/15-external-config
+- name: builtin
+  dataPath: ./data/15-external-config
+tests:
+- ruleID: external-config-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: Storing application settings in external files other than web.config

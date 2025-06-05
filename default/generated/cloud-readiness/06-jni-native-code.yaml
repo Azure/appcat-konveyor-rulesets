@@ -9,7 +9,15 @@
   - category=java-native-code
   - source-category=jni-native-code
   - jni
-  links: []
+  links: 
+  - title: Advanced example for containers
+    url: https://docs.microsoft.com/en-us/visualstudio/install/advanced-build-tools-container?view=vs-2019
+  - title: how to register com components inside docker as regsvr32 command
+    url: https://stackoverflow.com/questions/54502335/how-to-register-com-components-inside-docker-as-regsvr32-command-executes-succes
+  - title: How to containerize the .NET Framework web apps with Windows Containers and Docker
+    url: https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerize-the-.NET-Framework-web-apps-with-Windows-Containers-and-Docker
+  - title: Windows Application 32 bit COM dll registration
+    url: https://forums.docker.com/t/windows-application-32-bit-com-dll-registration/47205/8
   message: |-
     When migrating an application that uses Java native libraries (JNI, JNA) to Azure, it's important to consider that Java native libraries might not run in a cloud or container environment.
      Instead, you can refactor your application to use cloud-compatible alternatives or managed services.
@@ -63,7 +71,15 @@
   - category=java-native-code
   - source-category=jni-native-code
   - jni
-  links: []
+  links: 
+  - title: Advanced example for containers
+    url: https://docs.microsoft.com/en-us/visualstudio/install/advanced-build-tools-container?view=vs-2019
+  - title: how to register com components inside docker as regsvr32 command
+    url: https://stackoverflow.com/questions/54502335/how-to-register-com-components-inside-docker-as-regsvr32-command-executes-succes
+  - title: How to containerize the .NET Framework web apps with Windows Containers and Docker
+    url: https://github.com/dotnet-architecture/eShopModernizing/wiki/02.-How-to-containerize-the-.NET-Framework-web-apps-with-Windows-Containers-and-Docker
+  - title: Windows Application 32 bit COM dll registration
+    url: https://forums.docker.com/t/windows-application-32-bit-com-dll-registration/47205/8
   message: |-
     When migrating an application that uses native processes to Azure, it's important to consider that native processes might not run in a cloud or container environment. Instead, you can refactor your application to use cloud-compatible alternatives or managed services.
 

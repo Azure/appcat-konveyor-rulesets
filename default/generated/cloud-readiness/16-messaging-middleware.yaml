@@ -1,0 +1,60 @@
+- category: mandatory
+  customVariables: []
+  description: Using a middleware application
+  effort: 3
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=containerization
+  links:
+  - title: Microservices with RabbitMQ and Docker
+    url: https://medium.com/@codescrum/microservices-with-rabbitmq-and-docker-2bbe26c3fc55
+  - title: What is Azure Service Bus?
+    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview
+  message: |-
+    Existing application may use asynchronous messaging middleware that enables to send data between decoupled systems. 
+    These messaging environments need to be isolated into their own container in order to have a release cycle independent from the applications relying on the messaging queues. 
+    Review the dependencies in each file. The messaging environment needs to be instantiated as part of a dedicated container. 
+    Create a docker image based on the publicly available image from the framework of your choice and configure it through a Dockerfile.
+  ruleID: messaging-middleware-00000
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.apache.kafka.kafka-clients
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.kafka.spring-kafka
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.rabbitmq.amqp-client
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-amqp
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.apache.activemq.activemq-client
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.boot.spring-boot-starter-activemq
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: software.amazon.awssdk.sqs
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: io.awspring.cloud.spring-cloud-aws-messaging
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.google.cloud.google-cloud-pubsub
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.google.cloud.spring-cloud-gcp-starter-pubsub
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.apache.pulsar.pulsar-client
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: org.springframework.pulsar.spring-pulsar
+
+

@@ -1,0 +1,13 @@
+rulesPath: ../16-messaging-middleware.yaml
+providers:
+- name: java
+  dataPath: ./data/16-messaging-middleware
+- name: builtin
+  dataPath: ./data/16-messaging-middleware
+tests:
+- ruleID: messaging-middleware-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 12
+      messageMatches: Existing application may use asynchronous messaging middleware

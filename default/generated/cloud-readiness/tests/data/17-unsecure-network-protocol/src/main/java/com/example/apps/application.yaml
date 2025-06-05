@@ -1,0 +1,3 @@
+# More unsecured usage (builtin.filecontent detection)
+external-api: "http://legacy-api.net/data"
+ftp-endpoint: "ftp://internal-server.net/resource"
