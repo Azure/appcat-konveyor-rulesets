@@ -8,8 +8,9 @@
   links:
   - title: Quarkus development tools
     url: https://quarkus.io/guides/tooling
-  message: "\n Remove the spring-boot-devtools dependency.\n Quarkus has its own set
-    of development tools integrated by default.\n "
+  message: |-
+    Remove the spring-boot-devtools dependency.
+     Quarkus has its own set of development tools integrated by default.
   ruleID: springboot-devtools-to-quarkus-0000
   when:
     builtin.xml:

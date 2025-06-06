@@ -8,7 +8,7 @@
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides
-  message: "\n Non-quarkus dependencies are no longer required and can be removed.\n "
+  message: Non-quarkus dependencies are no longer required and can be removed.
   ruleID: dependency-removal-for-quarkus-00000
   when:
     or:

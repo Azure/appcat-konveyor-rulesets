@@ -7,18 +7,17 @@
   - konveyor.io/target=hibernate
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - Changes in integration contracts (SPIs)
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#spi-multiLoad
-  message: "\n This method has changed from `EntityPersister#multiload(Object[] ids,
-    SharedSessionContractImplementor session, MultiIdLoadOptions loadOptions)` to
-    `EntityPersister#lock(Object[] ids, EventSource session, MultiIdLoadOptions loadOptions)`.\n
-    Both EventSource and SharedSessionContractImplementor are contracts of `SessionImpl`
-    so they can be easily swapped.\n Methods `isEventSource` and `asEventSource` can
-    also be used to ease the transition, available on the `SharedSessionContractImplementor`
-    contract.\n "
+  message: |-
+    This method has changed from `EntityPersister#multiload(Object[] ids, SharedSessionContractImplementor session, MultiIdLoadOptions loadOptions)` to `EntityPersister#lock(Object[] ids, EventSource session, MultiIdLoadOptions loadOptions)`.
+     Both EventSource and SharedSessionContractImplementor are contracts of `SessionImpl` so they can be easily swapped.
+     Methods `isEventSource` and `asEventSource` can also be used to ease the transition, available on the `SharedSessionContractImplementor` contract.
   ruleID: hibernate-6.2-00010
   when:
     java.referenced:
@@ -33,16 +32,17 @@
   - konveyor.io/target=hibernate
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - Changes in integration contracts (SPIs)
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#spi-afterDeserialize
-  message: "\n This method has changed from `Executable#afterDeserialize(SharedSessionContractImplementor
-    session)` to `Executable#afterDeserialize(EventSource eventSource)`.\n Both EventSource
-    and SharedSessionContractImplementor are contracts of `SessionImpl` so they can
-    be easily swapped.\n Methods `isEventSource` and `asEventSource` can also be used
-    to ease the transition, available on the `SharedSessionContractImplementor` contract.\n "
+  message: |-
+    This method has changed from `Executable#afterDeserialize(SharedSessionContractImplementor session)` to `Executable#afterDeserialize(EventSource eventSource)`.
+     Both EventSource and SharedSessionContractImplementor are contracts of `SessionImpl` so they can be easily swapped.
+     Methods `isEventSource` and `asEventSource` can also be used to ease the transition, available on the `SharedSessionContractImplementor` contract.
   ruleID: hibernate-6.2-00020
   when:
     java.referenced:
@@ -57,13 +57,15 @@
   - konveyor.io/target=hibernate
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - Changes in integration contracts (SPIs)
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#spi-JdbcType
-  message: "\n The return type of `JdbcType#getJdbcRecommendedJavaTypeMapping()` was
-    changed from `BasicJavaType` to `JavaType`.\n "
+  message: The return type of `JdbcType#getJdbcRecommendedJavaTypeMapping()` was changed
+    from `BasicJavaType` to `JavaType`.
   ruleID: hibernate-6.2-00030
   when:
     java.referenced:
@@ -81,13 +83,15 @@
   - konveyor.io/target=hibernate
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - API/SPI/Internal distinction
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#api-internal-cfg
-  message: "\n This class within `org.hibernate.cfg` has been moved; see link for
-    more information.\n "
+  message: This class within `org.hibernate.cfg` has been moved; see link for more
+    information.
   ruleID: hibernate-6.2-00040
   when:
     java.referenced:
@@ -104,13 +108,15 @@
   - konveyor.io/target=hibernate
   - konveyor.io/target=eap8+
   - konveyor.io/target=eap
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - API/SPI/Internal distinction
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#api-internal-loader
-  message: "\n This class within `org.hibernate.loader` has been moved; see link for
-    more information.\n "
+  message: This class within `org.hibernate.loader` has been moved; see link for more
+    information.
   ruleID: hibernate-6.2-00050
   when:
     java.referenced:

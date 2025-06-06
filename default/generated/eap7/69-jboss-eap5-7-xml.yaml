@@ -27,6 +27,32 @@
     builtin.xml:
       namespaces: {}
       xpath: //mbean[@code='org.jboss.cache.TreeCache']
+- customVariables: []
+  description: JBoss 5.x EAR descriptor (jboss-app.xml)
+  labels:
+  - konveyor.io/source=eap5
+  - konveyor.io/source=eap
+  - konveyor.io/target=eap7+
+  - konveyor.io/target=eap
+  - jboss-eap5
+  - ejb
+  - seam
+  links:
+  - title: JBoss DTD's
+    url: http://www.jboss.org/j2ee/dtd/
+  - title: Java EE 7 application descriptor
+    url: http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/application_7.xsd
+  message: "\n                        A JBoss specific EAR descriptor (`jboss-app.xml`)
+    allows extensions to Java EE EAR archives configuration.\n                        You
+    should use now standard `application.xml` descriptor.\n                    "
+  ruleID: jboss-eap5-7-xml-02000
+  tag:
+  - jboss-eap5
+  - JBoss 5.x EAR descriptor (jboss-app.xml)
+  when:
+    builtin.xmlPublicID:
+      namespaces: {}
+      regex: ""
 - category: mandatory
   customVariables: []
   description: JBoss EAP 5 classloader configuration (jboss-classloading.xml)
@@ -112,8 +138,9 @@
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/development_guide/#java_authorization_contract_for_containers_jacc
   - title: Java Authentication SPI for Containers (JASPI)
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/development_guide/#java_authentication_spi_for_containers_jaspi
-  message: "\n `java:/jaas/` is a JBoss EAP `security-domain` URI.\n Remove the `java:/jaas/`
-    prefix for `security-domain` elements in EAP 7/6.\n "
+  message: |-
+    `java:/jaas/` is a JBoss EAP `security-domain` URI.
+     Remove the `java:/jaas/` prefix for `security-domain` elements in EAP 7/6.
   ruleID: jboss-eap5-7-xml-14000
   when:
     builtin.xml:
@@ -137,10 +164,9 @@
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html-single/how_to_configure_server_security/
   - title: JBoss Login Modules
     url: http://docs.jboss.org/jbosssecurity/docs/6.0/security_guide/html/Login_Modules.html
-  message: "Before JBoss EAP 6, authentication security domains and login modules
-    could be configured in a `login-config.xml` file.\n JBoss EAP 6+ does not support
-    the `login-config.xml` descriptor. Security is now configured inside the server
-    configuration. Please refer to the corresponding server security guide.\n "
+  message: |-
+    Before JBoss EAP 6, authentication security domains and login modules could be configured in a `login-config.xml` file.
+     JBoss EAP 6+ does not support the `login-config.xml` descriptor. Security is now configured inside the server configuration. Please refer to the corresponding server security guide.
   ruleID: jboss-eap5-7-xml-16000
   tag:
   - JBoss security configuration descriptor (login-config.xml)

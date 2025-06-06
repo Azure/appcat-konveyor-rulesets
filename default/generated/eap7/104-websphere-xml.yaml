@@ -3,6 +3,7 @@
   labels:
   - konveyor.io/source=websphere
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - websphere
   - configuration
@@ -27,6 +28,7 @@
   labels:
   - konveyor.io/source=websphere
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - websphere
   - configuration
@@ -55,13 +57,15 @@
   labels:
   - konveyor.io/source=websphere
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - websphere
   - configuration
   links: []
-  message: "\n \n This file contains WebSphere proprietary JSP engine configuration.\n\n
-    To migrate to EAP 7, configure it accordingly using the CLI or the web console.\n
-    \n "
+  message: |-
+    This file contains WebSphere proprietary JSP engine configuration.
+
+     To migrate to EAP 7, configure it accordingly using the CLI or the web console.
   ruleID: eap7-websphere-xml-03500
   when:
     or:
@@ -85,6 +89,7 @@
   labels:
   - konveyor.io/source=websphere
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - websphere
   - configuration
@@ -96,9 +101,10 @@
   - title: Migrate IBM WebSphere Application Server Web Application Extension or Binding
       Files
     url: https://access.redhat.com/articles/1330673
-  message: "\n \n This file contains WebSphere proprietary binding configuration.\n\n
-    To migrate to EAP 7+, configure EAP 7+ accordingly using the CLI interface or
-    web console.\n \n "
+  message: |-
+    This file contains WebSphere proprietary binding configuration.
+
+     To migrate to EAP 7+, configure EAP 7+ accordingly using the CLI interface or web console.
   ruleID: eap7-websphere-xml-06000
   when:
     or:
@@ -115,6 +121,7 @@
   labels:
   - konveyor.io/source=websphere
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - websphere
   - configuration
@@ -138,6 +145,7 @@
   labels:
   - konveyor.io/source=websphere
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - websphere
   - configuration
@@ -159,6 +167,7 @@
   labels:
   - konveyor.io/source=websphere
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - websphere
   - configuration

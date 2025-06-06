@@ -48,9 +48,8 @@
   links:
   - title: EAP 6 deadlocks when using ConsoleHandler and java.io.PrintStream
     url: https://access.redhat.com/solutions/375273
-  message: |2-
-
-     Using ConsoleAppender configured in log4j.{{suffix}} can cause a deadlock on JBoss EAP 6.
+  message: |-
+    Using ConsoleAppender configured in log4j.{{suffix}} can cause a deadlock on JBoss EAP 6.
      It is recommended to Remove application level log4j ConsoleAppenders.
   ruleID: log4j-03000
   when:

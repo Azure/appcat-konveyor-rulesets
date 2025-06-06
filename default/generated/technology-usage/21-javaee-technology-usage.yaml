@@ -62,7 +62,7 @@
     builtin.hasTags:
     - Java EE Batch
 - customVariables: []
-  description: CDI
+  description: JavaEE javax
   labels:
   - konveyor.io/include=always
   links: []
@@ -78,7 +78,7 @@
         location: PACKAGE
         pattern: javax.inject*
 - customVariables: []
-  description: CDI
+  description: JavaEE Jakarta
   labels:
   - konveyor.io/include=always
   links: []
@@ -94,7 +94,7 @@
         location: PACKAGE
         pattern: jakarta.inject*
 - customVariables: []
-  description: CDI
+  description: JavaEE
   labels:
   - konveyor.io/include=always
   links: []

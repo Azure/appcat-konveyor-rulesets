@@ -8,8 +8,8 @@
   links:
   - title: Quarkus Apache Camel
     url: https://quarkus.io/guides/camel
-  message: "\n SpringBoot Integration flows are not supported. A migration to Apache
-    Camel route is mandatory.\n "
+  message: SpringBoot Integration flows are not supported. A migration to Apache Camel
+    route is mandatory.
   ruleID: springboot-integration-to-quarkus-00010
   when:
     builtin.xml:
@@ -26,8 +26,8 @@
   links:
   - title: Quarkus Apache Camel
     url: https://quarkus.io/guides/camel
-  message: "\n SpringBoot IntegrationFlow class usage is not supported. A migration
-    to Apache Camel route using From is mandatory.\n "
+  message: SpringBoot IntegrationFlow class usage is not supported. A migration to
+    Apache Camel route using From is mandatory.
   ruleID: springboot-integration-to-quarkus-00020
   when:
     java.referenced:

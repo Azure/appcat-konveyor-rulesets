@@ -17,10 +17,10 @@
     url: https://access.redhat.com/documentation/en-us/JBoss_Enterprise_Application_Platform/6.4/html-single/Development_Guide/index.html#chap-Class_Loading_and_Modules
   - title: Article about Classloading in JBoss EAP 6
     url: https://access.redhat.com/solutions/361343
-  message: "\n \n The class is dynamically loaded within application. During the migration,
-    multiple classes that are provided on classpath by a different server may not
-    be present anymore.\n\n Please review the class-loading mechanisms and ensure
-    that the dynamically loaded class is available in JBoss EAP.\n \n "
+  message: |-
+    The class is dynamically loaded within application. During the migration, multiple classes that are provided on classpath by a different server may not be present anymore.
+
+     Please review the class-loading mechanisms and ensure that the dynamically loaded class is available in JBoss EAP.
   ruleID: environment-dependent-calls-01000
   when:
     java.referenced:
@@ -39,11 +39,21 @@
   - konveyor.io/source
   - jndi
   links: []
-  message: "\n \n This method lookups an object using a JNDI String. During the migration
-    process, some entity JNDI bindings may change.\n Ensure that the JNDI Name does
-    not need to change for JBoss EAP.\n\n *For Example:*\n\n ```java\n (ConnectionFactory)initialContext.lookup(\"weblogic.jms.ConnectionFactory\");\n
-    ```\n\n *should become:*\n\n ```java\n (ConnectionFactory)initialContext.lookup(\"/ConnectionFactory\");\n
-    ```\n \n "
+  message: |-
+    This method lookups an object using a JNDI String. During the migration process, some entity JNDI bindings may change.
+     Ensure that the JNDI Name does not need to change for JBoss EAP.
+
+     *For Example:*
+
+     ```java
+     (ConnectionFactory)initialContext.lookup("weblogic.jms.ConnectionFactory");
+     ```
+
+     *should become:*
+
+     ```java
+     (ConnectionFactory)initialContext.lookup("/ConnectionFactory");
+     ```
   ruleID: environment-dependent-calls-02000
   when:
     as: default
@@ -63,12 +73,13 @@
   - konveyor.io/source
   - jndi
   links: []
-  message: "\n \n In JBoss EAP, the `InitialContext` should be instantiated with no
-    arguments. Once an instance is constructed, look up the service using portable
-    JNDI lookup syntax. Ensure also that in case system properties for `InitialContext`
-    are provided, they do not need to be changed for the JBoss EAP.\n\n ```java\n
-    InitialContext context = new InitialContext();\n Service service = (Service) context.lookup(
-    \"java:app/service/\" + ServiceImpl.class.getSimpleName() );\n ```\n \n "
+  message: |-
+    In JBoss EAP, the `InitialContext` should be instantiated with no arguments. Once an instance is constructed, look up the service using portable JNDI lookup syntax. Ensure also that in case system properties for `InitialContext` are provided, they do not need to be changed for the JBoss EAP.
+
+     ```java
+     InitialContext context = new InitialContext();
+     Service service = (Service) context.lookup( "java:app/service/" + ServiceImpl.class.getSimpleName() );
+     ```
   ruleID: environment-dependent-calls-03000
   when:
     as: default
@@ -115,15 +126,15 @@
   - konveyor.io/source
   - jmx
   links: []
-  message: "\n \n After migration, some of the JMX beans provided by the previous
-    server may not be present anymore.\n Ensure that the `javax.management.{{suffix}}`
-    does not need to change for JBoss EAP.\n \n "
+  message: |-
+    After migration, some of the JMX beans provided by the previous server may not be present anymore.
+     Ensure that the `javax.management.{{suffix}}` does not need to change for JBoss EAP.
   ruleID: environment-dependent-calls-04000
   when:
     as: default
     java.referenced:
       location: CONSTRUCTOR_CALL
-      pattern: javax.management.(ObjectName)*
+      pattern: javax.management.ObjectName*
 - category: mandatory
   customVariables:
   - name: suffix
@@ -140,15 +151,15 @@
   - konveyor.io/source
   - jmx
   links: []
-  message: "\n \n After migration, some of the JMX beans provided by the previous
-    server may not be present anymore.\n Ensure that the `javax.management.{{suffix}}`
-    does not need to change for JBoss EAP.\n \n "
+  message: |-
+    After migration, some of the JMX beans provided by the previous server may not be present anymore.
+     Ensure that the `javax.management.{{suffix}}` does not need to change for JBoss EAP.
   ruleID: environment-dependent-calls-04001
   when:
     as: default
     java.referenced:
       location: CONSTRUCTOR_CALL
-      pattern: javax.management.(remote.JMXServiceURL)*
+      pattern: javax.management.remote.JMXServiceURL*
 - category: mandatory
   customVariables: []
   description: JMX connection factory parameters
@@ -162,10 +173,10 @@
   - konveyor.io/source
   - jmx
   links: []
-  message: "\n \n After migration, JMX connection String or parameters may be different
-    than the one provided by previous server.\n As an example, `javax.management.remote.JMXConnectorFactory.PROTOCOL_PROVIDER_PACKAGES`
-    will change.\n Ensure that any of the parameters does not need to change for JBoss
-    EAP.\n \n "
+  message: |-
+    After migration, JMX connection String or parameters may be different than the one provided by previous server.
+     As an example, `javax.management.remote.JMXConnectorFactory.PROTOCOL_PROVIDER_PACKAGES` will change.
+     Ensure that any of the parameters does not need to change for JBoss EAP.
   ruleID: environment-dependent-calls-05000
   when:
     as: default

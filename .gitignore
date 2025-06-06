@@ -7,3 +7,9 @@
 .settings
 .vscode
 target
+.metadata
+org.eclipse.core.runtime
+org.eclipse.equinox.app
+org.eclipse.equinox.launcher
+org.eclipse.osgi
+*.report

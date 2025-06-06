@@ -9,10 +9,11 @@
   links:
   - title: Quarkus Spring Configuration Properties Guide
     url: https://quarkus.io/guides/spring-boot-properties
-  message: "\n Replace the SpringBoot artifact with Quarkus `spring-boot-properties`
-    extension\n\n Spring Configuration Properties is in spring-boot artifact brought
-    transitively by any `org.springframework.boot:spring-boot-*` dependency\n Add
-    Quarkus dependency `io.quarkus:quarkus-spring-boot-properties`\n "
+  message: |-
+    Replace the SpringBoot artifact with Quarkus `spring-boot-properties` extension
+
+     Spring Configuration Properties is in spring-boot artifact brought transitively by any `org.springframework.boot:spring-boot-*` dependency
+     Add Quarkus dependency `io.quarkus:quarkus-spring-boot-properties`
   ruleID: springboot-properties-to-quarkus-00000
   when:
     java.dependency:
@@ -31,9 +32,11 @@
     url: https://quarkus.io/guides/config#configuration-profiles
   - title: Quarkus Configuration Reference Guide
     url: https://quarkus.io/guides/config-reference#configuration_profiles
-  message: "\n Spring property profile in separate file 'application-{{profile}}.{{extension}}'
-    must have\n their individual properties refactored to use Quarkus profile naming
-    conventions within a single properties file,\n\n ie in the format %{{profile}}.config.key=value\n "
+  message: |-
+    Spring property profile in separate file 'application-{{profile}}.{{extension}}' must have
+     their individual properties refactored to use Quarkus profile naming conventions within a single properties file,
+
+     ie in the format %{{profile}}.config.key=value
   ruleID: springboot-properties-to-quarkus-00001
   when:
     builtin.file:
@@ -48,9 +51,10 @@
   links:
   - title: Quarkus Datasources Guide
     url: https://quarkus.io/guides/datasource
-  message: "\n Spring datasource property key/value pairs have been detected in the
-    application property file.\n\n View advice in the Quarkus datasource guide to
-    convert these to Quarkus datasource properties.\n "
+  message: |-
+    Spring datasource property key/value pairs have been detected in the application property file.
+
+     View advice in the Quarkus datasource guide to convert these to Quarkus datasource properties.
   ruleID: springboot-properties-to-quarkus-00002
   when:
     builtin.filecontent:
@@ -66,9 +70,10 @@
   links:
   - title: Quarkus Configuring Logging Guide
     url: https://quarkus.io/guides/logging#runtime-configuration
-  message: "\n Spring log level property configuration have been detected in the application
-    property file.\n\n View advice in the Quarkus datasource guide to convert these
-    to Quarkus log level properties.\n "
+  message: |-
+    Spring log level property configuration have been detected in the application property file.
+
+     View advice in the Quarkus datasource guide to convert these to Quarkus log level properties.
   ruleID: springboot-properties-to-quarkus-00003
   when:
     builtin.filecontent:
@@ -84,7 +89,7 @@
   links:
   - title: Quarkus Hibernate ORM and JPA Guide
     url: https://quarkus.io/guides/hibernate-orm
-  message: "\n Replace `spring.jpa.hibernate.ddl-auto=create-drop` with `quarkus.hibernate-orm.database.generation=drop-and-create`\n "
+  message: Replace `spring.jpa.hibernate.ddl-auto=create-drop` with `quarkus.hibernate-orm.database.generation=drop-and-create`
   ruleID: springboot-properties-to-quarkus-00004
   when:
     builtin.filecontent:
@@ -100,9 +105,9 @@
   links:
   - title: Quarkus Guide - using OpenAPI and Swagger
     url: https://quarkus.io/guides/openapi-swaggerui
-  message: "\n Replace `springdoc.swagger-ui.path` with `quarkus.swagger-ui.path`\n
-    \n By adding `quarkus.swagger-ui.always-include=true` Quarkus will always expose
-    the Swagger UI endpoint. \n It is only exposed in Dev mode by default.\n "
+  message: "Replace `springdoc.swagger-ui.path` with `quarkus.swagger-ui.path`\n \n
+    By adding `quarkus.swagger-ui.always-include=true` Quarkus will always expose
+    the Swagger UI endpoint. \n It is only exposed in Dev mode by default."
   ruleID: springboot-properties-to-quarkus-00005
   when:
     builtin.filecontent:
@@ -118,8 +123,7 @@
   links:
   - title: Quarkus Guide - using OpenAPI and Swagger
     url: https://quarkus.io/guides/openapi-swaggerui
-  message: "\n Replace `springdoc.api-docs.path` with `quarkus.smallrye-openapi.path`\n
-    \n "
+  message: Replace `springdoc.api-docs.path` with `quarkus.smallrye-openapi.path`
   ruleID: springboot-properties-to-quarkus-00006
   when:
     builtin.filecontent:

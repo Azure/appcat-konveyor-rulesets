@@ -6,9 +6,11 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=quarkus
   links: []
-  message: "\n Spring JMX XML configuration detected:\n\n Spring JMX is not supported
-    by Quarkus with the GraalVM Native compilation.\n Spring JMX can be used with
-    the Quarkus Hotspot compilation however.\n "
+  message: |-
+    Spring JMX XML configuration detected:
+
+     Spring JMX is not supported by Quarkus with the GraalVM Native compilation.
+     Spring JMX can be used with the Quarkus Hotspot compilation however.
   ruleID: springboot-jmx-to-quarkus-00000
   when:
     builtin.xml:
@@ -23,9 +25,11 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=quarkus
   links: []
-  message: "\n Spring JMX annotation configuration detected:\n\n Spring JMX is not
-    supported by Quarkus with the GraalVM Native compilation.\n Spring JMX can be
-    used with the Quarkus Hotspot compilation however.\n "
+  message: |-
+    Spring JMX annotation configuration detected:
+
+     Spring JMX is not supported by Quarkus with the GraalVM Native compilation.
+     Spring JMX can be used with the Quarkus Hotspot compilation however.
   ruleID: springboot-jmx-to-quarkus-00001
   when:
     java.referenced:

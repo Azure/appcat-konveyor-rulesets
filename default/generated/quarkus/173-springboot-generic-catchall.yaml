@@ -8,7 +8,7 @@
   - springboot
   - catchall
   links: []
-  message: "\n If the application declares explicitly or uses any of the feature provided
+  message: "If the application declares explicitly or uses any of the feature provided
     by the Spring `{{group}}:{{artifact}}` component,\n then check if there is a Quarkus
     Extensions with Spring API compatibility for the Spring `{{artifact}}` component.
     \n If yes, then replace the `{{group}}:{{artifact}}` dependency with the Quarkus
@@ -16,7 +16,7 @@
     leveraging the Quarkus Guides linked below. \n \n Otherwise, if the application
     hasn't got this explicit Spring `{{group}}:{{artifact}}` component dependency,
     it has been added transitively by another Spring component. \n Once the dependant
-    Spring component will be removed, this issue will be fixed as well.\n "
+    Spring component will be removed, this issue will be fixed as well."
   ruleID: springboot-generic-catchall-00100
   when:
     java.dependency:

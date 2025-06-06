@@ -17,9 +17,9 @@
   - sonic
   - catchall
   links: []
-  message: "\n This com.{{subpackage}}.{{classname}} is a Sonic proprietary type and
-    needs to be migrated to a compatible API. There are currently no detailed\n migration
-    rules about this type.\n "
+  message: |-
+    This com.{{subpackage}}.{{classname}} is a Sonic proprietary type and needs to be migrated to a compatible API. There are currently no detailed
+     migration rules about this type.
   ruleID: sonic-catchall-00000
   when:
     java.referenced:

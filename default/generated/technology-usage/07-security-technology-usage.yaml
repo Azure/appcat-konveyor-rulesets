@@ -1,5 +1,5 @@
 - customVariables: []
-  description: Security Realm usage
+  description: Javax Security
   labels:
   - konveyor.io/include=always
   links: []

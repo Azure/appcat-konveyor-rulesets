@@ -5,6 +5,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - web-app
   - weblogic
@@ -28,6 +29,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - web-app
   - weblogic
@@ -35,10 +37,10 @@
   links:
   - title: Migrate WebLogic Proprietary Servlet Annotations
     url: https://access.redhat.com/articles/1249423
-  message: "\n \n Replace the proprietary WebLogic `@WLServlet` annotation with the
-    Java EE standard `@WebServlet` annotation.\n\n See the [javax.servlet.annotation
-    JavaDoc](http://docs.oracle.com/javaee/7/api/javax/servlet/annotation/package-summary.html)
-    for more information.\n \n "
+  message: |-
+    Replace the proprietary WebLogic `@WLServlet` annotation with the Java EE standard `@WebServlet` annotation.
+
+     See the [javax.servlet.annotation JavaDoc](http://docs.oracle.com/javaee/7/api/javax/servlet/annotation/package-summary.html) for more information.
   ruleID: weblogic-webapp-eap7-02000
   when:
     java.referenced:
@@ -51,6 +53,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - web-app
   - weblogic
@@ -58,10 +61,10 @@
   links:
   - title: Migrate WebLogic Proprietary Servlet Annotations
     url: https://access.redhat.com/articles/1249423
-  message: "\n \n Replace the proprietary WebLogic `@WLInitParam` annotation with
-    the Java EE standard `@WebInitParam` annotation.\n\n See the [javax.servlet.annotation
-    JavaDoc](http://docs.oracle.com/javaee/7/api/javax/servlet/annotation/package-summary.html)
-    for more information.\n \n "
+  message: |-
+    Replace the proprietary WebLogic `@WLInitParam` annotation with the Java EE standard `@WebInitParam` annotation.
+
+     See the [javax.servlet.annotation JavaDoc](http://docs.oracle.com/javaee/7/api/javax/servlet/annotation/package-summary.html) for more information.
   ruleID: weblogic-webapp-eap7-03000
   when:
     java.referenced:
@@ -74,6 +77,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - web-app
   - weblogic
@@ -81,10 +85,10 @@
   links:
   - title: Migrate WebLogic Proprietary Servlet Annotations
     url: https://access.redhat.com/articles/1249423
-  message: "\n \n Replace the proprietary WebLogic `@WLFilter` annotation with the
-    Java EE standard `@WebFilter` annotation.\n\n See the [javax.servlet.annotation
-    JavaDoc](http://docs.oracle.com/javaee/7/api/javax/servlet/annotation/package-summary.html)
-    for more information.\n \n "
+  message: |-
+    Replace the proprietary WebLogic `@WLFilter` annotation with the Java EE standard `@WebFilter` annotation.
+
+     See the [javax.servlet.annotation JavaDoc](http://docs.oracle.com/javaee/7/api/javax/servlet/annotation/package-summary.html) for more information.
   ruleID: weblogic-webapp-eap7-04000
   when:
     java.referenced:
@@ -97,6 +101,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - web-app
   - weblogic
@@ -108,13 +113,10 @@
     url: http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContextEvent.html
   - title: WebLogic custom ApplicationLifecycleEvent Documentation
     url: http://docs.oracle.com/cd/E13222_01/wls/docs90/programming/lifecycle.html
-  message: "\n \n WebLogic `ApplicationLifecycleEvent` must be replaced with standard
-    Java EE `ServletContextEvent`. Otherwise, a custom solution using CDI's `ApplicationScoped`
-    beans or EJB's `@Startup` beans is required in order to propagate a custom event
-    object because `ServletContextEvent` types are not extendible in the standard
-    Java EE programming model.\n\n Use a `javax.servlet.ServletContextListener` with
-    `@javax.annotation.servlet.WebListener`, or an EJB 3.1 `@javax.ejb.Startup` `@javax.ejb.Singleton`
-    service bean.\n \n "
+  message: |-
+    WebLogic `ApplicationLifecycleEvent` must be replaced with standard Java EE `ServletContextEvent`. Otherwise, a custom solution using CDI's `ApplicationScoped` beans or EJB's `@Startup` beans is required in order to propagate a custom event object because `ServletContextEvent` types are not extendible in the standard Java EE programming model.
+
+     Use a `javax.servlet.ServletContextListener` with `@javax.annotation.servlet.WebListener`, or an EJB 3.1 `@javax.ejb.Startup` `@javax.ejb.Singleton` service bean.
   ruleID: weblogic-webapp-eap7-05000
   when:
     or:
@@ -134,6 +136,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - web-app
   - weblogic
@@ -146,11 +149,10 @@
     url: http://docs.oracle.com/javaee/7/api/javax/servlet/ServletContextEvent.html
   - title: WebLogic custom ApplicationLifecycleEvent Documentation
     url: http://docs.oracle.com/cd/E13222_01/wls/docs90/programming/lifecycle.html
-  message: "\n \n WebLogic `ApplicationLifecycleListener` must be replaced with standard
-    Java EE `ServletContextListener` types. Otherwise, a solution using CDI's `ApplicationScoped`
-    beans or EJB's `@Startup` beans is required.\n\n Use a `javax.servlet.ServletContextListener`
-    with `@javax.annotation.servlet.WebListener`, or an EJB 3.1 `@javax.ejb.Startup`
-    `@javax.ejb.Singleton` service bean.\n \n "
+  message: |-
+    WebLogic `ApplicationLifecycleListener` must be replaced with standard Java EE `ServletContextListener` types. Otherwise, a solution using CDI's `ApplicationScoped` beans or EJB's `@Startup` beans is required.
+
+     Use a `javax.servlet.ServletContextListener` with `@javax.annotation.servlet.WebListener`, or an EJB 3.1 `@javax.ejb.Startup` `@javax.ejb.Singleton` service bean.
   ruleID: weblogic-webapp-eap7-06000
   when:
     or:
@@ -167,6 +169,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - web-app
   - weblogic
@@ -186,6 +189,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - web-app
   - weblogic
@@ -207,6 +211,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - web-app
   - weblogic
@@ -214,12 +219,10 @@
   links:
   - title: Migrate Oracle WebLogic programmatic login to JBoss EAP 7
     url: https://access.redhat.com/articles/1329213
-  message: "\n \n Oracle WebLogic Server provides a proprietary `ServletAuthentication`
-    class to perform programmatic login.\n\n In Red Hat JBoss EAP 7, you can use the
-    standard Java EE servlet security 3.1 `HttpServletRequest.login()` method or you
-    can define a `<security-constraint>` element in the web.xml file. You must also
-    replace code that uses the Oracle WebLogic Server proprietary `ServletAuthentication`
-    class.\n \n "
+  message: |-
+    Oracle WebLogic Server provides a proprietary `ServletAuthentication` class to perform programmatic login.
+
+     In Red Hat JBoss EAP 7, you can use the standard Java EE servlet security 3.1 `HttpServletRequest.login()` method or you can define a `<security-constraint>` element in the web.xml file. You must also replace code that uses the Oracle WebLogic Server proprietary `ServletAuthentication` class.
   ruleID: weblogic-webapp-eap7-09000
   when:
     java.referenced:

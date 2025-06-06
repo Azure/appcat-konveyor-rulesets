@@ -8,6 +8,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -36,14 +38,16 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
-  message: "\n `org.hibernate.search.engine.cfg.spi.ConfigurationPropertySource` has
-    been moved to `org.hibernate.search.engine.cfg.ConfigurationPropertySource`.\n "
+  message: '`org.hibernate.search.engine.cfg.spi.ConfigurationPropertySource` has
+    been moved to `org.hibernate.search.engine.cfg.ConfigurationPropertySource`.'
   ruleID: hibernate-search-6.1-00020
   when:
     or:
@@ -59,15 +63,17 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
-  message: "\n `org.hibernate.search.backend.elasticsearch.client.spi.ElasticsearchHttpClientConfigurer`
+  message: '`org.hibernate.search.backend.elasticsearch.client.spi.ElasticsearchHttpClientConfigurer`
     moved to `org.hibernate.search.backend.elasticsearch.client.ElasticsearchHttpClientConfigurer`
-    and is now an API.\n "
+    and is now an API.'
   ruleID: hibernate-search-6.1-00030
   when:
     or:
@@ -83,15 +89,17 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
-  message: "\n `org.hibernate.search.backend.elasticsearch.client.spi.ElasticsearchHttpClientConfigurationContext`
+  message: '`org.hibernate.search.backend.elasticsearch.client.spi.ElasticsearchHttpClientConfigurationContext`
     moved to `org.hibernate.search.backend.elasticsearch.client.ElasticsearchHttpClientConfigurationContext`
-    and is now an API.\n "
+    and is now an API.'
   ruleID: hibernate-search-6.1-00040
   when:
     or:
@@ -106,6 +114,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -129,6 +139,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -151,6 +163,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -173,6 +187,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -196,6 +212,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -219,6 +237,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -242,6 +262,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -264,6 +286,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -286,6 +310,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -308,6 +334,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -330,6 +358,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -352,6 +382,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -374,6 +406,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -396,6 +430,8 @@
   - konveyor.io/target=eap
   - konveyor.io/target=hibernate6.1+
   - konveyor.io/target=hibernate
+  - konveyor.io/target=quarkus3+
+  - konveyor.io/target=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
