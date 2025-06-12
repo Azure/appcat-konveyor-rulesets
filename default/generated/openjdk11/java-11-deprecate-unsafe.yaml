@@ -53,5 +53,5 @@
   ruleID: java-11-deprecate-unsafe-00001
   when:
     java.referenced:
-      location: METHOD_CALL
-      pattern: sun.misc.Unsafe.(getInt|putInt|getFloat|putFloat|getDouble|putDouble|getBoolean|putBoolean|getObject|putObject|getByte|putByte|getChar|putChar|getShort|putShort|getLong|putLong|fieldOffset|staticFieldBase|tryMonitorEnter|monitorEnter|monitorExit)
+      location: PACKAGE
+      pattern: sun.misc.Unsafe*
