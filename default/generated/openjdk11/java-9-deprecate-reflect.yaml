@@ -22,10 +22,10 @@
     or:
     - java.referenced:
         location: IMPORT
-        pattern: sun.reflect.Reflection*
+        pattern: sun.reflect.Reflection
     - java.referenced:
         location: METHOD_CALL
-        pattern: sun.reflect.Reflection.*
+        pattern: sun.reflect.Reflection.getCallerClass
 - category: mandatory
   customVariables: []
   description: sun.reflect.CallerSensitive annotation was deprecated in Java 9
