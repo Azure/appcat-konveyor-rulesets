@@ -15,5 +15,5 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 6
+      exactly: 2
       messageMatches: The `sun.misc.Unsafe` API is scheduled for removal in the long term,

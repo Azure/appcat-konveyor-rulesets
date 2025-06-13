@@ -53,5 +53,5 @@
   ruleID: java-11-deprecate-unsafe-00001
   when:
     java.referenced:
-      location: PACKAGE
+      location: IMPORT
       pattern: sun.misc.Unsafe*
