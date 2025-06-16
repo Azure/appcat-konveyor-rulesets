@@ -1,0 +1,13 @@
+rulesPath: ../java-9-deprecate-log.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-log
+- name: builtin
+  dataPath: ./data/java-9-deprecate-log
+tests:
+- ruleID: java-9-deprecate-log-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The deprecated `addPropertyListener` and `removePropertyListener` methods

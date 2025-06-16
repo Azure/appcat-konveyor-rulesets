@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Removed Deprecated java.security.acl APIs
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk14-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk14+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removed Deprecated java.security.acl APIs
+    url: https://www.oracle.com/java/technologies/javase/14-relnote-issues.html#JDK-8191138
+  message: |-
+    The deprecated `java.security.acl` APIs have been removed. This includes the following classes in that package: `Acl`, `AclEntry`, `AclNotFoundException`, `Group`, `LastOwnerException`, `NotOwnerException`, `Owner`, and `Permission`.
+  ruleID: java-14-deprecate-security-00000
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: java.security.acl*

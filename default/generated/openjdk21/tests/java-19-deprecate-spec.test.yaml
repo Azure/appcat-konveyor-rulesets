@@ -1,0 +1,19 @@
+rulesPath: ../java-19-deprecate-spec.yaml
+providers:
+- name: java
+  dataPath: ./data/java-19-deprecate-spec
+- name: builtin
+  dataPath: ./data/java-19-deprecate-spec
+tests:
+- ruleID: java-19-deprecate-param-spec-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: It is recommended to construct `PSSParameterSpec` explicitly with all desired
+- ruleID: java-19-deprecate-param-spec-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: It is recommended to construct `OAEPParameterSpec` explicitly with desired values

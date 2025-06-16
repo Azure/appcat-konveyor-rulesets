@@ -1,0 +1,42 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of sun.nio.ch.disableSystemWideOverlappingFileLockCheck Property
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of sun.nio.ch.disableSystemWideOverlappingFileLockCheck Property
+    url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8196535
+  message: |-
+    The property `sun.nio.ch.disableSystemWideOverlappingFileLockCheck` has been removed. Consequently, compatibility with the older locking approach has also been removed.
+  ruleID: java-11-deprecate-property-00000
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: getProperty\("sun\.nio\.ch\.disableSystemWideOverlappingFileLockCheck"\)
+- category: mandatory
+  customVariables: []
+  description: Removal of sun.locale.formatasdefault Property
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of sun.locale.formatasdefault Property
+    url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8198385
+  message: |-
+    The system property `sun.locale.formatasdefault`, introduced in JDK 7 for backwards compatibility, has been removed.
+  ruleID: java-11-deprecate-property-00001
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: getProperty\("sun\.locale\.formatasdefault"\)

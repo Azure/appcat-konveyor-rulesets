@@ -1,0 +1,13 @@
+rulesPath: ../java-17-deprecate-socket.yaml
+providers:
+- name: java
+  dataPath: ./data/java-17-deprecate-socket
+- name: builtin
+  dataPath: ./data/java-17-deprecate-socket
+tests:
+- ruleID: java-17-deprecate-socket-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The following static methods used to set the system-wide socket implementation factories have been deprecated

@@ -1,0 +1,34 @@
+- category: mandatory
+  customVariables: []
+  description: Deprecate the Socket Implementation Factory Mechanism
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk17-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk17+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecate the Socket Implementation Factory Mechanism
+    url: https://www.oracle.com/java/technologies/javase/17all-relnotes.html#JDK-8235139
+  message: |-
+    The following static methods used to set the system-wide socket implementation factories have been deprecated:
+
+    * `static void ServerSocket.setSocketFactory​(SocketImplFactory fac)`
+    * `static void Socket.setSocketImplFactory​(SocketImplFactory fac)`
+    * `static void DatagramSocket.setDatagramSocketImplFactory​(DatagramSocketImplFactory fac)`
+    
+    These API points were used to statically configure a system-wide factory for the corresponding socket types in the `java.net` package. These methods have mostly been obsolete since Java 1.4.
+  ruleID: java-17-deprecate-socket-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.net.ServerSocket.setSocketFactory
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.net.Socket.setSocketImplFactory
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.net.DatagramSocket.setDatagramSocketImplFactory

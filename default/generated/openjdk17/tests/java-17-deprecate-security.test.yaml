@@ -1,0 +1,55 @@
+rulesPath: ../java-17-deprecate-security.yaml
+providers:
+- name: java
+  dataPath: ./data/java-17-deprecate-security
+- name: builtin
+  dataPath: ./data/java-17-deprecate-security
+tests:
+- ruleID: java-17-deprecate-security-manager-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 8
+      messageMatches: The Java Security Manager API is deprecated in Java 1.*
+- ruleID: java-17-deprecate-security-manager-00010
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: References to Java Security Manager API classes deprecated in Java 1.*
+- ruleID: java-17-deprecate-security-manager-00020
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The java.lang.System::getSecurityManager and java.lang.System::setSecurityManager
+- ruleID: java-17-deprecate-security-manager-00030
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The java.lang.Thread::checkAccess metho.*
+- ruleID: java-17-deprecate-security-manager-00040
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The java.lang.ThreadGroup::checkAccess metho.*
+- ruleID: java-17-deprecate-security-manager-00050
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The java.util.logging.LogManager::checkAccess metho.*
+- ruleID: java-17-deprecate-security-manager-00060
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The java.util.concurrent.Executor.*
+- ruleID: java-17-deprecate-security-manager-00070
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The javax.security.auth.Subjec.*

@@ -1,0 +1,126 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of Deprecated Pre-1.2 SecurityManager Methods and Fields
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk10-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk10+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of Deprecated Pre-1.2 SecurityManager Methods and Fields
+    url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8186535
+  message: |-
+    The following pre-1.2 deprecated `java.lang.SecurityManager` methods and fields that were marked `forRemoval=true` have been removed:
+
+    * `inCheck` field
+    * `getInCheck` method
+    * `classDepth` method
+    * `classLoaderDepth` method
+    * `currentClassLoader` method
+    * `currentLoadedClass` method
+    * `inClass` method
+    * `inClassLoader` method
+
+    In addition, the deprecated `checkMemberAccess` method has been changed to throw a `SecurityException` if the caller has not been granted `AllPermission`. This method is error-prone and users should instead invoke the `checkPermission` method directly.
+  ruleID: java-10-deprecate-security-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.SecurityManager.(getInCheck|classDepth|classLoaderDepth|currentClassLoader|currentLoadedClass|inClass|inClassLoader)
+- category: mandatory
+  customVariables: []
+  description: Removal of Deprecated Classes in com.sun.security.auth.**
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk10-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk10+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of Deprecated Classes in com.sun.security.auth.**
+    url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html
+  message: |-
+    The following deprecated classes that were marked for removal in JDK 9 have been removed:
+     
+    * `com.sun.security.auth.PolicyFile`
+    * `com.sun.security.auth.SolarisNumericGroupPrincipal`
+    * `com.sun.security.auth.SolarisNumericUserPrincipal`
+    * `com.sun.security.auth.SolarisPrincipal`
+    * `com.sun.security.auth.X500Principal`
+    * `com.sun.security.auth.module.SolarisLoginModule`
+    * `com.sun.security.auth.module.SolarisSystem`
+  ruleID: java-10-deprecate-security-00001
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.security.auth*
+- category: mandatory
+  customVariables: []
+  description: java.security.{Certificate,Identity,IdentityScope,Signer} APIs Deprecated forRemoval
+  labels:
+  - konveyor.io/source=openjdk10-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk10+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: java.security.{Certificate,Identity,IdentityScope,Signer} APIs Deprecated forRemoval
+    url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8175091
+  message: |-
+    The deprecated `java.security.{Certificate, Identity, IdentityScope, Signer}` classes have been marked `forRemoval=true` and are subject to removal in a future version of Java SE.
+  ruleID: java-10-deprecate-security-00002
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: java.security.(Certificate|Identity|IdentityScope|Signer)
+- category: mandatory
+  customVariables: []
+  description: java.security.acl APIs Deprecated forRemoval
+  labels:
+  - konveyor.io/source=openjdk10-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk10+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: java.security.acl APIs Deprecated forRemoval
+    url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8175094
+  message: |-
+    The deprecated `java.security.acl` APIs have been marked `forRemoval=true` and are subject to removal in a future version of Java SE.
+  ruleID: java-10-deprecate-security-00003
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: java.security.acl*
+- category: mandatory
+  customVariables: []
+  description: javax.security.auth.Policy API Deprecated forRemoval
+  labels:
+  - konveyor.io/source=openjdk10-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk10+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: javax.security.auth.Policy API Deprecated forRemoval
+    url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8159535
+  message: |-
+    The deprecated `javax.security.auth.Policy` class has been marked `forRemoval=true` and will be removed in a future release. The `javax.security.auth.Policy` class has been deprecated since JDK 1.4 and superseded or replaced by `java.security.Policy`.
+  ruleID: java-10-deprecate-security-00004
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.security.auth.Policy*

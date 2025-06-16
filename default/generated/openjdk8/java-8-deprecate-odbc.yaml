@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of the JDBC-ODBC Bridge
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    Starting with JDK 8, the `JDBC-ODBC` Bridge is no longer included with the JDK. The `JDBC-ODBC` Bridge has always been considered transitional and a non-supported product that was only provided with select JDK bundles and not included with the JRE. 
+    Instead, use a JDBC driver provided by the vendor of the database or a commercial JDBC Driver instead of the `JDBC-ODBC` Bridge
+  ruleID: java-8-deprecate-odbc-00001
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: jdbc\:odbc|jdbc\.odbc|JdbcOdbcDriver

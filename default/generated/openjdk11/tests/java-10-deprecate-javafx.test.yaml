@@ -1,0 +1,13 @@
+rulesPath: ../java-10-deprecate-javafx.yaml
+providers:
+- name: java
+  dataPath: ./data/java-10-deprecate-javafx
+- name: builtin
+  dataPath: ./data/java-10-deprecate-javafx
+tests:
+- ruleID: java-10-deprecate-javafx-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The `HostServices::getWebContext` method, which was deprecated for removal in JDK 9, has been removed. 

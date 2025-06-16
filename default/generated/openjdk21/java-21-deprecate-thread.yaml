@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: ThreadGroup.allowThreadSuspension Is Removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk21-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk21+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: ThreadGroup.allowThreadSuspension Is Removed
+    url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8297295
+  message: |-
+    The method `java.lang.ThreadGroup.allowThreadSuspension(boolean)` has been removed in this release. The method was used for low memory handling in JDK 1.1 but was never fully specified. It was deprecated and changed to "do nothing" in JDK 1.2
+  ruleID: java-21-deprecate-thread-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.allowThreadSuspension

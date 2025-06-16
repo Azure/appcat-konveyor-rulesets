@@ -1,0 +1,13 @@
+rulesPath: ../java-8-deprecate-corba.yaml
+providers:
+- name: java
+  dataPath: ./data/java-8-deprecate-corba
+- name: builtin
+  dataPath: ./data/java-8-deprecate-corba
+tests:
+- ruleID: java-8-deprecate-corba-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The JDK internal package com.sun.corba.se and sub-packages have been added to the restricted package

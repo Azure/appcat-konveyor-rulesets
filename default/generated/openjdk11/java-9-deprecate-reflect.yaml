@@ -1,0 +1,56 @@
+- category: mandatory
+  customVariables: []
+  description: sun.reflect.Reflection class was deprecated in Java 9
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Example changeset
+    url: https://github.com/openjdk/jfx/commit/d647521fa83f0cebe9532642ee97ffc4356c8bb3
+  - title: JDK-8154203
+    url: https://bugs.openjdk.org/browse/JDK-8154203
+  message: "Java 9 introduced the `StackWalker API` to replace `sun.reflect.Reflection`.
+    \n As such, the use of `sun.reflect.Reflection` class and particular the `getCallerClass`
+    method should no longer be needed. \n Refer to the example changeset linked below."
+  ruleID: java-9-deprecate-reflect-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: sun.reflect.Reflection*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: sun.reflect.Reflection.*
+- category: mandatory
+  customVariables: []
+  description: sun.reflect.CallerSensitive annotation was deprecated in Java 9
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Example changeset
+    url: https://github.com/openjdk/jfx/commit/d647521fa83f0cebe9532642ee97ffc4356c8bb3
+  - title: JDK-8154203
+    url: https://bugs.openjdk.org/browse/JDK-8154203
+  message: |-
+    `sun.reflect.CallerSensitive` annotation was deprecated in Java 9.
+     Refer to the example changeset linked below.
+  ruleID: java-9-deprecate-reflect-00010
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: sun.reflect.CallerSensitive*
+    - java.referenced:
+        location: ANNOTATION
+        pattern: sun.reflect.CallerSensitive*

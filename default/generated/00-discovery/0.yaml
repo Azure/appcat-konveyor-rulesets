@@ -72,6 +72,22 @@
     builtin.file:
       pattern: "pom.xml"
   tag: ["Maven XML"]
+- ruleID: discover-gradle-xml
+  description: "Gradle groovy file"
+  labels:
+  - konveyor.io/include=always
+  when:
+    builtin.file:
+      pattern: "build.gradle"
+  tag: ["Gradle Groovy"]
+- ruleID: discover-gradle-kts
+  description: "Gradle Kotlin file"
+  labels:
+  - konveyor.io/include=always
+  when:
+    builtin.file:
+      pattern: "build.gradle.kts"
+  tag: ["Gradle Kotlin"]
 - ruleID: discover-ejb-configuration
   description: "EJB XML Configuration"
   labels:

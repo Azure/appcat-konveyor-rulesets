@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of sun.misc.Unsafe::defineAnonymousClass
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk17-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk17+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of sun.misc.Unsafe::defineAnonymousClass
+    url: https://www.oracle.com/java/technologies/javase/17all-relnotes.html#JDK-8243287
+  message: |-
+    `sun.misc.Unsafe::defineAnonymousClass` API has been removed in JDK 17. The API replacement is `java.lang.invoke.MethodHandles.Lookup::defineHiddenClass` and `java.lang.invoke.MethodHandles.Lookup::defineHiddenClassWithClassData`.
+  ruleID: java-17-deprecate-unsafe-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: sun.misc.Unsafe.defineAnonymousClass

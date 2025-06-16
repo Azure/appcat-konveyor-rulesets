@@ -9,8 +9,8 @@
   links:
   - title: Quarkus - Smallrye Health
     url: https://quarkus.io/guides/smallrye-health
-  message: "\n Replace the Spring Boot Actuator dependency with Quarkus Smallrye Health
-    extension. \n It has to be replaced by `io.quarkus:quarkus-smallrye-health` artifact.\n "
+  message: "Replace the Spring Boot Actuator dependency with Quarkus Smallrye Health
+    extension. \n It has to be replaced by `io.quarkus:quarkus-smallrye-health` artifact."
   ruleID: springboot-actuator-to-quarkus-0100
   when:
     or:
@@ -33,7 +33,7 @@
   links:
   - title: Quarkus Guide - Smallrye Health
     url: https://quarkus.io/guides/smallrye-health
-  message: "\n Replace `management.endpoints.web.exposure.include=health` with `quarkus.smallrye-health.root-path=/actuator/health`\n "
+  message: Replace `management.endpoints.web.exposure.include=health` with `quarkus.smallrye-health.root-path=/actuator/health`
   ruleID: springboot-actuator-to-quarkus-0200
   when:
     builtin.filecontent:

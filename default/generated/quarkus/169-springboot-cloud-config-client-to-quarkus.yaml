@@ -11,9 +11,9 @@
     url: https://quarkus.io/guides/spring-cloud-config-client
   - title: Spring Cloud Config
     url: https://cloud.spring.io/spring-cloud-config/reference/html/
-  message: "\n Replace the Spring Cloud Config Client artifact with Quarkus `quarkus-spring-cloud-config-client`
+  message: "Replace the Spring Cloud Config Client artifact with Quarkus `quarkus-spring-cloud-config-client`
     extension\n\n Add Quarkus dependency `io.quarkus:quarkus-spring-cloud-config-client`.\n
-    \n A change may also be required to the code and configuration.\n "
+    \n A change may also be required to the code and configuration."
   ruleID: springboot-cloud-config-client-to-quarkus-00000
   when:
     or:

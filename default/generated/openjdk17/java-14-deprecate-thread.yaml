@@ -1,0 +1,42 @@
+- category: mandatory
+  customVariables: []
+  description: Thread Suspend/Resume Are Deprecated for Removal
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk14-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk14+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Thread Suspend/Resume Are Deprecated for Removal
+    url: https://www.oracle.com/java/technologies/javase/14-relnote-issues.html#JDK-8231602
+  message: |-
+    The following methods related to thread suspension in `java.lang.Thread` and `java.lang.ThreadGroup` have been terminally deprecated in this release:
+    
+    * `Thread.suspend()`
+    * `Thread.resume()`
+    * `ThreadGroup.suspend()`
+    * `ThreadGroup.resume()`
+    * `ThreadGroup.allowThreadSuspension(boolean)`
+    
+    These methods will be removed in a future release.
+  ruleID: java-14-deprecate-thread-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Thread.suspend
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Thread.resume
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.suspend
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.resume
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.allowThreadSuspension

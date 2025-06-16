@@ -8,8 +8,8 @@
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides/resteasy-reactive
-  message: "\n Dependency `org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec` has
-    to be replaced with `io.quarkus:quarkus-resteasy-reactive` artifact.\n "
+  message: Dependency `org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec` has to
+    be replaced with `io.quarkus:quarkus-resteasy-reactive` artifact.
   ruleID: jaxrs-to-quarkus-00000
   when:
     java.dependency:
@@ -25,8 +25,8 @@
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides/resteasy-reactive
-  message: "\n Dependency `javax.ws.rs:javax.ws.rs-api` has to be replaced with `io.quarkus:quarkus-resteasy-reactive`
-    artifact.\n "
+  message: Dependency `javax.ws.rs:javax.ws.rs-api` has to be replaced with `io.quarkus:quarkus-resteasy-reactive`
+    artifact.
   ruleID: jaxrs-to-quarkus-00010
   when:
     java.dependency:
@@ -42,8 +42,8 @@
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides/resteasy-reactive#declaring-endpoints-uri-mapping
-  message: "\n JAX-RS activation is no longer necessary. You can set a root path like
-    this but you don't have to.\n "
+  message: JAX-RS activation is no longer necessary. You can set a root path like
+    this but you don't have to.
   ruleID: jaxrs-to-quarkus-00020
   when:
     and:

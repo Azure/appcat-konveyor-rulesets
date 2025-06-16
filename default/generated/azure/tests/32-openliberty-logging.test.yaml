@@ -1,0 +1,20 @@
+rulesPath: ../32-openliberty-logging.yaml
+providers:
+- name: java
+  dataPath: ./data/32-openliberty-logging
+- name: builtin
+  dataPath: ./data/32-openliberty-logging
+tests:
+- ruleID: openliberty-logging-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: OpenLiberty server logging configurations detected that require optimization
+
+- ruleID: openliberty-logging-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Custom log file location configurations detected that require containerization and Azure storage integration

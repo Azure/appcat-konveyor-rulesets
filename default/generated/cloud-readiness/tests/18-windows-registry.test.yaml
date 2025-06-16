@@ -1,0 +1,13 @@
+rulesPath: ../18-windows-registry.yaml
+providers:
+- name: java
+  dataPath: ./data/18-windows-registry
+- name: builtin
+  dataPath: ./data/18-windows-registry
+tests:
+- ruleID: windows-registry-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: Application settings must not be defined in OS-specific storage such as Windows Registry,

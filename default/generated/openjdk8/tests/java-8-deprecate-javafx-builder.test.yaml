@@ -1,0 +1,13 @@
+rulesPath: ../java-8-deprecate-javafx-builder.yaml
+providers:
+- name: java
+  dataPath: ./data/java-8-deprecate-javafx-builder
+- name: builtin
+  dataPath: ./data/java-8-deprecate-javafx-builder
+tests:
+- ruleID: java-8-deprecate-javafx-builder-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: JavaFX has deprecated the Builder<T> interface and all classes that implemented it.

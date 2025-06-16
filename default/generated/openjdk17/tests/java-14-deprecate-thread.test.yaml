@@ -1,0 +1,13 @@
+rulesPath: ../java-14-deprecate-thread.yaml
+providers:
+- name: java
+  dataPath: ./data/java-14-deprecate-thread
+- name: builtin
+  dataPath: ./data/java-14-deprecate-thread
+tests:
+- ruleID: java-14-deprecate-thread-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 5
+      messageMatches: The following methods related to thread suspension in `java.lang.Thread` and `java.lang.ThreadGroup` have been terminally deprecated in this release

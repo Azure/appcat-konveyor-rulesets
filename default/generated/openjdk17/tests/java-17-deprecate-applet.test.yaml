@@ -1,0 +1,13 @@
+rulesPath: ../java-17-deprecate-applet.yaml
+providers:
+- name: java
+  dataPath: ./data/java-17-deprecate-applet
+- name: builtin
+  dataPath: ./data/java-17-deprecate-applet
+tests:
+- ruleID: java-17-deprecate-applet-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 10
+      messageMatches: It is essentially irrelevant since all web-browser vendors have either removed support 

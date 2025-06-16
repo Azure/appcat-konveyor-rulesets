@@ -10,13 +10,13 @@ tests:
   - name: tc-1
     hasIncidents:
       # atLeast: 12  Static method calls are not properly detected for some reason
-      atLeast: 7
+      exactly: 7
       messageMatches: Java native libraries might not run in a cloud or container
         environment.
 - ruleID: jni-native-code-00001
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 3
+      exactly: 5
       messageMatches: When migrating an application that uses native processes to
         Azure

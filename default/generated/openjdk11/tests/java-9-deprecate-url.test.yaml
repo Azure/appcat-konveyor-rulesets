@@ -1,0 +1,13 @@
+rulesPath: ../java-9-deprecate-url.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-url
+- name: builtin
+  dataPath: ./data/java-9-deprecate-url
+tests:
+- ruleID: java-9-deprecate-url-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The `netdoc` protocol handler has been removed in JDK 9.

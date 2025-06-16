@@ -18,6 +18,12 @@
     - builtin.xml:
         namespaces: {}
         xpath: /jrun-web-app
+    - builtin.xmlPublicID:
+        namespaces: {}
+        regex: ""
+    - builtin.xmlPublicID:
+        namespaces: {}
+        regex: ""
 - customVariables: []
   description: JRun ejb-jar configuration
   labels:
@@ -39,3 +45,6 @@
       builtin.xml:
         namespaces: {}
         xpath: /*[local-name()='jrun-ejb-jar']
+    - builtin.xmlPublicID:
+        namespaces: {}
+        regex: ""

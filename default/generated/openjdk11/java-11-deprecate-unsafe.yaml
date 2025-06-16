@@ -1,0 +1,57 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of sun.misc.Unsafe.defineClass
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of sun.misc.Unsafe.defineClass
+    url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8193033
+  message: |-
+    The `sun.misc.Unsafe.defineClass` class has been removed. Users should use the public replacement, `java.lang.invoke.MethodHandles.Lookup.defineClass`, added in Java SE 9.
+  ruleID: java-11-deprecate-unsafe-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: sun.misc.Unsafe.defineClass
+- category: mandatory
+  customVariables:
+  - name: methodName
+    nameOfCaptureGroup: methodName
+    pattern: sun.misc.Unsafe.(?P<methodName>(getInt|putInt|getFloat|putFloat|getDouble|putDouble|getBoolean|putBoolean|getObject|putObject|getByte|putByte|getChar|putChar|getShort|putShort|getLong|putLong|fieldOffset|staticFieldBase|tryMonitorEnter|monitorEnter|monitorExit))?(.*)
+  description: Methods in `sun.misc.Unsafe` have been removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: JDK-8054494
+    url: https://bugs.openjdk.org/browse/JDK-8054494
+  - title: Test changes for JDK-8054494
+    url: https://github.com/openjdk/jdk/commit/083d9a2b6145a422bad64423675660c94bb32958#diff-12d7d73c9a167ec9451fe5e53373574adc02d9179cab3465e096a07d1aa79fc7
+  - title: Variable Handles
+    url: https://openjdk.java.net/jeps/193
+  message: |-
+    The `sun.misc.Unsafe` API is scheduled for removal in the long term, and some of its methods have been removed. In short term, please consider the following:
+
+     - The `get` and `put` methods have equivalents that take long offsets (OpenJDK 8's version of the removed methods just casts the int offsets and used the long versions).
+     - `fieldOffset(Field)` should be replaced by `staticFieldOffset(Field)` and `ObjectFieldOffset(Field)`.
+     - `staticFieldBase(Class)` should be replaced by asking for a specific field with `staticFieldBase(Field)`. The removed method only returned the address of the first static field in the class and relied on the assumption that the JVM stored all statics together, which may not be true.
+     - `tryMonitorEnter(Object)` and `monitorExit(Object)` can be replaced with use of the Java synchronized primitives, as illustrated in the test changes for JDK-8054494 (see links below).
+
+     In the long term, please consider using Variable Handles (see the link below)
+  ruleID: java-11-deprecate-unsafe-00001
+  when:
+    java.referenced:
+      location: METHOD_CALL
+      pattern: sun.misc.Unsafe.(getInt|putInt|getFloat|putFloat|getDouble|putDouble|getBoolean|putBoolean|getObject|putObject|getByte|putByte|getChar|putChar|getShort|putShort|getLong|putLong|fieldOffset|staticFieldBase|tryMonitorEnter|monitorEnter|monitorExit)

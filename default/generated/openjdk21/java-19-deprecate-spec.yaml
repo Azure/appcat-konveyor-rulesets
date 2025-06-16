@@ -1,0 +1,45 @@
+- category: mandatory
+  customVariables: []
+  description: PSSParameterSpec(int) Constructor and DEFAULT Static Constant Are Deprecated
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk19-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk19+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: PSSParameterSpec(int) Constructor and DEFAULT Static Constant Are Deprecated
+    url: https://www.oracle.com/java/technologies/javase/19-relnote-issues.html#JDK-8254935
+  message: |-
+    It is recommended to construct `PSSParameterSpec` explicitly with all desired values instead of using the DEFAULT static constant or the single argument constructor which takes the salt length. Both use the default values in the initial version of the PKCS#1 standard and some of these values are no longer recommended due to advances in cryptanalysis.
+  ruleID: java-19-deprecate-param-spec-00000
+  when:
+    or:
+    - java.referenced:
+        location: CONSTRUCTOR_CALL
+        pattern: java.security.spec.PSSParameterSpec*
+    - builtin.filecontent:
+        pattern: PSSParameterSpec\.DEFAULT
+- category: mandatory
+  customVariables: []
+  description: OAEPParameterSpec.DEFAULT Static Constant Is Deprecated
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk19-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk19+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: OAEPParameterSpec.DEFAULT Static Constant Is Deprecated
+    url: https://www.oracle.com/java/technologies/javase/19-relnote-issues.html#JDK-8284553
+  message: |-
+    It is recommended to construct `OAEPParameterSpec` explicitly with desired values instead of using the DEFAULT static constant. The DEFAULT static constant uses the default values in the initial version of the PKCS#1 standard and some of these values are no longer recommended due to advances in cryptanalysis.
+  ruleID: java-19-deprecate-param-spec-00001
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: OAEPParameterSpec\.DEFAULT

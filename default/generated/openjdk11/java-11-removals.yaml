@@ -1,0 +1,63 @@
+- category: mandatory
+  customVariables:
+  - name: encoderDecoder
+    nameOfCaptureGroup: encoderDecoder
+    pattern: sun.misc.BASE64(?P<encoderDecoder>(Encoder|Decoder))?.*
+  description: The `sun.misc.BASE64` class has been removed.
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: java.util.Base64 - Javadoc
+    url: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html
+  - title: JDK-8006182
+    url: https://bugs.openjdk.org/browse/JDK-8006182
+  - title: Code example
+    url: https://github.com/openjdk/jdk/commit/ec9e303630158405d0faaabb74f466f0a376c1fc
+  - title: OpenJDK - Original enhancement request
+    url: https://bugs.openjdk.java.net/browse/JDK-8006182
+  message: "The `sun.misc.BASE64{{encoderDecoder}}` class has been removed. \n It
+    can be replaced with `Base64.{{encoderDecoder}}` class instantiated using `java.util.Base64.getMime{{encoderDecoder}}()`
+    method. \n For further examples on how to replace the `BASE64{{encoderDecoder}}`
+    class with `Base64.{{encoderDecoder}}` one, refer to the \"Code example\" link
+    below."
+  ruleID: java-removals-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: sun.misc.BASE64Encoder*
+    - java.referenced:
+        location: IMPORT
+        pattern: sun.misc.BASE64Decoder*
+- category: mandatory
+  customVariables: []
+  description: The `runFinalizersOnExit` methods have been removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: JDK 11 removed APIs
+    url: https://docs.oracle.com/en/java/javase/11/migrate/index.html#JSMIG-GUID-4B613B7E-B150-4D0A-835C-2393C60BE1F8
+  message: |-
+    The `java.lang.System.runFinalizersOnExit(boolean value)` and `java.lang.Runtime.runFinalizersOnExit(boolean value)`
+     have been removed as they are regarded as inherently unsafe. Running finalizers on exit was disabled by default
+     and enabling it could result in finalizers being called on live objects which are still being manipulated by other threads.
+
+     Remove these method calls.
+  ruleID: java-removals-00010
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: runFinalizersOnExit

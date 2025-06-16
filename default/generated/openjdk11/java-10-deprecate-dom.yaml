@@ -1,0 +1,25 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of Common DOM APIs
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk10-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk10+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of Common DOM APIs
+    url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8133601
+  message: |-
+    The `com.sun.java.browser.plugin2.DOM`, and `sun.plugin.dom.DOMObject` APIs have been removed. Applications can use `netscape.javascript.JSObject` to manipulate the DOM.
+  ruleID: java-10-deprecate-dom-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.java.browser.plugin2.DOM*
+    - java.referenced:
+        location: IMPORT
+        pattern: sun.plugin.dom.DOMObject*

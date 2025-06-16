@@ -1,0 +1,19 @@
+rulesPath: ../java-9-deprecate-unsafe.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-unsafe
+- name: builtin
+  dataPath: ./data/java-9-deprecate-unsafe
+tests:
+- ruleID: java-9-deprecate-unsafe-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The methods monitorEnter, monitorExit and tryMonitorEnter on
+- ruleID: java-9-deprecate-unsafe-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The method `sun.misc.Unsafe.defineClass` is deprecated for removal.

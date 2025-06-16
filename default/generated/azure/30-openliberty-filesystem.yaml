@@ -1,0 +1,181 @@
+- category: mandatory
+  customVariables: []
+  description: Detect OpenLiberty Server File Path Configurations
+  effort: 3
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-filesystem
+  - openliberty
+  message: |
+    Detected file path configurations in OpenLiberty server that need to be migrated to Azure storage solutions.
+    
+    **Migration Strategy:**
+    * **Azure Storage Options**: Choose between Blob Storage, File Share, or Managed Disks based on your use case
+    * **Transient Storage**: Use temporary storage solutions for ephemeral data
+    * **Persistent Storage**: Use Azure Files or Azure Managed Disks for durable storage
+    * **Shared Content**: Use Azure Blob Storage with appropriate SDKs for scalable file operations
+    * **Configuration Management**: Externalize file paths using environment variables or configuration files
+    
+    **Implementation Steps:**
+    1. Analyze current file usage patterns (temporary, persistent, shared)
+    2. Choose appropriate Azure storage solution for each use case
+    3. Configure storage volumes for your deployment platform
+    4. Update OpenLiberty server.xml to reference mounted paths
+    5. Implement proper backup and monitoring strategies
+  links:
+  - title: "Azure Files documentation"
+    url: "https://learn.microsoft.com/en-us/azure/storage/files/"
+  - title: "Azure Managed Disks"
+    url: "https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview"
+  - title: "Azure Blob Storage from Java"
+    url: "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-java"
+  - title: "Container storage best practices"
+    url: "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-azure-files"
+  ruleID: openliberty-filesystem-00001
+  when:
+    builtin.xml:
+      filepaths:
+      - server.xml
+      namespaces: {}
+      xpath: //*[@dir] | //*[@directory] | //*[@path]
+
+- category: mandatory
+  customVariables: []
+  description: Detect Web.xml File Path Environment Entries
+  effort: 3
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - openliberty
+  message: |
+    Detected environment entries in web.xml defining file paths that need to be updated for Azure storage solutions.
+    
+    **Migration Strategy:**
+    * **Configuration Externalization**: Use environment variables or configuration files to manage file path configurations
+    * **Azure Storage Integration**: Reference Azure storage endpoints instead of local file system paths
+    * **Volume Mounting**: Mount Azure storage solutions to container paths
+    * **Environment Variables**: Inject file paths as environment variables for flexible configuration
+    * **Security**: Store sensitive file access credentials in Azure Key Vault or secure configuration
+    
+    **Implementation Steps:**
+    1. Extract file path configurations from web.xml to external configuration
+    2. Create configuration files or environment variables for non-sensitive path configurations
+    3. Store sensitive file access credentials securely in Azure Key Vault
+    4. Update application code to read from environment variables
+    5. Configure volume mounts for persistent file storage
+  links:
+  - title: "Azure Key Vault for configuration"
+    url: "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+  - title: "Environment variable configuration"
+    url: "https://learn.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings"
+  - title: "Azure storage account configuration"
+    url: "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage"
+  ruleID: openliberty-filesystem-00002
+  when:
+    or:
+    - builtin.xml:
+        filepaths:
+        - web.xml
+        namespaces:
+          jee: http://xmlns.jcp.org/xml/ns/javaee
+        xpath: //jee:env-entry[jee:env-entry-name[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'path') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'dir') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'folder') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'file')]]
+    - builtin.xml:
+        filepaths:
+        - web.xml
+        namespaces:
+          j2ee: http://java.sun.com/xml/ns/j2ee
+        xpath: //j2ee:env-entry[j2ee:env-entry-name[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'path') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'dir') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'folder') or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'file')]]
+
+- category: mandatory
+  customVariables: []
+  description: Detect File Path Resource Injections
+  effort: 3
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - openliberty
+  message: |
+    Detected @Resource annotations for file path injections that need to be updated for Azure storage migration.
+    
+    **Migration Strategy:**
+    * **Dependency Injection Updates**: Replace direct file path injections with Azure Storage SDK clients
+    * **Configuration Management**: Configure application to use mounted Azure storage paths in containers
+    * **Cloud-Native Storage**: Consider using Azure Blob Storage client for scalable file operations
+    * **Environment Variables**: Use environment variables for configuration flexibility
+    * **Security**: Implement proper authentication using managed identity or service principals
+    
+    **Implementation Steps:**
+    1. Replace @Resource file path injections with @Value environment variable injections
+    2. Set up Azure Storage SDK dependencies in your project
+    3. Configure Azure Storage clients with proper authentication
+    4. Update file operations to use cloud storage APIs
+    5. Implement proper error handling and retry logic
+  links:
+  - title: "Azure Blob Storage SDK for Java"
+    url: "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-java"
+  - title: "Azure Identity SDK for authentication"
+    url: "https://learn.microsoft.com/en-us/java/api/overview/azure/identity-readme"
+  - title: "Environment variable configuration"
+    url: "https://learn.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings"
+  ruleID: openliberty-filesystem-00003
+  when:
+    java.referenced:
+      location: ANNOTATION
+      pattern: javax.annotation.Resource
+      annotated:
+        elements:
+          - name: name
+            value: ".*(?i)(path|dir|directory|folder|file|store|upload|download|temp|cache|log|data|config).*"
+
+- category: mandatory
+  customVariables: []
+  description: Detect ServletContext Path Usage
+  effort: 3
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - openliberty
+  message: |
+    Detected usage of ServletContext.getRealPath() which needs to be reconsidered in containerized environments.
+    
+    **Migration Considerations:**
+    * **Container Limitations**: ServletContext.getRealPath() might not work as expected in containerized environments
+    * **Resource Streaming**: Use resource streaming for files packaged within the application WAR/JAR
+    * **External Storage**: For external files, use Azure Blob Storage or mounted Azure Files
+    * **Path Abstraction**: Abstract file operations to work with both local and cloud storage
+    * **Configuration Flexibility**: Design code to work in both traditional and cloud environments
+    
+    **Implementation Strategies:**
+    1. **For packaged resources**: Use ServletContext.getResourceAsStream() for files within the application
+    2. **For external files**: Use Azure Storage SDKs or mounted file systems
+    3. **For configuration**: Use environment variables or external configuration
+    4. **For temporary files**: Use Java's temporary file APIs with mounted temp directories
+  links:
+  - title: "ServletContext resource methods"
+    url: "https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html"
+  - title: "Azure Blob Storage operations"
+    url: "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-java-get-started"
+  - title: "Java NIO file operations"
+    url: "https://docs.oracle.com/javase/tutorial/essential/io/fileio.html"
+  ruleID: openliberty-filesystem-00004
+  when:
+    java.referenced:
+      location: METHOD_CALL
+      pattern: javax.servlet.ServletContext.getRealPath

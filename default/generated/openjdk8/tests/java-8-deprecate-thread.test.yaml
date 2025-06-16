@@ -1,0 +1,13 @@
+rulesPath: ../java-8-deprecate-thread.yaml
+providers:
+- name: java
+  dataPath: ./data/java-8-deprecate-thread
+- name: builtin
+  dataPath: ./data/java-8-deprecate-thread
+tests:
+- ruleID: java-8-deprecate-thread-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The Thread.stop method has been deprecated since release 1.2. This method now throws an UnsupportedOperationException.

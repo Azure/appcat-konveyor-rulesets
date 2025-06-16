@@ -43,16 +43,16 @@
     or:
     - java.referenced:
         location: CONSTRUCTOR_CALL
-        pattern: java.io.(FileWriter|FileReader|PrintStream|File|PrintWriter|RandomAccessFile)
+        pattern: java.io.(File|FileWriter|FileReader|BufferedReader|BufferedWriter|PrintReader|PrintWriter|FileInputStream|FileOutputStream|PrintStream|RandomAccessFile)
+    - java.referenced:
+        location: IMPORT
+        pattern: java.io.(File|FileReader|FileWriter|BufferedReader|BufferedWriter|PrintReader|PrintWriter|FileInputStream|FileOutputStream)*
     - java.referenced:
         location: CONSTRUCTOR_CALL
         pattern: java.util.zip.ZipFile
     - java.referenced:
         location: METHOD_CALL
         pattern: java.io.File.createTempFile
-    - java.referenced:
-        location: METHOD_CALL
-        pattern: java.nio.file.Paths.get*
 - category: mandatory
   customVariables:
   - name: class
@@ -232,6 +232,15 @@
     - java.referenced:
         location: IMPORT
         pattern: java.nio.file*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.nio.file.Files.(createTempFile|createTempDirectory)
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.nio.file.Paths.get
+    - java.referenced:
+        location: IMPORT
+        pattern: java.nio.file.(Files|Paths)*
 - category: mandatory
   customVariables: []
   description: Apache Commons I/O
@@ -269,3 +278,6 @@
     - java.referenced:
         location: IMPORT
         pattern: org.apache.commons.io.output*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: org.apache.commons.io.FileUtils.getTempDirectory

@@ -1,0 +1,19 @@
+rulesPath: ../java-8-deprecate-pack.yaml
+providers:
+- name: java
+  dataPath: ./data/java-8-deprecate-pack
+- name: builtin
+  dataPath: ./data/java-8-deprecate-pack
+tests:
+- ruleID: java-8-deprecate-pack-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The addPropertyChangeListener and removePropertyChangeListener methods under Pack200.Packer interface
+- ruleID: java-8-deprecate-pack-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The addPropertyChangeListener and removePropertyChangeListener methods under Pack200.Unpacker interface 

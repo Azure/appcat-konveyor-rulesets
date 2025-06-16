@@ -287,11 +287,11 @@ tests:
   - name: tc-2
     hasTags:
     - Spring Boot Flo
-- ruleID: embedded-framework-08700
-  testCases:
-  - name: tc-1
-    hasTags:
-    - Embedded framework - Spring Scheduled
+# - ruleID: embedded-framework-08700
+#   testCases:
+#   - name: tc-1
+#     hasTags:
+#     - Embedded framework - Spring Scheduled
 - ruleID: embedded-framework-08800
   testCases:
   - name: tc-1

@@ -1,0 +1,48 @@
+rulesPath: ../31-openliberty-jms.yaml
+providers:
+- name: java
+  dataPath: ./data/31-openliberty-jms
+- name: builtin
+  dataPath: ./data/31-openliberty-jms
+tests:
+- ruleID: openliberty-jms-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected OpenLiberty JMS ConnectionFactory configurations that need to be migrated
+
+- ruleID: openliberty-jms-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected JMS resource injections that need to be updated
+
+- ruleID: openliberty-jms-00003
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected Message-Driven Beans
+
+- ruleID: openliberty-jms-00004
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected JMS resource references in deployment descriptors
+
+- ruleID: openliberty-jms-00005
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected JMS API usage that needs to be updated
+      
+- ruleID: openliberty-jms-00006
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected manual JNDI lookups for JMS resources that need to be updated for Azure messaging services.

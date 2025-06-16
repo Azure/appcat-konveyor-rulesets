@@ -1,0 +1,19 @@
+rulesPath: ../java-21-deprecate-property.yaml
+providers:
+- name: java
+  dataPath: ./data/java-21-deprecate-property
+- name: builtin
+  dataPath: ./data/java-21-deprecate-property
+tests:
+- ruleID: java-21-deprecate-property-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The system property `java.compiler` has been removed
+- ruleID: java-21-deprecate-property-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The `java.lang.Compiler` class has been removed.

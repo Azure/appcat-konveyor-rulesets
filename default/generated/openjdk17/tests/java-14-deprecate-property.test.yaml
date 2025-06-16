@@ -1,0 +1,19 @@
+rulesPath: ../java-14-deprecate-property.yaml
+providers:
+- name: java
+  dataPath: ./data/java-14-deprecate-property
+- name: builtin
+  dataPath: ./data/java-14-deprecate-property
+tests:
+- ruleID: java-14-deprecate-property-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The system property `sun.nio.cs.map`, added in JDK 1.4.1
+- ruleID: java-14-deprecate-property-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The obsolete `netscape.javascript.JSObject::getWindow` method has been removed.

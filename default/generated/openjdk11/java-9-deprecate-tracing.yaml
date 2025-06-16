@@ -1,0 +1,28 @@
+- category: mandatory
+  customVariables: []
+  description: com.sun.tracing APIs are removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: com.sun.tracing APIs are removed
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8062303
+  message: |-
+    The following unsupported APIs are removed:
+    
+    * com.sun.tracing
+    * com.sun.tracing.dtrace
+  ruleID: java-9-deprecate-tracing-00000
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: com.sun.tracing
+    - java.referenced:
+        location: PACKAGE
+        pattern: com.sun.tracing.dtrace

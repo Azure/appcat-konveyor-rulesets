@@ -1,0 +1,13 @@
+rulesPath: ../java-11-deprecate-peer.yaml
+providers:
+- name: java
+  dataPath: ./data/java-11-deprecate-peer
+- name: builtin
+  dataPath: ./data/java-11-deprecate-peer
+tests:
+- ruleID: java-11-deprecate-peer-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The `java.awt.Font.getPeer()` and `java.awt.Component.getPeer()` methods have been removed.

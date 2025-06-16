@@ -103,7 +103,7 @@
   links: []
   ruleID: xml-webservices-06000
   tag:
-  - webservice
+  - JBoss EAP
   when:
     and:
     - as: webservices
@@ -133,7 +133,7 @@
   links: []
   ruleID: xml-webservices-06001
   tag:
-  - webservice
+  - JBoss EAP
   when:
     and:
     - as: webservices

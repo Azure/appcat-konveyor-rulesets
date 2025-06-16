@@ -1,3 +1,2 @@
 name: openjdk11/openjdk8
-description: This ruleset provides analysis with respect to API removals between OpenJDK
-  8 and 11.
+description: This ruleset provides analysis regarding deprecated and removed APIs between OpenJDK 8 to 11.

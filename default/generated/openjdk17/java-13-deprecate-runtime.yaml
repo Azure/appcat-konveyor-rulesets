@@ -1,0 +1,25 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of Runtime Trace Methods
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk13-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk13+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of Runtime Trace Methods
+    url: https://www.oracle.com/java/technologies/javase/13all-relnotes.html#JSERN13
+  message: |-
+    The obsolete methods` traceInstructions(boolean)` and `traceMethodCalls(boolean)` have been removed from the `java.lang.Runtime` class. These methods have been non-functional for many releases, and their intended functions are provided by the Java Virtual Machine Tool Interface (JVMTI).
+  ruleID: java-13-deprecate-runtime-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Runtime.traceInstructions
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Runtime.traceMethodCalls

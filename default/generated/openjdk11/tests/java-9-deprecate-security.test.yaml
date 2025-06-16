@@ -1,0 +1,25 @@
+rulesPath: ../java-9-deprecate-security.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-security
+- name: builtin
+  dataPath: ./data/java-9-deprecate-security
+tests:
+- ruleID: java-9-deprecate-security-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The com.sun.security.auth.callback.DialogCallbackHandler class has been removed.
+- ruleID: java-9-deprecate-security-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The `java.security.acl` API has been deprecated. 
+- ruleID: java-9-deprecate-security-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The `javax.security.cert` API has been deprecated.

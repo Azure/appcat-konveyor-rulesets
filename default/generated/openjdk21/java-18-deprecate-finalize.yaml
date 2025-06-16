@@ -1,0 +1,65 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of Empty finalize() Methods in java.desktop Module
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk18-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk18+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of Empty finalize() Methods in java.desktop Module
+    url: https://www.oracle.com/java/technologies/javase/18all-relnotes.html#JDK-8273102
+  - title: Delete deprecated for removal the empty finalize() in java.desktop module
+    url: https://bugs.openjdk.org/browse/JDK-8273103
+  message: |-
+    The `java.desktop` module has a few implementations of `finalize()` that did nothing.
+    These methods were deprecated in Java 9 and terminally deprecated in Java 16. These methods have been removed in this release.
+  ruleID: java-18-deprecate-finalize-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.awt.color.ICC_Profile.finalize
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.awt.image.ColorModel.finalize
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.awt.image.IndexColorModel.finalize
+- category: mandatory
+  customVariables: []
+  description: Deprecated Finalization for Removal
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk18-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk18+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecated Finalization for Removal
+    url: https://www.oracle.com/java/technologies/javase/18all-relnotes.html#JDK-8274609
+  - title: 'JEP 421: Deprecate Finalization for Removal'
+    url: https://openjdk.org/jeps/421
+  message: |-
+    The finalization mechanism has been deprecated for removal in a future release. The `finalize` methods in standard Java APIs, such as `Object.finalize()` and `Enum.finalize()`, have also been deprecated for removal in a future release, along with methods related to finalization, such as `Runtime.runFinalization()` and `System.runFinalization()`.
+    Finalization remains enabled by default, but it can be disabled for testing purposes by using the command-line option `--finalization=disabled` introduced in this release. Maintainers of libraries and applications that rely upon finalization should migrate to other resource management techniques in their code, such as try-with-resources and cleaners.
+  ruleID: java-18-deprecate-finalize-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Object.finalize
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Runtime.runFinalization
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.System.runFinalization
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Enum.finalize

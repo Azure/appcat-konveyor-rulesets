@@ -1,0 +1,43 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of sun.nio.cs.map System Property
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk14-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk14+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of sun.nio.cs.map System Property
+    url: https://www.oracle.com/java/technologies/javase/14-relnote-issues.html#JDK-8229960
+  message: |-
+    The system property `sun.nio.cs.map`, added in JDK 1.4.1, has been removed. It was provided for applications to help migrate from the old definition of `Shift_JIS`, which was equivalent to MS Windows codepage 932, to the one that is defined by IANA. Applications that are using the mapping property will need to designate the correct charset name based on their needs.
+  ruleID: java-14-deprecate-property-00000
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: getProperty\("sun\.nio\.cs\.map"\)
+- category: mandatory
+  customVariables: []
+  description: Removal of netscape.javascript.JSObjectgetWindow Method
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk14-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk14+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of netscape.javascript.JSObjectgetWindow Method
+    url: https://www.oracle.com/java/technologies/javase/14-relnote-issues.html#JDK-8222563
+  message: |-
+    The obsolete `netscape.javascript.JSObject::getWindow` method has been removed. This method was deprecated in JDK 9. As of JDK 11, there is no longer a useful way to use this method; it always returns `null`.
+  ruleID: java-14-deprecate-property-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: netscape.javascript.JSObject.getWindow

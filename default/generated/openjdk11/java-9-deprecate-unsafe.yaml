@@ -1,0 +1,44 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of rarely used sun.misc.Unsafe methods
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of rarely used sun.misc.Unsafe methods
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8054494
+  message: |-
+    The methods monitorEnter, monitorExit and tryMonitorEnter on sun.misc.Unsafe are removed in JDK 9. These methods are not used within the JDK itself and are very rarely used outside of the JDK.
+  ruleID: java-9-deprecate-unsafe-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: sun.misc.Unsafe.(tryMonitorEnter|monitorEnter|monitorExit)
+- category: mandatory
+  customVariables: []
+  description: Deprecate sun.misc.Unsafe.defineClass
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecate sun.misc.Unsafe.defineClass
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8181442
+  message: |-
+    The method `sun.misc.Unsafe.defineClass` is deprecated for removal. Use the method `java.lang.invoke.MethodHandles.Lookup.defineClass` to define a class to the same class loader and in the same runtime package and protection domain of a given Lookup's lookup class.
+  ruleID: java-9-deprecate-unsafe-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: sun.misc.Unsafe.defineClass

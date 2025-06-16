@@ -1,0 +1,89 @@
+- category: mandatory
+  customVariables: []
+  description: Detect OpenLiberty Server Logging Configurations
+  effort: 3
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-logging
+  - openliberty
+  message: |
+    OpenLiberty server logging configurations detected that require optimization for Azure Monitor integration and containerized deployment.
+
+    **Azure Logging Strategy:**
+    • **Console Output:** Configure logs to stdout/stderr for container log collection
+    • **Azure Monitor Integration:** Enable Application Insights for application performance monitoring
+    • **Log Analytics:** Use Azure Log Analytics workspace for centralized log aggregation and analysis
+    • **Structured Logging:** Implement JSON format for better parsing and querying in Azure Monitor
+
+    **Configuration Migration Steps:**
+    1. **Update server.xml:** Configure console logging with JSON format for Azure Monitor compatibility
+    2. **Environment Variables:** Use environment variables for dynamic logging configuration
+    3. **Azure Application Insights:** Integrate with Application Insights Java agent for automatic telemetry
+    4. **Log Forwarding:** Configure container log forwarding to Azure Monitor Logs
+    5. **Monitoring Setup:** Create Azure Monitor alerts and dashboards for application health
+  links:
+  - title: "Azure Monitor for containers"
+    url: "https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-overview"
+  - title: "Application Insights Java agent"
+    url: "https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent"
+  - title: "OpenLiberty logging configuration"
+    url: "https://openliberty.io/docs/latest/log-trace-configuration.html"
+  - title: "Container logging best practices"
+    url: "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-log-analytics"
+  ruleID: openliberty-logging-00001
+  when:
+    builtin.xml:
+      filepaths:
+      - server.xml
+      namespaces: {}
+      xpath: //server/logging[not(@logDirectory)]
+
+- category: mandatory
+  customVariables: []
+  description: Detect OpenLiberty Log File Location Configurations
+  effort: 2
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-logging
+  - openliberty
+  message: |
+    Custom log file location configurations detected that require containerization and Azure storage integration.
+
+    **Container-Native Logging Strategy:**
+    • **Ephemeral Storage:** Avoid persistent file logging in containers due to container lifecycle management
+    • **Stdout/Stderr Output:** Redirect all logging to console for container log collection
+    • **Azure Storage Integration:** Use Azure Files or Blob Storage for persistent logging requirements
+    • **Centralized Logging:** Leverage Azure Monitor Logs for log aggregation and analysis
+
+    **Migration Recommendations:**
+    1. **Remove File-Based Logging:** Replace logDirectory configurations with console output
+    2. **Update Bootstrap Properties:** Configure console logging in bootstrap.properties
+    3. **Environment Variables:** Use environment variables for dynamic configuration
+    4. **Persistent Volumes:** Mount Azure Files for debugging or compliance logging needs
+    5. **Log Rotation:** Implement log rotation policies for any persistent storage
+  links:
+  - title: "Azure Monitor for containers"
+    url: "https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-overview"
+  - title: "Application Insights Java agent"
+    url: "https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent"
+  - title: "OpenLiberty logging configuration"
+    url: "https://openliberty.io/docs/latest/log-trace-configuration.html"
+  - title: "Container logging best practices"
+    url: "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-log-analytics"
+  ruleID: openliberty-logging-00002
+  when:
+    builtin.xml:
+      filepaths:
+      - server.xml
+      namespaces: {}
+      xpath: //server/logging[@logDirectory]

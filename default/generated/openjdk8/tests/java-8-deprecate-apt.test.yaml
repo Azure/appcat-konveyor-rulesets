@@ -1,0 +1,13 @@
+rulesPath: ../java-8-deprecate-apt.yaml
+providers:
+- name: java
+  dataPath: ./data/java-8-deprecate-apt
+- name: builtin
+  dataPath: ./data/java-8-deprecate-apt
+tests:
+- ruleID: java-8-deprecate-apt-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The apt tool and its associated API contained in the package com.sun.mirror have been removed in this release.

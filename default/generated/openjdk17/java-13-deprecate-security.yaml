@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Deprecated javax.security.cert APIs with forRemoval=true
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk13-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk13+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecated javax.security.cert APIs with forRemoval=true
+    url: https://www.oracle.com/java/technologies/javase/13all-relnotes.html#JSERN13
+  message: |-
+    The `javax.security.cert` API has been deprecated and marked for removal. The classes in this package should no longer be used. The `java.security.cert` package contains suitable replacements.
+  ruleID: java-13-deprecate-security-00000
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: javax.security.cert*

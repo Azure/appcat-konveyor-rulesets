@@ -1,0 +1,68 @@
+- category: mandatory
+  customVariables: []
+  description: Remove com.sun.security.auth.callback.DialogCallbackHandler
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Remove com.sun.security.auth.callback.DialogCallbackHandler
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8029904
+  message: |-
+    The com.sun.security.auth.callback.DialogCallbackHandler class has been removed. This class, which is in the JDK-specific extensions to JAAS, was deprecated in JDK 8 and previously flagged for removal.
+  ruleID: java-9-deprecate-security-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.security.auth.callback.DialogCallbackHandler*
+- category: mandatory
+  customVariables: []
+  description: Deprecate the java.security.acl API
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecate the java.security.acl API
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8157847
+  message: |-
+    The `java.security.acl` API has been deprecated. 
+    The classes in this package should no longer be used. The java.security package contains suitable replacements. See Policy and related classes for details.
+  ruleID: java-9-deprecate-security-00001
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: java.security.acl*
+- category: mandatory
+  customVariables: []
+  description: Deprecate the javax.security.cert API
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecate the javax.security.cert API
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8157712
+  message: |-
+    The `javax.security.cert` API has been deprecated. The classes in this package should no longer be used. 
+    The `java.security.cert` package contains suitable replacements.
+  ruleID: java-9-deprecate-security-00002
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: javax.security.cert*

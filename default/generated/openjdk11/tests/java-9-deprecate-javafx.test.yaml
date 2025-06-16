@@ -1,0 +1,13 @@
+rulesPath: ../java-9-deprecate-javafx.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-javafx
+- name: builtin
+  dataPath: ./data/java-9-deprecate-javafx
+tests:
+- ruleID: java-9-deprecate-javafx-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The JavaFX builder classes, which were previously deprecated in JDK 8

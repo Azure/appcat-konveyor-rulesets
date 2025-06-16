@@ -1,0 +1,19 @@
+rulesPath: ../java-18-deprecate-finalize.yaml
+providers:
+- name: java
+  dataPath: ./data/java-18-deprecate-finalize
+- name: builtin
+  dataPath: ./data/java-18-deprecate-finalize
+tests:
+- ruleID: java-18-deprecate-finalize-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The `java.desktop` module has a few implementations of `finalize()` that did nothing.
+- ruleID: java-18-deprecate-finalize-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The finalization mechanism has been deprecated for removal in a future release.

@@ -9,9 +9,9 @@
   links:
   - title: Quarkus metrics
     url: https://quarkus.io/guides/microprofile-metrics
-  message: "\n Replace the Micrometer dependency with Quarkus Microprofile 'metrics'
+  message: "Replace the Micrometer dependency with Quarkus Microprofile 'metrics'
     extension. \n Usually this is a transitive dependency brought by `org.springframework.boot:spring-boot-starter-actuator`
-    and has to be replaced by `io.quarkus:quarkus-smallrye-metrics` artifact\n "
+    and has to be replaced by `io.quarkus:quarkus-smallrye-metrics` artifact"
   ruleID: springboot-metrics-to-quarkus-0100
   when:
     java.dependency:
@@ -25,7 +25,7 @@
   - konveyor.io/source=springboot
   - konveyor.io/target=quarkus
   links: []
-  message: "\n Replace the Micrometer code with Microprofile Metrics code\n "
+  message: Replace the Micrometer code with Microprofile Metrics code
   ruleID: springboot-metrics-to-quarkus-0200
   when:
     java.dependency:
@@ -40,9 +40,8 @@
   - konveyor.io/target=quarkus
   links:
   - title: Quarkus Guide - Micrometer Metrics
-    url: https://quarkus.io/guides/micrometer
-  message: "\n Replace `management.endpoints.web.exposure.include=prometheus` with
-    `quarkus.micrometer.export.prometheus.path=/actuator/prometheus`\n "
+    url: https://quarkus.io/guides/telemetry-micrometer
+  message: Replace `management.endpoints.web.exposure.include=prometheus` with `quarkus.micrometer.export.prometheus.path=/actuator/prometheus`
   ruleID: springboot-metrics-to-quarkus-0300
   when:
     builtin.filecontent:

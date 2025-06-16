@@ -1,0 +1,19 @@
+rulesPath: ../java-15-deprecate-ssl.yaml
+providers:
+- name: java
+  dataPath: ./data/java-15-deprecate-ssl
+- name: builtin
+  dataPath: ./data/java-15-deprecate-ssl
+tests:
+- ruleID: java-15-deprecate-ssl-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The implementation of the deprecated `SSLSession.getPeerCertificateChain()` method has been removed 
+- ruleID: java-15-deprecate-ssl-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The legacy SunJSSE provider name, "com.sun.net.ssl.internal.ssl.Provider" has been removed 

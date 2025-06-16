@@ -1,0 +1,21 @@
+- category: potential
+  customVariables: []
+  description: Deprecated Subject::doAs for Removal
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk18-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk18+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecated Subject::doAs for Removal
+    url: https://www.oracle.com/java/technologies/javase/18all-relnotes.html#JDK-8267108
+  message: |-
+    Two javax.security.auth.Subject::doAs methods have been deprecated for removal. This is a part of the ongoing effort to remove Security Manager related APIs.
+  ruleID: java-18-deprecate-security-00000
+  when:
+    java.referenced:
+      location: METHOD_CALL
+      pattern: javax.security.auth.Subject.doAs

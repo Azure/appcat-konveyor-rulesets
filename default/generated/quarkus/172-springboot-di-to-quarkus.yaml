@@ -9,9 +9,11 @@
   links:
   - title: Quarkus DI Guide
     url: https://quarkus.io/guides/spring-di
-  message: "\n Replace the SpringBoot Dependency Injection artifact with Quarkus `spring-di`
-    extension\n\n Spring DI is in spring-beans artifact brought transitively by any
-    `org.springframework.boot:spring-boot-*` dependency\n Add Quarkus dependency `io.quarkus:quarkus-spring-di`\n "
+  message: |-
+    Replace the SpringBoot Dependency Injection artifact with Quarkus `spring-di` extension
+
+     Spring DI is in spring-beans artifact brought transitively by any `org.springframework.boot:spring-boot-*` dependency
+     Add Quarkus dependency `io.quarkus:quarkus-spring-di`
   ruleID: springboot-di-to-quarkus-00000
   when:
     java.dependency:

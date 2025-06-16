@@ -1,0 +1,13 @@
+rulesPath: ../java-20-deprecate-jmx.yaml
+providers:
+- name: java
+  dataPath: ./data/java-20-deprecate-jmx
+- name: builtin
+  dataPath: ./data/java-20-deprecate-jmx
+tests:
+- ruleID: java-20-deprecate-jmx-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The Java Management Extension (JMX) Management Applet (m-let) feature is deprecated

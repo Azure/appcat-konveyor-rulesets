@@ -1,0 +1,45 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of the java.compiler System Property
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk21-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk21+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of the java.compiler System Property
+    url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8041676
+  message: |-
+    The system property `java.compiler` has been removed from the list of standard system properties.
+
+    Running with this system property set on the command line will now print a warning to say that the system property is obsolete; it has no other effect. In previous releases, running with `-Djava.compiler` or `-Djava.compiler=NONE` on the command line selected interpreter only execution mode. If needed, the -Xint option can be used to run in interpreter only mode.
+  ruleID: java-21-deprecate-property-00000
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: getProperty\("java\.compiler"\)
+- category: mandatory
+  customVariables: []
+  description: The java.lang.Compiler Class Has Been Removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk21-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk21+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: The java.lang.Compiler Class Has Been Removed
+    url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8205129
+  message: |-
+    The `java.lang.Compiler` class has been removed. This under-specified API dates from JDK 1.0 and the "Classic VM" used in early JDK releases. Its implementation in the HotSpot VM does nothing but print a warning that it is not supported. The class has been deprecated and marked for removal since Java SE 9.
+  ruleID: java-21-deprecate-property-00001
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: java.lang.Compiler*

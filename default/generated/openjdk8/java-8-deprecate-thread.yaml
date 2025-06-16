@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Thread.stop(Throwable) has been disabled
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The `Thread.stop` method has been deprecated since release 1.2. This method now throws an `UnsupportedOperationException`.
+  ruleID: java-8-deprecate-thread-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Thread.stop*

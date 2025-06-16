@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Access to com.sun.corba.se Restricted Under SecurityManager 
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The JDK internal package `com.sun.corba.se` and sub-packages have been added to the restricted package list and cannot be used directly when running with a security manager.
+  ruleID: java-8-deprecate-corba-00001
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.corba*

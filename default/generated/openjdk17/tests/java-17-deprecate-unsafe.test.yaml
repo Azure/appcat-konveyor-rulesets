@@ -1,0 +1,13 @@
+rulesPath: ../java-17-deprecate-unsafe.yaml
+providers:
+- name: java
+  dataPath: ./data/java-17-deprecate-unsafe
+- name: builtin
+  dataPath: ./data/java-17-deprecate-unsafe
+tests:
+- ruleID: java-17-deprecate-unsafe-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: "`sun.misc.Unsafe::defineAnonymousClass` API has been removed in JDK 17. The API replacement is"

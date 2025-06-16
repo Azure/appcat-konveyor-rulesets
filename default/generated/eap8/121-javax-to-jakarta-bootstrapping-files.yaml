@@ -8,6 +8,10 @@
   - konveyor.io/target=jakarta-ee
   - konveyor.io/target=eap8
   - konveyor.io/target=eap
+  - konveyor.io/target=jws6+
+  - konveyor.io/target=jws
+  - konveyor.io/source=spring5
+  - konveyor.io/target=spring6+
   - konveyor.io/source
   links:
   - title: Jakarta EE

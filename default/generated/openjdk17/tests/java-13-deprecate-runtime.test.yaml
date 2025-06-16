@@ -1,0 +1,13 @@
+rulesPath: ../java-13-deprecate-runtime.yaml
+providers:
+- name: java
+  dataPath: ./data/java-13-deprecate-runtime
+- name: builtin
+  dataPath: ./data/java-13-deprecate-runtime
+tests:
+- ruleID: java-13-deprecate-runtime-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The obsolete methods` traceInstructions(boolean)` and `traceMethodCalls(boolean)` have been removed

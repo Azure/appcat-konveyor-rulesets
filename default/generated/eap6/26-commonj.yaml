@@ -37,9 +37,9 @@
     url: http://docs.oracle.com/javaee/6/tutorial/doc/bnboy.html
   - title: Java EE 6 TimerService API
     url: http://docs.oracle.com/javaee/6/api/javax/ejb/TimerService.html
-  message: "Commonj Timer Manager API is similar to the EJB 3.1 java.ejb.Timer Service.\n
-    In Java EE 6, the Timer Service was updated to allow cron like configuration of
-    scheduling which is similar to Quartz's timer configurations.\n "
+  message: |-
+    Commonj Timer Manager API is similar to the EJB 3.1 java.ejb.Timer Service.
+     In Java EE 6, the Timer Service was updated to allow cron like configuration of scheduling which is similar to Quartz's timer configurations.
   ruleID: commonj-02000
   when:
     java.referenced:
@@ -57,7 +57,7 @@
   - konveyor.io/target=java-ee
   - commonj
   links: []
-  message: "\n Commonj Timer Interface is similar to the EJB 3.1 javax.ejb.Timer Interface.\n "
+  message: Commonj Timer Interface is similar to the EJB 3.1 javax.ejb.Timer Interface.
   ruleID: commonj-03000
   when:
     java.referenced:

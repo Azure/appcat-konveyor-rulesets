@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of com.sun.awt.AWTUtilities Class
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of com.sun.awt.AWTUtilities Class
+    url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8200149
+  message: |-
+    The `com.sun.awt.AWTUtilities` class was deprecated with `forRemoval=true` in JDK 10 (JDK-8187253). This class was unused in the JDK and has been removed in this release.
+  ruleID: java-11-deprecate-awt-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.awt.AWTUtilities*

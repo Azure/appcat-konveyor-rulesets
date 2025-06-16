@@ -1,0 +1,46 @@
+- category: mandatory
+  customVariables: []
+  description: javax.management.remote.rmi.RMIIIOPServerImpl Is Removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk21-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk21+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: javax.management.remote.rmi.RMIIIOPServerImpl Is Removed
+    url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8307244
+  message: |-
+    The class `javax.management.remote.rmi.RMIIIOPServerImpl` has been removed. The IIOP transport was removed from the JMX Remote API in JDK 9. This class has been deprecated and its constructor changed to throw `UnsupportedOperationException` since Java SE 9.
+  ruleID: java-21-deprecate-jmx-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.management.remote.rmi.RMIIIOPServerImpl
+- category: mandatory
+  customVariables: []
+  description: Deprecate JMX Subject Delegation and the JMXConnector.getMBeanServerConnection(Subject) Method for Removal
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk21-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk21+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecate JMX Subject Delegation and the JMXConnector.getMBeanServerConnection(Subject) Method for Removal
+    url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8298966
+  message: |-
+    The JMX Subject Delegation feature is deprecated and marked for removal in a future release. This feature is enabled by the method `javax.management.remote.JMXConnector.getMBeanServerConnection(javax.security.auth.Subject)` which is deprecated for removal.
+
+    If a client application needs to perform operations as, or on behalf of, multiple identities, it will need to make multiple calls to `JMXConnectorFactory.connect()` and to the `getMBeanServerConnection()` method on the returned JMXConnector.
+  ruleID: java-21-deprecate-jmx-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: javax.management.remote.JMXConnector.getMBeanServerConnection

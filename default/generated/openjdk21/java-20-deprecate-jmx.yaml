@@ -1,0 +1,33 @@
+- category: mandatory
+  customVariables: []
+  description: Deprecate JMX Management Applets for Removal
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk20-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk20+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecate JMX Management Applets for Removal
+    url: https://www.oracle.com/java/technologies/javase/20-relnote-issues.html#JDK-8297794
+  message: |-
+    The Java Management Extension (JMX) Management Applet (m-let) feature is deprecated for removal in a future release as it is irrelevant to modern applications - the deprecated public classes in `javax.management.loading are: MLet, MLetContent, PrivateMLet, MLetMBean`.
+
+    This will have no impact on the JMX agent used for local and remote monitoring, the built-in instrumentation of the Java virtual machine, or tooling that uses JMX.
+  ruleID: java-20-deprecate-jmx-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.management.loading.MLet
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.management.loading.MLetContent
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.management.loading.MLetMBean
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.management.loading.PrivateMLet

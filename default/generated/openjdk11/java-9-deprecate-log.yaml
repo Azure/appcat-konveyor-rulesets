@@ -1,0 +1,26 @@
+- category: mandatory
+  customVariables: []
+  description: Remove LogManager addPropertyChangeListener and removePropertyChangeListener methods
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Remove LogManager addPropertyChangeListener and removePropertyChangeListener methods
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8029805
+  message: |-
+    The deprecated `addPropertyListener` and `removePropertyListener` methods have been removed from `java.util.logging.LogManager`. 
+    Code that relies on a listener to be invoked when logging configuration changes should use the new `addConfigurationListener` and `removeConfigurationListener` methods instead.
+  ruleID: java-9-deprecate-log-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.util.logging.LogManager.addPropertyChangeListener
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.util.logging.LogManager.removePropertyChangeListener

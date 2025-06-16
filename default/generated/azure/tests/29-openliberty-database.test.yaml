@@ -1,0 +1,67 @@
+rulesPath: ../29-openliberty-database.yaml
+providers:
+- name: java
+  dataPath: ./data/29-openliberty-database
+- name: builtin
+  dataPath: ./data/29-openliberty-database
+tests:
+- ruleID: openliberty-database-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected OpenLiberty data source configurations that need to be migrated to Azure database services
+
+- ruleID: openliberty-database-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected EntityManager usage in application code
+- ruleID: openliberty-database-00003
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses a Sybase database to Azure
+- ruleID: openliberty-database-00004
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected application-level data source references that need updating for Azure database services
+
+- ruleID: openliberty-database-00005
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected @Resource annotations for database injection that need configuration updates
+
+- ruleID: openliberty-database-00007
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected manual JNDI lookups for database connections that need updates for Azure.
+
+- ruleID: openliberty-database-00006
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected JPA persistence.xml configurations with database references that need updates
+
+- ruleID: openliberty-database-00008
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses an Oracle database to Azure
+
+- ruleID: openliberty-database-00009
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: To migrate a Java application that uses a PostgreSQL database to Azure

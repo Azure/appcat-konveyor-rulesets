@@ -1,0 +1,13 @@
+rulesPath: ../java-14-deprecate-pack.yaml
+providers:
+- name: java
+  dataPath: ./data/java-14-deprecate-pack
+- name: builtin
+  dataPath: ./data/java-14-deprecate-pack
+tests:
+- ruleID: java-14-deprecate-pack-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 11
+      messageMatches: The `pack200` and `unpack200` tools, added in JDK 5.0

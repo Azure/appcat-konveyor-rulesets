@@ -1,0 +1,23 @@
+- category: mandatory
+  customVariables: []
+  description: The Runtime.exec(String, ...) method is error-prone and should not be used
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk18-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk18+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: The Runtime.exec(String, ...) method is error-prone and should not be used
+    url: https://cr.openjdk.org/~iris/se/18/latestSpec/api/deprecated-list.html
+  message: |-
+    This method is error-prone and should not be used, the corresponding method `ProcessBuilder` should be used instead. 
+    The command string is broken into tokens using only whitespace characters. For an argument with an embedded space, such as a filename, this can cause problems as the token does not include the full filename.
+  ruleID: java-18-deprecate-runtime-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Runtime.exec

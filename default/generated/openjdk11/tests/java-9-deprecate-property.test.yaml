@@ -1,0 +1,19 @@
+rulesPath: ../java-9-deprecate-property.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-property
+- name: builtin
+  dataPath: ./data/java-9-deprecate-property
+tests:
+- ruleID: java-9-deprecate-property-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The system property `sun.lang.ClassLoader.allowArraySyntax` was 
+- ruleID: java-9-deprecate-property-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The zip library implementation has been improved in JDK 9.

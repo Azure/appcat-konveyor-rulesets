@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar xmlns="http://java.sun.com/xml/ns/j2ee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd"
+         version="2.1">
+         
+  <enterprise-beans>
+    <message-driven>
+      <ejb-name>OrderProcessorMDB</ejb-name>
+      <ejb-class>com.example.jms.OrderProcessorBean</ejb-class>
+      <messaging-type>javax.jms.MessageListener</messaging-type>
+      <transaction-type>Container</transaction-type>
+      <message-driven-destination>
+        <destination-type>javax.jms.Queue</destination-type>
+      </message-driven-destination>
+      <resource-ref>
+        <res-ref-name>jms/ConnectionFactory</res-ref-name>
+        <res-type>javax.jms.ConnectionFactory</res-type>
+        <res-auth>Container</res-auth>
+      </resource-ref>
+    </message-driven>
+    
+    <message-driven>
+      <ejb-name>NotificationListenerMDB</ejb-name>
+      <ejb-class>com.example.jms.NotificationListenerBean</ejb-class>
+      <messaging-type>javax.jms.MessageListener</messaging-type>
+      <transaction-type>Container</transaction-type>
+      <message-driven-destination>
+        <destination-type>javax.jms.Topic</destination-type>
+      </message-driven-destination>
+      <resource-ref>
+        <res-ref-name>jms/ConnectionFactory</res-ref-name>
+        <res-type>javax.jms.ConnectionFactory</res-type>
+        <res-auth>Container</res-auth>
+      </resource-ref>
+    </message-driven>
+  </enterprise-beans>
+  
+</ejb-jar> 

@@ -16,14 +16,18 @@
     Long-term supported Java versions receive long-term support (LTS) from the Java community, including bug fixes and updates. Migrating to a supported version provides you with a stable and well-maintained platform for your application.
   ruleID: azure-java-version-01000
   when:
-    as: result
-    builtin.xml:
-      filepaths:
-      - pom.xml
-      namespaces:
-        m: http://maven.apache.org/POM/4.0.0
-      # match: 9, 10, 12, 13, 14, 15, 16, 19, 20, optional any suffix
-      xpath: //m:java.version[matches(text(), '(9|10|12|13|14|15|16|19|20).*')]
+    or:
+    - builtin.xml:
+        filepaths:
+        - pom.xml
+        namespaces:
+          m: http://maven.apache.org/POM/4.0.0
+        # match: 9, 10, 12, 13, 14, 15, 16, 19, 20, optional any suffix
+        xpath: //m:java.version[matches(text(), '(9|10|12|13|14|15|16|19|20).*')]
+    - builtin.filecontent:
+        filePattern: (/|\\)build\.gradle(\.kts)?$
+        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(9|10|12|13|14|15|16|18|19|20)['"]?|JavaVersion\.VERSION_(9|10|12|13|14|15|16|18|19|20))
+
 - category: mandatory
   customVariables: []
   description: Legacy Java version
@@ -42,11 +46,14 @@
     Older Java versions may have known security vulnerabilities that can expose your application and infrastructure to potential attacks. Migrating to a supported version ensures that you benefit from the latest security patches and updates.
   ruleID: azure-java-version-02000
   when:
-    as: result
-    builtin.xml:
-      filepaths:
-      - pom.xml
-      namespaces:
-        m: http://maven.apache.org/POM/4.0.0
-      # match: 1.0 to 1.10, 1 to 8, 11
-      xpath: //m:java.version[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')]
+    or:
+    - builtin.xml:
+        filepaths:
+        - pom.xml
+        namespaces:
+          m: http://maven.apache.org/POM/4.0.0
+        # match: 1.0 to 1.10, 1 to 8, 11
+        xpath: //m:java.version[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')]
+    - builtin.filecontent:
+        filePattern: (/|\\)build\.gradle(\.kts)?$
+        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(1\.(0|1|2|3|4|5|6|7|8|9|10)|[2-8]|11)['"]?|JavaVersion\.VERSION_(1_0|1_1|1_2|1_3|1_4|1_5|1_6|1_7|1_8|1_9|1_10|2|3|4|5|6|7|8|11))

@@ -1,0 +1,13 @@
+rulesPath: ../java-9-deprecate-peer.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-peer
+- name: builtin
+  dataPath: ./data/java-9-deprecate-peer
+tests:
+- ruleID: java-9-deprecate-peer-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: All methods that refer to types defined in the java.awt.peer and java.awt.dnd.peer packages

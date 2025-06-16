@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Deprecation of Locale Class Constructors 
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk19-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk19+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecation of Locale Class Constructors
+    url: https://www.oracle.com/java/technologies/javase/19-relnote-issues.html#JDK-8282819
+  message: |-
+    New `Locale.of()` factory methods replace deprecated `Locale` constructors. The factory methods are efficient and reuse existing `Locale` instances. `Locales` are also provided by `Locale.forLanguageTag()` and `Locale.Builder`.
+  ruleID: java-19-deprecate-locale-00000
+  when:
+    or:
+    - java.referenced:
+        location: CONSTRUCTOR_CALL
+        pattern: java.util.Locale*

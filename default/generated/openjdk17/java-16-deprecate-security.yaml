@@ -1,0 +1,42 @@
+- category: mandatory
+  customVariables: []
+  description: Deprecated the java.security.cert APIs That Represent DNs as Principal or String Objects
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk16-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk16+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecated the java.security.cert APIs That Represent DNs as Principal or String Objects
+    url: https://www.oracle.com/java/technologies/javase/16-relnote-issues.html#JDK-8241003
+  message: |-
+    The following APIs have been deprecated:
+
+    * java.security.cert.X509Certificate.getIssuerDN()
+    * java.security.cert.X509Certificate.getSubjectDN()
+    * java.security.cert.X509CRL.getIssuerDN()
+    * java.security.cert.X509CertSelector.setIssuer(String)
+    * java.security.cert.X509CertSelector.setSubject(String)
+    * java.security.cert.X509CertSelector.getIssuerAsString()
+    * java.security.cert.X509CertSelector.getSubjectAsString()
+    * java.security.cert.X509CRLSelector.addIssuerName(String)
+    
+    These APIs either take or return Distinguished Names as `Principal` or `String` objects and can cause issues due to loss of encoding information or differences when comparing names across different Principal implementations. All of them have alternative APIs that use `X500Principal` objects instead.
+  ruleID: java-16-deprecate-security-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.security.cert.X509Certificate.(getIssuerDN|getSubjectDN)
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.security.cert.X509CRL.getIssuerDN
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.security.cert.X509CertSelector.(setIssuer|setSubject|getIssuerAsString|getSubjectAsString)
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.security.cert.X509CRLSelector.addIssuerName

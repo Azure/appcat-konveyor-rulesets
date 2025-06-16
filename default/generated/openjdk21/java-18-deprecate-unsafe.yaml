@@ -1,0 +1,30 @@
+- category: mandatory
+  customVariables: []
+  description: Deprecated sun.misc.Unsafe Methods That Return Offsets
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk18-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk18+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecated sun.misc.Unsafe Methods That Return Offsets
+    url: https://www.oracle.com/java/technologies/javase/18all-relnotes.html#JDK-8277863
+  message: |-
+    Developers that use the unsupported `sun.misc.Unsafe` API should be aware that the methods that return base and field offsets have been deprecated in this release. The methods `objectFieldOffset`, `staticFieldOffset`, and `staticFieldBase` methods are an impediment to future changes. A future release will eventually degrade or remove these methods along with the heap accessor methods.
+
+    The `java.lang.invoke.VarHandle` API (added in Java 9) provides a strongly typed reference to a variable that is safe and a replacement to many cases that use field offsets and the heap accessor methods. It is strongly recommended to migrate to the VarHandle API where possible. Multi-Release JARs can be used by libraries and frameworks that continue to support JDK 8 or older.
+  ruleID: java-18-deprecate-unsafe-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: sun.misc.Unsafe.objectFieldOffset
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: sun.misc.Unsafe.staticFieldOffset
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: sun.misc.Unsafe.staticFieldBase

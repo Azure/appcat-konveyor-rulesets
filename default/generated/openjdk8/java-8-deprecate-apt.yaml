@@ -1,0 +1,23 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of apt Tool
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The `apt` tool and its associated API contained in the package` com.sun.mirror` have been removed in this release. 
+    Use the options available in the `javac` tool and the APIs contained in the packages `javax.annotation.processing` and `javax.lang.model` to process annotations.
+  ruleID: java-8-deprecate-apt-00001
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: com.sun.mirror.apt*

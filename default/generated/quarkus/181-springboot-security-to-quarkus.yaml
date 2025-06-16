@@ -9,10 +9,10 @@
   links:
   - title: Quarkus Extension for Spring Security API Guide
     url: https://quarkus.io/guides/spring-security
-  message: "\n Replace the SpringBoot Security artifact with Quarkus `spring-security`
+  message: "Replace the SpringBoot Security artifact with Quarkus `spring-security`
     extension\n\n Spring Security is in spring-security-core artifact brought transitively
     by `org.springframework.boot:spring-boot-starter-security` dependency. \n Add
-    Quarkus dependency `io.quarkus:quarkus-spring-security`\n "
+    Quarkus dependency `io.quarkus:quarkus-spring-security`"
   ruleID: springboot-security-to-quarkus-00000
   when:
     or:

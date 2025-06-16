@@ -8,8 +8,10 @@
   links:
   - title: Quarkus Extension for Spring Cache API Guide
     url: https://quarkus.io/guides/spring-cache
-  message: "\n Replace the SpringBoot Cache module artifact with Quarkus `spring-cache`
-    extension\n\n Add Quarkus dependency `io.quarkus:quarkus-spring-cache`\n "
+  message: |-
+    Replace the SpringBoot Cache module artifact with Quarkus `spring-cache` extension
+
+     Add Quarkus dependency `io.quarkus:quarkus-spring-cache`
   ruleID: springboot-cache-to-quarkus-00000
   when:
     or:

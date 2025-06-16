@@ -1,0 +1,432 @@
+- category: mandatory
+  customVariables: []
+  description: Detect OpenLiberty Data Source configurations
+  effort: 3
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-database
+  - openliberty
+  message: |
+    Detected OpenLiberty data source configurations that need to be migrated to Azure database services.
+    
+    **Migration Options:**
+    * **Azure Database for MySQL/PostgreSQL/SQL Server**: Use fully managed Azure database services for better scalability, security, and maintenance
+    * **Connection String Updates**: Update connection strings to point to Azure database endpoints
+    * **Credential Management**: Store database credentials securely in Azure Key Vault or application configuration
+    * **High Availability**: Configure geo-replication and backup strategies for production workloads
+    
+    **Implementation Steps:**
+    1. Create managed Azure database service matching your current database type
+    2. Update server.xml dataSource configuration with new connection details
+    3. Configure connection pooling optimized for cloud environments
+    4. Implement proper security and monitoring practices
+  links:
+  - title: "Azure Database for PostgreSQL documentation"
+    url: "https://learn.microsoft.com/en-us/azure/postgresql/"
+  - title: "Azure Database for MySQL documentation" 
+    url: "https://learn.microsoft.com/en-us/azure/mysql/"
+  - title: "Azure SQL Database documentation"
+    url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/"
+  - title: "Store credentials in Azure Key Vault"
+    url: "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+  - title: "OpenLiberty DataSource configuration"
+    url: "https://openliberty.io/docs/latest/data-persistence-jpa.html"
+  ruleID: openliberty-database-00001
+  when:
+    or:
+    - builtin.xml:
+        filepaths:
+        - server.xml
+        namespaces: {}
+        xpath: //server/dataSource[not(properties.oracle) and not(properties.oracle.ucp) and not(properties.postgresql) and not(properties.microsoft.sqlserver) and not(properties.sybase)]
+    - builtin.xml:
+        filepaths:
+        - server.xml
+        namespaces: {}
+        xpath: //server/library/fileset[contains(@includes, 'jdbc') and not(contains(@includes, 'oracle')) and not(contains(@includes, 'postgresql')) and not(contains(@includes, 'sybase')) and not(contains(@includes, 'sqlserver'))]
+- category: mandatory
+  customVariables: []
+  description: Detect EntityManager usage in application code
+  effort: 4
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-database
+  - openliberty
+  message: |
+    Detected JPA EntityManager usage that will require configuration updates when migrating to Azure.
+    
+    **Migration Considerations:**
+    * **Persistence Configuration**: Ensure your persistence.xml is properly configured for Azure database services
+    * **Connection Pooling**: Use cloud-optimized connection pools like HikariCP for better performance
+    * **Resilience Patterns**: Implement retry logic and circuit breakers for database operations
+    * **High Availability**: Consider using read replicas with appropriate transaction isolation levels
+    * **Security**: Use managed identity or Azure Key Vault for database authentication
+    
+    **Implementation Steps:**
+    1. Update persistence.xml with Azure-compatible configurations
+    2. Configure HikariCP connection pooling for optimal cloud performance
+    3. Implement proper exception handling and retry mechanisms
+    4. Set up monitoring and health checks for database connectivity
+  links:
+  - title: "JPA and Hibernate on Azure"
+    url: "https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-data-jpa-with-azure-sql-server"
+  - title: "HikariCP Connection Pool Configuration"
+    url: "https://github.com/brettwooldridge/HikariCP#configuration-knobs-baby"
+  - title: "Azure SQL Database connectivity best practices"
+    url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-overview"
+  ruleID: openliberty-database-00002
+  when:
+    java.referenced:
+      location: IMPORT
+      pattern: javax.persistence.EntityManager
+- category: potential
+  customVariables: []
+  description: Detect OpenLiberty Sybase Data Source configurations
+  effort: 6
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-database
+  - openliberty
+  links:
+  - title: Migration guide Sybase to Azure SQL Database
+    url: https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/database/sybase-to-sql-database-guide
+  - title: SQL Server Migration Assistant for Sybase (SSMA)
+    url: https://learn.microsoft.com/en-us/sql/ssma/sybase/sql-server-migration-assistant-for-sybase-sybasetosql
+  - title: Azure Database Migration Service documentation
+    url: https://learn.microsoft.com/azure/dms
+  - title: Azure SQL Database documentation
+    url: https://learn.microsoft.com/en-us/azure/azure-sql/database/
+  - title: Azure Monitor documentation
+    url: https://learn.microsoft.com/azure/azure-monitor
+  - title: Microsoft Defender for Cloud
+    url: https://learn.microsoft.com/azure/defender-for-cloud
+  message: |-
+    To migrate a Java application that uses a Sybase database to Azure, you can follow these recommendations:
+
+    * **Choose your Azure target**:
+      * **Azure SQL Database**: The recommended target for Sybase migration, offering a fully managed PaaS service with high compatibility for most Sybase features.
+      * **Azure SQL Managed Instance**: Provides near 100% compatibility with SQL Server and better support for complex Sybase features like stored procedures and triggers.
+      * **SQL Server on Azure VMs**: For maximum compatibility when PaaS migration is not feasible due to specific Sybase dependencies.
+
+    * **Assess migration complexity**:
+      * Use **SQL Server Migration Assistant (SSMA) for Sybase** to assess database schema compatibility and generate migration reports.
+      * Identify Sybase-specific features that need conversion (e.g., stored procedures, triggers, data types).
+      * Review T-SQL syntax differences and plan for code modifications.
+
+    * **Migrate** the existing Sybase database:
+      * Use **SSMA for Sybase** to convert database schema and migrate data to Azure SQL Database or SQL Managed Instance.
+      * Utilize **Azure Database Migration Service (DMS)** for online migrations with minimal downtime.
+      * Test migrated database thoroughly, especially stored procedures and complex queries.
+
+    * Update the application's **database connection** details: Modify the Java application's configuration to point to the newly provisioned Azure SQL service. Update the connection string (JDBC URL), driver class (from Sybase jConnect to SQL Server JDBC driver), hostname, port, username, and password information accordingly.
+
+    * **Address compatibility issues**:
+      * Replace Sybase-specific SQL syntax with T-SQL equivalents.
+      * Update data type mappings (e.g., Sybase datetime to SQL Server datetime2).
+      * Modify stored procedures and functions to use T-SQL syntax.
+      * Test and update any Sybase-specific driver configurations.
+
+    * Enable **monitoring and diagnostics**: Utilize Azure Monitor to gain insights into the performance and health of your Java application and the underlying Azure SQL database. Set up metrics, alerts, and log analytics to proactively identify and resolve issues.
+
+    * Implement **security** measures: Apply security best practices including Azure AD authentication, transparent data encryption, and leverage Microsoft Defender for Cloud for threat detection and vulnerability assessments.
+
+    * **Backup** your data: Azure SQL Database and SQL Managed Instance provide automated backups by default. Configure retention periods and consider geo-redundant backups for enhanced data durability.
+  ruleID: openliberty-database-00003
+  when:
+    or:
+    - builtin.xml:
+        filepaths:
+        - server.xml
+        namespaces: {}
+        xpath: //server/dataSource/properties.sybase
+    - builtin.xml:
+        filepaths:
+        - server.xml
+        namespaces: {}
+        xpath: //server/library/fileset[contains(@includes, 'sybase')]
+- category: mandatory
+  customVariables: []
+  description: Detect application-level data source references
+  effort: 4
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-database
+  - openliberty
+  message: |
+    Detected application-level data source references that need updating for Azure database services.
+    
+    **Migration Requirements:**
+    * **JNDI Updates**: Update JNDI lookup references to match your deployment configuration
+    * **Connection Pool Optimization**: Configure connection pool settings for containerized environments
+    * **Cloud-Native Libraries**: Consider using cloud-optimized connection pooling libraries
+    * **Environment Variables**: Use environment variables for database connection parameters
+    * **Security Configuration**: Implement secure credential management practices
+    
+    **Implementation Steps:**
+    1. Update web.xml resource references to use environment-specific JNDI names
+    2. Configure external database connection properties
+    3. Set up environment configuration for database settings
+    4. Implement health checks for database connectivity
+  links:
+  - title: "Configure data sources in OpenLiberty"
+    url: "https://openliberty.io/docs/latest/data-persistence-jpa.html"
+  - title: "Kubernetes ConfigMaps"
+    url: "https://kubernetes.io/docs/concepts/configuration/configmap/"
+  - title: "Manage sensitive data with Secrets"
+    url: "https://kubernetes.io/docs/concepts/configuration/secret/"
+  ruleID: openliberty-database-00004
+  when:
+    builtin.xml:
+      filepaths:
+      - web.xml
+      namespaces:
+        jee: http://xmlns.jcp.org/xml/ns/javaee
+      xpath: //jee:resource-ref/jee:res-type[contains(text(), 'javax.sql.DataSource')] | //jee:env-entry[contains(jee:env-entry-value, 'jdbc')]
+- category: mandatory
+  customVariables: []
+  description: Detect Resource annotations for database injection
+  effort: 4
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-database
+  - openliberty
+  message: |
+    Detected @Resource annotations for database injection that need configuration updates for Azure migration.
+    
+    **Migration Requirements:**
+    * **JNDI Name Updates**: Update JNDI names to match your deployment configuration
+    * **Connection Pool Settings**: Review and optimize connection pooling for containerized environments
+    * **Resilience Patterns**: Implement retry logic and circuit breakers for connection failures
+    * **Monitoring**: Add database connection monitoring and health checks
+    * **Security**: Use managed identities or secure credential storage
+    
+    **Implementation Steps:**
+    1. Update @Resource annotations with new Azure database JNDI names
+    2. Configure OpenLiberty server.xml with Azure database connections
+    3. Set up connection pooling optimized for cloud workloads
+    4. Implement proper error handling and retry mechanisms
+  links:
+  - title: "OpenLiberty database configuration"
+    url: "https://openliberty.io/docs/latest/relational-database-connections-JDBC.html"
+  - title: "Azure SQL Database connection libraries"
+    url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-java"
+  - title: "Connection pooling best practices"
+    url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-cplusplus-simple"
+  ruleID: openliberty-database-00005
+  when:
+    java.referenced:
+      location: ANNOTATION
+      pattern: javax.annotation.Resource
+      annotated:
+        elements:
+          - name: name
+            value: jdbc/[a-zA-Z0-9_-]+
+- category: mandatory
+  customVariables: []
+  description: Detect persistence.xml configurations
+  effort: 4
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-database
+  - openliberty
+  message: |
+    Detected JPA persistence.xml configurations with database references that need updates for Azure migration.
+    
+    **Migration Requirements:**
+    * **Database Properties**: Update database connection properties for Azure cloud environments
+    * **Connection Pooling**: Configure cloud-optimized connection pool settings
+    * **Environment Configuration**: Use environment-specific properties for different deployment stages
+    * **Dialect Updates**: Ensure proper Hibernate dialect for Azure database services
+    * **Performance Tuning**: Optimize JPA settings for cloud database latency and throughput
+    
+    **Implementation Steps:**
+    1. Update persistence.xml with Azure database connection properties
+    2. Configure HikariCP for optimal cloud performance
+    3. Set up environment-specific configurations using system properties or configuration files
+    4. Add monitoring and logging for database performance
+  links:
+  - title: "JPA configuration for Azure SQL"
+    url: "https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-data-jpa-with-azure-sql-server"
+  - title: "Hibernate performance tuning"
+    url: "https://hibernate.org/orm/documentation/6.0/"
+  - title: "HikariCP configuration guide"
+    url: "https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing"
+  ruleID: openliberty-database-00006
+  when:
+    builtin.xml:
+      filepaths:
+      - persistence.xml
+      namespaces: {}
+      xpath: //persistence-unit/jta-data-source[contains(text(), 'jdbc/')] | //persistence-unit/non-jta-data-source[contains(text(), 'jdbc/')]
+- category: mandatory
+  customVariables: []
+  description: Detect JNDI lookup patterns for databases
+  effort: 4
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-database
+  - openliberty
+  message: |
+    Detected manual JNDI lookups for database connections that need updates for Azure.
+    
+    **Required changes:**
+    - Update JNDI references to match your deployment configuration
+    - Consider using CDI injection (@Resource) instead of manual lookups
+    - Configure OpenLiberty server.xml with Azure database connections
+    
+    **Implementation Steps:**
+    1. Update JNDI names to match your container deployment
+    2. Configure proper connection pooling for cloud environments
+    3. Implement proper error handling and retry mechanisms
+  ruleID: openliberty-database-00007
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: \.lookup\(\s*["'][^"']*jdbc[^"']*["']\s*\)
+- category: potential
+  customVariables: []
+  description: Detect OpenLiberty Oracle Data Source configurations
+  effort: 5
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-database
+  - openliberty
+  links:
+  - title: Migration guide Oracle to Azure SQL Database
+    url: https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/database/oracle-to-sql-database-guide?view=azuresql
+  - title: Migrate Oracle to Azure Database for PostgreSQL
+    url: https://learn.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online
+  - title: Oracle workloads on Azure Virtual Machines
+    url: https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-overview
+  - title: Azure Database Migration Service documentation
+    url: https://learn.microsoft.com/azure/dms
+  - title: Azure Monitor documentation
+    url: https://learn.microsoft.com/azure/azure-monitor
+  - title: Microsoft Defender for Cloud
+    url: https://learn.microsoft.com/azure/defender-for-cloud
+  - title: SQL Server Migration Assistant for Oracle (SSMA)
+    url: https://learn.microsoft.com/sql/ssma/oracle/sql-server-migration-assistant-for-oracle-oracletosql
+  message: |-
+    To migrate a Java application that uses an Oracle database to Azure, you can follow these recommendations:
+
+    * **Choose your Azure target**:
+      * **Azure SQL Database**: A fully managed PaaS service, often the preferred target for modernization. Offers various service tiers including Hyperscale for scalability.
+      * **Azure Database for PostgreSQL**: Another strong PaaS option, especially if considering a move to open-source databases.
+      * **Oracle on Azure VMs**: For maximum compatibility or when PaaS is not feasible, run Oracle databases on Azure IaaS.
+
+    * **Migrate** the existing Oracle database:
+      * Use **Azure Database Migration Service (DMS)** for online or offline migrations to Azure SQL Database or Azure Database for PostgreSQL.
+      * Utilize **SQL Server Migration Assistant (SSMA) for Oracle** to assess and migrate schemas and data to Azure SQL Database.
+      * For Oracle on Azure VMs, standard Oracle migration tools like RMAN or Data Pump can be used.
+
+    * Update the application's **database connection** details: Modify the Java application's configuration to point to the newly provisioned Azure database service. Update the connection string (JDBC URL), hostname, port, username, and password information accordingly.
+
+    * Enable **monitoring and diagnostics**: Utilize Azure Monitor to gain insights into the performance and health of your Java application and the underlying Azure database. Set up metrics, alerts, and log analytics to proactively identify and resolve issues.
+
+    * Implement **security** measures: Apply security best practices to protect your Java application and the database. This includes implementing authentication and authorization mechanisms, potentially with passwordless connections (e.g., Azure AD authentication for Azure SQL), and leveraging Microsoft Defender for Cloud for threat detection and vulnerability assessments.
+
+    * **Backup** your data: Azure managed database services (Azure SQL, Azure Database for PostgreSQL) provide automated backups by default. Configure retention periods and consider geo-redundant backups for enhanced data durability. For Oracle on Azure VMs, you are responsible for configuring and managing backups using Oracle tools or Azure Backup.
+  ruleID: openliberty-database-00008
+  when:
+    or:
+    - builtin.xml:
+        filepaths:
+        - server.xml
+        namespaces: {}
+        xpath: //server/dataSource[properties.oracle or properties.oracle.ucp]
+    - builtin.xml:
+        filepaths:
+        - server.xml
+        namespaces: {}
+        xpath: //server/library/fileset[contains(@includes, 'oracle')]
+- category: potential
+  customVariables: []
+  description: Detect OpenLiberty PostgreSQL Data Source configurations
+  effort: 5 
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-database
+  - openliberty
+  links:
+  - title: Azure PostgreSQL Flexible Server documentation
+    url: https://learn.microsoft.com/azure/postgresql/flexible-server
+  - title: Azure Database Migration Service documentation
+    url: https://learn.microsoft.com/azure/dms
+  - title: Azure Monitor documentation
+    url: https://learn.microsoft.com/azure/azure-monitor
+  - title: Microsoft Defender for Cloud
+    url: https://learn.microsoft.com/azure/defender-for-cloud
+  - title: Backup and restore in Azure Database for PostgreSQL
+    url: https://learn.microsoft.com/azure/postgresql/single-server/concepts-backup
+  message: |-
+    To migrate a Java application that uses a PostgreSQL database to Azure, you can follow these recommendations:
+
+     * Use a managed **Azure Database for PostgreSQL Flexible Server**: For that create a managed PostgreSQL Flexible Server database in Azure and choose the appropriate pricing tier based on your application's requirements for performance, storage, and availability.
+
+     * **Migrate** the existing PostgreSQL database: For that you can use the Azure Database Migration Service (DMS) to perform an online migration with minimal downtime.
+
+     * Update the application's **database connection** details: Modify the Java application's configuration to point to the newly provisioned Azure Database for PostgreSQL. Update the connection string, hostname, port, username, and password information accordingly.
+
+     * Enable **monitoring and diagnostics**: Utilize Azure Monitor to gain insights into the performance and health of your Java application and the underlying PostgreSQL database. Set up metrics, alerts, and log analytics to proactively identify and resolve issues.
+
+     * Implement **security** measures: Apply security best practices to protect your Java application and the PostgreSQL database. This includes implementing authentication and authorization mechanisms with passwordless connections and leveraging Microsoft Defender for Cloud for threat detection and vulnerability assessments.
+
+     * **Backup** your data: Azure Database for PostgreSQL provides automated backups by default. You can configure the retention period for backups based on your requirements. You can also enable geo-redundant backups, if needed, to enhance data durability and availability.
+  ruleID: openliberty-database-00009
+  when:
+    or:
+    - builtin.xml:
+        filepaths:
+        - server.xml
+        namespaces: {}
+        xpath: //server/dataSource/properties.postgresql
+    - builtin.xml:
+        filepaths:
+        - server.xml
+        namespaces: {}
+        xpath: //server/library/fileset[contains(@includes, 'postgresql')]

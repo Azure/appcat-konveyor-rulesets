@@ -1,0 +1,99 @@
+- category: mandatory
+  customVariables: []
+  description: java.lang.ThreadGroup Is Degraded
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk19-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk19+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: java.lang.ThreadGroup Is Degraded
+    url: https://www.oracle.com/java/technologies/javase/19-relnote-issues.html#JDK-8284161
+  message: |-
+    Legacy `java.lang.ThreadGroup` has been degraded in this release. It is no longer possible to explicitly destroy a thread group. In its place, ThreadGroup is changed to no longer keep a strong reference to subgroups. A thread group is thus eligible to be GC'ed when there are no live threads in the group and nothing else is keeping the thread group alive.
+
+    The behavior of several methods, deprecated for removal in prior releases, are changed as follows:
+
+    * The destroy method does nothing.
+
+    * The isDestroyed method returns false.
+
+    * The setDaemon and isDaemon methods set/get a daemon status that is not used for anything.
+
+    * The suspend, resume, and stop methods throw UnsupportedOperationException.
+  ruleID: java-19-deprecate-thread-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.destroy
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.isDestroyed
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.setDaemon
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.isDaemon
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.suspend
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.resume
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.stop
+- category: mandatory
+  customVariables: []
+  description: This method is not final and may be overridden to return a value that is not the thread ID. Use Thread.threadId() instead.
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk19-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk19+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: This method is not final and may be overridden to return a value that is not the thread ID. Use Thread.threadId() instead.
+    url: https://cr.openjdk.org/~iris/se/19/latestSpec/api/deprecated-list.html
+  message: |-
+    This method is not final and may be overridden to return a value that is not the thread ID. Use `Thread.threadId()` instead.
+  ruleID: java-19-deprecate-thread-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Thread.getId
+- category: mandatory
+  customVariables: []
+  description: Remove the Alternate ThreadLocal Implementation of the Subject::current and Subject::callAs APIs
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk19-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk19+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Remove the Alternate ThreadLocal Implementation of the Subject::current and Subject::callAs APIs
+    url: https://www.oracle.com/java/technologies/javase/19-relnote-issues.html#JDK-8282676
+  message: |-
+    The `jdk.security.auth.subject.useTL` system property and the alternate `ThreadLocal` implementation of the `Subject::current` and `Subject::callAs` APIs have been removed. The default implementation of these APIs is still supported.
+  ruleID: java-19-deprecate-thread-00002
+  when:
+    or: 
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: javax.security.auth.Subject.current
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: javax.security.auth.Subject.callAs
+    - builtin.filecontent:
+        pattern: getProperty\("jdk\.security\.auth\.subject\.useTL"\)

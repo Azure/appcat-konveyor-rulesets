@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="OpenLiberty Server with JMS">
+
+    <!-- Enable features -->
+    <featureManager>
+        <feature>javaee-8.0</feature>
+        <feature>wasJmsServer-1.0</feature>
+        <feature>wasJmsClient-2.0</feature>
+        <feature>mdb-3.2</feature>
+    </featureManager>
+
+    <!-- HTTP Endpoint -->
+    <httpEndpoint id="defaultHttpEndpoint"
+                  host="*"
+                  httpPort="9080"
+                  httpsPort="9443" />
+
+    <!-- JMS ConnectionFactory Configuration -->
+    <jmsConnectionFactory jndiName="jms/ConnectionFactory">
+        <properties.wasJms
+            remoteServerAddress="localhost:7276:BootstrapBasicMessaging"
+            maxConnections="50"
+            maxPoolSize="20"/>
+    </jmsConnectionFactory>
+
+    <!-- JMS Queue ConnectionFactory Configuration -->
+    <jmsQueueConnectionFactory jndiName="jms/QueueConnectionFactory">
+        <properties.wasJms
+            remoteServerAddress="localhost:7276:BootstrapBasicMessaging"
+            maxConnections="25"
+            maxPoolSize="15"/>
+    </jmsQueueConnectionFactory>
+
+    <!-- JMS Topic ConnectionFactory Configuration -->
+    <jmsTopicConnectionFactory jndiName="jms/TopicConnectionFactory">
+        <properties.wasJms
+            remoteServerAddress="localhost:7276:BootstrapBasicMessaging"
+            maxConnections="20"/>
+    </jmsTopicConnectionFactory>
+
+    <!-- JMS Queue Configuration -->
+    <jmsQueue id="OrdersQueue" jndiName="jms/OrdersQueue">
+        <properties.wasJms queueName="Orders"/>
+    </jmsQueue>
+
+    <!-- JMS Topic Configuration -->
+    <jmsTopic id="NotificationsTopic" jndiName="jms/NotificationsTopic">
+        <properties.wasJms topicName="Notifications"/>
+    </jmsTopic>
+
+    <!-- JMS Activation Specification for MDB -->
+    <jmsActivationSpec id="OrderProcessorMDB">
+        <properties.wasJms
+            destinationRef="OrdersQueue"
+            destinationType="javax.jms.Queue"/>
+    </jmsActivationSpec>
+
+</server> 

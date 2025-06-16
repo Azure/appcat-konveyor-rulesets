@@ -1,0 +1,13 @@
+rulesPath: ../java-13-deprecate-security.yaml
+providers:
+- name: java
+  dataPath: ./data/java-13-deprecate-security
+- name: builtin
+  dataPath: ./data/java-13-deprecate-security
+tests:
+- ruleID: java-13-deprecate-security-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The `javax.security.cert` API has been deprecated and marked for removal.

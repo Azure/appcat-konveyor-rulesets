@@ -1,0 +1,13 @@
+rulesPath: ../17-webform-auth.yaml
+providers:
+- name: java
+  dataPath: ./data/17-webform-auth
+- name: builtin
+  dataPath: ./data/17-webform-auth
+tests:
+- ruleID: webform-auth-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: Using Web Forms authentication requires

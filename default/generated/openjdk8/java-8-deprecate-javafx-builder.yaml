@@ -1,0 +1,23 @@
+- category: mandatory
+  customVariables: []
+  description: JavaFX has deprecated the Builder<T> interface and all classes that implemented it
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    JavaFX has deprecated the `Builder<T>` interface and all classes that implemented it. 
+    Instead of using the builder pattern to construct UI components, the recommendation is to use standard constructors and setters.
+  ruleID: java-8-deprecate-javafx-builder-00001
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\).*\.java$
+        pattern: javafx.scene.*Builder

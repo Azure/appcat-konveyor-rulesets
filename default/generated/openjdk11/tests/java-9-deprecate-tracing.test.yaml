@@ -1,0 +1,13 @@
+rulesPath: ../java-9-deprecate-tracing.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-tracing
+- name: builtin
+  dataPath: ./data/java-9-deprecate-tracing
+tests:
+- ruleID: java-9-deprecate-tracing-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The following unsupported APIs are removed

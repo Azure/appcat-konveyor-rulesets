@@ -1,0 +1,13 @@
+rulesPath: ../java-18-deprecate-unsafe.yaml
+providers:
+- name: java
+  dataPath: ./data/java-18-deprecate-unsafe
+- name: builtin
+  dataPath: ./data/java-18-deprecate-unsafe
+tests:
+- ruleID: java-18-deprecate-unsafe-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: Developers that use the unsupported `sun.misc.Unsafe` API should be aware that the methods that return

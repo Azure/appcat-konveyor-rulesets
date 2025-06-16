@@ -1,0 +1,42 @@
+- category: mandatory
+  customVariables: []
+  description: sun.lang.ClassLoader.allowArraySyntax system property is no longer supported
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: sun.lang.ClassLoader.allowArraySyntax system property is no longer supported
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-6516909
+  message: |-
+    The system property `sun.lang.ClassLoader.allowArraySyntax` was introduced as a temporary workaround to give customers time to remove their source dependency on calling `ClassLoader.loadClass` with the array syntax that is not supported since JDK 6. This temporary workaround is removed in JDK 9 and setting `sun.lang.ClassLoader.allowArraySyntax` system property will have no effect to `ClassLoader.loadClass`. Existing code that calls `ClassLoader.loadClass` to create a Class object of an array class shall be replaced with `Class.forName`; otherwise it will get `ClassNotFoundException`.
+  ruleID: java-9-deprecate-property-00000
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: getProperty\("sun\.lang\.ClassLoader\.allowArraySyntax"\)
+- category: mandatory
+  customVariables: []
+  description: The system property sun.zip.disableMemoryMapping has been removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: The system property sun.zip.disableMemoryMapping has been removed
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8142508
+  message: |-
+    The zip library implementation has been improved in JDK 9. The new java.util.zip.ZipFile implementation does not use `mmap` to map ZIP file central directory into memory anymore. As a result, the `sun.zip.disableMemoryMapping` system property is no longer needed and has been removed.
+  ruleID: java-9-deprecate-property-00001
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: getProperty\("sun\.zip\.disableMemoryMapping"\)

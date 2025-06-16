@@ -1,0 +1,56 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of finalize Methods from FileInputStream and FileOutputStream
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk12-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk12+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of finalize Methods from FileInputStream and FileOutputStream
+    url: https://www.oracle.com/java/technologies/javase/12all-relnotes.html#JDK-8192939
+  message: |-
+    The `finalize` methods of `FileInputStream` and `FileOutputStream` were deprecated for removal in JDK 9. They have been removed in this release. 
+    The `java.lang.ref.Cleaner` has been implemented since JDK 9 as the primary mechanism to close file descriptors that are no longer reachable from `FileInputStream` and `FileOutputStream`. 
+    The recommended approach to close files is to explicitly call close or to use `try-with-resources`.
+  ruleID: java-12-deprecate-finalize-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.io.FileInputStream.finalize
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.io.FileOutputStream.finalize
+- category: mandatory
+  customVariables: []
+  description: Removal of finalize Method in java.util.ZipFile/Inflator/Deflator
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk12-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk12+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of finalize Method in java.util.ZipFile/Inflator/Deflator
+    url: https://www.oracle.com/java/technologies/javase/12all-relnotes.html#JDK-8212129
+  message: |-
+    The `finalize` method in `java.util.ZipFile`, `java.util.Inflator`, and `java.util.Deflator` was deprecated for removal in JDK 9 and its implementation was updated to be a no-op.
+    The `finalize` method in `java.util.ZipFile`, `java.util.Inflator`, and `java.util.Deflator` has been removed in this release. Subclasses that override `finalize` in order to perform cleanup should be modified to use alternative cleanup mechanisms and to remove the overriding `finalize` method.
+  ruleID: java-12-deprecate-finalize-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.util.ZipFile.finalize
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.util.Inflator.finalize
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.util.Deflater.finalize

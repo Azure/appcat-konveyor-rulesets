@@ -1,0 +1,13 @@
+rulesPath: ../java-16-deprecate-security.yaml
+providers:
+- name: java
+  dataPath: ./data/java-16-deprecate-security
+- name: builtin
+  dataPath: ./data/java-16-deprecate-security
+tests:
+- ruleID: java-16-deprecate-security-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 8
+      messageMatches: The following APIs have been deprecated

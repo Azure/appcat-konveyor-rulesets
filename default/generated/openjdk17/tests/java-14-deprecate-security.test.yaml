@@ -1,0 +1,13 @@
+rulesPath: ../java-14-deprecate-security.yaml
+providers:
+- name: java
+  dataPath: ./data/java-14-deprecate-security
+- name: builtin
+  dataPath: ./data/java-14-deprecate-security
+tests:
+- ruleID: java-14-deprecate-security-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 6
+      messageMatches: The deprecated `java.security.acl` APIs have been removed.

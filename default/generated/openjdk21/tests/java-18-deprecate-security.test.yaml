@@ -1,0 +1,13 @@
+rulesPath: ../java-18-deprecate-security.yaml
+providers:
+- name: java
+  dataPath: ./data/java-18-deprecate-security
+- name: builtin
+  dataPath: ./data/java-18-deprecate-security
+tests:
+- ruleID: java-18-deprecate-security-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: Two javax.security.auth.Subject::doAs methods have been deprecated for removal.

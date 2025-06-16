@@ -1,0 +1,26 @@
+- category: mandatory
+  customVariables: []
+  description: JEP 336 Deprecate the Pack200 Tools and API
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: JEP 336 Deprecate the Pack200 Tools and API
+    url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8199871
+  message: |-
+    Deprecate the `pack200` and `unpack200` tools, and the Pack200 API in `java.util.jar` (JEP 336).
+
+    The `pack200` API and the tools associated with it, `pack200` and `unpack200`, have been deprecated and will be removed in a future release.
+
+    Those tools are still included in JDK 11, but will no longer be updated to support the latest class file format. Class files with unknown attributes will be passed-through without compression.
+  ruleID: java-11-deprecate-pack-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: java.util.jar.Pack200

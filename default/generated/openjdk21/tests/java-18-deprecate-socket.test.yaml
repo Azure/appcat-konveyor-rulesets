@@ -1,0 +1,13 @@
+rulesPath: ../java-18-deprecate-socket.yaml
+providers:
+- name: java
+  dataPath: ./data/java-18-deprecate-socket
+- name: builtin
+  dataPath: ./data/java-18-deprecate-socket
+tests:
+- ruleID: java-18-deprecate-socket-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: Legacy implementations of `java.net.SocketImpl` and `java.net.DatagramSocketImpl` have been removed from the JDK.

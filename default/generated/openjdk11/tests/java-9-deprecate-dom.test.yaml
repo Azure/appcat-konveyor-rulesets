@@ -1,0 +1,13 @@
+rulesPath: ../java-9-deprecate-dom.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-dom
+- name: builtin
+  dataPath: ./data/java-9-deprecate-dom
+tests:
+- ruleID: java-9-deprecate-dom-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The `com.sun.java.browser.plugin2.DOM`, and `sun.plugin.dom.DOMObject` APIs have been deprecated

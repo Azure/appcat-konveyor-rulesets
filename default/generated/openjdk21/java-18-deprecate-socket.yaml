@@ -1,0 +1,24 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of Legacy PlainSocketImpl and PlainDatagramSocketImpl Implementations
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk18-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk18+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of Legacy PlainSocketImpl and PlainDatagramSocketImpl Implementations
+    url: https://www.oracle.com/java/technologies/javase/18all-relnotes.html#JDK-8253119
+  message: |-
+    Legacy implementations of `java.net.SocketImpl` and `java.net.DatagramSocketImpl` have been removed from the JDK. The legacy implementation of `SocketImpl` has not been used by default since JDK 13, while the legacy implementation of `DatagramSocketImpl` has not been used by default since JDK 15.
+    Support for system properties `jdk.net.usePlainSocketImpl` and `jdk.net.usePlainDatagramSocketImpl` used to select these implementations has also been removed. Setting these properties now has no effect.
+  ruleID: java-18-deprecate-socket-00000
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: getProperty\("jdk\.net\.usePlainSocketImpl"\)
+    - builtin.filecontent:
+        pattern: getProperty\("jdk\.net\.usePlainDatagramSocketImpl"\)

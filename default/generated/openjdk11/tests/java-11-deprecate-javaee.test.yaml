@@ -1,0 +1,19 @@
+rulesPath: ../java-11-deprecate-javaee.yaml
+providers:
+- name: java
+  dataPath: ./data/java-11-deprecate-javaee
+- name: builtin
+  dataPath: ./data/java-11-deprecate-javaee
+tests:
+- ruleID: java-11-deprecate-javaee-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 26
+      messageMatches: Add the `jakarta.activation` dependency to your application.
+- ruleID: java-11-deprecate-javaee-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 17
+      messageMatches: Add the `jakarta.annotation` dependency to your application.

@@ -1,0 +1,38 @@
+- category: mandatory
+  customVariables: []
+  description: Terminally Deprecated ThreadGroup stop, destroy, isDestroyed, setDaemon and isDaemon
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk16-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk16+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Terminally Deprecated ThreadGroup stop, destroy, isDestroyed, setDaemon and isDaemon
+    url: https://www.oracle.com/java/technologies/javase/16-relnote-issues.html#JDK-8256643
+  message: |-
+    The `stop`, `destroy`, `isDestroyed`, `setDaemon` and `isDaemon` methods defined by `java.lang.ThreadGroup` have been terminally deprecated in this release.
+
+    `ThreadGroup::stop` is inherently unsafe and has been deprecated since Java 1.2. The method is now terminally deprecated and will be removed in a future release.
+
+    The API and mechanism for destroying a ThreadGroup is inherently flawed. The methods that support explicitly or automatically destroying a thread group have been terminally deprecated and will be removed in a future release.
+  ruleID: java-16-deprecate-thread-group-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.destroy
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.isDestroyed
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.setDaemon
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.isDaemon
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.ThreadGroup.stop

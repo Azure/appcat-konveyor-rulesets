@@ -1,5 +1,5 @@
 - customVariables: []
-  description: Spring Boot Component Framework
+  description: Embedded framework - Spring Boot
   labels:
   - konveyor.io/include=always
   links: []

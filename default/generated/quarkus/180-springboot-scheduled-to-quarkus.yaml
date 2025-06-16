@@ -9,10 +9,11 @@
   links:
   - title: Quarkus Spring Scheduled Guide
     url: https://quarkus.io/guides/spring-scheduled
-  message: "\n Replace the Spring Context artifact with Quarkus `spring-scheduled`
-    extension\n\n Spring Scheduled is in spring-context artifact brought transitively
-    by any `org.springframework.boot:spring-boot-*` dependency\n Add Quarkus dependency
-    `io.quarkus:quarkus-spring-scheduled`\n "
+  message: |-
+    Replace the Spring Context artifact with Quarkus `spring-scheduled` extension
+
+     Spring Scheduled is in spring-context artifact brought transitively by any `org.springframework.boot:spring-boot-*` dependency
+     Add Quarkus dependency `io.quarkus:quarkus-spring-scheduled`
   ruleID: springboot-scheduled-to-quarkus-00000
   when:
     java.referenced:

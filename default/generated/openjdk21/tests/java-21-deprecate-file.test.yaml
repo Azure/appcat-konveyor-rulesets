@@ -1,0 +1,19 @@
+rulesPath: ../java-21-deprecate-file.yaml
+providers:
+- name: java
+  dataPath: ./data/java-21-deprecate-file
+- name: builtin
+  dataPath: ./data/java-21-deprecate-file
+tests:
+- ruleID: java-21-deprecate-file-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: has historically cached canonical paths, and part paths
+- ruleID: java-21-deprecate-file-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The constants in this enum were used with the polling based WatchService implementation 

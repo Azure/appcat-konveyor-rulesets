@@ -1,0 +1,45 @@
+- category: mandatory
+  customVariables: []
+  description: Retired the Deprecated SSLSession.getPeerCertificateChain() Method Implementation
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk15-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk15+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Retired the Deprecated SSLSession.getPeerCertificateChain() Method Implementation
+    url: https://www.oracle.com/java/technologies/javase/15-relnote-issues.html#JDK-8241039
+  message: |-
+    The implementation of the deprecated `SSLSession.getPeerCertificateChain()` method has been removed from the JDK in the SunJSSE provider and the HTTP client implementation. The default implementation of this method has been changed to throw UnsupportedOperationException.
+
+    `SSLSession.getPeerCertificateChain()` is a deprecated method and will be removed in a future release. To mitigate the removal compatibility impact, applications should use the `SSLSession.getPeerCertificates()` method instead. For service providers, please remove this method from the existing implementation, and do not support this method in any new implementation.
+  ruleID: java-15-deprecate-ssl-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: javax.net.ssl.SSLSession.getPeerCertificateChain
+- category: mandatory
+  customVariables: []
+  description: Removal of com.sun.net.ssl.internal.ssl.Provider Name
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk15-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk15+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of com.sun.net.ssl.internal.ssl.Provider Name
+    url: https://www.oracle.com/java/technologies/javase/15-relnote-issues.html#JDK-8219989
+  message: |-
+    The legacy SunJSSE provider name, "com.sun.net.ssl.internal.ssl.Provider" has been removed and should no longer be used. The "SunJSSE" name should be used instead. For example, `SSLContext.getInstance("TLS", "SunJSSE")`.
+  ruleID: java-15-deprecate-ssl-00001
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: com.sun.net.ssl.internal.ssl.Provider

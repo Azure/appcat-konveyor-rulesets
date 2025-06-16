@@ -1,4 +1,23 @@
 - customVariables: []
+  description: Glassfish Web Descriptor
+  labels:
+  - konveyor.io/source=glassfish
+  - konveyor.io/target=eap6+
+  - konveyor.io/target=eap
+  - web-app
+  - glassfish
+  - configuration
+  links: []
+  ruleID: xml-glassfish-01000
+  tag:
+  - configuration
+  - Glassfish Web Descriptor
+  when:
+    as: default
+    builtin.xmlPublicID:
+      namespaces: {}
+      regex: ""
+- customVariables: []
   description: Glassfish EJB Descriptor
   labels:
   - konveyor.io/source=glassfish

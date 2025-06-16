@@ -1,0 +1,21 @@
+- category: mandatory
+  customVariables: []
+  description: Terminally Deprecated Thread.stop
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk18-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk18+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Terminally Deprecated Thread.stop
+    url: https://www.oracle.com/java/technologies/javase/18all-relnotes.html#JDK-8277861
+  message: |-
+    Thread.stop is terminally deprecated in this release so that it can be degraded in a future release and eventually removed. The method is inherently unsafe and has been deprecated since Java 1.2.
+  ruleID: java-18-deprecate-thread-00000
+  when:
+    java.referenced:
+      location: METHOD_CALL
+      pattern: java.lang.Thread.stop

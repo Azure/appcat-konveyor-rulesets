@@ -22,6 +22,7 @@
 ### openjdk21 ###
 - 01-deprecation-openjdk18.yaml(deprecation-00005): rules with METHOD_CALL locations do not work on calls to static methods https://github.com/konveyor/analyzer-lsp/issues/769
 - 04-deprecation-openjdk21.yaml: rules with METHOD_CALL locations and with args do not work
+- java-21-deprecate-classes.yaml: javax.swing.plaf.synth.SynthLookAndFeel.load(java.net.URL) not work with java.net.URL parameter, but can't change to javax.swing.plaf.synth.SynthLookAndFeel.load because other paramter type is not deprecated for javax.swing.plaf.synth.SynthLookAndFeel.load
 
 ### technology-usage ###
  
@@ -41,3 +42,11 @@ The following rule failed because builtin.hasTags is not working in test. An ups
  
 Failed determine the cause of this failure. It may be helpful to track upstream updates in the future.
 - 42-web.yaml
+
+Failed in pipeline but success in local
+- 201-embedded-framework.test.yaml  (embedded-framework-08700 rule)
+
+### Spring-framework ### 
+
+ENUM location is not supported yet
+- spring-framework-5.x-to-6.0-security.yaml

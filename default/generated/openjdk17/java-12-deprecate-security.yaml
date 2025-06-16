@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of com.sun.awt.SecurityWarning Class
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk12-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk12+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of com.sun.awt.SecurityWarning Class
+    url: https://www.oracle.com/java/technologies/javase/12all-relnotes.html#JDK-8210692
+  message: |-
+    The `com.sun.awt.SecurityWarning` class was deprecated as `forRemoval=true` in JDK 11. This class was unused in the JDK and has been removed in this release.
+  ruleID: java-12-deprecate-security-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.awt.SecurityWarning

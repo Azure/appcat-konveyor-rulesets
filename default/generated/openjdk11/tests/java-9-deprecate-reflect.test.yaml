@@ -1,0 +1,19 @@
+rulesPath: ../java-9-deprecate-reflect.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-reflect
+- name: builtin
+  dataPath: ./data/java-9-deprecate-reflect
+tests:
+- ruleID: java-9-deprecate-reflect-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: Java 9 introduced the `StackWalker API` to replace `sun.reflect.Reflection`.
+- ruleID: java-9-deprecate-reflect-00010
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: "`sun.reflect.CallerSensitive` annotation was deprecated in Java 9."

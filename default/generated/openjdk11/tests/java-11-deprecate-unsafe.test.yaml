@@ -1,0 +1,19 @@
+rulesPath: ../java-11-deprecate-unsafe.yaml
+providers:
+- name: java
+  dataPath: ./data/java-11-deprecate-unsafe
+- name: builtin
+  dataPath: ./data/java-11-deprecate-unsafe
+tests:
+- ruleID: java-11-deprecate-unsafe-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The `sun.misc.Unsafe.defineClass` class has been removed.
+- ruleID: java-11-deprecate-unsafe-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 26
+      messageMatches: The `sun.misc.Unsafe` API is scheduled for removal in the long term,

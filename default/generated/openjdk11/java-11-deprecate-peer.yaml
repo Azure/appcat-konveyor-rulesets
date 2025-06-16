@@ -1,0 +1,31 @@
+- category: mandatory
+  customVariables: []
+  description: The `java.awt.Font.getPeer()` and `java.awt.Component.getPeer()` methods
+    have been removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: java.awt.peer Not Accessible
+    url: https://docs.oracle.com/en/java/javase/11/migrate/index.html#JSMIG-GUID-0C350BAB-F2C8-409E-AD3E-63831C684A55
+  message: "The `java.awt.Font.getPeer()` and `java.awt.Component.getPeer()` methods
+    have been removed. \n The `java.awt.peer` and `java.awt.dnd.peer` are no longer
+    accessible and are considered\n internal implementation details, the API may be
+    removed without notice or changed in non\n compatible ways. \n Methods exposing
+    this API, such as `java.awt.Font.getPeer()` have been removed since JDK 9. \n
+    Since Font rendering is platform independent, there are no substitutes for this
+    method."
+  ruleID: java-11-deprecate-peer-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.awt.Font.getPeer
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.awt.Component.getPeer

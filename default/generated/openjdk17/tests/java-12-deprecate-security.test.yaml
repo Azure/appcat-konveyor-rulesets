@@ -1,0 +1,13 @@
+rulesPath: ../java-12-deprecate-security.yaml
+providers:
+- name: java
+  dataPath: ./data/java-12-deprecate-security
+- name: builtin
+  dataPath: ./data/java-12-deprecate-security
+tests:
+- ruleID: java-12-deprecate-security-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The `com.sun.awt.SecurityWarning` class was deprecated as `forRemoval=true` in JDK 11

@@ -1,0 +1,51 @@
+- category: mandatory
+  customVariables: []
+  description: java.io.File's Canonical Path Cache Is Removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk21-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk21+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: java.io.File's Canonical Path Cache Is Removed
+    url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8300977
+  message: |-
+    `java.io.File` has historically cached canonical paths, and part paths, to help the performance of the `File::getCanonicalFile` and `File::getCanonicalPath` when running with a `SecurityManager` set. The cache had correctness issues in environments with symbolic links and has been disabled by default since JDK 12. The cache has been removed in this release, along with the system properties `sun.io.useCanonCaches` and `sun.io.useCanonPrefixCache`. Setting these properties no longer has any effect.
+  ruleID: java-21-deprecate-file-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.io.File.getCanonicalPath
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.io.File.getCanonicalFile
+    - builtin.filecontent:
+        pattern: getProperty\("sun\.io\.useCanonCaches"\)
+    - builtin.filecontent:
+        pattern: getProperty\("sun\.io\.useCanonPrefixCache"\)
+- category: mandatory
+  customVariables: []
+  description: com.sun.nio.file.SensitivityWatchEventModifier Is Deprecated
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk21-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk21+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: com.sun.nio.file.SensitivityWatchEventModifier Is Deprecated
+    url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8303175
+  message: |-
+    `com.sun.nio.file.SensitivityWatchEventModifier` has been deprecated and is marked for removal in a future release. The constants in this enum were used with the polling based WatchService implementation on macOS to set the interval when polling files for changes. The polling based WatchService has been changed to ignore these modifiers when registering files to be watched.
+  ruleID: java-21-deprecate-file-00001
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.nio.file.SensitivityWatchEventModifier*

@@ -1,0 +1,69 @@
+- category: mandatory
+  customVariables: []
+  description: Thread.suspend/resume Changed to Throw UnsupportedOperationException
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk20-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk20+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Thread.suspend/resume Changed to Throw UnsupportedOperationException
+    url: https://www.oracle.com/java/technologies/javase/20-relnote-issues.html#JDK-8249627
+  message: |-
+    The ability to suspend or resume a thread with the `Thread.suspend()` and `Thread.resume()` methods has been removed in this release. The methods have been changed to throw UnsupportedOperationException. 
+  ruleID: java-20-deprecate-thread-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Thread.suspend
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Thread.resume
+- category: mandatory
+  customVariables: []
+  description: Thread.stop Changed to Throw UnsupportedOperationException
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk20-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk20+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Thread.stop Changed to Throw UnsupportedOperationException
+    url: https://www.oracle.com/java/technologies/javase/20-relnote-issues.html#JDK-8289610
+  message: |-
+    The ability to "stop" a thread with the `Thread.stop()` method has been removed in this release. The method has been changed to throw UnsupportedOperationException. 
+  ruleID: java-20-deprecate-thread-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Thread.stop
+- category: mandatory
+  customVariables: []
+  description: ThreadDeath is deprecated for removal
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk20-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk20+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: ThreadDeath is deprecated for removal
+    url: https://cr.openjdk.org/~iris/se/20/latestSpec/api/deprecated-list.html
+  message: |-
+    `Thread.stop()` was originally specified to "stop" a victim thread by causing the victim thread to throw a `ThreadDeath`. It was inherently unsafe and deprecated in an early JDK release. The ability to "stop" a thread with `Thread.stop` has been removed and the `Thread.stop` method changed to throw an exception. Consequently, `ThreadDeath` is also deprecated, for removal.
+  ruleID: java-20-deprecate-thread-00002
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: java.lang.ThreadDeath

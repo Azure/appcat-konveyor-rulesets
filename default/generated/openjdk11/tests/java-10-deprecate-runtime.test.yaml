@@ -1,0 +1,13 @@
+rulesPath: ../java-10-deprecate-runtime.yaml
+providers:
+- name: java
+  dataPath: ./data/java-10-deprecate-runtime
+- name: builtin
+  dataPath: ./data/java-10-deprecate-runtime
+tests:
+- ruleID: java-10-deprecate-runtime-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The methods `Runtime.getLocalizedInputStream` and `Runtime.getLocalizedOutputStream` have been removed. 

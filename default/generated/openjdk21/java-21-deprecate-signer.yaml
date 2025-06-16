@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of ContentSigner APIs and jarsigner -altsigner and -altsignerpath Options
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk21-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk21+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of ContentSigner APIs and jarsigner -altsigner and -altsignerpath Options
+    url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8303410
+  message: |-
+    The jarsigner options -altsigner and -altsignerpath have been removed, along with the underlying ContentSigner API in the com.sun.jarsigner package. The mechanism was deprecated in JDK 9 and marked for removal in JDK 15.
+  ruleID: java-21-deprecate-signer-00000
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: com.sun.jarsigner.ContentSigner

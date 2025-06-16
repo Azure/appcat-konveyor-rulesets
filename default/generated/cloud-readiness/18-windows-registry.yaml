@@ -1,0 +1,28 @@
+- category: mandatory
+  customVariables: []
+  description: Using Windows registry to store Application Settings
+  effort: 3
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=configuration-management
+  - source-category=windows-registry
+  links: []
+  message: |-
+    Application settings must not be defined in OS-specific storage such as Windows Registry, as in the Cloud the operating system is not guaranteed to be the same from a server to another. In addition, on Windows-based Cloud resources, write-access to the registry is generally blocked, including access to any per-user registry keys. From the app s perspective, write access to the registry should never be relied upon in the Cloud environment since apps can (and do) get migrated across different virtual machines. These application settings should be stored in a Cloud-based and OS-agnostic service.
+  ruleID: windows-registry-00000
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.jna.platform.win32.Advapi32Util
+    - java.referenced:
+        location: IMPORT
+        pattern: com.sun.jna.platform.win32.WinReg
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: com.sun.jna.platform.win32.Advapi32Util.registryGetStringValue
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: com.sun.jna.platform.win32.Advapi32Util.registrySetStringValue

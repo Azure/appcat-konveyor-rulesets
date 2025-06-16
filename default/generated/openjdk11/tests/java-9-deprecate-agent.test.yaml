@@ -1,0 +1,13 @@
+rulesPath: ../java-9-deprecate-agent.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-agent
+- name: builtin
+  dataPath: ./data/java-9-deprecate-agent
+tests:
+- ruleID: java-9-deprecate-agent-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: management-agent.jar has been removed.

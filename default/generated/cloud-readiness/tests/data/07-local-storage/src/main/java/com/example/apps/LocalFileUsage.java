@@ -40,6 +40,14 @@ import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.output.DeferredFileOutputStream;
+import org.apache.commons.io.output.LockableFileWriter;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+
 import java.net.URL;
 
 public class LocalFileUsage {
@@ -89,6 +97,33 @@ public class LocalFileUsage {
 	    new File("D:/file.ext");
 		doStuff(null, "c:\foo");
 		String[] paths = new String[]{"C:/s","D:/e","E:/f"};
+
+		Path tempFile2 = Files.createTempFile("myTempFile", ".txt");
+        System.out.println("Temporary file created: " + tempFile2);
+
+        // Create a temporary directory
+        Path tempDir = Files.createTempDirectory("myTempDir");
+        System.out.println("Temporary directory created: " + tempDir);
+
+		File tempDir = FileUtils.getTempDirectory();
+        System.out.println("Temp directory: " + tempDir.getAbsolutePath());
+
+        // Create a temp file in temp directory
+        File tempFile = new File(tempDir, "example.txt");
+
+        // Write to file using LockableFileWriter
+        try (LockableFileWriter writer = new LockableFileWriter(tempFile)) {
+            writer.write("Hello from LockableFileWriter!");
+        }
+
+        // Use DeferredFileOutputStream (writes to memory, then switches to file when threshold is exceeded)
+        File outputFile = new File(tempDir, "deferredOutput.dat");
+        try (DeferredFileOutputStream dfos = new DeferredFileOutputStream(1024, outputFile)) {
+            dfos.write("This is a test of DeferredFileOutputStream".getBytes(StandardCharsets.UTF_8));
+            dfos.flush();
+        }
+
+        System.out.println("Deferred output file: " + outputFile.getAbsolutePath());
 	} catch (Exception e) {
 	    e.printStackTrace();
 	}

@@ -1,0 +1,26 @@
+- category: mandatory
+  customVariables: []
+  description: java.net.URL Constructors Are Deprecated
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk20-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk20+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: java.net.URL Constructors Are Deprecated
+    url: https://www.oracle.com/java/technologies/javase/20-relnote-issues.html#JDK-8294241
+  message: |-
+    The `java.net.URL` constructors are deprecated in JDK 20 release.
+
+    Developers are encouraged to use `java.net.URI` to parse or construct a URL. In cases where an instance of `java.net.URL` is needed to open a connection, `java.net.URI` can be used to construct or parse the URL string, possibly calling `URI::parseServerAuthority()` to validate that the authority component can be parsed as a server-based authority, and then `calling URI::toURL()` to create the URL instance.
+
+    A new method, `URL::of(URI, URLStreamHandler)` is provided for the advanced usages where there is a need to construct a URL with a given custom stream handler.
+  ruleID: java-20-deprecate-net-00000
+  when:
+    or:
+    - java.referenced:
+        location: CONSTRUCTOR_CALL
+        pattern: java.net.URL

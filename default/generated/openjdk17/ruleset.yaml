@@ -1,3 +1,2 @@
 name: openjdk17/openjdk11
-description: This ruleset provides analysis Security Manager classes and methods deprecated
-  between OpenJDK 11 to 17.
+description: This ruleset provides analysis regarding deprecated and removed APIs between OpenJDK 11 to 17.

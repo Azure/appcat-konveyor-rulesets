@@ -1,0 +1,13 @@
+rulesPath: ../java-11-deprecate-corba.yaml
+providers:
+- name: java
+  dataPath: ./data/java-11-deprecate-corba
+- name: builtin
+  dataPath: ./data/java-11-deprecate-corba
+tests:
+- ruleID: java-11-deprecate-corba-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The `java.corba` (CORBA) module has been removed from OpenJDK 11.

@@ -1,0 +1,13 @@
+rulesPath: ../java-8-deprecate-stream.yaml
+providers:
+- name: java
+  dataPath: ./data/java-8-deprecate-stream
+- name: builtin
+  dataPath: ./data/java-8-deprecate-stream
+tests:
+- ruleID: java-8-deprecate-stream-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The ClassLoader parameter is no longer ignored in javax.xml.stream factories.

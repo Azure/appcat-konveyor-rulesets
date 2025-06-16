@@ -1,0 +1,34 @@
+- category: mandatory
+  customVariables: []
+  description: Deprecate the Applet API for Removal
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk17-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk17+
+  - konveyor.io/target=openjdk
+  - konveyor.io/source=spring5
+  - konveyor.io/target=spring6+
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecate the Applet API for Removal
+    url: https://www.oracle.com/java/technologies/javase/17all-relnotes.html#JDK-8256145
+  - title: JEP 398 - Deprecate the Applet API for Removal
+    url: https://openjdk.org/jeps/398
+  message: |-
+    It is essentially irrelevant since all web-browser vendors have either removed support for Java browser plug-ins or announced plans to do so.
+
+    The Applet API was previously deprecated, though not for removal
+  ruleID: java-17-deprecate-applet-00000
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: java.applet*
+    - java.referenced:
+        pattern: java.beans.AppletInitializer
+        location: IMPLEMENTS_TYPE
+    - java.referenced:
+        pattern: javax.swing.JApplet
+        location: TYPE

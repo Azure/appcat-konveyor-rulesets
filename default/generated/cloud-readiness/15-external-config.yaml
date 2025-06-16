@@ -1,0 +1,29 @@
+- category: mandatory
+  customVariables: []
+  description: Using other configuration files than Web configuration
+  effort: 3
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=configuration-management
+  - source-category=external-configuration
+  links:
+  - title: Docker ARG and ENV - a Complete Guide
+    url: https://stackoverflow.com/questions/10961862/its-possible-to-have-one-web-config-specific-to-windows-azure
+  - title: Azure App Service - Configuration
+    url: https://docs.docker.com/engine/swarm/configs/
+  message: |-
+    Storing application settings in external files other than web.config and that are not manageable in the Cloud platform is not recommended as such settings will not be easily changeable.
+  ruleID: external-config-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: javax.xml.parsers.DocumentBuilder.parse
+    - builtin.filecontent:
+        pattern: FileInputStream\("(.+)\.properties"\)
+    - builtin.filecontent:
+        pattern: FileInputStream\("(.+)\.xml"\)
+    - builtin.filecontent:
+        pattern: FileReader\("(.+)\.ini"\)

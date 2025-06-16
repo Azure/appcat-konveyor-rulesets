@@ -1,0 +1,13 @@
+rulesPath: ../java-9-deprecate-pack.yaml
+providers:
+- name: java
+  dataPath: ./data/java-9-deprecate-pack
+- name: builtin
+  dataPath: ./data/java-9-deprecate-pack
+tests:
+- ruleID: java-9-deprecate-pack-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The deprecated `addPropertyListener` and `removePropertyListener` methods have been removed from `java.util.jar.Pack200.Packer`

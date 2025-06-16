@@ -1,0 +1,51 @@
+- category: mandatory
+  customVariables: []
+  description: The java.activation (JAF) module has been removed from OpenJDK 11
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removed Java EE modules
+    url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8190378
+  message: |-
+    Add the `jakarta.activation` dependency to your application. E.g. update maven `pom.xml`.
+
+     `<groupId>jakarta.activation</groupId>`
+
+     `<artifactId>jakarta.activation</artifactId>`
+  ruleID: java-11-deprecate-javaee-00000
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: javax.activation*
+- category: mandatory
+  customVariables: []
+  description: The java.annotation (Common Annotations) module has been removed from
+    OpenJDK 11
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removed Java EE modules
+    url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8190378
+  message: |-
+    Add the `jakarta.annotation` dependency to your application. E.g. update maven `pom.xml`.
+
+     `<groupId>jakarta.annotation</groupId>`
+
+     `<artifactId>jakarta.annotation-api</artifactId>`
+  ruleID: java-11-deprecate-javaee-00001
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: javax.annotation*

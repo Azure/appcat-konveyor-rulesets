@@ -1,0 +1,24 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of Deprecated Constant RMIConnectorServer.CREDENTIAL_TYPES
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk15-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk15+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of Deprecated Constant RMIConnectorServer.CREDENTIAL_TYPES
+    url: https://www.oracle.com/java/technologies/javase/15-relnote-issues.html#JDK-8213222
+  message: |-
+    The terminally deprecated constant `javax.management.remote.rmi.RMIConnectorServer.CREDENTIAL_TYPE` has been removed. A filter pattern can be specified instead by using `RMIConnectorServer.CREDENTIALS_FILTER_PATTERN`.
+  ruleID: java-15-deprecate-property-00000
+  when:
+    and:
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.management.remote.rmi.RMIConnectorServer*
+    - builtin.filecontent:
+        pattern: CREDENTIAL_TYPE

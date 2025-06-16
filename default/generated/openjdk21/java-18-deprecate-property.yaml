@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of impl.prefix JDK System Property Usage From InetAddress
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk18-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk18+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of impl.prefix JDK System Property Usage From InetAddress
+    url: https://www.oracle.com/java/technologies/javase/18all-relnotes.html#JDK-8274227
+  message: |-
+    The system property `impl.prefix` has been removed. This undocumented system property dates from early JDK releases where it was possible to add an implementation of the JDK internal and non-public `java.net.InetAddressImpl` interface to the `java.net` package, and have it be used by the `java.net.InetAddress` API.
+    The `InetAddressResolver` SPI provides a standard way to implement a name and address resolver.
+  ruleID: java-18-deprecate-property-00000
+  when:
+    or:
+    - builtin.filecontent:
+        pattern: getProperty\("impl\.prefix"\)

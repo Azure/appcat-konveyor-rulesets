@@ -228,9 +228,9 @@
   - konveyor.io/target=eap
   - eap8
   links: []
-  message: "The `org.jboss.resteasy.resteasy-jaxrs` module has been deprecated and
+  message: The `org.jboss.resteasy.resteasy-jaxrs` module has been deprecated and
     split into 4 new modules, specifically `org.jboss.resteasy.resteasy-client`, `org.jboss.resteasy.resteasy-client-spi`,`org.jboss.resteasy.resteasy-core`
-    and `org.jboss.resteasy.resteasy-core-spi` \n "
+    and `org.jboss.resteasy.resteasy-core-spi`
   ruleID: eap8-resteasy-00011
   when:
     or:

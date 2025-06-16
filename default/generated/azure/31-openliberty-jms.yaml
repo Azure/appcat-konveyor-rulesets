@@ -1,0 +1,253 @@
+- category: mandatory
+  customVariables: []
+  description: Detect OpenLiberty JMS ConnectionFactory configurations
+  effort: 4
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-jms
+  - openliberty
+  message: |
+    OpenLiberty JMS ConnectionFactory configurations detected that require migration to Azure messaging services.
+
+    **Azure Migration Options:**
+    • **Azure Service Bus** - Enterprise messaging with advanced features (recommended for JMS replacement)
+    • **Azure Event Hubs** - High-throughput event streaming for large-scale data ingestion
+    • **Azure Event Grid** - Event-driven serverless messaging for loosely coupled architectures
+    • **Azure Storage Queues** - Simple point-to-point messaging for basic use cases
+
+    **Implementation Steps:**
+    1. **Add Azure Dependencies:** Include Azure messaging SDK in your Maven/Gradle configuration
+    2. **Remove JMS Configuration:** Clean up server.xml JMS ConnectionFactory, Queue, and Topic definitions
+    3. **Configure Azure Service Bus:** Set up namespace, queues/topics, and access policies in Azure portal
+    4. **Update Application Code:** Replace JMS clients with Azure Service Bus SDK
+    5. **Secure Credentials:** Store connection strings in Azure Key Vault or secure configuration
+
+  links:
+  - title: "Azure Service Bus documentation"
+    url: "https://docs.microsoft.com/en-us/azure/service-bus-messaging/"
+  - title: "Service Bus Java SDK reference"
+    url: "https://docs.microsoft.com/en-us/java/api/overview/azure/servicebus"
+  - title: "Migrating from JMS to Azure Service Bus"
+    url: "https://docs.microsoft.com/en-us/azure/service-bus-messaging/migrate-jms-broker-to-servicebus"
+  ruleID: openliberty-jms-00001
+  when:
+    builtin.xml:
+      filepaths:
+      - server.xml
+      namespaces: {}
+      xpath: //server/jmsConnectionFactory | //server/jmsQueueConnectionFactory | //server/jmsTopicConnectionFactory | //server/jmsQueue | //server/jmsTopic | //server/jmsActivationSpec
+
+- category: mandatory
+  customVariables: []
+  description: Detect JMS Resource injection in application code
+  effort: 4
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-jms
+  - openliberty
+  message: |
+    JMS resource injections detected that require refactoring for Azure Service Bus integration.
+
+    **Migration Strategy:**
+    • **Replace JMS Annotations:** Remove @Resource annotations for JMS ConnectionFactory and Queue/Topic references
+    • **Implement Azure Service Bus Clients:** Use Azure SDK for message operations
+    • **Dependency Injection:** Configure Azure clients as CDI components or application-managed beans
+    • **Connection Management:** Implement proper lifecycle management for Azure clients
+
+    **Refactoring Steps:**
+    1. **Remove JMS Dependencies:** Clean up javax.jms imports and annotations
+    2. **Add Azure Configuration:** Create Azure Service Bus client beans
+    3. **Update Business Logic:** Replace JMS message operations with Azure SDK calls
+    4. **Error Handling:** Implement Azure-specific exception handling
+    5. **Testing:** Update unit and integration tests for Azure messaging
+
+  links:
+  - title: "Azure Service Bus SDK for Java"
+    url: "https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/servicebus"
+  - title: "Azure Service Bus Java integration"
+    url: "https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-service-bus"
+  ruleID: openliberty-jms-00002
+  when:
+    or:
+    - java.referenced:
+        location: ANNOTATION
+        pattern: javax.annotation.Resource
+        annotated:
+          elements:
+            - name: name
+              value: jms/[a-zA-Z0-9_-]+
+    - java.referenced:
+        location: ANNOTATION
+        pattern: javax.annotation.Resource
+        annotated:
+          elements:
+            - name: lookup
+              value: jms/[a-zA-Z0-9_-]+
+
+- category: mandatory
+  customVariables: []
+  description: Detect Message-Driven Bean implementations
+  effort: 5
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-jms
+  - openliberty
+  message: |
+    Message-Driven Beans (MDBs) detected that require migration to Azure Service Bus message processing.
+
+    **Migration Approaches:**
+    • **Azure Service Bus Processor:** Implement message processing with Service Bus SDK (recommended for containerized environments)
+    • **Azure Functions:** Migrate to serverless functions with Service Bus triggers for event-driven processing
+    • **Event-Driven Microservices:** Decompose MDBs into dedicated message processing services
+    • **Background Services:** Use container-based background services for message consumption
+
+    **Implementation Strategies:**
+    1. **Analyze Message Processing Logic:** Extract business logic from MDB onMessage methods
+    2. **Design Processing Architecture:** Choose between synchronous/asynchronous processing patterns
+    3. **Implement Azure Clients:** Create Service Bus processor clients with error handling
+    4. **Configure Concurrency:** Set up appropriate message processing parallelism
+    5. **Add Monitoring:** Implement metrics and logging for message processing visibility
+
+  links:
+  - title: "Azure Service Bus message processing patterns"
+    url: "https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-queues"
+  - title: "Azure Functions Service Bus triggers"
+    url: "https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus"
+  - title: "Microservices messaging patterns"
+    url: "https://docs.microsoft.com/en-us/azure/architecture/microservices/design/interservice-communication"
+  ruleID: openliberty-jms-00003
+  when:
+    java.referenced:
+      location: ANNOTATION
+      pattern: javax.ejb.MessageDriven
+
+- category: mandatory
+  customVariables: []
+  description: Detect JMS resource references in web.xml/ejb-jar.xml
+  effort: 3
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-jms
+  - openliberty
+  message: |
+    JMS resource references in deployment descriptors detected that require removal and replacement with Azure Service Bus configuration for AKS deployment.
+
+    **Migration Requirements:**
+    • **Remove JMS Configuration:** Clean up resource-ref entries from web.xml and ejb-jar.xml
+    • **Externalize Configuration:** Move messaging configuration to application properties and environment variables
+    • **Update Resource Management:** Replace container-managed JMS resources with application-managed Azure clients
+    • **Security Updates:** Migrate from container authentication to Azure Service Bus authentication
+
+    **Configuration Migration Steps:**
+    1. **Identify JMS Dependencies:** Catalog all JMS resource references in deployment descriptors
+    2. **Remove XML Configuration:** Delete resource-ref, message-driven-destination elements
+    3. **Add Azure Properties:** Configure Azure Service Bus connection parameters
+    4. **Update Code References:** Replace JNDI lookups with direct Azure client usage
+    5. **Validate Configuration:** Test connection and message operations
+
+  links:
+  - title: "Azure Service Bus Java configuration"
+    url: "https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-queues"
+  - title: "Environment variable configuration"
+    url: "https://learn.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings"
+  - title: "Azure Key Vault configuration"
+    url: "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+  ruleID: openliberty-jms-00004
+  when:
+    builtin.xml:
+      filepaths:
+      - web.xml
+      - ejb-jar.xml
+      namespaces:
+        jee: http://xmlns.jcp.org/xml/ns/javaee
+        j2ee: http://java.sun.com/xml/ns/j2ee
+      xpath: //jee:resource-ref/jee:res-type[contains(text(), 'javax.jms')] | //jee:message-driven-destination | //j2ee:resource-ref/j2ee:res-type[contains(text(), 'javax.jms')] | //j2ee:message-driven-destination
+
+- category: mandatory
+  customVariables: []
+  description: Detect JMS JNDI lookups in code
+  effort: 4
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-jms
+  - openliberty
+  message: |
+    Detected manual JNDI lookups for JMS resources that need to be updated for Azure messaging services.
+    
+    **Required changes:**
+    - Remove JNDI lookups for JMS resources
+    - Replace with direct Azure Service Bus client initialization
+    - Update message sending and receiving logic
+  ruleID: openliberty-jms-00006
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: \.lookup\(\s*["'][^"']*jms[^"']*["']\s*\)
+
+- category: mandatory
+  customVariables: []
+  description: Detect JMS API usage in code
+  effort: 4
+  labels:
+  - konveyor.io/source=java-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=azure-readiness
+  - category=openliberty-migration
+  - source-category=openliberty-jms
+  - openliberty
+  message: |
+    JMS API usage detected that requires comprehensive migration to Azure messaging services.
+
+    **Migration Strategy by Use Case:**
+    • **Point-to-Point Messaging:** Migrate to Azure Service Bus queues for reliable message delivery
+    • **Publish-Subscribe:** Use Azure Service Bus topics and subscriptions for fan-out scenarios  
+    • **Event Streaming:** Consider Azure Event Hubs for high-throughput, ordered event processing
+    • **Simple Queuing:** Azure Storage Queues for basic messaging with lower costs
+
+    **Implementation Approach:**
+    1. **Dependency Migration:** Replace javax.jms packages with Azure SDK dependencies
+    2. **Connection Management:** Replace JMS ConnectionFactory with Azure client builders
+    3. **Message Operations:** Update send/receive patterns for Azure SDK
+    4. **Error Handling:** Implement Azure-specific exception handling and retry policies
+    5. **Performance Tuning:** Configure connection pooling and processing concurrency
+  links:
+  - title: "Azure Service Bus Java SDK documentation"
+    url: "https://docs.microsoft.com/en-us/java/api/overview/azure/servicebus"
+  - title: "Service Bus messaging patterns"
+    url: "https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+  - title: "Event Hubs vs Service Bus comparison"
+    url: "https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-compare-services"
+  - title: "Azure messaging services decision tree"
+    url: "https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/messaging"
+  ruleID: openliberty-jms-00005
+  when:
+    java.referenced:
+      location: IMPORT
+      pattern: javax.jms*

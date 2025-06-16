@@ -1,0 +1,26 @@
+- category: mandatory
+  customVariables: []
+  description: Removal of Runtime.getLocalizedInputStream and getLocalizedOutputStream Methods
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk10-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk10+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Removal of Runtime.getLocalizedInputStream and getLocalizedOutputStream Methods
+    url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8177681
+  message: |-
+    The methods `Runtime.getLocalizedInputStream` and `Runtime.getLocalizedOutputStream` have been removed. 
+    They were part of an obsolete internationalization mechanism and have no known uses.
+  ruleID: java-10-deprecate-runtime-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Runtime.getLocalizedInputStream
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.lang.Runtime.getLocalizedOutputStream

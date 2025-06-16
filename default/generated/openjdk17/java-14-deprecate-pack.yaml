@@ -1,0 +1,25 @@
+- category: mandatory
+  customVariables: []
+  description: Remove the Pack200 Tools and API
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk14-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk14+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Remove the Pack200 Tools and API
+    url: https://www.oracle.com/java/technologies/javase/14-relnote-issues.html#JDK-8232022
+  - title: 'JEP 367: Remove the Pack200 Tools and API'
+    url: https://openjdk.org/jeps/367
+  - title: 'JEP 392: Packaging Tool (jpackage tool)'
+    url: https://openjdk.org/jeps/392
+  message: |-
+    The `pack200` and `unpack200` tools, added in JDK 5.0, have been removed. The class `java.util.jar.Pack200` and the interfaces `java.util.jar.Pack200.Packer` and `java.util.jar.Pack200.Unpacker` have also been removed. These tools and API were deprecated for removal in Java SE 11 with the express intent to remove them in a future release. In addition, in the `jar` tool, the `n` sub-option to `jar c` has been removed.
+  ruleID: java-14-deprecate-pack-00000
+  when:
+    or:
+    - java.referenced:
+        pattern: java.util.jar.(Pack200|Pack200.Packer|Pack200.Unpacker)

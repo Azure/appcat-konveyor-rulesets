@@ -1,0 +1,24 @@
+- category: mandatory
+  customVariables: []
+  description: The netdoc URL protocol Handler is removed
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk9-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk9+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: The netdoc URL protocol Handler is removed
+    url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8154234
+  message: |-
+    The `netdoc` protocol handler has been removed in JDK 9. Code that attempts to construct a java.net.URL with the `netdoc` protocol, for example "netdoc:http://foo.com/index.html" will throw a `MalformedURLException`.
+  
+    The `netdoc` protocol was used to point to network documents either on the local file system or externally through an HTTP URL. This capability is essentially defunct and is not supported by Safari, Firefox, and other major browsers.
+  ruleID: java-9-deprecate-url-00000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\).*\.java$
+        pattern: netdoc

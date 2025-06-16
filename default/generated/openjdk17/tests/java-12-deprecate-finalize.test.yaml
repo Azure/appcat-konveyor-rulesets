@@ -1,0 +1,19 @@
+rulesPath: ../java-12-deprecate-finalize.yaml
+providers:
+- name: java
+  dataPath: ./data/java-12-deprecate-finalize
+- name: builtin
+  dataPath: ./data/java-12-deprecate-finalize
+tests:
+# - ruleID: java-12-deprecate-finalize-00000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 2
+#       messageMatches: The `finalize` methods of `FileInputStream` and `FileOutputStream` were deprecated for removal
+# - ruleID: java-12-deprecate-finalize-00001
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 3
+#       messageMatches: The `finalize` method in `java.util.ZipFile`, `java.util.Inflator`, and `java.util.Deflator` was deprecated for removal

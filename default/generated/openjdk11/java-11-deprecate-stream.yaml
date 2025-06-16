@@ -1,0 +1,23 @@
+- category: mandatory
+  customVariables: []
+  description: Deprecate Stream-Based GSSContext Methods
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk11-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk11+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Deprecate Stream-Based GSSContext Methods
+    url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8072996
+  message: |-
+    The stream-based methods in `GSSContext` have been deprecated in this release since GSS-API works on opaque tokens and has not defined a wire protocol. 
+    This includes the overloaded forms of the `initSecContext`, `acceptSecContext`, `wrap`, `unwrap`, `getMIC`, and `verifyMIC` methods that have an `InputStream` argument. These methods have already been removed in RFC 8353.
+  ruleID: java-11-deprecate-stream-00000
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: org.ietf.jgss.GSSContext.(initSecContext|acceptSecContext|wrap|unwrap|getMIC|verifyMIC)

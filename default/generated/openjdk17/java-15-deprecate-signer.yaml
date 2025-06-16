@@ -1,0 +1,22 @@
+- category: mandatory
+  customVariables: []
+  description: Added forRemoval=true to Previously Deprecated ContentSigner APIs
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk15-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk15+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Added forRemoval=true to Previously Deprecated ContentSigner APIs
+    url: https://www.oracle.com/java/technologies/javase/15-relnote-issues.html#JDK-8242260
+  message: |-
+    The `ContentSigner` and `ContentSignerParameters` classes in the `com.sun.jarsigner` package support alternative signers and have been deprecated with `forRemoval=true`. When the `-altsigner` or `-altsignerpath` options are specified, the `jarsigner` tool produces a warning that these options are deprecated and will be removed.
+  ruleID: java-15-deprecate-signer-00000
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: com.sun.jarsigner.ContentSigner*

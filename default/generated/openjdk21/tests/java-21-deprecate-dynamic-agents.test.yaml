@@ -1,0 +1,14 @@
+rulesPath: ../java-21-deprecate-dynamic-agents.yaml
+providers:
+- name: java
+  dataPath: ./data/java-21-deprecate-dynamic-agents
+- name: builtin
+  dataPath: ./data/java-21-deprecate-dynamic-agents
+tests:
+- ruleID: java-21-deprecate-dynamic-agents-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: Dynamic loading of agents will be restricted at a later JDK
+        release.*

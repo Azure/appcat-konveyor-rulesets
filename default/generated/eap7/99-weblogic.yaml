@@ -5,6 +5,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - scheduler
@@ -13,8 +14,7 @@
   links:
   - title: Java EE 7 - Using TimerService
     url: https://docs.oracle.com/javaee/7/tutorial/ejb-basicexamples004.htm
-  message: "\n \n WebLogic scheduled jobs should be migrated to use the standard EJB
-    `javax.ejb.TimerService`.\n \n "
+  message: WebLogic scheduled jobs should be migrated to use the standard EJB `javax.ejb.TimerService`.
   ruleID: weblogic-eap7-01000
   tag:
   - scheduler
@@ -33,6 +33,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   links:
@@ -42,7 +43,7 @@
   ruleID: weblogic-eap7-02000
   when:
     java.referenced:
-      location: PACKAGE
+      location: IMPORT
       pattern: weblogic.utils.StringUtils*
 - category: mandatory
   customVariables: []
@@ -51,11 +52,12 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   links: []
-  message: "\n Code using this package should be replaced with code using the org.apache.xml
-    package from [Apache Xerces](http://xerces.apache.org/).\n "
+  message: Code using this package should be replaced with code using the org.apache.xml
+    package from [Apache Xerces](http://xerces.apache.org/).
   ruleID: weblogic-eap7-03000
   when:
     java.referenced:
@@ -71,6 +73,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - transactions
@@ -91,6 +94,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - transactions
@@ -119,6 +123,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - transactions
@@ -146,6 +151,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - transactions
@@ -165,22 +171,28 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - transactions
   links: []
-  message: "\n \n Look up the Java Enterprise Edition `javax.transaction.TransactionManager`
-    in JBoss EAP using the following code:\n\n ```java\n InitialContext context =
-    new InitialContext();\n TransactionManager transactionManager =\n (TransactionManager)context.lookup(\"java:jboss/TransactionManager\");\n
-    ```\n \n "
+  message: |-
+    Look up the Java Enterprise Edition `javax.transaction.TransactionManager` in JBoss EAP using the following code:
+
+     ```java
+     InitialContext context = new InitialContext();
+     TransactionManager transactionManager =
+     (TransactionManager)context.lookup("java:jboss/TransactionManager");
+     ```
   ruleID: weblogic-eap7-08000
   when:
-    java.referenced:
-      or:
-      - location: METHOD_CALL
-        pattern: weblogic.transaction.ClientTxHelper.getTransactionManager(*)
-      - location: METHOD_CALL
-        pattern: weblogic.transaction.TxHelper.getTransactionManager(*)
+    or:
+      - java.referenced:
+          location: METHOD_CALL
+          pattern: weblogic.transaction.ClientTxHelper.getTransactionManager(*)
+      - java.referenced:
+          location: METHOD_CALL
+          pattern: weblogic.transaction.TxHelper.getTransactionManager(*)
 - category: mandatory
   customVariables: []
   description: WebLogic proprietary Clob JDBC object (OracleThinClob)
@@ -188,6 +200,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - jdbc
@@ -196,8 +209,8 @@
     url: https://docs.oracle.com/database/121/JAJDB/oracle/jdbc/class-use/OracleClob.html
   - title: java.sql.Clob interface
     url: http://docs.oracle.com/javase/7/docs/api/java/sql/Clob.html
-  message: "\n This Oracle and WebLogic proprietary code (`OracleThinClob`) should
-    be replaced with the use of the java.sql.Clob interface.\n "
+  message: This Oracle and WebLogic proprietary code (`OracleThinClob`) should be
+    replaced with the use of the java.sql.Clob interface.
   ruleID: weblogic-eap7-09000
   when:
     java.referenced:
@@ -209,6 +222,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - jdbc
@@ -217,7 +231,7 @@
     url: https://docs.oracle.com/database/121/JAJDB/oracle/jdbc/class-use/OracleClob.html
   - title: java.sql.Clob interface
     url: http://docs.oracle.com/javase/7/docs/api/java/sql/Clob.html
-  message: "\n This code is specific to WebLogic and should be replaced with `java.sql.Clob.setCharacterStream(1)`\n "
+  message: This code is specific to WebLogic and should be replaced with `java.sql.Clob.setCharacterStream(1)`
   ruleID: weblogic-eap7-10000
   when:
     java.referenced:
@@ -230,6 +244,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - logging
@@ -238,19 +253,18 @@
     url: https://docs.oracle.com/javase/7/docs/technotes/guides/logging/overview.html
   - title: Logging with JBoss EAP
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/configuration_guide/logging_with_jboss_eap
-  message: "\n \n The WebLogic `NonCatalogLogger` is not supported on JBoss EAP, and
-    should be migrated to a supported logging framework,\n such as the JDK Logger
-    or JBoss Logging:\n\n ```java\n import java.util.logging.Logger;\n Logger LOG
-    = Logger.getLogger(\"MyLogger\");\n ```\n \n "
+  message: |-
+    The WebLogic `NonCatalogLogger` is not supported on JBoss EAP, and should be migrated to a supported logging framework,
+     such as the JDK Logger or JBoss Logging:
+
+     ```java
+     import java.util.logging.Logger;
+     Logger LOG = Logger.getLogger("MyLogger");
+     ```
   ruleID: weblogic-eap7-11000
   when:
-    or:
-    - java.referenced:
-        location: METHOD_CALL
-        pattern: weblogic.i18n.logging.NonCatalogLogger(*)
-    - java.referenced:
-        location: CONSTRUCTOR_CALL
-        pattern: weblogic.i18n.logging.NonCatalogLogger*
+    java.referenced:
+      pattern: NonCatalogLogger
 - category: mandatory
   customVariables: []
   description: WebLogic Oracle FCF JDBC property
@@ -258,18 +272,20 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - jdbc
   links:
   - title: Implement Oracle Fast Connection Failover (FCF) in EAP
     url: https://access.redhat.com/articles/1329233
-  message: "\n \n Oracle Fast Connection Failover is specific property supported only
-    by Oracle JDBC driver which provides support for their vendor's special features
-    transparently to the application server in which they are deployed.\n\n For example,
-    one can supply a URL like this to the Oracle JDBC driver and the driver will provide
-    transparent load-balancing and fail-over:\n ```\n <xa-datasource-property name=\"URL\">jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(LOAD_BALANCE=ON)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=my.host.org)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=my.host.org)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=servjboss)(failover_mode=(type=select)(method=basic)))</xa-datasource-property>\n
-    ```\n \n "
+  message: |-
+    Oracle Fast Connection Failover is specific property supported only by Oracle JDBC driver which provides support for their vendor's special features transparently to the application server in which they are deployed.
+
+     For example, one can supply a URL like this to the Oracle JDBC driver and the driver will provide transparent load-balancing and fail-over:
+     ```
+     <xa-datasource-property name="URL">jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(LOAD_BALANCE=ON)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=my.host.org)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=my.host.org)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=servjboss)(failover_mode=(type=select)(method=basic)))</xa-datasource-property>
+     ```
   ruleID: weblogic-eap7-12000
   when:
     builtin.xml:
@@ -282,21 +298,17 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   links:
   - title: Replace WebLogic side-by-side production redeployment in EAP 6
     url: https://access.redhat.com/articles/1329253
-  message: "\n \n Oracle WebLogic Server includes a proprietary side-by-side production
-    redeployment feature. For applications that meet certain requirements and restrictions,
-    the new version of the application is deployed while the older version is still
-    running.\n The old and new applications must be running on the same server or
-    cluster. The new version of the application accepts new web session requests while
-    the older version finishes processing requests already in process. Upon completion
-    of the existing session requests, the older version of the application is then
-    undeployed.\n\n In JBoss EAP, you can either deploy the new application to a secondary
-    server group or cluster, or deploy the new application serially to the same clustered
-    domain.\n \n "
+  message: |-
+    Oracle WebLogic Server includes a proprietary side-by-side production redeployment feature. For applications that meet certain requirements and restrictions, the new version of the application is deployed while the older version is still running.
+     The old and new applications must be running on the same server or cluster. The new version of the application accepts new web session requests while the older version finishes processing requests already in process. Upon completion of the existing session requests, the older version of the application is then undeployed.
+
+     In JBoss EAP, you can either deploy the new application to a secondary server group or cluster, or deploy the new application serially to the same clustered domain.
   ruleID: weblogic-eap7-13000
   when:
     builtin.filecontent:
@@ -309,15 +321,16 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   links:
   - title: Replace WebLogic Oracle Wallets When Migrating to EAP 6
     url: https://access.redhat.com/articles/1329073
-  message: "\n \n WebLogic administrators use wallets created by Oracle Wallet Manager
-    to manage public key security credentials on application clients and servers.\n\n
-    These wallets must first be converted to standard Java KeyStore (JKS) entries
-    that can then be used to configure the credentials in JBoss EAP 7.\n \n "
+  message: |-
+    WebLogic administrators use wallets created by Oracle Wallet Manager to manage public key security credentials on application clients and servers.
+
+     These wallets must first be converted to standard Java KeyStore (JKS) entries that can then be used to configure the credentials in JBoss EAP 7.
   ruleID: weblogic-eap7-15000
   when:
     builtin.filecontent:
@@ -330,6 +343,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - configuration
@@ -338,11 +352,10 @@
     url: https://access.redhat.com/solutions/161543
   - title: How to configure an EJB client in JBoss EAP 6
     url: https://access.redhat.com/solutions/396853
-  message: "\n \n `weblogic.jndi.WLInitialContextFactory` is an implementation of
-    `InitialContextFactory` used to get object instances from JNDI.\n\n The equivalent
-    functionality needs to be configured on JBoss EAP 7 using `org.jboss.naming.remote.client.InitialContextFactory`.
-    Then the context could be instanticated as follows: `InitialContext ctx = new
-    InitialContext();`.\n \n "
+  message: |-
+    `weblogic.jndi.WLInitialContextFactory` is an implementation of `InitialContextFactory` used to get object instances from JNDI.
+
+     The equivalent functionality needs to be configured on JBoss EAP 7 using `org.jboss.naming.remote.client.InitialContextFactory`. Then the context could be instanticated as follows: `InitialContext ctx = new InitialContext();`.
   ruleID: weblogic-eap7-016000
   when:
     builtin.filecontent:
@@ -355,6 +368,7 @@
   labels:
   - konveyor.io/source=weblogic
   - konveyor.io/target=eap7
+  - konveyor.io/target=eap8
   - konveyor.io/target=eap
   - weblogic
   - configuration
@@ -363,12 +377,12 @@
     url: https://docs.oracle.com/cd/E24329_01/web.1211/e24389/rmi_t3.htm#WLRMI143
   - title: Invoking EJBs deployed on WebLogic from EAP6
     url: https://access.redhat.com/solutions/1230143
-  message: "\n \n Weblogic’s implementation of the RMI specification uses a proprietary
-    protocol known as T3. T3S is the version of the protocol over SSL.\n `t3://` and
-    `t3s://` URLs are used to configure a JNDI InitialContext within WebLogic.\n\n
-    The equivalent functionality needs to be configured in JBoss EAP 7.\n This could
-    be done either by using standard Java EE JNDI names or by using a WebLogic proprietary
-    library if the connectivity to WebLogic server is still required.\n \n "
+  message: |-
+    Weblogic’s implementation of the RMI specification uses a proprietary protocol known as T3. T3S is the version of the protocol over SSL.
+     `t3://` and `t3s://` URLs are used to configure a JNDI InitialContext within WebLogic.
+
+     The equivalent functionality needs to be configured in JBoss EAP 7.
+     This could be done either by using standard Java EE JNDI names or by using a WebLogic proprietary library if the connectivity to WebLogic server is still required.
   ruleID: weblogic-eap7-017000
   when:
     builtin.filecontent:

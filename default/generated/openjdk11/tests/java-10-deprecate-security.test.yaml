@@ -1,0 +1,37 @@
+rulesPath: ../java-10-deprecate-security.yaml
+providers:
+- name: java
+  dataPath: ./data/java-10-deprecate-security
+- name: builtin
+  dataPath: ./data/java-10-deprecate-security
+tests:
+- ruleID: java-10-deprecate-security-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 7
+      messageMatches: The following pre-1.2 deprecated `java.lang.SecurityManager` methods and fields that were marked `forRemoval=true` have been removed
+- ruleID: java-10-deprecate-security-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 7
+      messageMatches: The following deprecated classes that were marked for removal in JDK 9 have been removed
+#- ruleID: java-10-deprecate-security-00002
+#  testCases:
+#  - name: tc-1
+#    hasIncidents:
+#      exactly: 4
+#      messageMatches: The deprecated `java.security.{Certificate, Identity, IdentityScope, Signer}`
+#- ruleID: java-10-deprecate-security-00003
+#  testCases:
+#  - name: tc-1
+#    hasIncidents:
+#      exactly: 2
+#      messageMatches: The deprecated `java.security.acl` APIs have been marked `forRemoval=true` and are subject to removal in a future version of Java SE
+#- ruleID: java-10-deprecate-security-00004
+#  testCases:
+#  - name: tc-1
+#    hasIncidents:
+#      exactly: 2
+#      messageMatches: The deprecated `javax.security.auth.Policy` class has been marked

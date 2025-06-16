@@ -1,0 +1,105 @@
+- category: mandatory
+  customVariables: []
+  description: Access to com.sun.media.sound Restricted Under SecurityManager 
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    `com.sun.media.sound` has been added to list of restricted packages in JDK 8. Applications running under a `SecurityManager` will not be able to access classes in this package hierarchy unless granted explicit permission. 
+    The `com.sun.media.sound` package is an internal, unsupported package and is not meant to be used by external applications.
+  ruleID: java-8-deprecate-security-00001
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: com.sun.media.sound*
+- category: mandatory
+  customVariables: []
+  description: Deprecation of SecurityPermission 'insertProvider.{name}' in Favor of 'insertProvider'
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    Deprecated Feature: The `java.security.SecurityPermission insertProvider.{provider name}` target name is discouraged from further use because it is possible to circumvent the name restrictions by overriding the java.security.Provider.getName method. 
+    Also, there is an equivalent level of risk associated with granting code permission to insert a provider with a specific name, or any name it chooses.
+    
+    Use Instead: The new `insertProvider` target name. Compatibility with existing policy files has been preserved, as both the old and new permission will be checked by the `Security.addProvider` and `insertProviderAt` methods.
+  ruleID: java-8-deprecate-security-00002
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.security.Security.insertProviderAt
+    - java.referenced:
+        location: IMPORT
+        pattern: java.security.Provider
+- category: mandatory
+  customVariables: []
+  description: The SecurityManager.checkMemberAccess method is deprecated.
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The `SecurityManager.checkMemberAccess` method is deprecated. It has been error-prone to depend on the caller on a stack frame at depth 4. 
+    The JDK implementation no longer calls the `SecurityManager.checkMemberAccess` method to perform member access check; instead it calls the `SecurityManager.checkPermission` method.
+    Custom SecurityManager implementation that overrides the `checkMemberAccess` method may be impacted by this change as the overridden version will not be called.
+  ruleID: java-8-deprecate-security-manager-00001
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: checkMemberAccess
+- category: mandatory
+  customVariables: []
+  description: The checkTopLevelWindow, checkSystemClipboardAccess, and checkAwtEventQueueAccess methods under SecurityManager class are deprecated.
+  effort: 1
+  labels:
+  - konveyor.io/source=openjdk8-
+  - konveyor.io/source=openjdk
+  - konveyor.io/target=openjdk8+
+  - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
+  links:
+  - title: Compatibility Guide for JDK 8
+    url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html
+  message: |-
+    The `checkTopLevelWindow`, `checkSystemClipboardAccess`, and `checkAwtEventQueueAccess` methods under `SecurityManager` class are deprecated. 
+    
+    Instead use the `SecurityManager.checkPermission` method.
+  ruleID: java-8-deprecate-security-manager-00002
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: checkTopLevelWindow
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: checkSystemClipboardAccess
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: checkAwtEventQueueAccess

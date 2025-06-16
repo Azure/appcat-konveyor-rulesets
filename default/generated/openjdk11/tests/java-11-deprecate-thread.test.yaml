@@ -1,0 +1,13 @@
+rulesPath: ../java-11-deprecate-thread.yaml
+providers:
+- name: java
+  dataPath: ./data/java-11-deprecate-thread
+- name: builtin
+  dataPath: ./data/java-11-deprecate-thread
+tests:
+- ruleID: java-11-deprecate-thread-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The methods `Thread.destroy()` and `Thread.stop(Throwable)` have been removed.

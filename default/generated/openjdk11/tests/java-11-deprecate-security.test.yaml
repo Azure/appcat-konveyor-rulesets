@@ -1,0 +1,19 @@
+rulesPath: ../java-11-deprecate-security.yaml
+providers:
+- name: java
+  dataPath: ./data/java-11-deprecate-security
+- name: builtin
+  dataPath: ./data/java-11-deprecate-security
+tests:
+- ruleID: java-11-deprecate-security-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: Due to modularisation, the methods `java.lang.SecurityManager.checkAwtEventQueueAccess()`,
+- ruleID: java-11-deprecate-security-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The implementation of `java.lang.SecurityManager.checkMemberAccess(java.lang.Class, int)` relies on an assumption

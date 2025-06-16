@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="OpenLiberty Server">
+    <!-- Enable features -->
+    <featureManager>
+        <feature>servlet-4.0</feature>
+        <feature>jaxrs-2.1</feature>
+        <feature>cdi-2.0</feature>
+        <feature>jdbc-4.2</feature>
+        <feature>jpa-2.2</feature>
+    </featureManager>
+    
+    <!-- HTTP ports -->
+    <httpEndpoint id="defaultHttpEndpoint" host="*" httpPort="9080" httpsPort="9443" />
+    
+    <!-- Logging configuration -->
+    <logging traceSpecification="com.example.*=info"
+             logDirectory="${server.output.dir}/logs"
+             messageFormat="basic"
+             consoleFormat="basic"
+             consoleLogLevel="info"
+             copySystemStreams="true"
+             traceFormat="ENHANCED" />
+
+    <logging traceSpecification="com.example.*=info"
+             messageFormat="basic"
+             consoleFormat="basic"
+             consoleLogLevel="info"
+             copySystemStreams="true"
+             traceFormat="ENHANCED" />
+             
+    <!-- Application definition -->
+    <webApplication id="myApp" location="myApp.war" name="myApp" contextRoot="/" />
+</server> 
