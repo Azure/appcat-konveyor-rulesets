@@ -1,0 +1,13 @@
+rulesPath: ../19-dockerfile.yaml
+providers:
+- name: java
+  dataPath: ./data/19-dockerfile
+- name: builtin
+  dataPath: ./data/19-dockerfile
+tests:
+- ruleID: dockerfile-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: No Dockerfile was found in the project.
