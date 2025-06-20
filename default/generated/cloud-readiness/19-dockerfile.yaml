@@ -8,8 +8,8 @@
   - domain=cloud-native
   - category=docker-containerization
   links:
-  - title: Containerize a Java application
-    url: https://docs.docker.com/guides/java/containerize/
+  - title: Dockerizing a Java Application
+    url: https://www.baeldung.com/java-dockerize-app
   message: |-
     No Dockerfile was found in the project. This suggests the application may not yet be containerized. 
     Consider creating a Dockerfile to enable container-based replatforming to Azure services such as Azure Container Apps or AKS.
@@ -17,5 +17,5 @@
   when:
     or:
     - builtin.file:
-        pattern: Dockerfile
-    not: true
+        pattern: ^(Dockerfile|docker-compose\.yaml|docker-compose\.yml)$
+      not: true
