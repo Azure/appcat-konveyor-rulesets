@@ -1,0 +1,21 @@
+- category: mandatory
+  customVariables: []
+  description: No Dockerfile found
+  effort: 1
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=docker-containerization
+  links:
+  - title: Dockerizing a Java Application
+    url: https://www.baeldung.com/java-dockerize-app
+  message: |-
+    No Dockerfile was found in the project. This suggests the application may not yet be containerized. 
+    Consider creating a Dockerfile to enable container-based replatforming to Azure services such as Azure Container Apps or AKS.
+  ruleID: dockerfile-00000
+  when:
+    or:
+    - builtin.file:
+        pattern: ^(Dockerfile|docker-compose\.yaml|docker-compose\.yml)$
+      not: true
