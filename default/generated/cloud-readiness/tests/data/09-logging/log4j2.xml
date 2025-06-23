@@ -24,7 +24,7 @@
             </PatternLayout>
         </MemoryMappedFile>
 
-		        <RollingFile name="ROLLING"
+		<RollingFile name="ROLLING"
                      fileName="logs/app.log"
                      filePattern="logs/app-%d{yyyy-MM-dd}-%i.log.gz"
                      append="true">
@@ -53,8 +53,6 @@
         </RollingRandomAccessFile>
 
     </Appenders>
-
-
 
     <Loggers>
         <Root level="info">
