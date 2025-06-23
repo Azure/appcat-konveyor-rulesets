@@ -1,5 +1,24 @@
 - category: mandatory
   customVariables: []
+  description: Localhost Usage
+  effort: 7
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=local-resource-access
+  - source-category=localhost
+  - localhost
+  links: []
+  message: The app is trying to use localhost, please try to migrate
+    the resource to cloud
+  ruleID: localhost-http-00000
+  when:
+    builtin.filecontent:
+      filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(java|properties|jsp|jspf|tag|xml|txt|yaml)$
+      pattern: ((localhost)|(127\.0\.0\.1))+(:[0-9]+)?(/.*)?
+- category: mandatory
+  customVariables: []
   description: Local HTTP Calls
   effort: 7
   labels:
