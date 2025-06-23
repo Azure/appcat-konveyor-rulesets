@@ -88,12 +88,15 @@
   ruleID: logging-0002
   when:
     or:
+    # log4j 1.x: FileAppender, RollingFileAppender, DailyRollingFileAppender
+    # log4j 2.x: File, RandomAccessFile, MemoryMappedFile, RollingFile, RollingRandomAccessFile
+    # https://logging.apache.org/log4j/2.x/manual/appenders.html#file-appenders
     - builtin.filecontent:
         filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
-        pattern: (?i)\b(?:Daily)?Rolling?FileAppender\b|type\s*=\s*['"]?(?:Daily)?Rolling?File['"]?|<\/\s*(?:Daily)?Rolling?File\s*>
+        pattern: (?i)\b(?:Daily)?(Rolling)?(RandomAccess)?(MemoryMapped)?File(Appender)?\b
     - builtin.filecontent:
         filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
-        pattern: appender-ref ref=.FILE
+        pattern: (?i)\s*=\s*['"]?(?:org\.apache\.log4j\.)?(?:Daily)?(Rolling)?(RandomAccess)?(MemoryMapped)?File(Appender)?['"]?
 - category: potential
   customVariables: []
   description: Embedded library - Logstash
