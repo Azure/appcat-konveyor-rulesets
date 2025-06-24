@@ -42,4 +42,5 @@
   when:
     or:
     - builtin.filecontent:
+        filePattern: (/|\\).*\.java$
         pattern: com.sun.net.ssl.internal.ssl.Provider

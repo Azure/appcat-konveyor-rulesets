@@ -18,7 +18,8 @@
   when:
     or:
     - builtin.filecontent:
-        pattern: getProperty\("sun\.nio\.ch\.disableSystemWideOverlappingFileLockCheck"\)
+        filePattern: (/|\\).*\.java$
+        pattern: sun\.nio\.ch\.disableSystemWideOverlappingFileLockCheck
 - category: mandatory
   customVariables: []
   description: Removal of sun.locale.formatasdefault Property
@@ -39,4 +40,5 @@
   when:
     or:
     - builtin.filecontent:
-        pattern: getProperty\("sun\.locale\.formatasdefault"\)
+        filePattern: (/|\\).*\.java$
+        pattern: sun\.locale\.formatasdefault

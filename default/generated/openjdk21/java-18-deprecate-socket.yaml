@@ -19,6 +19,8 @@
   when:
     or:
     - builtin.filecontent:
-        pattern: getProperty\("jdk\.net\.usePlainSocketImpl"\)
+        filePattern: (/|\\).*\.java$
+        pattern: jdk\.net\.usePlainSocketImpl
     - builtin.filecontent:
-        pattern: getProperty\("jdk\.net\.usePlainDatagramSocketImpl"\)
+        filePattern: (/|\\).*\.java$
+        pattern: jdk\.net\.usePlainDatagramSocketImpl

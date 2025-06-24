@@ -96,4 +96,5 @@
         location: METHOD_CALL
         pattern: javax.security.auth.Subject.callAs
     - builtin.filecontent:
-        pattern: getProperty\("jdk\.security\.auth\.subject\.useTL"\)
+        filePattern: (/|\\).*\.java$
+        pattern: jdk\.security\.auth\.subject\.useTL

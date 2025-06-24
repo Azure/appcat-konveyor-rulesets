@@ -20,7 +20,8 @@
   when:
     or:
     - builtin.filecontent:
-        pattern: getProperty\("java\.compiler"\)
+        filePattern: (/|\\).*\.java$
+        pattern: java\.compiler
 - category: mandatory
   customVariables: []
   description: The java.lang.Compiler Class Has Been Removed
