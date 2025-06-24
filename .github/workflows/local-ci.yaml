@@ -30,6 +30,7 @@ jobs:
           podman cp ${ID}:/jdtls .
           mkdir rulesets static-report
           podman rm kantra-download
+          mvn --version
           RUN_LOCAL=1 ./kantra version
           RUN_LOCAL=1 ./kantra test ./default/generated --log-level 50 | tee output.log || true
           tail -n5 output.log > message.md
