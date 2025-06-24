@@ -13,12 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Java and Maven
-        uses: s4u/setup-maven-action@v1.18.0
-        with:
-          java-version: 17
-          java-distribution: microsoft
-          maven-version: 3.6.3 
+      # - name: Install Java and Maven
+      #   uses: s4u/setup-maven-action@v1.18.0
+      #   with:
+      #     java-version: 17
+      #     java-distribution: microsoft
+      #     maven-version: 3.6.3 
 
       - name: Run rule tests
         id: kantra-test
