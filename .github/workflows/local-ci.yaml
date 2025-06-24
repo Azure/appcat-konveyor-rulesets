@@ -23,7 +23,7 @@ jobs:
       - name: Run rule tests
         id: kantra-test
         run: |
-          ID=$(podman create --name kantra-download quay.io/konveyor/kantra:latest)
+          ID=$(podman create --name kantra-download quay.io/konveyor/kantra:v0.7.0)
           podman cp ${ID}:/usr/local/bin/kantra .
           podman cp ${ID}:/usr/local/etc/maven.default.index .
           podman cp ${ID}:/usr/bin/fernflower.jar .
