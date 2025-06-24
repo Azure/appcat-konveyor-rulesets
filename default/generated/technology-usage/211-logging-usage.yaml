@@ -346,10 +346,7 @@
         pattern: org.pmw.tinylog.writers.FileWriter
     - builtin.filecontent:
         filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
-        pattern: (?i)\b(?:Daily)?Rolling?FileAppender\b|type\s*=\s*['"]?(?:Daily)?Rolling?File['"]?|<\/\s*(?:Daily)?Rolling?File\s*>
-    - builtin.filecontent:
-        filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
-        pattern: appender-ref ref=.FILE
+        pattern: (?i)(?:Daily)?(?:Rolling)?(?:RandomAccess)?(?:MemoryMapped)?File(?:Appender)?
 - customVariables: []
   description: Logging to Socket Handler
   labels:
