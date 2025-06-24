@@ -17,8 +17,8 @@ jobs:
         uses: s4u/setup-maven-action@v1.18.0
         with:
           java-version: 17
-          java-distribution: temurin
-          maven-version: 3.9.0
+          java-distribution: microsoft
+          maven-version: 3.6.3 
 
       - name: Run rule tests
         id: kantra-test
@@ -30,6 +30,7 @@ jobs:
           podman cp ${ID}:/jdtls .
           mkdir rulesets static-report
           podman rm kantra-download
+          RUN_LOCAL=1 ./kantra version
           RUN_LOCAL=1 ./kantra test ./default/generated --log-level 50 | tee output.log || true
           tail -n5 output.log > message.md
           msg=$(grep -E '.*Rules Summary:' message.md -A1)
