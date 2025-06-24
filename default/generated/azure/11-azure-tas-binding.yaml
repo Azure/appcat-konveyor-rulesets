@@ -47,13 +47,6 @@
     or:
     # assignments
     - builtin.filecontent:
-        filePattern: ""
-        pattern: (?i)(?:^|\s|["'])VCAP_SERVICES\s*(?:=|:)
-    # references
-    - builtin.filecontent:
-        filePattern: ""
-        pattern: (?:\$VCAP_SERVICES|\${VCAP_SERVICES})
-    # get env
-    - builtin.filecontent:
-        filePattern: (/|\\).*\.java$
-        pattern: \.getenv\(\s*["']VCAP_SERVICES["']\s*\)
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(java|properties|yaml|yml)$
+        pattern: VCAP_SERVICES
+
