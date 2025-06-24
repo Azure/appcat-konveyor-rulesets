@@ -39,6 +39,6 @@
         name: org.springframework.cloud.spring-cloud-vault-config
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.{extensions}$
-        pattern: spring.cloud.vault
+        pattern: spring\.cloud\.vault
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)spring-cloud-vault([a-zA-Z0-9._-]*)\.jar$
