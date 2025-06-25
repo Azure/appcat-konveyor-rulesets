@@ -350,3 +350,66 @@
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
         pattern: (?i)r2dbc:pool:mariadb
+- category: potential
+  customVariables: []
+  description: Oracle database found
+  effort: 3
+  labels:
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=azure-readiness
+  - category=database-migration
+  - source-category=oracle
+  - database
+  - oracle
+  links:
+  - title: Azure Database for PostgreSQL documentation
+    url: https://learn.microsoft.com/azure/postgresql
+  - title: Oracle to PostgreSQL migration guide
+    url: https://learn.microsoft.com/azure/postgresql/migrate/how-to-migrate-oracle-ora2pg
+  - title: Azure Database Migration Service documentation
+    url: https://learn.microsoft.com/azure/dms
+  - title: Azure Monitor documentation
+    url: https://learn.microsoft.com/azure/azure-monitor
+  - title: Microsoft Defender for Cloud
+    url: https://learn.microsoft.com/azure/defender-for-cloud
+  message: |-
+    Oracle database found. To migrate a Java application that uses an Oracle database to Azure, you can follow these recommendations:
+
+     * **Migrate to Azure Database for PostgreSQL**: Azure recommends migrating Oracle databases to Azure Database for PostgreSQL Flexible Server as it provides better cost-effectiveness and performance. Create a managed PostgreSQL Flexible Server database in Azure and choose the appropriate pricing tier based on your application's requirements.
+
+     * **Use migration tools**: Utilize the Azure Database Migration Service (DMS) or third-party tools to migrate your Oracle database schema and data to PostgreSQL. Consider using ora2pg or similar tools to convert Oracle-specific SQL to PostgreSQL-compatible SQL.
+
+     * **Update database drivers and connection strings**: Replace Oracle JDBC drivers with PostgreSQL drivers in your Java application. Update connection strings from Oracle format (jdbc:oracle:thin:) to PostgreSQL format (jdbc:postgresql:).
+
+     * **Review and convert Oracle-specific code**: Identify and convert Oracle-specific SQL functions, stored procedures, and PL/SQL code to PostgreSQL equivalents. Pay attention to data types, syntax differences, and built-in functions.
+
+     * Enable **monitoring and diagnostics**: Utilize Azure Monitor to gain insights into the performance and health of your Java application and the underlying PostgreSQL database. Set up metrics, alerts, and log analytics to proactively identify and resolve issues.
+
+     * Implement **security** measures: Apply security best practices to protect your Java application and the PostgreSQL database. This includes implementing authentication and authorization mechanisms with passwordless connections and leveraging Microsoft Defender for Cloud for threat detection and vulnerability assessments.
+
+     * **Backup** your data: Azure Database for PostgreSQL provides automated backups by default. You can configure the retention period for backups based on your requirements. You can also enable geo-redundant backups, if needed, to enhance data durability and availability.
+  ruleID: azure-database-microsoft-oracle-07000
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: ([a-zA-Z0-9._-]*)ojdbc([a-zA-Z0-9._-]*)
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: com\.oracle\.database\.jdbc.*
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)ojdbc([a-zA-Z0-9._-]*)\.jar$
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)oracle([a-zA-Z0-9._-]*)\.jar$
+    - builtin.filecontent:
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
+        pattern: (?i)jdbc:oracle
+    - builtin.filecontent:
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
+        pattern: (?i)oracle\.jdbc
+    - builtin.filecontent:
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
+        pattern: (?i)OracleDriver
