@@ -22,8 +22,14 @@
         location: METHOD_CALL
         pattern: javax.xml.parsers.DocumentBuilder.parse
     - builtin.filecontent:
+        filePattern: (/|\\).*\.java$
         pattern: FileInputStream\("(.+)\.properties"\)
+        kind: plain
     - builtin.filecontent:
+        filePattern: (/|\\).*\.java$
         pattern: FileInputStream\("(.+)\.xml"\)
+        kind: plain
     - builtin.filecontent:
+        filePattern: (/|\\).*\.java$
         pattern: FileReader\("(.+)\.ini"\)
+        kind: plain

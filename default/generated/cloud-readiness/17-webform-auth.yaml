@@ -20,6 +20,8 @@
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.java$
         pattern: getParameter\("username"\)
+        kind: plain
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.java$
         pattern: getParameter\("password"\)
+        kind: plain
