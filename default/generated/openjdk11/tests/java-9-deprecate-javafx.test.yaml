@@ -9,5 +9,5 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 3
+      exactly: 2
       messageMatches: The JavaFX builder classes, which were previously deprecated in JDK 8
