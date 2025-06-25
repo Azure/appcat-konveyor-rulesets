@@ -399,6 +399,9 @@
         nameregex: ([a-zA-Z0-9._-]*)ojdbc([a-zA-Z0-9._-]*)
     - java.dependency:
         lowerbound: 0.0.0
+        nameregex: com\.oracle\.database\.r2dbc*
+    - java.dependency:
+        lowerbound: 0.0.0
         nameregex: com\.oracle\.database\.jdbc.*
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)ojdbc([a-zA-Z0-9._-]*)\.jar$
@@ -407,6 +410,12 @@
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
         pattern: (?i)jdbc:oracle
+    - builtin.filecontent:
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
+        pattern: (?i)r2dbc:oracle
+    - builtin.filecontent:
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
+        pattern: (?i)r2dbc:pool:oracle
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
         pattern: (?i)oracle\.jdbc
