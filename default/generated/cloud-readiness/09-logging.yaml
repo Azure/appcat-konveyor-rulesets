@@ -93,7 +93,7 @@
     # https://logging.apache.org/log4j/2.x/manual/appenders.html#file-appenders
     - builtin.filecontent:
         filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
-        pattern: (?i)(?:Daily)?(?:Rolling)?(?:RandomAccess)?(?:MemoryMapped)?File(?:Appender)?
+        pattern: (?i)\b(?:Daily)?(?:Rolling)?(?:RandomAccess)?(?:MemoryMapped)?File(?:Appender)?\b
 - category: potential
   customVariables: []
   description: Embedded library - Logstash
