@@ -41,3 +41,9 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: To migrate a Java application that uses a MariaDB database to Azure
+- ruleID: azure-database-microsoft-oracle-07000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Oracle database found. To migrate a Java application that uses an Oracle database to Azure

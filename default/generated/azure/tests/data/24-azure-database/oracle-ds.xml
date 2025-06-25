@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema">
+    <datasource jndi-name="java:jboss/datasources/OracleDS" pool-name="OracleDS">
+        <connection-url>jdbc:oracle:thin:@oracle-server:1521:ORCL</connection-url>
+        <driver>oracle</driver>
+        <driver-class>oracle.jdbc.OracleDriver</driver-class>
+        <pool>
+            <min-pool-size>5</min-pool-size>
+            <max-pool-size>50</max-pool-size>
+            <prefill>true</prefill>
+        </pool>
+        <security>
+            <user-name>dbuser</user-name>
+            <password>dbpassword</password>
+        </security>
+    </datasource>
+</datasources>
