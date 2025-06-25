@@ -399,7 +399,7 @@
         nameregex: ([a-zA-Z0-9._-]*)ojdbc([a-zA-Z0-9._-]*)
     - java.dependency:
         lowerbound: 0.0.0
-        nameregex: com\.oracle\.database\.r2dbc*
+        nameregex: com\.oracle\.database\.r2dbc.*
     - java.dependency:
         lowerbound: 0.0.0
         nameregex: com\.oracle\.database\.jdbc.*
