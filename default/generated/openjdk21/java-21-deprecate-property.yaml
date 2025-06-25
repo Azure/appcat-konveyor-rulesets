@@ -21,7 +21,7 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: java\.compiler
+        pattern: \bjava\.compiler\b
 - category: mandatory
   customVariables: []
   description: The java.lang.Compiler Class Has Been Removed

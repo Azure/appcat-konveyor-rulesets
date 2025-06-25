@@ -19,7 +19,7 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: sun\.nio\.cs\.map
+        pattern: \bsun\.nio\.cs\.map\b
 - category: mandatory
   customVariables: []
   description: Removal of netscape.javascript.JSObjectgetWindow Method

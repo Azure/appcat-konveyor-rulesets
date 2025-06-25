@@ -25,10 +25,10 @@
         pattern: java.io.File.getCanonicalFile
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: sun\.io\.useCanonCaches
+        pattern: \bsun\.io\.useCanonCaches\b
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: sun\.io\.useCanonPrefixCache
+        pattern: \bsun\.io\.useCanonPrefixCache\b
 - category: mandatory
   customVariables: []
   description: com.sun.nio.file.SensitivityWatchEventModifier Is Deprecated

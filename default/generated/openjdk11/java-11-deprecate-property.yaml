@@ -19,7 +19,7 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: sun\.nio\.ch\.disableSystemWideOverlappingFileLockCheck
+        pattern: \bsun\.nio\.ch\.disableSystemWideOverlappingFileLockCheck\b
 - category: mandatory
   customVariables: []
   description: Removal of sun.locale.formatasdefault Property
@@ -41,4 +41,4 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: sun\.locale\.formatasdefault
+        pattern: \bsun\.locale\.formatasdefault\b

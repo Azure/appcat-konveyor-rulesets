@@ -20,4 +20,4 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: impl\.prefix
+        pattern: \bimpl\.prefix\b

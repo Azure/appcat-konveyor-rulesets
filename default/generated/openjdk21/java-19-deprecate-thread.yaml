@@ -97,4 +97,4 @@
         pattern: javax.security.auth.Subject.callAs
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: jdk\.security\.auth\.subject\.useTL
+        pattern: \bjdk\.security\.auth\.subject\.useTL\b

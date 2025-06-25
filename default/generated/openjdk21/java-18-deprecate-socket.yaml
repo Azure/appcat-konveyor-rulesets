@@ -20,7 +20,7 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: jdk\.net\.usePlainSocketImpl
+        pattern: \bjdk\.net\.usePlainSocketImpl\b
     - builtin.filecontent:
         filePattern: (/|\\).*\.java$
-        pattern: jdk\.net\.usePlainDatagramSocketImpl
+        pattern: \bjdk\.net\.usePlainDatagramSocketImpl\b
