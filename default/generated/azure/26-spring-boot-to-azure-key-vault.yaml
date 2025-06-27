@@ -38,7 +38,7 @@
         lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-vault-config
     - builtin.filecontent:
-        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.{extensions}$
-        pattern: spring.cloud.vault
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
+        pattern: spring\.cloud\.vault
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)spring-cloud-vault([a-zA-Z0-9._-]*)\.jar$

@@ -58,10 +58,10 @@
         pattern: 'mongodb:'
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: mongodb.uri
+        pattern: mongodb\.uri
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: mongodb.username
+        pattern: mongodb\.username
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: mongodb.password
+        pattern: mongodb\.password

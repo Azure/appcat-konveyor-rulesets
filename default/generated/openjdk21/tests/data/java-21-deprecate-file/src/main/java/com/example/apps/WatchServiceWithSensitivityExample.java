@@ -47,8 +47,5 @@ public class WatchServiceWithSensitivityExample {
 
         String canonCaches = System.getProperty("sun.io.useCanonCaches");
         String canonPrefixCache = System.getProperty("sun.io.useCanonPrefixCache");
-
-        System.out.println("sun.io.useCanonCaches = " + canonCaches);
-        System.out.println("sun.io.useCanonPrefixCache = " + canonPrefixCache);
     }
 }

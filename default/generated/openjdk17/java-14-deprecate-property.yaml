@@ -18,7 +18,8 @@
   when:
     or:
     - builtin.filecontent:
-        pattern: getProperty\("sun\.nio\.cs\.map"\)
+        filePattern: (/|\\).*\.java$
+        pattern: \bsun\.nio\.cs\.map\b
 - category: mandatory
   customVariables: []
   description: Removal of netscape.javascript.JSObjectgetWindow Method

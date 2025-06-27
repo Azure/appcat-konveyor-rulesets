@@ -50,7 +50,7 @@
   when:
     builtin.filecontent:
       filePattern: (/|\\)application(-[a-zA-Z0-9]+)*?\.(properties|yml|yaml)$
-      pattern: spring.datasource
+      pattern: spring\.datasource
 - customVariables: []
   description: Spring logging properties detected
   labels:
@@ -64,7 +64,7 @@
   when:
     builtin.filecontent:
       filePattern: (/|\\)application(-[a-zA-Z0-9]+)*?\.(properties|yml|yaml)$
-      pattern: logging.level.org.springframework
+      pattern: logging\.level\.org\.springframework
 - customVariables: []
   description: Spring configuration properties annotation detected
   labels:
@@ -98,6 +98,6 @@
         name: org.springframework.cloud.spring-cloud-vault-config
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.{extensions}$
-        pattern: spring.cloud.vault
+        pattern: spring\.cloud\.vault
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)spring-cloud-vault([a-zA-Z0-9._-]*)\.jar$

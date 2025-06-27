@@ -24,9 +24,11 @@
         location: METHOD_CALL
         pattern: java.io.File.getCanonicalFile
     - builtin.filecontent:
-        pattern: getProperty\("sun\.io\.useCanonCaches"\)
+        filePattern: (/|\\).*\.java$
+        pattern: \bsun\.io\.useCanonCaches\b
     - builtin.filecontent:
-        pattern: getProperty\("sun\.io\.useCanonPrefixCache"\)
+        filePattern: (/|\\).*\.java$
+        pattern: \bsun\.io\.useCanonPrefixCache\b
 - category: mandatory
   customVariables: []
   description: com.sun.nio.file.SensitivityWatchEventModifier Is Deprecated

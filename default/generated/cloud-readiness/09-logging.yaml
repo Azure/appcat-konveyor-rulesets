@@ -94,9 +94,6 @@
     - builtin.filecontent:
         filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
         pattern: (?i)\b(?:Daily)?(?:Rolling)?(?:RandomAccess)?(?:MemoryMapped)?File(?:Appender)?\b
-    - builtin.filecontent:
-        filePattern: log(?:back|4j)([a-zA-Z0-9._-]*)\.(xml|properties)$
-        pattern: (?i)\s*=\s*['"]?(?:org\.apache\.log4j\.)?(?:Daily)?(?:Rolling)?(?:RandomAccess)?(?:MemoryMapped)?File(?:Appender)?['"]?
 - category: potential
   customVariables: []
   description: Embedded library - Logstash

@@ -208,7 +208,7 @@
     builtin.filecontent:
       filePattern: .*\.java
       pattern: \.lookup\(\s*["'][^"']*jms[^"']*["']\s*\)
-
+      kind: plain
 - category: mandatory
   customVariables: []
   description: Detect JMS API usage in code

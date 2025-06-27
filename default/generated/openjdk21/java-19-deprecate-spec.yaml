@@ -21,7 +21,9 @@
         location: CONSTRUCTOR_CALL
         pattern: java.security.spec.PSSParameterSpec*
     - builtin.filecontent:
-        pattern: PSSParameterSpec\.DEFAULT
+        filePattern: (/|\\).*\.java$
+        pattern: \bPSSParameterSpec\.DEFAULT\b
+        kind: plain
 - category: mandatory
   customVariables: []
   description: OAEPParameterSpec.DEFAULT Static Constant Is Deprecated
@@ -42,4 +44,6 @@
   when:
     or:
     - builtin.filecontent:
-        pattern: OAEPParameterSpec\.DEFAULT
+        filePattern: (/|\\).*\.java$
+        pattern: \bOAEPParameterSpec\.DEFAULT\b
+        kind: plain

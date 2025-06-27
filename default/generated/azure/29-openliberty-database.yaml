@@ -318,6 +318,7 @@
     builtin.filecontent:
       filePattern: .*\.java
       pattern: \.lookup\(\s*["'][^"']*jdbc[^"']*["']\s*\)
+      kind: plain
 - category: potential
   customVariables: []
   description: Detect OpenLiberty Oracle Data Source configurations
