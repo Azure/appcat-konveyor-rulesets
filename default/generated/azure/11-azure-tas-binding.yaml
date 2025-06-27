@@ -47,6 +47,6 @@
     or:
     # assignments
     - builtin.filecontent:
-        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(java|properties|yaml|yml)$
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(java|properties|yaml|yml)$
         pattern: \bVCAP_SERVICES\b
 

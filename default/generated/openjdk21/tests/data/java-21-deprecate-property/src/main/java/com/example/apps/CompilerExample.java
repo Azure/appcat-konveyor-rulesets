@@ -2,7 +2,6 @@ import java.lang.Compiler;
 public class CompilerExample {
     public static void main(String[] args) {
         String compiler = System.getProperty("java.compiler");
-        System.out.println("java.compiler = " + compiler);
 
         // Sample logic
         for (int i = 0; i < 1_000_000; i++) {
