@@ -57,7 +57,7 @@
         nameregex: ([a-zA-Z0-9._-]*)kafka([a-zA-Z0-9._-]*)
     - builtin.filecontent:
         filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
-        pattern: (?i)(?:kafka\.|bootstrap\.servers|bootstrap:\s*servers)
+        pattern: (?i)(?:\.kafka\.|bootstrap\.servers|bootstrap:\s*servers)
 - category: optional
   customVariables: []
   description: RabbitMQ connection string, username or password found in configuration
