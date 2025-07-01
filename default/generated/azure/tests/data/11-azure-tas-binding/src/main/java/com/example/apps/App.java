@@ -6,7 +6,10 @@ public class App {
 
     // Get the VCAP_SERVICES env var as a JSON string
     String vcapServices = System.getenv("VCAP_SERVICES");
-    
+    /**
+     * VCAP_SERVICES is a JSON string that contains service bindings.
+     */
+
     // Parse into a JSON object
     JSONObject json = new JSONObject(vcapServices);
     

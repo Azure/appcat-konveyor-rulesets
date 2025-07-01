@@ -13,17 +13,17 @@ public class ConfigLoader {
         // ❌ Parsing XML with DocumentBuilder (anti-pattern if relying on local config files)
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
-        Document xmlDoc = builder.parse(new FileInputStream("config.aaa"));  // <-- DETECT: javax.xml.parsers.DocumentBuilder.parse
+        Document xmlDoc = builder.parse(new FileInputStream("config.aaa"));  // <-- DETECT
 
         // ❌ Loading properties file from filesystem
         Properties props = new Properties();
-        FileInputStream propStream = new FileInputStream("app.properties");  // <-- DETECT: FileInputStream("*.properties")
+        FileInputStream propStream = new FileInputStream("app.properties");  // <-- DETECT
         props.load(propStream);
 
         // ❌ Reading another XML file directly
-        FileInputStream anotherXml = new FileInputStream("another-config.xml"); // <-- DETECT: FileInputStream("*.xml")
+        FileInputStream anotherXml = new FileInputStream("another-config.xml"); // <-- DETECT
 
         // ❌ Reading from an INI file (also platform-coupled config anti-pattern)
-        FileReader iniReader = new FileReader("config.ini");  // <-- DETECT: FileReader("*.ini")
+        FileReader iniReader = new FileReader("config.ini");  // <-- DETECT
     }
 }

@@ -18,6 +18,6 @@
   ruleID: java-8-deprecate-javafx-builder-00001
   when:
     or:
-    - builtin.filecontent:
-        filePattern: (/|\\).*\.java$
+    - java.referenced:
+        location: IMPORT
         pattern: javafx.scene.*Builder
