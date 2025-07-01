@@ -54,7 +54,7 @@ There are a few conventions that we follow when creating rules:
 
 #### Directory structure
 Rules can be found within the `default/generated` folder. Within this folder, rules are organized by target technology.
-**_Source_** and **_target_** technologies are the technologies to migrate **_to_** and **_from_**, respectively.
+**_Source_** and **_target_** technologies are the technologies to migrate **_from_** and **_to_**, respectively.
 
 Additionally, within each rules directory, a `test` directory should be created to place the rules's tests. Since each
 test needs data, a `data` directory must also be created inside `test`. For instance:
@@ -106,7 +106,7 @@ AppCAT currently exposes rules within the following target technologies. Please 
 
 #### Domain and Category
 
-AppCAT uses special labels `domain` and `category` for display purposes (note: `source-category` has been deprecated). Please assign each rule an appropriate domain and category to ensure proper classification and user experience.
+AppCAT uses special labels `domain` and `category` for display and organization purposes (note: `source-category` has been deprecated). Please assign each rule an appropriate domain and category to ensure proper classification and optimal user experience. Repository owners will review and finalize the domain and category assignments during the code review process.
 
 ### Submitting an Issue
 - Search existing issues to avoid duplicates.
@@ -125,10 +125,15 @@ AppCAT uses special labels `domain` and `category` for display purposes (note: `
 
 When contributing new rules, additional steps are required for integration with the AppCAT ecosystem:
 
+**For contributors with access to the Azure Java Migration Copilot VS Code Extension repository:**
 - Navigate to the [Azure Java Migration Copilot VS Code Extension repository](https://github.com/devdiv-azure-service-dmitryr/azure-java-migration-copilot-vscode-extension)
 - Add a rule entry in the [solution mapping](https://github.com/devdiv-azure-service-dmitryr/azure-java-migration-copilot-vscode-extension/blob/main/src/model/assess/solution-mapping.json) and link it to an existing chat type solution, or create a new solution with Chat type if needed. [Example PR](https://github.com/devdiv-azure-service-dmitryr/azure-java-migration-copilot-vscode-extension/pull/1760)
-- Create an issue in the repo with the new rule Information, and assign it to menghua. [Example Issue](https://github.com/devdiv-azure-service-dmitryr/azure-java-migration-copilot-vscode-extension/issues/1874)
+- Create an issue in the repo with the new rule information, and assign it to menghua. [Example Issue](https://github.com/devdiv-azure-service-dmitryr/azure-java-migration-copilot-vscode-extension/issues/1874)
 
+**For external contributors without Azure Java Migration Copilot VS Code Extension repository access:**
+- Create an issue in this ruleset repository with the label `integration-request`
+- Include the Rule ID(s) of your new rule(s) and any relevant integration requirements or preferences
+- Repository maintainers will handle the VS Code Extension integration process on your behalf
 
 #### Review Criteria
 All pull requests must meet these standards before merged:
