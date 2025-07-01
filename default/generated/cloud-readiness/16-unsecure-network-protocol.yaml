@@ -8,6 +8,7 @@
   - domain=cloud-native
   - category=remote-communication
   - source-category=secure-protocols
+  - containerization
   links:
   - title: Why HTTPS matters
     url: https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https

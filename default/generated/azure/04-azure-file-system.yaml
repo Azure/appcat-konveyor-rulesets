@@ -13,6 +13,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - file-system
+  - containerization
   links:
   - title: Relative path found in the application
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#determine-whether-and-how-the-file-system-is-used
@@ -64,6 +65,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - file-system
+  - containerization
   links:
   - title: Home path found in the application
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#determine-whether-and-how-the-file-system-is-used

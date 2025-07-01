@@ -25,6 +25,7 @@
   - source-category=mongodb
   - database
   - mongodb
+  - containerization
   links:
   - title: MongoDB connection string found in configuration file
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#databases

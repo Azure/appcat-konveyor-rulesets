@@ -8,6 +8,7 @@
   - konveyor.io/source
   - domain=cloud-native
   - category=docker-containerization
+  - containerization
   links:
   - title: Dockerizing a Java Application
     url: https://www.baeldung.com/java-dockerize-app

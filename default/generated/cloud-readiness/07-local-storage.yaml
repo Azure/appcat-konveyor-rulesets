@@ -9,6 +9,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -67,6 +68,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -112,6 +114,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -156,6 +159,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -200,6 +204,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links: []
   message: "When migrating an application that relies on the file system to Azure,
     it's important to consider the limitations of local storage in a cloud environment.\n
@@ -252,6 +257,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links: []
   message: "When migrating an application that relies on the file system to Azure,
     it's important to consider the limitations of local storage in a cloud environment.\n

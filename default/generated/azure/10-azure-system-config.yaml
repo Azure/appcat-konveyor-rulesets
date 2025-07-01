@@ -24,6 +24,7 @@
   - category=configuration-management
   - source-category=environment-variables
   - config
+  - containerization
   links:
   - title: Azure App Configuration documentation
     url: https://learn.microsoft.com/azure/azure-app-configuration
