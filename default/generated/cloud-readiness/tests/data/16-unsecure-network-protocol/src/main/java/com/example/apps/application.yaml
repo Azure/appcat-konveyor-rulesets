@@ -1,3 +1,6 @@
 # More unsecured usage (builtin.filecontent detection)
 external-api: "http://legacy-api.net/data"
 ftp-endpoint: "ftp://internal-server.net/resource"
+external-api-https: "https://legacy-api.net/data"
+url-ldap: ldap://ldap.example.com/dc=example,dc=com
+url-ldaps: ldaps://10.0.0.5:636/ou=users,dc=company,dc=com

@@ -36,3 +36,41 @@
     - java.referenced:
         location: IMPORT
         pattern: org.apache.http.impl.client.CloseableHttpClient
+- category: optional
+  customVariables: []
+  description: Avoid using hardcoded URLs (HTTP protocol) in source code
+  effort: 3
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=remote-communication
+  - source-category=hardcoded-urls
+  links: []
+  message: |-
+    This patterns verifies in source code and configuration files the presence of hardcoded URLs using the HTTP protocol (HTTP/HTTPS). This URL would need to be replaced by the new resource's URL during the Cloud migration, if any change occured.
+  ruleID: hardcoded-urls-00001
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(java|properties|yaml|yml)$
+        pattern: \bhttps?:\/\/(?:[^\s"\'>]+)
+- category: optional
+  customVariables: []
+  description: Avoid using hardcoded URLs (LDAP protocol) in source code
+  effort: 3
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=remote-communication
+  - source-category=hardcoded-urls
+  links: []
+  message: |-
+    This patterns verifies in source code and configuration files the presence of hardcoded URLs using the LDAP protocol (LDAP/LDAPS). This URL would need to be replaced by the new resource s URL during the Cloud migration, if any change occured.
+  ruleID: hardcoded-urls-00002
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(java|properties|yaml|yml)$
+        pattern: \bldaps?:\/\/(?:[^\s"'<>]+)

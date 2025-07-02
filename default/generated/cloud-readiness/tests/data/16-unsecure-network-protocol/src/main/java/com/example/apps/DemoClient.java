@@ -15,6 +15,10 @@ public class DemoClient {
         String endpoint = "http://insecure.example.com/api/data";
         String ftpResource = "ftp://fileserver.example.com/resource.txt";
 
+        String hhtpsEndpoint = "https://insecure.example.com/api/data";
+        String ldapEndpoint = "ldap://hostname";
+        String lkdapsEndpoint = "ldaps://host/org?cn,sn?base?(uid=admin)";
+
         System.out.println("Attempting to reach: " + endpoint);
         System.out.println("Fetching file from: " + ftpResource);
 
