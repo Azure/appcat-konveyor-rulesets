@@ -25,6 +25,7 @@
   - source-category=redis
   - cache
   - redis
+  - containerization
   links:
   - title: Connect Azure Cache for Redis to your application in Azure Container Apps
     url: https://learn.microsoft.com/azure/container-apps/services

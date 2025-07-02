@@ -26,6 +26,7 @@
   - source-category=kafka
   - message-queue
   - kafka
+  - containerization
   links:
   - title: Spring Boot app to Kafka on Confluent Cloud
     url: https://learn.microsoft.com/azure/service-connector/tutorial-java-spring-confluent-kafka
@@ -73,6 +74,7 @@
   - source-category=spring-amqp-rabbitmq
   - message-queue
   - RabbitMQ Client
+  - containerization
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -114,6 +116,7 @@
   - source-category=activemq-artemis
   - message-queue
   - ActiveMQ
+  - containerization
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging

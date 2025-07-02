@@ -8,6 +8,7 @@
   - domain=cloud-native
   - category=os-compatibility
   - ms-windows
+  - containerization
   links:
   - title: Working across Windows and Linux file systems
     url: https://learn.microsoft.com/windows/wsl/filesystems
@@ -39,6 +40,7 @@
   - domain=cloud-native
   - category=os-compatibility
   - ms-windows
+  - containerization
   links: []
   message: |-
     The application currently relies on a Dynamic-Link Library (DLL) that is specific to Microsoft Windows.
