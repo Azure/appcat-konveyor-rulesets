@@ -211,7 +211,8 @@
     - builtin.filecontent:
         filePattern: (/|\\)build\.gradle$
         pattern: spring-boot-starter-amqp
-    - builtin.file:
+    - builtin.filecontent:
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
         pattern: .*amqp.*
 - category: optional
   customVariables: []
