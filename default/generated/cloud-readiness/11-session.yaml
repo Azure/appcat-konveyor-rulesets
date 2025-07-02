@@ -11,18 +11,13 @@
   - source-category=http-session
   - clustering
   links:
-  - title: 'JBoss EAP: Clustering in Web Applications'
-    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.3/html/development_guide/clustering_in_web_applications
+
+  - title: Azure Cache for Redis Documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: 'Quickstart: Use Azure Cache for Redis in Java'
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis/cache-java-get-started
   - title: 'Twelve-Factor App: Processes'
     url: https://12factor.net/processes
-  - title: 'Getting Started with JBoss EAP for OpenShift Container Platform: Clustering'
-    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.3/html-single/getting_started_with_jboss_eap_for_openshift_container_platform/index#reference_clustering
-  - title: 'Twelve-Factor App: Backing services'
-    url: https://12factor.net/backing-services
-  - title: Running Data Grid on OpenShift
-    url: https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.0/html-single/running_data_grid_on_openshift/index
-  - title: 'JBoss EAP:  Externalize HTTP Sessions to Red Hat Data Grid'
-    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.3/html-single/configuration_guide/index#jdg_externalize_http_sessions
   message: "\n Session replication ensures that client sessions are not disrupted
     by node failure. Each node in the cluster shares information about ongoing sessions
     and can take over sessions if another node disappears. In a cloud environment,
