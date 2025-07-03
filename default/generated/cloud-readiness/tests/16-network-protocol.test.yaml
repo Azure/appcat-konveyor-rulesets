@@ -1,0 +1,25 @@
+rulesPath: ../16-network-protocol.yaml
+providers:
+- name: java
+  dataPath: ./data/16-network-protocol
+- name: builtin
+  dataPath: ./data/16-network-protocol
+tests:
+- ruleID: unsecure-network-protocol-00000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 9
+      messageMatches: Using secured protocols such as HTTPS and SFTP (over HTTP and FTP)
+- ruleID: hardcoded-urls-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 6
+      messageMatches: This patterns verifies in source code and configuration files the presence of hardcoded URLs using the HTTP protocol (HTTP/HTTPS).
+- ruleID: hardcoded-urls-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 6
+      messageMatches: This patterns verifies in source code and configuration files the presence of hardcoded URLs using the LDAP protocol (LDAP/LDAPS).
