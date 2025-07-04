@@ -1,9 +1,9 @@
-rulesPath: ../ejb.yaml
+rulesPath: ../0.yaml
 providers:
 - name: java
-  dataPath: ./data/ejb
+  dataPath: ./data/0
 - name: builtin
-  dataPath: ./data/ejb
+  dataPath: ./data/0
 tests:
 - ruleID: discover-ejb-configuration
   testCases:

@@ -89,6 +89,14 @@
     builtin.file:
       pattern: "build.gradle.kts"
   tag: ["Gradle Kotlin"]
+- ruleID: discover-ejb-configuration
+  description: "EJB XML Configuration"
+  labels:
+  - konveyor.io/include=always
+  tag: ["EJB XML"]
+  when:
+    builtin.xml:
+      xpath: "//*[local-name()='ejb-jar']"
 - ruleID: discover-spring-configuration
   description: "Spring XML Configuration"
   tag: ["Spring XML"]
