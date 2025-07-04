@@ -1,0 +1,7 @@
+<jboss:ejb-jar xmlns:jboss="http://www.jboss.com/xml/ns/javaee">
+    <jboss:enterprise-beans>
+        <jboss:session>
+            <jboss:ejb-name>MyBean</jboss:ejb-name>
+        </jboss:session>
+    </jboss:enterprise-beans>
+</jboss:ejb-jar>
