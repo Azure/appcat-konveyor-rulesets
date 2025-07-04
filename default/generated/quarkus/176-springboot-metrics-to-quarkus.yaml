@@ -19,20 +19,6 @@
       name: io.micrometer.micrometer-core
 - category: mandatory
   customVariables: []
-  description: Replace the Micrometer code with Microprofile Metrics code
-  effort: 5
-  labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
-  links: []
-  message: Replace the Micrometer code with Microprofile Metrics code
-  ruleID: springboot-metrics-to-quarkus-0200
-  when:
-    java.dependency:
-      lowerbound: 0.0.0
-      name: io.micrometer.micrometer-core
-- category: mandatory
-  customVariables: []
   description: Replace Spring Prometheus Metrics endpoint mapping
   effort: 1
   labels:

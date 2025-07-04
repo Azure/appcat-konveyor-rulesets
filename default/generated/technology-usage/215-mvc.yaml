@@ -527,18 +527,6 @@
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]*)trimou-core([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
-  description: Embedded library - Jetbrick Template
-  labels:
-  - konveyor.io/include=always
-  links: []
-  ruleID: mvc-05100
-  tag:
-  - Jetbrick Template
-  - Embedded library - Jetbrick Template
-  when:
-    builtin.file:
-      pattern: ^([a-zA-Z0-9._-]*)velocity([a-zA-Z0-9._-]*)\.jar$
-- customVariables: []
   description: Embedded library - Chunk Templates
   labels:
   - konveyor.io/include=always

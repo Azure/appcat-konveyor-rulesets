@@ -3189,42 +3189,6 @@
     - title: 'AbstractApplicationContextRunner API documentation'
       url: https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/context/runner/AbstractApplicationContextRunner.html
 
-
-# abstract class method invocation - not detected
-- ruleID: spring-boot-2.x-to-3.0-removals-01050
-  category: mandatory
-  effort: 4
-  labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
-  when:
-    java.referenced:
-      pattern: org.springframework.boot.test.context.runner.AbstractApplicationContextRunner
-      location: CONSTRUCTOR_CALL
-  description: AbstractApplicationContextRunner constructor with multiple parameters has been removed in Spring Boot 3.0
-  message: |
-    The constructor `AbstractApplicationContextRunner(Supplier<C>, boolean, List<ApplicationContextInitializer<? super C>>,
-    TestPropertyValues, TestPropertyValues, ClassLoader, ApplicationContext,
-    List<AbstractApplicationContextRunner.BeanRegistration<?>>, List<Configurations>)` has been removed in Spring Boot 3.0.
-    This constructor was previously used for creating application context runners with a variety of parameters.
-
-    To migrate, replace usages of the removed constructor with `AbstractApplicationContextRunner(Supplier, Function)`.
-    The new constructor simplifies the creation of application context runners, accepting fewer parameters. You will only need to
-    provide a `Supplier` for the application context and a `Function` to customize the application context.
-
-    Review your code to ensure that the configuration you previously set up is appropriately captured with the streamlined constructor:
-    - Identify and eliminate the parameters that are no longer required.
-    - Use a `Supplier` to provide the application context.
-    - Provide a `Function` for any additional customization.
-
-    This change aligns with the modernized Spring Boot practices, promoting cleaner and more maintainable test context setup.
-
-  links:
-    - title: 'Spring Boot 3.0 migration guide'
-      url: https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide#review-dependencies
-    - title: 'AbstractApplicationContextRunner API documentation'
-      url: https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/context/runner/AbstractApplicationContextRunner.html
-
 # abstract class method invocation - not detected
 - ruleID: spring-boot-2.x-to-3.0-removals-01060
   category: mandatory

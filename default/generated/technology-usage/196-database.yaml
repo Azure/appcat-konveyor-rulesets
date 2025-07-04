@@ -91,21 +91,6 @@
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]*)h2([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
-  description: Embedded Microsoft SQL Driver
-  labels:
-  - konveyor.io/include=always
-  links: []
-  ruleID: database-01805
-  tag:
-  - Microsoft SQL Driver
-  - Embedded Microsoft SQL Driver
-  when:
-    or:
-    - builtin.file:
-        pattern: ^sqljdbc([a-zA-Z0-9._-]*)\.jar$
-    - builtin.file:
-        pattern: ^mssql-jdbc([a-zA-Z0-9._-]*)\.jar$
-- customVariables: []
   description: Microsoft SQL database found
   labels:
   - konveyor.io/include=always
@@ -204,29 +189,6 @@
     builtin.file:
       pattern: ^([a-zA-Z0-9._-]*)mckoisqldb([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
-  description: Embedded MongoDB Client
-  labels:
-  - konveyor.io/include=always
-  links: []
-  ruleID: database-02400
-  tag:
-  - MongoDB Client
-  - Embedded MongoDB Client
-  when:
-    or:
-    - builtin.file:
-        pattern: ^([a-zA-Z0-9._-]*)mongodb([a-zA-Z0-9._-]*)\.jar$
-    - builtin.file:
-        pattern: ^([a-zA-Z0-9._-]*)casbah([a-zA-Z0-9._-]*)\.jar$
-    - builtin.file:
-        pattern: ^([a-zA-Z0-9._-]*)reactivemongo([a-zA-Z0-9._-]*)\.jar$
-    - builtin.file:
-        pattern: ^([a-zA-Z0-9._-]*)jongo([a-zA-Z0-9._-]*)\.jar$
-    - builtin.file:
-        pattern: ^([a-zA-Z0-9._-]*)gmongo([a-zA-Z0-9._-]*)\.jar$
-    - builtin.file:
-        pattern: ^([a-zA-Z0-9._-]*)rogue([a-zA-Z0-9._-]*)\.jar$
-- customVariables: []
   description: MongoDB database found
   labels:
   - konveyor.io/include=always
@@ -235,6 +197,7 @@
   ruleID: database-02500
   tag:
   - MongoDB Client
+  - Embedded MongoDB Client
   when:
     or:
     - builtin.file:
@@ -314,19 +277,6 @@
     - java.dependency:
         lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-data-jpa
-- customVariables: []
-  description: Embedded MariaDB Driver
-  labels:
-  - konveyor.io/include=always
-  links: []
-  message: The application embeds an MariaDB Driver library.
-  ruleID: database-03100
-  tag:
-  - MariaDB Driver
-  - Embedded MariaDB Driver
-  when:
-    builtin.file:
-      pattern: ^([a-zA-Z0-9._-]*)mariadb([a-zA-Z0-9._-]*)\.jar$
 - customVariables: []
   description: MariaDB database found
   labels:

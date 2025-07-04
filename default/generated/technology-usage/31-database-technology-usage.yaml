@@ -13,20 +13,6 @@
       location: ANNOTATION
       pattern: javax.annotation.sql.DataSourceDefinition
 - customVariables: []
-  description: JDBC XA datasources
-  labels:
-  - konveyor.io/include=always
-  links: []
-  ruleID: technology-usage-database-01001
-  tag:
-  - Store=JDBC XA datasources
-  - Database=JDBC XA datasources
-  - Java EE=JDBC XA datasources
-  when:
-    java.referenced:
-      location: ANNOTATION
-      pattern: javax.annotation.sql.DataSourceDefinition
-- customVariables: []
   description: JPA Entities
   labels:
   - konveyor.io/include=always

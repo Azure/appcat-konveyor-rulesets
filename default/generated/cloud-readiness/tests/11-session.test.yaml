@@ -5,13 +5,6 @@ providers:
 - name: builtin
   dataPath: ./data/11-session
 tests:
-- ruleID: session-00000
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: Session replication ensures that client sessions are not disrupted
-        by node failure
 - ruleID: session-00001
   testCases:
   - name: tc-1
