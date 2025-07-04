@@ -7,6 +7,8 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk19+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   links: []
   message: Several classes under `javax.swing.plaf.basic` have been deprecated in
     JDK 19 for removal in a future release.
