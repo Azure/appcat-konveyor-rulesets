@@ -7,6 +7,8 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - JavaFX
@@ -31,6 +33,8 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - fonts
@@ -62,6 +66,8 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - Oracle-JDK-resource-management
@@ -83,6 +89,8 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - JDK-color-management
@@ -108,6 +116,8 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - 2DLibrary
@@ -131,6 +141,8 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - crypto
@@ -190,6 +202,8 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   links:
