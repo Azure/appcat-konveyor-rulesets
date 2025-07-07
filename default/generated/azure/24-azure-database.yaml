@@ -422,3 +422,55 @@
     - builtin.filecontent:
         filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
         pattern: (?i)OracleDriver
+- category: optional
+  customVariables: []
+  description: Consider database reliability when migrating to Azure
+  effort: 3
+  labels:
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=azure-readiness
+  - category=database-migration
+  links: 
+  - title: Understanding timeout properties in the JDBC driver
+    url: https://learn.microsoft.com/sql/connect/jdbc/understand-timeouts
+  - title: Setting the connection properties
+    url: https://learn.microsoft.com/sql/connect/jdbc/setting-the-connection-properties
+  - title: Managing transaction size
+    url: https://learn.microsoft.com/sql/connect/jdbc/managing-transaction-size
+  - title: Retry pattern
+    url: https://learn.microsoft.com/azure/architecture/patterns/retry
+  - title: Implementing retries with exponential backoff
+    url: https://www.learntocodetogether.com/retry-exponential-back-off/
+  - title: Transient fault handling
+    url: https://learn.microsoft.com/azure/architecture/best-practices/transient-faults
+  message: |-
+    To migrate a Java application that uses a database to Azure, we recommend reviewing your architecture for cloud readiness and resilience. 
+    The following best practices will help improve reliability and avoid common pitfalls:
+
+    * **Review and configure all timeout settings** (e.g., connection, socket, and transaction timeouts) based on real-world load and runtime behavior. Avoid hardcoding fixed values without load testing or telemetry.
+    * **Avoid infinite or excessively long timeouts.** Instead, favor "fail fast" patterns with proper error handling and retries where appropriate.
+    * **Lower default transaction timeouts,** especially for frameworks using JTA or other global transaction coordinators, to prevent long blocking under failure or overload conditions.
+    * **Implement exponential backoff** in client retry logic instead of fixed retry intervals. This helps reduce pressure on the system during partial outages and speeds up recovery by minimizing cascading retry storms.
+    * **Do not assume the database will always be available.** Cloud environments are inherently distributed and failure-prone. Design your application for transient failures, throttling, and restarts.
+
+    Consider re-evaluating assumptions in your database interaction layer to ensure your application behaves reliably under cloud-native environments.
+  ruleID: database-reliability-01000
+  when:
+    or:
+    - builtin.hasTags:
+      - MySQL Driver
+    - builtin.hasTags:
+      - PostgreSQL Driver
+    - builtin.hasTags:
+      - Microsoft SQL Driver
+    - builtin.hasTags:
+      - MongoDB Client
+    - builtin.hasTags:
+      - Spring Data
+    - builtin.hasTags:
+      - Spring Data JPA
+    - builtin.hasTags:
+      - MariaDB Driver
