@@ -9,6 +9,7 @@
   - category=local-resource-access
   - source-category=localhost
   - localhost
+  - containerization
   links: []
   message: The app is trying to access local resource by HTTP, please try to migrate
     the resource to cloud
@@ -28,6 +29,7 @@
   - category=local-resource-access
   - source-category=localhost
   - localhost
+  - containerization
   links: []
   message: The app is trying to access local resource by JDBC, please try to migrate
     the resource to cloud
@@ -47,6 +49,7 @@
   - category=local-resource-access
   - source-category=localhost
   - localhost
+  - containerization
   links: []
   message: The app is trying to access local resource using WebSocket, please try
     to migrate the resource to cloud
@@ -66,6 +69,7 @@
   - category=local-resource-access
   - source-category=localhost
   - localhost
+  - containerization
   links: []
   message: The app is trying to use localhost, please try to migrate the resource to cloud
   ruleID: localhost-00004
