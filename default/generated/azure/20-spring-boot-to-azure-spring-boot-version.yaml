@@ -53,7 +53,7 @@
 - category: potential
   customVariables: []
   description: Spring Boot version out of support
-  effort: 2
+  effort: 3
   labels:
   - konveyor.io/source=springboot
   - konveyor.io/target=azure-appservice
@@ -93,7 +93,7 @@
 - category: potential
   customVariables: []
   description: Spring Boot version out of OSS support
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=springboot
   - konveyor.io/target=azure-appservice

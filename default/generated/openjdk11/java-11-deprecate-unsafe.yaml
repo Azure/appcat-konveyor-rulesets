@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of sun.misc.Unsafe.defineClass
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk11-
   - konveyor.io/source=openjdk
@@ -26,7 +26,7 @@
     nameOfCaptureGroup: methodName
     pattern: sun.misc.Unsafe.(?P<methodName>(getInt|putInt|getFloat|putFloat|getDouble|putDouble|getBoolean|putBoolean|getObject|putObject|getByte|putByte|getChar|putChar|getShort|putShort|getLong|putLong|fieldOffset|staticFieldBase|tryMonitorEnter|monitorEnter|monitorExit))?(.*)
   description: Methods in `sun.misc.Unsafe` have been removed
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk11-
   - konveyor.io/source=openjdk

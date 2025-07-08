@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: sun.reflect.Reflection class was deprecated in Java 9
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk9-
   - konveyor.io/source=openjdk
@@ -29,7 +29,7 @@
 - category: mandatory
   customVariables: []
   description: sun.reflect.CallerSensitive annotation was deprecated in Java 9
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk9-
   - konveyor.io/source=openjdk

@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: JavaFX builder classes have been removed
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk9-
   - konveyor.io/source=openjdk

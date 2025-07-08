@@ -39,7 +39,7 @@
       pattern: ((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}
       filePattern: ".*\\.(java|properties)"
   category: mandatory
-  effort: 1
+  effort: 3
   message: "When migrating environments, hard-coded IP addresses may need to be modified or eliminated."
 - ruleID: discover-properties-file
   description: "Properties file"
