@@ -48,6 +48,7 @@
   - category=remote-communication
   - source-category=java-socket
   - socket
+  - containerization
   links: []
   message: |-
     Java NIO channels provide bulk data transfer to and from NIO buffers. They can be synchronously and asynchronously read and written.
