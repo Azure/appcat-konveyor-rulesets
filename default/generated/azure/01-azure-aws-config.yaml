@@ -41,7 +41,7 @@
 - category: mandatory
   customVariables: []
   description: AWS region configuration
-  effort: 3
+  effort: 1
   labels:
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks

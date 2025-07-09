@@ -53,7 +53,7 @@
 - category: potential
   customVariables: []
   description: spring cloud version out of support
-  effort: 2
+  effort: 3
   labels:
   - konveyor.io/source=springboot
   - konveyor.io/target=azure-aks

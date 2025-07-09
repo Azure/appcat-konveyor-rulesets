@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Access to com.sun.corba.se Restricted Under SecurityManager 
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk8-
   - konveyor.io/source=openjdk

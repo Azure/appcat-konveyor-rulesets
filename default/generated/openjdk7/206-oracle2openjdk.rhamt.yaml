@@ -1,7 +1,7 @@
 - category: potential
   customVariables: []
   description: JavaFX usage
-  effort: 0
+  effort: 5
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
@@ -27,7 +27,7 @@
 - category: potential
   customVariables: []
   description: Fonts usage
-  effort: 0
+  effort: 1
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
@@ -60,7 +60,7 @@
 - category: potential
   customVariables: []
   description: Resource management API usage
-  effort: 0
+  effort: 3
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
@@ -83,7 +83,7 @@
 - category: potential
   customVariables: []
   description: Color management usage
-  effort: 0
+  effort: 1
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
@@ -110,7 +110,7 @@
     nameOfCaptureGroup: package
     pattern: java.awt.(?P<package>(geom|color|font|image|image\.renderable|print))?.*
   description: Java 2D library usage
-  effort: 0
+  effort: 1
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
@@ -135,7 +135,7 @@
 - category: potential
   customVariables: []
   description: 'Crypto: elliptic curves usage'
-  effort: 0
+  effort: 3
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk

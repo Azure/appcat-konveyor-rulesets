@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Detect OpenLiberty JMS ConnectionFactory configurations
-  effort: 4
+  effort: 5
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice
@@ -45,7 +45,7 @@
 - category: mandatory
   customVariables: []
   description: Detect JMS Resource injection in application code
-  effort: 4
+  effort: 5
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice
@@ -186,7 +186,7 @@
 - category: mandatory
   customVariables: []
   description: Detect JMS JNDI lookups in code
-  effort: 4
+  effort: 5
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice
@@ -212,7 +212,7 @@
 - category: mandatory
   customVariables: []
   description: Detect JMS API usage in code
-  effort: 4
+  effort: 5
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice

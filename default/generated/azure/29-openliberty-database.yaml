@@ -52,7 +52,7 @@
 - category: mandatory
   customVariables: []
   description: Detect EntityManager usage in application code
-  effort: 4
+  effort: 5
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice
@@ -92,7 +92,7 @@
 - category: potential
   customVariables: []
   description: Detect OpenLiberty Sybase Data Source configurations
-  effort: 6
+  effort: 7
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice
@@ -162,7 +162,7 @@
 - category: mandatory
   customVariables: []
   description: Detect application-level data source references
-  effort: 4
+  effort: 5
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice
@@ -205,7 +205,7 @@
 - category: mandatory
   customVariables: []
   description: Detect Resource annotations for database injection
-  effort: 4
+  effort: 5
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice
@@ -249,7 +249,7 @@
 - category: mandatory
   customVariables: []
   description: Detect persistence.xml configurations
-  effort: 4
+  effort: 5
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice
@@ -291,7 +291,7 @@
 - category: mandatory
   customVariables: []
   description: Detect JNDI lookup patterns for databases
-  effort: 4
+  effort: 5
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice

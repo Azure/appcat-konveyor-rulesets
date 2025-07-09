@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: The java.rmi.activation detected
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk11-
   - konveyor.io/source=openjdk
@@ -25,7 +25,7 @@
   customVariables: []
   description: The jdk.nashorn.api.scripting and jdk.nashorn.api.tree packages have
     been removed
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk11-
   - konveyor.io/source=openjdk

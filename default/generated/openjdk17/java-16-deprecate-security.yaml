@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecated the java.security.cert APIs That Represent DNs as Principal or String Objects
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk16-
   - konveyor.io/source=openjdk

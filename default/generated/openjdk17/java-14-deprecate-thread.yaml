@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Thread Suspend/Resume Are Deprecated for Removal
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk14-
   - konveyor.io/source=openjdk

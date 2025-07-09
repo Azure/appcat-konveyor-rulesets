@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: JavaFX has deprecated the Builder<T> interface and all classes that implemented it
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk8-
   - konveyor.io/source=openjdk
