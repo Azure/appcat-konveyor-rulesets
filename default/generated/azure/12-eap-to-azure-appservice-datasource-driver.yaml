@@ -18,8 +18,6 @@
   - title: Migrate JBoss EAP applications to JBoss EAP on Azure App Service - Set
       up data sources
     url: https://docs.microsoft.com/azure/developer/java/migration/migrate-jboss-eap-to-jboss-eap-on-azure-app-service#set-up-data-sources
-  - title: Datasource Management
-    url: https://access.redhat.com/documentation/red_hat_jboss_enterprise_application_platform/7.4/html/configuration_guide/datasource_management
   message: |-
     A datasource driver was found in a configuration file.
 

@@ -10,6 +10,7 @@
   - category=remote-communication
   - source-category=java-socket
   - socket
+  - containerization
   links: []
   message: |-
     Java sockets are internal endpoints of two-way communications. They are defined by an IP address, port, and protocol (TCP/UDP).
@@ -47,6 +48,7 @@
   - category=remote-communication
   - source-category=java-socket
   - socket
+  - containerization
   links: []
   message: |-
     Java NIO channels provide bulk data transfer to and from NIO buffers. They can be synchronously and asynchronously read and written.

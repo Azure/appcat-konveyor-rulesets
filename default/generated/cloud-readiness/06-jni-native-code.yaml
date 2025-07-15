@@ -9,6 +9,7 @@
   - category=java-native-code
   - source-category=jni-native-code
   - jni
+  - containerization
   links: 
   - title: Advanced example for containers
     url: https://docs.microsoft.com/en-us/visualstudio/install/advanced-build-tools-container?view=vs-2019
@@ -71,6 +72,7 @@
   - category=java-native-code
   - source-category=jni-native-code
   - jni
+  - containerization
   links: 
   - title: Advanced example for containers
     url: https://docs.microsoft.com/en-us/visualstudio/install/advanced-build-tools-container?view=vs-2019

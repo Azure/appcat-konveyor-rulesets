@@ -18,7 +18,8 @@
   when:
     or:
     - builtin.filecontent:
-        pattern: getProperty\("sun\.lang\.ClassLoader\.allowArraySyntax"\)
+        filePattern: (/|\\).*\.java$
+        pattern: \bsun\.lang\.ClassLoader\.allowArraySyntax\b
 - category: mandatory
   customVariables: []
   description: The system property sun.zip.disableMemoryMapping has been removed
@@ -39,4 +40,5 @@
   when:
     or:
     - builtin.filecontent:
-        pattern: getProperty\("sun\.zip\.disableMemoryMapping"\)
+        filePattern: (/|\\).*\.java$
+        pattern: \bsun\.zip\.disableMemoryMapping\b

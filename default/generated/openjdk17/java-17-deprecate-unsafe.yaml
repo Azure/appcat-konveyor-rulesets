@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of sun.misc.Unsafe::defineAnonymousClass
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk17-
   - konveyor.io/source=openjdk

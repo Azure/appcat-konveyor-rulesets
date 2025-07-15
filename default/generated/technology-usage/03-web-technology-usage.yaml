@@ -78,19 +78,6 @@
     builtin.hasTags:
     - JNLP
 - customVariables: []
-  description: JNLP
-  labels:
-  - konveyor.io/include=always
-  links: []
-  ruleID: technology-usage-web-01600
-  tag:
-  - View=JNLP
-  - Rich=JNLP
-  - Embedded=JNLP
-  when:
-    builtin.hasTags:
-    - JNLP
-- customVariables: []
   description: Swing
   labels:
   - konveyor.io/include=always

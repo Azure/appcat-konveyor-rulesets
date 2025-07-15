@@ -22,7 +22,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 30
       messageMatches: Found a logging configuration that logs to the file system
 - ruleID: logging-0003
   testCases:

@@ -23,7 +23,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecate JMX Subject Delegation and the JMXConnector.getMBeanServerConnection(Subject) Method for Removal
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk21-
   - konveyor.io/source=openjdk

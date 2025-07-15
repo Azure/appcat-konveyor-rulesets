@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecated sun.misc.Unsafe Methods That Return Offsets
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk18-
   - konveyor.io/source=openjdk

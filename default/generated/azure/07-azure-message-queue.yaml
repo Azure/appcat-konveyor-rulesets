@@ -51,9 +51,13 @@
     or password theft."
   ruleID: azure-message-queue-config-kafka-01000
   when:
-    builtin.filecontent:
-      filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
-      pattern: kafka\.(.*\.)?(properties\.)?(bootstrap[\.-]servers|sasl\.jaas\.config|schema\.registry)
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        nameregex: ([a-zA-Z0-9._-]*)kafka([a-zA-Z0-9._-]*)
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        pattern: (?i)(?:\.kafka\.|bootstrap\.servers|bootstrap:\s*servers)
 - category: optional
   customVariables: []
   description: RabbitMQ connection string, username or password found in configuration
@@ -204,7 +208,8 @@
     - builtin.filecontent:
         filePattern: (/|\\)build\.gradle$
         pattern: spring-boot-starter-amqp
-    - builtin.file:
+    - builtin.filecontent:
+        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
         pattern: .*amqp.*
 - category: optional
   customVariables: []

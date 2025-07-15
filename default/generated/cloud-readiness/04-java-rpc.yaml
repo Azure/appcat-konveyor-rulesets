@@ -10,10 +10,10 @@
   - category=jakartaee-to-azure
   - rpc
   links:
-  - title: JAX-RPC not supported in JBoss EAP 7
-    url: https://access.redhat.com/solutions/4030521
+  - title: Java to Azure migration strategy documentation
+    url: https://learn.microsoft.com/azure/developer/java/migration/
   message: |-
-    The Java API for XML-based RPC (JAX-RPC) was deprecated in Java EE 6 and is optional in Java EE 7. It is no longer available or supported in JBoss EAP 7.
+    The Java API for XML-based RPC (JAX-RPC) was deprecated in Java EE 6 and is optional in Java EE 7. It is no longer available or supported in modern Java platforms.
 
      Recommendation: Use JAX-WS, which is the current Java EE standard web services framework.
   ruleID: java-rpc-00000

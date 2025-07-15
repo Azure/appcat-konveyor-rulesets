@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Thread.suspend/resume Changed to Throw UnsupportedOperationException
-  effort: 1
+  effort: 5
   labels:
   - konveyor.io/source=openjdk20-
   - konveyor.io/source=openjdk
@@ -26,7 +26,7 @@
 - category: mandatory
   customVariables: []
   description: Thread.stop Changed to Throw UnsupportedOperationException
-  effort: 1
+  effort: 5
   labels:
   - konveyor.io/source=openjdk20-
   - konveyor.io/source=openjdk
@@ -48,7 +48,7 @@
 - category: mandatory
   customVariables: []
   description: ThreadDeath is deprecated for removal
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk20-
   - konveyor.io/source=openjdk

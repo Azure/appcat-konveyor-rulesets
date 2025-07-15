@@ -8,6 +8,7 @@
 #   - domain=cloud-native
 #   - category=os-compatibility
 #   - ms-windows
+#   - containerization
 #   links:
 #   - title: Working across Windows and Linux file systems
 #     url: https://learn.microsoft.com/windows/wsl/filesystems
@@ -27,8 +28,8 @@
 #   ruleID: os-specific-00001
 #   when:
 #     builtin.filecontent:
-#       filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(java|properties|jsp|jspf|tag|xml|txt)$
-#       pattern: (\W|\s|^)([a-zA-Z]\:|\\\\(\w+\.?)+)([\\\/][^\n\t]+)+
+#       filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(java|properties|xml|yaml|yml)$
+#       pattern: ^([a-zA-Z]:)([\\\/][^\n\t]+)+
 - category: mandatory
   customVariables: []
   description: Dynamic-Link Library (DLL)
@@ -39,6 +40,7 @@
   - domain=cloud-native
   - category=os-compatibility
   - ms-windows
+  - containerization
   links: []
   message: |-
     The application currently relies on a Dynamic-Link Library (DLL) that is specific to Microsoft Windows.

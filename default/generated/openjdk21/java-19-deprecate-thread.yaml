@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: java.lang.ThreadGroup Is Degraded
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk19-
   - konveyor.io/source=openjdk
@@ -96,4 +96,5 @@
         location: METHOD_CALL
         pattern: javax.security.auth.Subject.callAs
     - builtin.filecontent:
-        pattern: getProperty\("jdk\.security\.auth\.subject\.useTL"\)
+        filePattern: (/|\\).*\.java$
+        pattern: \bjdk\.security\.auth\.subject\.useTL\b
