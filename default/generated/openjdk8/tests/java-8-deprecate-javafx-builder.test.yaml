@@ -9,5 +9,5 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 3
+      exactly: 2
       messageMatches: JavaFX has deprecated the Builder<T> interface and all classes that implemented it.

@@ -46,7 +46,7 @@
 - category: mandatory
   customVariables: []
   description: Detect OpenLiberty Log File Location Configurations
-  effort: 2
+  effort: 3
   labels:
   - konveyor.io/source=java-ee
   - konveyor.io/target=azure-appservice

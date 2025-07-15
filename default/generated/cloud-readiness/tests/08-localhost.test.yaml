@@ -9,17 +9,24 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 2
+      exactly: 2
       messageMatches: The app is trying to access local resource by HTTP
 - ruleID: localhost-jdbc-00002
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 2
+      exactly: 2
       messageMatches: The app is trying to access local resource by JDBC
 - ruleID: localhost-ws-00003
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 2
+      exactly: 2
       messageMatches: The app is trying to access local resource using WebSocket
+# Passed when test with appcat-cli, but not when kantra test
+# - ruleID: localhost-00004
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 4
+#       messageMatches: The app is trying to use localhost

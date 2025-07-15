@@ -9,6 +9,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -67,6 +68,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -101,50 +103,51 @@
     java.referenced:
       location: CONSTRUCTOR_CALL
       pattern: java.net.(URL|URI)*
-# - category: mandatory
-#   customVariables: []
-#   description: File system - File path URL
-#   effort: 3
-#   labels:
-#   - konveyor.io/target=cloud-readiness
-#   - konveyor.io/source
-#   - domain=cloud-native
-#   - category=file-system-management
-#   - source-category=local-file-system
-#   - storage
-#   links:
-#   - title: Azure Storage documentation
-#     url: https://learn.microsoft.com/azure/storage
-#   - title: Create an Azure Files volume mount in Azure Container Apps
-#     url: https://learn.microsoft.com/azure/container-apps/storage-mounts-azure-files
-#   - title: Use storage mounts in Azure Container Apps
-#     url: https://learn.microsoft.com/azure/container-apps/storage-mounts
-#   - title: Azure Monitor Logs overview
-#     url: https://learn.microsoft.com/azure/azure-monitor/logs/data-platform-logs
-#   - title: Azure Cache for Redis documentation
-#     url: https://learn.microsoft.com/azure/azure-cache-for-redis
-#   - title: Azure App Configuration documentation
-#     url: https://learn.microsoft.com/azure/azure-app-configuration
-#   message: |-
-#     Found absolute file path in the code. When migrating an application that relies on the file system to Azure, it's important to consider the limitations of local storage in a cloud environment.
-#      An application running inside a container could lose access to a file in local storage.
+- category: mandatory
+  customVariables: []
+  description: File system - File path URL
+  effort: 3
+  labels:
+  - konveyor.io/target=cloud-readiness
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=file-system-management
+  - source-category=local-file-system
+  - storage
+  - containerization
+  links:
+  - title: Azure Storage documentation
+    url: https://learn.microsoft.com/azure/storage
+  - title: Create an Azure Files volume mount in Azure Container Apps
+    url: https://learn.microsoft.com/azure/container-apps/storage-mounts-azure-files
+  - title: Use storage mounts in Azure Container Apps
+    url: https://learn.microsoft.com/azure/container-apps/storage-mounts
+  - title: Azure Monitor Logs overview
+    url: https://learn.microsoft.com/azure/azure-monitor/logs/data-platform-logs
+  - title: Azure Cache for Redis documentation
+    url: https://learn.microsoft.com/azure/azure-cache-for-redis
+  - title: Azure App Configuration documentation
+    url: https://learn.microsoft.com/azure/azure-app-configuration
+  message: |-
+    Found absolute file path in the code. When migrating an application that relies on the file system to Azure, it's important to consider the limitations of local storage in a cloud environment.
+     An application running inside a container could lose access to a file in local storage.
 
-#      * **Identify the usage of the file system**: Find any instances where your services write to and/or read from the local file system. Identify where short-term/temporary files are written and read, which require ephemeral storage, and where long-lived files are written and read, which require persistent storage. Ephemeral storage only persists until the cloud environment is restarted, while persistent storage is required for data that needs to persist across restarts.
+     * **Identify the usage of the file system**: Find any instances where your services write to and/or read from the local file system. Identify where short-term/temporary files are written and read, which require ephemeral storage, and where long-lived files are written and read, which require persistent storage. Ephemeral storage only persists until the cloud environment is restarted, while persistent storage is required for data that needs to persist across restarts.
 
-#      The following recommendations depend on the function of the file in local storage:
+     The following recommendations depend on the function of the file in local storage:
 
-#      * **Reading/writing files**: If persistent storage is needed, consider using Azure File Share or Azure Blob Storage. Mounting an Azure File Share allows your application to access files via the mount location. Using Azure Blob Storage provides a scalable object store for data objects, such as text or binary files, accessible directly in your code.
+     * **Reading/writing files**: If persistent storage is needed, consider using Azure File Share or Azure Blob Storage. Mounting an Azure File Share allows your application to access files via the mount location. Using Azure Blob Storage provides a scalable object store for data objects, such as text or binary files, accessible directly in your code.
 
-#      * **Logging**: Log to standard output and use Azure Monitor to collect and analyze the logs.
+     * **Logging**: Log to standard output and use Azure Monitor to collect and analyze the logs.
 
-#      * **Caching**: Use Azure Cache for Redis as a cache backing service.
+     * **Caching**: Use Azure Cache for Redis as a cache backing service.
 
-#      * **Configuration**: Store configuration in Azure App Configuration instead of using the file system. Also store configuration settings in environment variables so that they can be updated without code changes.
-#   ruleID: local-storage-00003
-#   when:
-#     builtin.filecontent:
-#       filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(java|properties|jsp|jspf|tag|xml|txt)$
-#       pattern: (\W|\s|^)([a-zA-Z]\:|\\\\(\w+\.?)+)([\\\/][^\n\t]+)+
+     * **Configuration**: Store configuration in Azure App Configuration instead of using the file system. Also store configuration settings in environment variables so that they can be updated without code changes.
+  ruleID: local-storage-00003
+  when:
+    builtin.filecontent:
+      filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(java|properties|yaml|yml|xml)$
+      pattern: ^([a-zA-Z]:)([\\\/][^\n\t]+)+
 - category: mandatory
   customVariables: []
   description: File system - 'file://' scheme
@@ -156,6 +159,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -200,6 +204,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links: []
   message: "When migrating an application that relies on the file system to Azure,
     it's important to consider the limitations of local storage in a cloud environment.\n
@@ -252,6 +257,7 @@
   - category=file-system-management
   - source-category=local-file-system
   - storage
+  - containerization
   links: []
   message: "When migrating an application that relies on the file system to Azure,
     it's important to consider the limitations of local storage in a cloud environment.\n

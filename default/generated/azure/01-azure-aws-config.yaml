@@ -37,11 +37,11 @@
         pattern: aws_secret_access_key
     - builtin.filecontent:
         filePattern: ""
-        pattern: aws.credentials
+        pattern: aws\.credentials
 - category: mandatory
   customVariables: []
   description: AWS region configuration
-  effort: 3
+  effort: 1
   labels:
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
@@ -65,7 +65,7 @@
     or:
     - builtin.filecontent:
         filePattern: ""
-        pattern: aws.region
+        pattern: aws\.region
     - builtin.filecontent:
         filePattern: ""
         pattern: AWS_REGION
@@ -119,7 +119,7 @@
     - builtin.filecontent:
         filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
         # currently no support multi-lines regex matching for yaml, so only match "s3:"
-        pattern: (aws.s3|s3:\s*)
+        pattern: (aws\.s3|s3:\s*)
     - java.referenced:
         location: PACKAGE
         pattern: com.amazonaws.services.s3*
@@ -363,7 +363,7 @@
   when:
     builtin.filecontent:
       filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
-      pattern: (aws.sqs|sqs:\s*)
+      pattern: (aws\.sqs|sqs:\s*)
 - category: mandatory
   customVariables: []
   description: AWS Secrets Manager configuration
@@ -399,7 +399,7 @@
     or:
     - builtin.filecontent:
         filePattern: ""
-        pattern: aws.secretsmanager
+        pattern: aws\.secretsmanager
     - builtin.filecontent:
         filePattern: ""
         pattern: aws-secretsmanager

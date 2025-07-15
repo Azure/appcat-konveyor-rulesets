@@ -1,12 +1,14 @@
 - category: potential
   customVariables: []
   description: JavaFX usage
-  effort: 0
+  effort: 5
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - JavaFX
@@ -25,12 +27,14 @@
 - category: potential
   customVariables: []
   description: Fonts usage
-  effort: 0
+  effort: 1
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - fonts
@@ -56,12 +60,14 @@
 - category: potential
   customVariables: []
   description: Resource management API usage
-  effort: 0
+  effort: 3
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - Oracle-JDK-resource-management
@@ -77,12 +83,14 @@
 - category: potential
   customVariables: []
   description: Color management usage
-  effort: 0
+  effort: 1
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - JDK-color-management
@@ -102,12 +110,14 @@
     nameOfCaptureGroup: package
     pattern: java.awt.(?P<package>(geom|color|font|image|image\.renderable|print))?.*
   description: Java 2D library usage
-  effort: 0
+  effort: 1
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - 2DLibrary
@@ -125,12 +135,14 @@
 - category: potential
   customVariables: []
   description: 'Crypto: elliptic curves usage'
-  effort: 0
+  effort: 3
   labels:
   - konveyor.io/source=oraclejdk7+
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   - crypto
@@ -190,6 +202,8 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
+  - domain=java-modernization
+  - category=deprecated-apis
   - oracle-jdk
   - jdk
   links:

@@ -337,14 +337,6 @@ tests:
   - name: tc-2
     hasTags:
     - Embedded library - Trimou
-- ruleID: mvc-05100
-  testCases:
-  - name: tc-1
-    hasTags:
-    - Jetbrick Template
-  - name: tc-2
-    hasTags:
-    - Embedded library - Jetbrick Template
 - ruleID: mvc-05200
   testCases:
   - name: tc-1

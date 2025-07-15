@@ -1,0 +1,9 @@
+<config>
+    <ejb-jar>
+        <enterprise-beans>
+            <session>
+                aaa
+            </session>
+        </enterprise-beans>
+    </ejb-jar>
+</config>

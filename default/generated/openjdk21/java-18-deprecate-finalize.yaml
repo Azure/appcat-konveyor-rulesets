@@ -32,7 +32,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecated Finalization for Removal
-  effort: 1
+  effort: 3
   labels:
   - konveyor.io/source=openjdk18-
   - konveyor.io/source=openjdk

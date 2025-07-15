@@ -1,0 +1,12 @@
+rulesPath: ../0.yaml
+providers:
+- name: java
+  dataPath: ./data/0
+- name: builtin
+  dataPath: ./data/0
+tests:
+- ruleID: discover-ejb-configuration
+  testCases:
+  - name: tc-1
+    hasTags:
+    - EJB XML

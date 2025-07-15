@@ -1,0 +1,7 @@
+<ejb-jar>
+    <enterprise-beans>
+        <session>
+            <ejb-name>ExampleBean</ejb-name>
+        </session>
+    </enterprise-beans>
+</ejb-jar>
