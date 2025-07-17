@@ -10,7 +10,8 @@
   - ant
   links: []
   message: |-
-    Ant build tool detected in the project. It is recommended to migrate this project to **Maven** to take advantage of:
+    Ant build tool detected in the project. It lacks standard conventions and dependency management, making it less suitable for modern cloud-native development and CI/CD practices.
+    It is recommended to migrate this project to **Maven** to take advantage of:
     - Convention-over-configuration build structure
     - Robust dependency management via Maven Central
     - Better integration with modern IDEs, CI/CD pipelines, and cloud tools
