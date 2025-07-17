@@ -1,0 +1,57 @@
+- category: mandatory
+  customVariables: []
+  description: Ant build tool found
+  effort: 3
+  labels:
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=cloud-native
+  - category=build-tool
+  - ant
+  links: []
+  message: |-
+    Ant build tool detected in the project. Consider migrating to a modern build system like Maven or Gradle for better compatibility with Azure-native tooling and continuous integration support.
+  ruleID: ant-build-tool-00001
+  when:
+    or:
+    - builtin.file:
+        pattern: ^build\.xml$
+- category: mandatory
+  customVariables: []
+  description: Eclipse project found
+  effort: 3
+  labels:
+    - konveyor.io/target=azure-aks
+    - konveyor.io/target=azure-container-apps
+    - konveyor.io/source
+    - domain=cloud-native
+    - category=build-tool
+    - eclipse
+  links: []
+  message: |-
+    Eclipse project detected. Consider migrating the build system to a standard, portable one like Maven or Gradle for better cloud readiness and CI/CD automation.
+  ruleID: eclipse-00002
+  when:
+    # Due to jdtls during AppCAT, we cannot directly use .project or .classpath to identify Eclipse
+    # Here we detect by identifying: extra non-jdtls features AND no jdtls comments
+    and:
+    - or:
+      - builtin.file:
+          pattern: org\.eclipse\.wst\..*
+      - builtin.file:
+          pattern: org\.eclipse\.jst.*\.prefs
+      - builtin.filecontent:
+          pattern: <name>org\.eclipse\.wst\..*</name>
+          filePattern: \.project
+      - builtin.filecontent:
+          pattern: <nature>org\.eclipse\.wst\..*</nature>
+          filePattern: \.project
+      - builtin.filecontent:
+          pattern: <nature>org\.eclipse\.jem\.workbench\.JavaEMFNature</nature>
+          filePattern: \.project
+    - builtin.filecontent:
+        # Default comment created by jdtls in Gradle project
+        pattern: <comment>Project .* created by Buildship\.</comment>
+        filePattern: \.project
+      not: true
