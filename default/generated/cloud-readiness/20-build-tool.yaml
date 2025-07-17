@@ -3,17 +3,17 @@
   description: Ant build tool found
   effort: 3
   labels:
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - konveyor.io/target=cloud-readiness
   - konveyor.io/source
   - domain=cloud-native
   - category=build-tool
   - ant
-  links:
-  - title: Converting an Ant-Based Java Project to Maven
-    url: https://medium.com/@AlexanderObregon/converting-an-ant-based-java-project-to-maven-a-step-by-step-guide-864f14ad6bbf
+  links: []
   message: |-
-    Ant build tool detected in the project. Consider migrating to a modern build system like Maven or Gradle for better compatibility with Azure-native tooling and continuous integration support.
+    Ant build tool detected in the project. It is recommended to migrate this project to **Maven** to take advantage of:
+    - Convention-over-configuration build structure
+    - Robust dependency management via Maven Central
+    - Better integration with modern IDEs, CI/CD pipelines, and cloud tools
   ruleID: ant-build-tool-00001
   when:
     or:
@@ -24,17 +24,15 @@
   description: Eclipse project found
   effort: 3
   labels:
-    - konveyor.io/target=azure-aks
-    - konveyor.io/target=azure-container-apps
+    - konveyor.io/target=cloud-readiness
     - konveyor.io/source
     - domain=cloud-native
     - category=build-tool
     - eclipse
-  links:
-  - title: Converting Existing Eclipse Project to a Maven Project
-    url: https://medium.com/@theinnerpeace.me/converting-existing-eclipse-project-to-a-maven-project-52f9dbd1abfc
+  links: []
   message: |-
-    Eclipse project detected. Consider migrating the build system to a standard, portable one like Maven or Gradle for better cloud readiness and CI/CD automation.
+    Eclipse project detected. This project appears to use Eclipse-specific configurations, such as WTP or JEM natures, which can make build and deployment less portable in cloud environments.
+    Ii's recommended to migrate the project to a standard build tool like **Maven** for improved portability, reproducibility, and CI/CD automation.
   ruleID: eclipse-00002
   when:
     # Due to jdtls during AppCAT, we cannot directly use .project or .classpath to identify Eclipse
