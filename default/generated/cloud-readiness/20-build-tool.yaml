@@ -1,4 +1,4 @@
-- category: mandatory
+- category: optional
   customVariables: []
   description: Ant build tool found
   effort: 3
@@ -20,7 +20,7 @@
     or:
     - builtin.file:
         pattern: ^build\.xml$
-- category: mandatory
+- category: optional
   customVariables: []
   description: Eclipse project found
   effort: 3
