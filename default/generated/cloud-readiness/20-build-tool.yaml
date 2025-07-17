@@ -9,7 +9,9 @@
   - domain=cloud-native
   - category=build-tool
   - ant
-  links: []
+  links:
+  - title: Converting an Ant-Based Java Project to Maven
+    url: https://medium.com/@AlexanderObregon/converting-an-ant-based-java-project-to-maven-a-step-by-step-guide-864f14ad6bbf
   message: |-
     Ant build tool detected in the project. Consider migrating to a modern build system like Maven or Gradle for better compatibility with Azure-native tooling and continuous integration support.
   ruleID: ant-build-tool-00001
@@ -28,7 +30,9 @@
     - domain=cloud-native
     - category=build-tool
     - eclipse
-  links: []
+  links:
+  - title: Converting Existing Eclipse Project to a Maven Project
+    url: https://medium.com/@theinnerpeace.me/converting-existing-eclipse-project-to-a-maven-project-52f9dbd1abfc
   message: |-
     Eclipse project detected. Consider migrating the build system to a standard, portable one like Maven or Gradle for better cloud readiness and CI/CD automation.
   ruleID: eclipse-00002
