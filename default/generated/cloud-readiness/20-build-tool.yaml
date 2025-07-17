@@ -5,7 +5,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=java-modernization
   - category=build-tool
   - ant
   links: []
@@ -27,7 +27,7 @@
   labels:
     - konveyor.io/target=cloud-readiness
     - konveyor.io/source
-    - domain=cloud-native
+    - domain=java-modernization
     - category=build-tool
     - eclipse
   links: []
