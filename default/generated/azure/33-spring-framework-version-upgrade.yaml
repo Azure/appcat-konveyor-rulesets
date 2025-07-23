@@ -26,7 +26,7 @@
   ruleID: spring-framework-version-01000
   when:
     java.dependency:
-      nameregex: org\.springframework\.spring-.*
+      nameregex: ^org\.springframework\.spring-.*
       upperbound: "6.1.21"
 
 - category: potential
@@ -58,6 +58,6 @@
   when:
     and:
     - java.dependency:
-        nameregex: org\.springframework\.security\.spring-.*
+        nameregex: ^org\.springframework\.security\.spring-.*
         upperbound: "6.1.9"
 
