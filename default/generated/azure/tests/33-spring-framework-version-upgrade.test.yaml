@@ -1,0 +1,20 @@
+rulesPath: ../33-spring-framework-version-upgrade.yaml
+providers:
+- name: java
+  dataPath: ./data/33-spring-framework-version-upgrade
+- name: builtin
+  dataPath: ./data/33-spring-framework-version-upgrade
+tests: []
+# Passed in AppCAT CLI, but not in kantra test
+# - ruleID: spring-framework-version-01000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 1
+#       messageMatches: Your application is using the Spring Framework version out of support. 
+# - ruleID: spring-framework-version-02000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 1
+#       messageMatches: Your application is using the Spring Security version out of support. 
