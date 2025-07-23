@@ -27,7 +27,7 @@
   when:
     or:
     - java.dependency:
-        nameregex: javax\..*
+        nameregex: ^javax\..*
     - java.dependency:
-        nameregex: jakarta\.platform\..*
+        nameregex: ^jakarta\.platform\..*
         upperbound: "10.0.0"
