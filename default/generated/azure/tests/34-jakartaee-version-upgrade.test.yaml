@@ -1,0 +1,14 @@
+rulesPath: ../34-jakartaee-version-upgrade.yaml
+providers:
+- name: java
+  dataPath: ./data/34-jakartaee-version-upgrade
+- name: builtin
+  dataPath: ./data/34-jakartaee-version-upgrade
+tests: []
+# Passed in AppCAT CLI, but not in kantra test
+# - ruleID: jakarta-ee-version-01000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 2
+#       messageMatches: Your application is using a Jakarta EE version lower than 10.0.0.
