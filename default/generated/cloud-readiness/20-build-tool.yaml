@@ -7,7 +7,7 @@
   - konveyor.io/source
   - domain=java-modernization
   - category=build-tool
-  - ant
+  - source-category=ant
   links: []
   message: |-
     Ant build tool detected in the project. It lacks standard conventions and dependency management, making it less suitable for modern cloud-native development and CI/CD practices.
@@ -29,7 +29,7 @@
     - konveyor.io/source
     - domain=java-modernization
     - category=build-tool
-    - eclipse
+    - source-category=eclipse
   links: []
   message: |-
     Eclipse project detected. This project appears to use Eclipse-specific configurations, such as WTP or JEM natures, which can make build and deployment less portable in cloud environments.
