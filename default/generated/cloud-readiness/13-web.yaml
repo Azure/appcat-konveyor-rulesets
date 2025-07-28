@@ -5,9 +5,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
-  - category=java-client-app
-  - source-category=javax-swing
+  - domain=cloud-readiness
+  - category=desktop-gui-migration
   links:
   - title: Azure Container Registry documentation
     url: https://learn.microsoft.com/azure/container-registry
@@ -39,9 +38,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
-  - category=java-client-app
-  - source-category=javafx
+  - domain=cloud-readiness
+  - category=desktop-gui-migration
   links:
   - title: Azure Container Registry documentation
     url: https://learn.microsoft.com/azure/container-registry

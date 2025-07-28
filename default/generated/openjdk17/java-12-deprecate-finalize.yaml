@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk12+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Removal of finalize Methods from FileInputStream and FileOutputStream
@@ -34,7 +34,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk12+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Removal of finalize Method in java.util.ZipFile/Inflator/Deflator

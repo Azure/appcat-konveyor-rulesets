@@ -5,9 +5,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=java-native-code
-  - source-category=jni-native-code
   - jni
   - containerization
   links: 
@@ -68,9 +67,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=java-native-code
-  - source-category=jni-native-code
   - jni
   - containerization
   links: 

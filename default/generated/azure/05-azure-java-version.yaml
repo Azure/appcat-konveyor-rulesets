@@ -7,7 +7,7 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=java-version-upgrade
   - version
   links: []
@@ -40,7 +40,7 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=java-version-upgrade
   - version
   links: []

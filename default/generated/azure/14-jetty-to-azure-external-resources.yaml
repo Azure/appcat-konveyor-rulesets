@@ -20,9 +20,8 @@
 #   - konveyor.io/target=azure-aks
 #   - konveyor.io/target=azure-container-apps
 #   - konveyor.io/source
-#   - domain=azure-readiness
+#   - domain=cloud-readiness
 #   - category=service-binding
-#   - source-category=jetty-jndi-resources
 #   - jetty
 #   links:
 #   - title: Azure services

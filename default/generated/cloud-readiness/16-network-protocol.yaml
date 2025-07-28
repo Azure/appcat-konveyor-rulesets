@@ -5,9 +5,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=remote-communication
-  - source-category=secure-protocols
   - containerization
   links:
   - title: Why HTTPS matters
@@ -43,9 +42,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=remote-communication
-  - source-category=hardcoded-urls
   links: []
   message: |-
     This patterns verifies in source code and configuration files the presence of hardcoded URLs using the HTTP protocol (HTTP/HTTPS). This URL would need to be replaced by the new resource's URL during the Cloud migration, if any change occured.
@@ -62,9 +60,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=remote-communication
-  - source-category=hardcoded-urls
   links: []
   message: |-
     This patterns verifies in source code and configuration files the presence of hardcoded URLs using the LDAP protocol (LDAP/LDAPS). This URL would need to be replaced by the new resource s URL during the Cloud migration, if any change occured.

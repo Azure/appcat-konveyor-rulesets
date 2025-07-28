@@ -30,9 +30,8 @@
   description: "Hardcoded IP Address"
   labels:
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=remote-communication
-  - source-category=hardcode-ip
   - containerization
   when:
     builtin.filecontent:

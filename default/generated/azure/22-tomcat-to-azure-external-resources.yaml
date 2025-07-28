@@ -7,9 +7,8 @@
 #   - konveyor.io/target=azure-aks
 #   - konveyor.io/target=azure-container-apps
 #   - konveyor.io/source
-#   - domain=java-modernization
+#   - domain=java-upgrade
 #   - category=service-binding
-#   - source-category=tomcat-jndi-resources
 #   - tomcat
 #   links:
 #   - title: Migrate Tomcat applications to Azure Container Apps

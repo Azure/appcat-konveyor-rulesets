@@ -6,7 +6,7 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=logging-management
   - logging
   links: []
@@ -44,7 +44,7 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=logging-management
   - logging
   links: []
@@ -69,7 +69,7 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=logging-management
   - logging
   links:
@@ -102,9 +102,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=logging-management
-  - source-category=logstash
   - logging
   links:
   - title: Ensure console logging and configure diagnostic settings
@@ -137,9 +136,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=logging-management
-  - source-category=splunk
   - logging
   links:
   - title: Ensure console logging and configure diagnostic settings
@@ -172,9 +170,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=logging-management
-  - source-category=zipkin
   - logging
   links:
   - title: Azure Monitor

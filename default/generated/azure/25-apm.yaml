@@ -8,9 +8,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=apm-migration
-  - source-category=apm-newrelic
   - apm
   links:
   - title: Configure New Relic for Azure App Service
@@ -37,9 +36,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=apm-migration
-  - source-category=apm-elastic
   - apm
   links:
   - title: Deploy and manage Elastic on Azure
@@ -72,9 +70,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=apm-migration
-  - source-category=apm-dynatrace
   - apm
   links:
   - title: Monitor Azure App Service using Dynatrace OneAgent

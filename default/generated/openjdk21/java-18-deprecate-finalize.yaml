@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk18+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Removal of Empty finalize() Methods in java.desktop Module
@@ -38,7 +38,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk18+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Deprecated Finalization for Removal

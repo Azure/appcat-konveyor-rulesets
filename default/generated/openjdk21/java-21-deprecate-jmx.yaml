@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk21+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: javax.management.remote.rmi.RMIIIOPServerImpl Is Removed
@@ -29,7 +29,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk21+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Deprecate JMX Subject Delegation and the JMXConnector.getMBeanServerConnection(Subject) Method for Removal

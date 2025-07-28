@@ -21,9 +21,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=messaging-service-migration
-  - source-category=kafka
   - message-queue
   - kafka
   links:
@@ -68,9 +67,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=messaging-service-migration
-  - source-category=spring-amqp-rabbitmq
   - message-queue
   - RabbitMQ Client
   links:
@@ -109,9 +107,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=messaging-service-migration
-  - source-category=activemq-artemis
   - message-queue
   - ActiveMQ
   links:
@@ -146,9 +143,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=messaging-service-migration
-  - source-category=spring-amqp-rabbitmq
   - message-queue
   - RabbitMQ Client
   links:
@@ -178,9 +174,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=messaging-service-migration
-  - source-category=spring-amqp-rabbitmq
   - message-queue
   - AMQP Client
   links:
@@ -220,9 +215,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=messaging-service-migration
-  - source-category=spring-jms-rabbitmq
   - message-queue
   - RabbitMQ Client
   links:
@@ -257,9 +251,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=messaging-service-migration
-  - source-category=activemq
   - message-queue
   - ActiveMQ
   links:

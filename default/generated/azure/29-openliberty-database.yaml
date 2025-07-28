@@ -7,9 +7,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-database
   - openliberty
   message: |
     Detected OpenLiberty data source configurations that need to be migrated to Azure database services.
@@ -58,9 +57,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-database
   - openliberty
   message: |
     Detected JPA EntityManager usage that will require configuration updates when migrating to Azure.
@@ -98,9 +96,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-database
   - openliberty
   links:
   - title: Migration guide Sybase to Azure SQL Database
@@ -168,9 +165,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-database
   - openliberty
   message: |
     Detected application-level data source references that need updating for Azure database services.
@@ -211,9 +207,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-database
   - openliberty
   message: |
     Detected @Resource annotations for database injection that need configuration updates for Azure migration.
@@ -255,9 +250,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-database
   - openliberty
   message: |
     Detected JPA persistence.xml configurations with database references that need updates for Azure migration.
@@ -297,9 +291,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-database
   - openliberty
   message: |
     Detected manual JNDI lookups for database connections that need updates for Azure.
@@ -328,9 +321,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-database
   - openliberty
   links:
   - title: Migration guide Oracle to Azure SQL Database
@@ -389,9 +381,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-database
   - openliberty
   links:
   - title: Azure PostgreSQL Flexible Server documentation

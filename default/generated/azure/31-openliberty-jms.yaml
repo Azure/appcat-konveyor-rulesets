@@ -7,9 +7,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-jms
   - openliberty
   message: |
     OpenLiberty JMS ConnectionFactory configurations detected that require migration to Azure messaging services.
@@ -51,9 +50,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-jms
   - openliberty
   message: |
     JMS resource injections detected that require refactoring for Azure Service Bus integration.
@@ -103,9 +101,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-jms
   - openliberty
   message: |
     Message-Driven Beans (MDBs) detected that require migration to Azure Service Bus message processing.
@@ -145,9 +142,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-jms
   - openliberty
   message: |
     JMS resource references in deployment descriptors detected that require removal and replacement with Azure Service Bus configuration for AKS deployment.
@@ -192,9 +188,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-jms
   - openliberty
   message: |
     Detected manual JNDI lookups for JMS resources that need to be updated for Azure messaging services.
@@ -218,9 +213,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-jms
   - openliberty
   message: |
     JMS API usage detected that requires comprehensive migration to Azure messaging services.
