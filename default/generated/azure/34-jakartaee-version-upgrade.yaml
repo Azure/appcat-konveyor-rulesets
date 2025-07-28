@@ -9,7 +9,7 @@
   - konveyor.io/target=azure-container-apps
   - domain=java-modernization
   - category=framework-upgrade
-  - source-category=jakarta-ee
+  - source-category=Jakarta-EE
   - version
   links:
   - title: Jakarta EE Release Versions
