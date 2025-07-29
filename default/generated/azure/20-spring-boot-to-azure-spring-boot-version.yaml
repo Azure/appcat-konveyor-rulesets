@@ -11,7 +11,7 @@
 
 # See the License for the specific language governing permissions and 
 # limitations under the License. 
-- category: potential
+- category: mandatory
   customVariables: []
   description: Spring Boot version too low
   effort: 5
@@ -51,7 +51,7 @@
       lowerbound: "1"
       nameregex: org\.springframework\.boot\..*
       upperbound: "1.9"
-- category: potential
+- category: mandatory
   customVariables: []
   description: Spring Boot version out of support
   effort: 3
@@ -92,7 +92,7 @@
       lowerbound: "2"
       nameregex: org\.springframework\.boot\..*
       upperbound: 2.5.99
-- category: potential
+- category: mandatory
   customVariables: []
   description: Spring Boot version out of OSS support
   effort: 3

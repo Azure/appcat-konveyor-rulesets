@@ -11,7 +11,7 @@
 
 # See the License for the specific language governing permissions and 
 # limitations under the License. 
-- category: potential
+- category: mandatory
   customVariables: []
   description: Spring Cloud version too low
   effort: 5
@@ -51,7 +51,7 @@
       lowerbound: Angel
       name: org.springframework.cloud.spring-cloud-dependencies
       upperbound: Edgware.9
-- category: potential
+- category: mandatory
   customVariables: []
   description: spring cloud version out of support
   effort: 3
