@@ -1,4 +1,4 @@
-- category: potential
+- category: optional
   customVariables: []
   description: Jakarta EE version not latest stable
   effort: 3
@@ -17,7 +17,7 @@
   - title: Jakarta EE Platforms
     url: https://jakarta.ee/specifications/platform/
   message: |-
-    Your application is using a Jakarta EE version lower than 10.0.0.
+    Your application is not using the latest Jakarta EE version. 
     Upgrading to the latest stable version ensures better performance, security, and compatibility with modern tools.
       1. Pick a Supported Version: Review the Jakarta EE release versions and choose an actively supported version.
       2. Update Your Project: Change the Jakarta EE version in your pom.xml or build.gradle.
