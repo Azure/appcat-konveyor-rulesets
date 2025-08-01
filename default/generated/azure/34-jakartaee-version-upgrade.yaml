@@ -1,0 +1,33 @@
+- category: optional
+  customVariables: []
+  description: Jakarta EE version not latest stable
+  effort: 3
+  labels:
+  - konveyor.io/source=jakarta-ee
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=java-modernization
+  - category=framework-upgrade
+  - source-category=Java/Jakarta-EE
+  - version
+  links:
+  - title: Jakarta EE Release Versions
+    url: https://jakarta.ee/release/
+  - title: Jakarta EE Platforms
+    url: https://jakarta.ee/specifications/platform/
+  message: |-
+    Your application is not using the latest Jakarta EE version. 
+    Upgrading to the latest stable version ensures better performance, security, and compatibility with modern tools.
+      1. Pick a Supported Version: Review the Jakarta EE release versions and choose an actively supported version.
+      2. Update Your Project: Change the Jakarta EE version in your pom.xml or build.gradle.
+      3. Fix Compatibility Issues: Update deprecated code, replace removed features, and ensure dependencies are compatible with the new Jakarta EE version.
+      4. Thoroughly Test: Run unit, integration, and end-to-end tests to make sure everything still works after the upgrade.
+  ruleID: jakarta-ee-version-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: ^javax\..*
+    - java.dependency:
+        nameregex: ^jakarta\.platform\..*
+        upperbound: "10.0.0"

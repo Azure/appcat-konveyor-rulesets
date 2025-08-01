@@ -1,0 +1,19 @@
+rulesPath: ../20-build-tool.yaml
+providers:
+- name: java
+  dataPath: ./data/20-build-tool
+- name: builtin
+  dataPath: ./data/20-build-tool
+tests:
+- ruleID: ant-build-tool-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: Ant build tool detected in the project.
+- ruleID: eclipse-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 8
+      messageMatches: Eclipse project detected.
