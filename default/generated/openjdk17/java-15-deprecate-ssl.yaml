@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk15+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Retired the Deprecated SSLSession.getPeerCertificateChain() Method Implementation
@@ -31,7 +31,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk15+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Removal of com.sun.net.ssl.internal.ssl.Provider Name

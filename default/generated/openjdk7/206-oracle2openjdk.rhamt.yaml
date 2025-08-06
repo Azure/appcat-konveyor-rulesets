@@ -7,7 +7,7 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
@@ -33,7 +33,7 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
@@ -66,7 +66,7 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
@@ -89,7 +89,7 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
@@ -116,7 +116,7 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
@@ -141,7 +141,7 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
@@ -202,7 +202,7 @@
   - konveyor.io/source=oraclejdk
   - konveyor.io/target=openjdk7+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk

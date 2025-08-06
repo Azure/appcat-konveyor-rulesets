@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk8+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Compatibility Guide for JDK 8
@@ -34,7 +34,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk8+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Compatibility Guide for JDK 8

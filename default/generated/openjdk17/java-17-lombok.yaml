@@ -9,7 +9,7 @@
   - konveyor.io/target=openjdk
   - konveyor.io/source=spring5
   - konveyor.io/target=spring6+
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Upgrade Lombok version to support Java 17

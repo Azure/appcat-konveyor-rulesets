@@ -6,9 +6,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=remote-communication
-  - source-category=java-socket
   - socket
   - containerization
   links: []
@@ -44,9 +43,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=remote-communication
-  - source-category=java-socket
   - socket
   - containerization
   links: []

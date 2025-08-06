@@ -6,8 +6,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=cloud-native
-  - category=docker-containerization
+  - domain=cloud-readiness
+  - category=containerization
   - containerization
   links:
   - title: Dockerizing a Java Application

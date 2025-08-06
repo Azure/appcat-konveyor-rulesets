@@ -5,9 +5,8 @@
   labels:
   - konveyor.io/source=java
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=remote-communication
-  - source-category=corba
   - corba
   links: []
   message: Common Object Request Broker Architecture (CORBA) found in the application.

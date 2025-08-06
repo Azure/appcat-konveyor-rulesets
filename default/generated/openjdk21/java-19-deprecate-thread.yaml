@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk19+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: java.lang.ThreadGroup Is Degraded
@@ -57,7 +57,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk19+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: This method is not final and may be overridden to return a value that is not the thread ID. Use Thread.threadId() instead.
@@ -79,7 +79,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk19+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Remove the Alternate ThreadLocal Implementation of the Subject::current and Subject::callAs APIs

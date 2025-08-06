@@ -17,9 +17,8 @@
   effort: 1
   labels:
   - konveyor.io/source=springboot
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=spring-migration
-  - source-category=spring-cloud
   links:
   - title: Migrate Spring Boot applications to Azure Container Apps - Remove restricted configurations
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps#remove-restricted-configurations

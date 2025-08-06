@@ -5,7 +5,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links:
   - title: Azure Cache for Redis documentation
@@ -31,7 +31,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -51,7 +51,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -71,7 +71,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -91,7 +91,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -111,7 +111,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -131,7 +131,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -151,7 +151,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -171,7 +171,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -191,7 +191,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -211,7 +211,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -231,7 +231,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -251,7 +251,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -271,7 +271,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -291,7 +291,7 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=embedded-cache-management
   links: []
   message: |-
@@ -313,9 +313,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=cache-service-migration
-  - source-category=redis
   links:
   - title: Azure Cache for Redis documentation
     url: https://learn.microsoft.com/azure/azure-cache-for-redis

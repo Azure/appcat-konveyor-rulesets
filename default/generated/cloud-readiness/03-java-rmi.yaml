@@ -6,8 +6,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=rmi
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
-  - category=jakartaee-to-azure
+  - domain=cloud-readiness
+  - category=java-rmi-migration
   - cloud-readiness
   - rmi
   links:
@@ -39,8 +39,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=rmi
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
-  - category=jakartaee-to-azure
+  - domain=cloud-readiness
+  - category=java-rmi-migration
   - cloud-readiness
   - rmi
   links: []

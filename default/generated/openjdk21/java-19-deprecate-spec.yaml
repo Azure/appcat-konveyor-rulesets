@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk19+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: PSSParameterSpec(int) Constructor and DEFAULT Static Constant Are Deprecated
@@ -33,7 +33,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk19+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: OAEPParameterSpec.DEFAULT Static Constant Is Deprecated
