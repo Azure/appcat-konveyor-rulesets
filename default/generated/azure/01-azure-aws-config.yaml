@@ -392,3 +392,38 @@
     - builtin.filecontent:
         filePattern: ""
         pattern: aws-secretsmanager
+- category: mandatory
+  customVariables: []
+  description: AWS Lambda usage
+  effort: 5
+  labels:
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=cloud-readiness
+  - category=serverless-migration
+  - AWS
+  links:
+  - title: Azure Blob Storage documentation
+    url: https://learn.microsoft.com/azure/storage/blobs
+  - title: Azure Container Apps documentation
+    url: https://learn.microsoft.com/azure/container-apps/overview
+  message: |-
+    The application contains AWS Lambda usage. Consider using Azure Services instead.
+      * **Azure Container Apps**: For containerized serverless applications that need more control over the runtime environment.
+      * **Azure App Service**: For web applications or REST APIs that were running as Lambda functions.
+      * **Azure Kubernetes Service (AKS)**: For complex applications that need orchestration and integration with microservices.
+      * **Configure triggers and events**: Set up triggers and events in Azure Container Apps to invoke your Java application based on specific conditions or events, similar to how AWS Lambda functions are triggered.
+  ruleID: azure-aws-lambda-01000
+  when:
+    or:
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.amazonaws.aws-lambda-java-core
+    - java.dependency:
+        lowerbound: 0.0.0
+        name: com.amazonaws.aws-lambda-java-events
+    - java.referenced:
+        location: PACKAGE
+        pattern: com.amazonaws.services.lambda.runtime*
