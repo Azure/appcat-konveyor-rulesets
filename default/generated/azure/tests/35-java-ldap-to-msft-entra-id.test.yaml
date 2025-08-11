@@ -1,0 +1,13 @@
+rulesPath: ../35-java-ldap-to-msft-entra-id.yaml
+providers:
+- name: java
+  dataPath: ./data/35-java-ldap-to-msft-entra-id
+- name: builtin
+  dataPath: ./data/35-java-ldap-to-msft-entra-id
+tests:
+- ruleID: java-ldap-to-msft-entra-id-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 12
+      messageMatches: Java LDAP usage detected.
