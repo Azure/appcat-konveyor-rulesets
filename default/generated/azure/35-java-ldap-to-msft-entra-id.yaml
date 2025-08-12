@@ -1,0 +1,46 @@
+- category: optional
+  customVariables: []
+  description: Java LDAP usage detected
+  effort: 3
+  labels:
+  - konveyor.io/source=java-ldap
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - domain=cloud-readiness
+  - category=auth-migration
+  links:
+  - title: What is Microsoft Entra ID?
+    url: https://learn.microsoft.com/en-us/entra/fundamentals/whatis
+  message: |-
+    Java LDAP usage detected. This application uses direct LDAP authentication or directory queries.
+    For cloud migration, consider replacing LDAP authentication with Microsoft Entra ID (Azure AD) using OAuth 2.0 / OpenID Connect.
+  ruleID: java-ldap-to-msft-entra-id-01000
+  when:
+    or:
+    - java.dependency:
+        name: org.springframework.security.spring-security-ldap
+    - java.dependency:
+        name: org.springframework.ldap.spring-ldap-core
+    - java.dependency:
+        name: com.unboundid.unboundid-ldapsdk
+    - java.dependency:
+        name: com.novell.ldap.jldap
+    - java.referenced:
+        location: IMPORT
+        pattern: org.springframework.security.ldap*
+    - java.referenced:
+        location: IMPORT
+        pattern: org.springframework.ldap.core*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.unboundid.ldap*
+    - java.referenced:
+        location: IMPORT
+        pattern: org.apache.directory.ldap.client.api*
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.naming.ldap*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.novell.ldap*

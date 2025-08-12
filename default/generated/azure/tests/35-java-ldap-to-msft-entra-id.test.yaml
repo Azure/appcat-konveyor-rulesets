@@ -1,0 +1,15 @@
+rulesPath: ../35-java-ldap-to-msft-entra-id.yaml
+providers:
+- name: java
+  dataPath: ./data/35-java-ldap-to-msft-entra-id
+- name: builtin
+  dataPath: ./data/35-java-ldap-to-msft-entra-id
+tests: []
+# Passed in AppCAT CLI, but not here
+# due to this change: https://devdiv.visualstudio.com/DevDiv/_git/appcat-analyzer-lsp/pullrequest/660807
+# - ruleID: java-ldap-to-msft-entra-id-01000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 12
+#       messageMatches: Java LDAP usage detected.
