@@ -21,3 +21,68 @@
     - builtin.file:
         pattern: ^(Dockerfile|docker-compose\.yaml|docker-compose\.yml)$
       not: true
+
+- category: optional
+  customVariables: []
+  description: Avoid Docker apt upgrade command
+  effort: 1
+  labels:
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=cloud-readiness
+  - category=containerization
+  - containerization
+  links: []
+  message: |-
+    Running apt-get upgrade in a Dockerfile is generally discouraged because it can lead to unintended changes in the container's state, which can break the application or dependencies. 
+    Instead, it is recommended to use specific version tags for the base image and to install only the necessary packages with apt-get install to ensure reproducibility and stability.
+  ruleID: dockerfile-00010
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: ^Dockerfile$
+        pattern: (?i)\bapt-get\s+upgrade\b
+
+- category: optional
+  customVariables: []
+  description: Avoid lowercase instructions in Dockerfile
+  effort: 1
+  labels:
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=cloud-readiness
+  - category=containerization
+  - containerization
+  links: []
+  message: |-
+    For Dockerfile instructions, it is conventional to use uppercase to distinguish them from arguments more easily, although the instructions themselves are not case-sensitive.
+  ruleID: dockerfile-00020
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: ^Dockerfile$
+        pattern: ^\s*(from|run|cmd|label|maintainer|expose|env|add|copy|entrypoint|volume|user|workdir|arg|onbuild|stopsignal|healthcheck|shell)\b
+
+- category: optional
+  customVariables: []
+  description: Avoid Space Before Equal in Dockerfile
+  effort: 1
+  labels:
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
+  - domain=cloud-readiness
+  - category=containerization
+  - containerization
+  links: []
+  message: |-
+    ENV, LABEL and ARG instructions allow alternative syntax (i.e. ENV ) and in case of space before equal sign, the equal sign will be considered as a value.
+    Instead, the format typically follows ENV VAR_NAME=value. However, if the value contains spaces, you should enclose it in double quotes to ensure it is interpreted correctly. For example, ENV TEST_VAR="The value". Using double quotes allows variables to be expanded inside the value.
+  ruleID: dockerfile-00030
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: ^Dockerfile$
+        pattern: ^\s*(?i:env|label|arg)\s+\S+\s+=\s*
