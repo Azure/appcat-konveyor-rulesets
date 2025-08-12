@@ -19,16 +19,13 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.security.spring-security-ldap
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.ldap.spring-ldap-core
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.unboundid.unboundid-ldapsdk
     - java.dependency:
-        nameregex: com\.novell\.ldap\.jldap
+        name: com.novell.ldap.jldap
     - java.referenced:
         location: IMPORT
         pattern: org.springframework.security.ldap*
