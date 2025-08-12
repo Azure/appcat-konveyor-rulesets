@@ -19,11 +19,14 @@
   when:
     or:
     - java.dependency:
-        nameregex: org\.springframework\.security\.spring-security-ldap
+        lowerbound: 0.0.0
+        name: org.springframework.security.spring-security-ldap
     - java.dependency:
-        nameregex: org\.springframework\.ldap\.spring-ldap-core
+        lowerbound: 0.0.0
+        name: org.springframework.ldap.spring-ldap-core
     - java.dependency:
-        nameregex: com\.unboundid\.unboundid-ldapsdk
+        lowerbound: 0.0.0
+        name: com.unboundid.unboundid-ldapsdk
     - java.dependency:
         nameregex: com\.novell\.ldap\.jldap
     - java.referenced:
