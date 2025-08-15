@@ -13,7 +13,7 @@
 # limitations under the License. 
 - category: mandatory
   customVariables: []
-  description: Spring Boot version not latest
+  description: Spring Boot version is low
   effort: 5
   labels:
   - konveyor.io/source=springboot
@@ -33,7 +33,7 @@
   - title: Spring Boot Support Policy
     url: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
   message: |-
-    The application is not using the latest version of Spring Boot. 
+    The application is using the low version of Spring Boot. 
     With the officially supported new versions from Spring, you can get the best experience. Here are some steps you can take to update your application to the latest version of Spring Boot:
     
     * Choose a **supported Spring Boot version**: Check out Spring Boot Support Versions, determine the most suitable supported Spring Boot version.\n\n
