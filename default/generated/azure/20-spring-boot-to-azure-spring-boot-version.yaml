@@ -13,87 +13,8 @@
 # limitations under the License. 
 - category: mandatory
   customVariables: []
-  description: Spring Boot version too low
+  description: Spring Boot version is low
   effort: 5
-  labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - domain=java-upgrade
-  - category=framework-upgrade
-  - version
-  links:
-  - title: Spring Boot Supported Versions
-    url: https://spring.io/projects/spring-boot/#support
-  - title: Spring Boot Support Policy
-    url: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
-  - title: Use Rewrite to migrate to Spring Boot 2 from Spring Boot 1
-    url: https://docs.openrewrite.org/running-recipes/popular-recipe-guides/spring-boot-2.x-migration-from-spring-boot-1.x
-  message: "The application is using Spring Boot 1.x, which is too low. With the officially
-    supported new versions from Spring, you can get the best experience.\n \n Here
-    are some steps you can take to update your application to a supported version
-    of Spring Boot:\n\n * Choose a **supported Spring Boot version**: Check out Spring
-    Boot Support Versions, determine the most suitable supported Spring Boot version.\n\n
-    * **Update Spring Boot version**: Update the Spring Boot version of your application.
-    There are automated tools like Rewrite to help you with the migration.\n\n * **Address
-    code compatibility**: Review your application's codebase for any potential compatibility
-    issues with the target Spring Boot version. Update deprecated APIs or features,
-    address any language or library changes, and ensure that your code follows best
-    practices and standards.\n\n * **Test thoroughly**: Execute a comprehensive testing
-    process to verify the compatibility and functionality of your application with
-    the new Spring Boot version. Perform unit tests, integration tests, and system
-    tests to validate that all components and dependencies work as expected."
-  ruleID: spring-boot-to-azure-spring-boot-version-01000
-  when:
-    java.dependency:
-      lowerbound: "1"
-      nameregex: org\.springframework\.boot\..*
-      upperbound: "1.9"
-- category: mandatory
-  customVariables: []
-  description: Spring Boot version out of support
-  effort: 3
-  labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - domain=java-upgrade
-  - category=framework-upgrade
-  - version
-  links:
-  - title: Spring Boot Supported Versions
-    url: https://spring.io/projects/spring-boot/#support
-  - title: Spring Boot Support Policy
-    url: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
-  - title: Use Rewrite to migrate to Spring Boot 3 from Spring Boot 2
-    url: https://docs.openrewrite.org/running-recipes/popular-recipe-guides/migrate-to-spring-3
-  message: "The application is using Spring Boot version lower than 2.6, which is
-    out of support. With the officially supported new versions from Spring, you can
-    get the best experience.\n \n Here are some steps you can take to update your
-    application to a supported version of Spring Boot:\n\n * Choose a **supported
-    Spring Boot version**: Check out Spring Boot Support Versions, determine the most
-    suitable supported Spring Boot version.\n\n * **Update Spring Boot version**:
-    Update the Spring Boot version of your application. There are automated tools
-    like Rewrite to help you with the migration.\n\n * **Address code compatibility**:
-    Review your application's codebase for any potential compatibility issues with
-    the target Spring Boot version. Update deprecated APIs or features, address any
-    language or library changes, and ensure that your code follows best practices
-    and standards.\n\n * **Test thoroughly**: Execute a comprehensive testing process
-    to verify the compatibility and functionality of your application with the new
-    Spring Boot version. Perform unit tests, integration tests, and system tests to
-    validate that all components and dependencies work as expected."
-  ruleID: spring-boot-to-azure-spring-boot-version-02000
-  when:
-    java.dependency:
-      lowerbound: "2"
-      nameregex: org\.springframework\.boot\..*
-      upperbound: 2.5.99
-- category: mandatory
-  customVariables: []
-  description: Spring Boot version out of OSS support
-  effort: 3
   labels:
   - konveyor.io/source=springboot
   - konveyor.io/target=azure-appservice
@@ -111,35 +32,21 @@
     url: https://spring.io/projects/spring-boot/#support
   - title: Spring Boot Support Policy
     url: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
-  - title: Use Rewrite to migrate to Spring Boot 3 from Spring Boot 2
-    url: https://docs.openrewrite.org/running-recipes/popular-recipe-guides/migrate-to-spring-3
   message: |-
-    The application is using Spring Boot version out of Open Source Software support. It's recommended to update your plan to commercial support or update the application to open source support version of Spring Boot.
-
-     For commercial support, Azure Container Apps can run any containerized Java application in the cloud while giving flexible options for how you deploy your applications.
-
-     When you use Container Apps for your containerized Java applications, you get:
-     
-     * **Cost effective scaling**: When you use the Consumption plan, your Java apps can scale to zero. Scaling in when there's little demand for your app automatically drives costs down for your projects.
-
-     * **Deployment options**: Azure Container Apps integrates with Buildpacks, which allows you to deploy directly from a Maven build, via artifact files, or with your own Dockerfile.
-
-     * **Automatic memory fitting**: Container Apps optimizes how the Java Virtual Machine (JVM) manages memory, making the most possible memory available to your Java applications.
-
-     * **Build environment variables**: You can configure custom key-value pairs to control the Java image build from source code.
-
-     For Spring Boot update, here are some steps you can take:
-
-     * Choose a **supported Spring Boot version**: Check out Spring Boot Support Versions, determine the most suitable supported Spring Boot version.
-
-     * **Update Spring Boot version**: Update the Spring Boot version of your application. There are automated tools like Rewrite to help you with the migration.
-
-     * **Address code compatibility**: Review your application's codebase for any potential compatibility issues with the target Spring Boot version. Update deprecated APIs or features, address any language or library changes, and ensure that your code follows best practices and standards.
-
-     * **Test thoroughly**: Execute a comprehensive testing process to verify the compatibility and functionality of your application with the new Spring Boot version. Perform unit tests, integration tests, and system tests to validate that all components and dependencies work as expected.
-  ruleID: spring-boot-to-azure-spring-boot-version-03000
+    The application is using the low version of Spring Boot. 
+    With the officially supported new versions from Spring, you can get the best experience. Here are some steps you can take to update your application to the latest version of Spring Boot:
+    
+    * Choose a **supported Spring Boot version**: Check out Spring Boot Support Versions, determine the most suitable supported Spring Boot version.\n\n
+    
+    * **Update Spring Boot version**: Update the Spring Boot version of your application. There are automated tools like Rewrite to help you with the migration.
+    
+    * **Address code compatibility**: Review your application's codebase for any potential compatibility issues with the target Spring Boot version. Update deprecated APIs or features, address any language or library changes, and ensure that your code follows best practices and standards.
+    
+    * **Test thoroughly**: Execute a comprehensive testing process to verify the compatibility and functionality of your application with the new Spring Boot version. Perform unit tests, integration tests, and system tests to validate that all components and dependencies work as expected."
+  ruleID: spring-boot-to-azure-spring-boot-version-01000
   when:
-    java.dependency:
-      lowerbound: "2.6"
-      nameregex: org\.springframework\.boot\..*
-      upperbound: 2.6.99
+    or:
+    # follow the latest supported version by Java Upgrade Extension
+    - java.dependency:
+        nameregex: org\.springframework\.boot\..*
+        upperbound: "3.4.8"
