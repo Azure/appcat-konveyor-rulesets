@@ -4,7 +4,7 @@ providers:
   dataPath: ./data/19-dockerfile
 - name: builtin
   dataPath: ./data/19-dockerfile
-tests: []
+tests:
 # Passed in appcat-cli-java, but not here
 # - ruleID: dockerfile-00000
 #   testCases:
@@ -12,3 +12,21 @@ tests: []
 #     hasIncidents:
 #       exactly: 1
 #       messageMatches: No Dockerfile was found in the project.
+- ruleID: dockerfile-00010
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: Running apt-get upgrade in a Dockerfile is generally discouraged
+- ruleID: dockerfile-00020
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: For Dockerfile instructions, it is conventional to use uppercase
+- ruleID: dockerfile-00030
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: ENV, LABEL and ARG instructions allow alternative syntax
