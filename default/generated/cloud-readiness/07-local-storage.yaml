@@ -5,9 +5,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=file-system-management
-  - source-category=local-file-system
   - storage
   - containerization
   links:
@@ -64,9 +63,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=file-system-management
-  - source-category=local-file-system
   - storage
   - containerization
   links:
@@ -110,9 +108,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=file-system-management
-  - source-category=local-file-system
   - storage
   - containerization
   links:
@@ -155,9 +152,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=file-system-management
-  - source-category=local-file-system
   - storage
   - containerization
   links:
@@ -200,9 +196,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=file-system-management
-  - source-category=local-file-system
   - storage
   - containerization
   links: []
@@ -253,9 +248,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=file-system-management
-  - source-category=local-file-system
   - storage
   - containerization
   links: []

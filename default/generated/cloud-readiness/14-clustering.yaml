@@ -5,9 +5,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=session-management
-  - source-category=http-session
   links:
   - title: Azure Cache for Redis Documentation
     url: https://learn.microsoft.com/azure/azure-cache-for-redis

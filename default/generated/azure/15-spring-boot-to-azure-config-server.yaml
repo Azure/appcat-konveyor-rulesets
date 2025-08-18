@@ -7,9 +7,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=spring-migration
-  - source-category=spring-cloud
   - Spring Cloud Config
   links:
   - title: Migrate Spring Boot applications to Azure Container Apps - Remove restricted configurations
@@ -41,9 +40,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=spring-migration
-  - source-category=spring-cloud
   - Spring Cloud Config
   links:
   - title: Connect to a managed Config Server for Spring in Azure Container Apps
@@ -70,9 +68,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=spring-migration
-  - source-category=spring-cloud
   - Spring Cloud Config
   links:
   - title: Connect to a managed Config Server for Spring in Azure Container Apps

@@ -7,9 +7,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-filesystem
   - openliberty
   message: |
     Detected file path configurations in OpenLiberty server that need to be migrated to Azure storage solutions.
@@ -53,7 +52,7 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
   message: |
@@ -104,7 +103,7 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
   message: |
@@ -149,7 +148,7 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
   message: |

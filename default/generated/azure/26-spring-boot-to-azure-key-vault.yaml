@@ -8,9 +8,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=credential-migration
-  - source-category=spring-cloud-vault
   - vault
   links:
   - title: Load a secret from Azure Key Vault in a Spring Boot application

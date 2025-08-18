@@ -7,9 +7,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=framework-upgrade
-  - source-category=Java/Jakarta-EE
   - version
   links:
   - title: Jakarta EE Release Versions

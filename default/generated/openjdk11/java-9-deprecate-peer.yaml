@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk9+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: References to java.awt.peer and java.awt.dnd.peer packages were removed from the public API

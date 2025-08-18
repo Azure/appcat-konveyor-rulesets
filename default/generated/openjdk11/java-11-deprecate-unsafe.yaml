@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk11+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Removal of sun.misc.Unsafe.defineClass
@@ -32,7 +32,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk11+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: JDK-8054494

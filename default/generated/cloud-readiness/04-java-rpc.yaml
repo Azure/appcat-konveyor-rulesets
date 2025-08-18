@@ -6,8 +6,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=rpc
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
-  - category=jakartaee-to-azure
+  - domain=cloud-readiness
+  - category=java-rpc-migration
   - rpc
   links:
   - title: Java to Azure migration strategy documentation

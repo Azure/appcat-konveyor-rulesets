@@ -7,9 +7,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-logging
   - openliberty
   message: |
     OpenLiberty server logging configurations detected that require optimization for Azure Monitor integration and containerized deployment.
@@ -52,9 +51,8 @@
   - konveyor.io/target=azure-appservice
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=openliberty-migration
-  - source-category=openliberty-logging
   - openliberty
   message: |
     Custom log file location configurations detected that require containerization and Azure storage integration.

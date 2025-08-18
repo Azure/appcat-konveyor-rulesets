@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk20+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Thread.suspend/resume Changed to Throw UnsupportedOperationException
@@ -32,7 +32,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk20+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: Thread.stop Changed to Throw UnsupportedOperationException
@@ -54,7 +54,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk20+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: ThreadDeath is deprecated for removal

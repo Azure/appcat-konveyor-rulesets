@@ -7,9 +7,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=database-migration
-  - source-category=mysql
   - database
   - mysql
   links:
@@ -75,9 +74,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=database-migration
-  - source-category=postgresql
   - database
   - postgresql
   links:
@@ -143,9 +141,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=database-migration
-  - source-category=microsoft-sql
   - database
   - microsoft-sql
   links:
@@ -198,9 +195,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=database-migration
-  - source-category=cassandra
   - database
   - cassandra
   links:
@@ -254,9 +250,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=database-migration
-  - source-category=mongodb
   - database
   - mongodb
   links:
@@ -306,9 +301,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=database-migration
-  - source-category=mariadb
   - database
   - mariadb
   links:
@@ -359,9 +353,8 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=database-migration
-  - source-category=oracle
   - database
   - oracle
   links:
@@ -431,7 +424,7 @@
   - konveyor.io/target=azure-aks
   - konveyor.io/target=azure-container-apps
   - konveyor.io/source
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=database-migration
   links: 
   - title: Understanding timeout properties in the JDBC driver

@@ -5,22 +5,10 @@ providers:
 - name: builtin
   dataPath: ./data/20-spring-boot-to-azure-spring-boot-version
 tests: []
+# Passed in AppCAT CLI
 # - ruleID: spring-boot-to-azure-spring-boot-version-01000
 #   testCases:
 #   - name: tc-1
 #     hasIncidents:
-#       atLeast: 1
-#       messageMatches: The application is using Spring Boot 1.x, which is too low
-# - ruleID: spring-boot-to-azure-spring-boot-version-02000
-#   testCases:
-#   - name: tc-1
-#     hasIncidents:
-#       atLeast: 4
-#       messageMatches: The application is using Spring Boot version lower than 2.6
-# - ruleID: spring-boot-to-azure-spring-boot-version-03000
-#   testCases:
-#   - name: tc-1
-#     hasIncidents:
-#       atLeast: 1
-#       messageMatches: The application is using Spring Boot version out of Open Source
-#         Software support
+#       exactly: 8
+#       messageMatches: The application is not using the latest version of Spring Boot. 

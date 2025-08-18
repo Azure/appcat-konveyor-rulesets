@@ -7,7 +7,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk21+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: java.io.File's Canonical Path Cache Is Removed
@@ -38,7 +38,7 @@
   - konveyor.io/source=openjdk
   - konveyor.io/target=openjdk21+
   - konveyor.io/target=openjdk
-  - domain=java-modernization
+  - domain=java-upgrade
   - category=deprecated-apis
   links:
   - title: com.sun.nio.file.SensitivityWatchEventModifier Is Deprecated

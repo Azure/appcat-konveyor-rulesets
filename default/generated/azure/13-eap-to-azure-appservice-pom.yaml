@@ -6,9 +6,8 @@
   - konveyor.io/source=eap7
   - konveyor.io/source=eap
   - konveyor.io/target=azure-appservice
-  - domain=azure-readiness
+  - domain=cloud-readiness
   - category=eap-migration
-  - source-category=jboss-eap
   - Azure
   links:
   - title: Get the Azure CLI

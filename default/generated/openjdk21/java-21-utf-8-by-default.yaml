@@ -9,8 +9,8 @@
   - konveyor.io/target=openjdk18+
   - konveyor.io/target=openjdk
   - konveyor.io/source
-  - domain=java-modernization
-  - category=encoding-standards
+  - domain=cloud-readiness
+  - category=default-encoding
   links:
   - title: 'JEP 400: UTF-8 by Default'
     url: https://openjdk.org/jeps/400
@@ -33,8 +33,8 @@
   - konveyor.io/target=openjdk18+
   - konveyor.io/target=openjdk
   - konveyor.io/source
-  - domain=java-modernization
-  - category=encoding-standards
+  - domain=cloud-readiness
+  - category=default-encoding
   links:
   - title: 'JEP 400: UTF-8 by Default'
     url: https://openjdk.org/jeps/400
@@ -54,8 +54,8 @@
   - konveyor.io/target=openjdk18+
   - konveyor.io/target=openjdk
   - konveyor.io/source
-  - domain=java-modernization
-  - category=encoding-standards
+  - domain=cloud-readiness
+  - category=default-encoding
   links:
   - title: 'JEP 400: UTF-8 by Default'
     url: https://openjdk.org/jeps/400
@@ -75,8 +75,8 @@
   - konveyor.io/target=openjdk18+
   - konveyor.io/target=openjdk
   - konveyor.io/source
-  - domain=java-modernization
-  - category=encoding-standards
+  - domain=cloud-readiness
+  - category=default-encoding
   links:
   - title: 'JEP 400: UTF-8 by Default'
     url: https://openjdk.org/jeps/400

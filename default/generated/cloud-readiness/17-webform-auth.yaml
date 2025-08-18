@@ -5,9 +5,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=auth-migration
-  - source-category=webform-auth
   links: []
   message: |-
     Using Web Forms authentication requires that user accounts and passwords be created and managed in a storage such as a database. This mechanism does not offer the flexibility of claims-based authentication and should not be used in Cloud applications. Ideally, user authentication should be replaced by a Cloud-based and OS-agnostic identity & access management solution such as Active Directory.

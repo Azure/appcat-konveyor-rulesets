@@ -6,8 +6,8 @@
   - konveyor.io/source=java
   - konveyor.io/source=java-ee
   - konveyor.io/target=cloud-readiness
-  - domain=cloud-native
-  - category=jakartaee-to-azure
+  - domain=cloud-readiness
+  - category=java-jca-migration
   - jca
   links:
   - title: Azure Service Bus documentation

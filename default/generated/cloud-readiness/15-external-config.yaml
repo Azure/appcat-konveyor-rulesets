@@ -5,9 +5,8 @@
   labels:
   - konveyor.io/target=cloud-readiness
   - konveyor.io/source
-  - domain=cloud-native
+  - domain=cloud-readiness
   - category=configuration-management
-  - source-category=external-configuration
   links:
   - title: Docker ARG and ENV - a Complete Guide
     url: https://stackoverflow.com/questions/10961862/its-possible-to-have-one-web-config-specific-to-windows-azure
