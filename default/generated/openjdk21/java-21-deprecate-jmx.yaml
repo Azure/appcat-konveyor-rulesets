@@ -3,12 +3,17 @@
   description: javax.management.remote.rmi.RMIIIOPServerImpl Is Removed
   effort: 1
   labels:
-  - konveyor.io/source=openjdk21-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk21+
-  - konveyor.io/target=openjdk
+  - source=openjdk21-
+  - source=openjdk
+  - capability=openjdk21+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: javax.management.remote.rmi.RMIIIOPServerImpl Is Removed
     url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8307244
@@ -25,12 +30,17 @@
   description: Deprecate JMX Subject Delegation and the JMXConnector.getMBeanServerConnection(Subject) Method for Removal
   effort: 3
   labels:
-  - konveyor.io/source=openjdk21-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk21+
-  - konveyor.io/target=openjdk
+  - source=openjdk21-
+  - source=openjdk
+  - capability=openjdk21+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Deprecate JMX Subject Delegation and the JMXConnector.getMBeanServerConnection(Subject) Method for Removal
     url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8298966

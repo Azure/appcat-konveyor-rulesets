@@ -3,12 +3,17 @@
   description: Thread Suspend/Resume Are Deprecated for Removal
   effort: 3
   labels:
-  - konveyor.io/source=openjdk14-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk14+
-  - konveyor.io/target=openjdk
+  - source=openjdk14-
+  - source=openjdk
+  - capability=openjdk14+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Thread Suspend/Resume Are Deprecated for Removal
     url: https://www.oracle.com/java/technologies/javase/14-relnote-issues.html#JDK-8231602

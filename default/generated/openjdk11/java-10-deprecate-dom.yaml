@@ -3,12 +3,17 @@
   description: Removal of Common DOM APIs
   effort: 1
   labels:
-  - konveyor.io/source=openjdk10-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk10+
-  - konveyor.io/target=openjdk
+  - source=openjdk10-
+  - source=openjdk
+  - capability=openjdk10+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of Common DOM APIs
     url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8133601

@@ -3,11 +3,16 @@
   description: Use of unsecured network protocols or URI libraries
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=remote-communication
   - containerization
+  - os=windows
+  - os=linux
   links:
   - title: Why HTTPS matters
     url: https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https
@@ -40,10 +45,14 @@
   description: Avoid using hardcoded URLs (HTTP protocol) in source code
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=remote-communication
+  - os=windows
+  - os=linux
   links: []
   message: |-
     This patterns verifies in source code and configuration files the presence of hardcoded URLs using the HTTP protocol (HTTP/HTTPS). This URL would need to be replaced by the new resource's URL during the Cloud migration, if any change occured.
@@ -58,10 +67,14 @@
   description: Avoid using hardcoded URLs (LDAP protocol) in source code
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=remote-communication
+  - os=windows
+  - os=linux
   links: []
   message: |-
     This patterns verifies in source code and configuration files the presence of hardcoded URLs using the LDAP protocol (LDAP/LDAPS). This URL would need to be replaced by the new resource s URL during the Cloud migration, if any change occured.

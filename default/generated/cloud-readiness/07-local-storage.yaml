@@ -3,12 +3,17 @@
   description: File system - Java IO
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=file-system-management
   - storage
   - containerization
+  - os=windows
+  - os=linux
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -61,12 +66,17 @@
   description: File system - java.net.URL/URI
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=file-system-management
   - storage
   - containerization
+  - os=windows
+  - os=linux
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -106,12 +116,17 @@
   description: File system - File path URL
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=file-system-management
   - storage
   - containerization
+  - os=windows
+  - os=linux
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -150,12 +165,17 @@
   description: File system - 'file://' scheme
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=file-system-management
   - storage
   - containerization
+  - os=windows
+  - os=linux
   links:
   - title: Azure Storage documentation
     url: https://learn.microsoft.com/azure/storage
@@ -194,12 +214,17 @@
   description: File system - Java NIO
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=file-system-management
   - storage
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: "When migrating an application that relies on the file system to Azure,
     it's important to consider the limitations of local storage in a cloud environment.\n
@@ -246,12 +271,17 @@
   description: Apache Commons I/O
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=file-system-management
   - storage
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: "When migrating an application that relies on the file system to Azure,
     it's important to consider the limitations of local storage in a cloud environment.\n

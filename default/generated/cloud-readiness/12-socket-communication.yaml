@@ -3,13 +3,18 @@
   description: Socket communication
   effort: 5
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
   - domain=cloud-readiness
   - category=remote-communication
   - socket
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: |-
     Java sockets are internal endpoints of two-way communications. They are defined by an IP address, port, and protocol (TCP/UDP).
@@ -40,13 +45,18 @@
   description: Java NIO channel
   effort: 5
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
   - domain=cloud-readiness
   - category=remote-communication
   - socket
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: |-
     Java NIO channels provide bulk data transfer to and from NIO buffers. They can be synchronously and asynchronously read and written.

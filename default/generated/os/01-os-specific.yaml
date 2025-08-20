@@ -3,8 +3,8 @@
 #   description: Windows file system path
 #   effort: 3
 #   labels:
-#   - konveyor.io/target=linux
-#   - konveyor.io/source
+#   - target=linux
+#   - source
 #   - domain=cloud-readiness
 #   - category=os-compatibility
 #   - ms-windows
@@ -35,8 +35,9 @@
   description: Dynamic-Link Library (DLL)
   effort: 5
   labels:
-  - konveyor.io/target=linux
-  - konveyor.io/source
+  - os=linux
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=os-compatibility
   - ms-windows

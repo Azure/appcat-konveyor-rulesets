@@ -3,10 +3,12 @@
 #   description: External resources found in Tomcat configuration file
 #   effort: 5
 #   labels:
-#   - konveyor.io/target=azure-appservice
-#   - konveyor.io/target=azure-aks
-#   - konveyor.io/target=azure-container-apps
-#   - konveyor.io/source
+#   - os=windows
+#   - os=linux
+#   - target=azure-appservice
+#   - target=azure-aks
+#   - target=azure-container-apps
+#   - source
 #   - domain=java-upgrade
 #   - category=service-binding
 #   - tomcat

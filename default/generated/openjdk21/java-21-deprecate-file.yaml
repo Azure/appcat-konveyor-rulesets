@@ -3,12 +3,17 @@
   description: java.io.File's Canonical Path Cache Is Removed
   effort: 1
   labels:
-  - konveyor.io/source=openjdk21-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk21+
-  - konveyor.io/target=openjdk
+  - source=openjdk21-
+  - source=openjdk
+  - capability=openjdk21+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: java.io.File's Canonical Path Cache Is Removed
     url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8300977
@@ -34,12 +39,17 @@
   description: com.sun.nio.file.SensitivityWatchEventModifier Is Deprecated
   effort: 1
   labels:
-  - konveyor.io/source=openjdk21-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk21+
-  - konveyor.io/target=openjdk
+  - source=openjdk21-
+  - source=openjdk
+  - capability=openjdk21+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: com.sun.nio.file.SensitivityWatchEventModifier Is Deprecated
     url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8303175

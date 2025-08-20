@@ -3,12 +3,17 @@
   description: Removal of sun.nio.cs.map System Property
   effort: 1
   labels:
-  - konveyor.io/source=openjdk14-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk14+
-  - konveyor.io/target=openjdk
+  - source=openjdk14-
+  - source=openjdk
+  - capability=openjdk14+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of sun.nio.cs.map System Property
     url: https://www.oracle.com/java/technologies/javase/14-relnote-issues.html#JDK-8229960
@@ -25,12 +30,17 @@
   description: Removal of netscape.javascript.JSObjectgetWindow Method
   effort: 1
   labels:
-  - konveyor.io/source=openjdk14-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk14+
-  - konveyor.io/target=openjdk
+  - source=openjdk14-
+  - source=openjdk
+  - capability=openjdk14+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of netscape.javascript.JSObjectgetWindow Method
     url: https://www.oracle.com/java/technologies/javase/14-relnote-issues.html#JDK-8222563

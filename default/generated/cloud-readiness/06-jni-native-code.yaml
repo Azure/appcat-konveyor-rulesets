@@ -3,12 +3,17 @@
   description: Java native libraries (JNI, JNA)
   effort: 7
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=java-native-code
   - jni
   - containerization
+  - os=windows
+  - os=linux
   links: 
   - title: Advanced example for containers
     url: https://docs.microsoft.com/en-us/visualstudio/install/advanced-build-tools-container?view=vs-2019
@@ -65,12 +70,17 @@
   description: Java Native Processes
   effort: 7
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=java-native-code
   - jni
   - containerization
+  - os=windows
+  - os=linux
   links: 
   - title: Advanced example for containers
     url: https://docs.microsoft.com/en-us/visualstudio/install/advanced-build-tools-container?view=vs-2019

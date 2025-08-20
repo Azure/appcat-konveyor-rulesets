@@ -3,12 +3,17 @@
   description: Deprecated javax.security.cert APIs with forRemoval=true
   effort: 1
   labels:
-  - konveyor.io/source=openjdk13-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk13+
-  - konveyor.io/target=openjdk
+  - source=openjdk13-
+  - source=openjdk
+  - capability=openjdk13+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Deprecated javax.security.cert APIs with forRemoval=true
     url: https://www.oracle.com/java/technologies/javase/13all-relnotes.html#JSERN13

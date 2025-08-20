@@ -3,13 +3,15 @@
   description: Detect OpenLiberty JMS ConnectionFactory configurations
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     OpenLiberty JMS ConnectionFactory configurations detected that require migration to Azure messaging services.
 
@@ -46,13 +48,15 @@
   description: Detect JMS Resource injection in application code
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     JMS resource injections detected that require refactoring for Azure Service Bus integration.
 
@@ -97,13 +101,15 @@
   description: Detect Message-Driven Bean implementations
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Message-Driven Beans (MDBs) detected that require migration to Azure Service Bus message processing.
 
@@ -138,13 +144,15 @@
   description: Detect JMS resource references in web.xml/ejb-jar.xml
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     JMS resource references in deployment descriptors detected that require removal and replacement with Azure Service Bus configuration for AKS deployment.
 
@@ -184,13 +192,15 @@
   description: Detect JMS JNDI lookups in code
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected manual JNDI lookups for JMS resources that need to be updated for Azure messaging services.
     
@@ -209,13 +219,15 @@
   description: Detect JMS API usage in code
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     JMS API usage detected that requires comprehensive migration to Azure messaging services.
 

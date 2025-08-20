@@ -3,12 +3,17 @@
   description: The java.activation (JAF) module has been removed from OpenJDK 11
   effort: 1
   labels:
-  - konveyor.io/source=openjdk11-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk11+
-  - konveyor.io/target=openjdk
+  - source=openjdk11-
+  - source=openjdk
+  - capability=openjdk11+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removed Java EE modules
     url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8190378
@@ -29,12 +34,17 @@
     OpenJDK 11
   effort: 1
   labels:
-  - konveyor.io/source=openjdk11-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk11+
-  - konveyor.io/target=openjdk
+  - source=openjdk11-
+  - source=openjdk
+  - capability=openjdk11+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removed Java EE modules
     url: https://www.oracle.com/java/technologies/javase/11-relnote-issues.html#JDK-8190378

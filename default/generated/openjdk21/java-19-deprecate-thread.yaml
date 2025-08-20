@@ -3,12 +3,17 @@
   description: java.lang.ThreadGroup Is Degraded
   effort: 3
   labels:
-  - konveyor.io/source=openjdk19-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk19+
-  - konveyor.io/target=openjdk
+  - source=openjdk19-
+  - source=openjdk
+  - capability=openjdk19+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: java.lang.ThreadGroup Is Degraded
     url: https://www.oracle.com/java/technologies/javase/19-relnote-issues.html#JDK-8284161
@@ -53,12 +58,17 @@
   description: This method is not final and may be overridden to return a value that is not the thread ID. Use Thread.threadId() instead.
   effort: 1
   labels:
-  - konveyor.io/source=openjdk19-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk19+
-  - konveyor.io/target=openjdk
+  - source=openjdk19-
+  - source=openjdk
+  - capability=openjdk19+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: This method is not final and may be overridden to return a value that is not the thread ID. Use Thread.threadId() instead.
     url: https://cr.openjdk.org/~iris/se/19/latestSpec/api/deprecated-list.html
@@ -75,12 +85,17 @@
   description: Remove the Alternate ThreadLocal Implementation of the Subject::current and Subject::callAs APIs
   effort: 1
   labels:
-  - konveyor.io/source=openjdk19-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk19+
-  - konveyor.io/target=openjdk
+  - source=openjdk19-
+  - source=openjdk
+  - capability=openjdk19+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Remove the Alternate ThreadLocal Implementation of the Subject::current and Subject::callAs APIs
     url: https://www.oracle.com/java/technologies/javase/19-relnote-issues.html#JDK-8282676

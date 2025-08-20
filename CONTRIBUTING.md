@@ -53,8 +53,13 @@ To begin contributing to AppCAT rulesets, follow these steps:
 There are a few conventions that we follow when creating rules:
 
 #### Directory structure
-Rules can be found within the `default/generated` folder. Within this folder, rules are organized by target technology.
-**_Source_** and **_target_** technologies are the technologies to migrate **_from_** and **_to_**, respectively.
+Rules can be found within the `default/generated` folder. Within this folder, rules are organized by target technology. We use the following labels to clarify the rule intent:
+
+- `target`: the Azure service the rule applies to (for example `azure-aks`, `azure-container-apps`, `azure-appservice`).
+- `capability`: the optimization goal or technical constraint the rule targets (for example `openjdk11`, `openjdk17`, `openjdk21`, `containerization`).
+- `os`: the target operating system or platform (for example `windows`, `linux`).
+
+The `source` label is used where relevant to indicate the original/source technology.
 
 Additionally, within each rules directory, a `test` directory should be created to place the rules's tests. Since each
 test needs data, a `data` directory must also be created inside `test`. For instance:
@@ -93,16 +98,22 @@ Rule IDs must be unique within the rulesets being used, and contain in themselve
 number. These numbers must have 5 digits, to follow a convention set in the old Windup rules.
 
 #### Target Technologies
-AppCAT currently exposes rules within the following target technologies. Please ensure you specify one of these target labels when writing rules:
+AppCAT currently exposes labels for rules in three groups: `target` (Azure services), `capability` (optimization goals / technical constraints), and `os` (target platforms). When writing rules, specify one or more of these labels as appropriate.
 
-- `azure-aks`
-- `azure-appservice`
-- `azure-container-apps`
-- `cloud-readiness`
-- `linux`
-- `openjdk11`
-- `openjdk17`
-- `openjdk21`
+- target:
+  - `azure-aks`
+  - `azure-container-apps`
+  - `azure-appservice`
+
+- capability:
+  - `openjdk11`
+  - `openjdk17`
+  - `openjdk21`
+  - `containerization`
+
+- os:
+  - `windows`
+  - `linux`
 
 #### Domain and Category
 

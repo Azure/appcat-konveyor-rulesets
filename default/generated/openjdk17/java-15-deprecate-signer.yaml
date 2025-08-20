@@ -3,12 +3,17 @@
   description: Added forRemoval=true to Previously Deprecated ContentSigner APIs
   effort: 1
   labels:
-  - konveyor.io/source=openjdk15-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk15+
-  - konveyor.io/target=openjdk
+  - source=openjdk15-
+  - source=openjdk
+  - capability=openjdk15+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Added forRemoval=true to Previously Deprecated ContentSigner APIs
     url: https://www.oracle.com/java/technologies/javase/15-relnote-issues.html#JDK-8242260

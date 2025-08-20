@@ -3,12 +3,15 @@
   description: No Dockerfile found
   effort: 1
   labels:
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=containerization
   - containerization
+  - os=windows
+  - os=linux
   links:
   - title: Dockerizing a Java Application
     url: https://www.baeldung.com/java-dockerize-app
@@ -27,12 +30,15 @@
   description: Avoid Docker apt upgrade command
   effort: 1
   labels:
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=containerization
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: |-
     Running apt-get upgrade in a Dockerfile is generally discouraged because it can lead to unintended changes in the container's state, which can break the application or dependencies. 
@@ -49,12 +55,15 @@
   description: Avoid lowercase instructions in Dockerfile
   effort: 1
   labels:
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=containerization
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: |-
     For Dockerfile instructions, it is conventional to use uppercase to distinguish them from arguments more easily, although the instructions themselves are not case-sensitive.
@@ -70,12 +79,15 @@
   description: Avoid Space Before Equal in Dockerfile
   effort: 1
   labels:
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=containerization
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: |-
     ENV, LABEL and ARG instructions allow alternative syntax (i.e. ENV ) and in case of space before equal sign, the equal sign will be considered as a value.
