@@ -3,14 +3,16 @@
   description: The application uses Quartz to scheduled jobs
   effort: 7
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=springboot
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=scheduled-job-migration
   - scheduler
   - quartz
+  - os=windows
+  - os=linux
   links:
   - title: The application uses Quartz to scheduled jobs
     url: https://docs.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-app-service#determine-whether-application-relies-on-scheduled-jobs

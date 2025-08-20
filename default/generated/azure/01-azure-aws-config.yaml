@@ -3,13 +3,15 @@
   description: AWS credential configuration
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=credential-migration
   - AWS
+  - os=windows
+  - os=linux
   links:
   - title: Azure Key Vault documentation
     url: https://learn.microsoft.com/azure/key-vault
@@ -42,13 +44,15 @@
   description: AWS region configuration
   effort: 1
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=region-configuration
   - AWS
+  - os=windows
+  - os=linux
   links:
   - title: Azure geographies
     url: https://azure.microsoft.com/explore/global-infrastructure/geographies
@@ -75,14 +79,16 @@
   description: AWS S3 usage found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=storage-migration
   - AWS
   - storage
+  - os=windows
+  - os=linux
   links:
   - title: Azure Blob Storage documentation
     url: https://learn.microsoft.com/azure/storage/blobs
@@ -131,14 +137,16 @@
   description: AWS S3 dependency usage found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=storage-migration
   - AWS
   - storage
+  - os=windows
+  - os=linux
   links:
   - title: Azure Blob Storage documentation
     url: https://learn.microsoft.com/azure/storage/blobs
@@ -170,14 +178,16 @@
   description: AWS S3 operations found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=storage-migration
   - AWS
   - storage
+  - os=windows
+  - os=linux
   links:
   - title: Azure Blob Storage documentation
     url: https://learn.microsoft.com/azure/storage/blobs
@@ -217,13 +227,15 @@
   description: Amazon Simple Queue Service Java 1.x SDK dependency
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - AWS
+  - os=windows
+  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -243,13 +255,15 @@
   description: Amazon Simple Queue Service Java 1.x API
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - AWS
+  - os=windows
+  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -275,13 +289,15 @@
   description: Amazon Simple Queue Service Java 2.x SDK dependency
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - AWS
+  - os=windows
+  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -301,13 +317,15 @@
   description: Amazon Simple Queue Service Java 2.x API
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - AWS
+  - os=windows
+  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -333,13 +351,15 @@
   description: Amazon Simple Queue Service configuration
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - AWS
+  - os=windows
+  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -359,13 +379,15 @@
   description: AWS Secrets Manager configuration
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=credential-migration
   - AWS
+  - os=windows
+  - os=linux
   links:
   - title: Azure Key Vault documentation
     url: https://learn.microsoft.com/azure/key-vault

@@ -3,13 +3,15 @@
   description: Detect OpenLiberty Data Source configurations
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected OpenLiberty data source configurations that need to be migrated to Azure database services.
     
@@ -53,13 +55,15 @@
   description: Detect EntityManager usage in application code
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected JPA EntityManager usage that will require configuration updates when migrating to Azure.
     
@@ -92,13 +96,15 @@
   description: Detect OpenLiberty Sybase Data Source configurations
   effort: 7
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   links:
   - title: Migration guide Sybase to Azure SQL Database
     url: https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/database/sybase-to-sql-database-guide
@@ -161,13 +167,15 @@
   description: Detect application-level data source references
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected application-level data source references that need updating for Azure database services.
     
@@ -203,13 +211,15 @@
   description: Detect Resource annotations for database injection
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected @Resource annotations for database injection that need configuration updates for Azure migration.
     
@@ -246,13 +256,15 @@
   description: Detect persistence.xml configurations
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected JPA persistence.xml configurations with database references that need updates for Azure migration.
     
@@ -287,13 +299,15 @@
   description: Detect JNDI lookup patterns for databases
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected manual JNDI lookups for database connections that need updates for Azure.
     
@@ -317,13 +331,15 @@
   description: Detect OpenLiberty Oracle Data Source configurations
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   links:
   - title: Migration guide Oracle to Azure SQL Database
     url: https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/database/oracle-to-sql-database-guide?view=azuresql
@@ -377,13 +393,15 @@
   description: Detect OpenLiberty PostgreSQL Data Source configurations
   effort: 5 
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   links:
   - title: Azure PostgreSQL Flexible Server documentation
     url: https://learn.microsoft.com/azure/postgresql/flexible-server

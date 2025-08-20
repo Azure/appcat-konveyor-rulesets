@@ -3,14 +3,16 @@
   description: Server port configuration found
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-container-apps
+  - source=springboot
+  - target=azure-aks
+  - target=azure-appservice
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=spring-migration
   - port
   - server port
+  - os=windows
+  - os=linux
   links:
   - title: Identify any clients relying on a non-standard port
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#identify-any-clients-relying-on-a-non-standard-port

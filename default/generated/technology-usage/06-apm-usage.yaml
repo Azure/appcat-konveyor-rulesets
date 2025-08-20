@@ -36,6 +36,8 @@
   labels:
   - konveyor.io/include=always
   - apm
+  - os=windows
+  - os=linux
   links: []
   message: The application uses Elastic APM.
   ruleID: apm-usage-00002
@@ -54,6 +56,8 @@
   labels:
   - konveyor.io/include=always
   - apm
+  - os=windows
+  - os=linux
   links: []
   message: The application uses Dynatrace.
   ruleID: apm-usage-00003
