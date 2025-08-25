@@ -3,10 +3,14 @@
   description: Java Swing usage
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=desktop-gui-migration
+  - os=windows
+  - os=linux
   links:
   - title: Azure Container Registry documentation
     url: https://learn.microsoft.com/azure/container-registry
@@ -36,10 +40,14 @@
   description: JavaFX usage
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=desktop-gui-migration
+  - os=windows
+  - os=linux
   links:
   - title: Azure Container Registry documentation
     url: https://learn.microsoft.com/azure/container-registry

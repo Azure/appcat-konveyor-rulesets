@@ -3,13 +3,15 @@
   description: Explicit eureka connection info found in configuration file
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-container-apps
+  - source=springboot
+  - target=azure-aks
+  - target=azure-appservice
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=spring-migration
   - eureka
+  - os=windows
+  - os=linux
   links:
   - title: Migrate Spring Boot applications to Azure Container Apps - Remove restricted configurations
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps#remove-restricted-configurations
@@ -32,13 +34,14 @@
   description: Embedded framework - Eureka Client
   effort: 1
   labels:
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=spring-migration
+  - os=windows
+  - os=linux
   links:
   - title: Connect to a managed Eureka Server for Spring in Azure Container Apps
     url: https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server?tabs=azure-cli
@@ -69,13 +72,14 @@
   description: Embedded framework - Eureka Server
   effort: 1
   labels:
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=spring-migration
+  - os=windows
+  - os=linux
   links:
   - title: Connect to a managed Eureka Server for Spring in Azure Container Apps
     url: https://learn.microsoft.com/en-us/azure/container-apps/java-eureka-server?tabs=azure-cli
