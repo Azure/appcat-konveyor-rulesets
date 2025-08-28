@@ -2,8 +2,8 @@
   category: optional
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     builtin.filecontent:
       filePattern: .*\.properties
@@ -30,8 +30,8 @@
   category: potential
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.context.SmartLifecycle

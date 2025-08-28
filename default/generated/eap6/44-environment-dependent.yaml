@@ -3,12 +3,12 @@
   description: Dynamic class instantiation
   effort: 0
   labels:
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
-  - konveyor.io/source
+  - target=eap6
+  - target=eap7
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
+  - source
   - classloader
   links:
   - title: Class Loading and Modules in JBoss EAP 7
@@ -31,12 +31,12 @@
   description: Call of JNDI lookup
   effort: 1
   labels:
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
-  - konveyor.io/source
+  - target=eap6
+  - target=eap7
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
+  - source
   - jndi
   links: []
   message: |-
@@ -65,12 +65,12 @@
   description: Proprietary InitialContext initialization
   effort: 1
   labels:
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
-  - konveyor.io/source
+  - target=eap6
+  - target=eap7
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
+  - source
   - jndi
   links: []
   message: |-
@@ -89,12 +89,12 @@
 - customVariables: []
   description: JNDI properties file
   labels:
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
-  - konveyor.io/source
+  - target=eap6
+  - target=eap7
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
+  - source
   links: []
   message: "\n                          \n                          The JNDI automatically
     reads the application resource files from all components in the applications'
@@ -118,12 +118,12 @@
   description: JMX MBean object names may change after migration
   effort: 1
   labels:
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
-  - konveyor.io/source
+  - target=eap6
+  - target=eap7
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
+  - source
   - jmx
   links: []
   message: |-
@@ -143,12 +143,12 @@
   description: JMX API connector server address under 'javax.management' may not be present after migration
   effort: 1
   labels:
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
-  - konveyor.io/source
+  - target=eap6
+  - target=eap7
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
+  - source
   - jmx
   links: []
   message: |-
@@ -165,12 +165,12 @@
   description: JMX connection factory parameters
   effort: 1
   labels:
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
-  - konveyor.io/source
+  - target=eap6
+  - target=eap7
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
+  - source
   - jmx
   links: []
   message: |-

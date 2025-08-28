@@ -3,8 +3,8 @@
   description: Spring MVC is not supported by Quarkus
   effort: 13
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus - Supported Spring Web functionalities
     url: https://quarkus.io/guides/spring-web#supported-spring-web-functionalities
@@ -22,8 +22,8 @@
   description: Spring WebFlux is not supported by Quarkus
   effort: 13
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus - Using Eclipse Vert.x
     url: https://quarkus.io/guides/vertx

@@ -3,8 +3,8 @@
   description: Replace the spring-boot-maven-plugin dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Building Quarkus with maven
     url: https://quarkus.io/guides/maven-tooling#build-tool-maven

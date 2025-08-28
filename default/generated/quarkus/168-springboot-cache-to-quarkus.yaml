@@ -3,8 +3,8 @@
   description: Replace the SpringBoot cache artifact with Quarkus 'spring-cache' extension
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Extension for Spring Cache API Guide
     url: https://quarkus.io/guides/spring-cache

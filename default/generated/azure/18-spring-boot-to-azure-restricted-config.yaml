@@ -19,7 +19,6 @@
   - target=azure-container-apps
   - source=springboot
   - domain=cloud-readiness
-  - target=azure-container-apps
   - category=spring-migration
   - os=windows
   - os=linux

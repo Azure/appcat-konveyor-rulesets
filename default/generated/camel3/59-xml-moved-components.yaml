@@ -3,10 +3,10 @@
   description: The classes from `org.apache.camel.util.component` have been moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: |-
     All the classes from `org.apache.camel.util.component` have been moved to `org.apache.camel.support.component`.
@@ -25,10 +25,10 @@
   description: 'Classes under `org.apache.camel.impl` have been moved to the `org.apache.camel.impl.engine` package in `camel-base` dependency'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: |-
     The class `org.apache.camel.impl.{{moved}}` has been moved to `org.apache.camel.impl.engine` package in `camel-base` dependency.
@@ -44,10 +44,10 @@
   description: '`org.apache.camel.main.Main` class has been moved'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: |-
     The class `org.apache.camel.main.Main` has been moved out of `org.apache.camel:camel-core` and into its own JAR named `org.apache.camel:camel-main`.
@@ -63,10 +63,10 @@
   description: JMX is disable by default
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: If you run Camel standalone with just `camel-core` as a dependency, and
     you want JMX enabled out of the box, then you need to add `org.apache.camel:camel-management`

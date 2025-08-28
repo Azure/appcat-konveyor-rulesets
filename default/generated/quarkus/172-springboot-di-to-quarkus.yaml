@@ -4,8 +4,8 @@
     extension
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus DI Guide
     url: https://quarkus.io/guides/spring-di
@@ -25,8 +25,8 @@
     by Quarkus '
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: 'Quarkus Extension for Spring DI API- Guide '
     url: https://quarkus.io/guides/spring-di
@@ -49,8 +49,8 @@
   description: Spring DI infrastructure classes not supported by Quarkus
   effort: 3
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus DI Guide - important technical note
     url: https://quarkus.io/guides/spring-di#important-technical-note

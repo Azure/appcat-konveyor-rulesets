@@ -3,8 +3,8 @@
   description: JMS is not supported in Quarkus
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides
@@ -30,8 +30,8 @@
   description: '@MessageDriven - EJBs are not supported in Quarkus'
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides
@@ -52,8 +52,8 @@
   description: Configure message listener method with @Incoming
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides
@@ -90,8 +90,8 @@
   description: JMS' Queue must be replaced with an Emitter
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides
@@ -116,8 +116,8 @@
   description: JMS' Topic must be replaced with an Emitter
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides
@@ -142,8 +142,8 @@
   description: JMS is not supported in Quarkus
   effort: 5
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides

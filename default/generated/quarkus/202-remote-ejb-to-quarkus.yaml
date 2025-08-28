@@ -3,9 +3,9 @@
   description: Remote EJBs are not supported in Quarkus
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - source=jakarta-ee
+  - target=quarkus
   message: |-
     Remote EJBs are not supported in Quarkus, and therefore its use must be removed and replaced with REST functionality. In order to do this:
      1. Replace the `@Remote` annotation on the class with a `@jakarta.ws.rs.Path("<endpoint>")` annotation. An endpoint must be added to the annotation in place of `<endpoint>` to specify the actual path to the REST service.

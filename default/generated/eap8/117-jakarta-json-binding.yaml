@@ -4,11 +4,11 @@
     annotation no longer require all parameters to be present
   effort: 1
   labels:
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source
   links: []
   message: |-
     By default, types annotated with the `jakarta.json.bind.annotation.JsonbCreator` annotation no longer require all parameters to be present in the JSON content. Default values will be used if the JSON being parsed is missing one of the parameters.

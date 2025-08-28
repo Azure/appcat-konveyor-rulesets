@@ -3,9 +3,9 @@
   description: Move persistence config to a properties file
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - source=jakarta-ee
+  - target=quarkus
   links:
   - title: Using Hibernate ORM and Jakarta persistence
     url: https://quarkus.io/guides/hibernate-orm#persistence-xml
@@ -48,9 +48,9 @@
   description: '@Produces cannot annotate an EntityManager'
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - source=jakarta-ee
+  - target=quarkus
   links:
   - title: Using Hibernate ORM and Jakarta persistence
     url: https://quarkus.io/guides/hibernate-orm#persistence-xml

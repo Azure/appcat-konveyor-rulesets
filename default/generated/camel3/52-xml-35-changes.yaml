@@ -3,9 +3,9 @@
   description: Camel has been migrated to using JUnit 5 as the default testing framework
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.5+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.5+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring / JUnit 5'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_5.html#_junit_5_testing

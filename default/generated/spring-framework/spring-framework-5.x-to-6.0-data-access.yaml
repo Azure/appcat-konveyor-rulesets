@@ -2,10 +2,10 @@
   category: mandatory
   effort: 5
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source=spring-boot2
-  - konveyor.io/target=spring-boot3+
+  - source=spring5
+  - target=spring6+
+  - source=spring-boot2
+  - target=spring-boot3+
   when:
     java.dependency:
       name: org.hibernate.hibernate-core
@@ -35,9 +35,9 @@
   category: mandatory
   effort: 1
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/target=hibernate6+
+  - source=spring5
+  - target=spring6+
+  - target=hibernate6+
   when:
     or:
     - builtin.filecontent:
@@ -65,9 +65,9 @@
   category: potential
   effort: 5
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/target=hibernate6+
+  - source=spring5
+  - target=spring6+
+  - target=hibernate6+
   when:
     and:
       - or:  # Check for Hibernate annotations or clob fields
@@ -105,8 +105,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     java.dependency:
       name: org.hibernate.validator.hibernate-validator
@@ -137,8 +137,8 @@
   category: mandatory
   effort: 5
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     java.dependency:
       name: org.eclipse.persistence.eclipselink
@@ -167,8 +167,8 @@
   category: mandatory
   effort: 1
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
+  - source=spring5
+  - target=spring6+
   when:
     builtin.file:
       pattern: sql-error-codes\.xml

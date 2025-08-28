@@ -3,8 +3,8 @@
   description: Unsupported version of Spring Boot
   effort: 3
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links:
   - title: RHOAR Component Details Overview
     url: https://access.redhat.com/articles/3348731
@@ -20,8 +20,8 @@
   description: Unsupported version of Spring Boot
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links:
   - title: RHOAR Component Details Overview
     url: https://access.redhat.com/articles/3348731

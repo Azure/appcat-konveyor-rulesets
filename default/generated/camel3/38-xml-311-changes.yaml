@@ -3,9 +3,9 @@
   description: org.apache.camel:camel-apns component has been retired
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.11+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.11+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_11.html#_camel_apns
@@ -25,9 +25,9 @@
   description: org.apache.camel:camel-saxon artifact has been removed
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.11+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.11+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_11.html#_camel_saxon
@@ -49,9 +49,9 @@
     renamed to camel.cloud.consul
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.11+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.11+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_11.html#_spring_boot_starters
@@ -68,9 +68,9 @@
     to camel.cloud.consul
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.11+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.11+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_11.html#_spring_boot_starters

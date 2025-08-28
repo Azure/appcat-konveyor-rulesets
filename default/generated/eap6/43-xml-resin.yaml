@@ -1,9 +1,9 @@
 - customVariables: []
   description: Resin Web Application Descriptor
   labels:
-  - konveyor.io/source=resin
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=resin
+  - target=eap6+
+  - target=eap
   - web-app
   - resin
   - configuration

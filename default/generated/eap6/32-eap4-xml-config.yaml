@@ -3,10 +3,10 @@
   description: PostgreSQL JDBC URL
   effort: 5
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -49,10 +49,10 @@
   description: Oracle Database JDBC URL
   effort: 5
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -97,10 +97,10 @@
   description: Microsoft SQL Server JDBC URL
   effort: 5
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -144,10 +144,10 @@
   description: JBoss Web connector port
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -183,10 +183,10 @@
   description: JBoss Web connector protocol
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -218,10 +218,10 @@
   description: JBoss Web connector - maximal number of threads
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -268,10 +268,10 @@
   description: JBoss Web connector connection timeout
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -300,10 +300,10 @@
   description: JBoss Web HTTP connector - empty path of the session cookie
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -338,10 +338,10 @@
   description: JBoss Web connector DNS lookups
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -371,10 +371,10 @@
   description: JBoss Web HTTP connector port for redirections
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -403,10 +403,10 @@
   description: JBoss Web connector scheme
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -435,10 +435,10 @@
   description: JBoss Web HTTP connector - the secure option
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -470,10 +470,10 @@
   description: JBoss Web HTTP - jvmRoute
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -514,10 +514,10 @@
   description: JBoss EAP 4 EJB container configuration
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -549,10 +549,10 @@
   description: JBoss EAP 4 EJB container configuration
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -583,10 +583,10 @@
   description: JBoss EAP 4 EJB container configuration
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -618,10 +618,10 @@
   description: JBoss EAP 4 EJB container configuration
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb
@@ -653,10 +653,10 @@
   description: JBoss EAP 4 EJB container configuration
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap
+  - target=eap6+
+  - target=eap
   - jboss-web
   - datasource
   - ejb

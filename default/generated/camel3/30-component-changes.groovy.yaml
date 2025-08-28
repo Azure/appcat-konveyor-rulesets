@@ -3,10 +3,10 @@
   description: '[camel-telegram] Authorization token parameter required!'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: telegram'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_telegram
@@ -26,10 +26,10 @@
   description: Shiro - default encryption key was removed
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: shiro_component'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_shiro_component
@@ -44,10 +44,10 @@
   description: Mock API function has been removed
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: out_message_removed_from_simple_language_and_mock_component'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_out_message_removed_from_simple_language_and_mock_component
@@ -62,10 +62,10 @@
   description: '@OutHeaders annotation has been removed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: out_message_removed_from_simple_language_and_mock_component'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_out_message_removed_from_simple_language_and_mock_component
@@ -84,10 +84,10 @@
   description: 'Simple language: out.body/out.header have been removed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: out_message_removed_from_simple_language_and_mock_component'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_out_message_removed_from_simple_language_and_mock_component
@@ -103,10 +103,10 @@
   description: 'Simple language: out.body/out.header have been removed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: out_message_removed_from_simple_language_and_mock_component'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_out_message_removed_from_simple_language_and_mock_component
@@ -122,10 +122,10 @@
   description: 'Simple language: out.body/out.header have been removed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: out_message_removed_from_simple_language_and_mock_component'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_out_message_removed_from_simple_language_and_mock_component
@@ -140,10 +140,10 @@
   description: 'Simple language: property function has been removed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: languages'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_languages
@@ -168,10 +168,10 @@
   description: 'Terser language: language renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: languages'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_languages
@@ -192,10 +192,10 @@
   description: 'Crypto dataformat: The default encryption algorithm changed to null'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: crypto_dataformat'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_crypto_dataformat
@@ -221,10 +221,10 @@
   description: 'XMLsecure dataformat: The default encryption key has been removed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: xml_security_dataformat'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_xml_security_dataformat
@@ -249,10 +249,10 @@
   description: 'Consumer endpoints: options with consumer. prefix have been removed.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: using_endpoint_options_with_consumer_prefix'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_using_endpoint_options_with_consumer_prefix
@@ -277,10 +277,10 @@
   description: 'Tracing: Tracer class removed'
   effort: 3
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Tracer in Camel 3
     url: https://camel.apache.org/manual/latest/tracer.html
@@ -300,10 +300,10 @@
   description: 'Tracing: DefaultTraceFormatter formatter removed'
   effort: 3
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Tracer in Camel 3
     url: https://camel.apache.org/manual/latest/tracer.html
@@ -323,10 +323,10 @@
   description: 'Tracing:  BacklogTracer is no longer enabled by default in JMX'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: tracing'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_tracing
@@ -343,10 +343,10 @@
   description: 'XMLSecurity component: The default signature algorithm has changed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: using_endpoint_options_with_consumer_prefix'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_using_endpoint_options_with_consumer_prefix
@@ -371,10 +371,10 @@
   description: 'Crypto component: The default signature algorithm has changed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: using_endpoint_options_with_consumer_prefix'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_using_endpoint_options_with_consumer_prefix
@@ -399,10 +399,10 @@
   description: 'XSLT: Use xslt-saxon component to use Saxon'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 XSLT Saxon Documentation
     url: https://camel.apache.org/components/latest/xslt-saxon-component.html

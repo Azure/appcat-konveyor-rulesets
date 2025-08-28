@@ -1,12 +1,12 @@
 - customVariables: []
   description: Commonj Timer Manager API
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
+  - source=weblogic
+  - source=websphere
+  - target=eap6+
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
   - commonj
   links:
   - title: Replacement for JSR-236 (Timer Manager) and JSR-237 (Work Manager) in JBoss
@@ -25,12 +25,12 @@
   description: Migrate commonj.timers.TimerManager to Java EE TimerService API
   effort: 7
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
+  - source=weblogic
+  - source=websphere
+  - target=eap6+
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
   - commonj
   links:
   - title: Java EE 6 Tutorial - Using the Timer Service
@@ -49,12 +49,12 @@
   description: Migrate commonj.timers.Timer to Java EE javax.ejb.Timer
   effort: 7
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
+  - source=weblogic
+  - source=websphere
+  - target=eap6+
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
   - commonj
   links: []
   message: Commonj Timer Interface is similar to the EJB 3.1 javax.ejb.Timer Interface.
@@ -65,12 +65,12 @@
 - customVariables: []
   description: Commonj WorkManager API
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
+  - source=weblogic
+  - source=websphere
+  - target=eap6+
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
   - commonj
   links:
   - title: Replacement for JSR-236 (Timer Manager) and JSR-237 (Work Manager) in JBoss
@@ -93,12 +93,12 @@
   description: Replace CommonJ WorkManager with a JCA Resource Adapter
   effort: 7
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
+  - source=weblogic
+  - source=websphere
+  - target=eap6+
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
   - commonj
   links:
   - title: Ironjacamar WorkManager SPI
@@ -116,12 +116,12 @@
   description: Commonj WorkManager API
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
+  - source=weblogic
+  - source=websphere
+  - target=eap6+
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
   - commonj
   links: []
   message: Replace commonj.work.Work{{part}} with javax.resource.spi.work.Work{{part}}.
@@ -137,12 +137,12 @@
   description: CommonJ WorkManager API Exception
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
+  - source=weblogic
+  - source=websphere
+  - target=eap6+
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
   - commonj
   links: []
   message: Replace CommonJ Work related Exception with a javax.resource.spi.work.Work{{subpart}}Exception

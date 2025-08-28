@@ -3,8 +3,8 @@
   description: Java EE Application Deployment API is unavailable
   effort: 5
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=openliberty
+  - source=websphere
+  - target=openliberty
   links:
   - title: Open Liberty migration rules in Windup
     url: https://www.ibm.com/docs/wamt?topic=rules-open-liberty-migration-in-windup
@@ -36,8 +36,8 @@
   description: Java Portlet is unsupported
   effort: 5
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=openliberty
+  - source=websphere
+  - target=openliberty
   links:
   - title: Open Liberty migration rules in Windup
     url: https://www.ibm.com/docs/wamt?topic=rules-open-liberty-migration-in-windup
@@ -60,8 +60,8 @@
   description: Java API for XML Registries (JAXR) is unavailable
   effort: 3
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=openliberty
+  - source=websphere
+  - target=openliberty
   links:
   - title: Open Liberty migration rules in Windup
     url: https://www.ibm.com/docs/wamt?topic=rules-open-liberty-migration-in-windup
@@ -86,8 +86,8 @@
   description: The OSGI remote bundle repository service API is unavailable
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=openliberty
+  - source=websphere
+  - target=openliberty
   links:
   - title: Open Liberty migration rules in Windup
     url: https://www.ibm.com/docs/wamt?topic=rules-open-liberty-migration-in-windup
@@ -107,8 +107,8 @@
   description: The OSGI Remote Service Admin API is unavailable
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=openliberty
+  - source=websphere
+  - target=openliberty
   links:
   - title: Open Liberty migration rules in Windup
     url: https://www.ibm.com/docs/wamt?topic=rules-open-liberty-migration-in-windup
@@ -125,8 +125,8 @@
   description: Web Services Notification (WS-Notification) is unavailable
   effort: 5
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=openliberty
+  - source=websphere
+  - target=openliberty
   links:
   - title: Open Liberty migration rules in Windup
     url: https://www.ibm.com/docs/wamt?topic=rules-open-liberty-migration-in-windup
@@ -148,8 +148,8 @@
   description: Entity Enterprise JavaBeans (EJB) are unavailable
   effort: 13
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=openliberty
+  - source=websphere
+  - target=openliberty
   links:
   - title: Open Liberty migration rules in Windup
     url: https://www.ibm.com/docs/wamt?topic=rules-open-liberty-migration-in-windup
@@ -178,8 +178,8 @@
     remote interfaces
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=openliberty
+  - source=websphere
+  - target=openliberty
   links:
   - title: Open Liberty migration rules in Windup
     url: https://www.ibm.com/docs/wamt?topic=rules-open-liberty-migration-in-windup
@@ -256,8 +256,8 @@
   description: Java API for XML-based RPC (JAX-RPC) is unavailable
   effort: 5
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=openliberty
+  - source=websphere
+  - target=openliberty
   links:
   - title: Open Liberty migration rules in Windup
     url: https://www.ibm.com/docs/wamt?topic=rules-open-liberty-migration-in-windup

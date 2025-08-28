@@ -3,9 +3,9 @@
   description: Move to Microprofile REST Client 1.3
   effort: 1
   labels:
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap7
+  - target=eap
+  - source
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Changes Required in MicroProfile
       Rest Client Code'

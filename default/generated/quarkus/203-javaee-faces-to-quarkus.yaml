@@ -3,8 +3,8 @@
   description: Replace JSF Dependency with MyFaces
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: 'Apache MyFaces: Getting Started on Quarkus'
     url: https://myfaces.apache.org/#/coregettingstarted?id=quarkus

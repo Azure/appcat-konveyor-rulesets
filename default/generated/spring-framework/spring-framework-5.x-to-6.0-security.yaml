@@ -2,12 +2,12 @@
   category: mandatory
   effort: 3
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/source=spring-boot2
-  - konveyor.io/source=spring-security5
-  - konveyor.io/target=spring6+
-  - konveyor.io/target=spring-boot3+
-  - konveyor.io/target=spring-security6+
+  - source=spring5
+  - source=spring-boot2
+  - source=spring-security5
+  - target=spring6+
+  - target=spring-boot3+
+  - target=spring-security6+
   when:
     java.referenced:
       pattern: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
@@ -62,10 +62,10 @@
   category: potential
   effort: 5
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     or:
     - java.referenced:
@@ -111,10 +111,10 @@
   category: potential
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     or:
     - java.referenced:
@@ -163,10 +163,10 @@
   category: potential
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.web.context.SecurityContextRepository
@@ -218,10 +218,10 @@
   category: optional
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     or:
     - java.referenced:
@@ -262,10 +262,10 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     or:
     - java.referenced:
@@ -317,10 +317,10 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     or:
       - java.referenced:
@@ -393,10 +393,10 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
@@ -414,10 +414,10 @@
   category: optional
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices
@@ -447,10 +447,10 @@
   category: optional
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     or:
     - java.referenced:
@@ -485,10 +485,10 @@
   category: potential
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     and:
       - java.referenced:
@@ -523,10 +523,10 @@
   category: optional
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     and:
     - java.referenced:
@@ -575,10 +575,10 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: '* org.springframework.security.access.PermissionEvaluator'
@@ -615,10 +615,10 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     or:
     - java.referenced:
@@ -643,10 +643,10 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.config.annotation.web.socket.AbstractSecurityWebSocketMessageBrokerConfigurer
@@ -690,10 +690,10 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeRequests
@@ -738,10 +738,10 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     builtin.filecontent:
       filePattern: .*\.java
@@ -785,10 +785,10 @@
   category: optional
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
 #      pattern: ExpressionInterceptUrlRegistry.access
@@ -834,10 +834,10 @@
   category: optional
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests
@@ -883,10 +883,10 @@
   category: potential
   effort: 3
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     and:
     - java.referenced:
@@ -940,10 +940,10 @@
   category: potential
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     or:
     - builtin.filecontent:

@@ -4,9 +4,9 @@
     been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.12+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.12+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_12.html#_camel_spring_cloud_starter
@@ -27,9 +27,9 @@
     has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.12+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.12+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_12.html#_camel_spring_cloud_starter
@@ -50,9 +50,9 @@
     has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.12+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.12+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_12.html#_camel_spring_cloud_starter
@@ -73,9 +73,9 @@
     has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.12+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.12+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_12.html#_camel_spring_cloud_starter

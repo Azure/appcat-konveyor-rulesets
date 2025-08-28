@@ -3,12 +3,12 @@
   description: Hibernate 4 - Deprecated @Type(type=text)
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links:
   - title: Hibernate 4 java @Type migration.
@@ -29,12 +29,12 @@
   description: Hibernate 4 - Changed 'Projections' return types
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links:
   - title: Hibernate 4 projections return type change.
@@ -52,12 +52,12 @@
     to 'EJB3NamingStrategy'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links:
   - title: Hibernate 4 naming strategy change documentation.
@@ -75,12 +75,12 @@
   description: Hibernate 4 - Removed classes in 'org.hibernate.classic'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links:
   - title: 'JBoss EAP - Migration Guide: Hibernate and JPA Changes'
@@ -97,12 +97,12 @@
   description: Hibernate 4 - Replaced DialectResolver
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links: []
   message: Replace org.hibernate.dialect.resolver.DialectResolver with org.hibernate.service.jdbc.dialect.spi.DialectResolver.
@@ -115,12 +115,12 @@
   description: Hibernate 4 - Replaced BatcherFactory
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links: []
   message: |-
@@ -142,12 +142,12 @@
   description: Hibernate 4 - Replaced JDBC Batcher
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links: []
   message: |-
@@ -169,12 +169,12 @@
   description: Hibernate 4 - SessionImplementor replacement
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links: []
   message: Replace org.hibernate.engine.SessionImplementor with org.hibernate.engine.spi.SessionImplementor
@@ -190,12 +190,12 @@
   description: Hibernate 4 - Renamed package 'org.hibernate.connection'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links: []
   message: The classes in org.hibernate.connection package was moved to org.hibernate.service.jdbc.connections.internal
@@ -210,12 +210,12 @@
   description: Hibernate 4 - Replace org.hibernate.collection.PersistentBag
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links: []
   message: The class org.hibernate.collection.PersistentBag was moved to org.hibernate.collection.internal.PersistentBag
@@ -232,12 +232,12 @@
   description: Hibernate 2.x - Renamed package 'net.sf.hibernate'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links: []
   message: |-

@@ -3,10 +3,10 @@
   description: Deprecated class SimpleServerCache in RESTEasy 2
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap
+  - target=eap6
+  - target=eap
   - resteasy
   links:
   - title: How to implement JAX-RS RestEASY client and server caching in EAP 6?

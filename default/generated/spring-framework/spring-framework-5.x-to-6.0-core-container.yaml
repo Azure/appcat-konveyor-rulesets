@@ -2,10 +2,10 @@
   category: potential
   effort: 1
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source=spring-boot2
-  - konveyor.io/target=spring-boot3+
+  - source=spring5
+  - target=spring6+
+  - source=spring-boot2
+  - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.beans.BeanInfoFactory
@@ -27,8 +27,8 @@
   category: potential
   effort: 2
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     java.referenced:
       pattern: org.springframework.scheduling.annotation.Async
@@ -47,8 +47,8 @@
   category: optional
   effort: 2
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
+  - source=spring5
+  - target=spring6+
   when:
     java.referenced:
       pattern: org.springframework.util.concurrent.ListenableFuture*
@@ -138,8 +138,8 @@
   category: potential
   effort: 1
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
+  - source=spring5
+  - target=spring6+
   when:
     or:
     - java.referenced:

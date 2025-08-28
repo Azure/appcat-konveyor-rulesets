@@ -4,9 +4,9 @@
     with camel-test-infra
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.16+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.16+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_16.html#_camel_testcontainers_spring
@@ -26,9 +26,9 @@
     retired
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.16+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.16+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_16.html#_camel_testcontainers_spring

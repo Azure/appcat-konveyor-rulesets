@@ -3,10 +3,10 @@
   description: Replace jboss-eap-jakartaee8 artifact with jboss-eap-ee
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -22,10 +22,10 @@
   description: Replace jboss-eap-jakartaee8-with-tools artifact with jboss-eap-ee-with-tools
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -41,10 +41,10 @@
   description: Replace jboss-jakartaee-8.0 artifact with jboss-eap-ee
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -60,10 +60,10 @@
   description: Replace jboss-jakartaee-web-8.0 artifact with jboss-eap-ee
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -79,10 +79,10 @@
   description: Replace jakarta.activation artifact with jakarta.activation-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -98,10 +98,10 @@
   description: Replace jboss-annotations-api_1.3_spec artifact with jakarta.annotation-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -118,10 +118,10 @@
   description: Replace jboss-jaspi-api_1.0_spec artifact with jakarta.authentication-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -138,10 +138,10 @@
   description: Replace jboss-jacc-api_1.5_spec artifact with jakarta.authorization-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -158,10 +158,10 @@
   description: Replace jboss-batch-api_1.0_spec artifact with jakarta.batch-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -177,10 +177,10 @@
   description: Replace jboss-ejb-api_3.2_spec artifact with jakarta.ejb-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -196,10 +196,10 @@
   description: Replace jboss-el-api_3.0_spec artifact with jboss-el-api_5.0_spec
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -216,10 +216,10 @@
   description: Replace jboss-concurrency-api_1.0_spec artifact with jakarta.enterprise.concurrent-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -236,10 +236,10 @@
   description: Replace jboss-jsf-api_2.3_spec artifact with jakarta.faces-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -255,10 +255,10 @@
   description: Replace jboss-interceptors-api_1.2_spec artifact with jakarta.interceptor-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -275,10 +275,10 @@
   description: Replace jboss-jms-api_2.0_spec artifact with jakarta.jms-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -294,10 +294,10 @@
   description: Replace jakarta.mail artifact with jakarta.mail-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -313,10 +313,10 @@
   description: Replace jboss-connector-api_1.7_spec artifact with jakarta.resource-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -333,10 +333,10 @@
   description: Replace jboss-servlet-api_4.0_spec artifact with jakarta.servlet-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -353,10 +353,10 @@
   description: Replace jboss-jsp-api_2.3_spec artifact with jakarta.servlet.jsp-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -373,10 +373,10 @@
   description: Replace taglibs-standard-spec artifact with jakarta.servlet.jsp.jstl-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -392,10 +392,10 @@
   description: Replace jboss-transaction-api_1.3_spec artifact with jakarta.transaction-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -412,10 +412,10 @@
   description: Replace jboss-jaxb-api_2.3_spec artifact with jakarta.xml.bind-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -431,10 +431,10 @@
   description: Replace jboss-jaxws-api_2.3_spec artifact with jboss-jakarta-xml-ws-api_4.0_spec
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -451,10 +451,10 @@
   description: Replace jboss-websocket-api_1.1_spec artifact with jakarta.websocket-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -471,10 +471,10 @@
   description: Replace jboss-jaxrs-api_2.1_spec artifact with jakarta.ws.rs-api
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -490,10 +490,10 @@
   description: Replace jboss-saaj-api_1.4_spec artifact with jboss-saaj-api_3.0_spec
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -510,10 +510,10 @@
   description: Replace org.hibernate group with org.hibernate.orm
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -529,10 +529,10 @@
   description: Replace org.hibernate group with org.hibernate.orm
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -548,10 +548,10 @@
   description: Replace eap-runtime-artifacts artifact with jboss-eap-ee
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -567,10 +567,10 @@
   description: Replace jsr181-api artifact with jboss-jakarta-xml-ws-api_4.0_spec
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -586,10 +586,10 @@
   description: The EJB Client Legacy BOM is no longer provided with JBoss EAP 8
   effort: 1
   labels:
-  - konveyor.io/source=jakarta-ee7+
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - target=eap8
+  - target=eap
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017

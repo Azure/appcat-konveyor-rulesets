@@ -7,11 +7,11 @@
     pattern: (?P<package>com.ibm(\..*)?\.jms.)?(?P<type>[^.]+)
   description: IBM JMS Client
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - websphere
   links:
@@ -48,11 +48,11 @@
   description: IBM {prefix}{type}ConnectionFactory reference
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - websphere
   links:
@@ -76,11 +76,11 @@
   description: IBM JMS topic/queue message
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - websphere
   links:
@@ -98,11 +98,11 @@
   description: WebSphere's MQe variant of JMS Queue need to be migrated to the Java EE 6 JMS standard interface 'javax.jms.Queue'
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - websphere
   links:
@@ -129,11 +129,11 @@
   description: IBM JMS destination message
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - websphere
   links: []
@@ -158,11 +158,11 @@
   description: IBM JMS interface
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - websphere
   links: []

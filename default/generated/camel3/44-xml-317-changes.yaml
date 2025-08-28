@@ -3,9 +3,9 @@
   description: org.apache.camel:camel-atomix component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -24,9 +24,9 @@
   description: camel-beanstalk component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -46,9 +46,9 @@
   description: camel-beanio component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -67,9 +67,9 @@
   description: camel-etcd component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -88,9 +88,9 @@
   description: camel-elsql component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -109,9 +109,9 @@
   description: camel-ganglia component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -130,9 +130,9 @@
   description: camel-nsq component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -151,9 +151,9 @@
   description: camel-hystrix component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -172,9 +172,9 @@
   description: camel-jing component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -193,9 +193,9 @@
   description: camel-leveldb-legacy component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -215,9 +215,9 @@
   description: camel-msv component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -236,9 +236,9 @@
   description: camel-nagios component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -257,9 +257,9 @@
   description: camel-ribbon component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -278,9 +278,9 @@
   description: camel-sip component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -299,9 +299,9 @@
   description: camel-soroush component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -320,9 +320,9 @@
   description: camel-tagsoup component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -341,9 +341,9 @@
   description: camel-yammer component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_deprecated_components
@@ -363,9 +363,9 @@
     replaced by org.apache.camel.builder.LegacyDeadLetterChannelBuilder
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_camel_spring_xml_camel_blueprint
@@ -382,9 +382,9 @@
     replaced by org.apache.camel.builder.LegacyDefaultErrorHandlerBuilder
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_camel_spring_xml_camel_blueprint
@@ -402,9 +402,9 @@
     by org.apache.camel.builder.LegacyDeadLetterChannelBuilder
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_camel_spring_xml_camel_blueprint
@@ -421,9 +421,9 @@
     has been replaced by org.apache.camel.spring.spi.LegacyTransactionErrorHandlerBuilder
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.17+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.17+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_17.html#_camel_spring_xml_camel_blueprint

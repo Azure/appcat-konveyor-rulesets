@@ -3,9 +3,9 @@
   description: org.apache.camel:camel-jdbc no longer depends on Spring Framework
   effort: 2
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_camel_jdbc
@@ -26,9 +26,9 @@
     to camel.cluster.atomix
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -45,9 +45,9 @@
     to camel.cluster.consul
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -64,9 +64,9 @@
     renamed to camel.cloud.consul.service-registry
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -83,9 +83,9 @@
     to camel.cluster.file
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -102,9 +102,9 @@
     to camel.hystrix.mapping
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -121,9 +121,9 @@
     been renamed to camel.cluster.jgroups
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -140,9 +140,9 @@
     been renamed to camel.cluster.jgroups-raft
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -159,9 +159,9 @@
     renamed to camel.cluster.kubernetes
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -178,9 +178,9 @@
     to camel.servlet.mapping
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -197,9 +197,9 @@
     renamed to camel.security.undertow
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -216,9 +216,9 @@
     renamed to camel.cluster.zookeeper
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters
@@ -235,9 +235,9 @@
     renamed to camel.cloud.zookeeper
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.10+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.10+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_10.html#_spring_boot_starters

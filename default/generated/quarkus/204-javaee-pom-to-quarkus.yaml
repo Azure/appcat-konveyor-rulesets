@@ -3,8 +3,8 @@
   description: The expected project artifact's extension is `jar`
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide;
     url: https://quarkus.io/guides/maven-tooling#build-tool-maven;
@@ -23,8 +23,8 @@
   description: Adopt Quarkus BOM
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide;
     url: https://quarkus.io/guides/maven-tooling#build-tool-maven;
@@ -55,8 +55,8 @@
   description: Adopt Quarkus Maven plugin
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide;
     url: https://quarkus.io/guides/maven-tooling#build-tool-maven;
@@ -81,8 +81,8 @@
   description: Adopt Maven Compiler plugin
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide;
     url: https://quarkus.io/guides/maven-tooling#build-tool-maven;
@@ -107,8 +107,8 @@
   description: Adopt Maven Surefire plugin
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide;
     url: https://quarkus.io/guides/maven-tooling#build-tool-maven;
@@ -134,8 +134,8 @@
   description: Adopt Maven Failsafe plugin
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide;
     url: https://quarkus.io/guides/maven-tooling#build-tool-maven;
@@ -168,8 +168,8 @@
   description: Add Maven profile to run the Quarkus native build
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide;
     url: https://quarkus.io/guides/maven-tooling#build-tool-maven;
@@ -192,8 +192,8 @@
   description: Configure Quarkus hibernate-orm
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Using hibernate-orm and jakarta persistence
     url: https://quarkus.io/guides/hibernate-orm
@@ -223,8 +223,8 @@
   description: Use Quarkus junit artifact
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Testing your application
     url: https://quarkus.io/guides/getting-started-testing

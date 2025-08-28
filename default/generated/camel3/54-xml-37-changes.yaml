@@ -4,9 +4,9 @@
     org.apache.camel.support.BreakpointSupport
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -22,9 +22,9 @@
     to org.apache.camel.processor.validator.ProcessorValidator. '
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -40,9 +40,9 @@
     to org.apache.camel.processor.transformer.ProcessorTransformer. '
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -59,9 +59,9 @@
     moved to org.apache.camel.processor.transformer.DataFormatTransformer. '
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -77,9 +77,9 @@
   description: 'The class org.apache.camel.impl.validator.ValidatorKey moved to org.apache.camel.impl.engine.ValidatorKey. '
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -95,9 +95,9 @@
     org.apache.camel.impl.engine.TransformerKey.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -114,9 +114,9 @@
     in the camel-base JAR.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -134,9 +134,9 @@
     to org.apache.camel.support.ConvertBodyProcessor in the camel-support JAR.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -154,9 +154,9 @@
     JAR.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -174,9 +174,9 @@
     to org.apache.camel.support.cache.DefaultProducerCache.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -193,9 +193,9 @@
     to org.apache.camel.support.cache.DefaultConsumerCache.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -212,9 +212,9 @@
     to org.apache.camel.support.cache.EmptyProducerCache.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -230,9 +230,9 @@
   description: 'The class org.apache.camel.impl.engine.ServicePool was moved to org.apache.camel.support.cache.ServicePool. '
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -248,9 +248,9 @@
     to org.apache.camel.support.cache.ProducerServicePool.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -267,9 +267,9 @@
     was moved to org.apache.camel.support.cache.PollingConsumerServicePool.'
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -286,9 +286,9 @@
     to org.apache.camel.support.cache.EventNotifierCallback.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -305,9 +305,9 @@
     to org.apache.camel.saga.InMemorySagaService.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes
@@ -323,9 +323,9 @@
     moved to org.apache.camel.saga.InMemorySagaCoordinator.'
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.7+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.7+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_7.html#_api_changes

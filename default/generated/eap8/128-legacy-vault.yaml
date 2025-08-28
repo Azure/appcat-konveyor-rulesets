@@ -3,9 +3,9 @@
   description: Legacy Vault configuration must be removed
   effort: 1
   labels:
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap8
+  - target=eap
+  - source
   links: []
   message: Vault support has been removed in EAP8; migration to Elytron credential
     store is mandatory.

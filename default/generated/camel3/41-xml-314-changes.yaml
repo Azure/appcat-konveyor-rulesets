@@ -4,9 +4,9 @@
     have changed
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.14+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.14+
+  - target=camel
   links:
   - title: Camel 3.14 - Upgrade Guide
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_14.html#_camel_kafka
