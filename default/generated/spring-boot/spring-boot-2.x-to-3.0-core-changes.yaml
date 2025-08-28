@@ -2,8 +2,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     or:
     - builtin.file:
@@ -26,8 +26,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: '*'
@@ -51,8 +51,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.json.YamlJsonParser
@@ -91,8 +91,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     builtin.file:
       pattern: "spring.factories"

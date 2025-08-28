@@ -3,13 +3,14 @@
   description: Embedded library - SAML
   effort: 1
   labels:
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=auth-migration
+  - os=windows
+  - os=linux
   links:
   - title: SAML authentication with Azure Active Directory
     url: https://learn.microsoft.com/azure/active-directory/fundamentals/auth-saml
@@ -32,13 +33,14 @@
   description: Embedded library - OpenSAML
   effort: 1
   labels:
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=auth-migration
+  - os=windows
+  - os=linux
   links:
   - title: SAML authentication with Azure Active Directory
     url: https://learn.microsoft.com/azure/active-directory/fundamentals/auth-saml
@@ -61,13 +63,14 @@
   description: Embedded framework - Spring Security
   effort: 1
   labels:
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=auth-migration
+  - os=windows
+  - os=linux
   links:
   - title: Spring Security-related dependencies found in the project
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-app-service#identity-providers
@@ -95,13 +98,14 @@
   description: Embedded library - OAuth 2.0
   effort: 1
   labels:
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=auth-migration
+  - os=windows
+  - os=linux
   links:
   - title: OAuth 2.0 authentication with Azure Active Directory
     url: https://learn.microsoft.com/azure/active-directory/architecture/auth-oauth2
@@ -131,13 +135,14 @@
   description: Embedded library - OpenID
   effort: 1
   labels:
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=auth-migration
+  - os=windows
+  - os=linux
   links:
   - title: OpenID Connect authentication with Azure Active Directory
     url: https://learn.microsoft.com/azure/active-directory/architecture/auth-oidc

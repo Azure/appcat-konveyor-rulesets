@@ -3,10 +3,10 @@
   description: Migrate a Naming Client Configuration to Elytron
   effort: 3
   labels:
-  - konveyor.io/source=eap7.1-
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7.1+
-  - konveyor.io/target=eap
+  - source=eap7.1-
+  - source=eap
+  - target=eap7.1+
+  - target=eap
   - eap7
   links:
   - title: Migrate a Naming Client Configuration to Elytron
@@ -24,10 +24,10 @@
   description: Migrate an EJB Client to Elytron
   effort: 3
   labels:
-  - konveyor.io/source=eap7.1-
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7.1+
-  - konveyor.io/target=eap
+  - source=eap7.1-
+  - source=eap
+  - target=eap7.1+
+  - target=eap
   - eap7
   links:
   - title: Migrate an EJB Client to Elytron

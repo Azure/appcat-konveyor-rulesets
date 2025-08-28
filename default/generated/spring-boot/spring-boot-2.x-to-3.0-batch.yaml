@@ -2,8 +2,8 @@
   category: optional
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.batch.core.configuration.annotation.EnableBatchProcessing
@@ -23,8 +23,8 @@
   category: potential
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.dependency:
       name: org.springframework.batch.spring-batch-core
@@ -44,8 +44,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     builtin.filecontent:
       pattern: spring\.session\.store-type

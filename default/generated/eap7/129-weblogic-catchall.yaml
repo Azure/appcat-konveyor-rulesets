@@ -9,10 +9,10 @@
   description: WebLogic proprietary type reference
   effort: 0
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - catchall
   links: []
   message: This is a WebLogic proprietary type (`{{prefix}}{{remainder}}`) and needs
@@ -31,10 +31,10 @@
   description: Oracle proprietary SQL type reference
   effort: 0
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - catchall
   links: []
   message: |-
@@ -57,10 +57,10 @@
   description: Tangosol Proprietary type reference
   effort: 0
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - catchall
   links: []
   message: This is an Oracle proprietary type (`com.tangosol{{subpackage}}.{{type}}`)
@@ -85,10 +85,10 @@
   description: Oracle proprietary type reference
   effort: 0
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - catchall
   links: []
   message: This is an Oracle proprietary type (`{{com}}oracle{{subpackage}}.{{type}}`)
@@ -107,10 +107,10 @@
   description: Oracle proprietary JDBC type reference
   effort: 0
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - catchall
   links: []
   message: |-

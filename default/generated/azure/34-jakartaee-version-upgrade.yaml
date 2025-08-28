@@ -3,13 +3,15 @@
   description: Jakarta EE version not latest stable
   effort: 3
   labels:
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=jakarta-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=java-upgrade
   - category=framework-upgrade
   - version
+  - os=windows
+  - os=linux
   links:
   - title: Jakarta EE Release Versions
     url: https://jakarta.ee/release/

@@ -3,12 +3,17 @@
   description: ClassLoader Parameter Respected in javax.xml.stream Factory Methods
   effort: 1
   labels:
-  - konveyor.io/source=openjdk8-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk8+
-  - konveyor.io/target=openjdk
+  - source=openjdk8-
+  - source=openjdk
+  - capability=openjdk8+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Compatibility Guide for JDK 8
     url: https://www.oracle.com/java/technologies/javase/8-compatibility-guide.html

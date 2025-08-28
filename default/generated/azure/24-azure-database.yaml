@@ -3,14 +3,16 @@
   description: MySQL database found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=database-migration
   - database
   - mysql
+  - os=windows
+  - os=linux
   links:
   - title: Azure Database for MySQL documentation
     url: https://learn.microsoft.com/azure/mysql
@@ -70,14 +72,16 @@
   description: PostgreSQL database found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=database-migration
   - database
   - postgresql
+  - os=windows
+  - os=linux
   links:
   - title: Azure PostgreSQL Flexible Server documentation
     url: https://learn.microsoft.com/azure/postgresql/flexible-server
@@ -137,14 +141,16 @@
   description: Microsoft SQL database found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=database-migration
   - database
   - microsoft-sql
+  - os=windows
+  - os=linux
   links:
   - title: Azure SQL documentation
     url: https://learn.microsoft.com/azure/azure-sql
@@ -191,14 +197,16 @@
   description: Cassandra database found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=database-migration
   - database
   - cassandra
+  - os=windows
+  - os=linux
   links:
   - title: Azure Managed Instance for Apache Cassandra documentation
     url: https://learn.microsoft.com/azure/managed-instance-apache-cassandra
@@ -246,14 +254,16 @@
   description: MongoDB database found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=database-migration
   - database
   - mongodb
+  - os=windows
+  - os=linux
   links:
   - title: Azure Cosmos DB for MongoDB documentation
     url: https://learn.microsoft.com/azure/cosmos-db/mongodb
@@ -297,14 +307,16 @@
   description: MariaDB database found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=database-migration
   - database
   - mariadb
+  - os=windows
+  - os=linux
   links:
   - title: Azure Database for MariaDB documentation
     url: https://learn.microsoft.com/azure/mariadb
@@ -349,14 +361,16 @@
   description: Oracle database found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=database-migration
   - database
   - oracle
+  - os=windows
+  - os=linux
   links:
   - title: Azure Database for PostgreSQL documentation
     url: https://learn.microsoft.com/azure/postgresql
@@ -420,12 +434,14 @@
   description: Consider database reliability when migrating to Azure
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=database-migration
+  - os=windows
+  - os=linux
   links: 
   - title: Understanding timeout properties in the JDBC driver
     url: https://learn.microsoft.com/sql/connect/jdbc/understand-timeouts

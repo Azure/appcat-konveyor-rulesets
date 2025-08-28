@@ -3,9 +3,9 @@
   description: Replace Thorntail Fractions - io.thorntail:bean-validation
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -26,9 +26,9 @@
   description: Replace Thorntail Fractions - io.thorntail:cdi-config
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -49,9 +49,9 @@
   description: Replace Thorntail Fractions - io.thorntail:cdi
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -72,9 +72,9 @@
   description: Replace Thorntail Fractions - io.thorntail:config-api-runtime
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -95,9 +95,9 @@
   description: Replace Thorntail Fractions - io.thorntail:datasources
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -118,9 +118,9 @@
   description: Replace Thorntail Fractions - io.thorntail:ee-security
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -141,9 +141,9 @@
   description: Replace Thorntail Fractions - io.thorntail:ejb-mdb
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -164,9 +164,9 @@
   description: Replace Thorntail Fractions - io.thorntail:ejb
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -187,9 +187,9 @@
   description: Replace Thorntail Fractions - io.thorntail:elytron
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -210,9 +210,9 @@
   description: Replace Thorntail Fractions - io.thorntail:fraction-metadata
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -233,9 +233,9 @@
   description: Replace Thorntail Fractions - io.thorntail:hibernate-validator
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -256,9 +256,9 @@
   description: Replace Thorntail Fractions - io.thorntail:hibernate
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -279,9 +279,9 @@
   description: Replace Thorntail Fractions - io.thorntail:hystrix
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -302,9 +302,9 @@
   description: Replace Thorntail Fractions - io.thorntail:infinispan
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -325,9 +325,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jaeger
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -348,9 +348,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jaxrs-jaxb
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -371,9 +371,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jaxrs-jsonb
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -394,9 +394,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jaxrs-jsonp
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -417,9 +417,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jaxrs-multipart
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -440,9 +440,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jaxrs-validator
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -463,9 +463,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jaxrs
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -486,9 +486,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jca
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -509,9 +509,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jmx
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -532,9 +532,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jpa
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -555,9 +555,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jsf
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -578,9 +578,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jsonb
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -601,9 +601,9 @@
   description: Replace Thorntail Fractions - io.thorntail:jsonp
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -624,9 +624,9 @@
   description: Replace Thorntail Fractions - io.thorntail:keycloak
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -647,9 +647,9 @@
   description: Replace Thorntail Fractions - io.thorntail:logging
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -670,9 +670,9 @@
   description: Replace Thorntail Fractions - io.thorntail:management
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -693,9 +693,9 @@
   description: Replace Thorntail Fractions - io.thorntail:microprofile-config
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -716,9 +716,9 @@
   description: Replace Thorntail Fractions - io.thorntail:microprofile-fault-tolerance
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -739,9 +739,9 @@
   description: Replace Thorntail Fractions - io.thorntail:microprofile-health
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -762,9 +762,9 @@
   description: Replace Thorntail Fractions - io.thorntail:microprofile-jwt
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -785,9 +785,9 @@
   description: Replace Thorntail Fractions - io.thorntail:microprofile-metrics
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -808,9 +808,9 @@
   description: Replace Thorntail Fractions - io.thorntail:microprofile-openapi
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -831,9 +831,9 @@
   description: Replace Thorntail Fractions - io.thorntail:microprofile-opentracing
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -854,9 +854,9 @@
   description: Replace Thorntail Fractions - io.thorntail:microprofile-restclient
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -877,9 +877,9 @@
   description: Replace Thorntail Fractions - io.thorntail:microprofile
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -900,9 +900,9 @@
   description: Replace Thorntail Fractions - io.thorntail:opentracing
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -923,9 +923,9 @@
   description: Replace Thorntail Fractions - io.thorntail:remoting
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -946,9 +946,9 @@
   description: Replace Thorntail Fractions - io.thorntail:resource-adapters
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -969,9 +969,9 @@
   description: Replace Thorntail Fractions - io.thorntail:spi
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -992,9 +992,9 @@
   description: Replace Thorntail Fractions - io.thorntail:topology-openshift
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -1015,9 +1015,9 @@
   description: Replace Thorntail Fractions - io.thorntail:topology-webapp
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -1038,9 +1038,9 @@
   description: Replace Thorntail Fractions - io.thorntail:transactions
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -1061,9 +1061,9 @@
   description: Replace Thorntail Fractions - io.thorntail:undertow
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -1084,9 +1084,9 @@
   description: Replace Thorntail Fractions - io.thorntail:web
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -1107,9 +1107,9 @@
   description: Replace Thorntail Fractions - io.thorntail:archaius
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -1130,9 +1130,9 @@
   description: Replace Thorntail Fractions - io.thorntail:monitor
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:

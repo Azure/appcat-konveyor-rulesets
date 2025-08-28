@@ -3,10 +3,10 @@
   description: The class org.jboss.util.Base64 has been moved
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap
+  - target=eap6+
+  - target=eap
   - eap7
   - base64
   links:

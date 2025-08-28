@@ -3,9 +3,9 @@
   description: MicroProfile OpenTracing not supported
   effort: 1
   labels:
-  - konveyor.io/source=eapxp
-  - konveyor.io/target=eapxp5+
-  - konveyor.io/target=eapxp
+  - source=eapxp
+  - target=eapxp5+
+  - target=eapxp
   - JBossEAP
   - EAPXP
   links: []

@@ -3,12 +3,16 @@
   description: Avoid File System Logging in Java Code
   effort: 1
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=logging-management
   - logging
+  - os=windows
+  - os=linux
   links: []
   message: |-
     Found JAVA APIs that log to the file system. Logging to the file system is not recommended when running applications in the cloud.
@@ -41,12 +45,16 @@
   description: Logging to Socket Handler
   effort: 3
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=logging-management
   - logging
+  - os=windows
+  - os=linux
   links: []
   message: |-
     If an application writes logs with `SocketHandler`, an alternative method is required. Socket communication is not suitable for a cloud environment because it requires fixed communication with a target host.
@@ -66,12 +74,16 @@
   description: Avoid File System Logging in Configuration
   effort: 1
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=logging-management
   - logging
+  - os=windows
+  - os=linux
   links:
   - title: Azure Monitor Logs overview
     url: https://learn.microsoft.com/azure/azure-monitor/logs/data-platform-logs
@@ -99,12 +111,16 @@
   description: Embedded library - Logstash
   effort: 3
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=logging-management
   - logging
+  - os=windows
+  - os=linux
   links:
   - title: Ensure console logging and configure diagnostic settings
     url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#ensure-console-logging-and-configure-diagnostic-settings
@@ -133,12 +149,16 @@
   description: Embedded library - Splunk
   effort: 3
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=logging-management
   - logging
+  - os=windows
+  - os=linux
   links:
   - title: Ensure console logging and configure diagnostic settings
     url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#ensure-console-logging-and-configure-diagnostic-settings
@@ -167,12 +187,16 @@
   description: Embedded framework - Zipkin
   effort: 1
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=logging-management
   - logging
+  - os=windows
+  - os=linux
   links:
   - title: Azure Monitor
     url: https://learn.microsoft.com/azure/azure-monitor/

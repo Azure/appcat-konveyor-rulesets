@@ -3,9 +3,9 @@
   description: org.apache.camel:camel-azure artifact has been removed
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_azure_component
@@ -25,9 +25,9 @@
   description: org.apache.camel:camel-aws-sdb artifact has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -50,9 +50,9 @@
     use camel-aws2-translate
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -73,9 +73,9 @@
     camel-aws2-sqs
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -96,9 +96,9 @@
     camel-aws2-sns
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -119,9 +119,9 @@
     camel-aws2-msk
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -142,9 +142,9 @@
     camel-aws2-mq
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -165,9 +165,9 @@
     camel-aws2-kms
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -188,9 +188,9 @@
     use camel-aws2-kinesis
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -211,9 +211,9 @@
     - please use camel-aws2-kinesis-firehose
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -234,9 +234,9 @@
     camel-aws2-iam
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -257,9 +257,9 @@
     camel-aws2-eks
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -280,9 +280,9 @@
     camel-aws2-ecs
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -303,9 +303,9 @@
     use camel-aws2-ecs2
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -326,9 +326,9 @@
     camel-aws2-ddb
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -349,9 +349,9 @@
     camel-aws2-cw
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -372,9 +372,9 @@
     camel-aws2-s3
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed
@@ -394,9 +394,9 @@
   description: org.apache.camel:camel-aws-swf artifact has been removed - no replacement
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.9+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.9+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_9.html#_camel_aws_components_removed

@@ -3,9 +3,9 @@
   description: JDK 8 no longer supported
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JDK Upgrade'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_upgrading_camel_3_14_to_3_15
@@ -24,9 +24,9 @@
   description: org.apache.camel:camel-kamelet-reify component has been retired
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_removed_components
@@ -45,9 +45,9 @@
   description: org.apache.camel:camel-spring-javaconfig component has been retired
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_removed_components
@@ -66,9 +66,9 @@
   description: camel.dataformat.fhirjson configuration key has been renamed to camel.dataformat.fhir-json
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -83,9 +83,9 @@
   description: camel.dataformat.fhirxml configuration key has been renamed to camel.dataformat.fhir-xml
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -101,9 +101,9 @@
     camel.dataformat.gzip-deflater
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -119,9 +119,9 @@
   description: camel.dataformat.jacksonxml configuration key has been renamed to camel.dataformat.jackson-xml
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -136,9 +136,9 @@
   description: camel.dataformat.jsonapi configuration key has been renamed to camel.dataformat.json-api
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -154,9 +154,9 @@
     camel.dataformat.mime-multipart
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -172,9 +172,9 @@
   description: camel.dataformat.securexml configuration key has been renamed to camel.dataformat.xml-security
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -189,9 +189,9 @@
   description: camel.dataformat.tarfile configuration key has been renamed to camel.dataformat.tar-file
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -206,9 +206,9 @@
   description: camel.dataformat.tidymarkup configuration key has been renamed to camel.dataformat.tidy-markup
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -224,9 +224,9 @@
     camel.dataformat.univocity-csv
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -243,9 +243,9 @@
     to camel.dataformat.univocity-fixed
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -262,9 +262,9 @@
     camel.dataformat.univocity-tsv
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -281,9 +281,9 @@
     to camel.dataformat.snake-yaml
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -300,9 +300,9 @@
     camel.dataformat.zip-deflater
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats
@@ -317,9 +317,9 @@
   description: camel.dataformat.zipfile configuration key has been renamed to camel.dataformat.zip-file
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.15+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.15+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_15.html#_data_formats

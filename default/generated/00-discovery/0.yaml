@@ -29,10 +29,15 @@
 - ruleID: hardcoded-ip-address
   description: "Hardcoded IP Address"
   labels:
-  - konveyor.io/target=cloud-readiness
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
   - domain=cloud-readiness
   - category=remote-communication
   - containerization
+  - os=windows
+  - os=linux
   when:
     builtin.filecontent:
       pattern: ((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}

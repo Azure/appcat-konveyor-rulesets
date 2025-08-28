@@ -4,9 +4,9 @@
     element'
   effort: 1
   labels:
-  - konveyor.io/source=eapxp
-  - konveyor.io/target=eapxp3+
-  - konveyor.io/target=eapxp
+  - source=eapxp
+  - target=eapxp3+
+  - target=eapxp
   - JBossEAP
   - EAPXP
   links:

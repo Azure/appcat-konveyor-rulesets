@@ -17,14 +17,16 @@
     file
   effort: 5
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
   - kafka
+  - os=windows
+  - os=linux
   links:
   - title: Spring Boot app to Kafka on Confluent Cloud
     url: https://learn.microsoft.com/azure/service-connector/tutorial-java-spring-confluent-kafka
@@ -63,14 +65,16 @@
     file
   effort: 5
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
   - RabbitMQ Client
+  - os=windows
+  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -103,14 +107,16 @@
     file
   effort: 5
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
   - ActiveMQ
+  - os=windows
+  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -139,14 +145,16 @@
   description: Spring RabbitMQ usage found in code
   effort: 5
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
   - RabbitMQ Client
+  - os=windows
+  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -170,14 +178,16 @@
   description: Spring AMQP dependency found
   effort: 5
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
   - AMQP Client
+  - os=windows
+  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
@@ -211,14 +221,16 @@
   description: Spring JMS RabbitMQ dependency found
   effort: 5
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
   - RabbitMQ Client
+  - os=windows
+  - os=linux
   links:
   - title: Use JMS in Spring to access Azure Service Bus
     url: https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-service-bus
@@ -247,14 +259,16 @@
   description: ActiveMQ found
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
   - ActiveMQ
+  - os=windows
+  - os=linux
   links:
   - title: Spring Boot application using an Active MQ Broker
     url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#jms-message-brokers

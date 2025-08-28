@@ -3,8 +3,8 @@
   description: Replace the SpringBoot Shell artifact with Quarkus 'picocli' extension
   effort: 3
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Command Mode with Picocli Guide
     url: https://quarkus.io/guides/picocli

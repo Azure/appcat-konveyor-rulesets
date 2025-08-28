@@ -6,9 +6,9 @@
   description: WebLogic proprietary EJB
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7+
+  - target=eap
   - ejb
   - weblogic
   links: []
@@ -24,9 +24,9 @@
   description: WebLogic proprietary timeout for transactions annotation
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7+
+  - target=eap
   - ejb
   - weblogic
   links:
@@ -50,9 +50,9 @@
   description: WebLogic proprietary MessageDriven annotation
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7+
+  - target=eap
   - ejb
   - weblogic
   links:
@@ -75,9 +75,9 @@
   description: WebLogic proprietary EJB Bean
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7+
+  - target=eap
   - ejb
   - weblogic
   links:

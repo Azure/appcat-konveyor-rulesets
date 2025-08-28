@@ -4,9 +4,9 @@
     test-jar
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.20+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.20+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_20.html#_camel_bom
@@ -27,9 +27,9 @@
   description: camel-debezium-maven-plugin has a new groupId of org.apache.camel.maven
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.20+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.20+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_20.html#_camel_bom
@@ -44,9 +44,9 @@
   description: camel-salesforce-maven-plugin has a new groupId of org.apache.camel.maven
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.20+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.20+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_20.html#_camel_bom
@@ -65,9 +65,9 @@
   description: camel-servicenow-maven-plugin has a new groupId of org.apache.camel.maven
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.20+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.20+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_20.html#_camel_bom
@@ -87,9 +87,9 @@
     are not allowed.
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.20+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.20+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_20.html#_camel_google_pubsub

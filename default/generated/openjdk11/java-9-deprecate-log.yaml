@@ -3,12 +3,17 @@
   description: Remove LogManager addPropertyChangeListener and removePropertyChangeListener methods
   effort: 1
   labels:
-  - konveyor.io/source=openjdk9-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk9+
-  - konveyor.io/target=openjdk
+  - source=openjdk9-
+  - source=openjdk
+  - capability=openjdk9+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Remove LogManager addPropertyChangeListener and removePropertyChangeListener methods
     url: https://www.oracle.com/java/technologies/javase/9-relnotes.html#JDK-8029805

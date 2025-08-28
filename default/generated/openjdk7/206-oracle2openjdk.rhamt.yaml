@@ -3,15 +3,20 @@
   description: JavaFX usage
   effort: 5
   labels:
-  - konveyor.io/source=oraclejdk7+
-  - konveyor.io/source=oraclejdk
-  - konveyor.io/target=openjdk7+
-  - konveyor.io/target=openjdk
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=oraclejdk7+
+  - source=oraclejdk
+  - capability=openjdk7+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
   - JavaFX
+  - os=windows
+  - os=linux
   links:
   - title: Knowledge base article about JavaFX support in RHEL
     url: https://access.redhat.com/solutions/3299701
@@ -29,15 +34,20 @@
   description: Fonts usage
   effort: 1
   labels:
-  - konveyor.io/source=oraclejdk7+
-  - konveyor.io/source=oraclejdk
-  - konveyor.io/target=openjdk7+
-  - konveyor.io/target=openjdk
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=oraclejdk7+
+  - source=oraclejdk
+  - capability=openjdk7+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
   - fonts
+  - os=windows
+  - os=linux
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -62,15 +72,20 @@
   description: Resource management API usage
   effort: 3
   labels:
-  - konveyor.io/source=oraclejdk7+
-  - konveyor.io/source=oraclejdk
-  - konveyor.io/target=openjdk7+
-  - konveyor.io/target=openjdk
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=oraclejdk7+
+  - source=oraclejdk
+  - capability=openjdk7+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
   - Oracle-JDK-resource-management
+  - os=windows
+  - os=linux
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -85,15 +100,20 @@
   description: Color management usage
   effort: 1
   labels:
-  - konveyor.io/source=oraclejdk7+
-  - konveyor.io/source=oraclejdk
-  - konveyor.io/target=openjdk7+
-  - konveyor.io/target=openjdk
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=oraclejdk7+
+  - source=oraclejdk
+  - capability=openjdk7+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
   - JDK-color-management
+  - os=windows
+  - os=linux
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -112,15 +132,20 @@
   description: Java 2D library usage
   effort: 1
   labels:
-  - konveyor.io/source=oraclejdk7+
-  - konveyor.io/source=oraclejdk
-  - konveyor.io/target=openjdk7+
-  - konveyor.io/target=openjdk
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=oraclejdk7+
+  - source=oraclejdk
+  - capability=openjdk7+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
   - 2DLibrary
+  - os=windows
+  - os=linux
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -137,15 +162,20 @@
   description: 'Crypto: elliptic curves usage'
   effort: 3
   labels:
-  - konveyor.io/source=oraclejdk7+
-  - konveyor.io/source=oraclejdk
-  - konveyor.io/target=openjdk7+
-  - konveyor.io/target=openjdk
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=oraclejdk7+
+  - source=oraclejdk
+  - capability=openjdk7+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
   - crypto
+  - os=windows
+  - os=linux
   links:
   - title: Knowledge base article OracleJDK vs. OpenJDK
     url: https://access.redhat.com/solutions/2489791
@@ -198,14 +228,19 @@
   description: Oracle JDK JPEG image encoder/decoder usage
   effort: 3
   labels:
-  - konveyor.io/source=oraclejdk7+
-  - konveyor.io/source=oraclejdk
-  - konveyor.io/target=openjdk7+
-  - konveyor.io/target=openjdk
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=oraclejdk7+
+  - source=oraclejdk
+  - capability=openjdk7+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
   - oracle-jdk
   - jdk
+  - os=windows
+  - os=linux
   links:
   - title: 'java.lang.NoClassDefFoundError: com/sun/image/codec/jpeg/ImageFormatException
       when using OpenJDK'

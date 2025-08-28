@@ -3,11 +3,11 @@
   description: Empty import definition in a JSP
   effort: 1
   labels:
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee6+
-  - konveyor.io/target=java-ee
-  - konveyor.io/source
+  - target=eap6+
+  - target=eap
+  - target=java-ee6+
+  - target=java-ee
+  - source
   links: []
   message: Empty import definition in .jsp or .jspf files would fail in compilation
     time and needs to be removed.

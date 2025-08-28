@@ -3,14 +3,19 @@
   description: The java.rmi.activation detected
   effort: 3
   labels:
-  - konveyor.io/source=openjdk11-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk17+
-  - konveyor.io/target=openjdk
+  - source=openjdk11-
+  - source=openjdk
+  - capability=openjdk17+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
+  - source=spring5
+  - capability=spring6+
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: 'JEP 407: Remove RMI Activation'
     url: https://openjdk.org/jeps/407
@@ -27,12 +32,17 @@
     been removed
   effort: 3
   labels:
-  - konveyor.io/source=openjdk11-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk17+
-  - konveyor.io/target=openjdk
+  - source=openjdk11-
+  - source=openjdk
+  - capability=openjdk17+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: 'JEP 372: Remove RMI Activation'
     url: https://openjdk.org/jeps/372

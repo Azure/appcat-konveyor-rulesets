@@ -3,8 +3,8 @@
   description: Spring JMX is not supported by Quarkus with GraalVM on a Native Image
   effort: 13
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links: []
   message: |-
     Spring JMX XML configuration detected:
@@ -22,8 +22,8 @@
   description: Spring JMX is not supported by Quarkus with GraalVM on a Native Image
   effort: 13
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links: []
   message: |-
     Spring JMX annotation configuration detected:

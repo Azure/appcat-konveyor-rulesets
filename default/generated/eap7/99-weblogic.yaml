@@ -3,10 +3,10 @@
   description: WebLogic scheduled job
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - scheduler
   - ejb
@@ -31,10 +31,10 @@
   description: WebLogic StringUtils usage
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   links:
   - title: Apache Commons Lang
@@ -50,10 +50,10 @@
   description: WebLogic specific Apache XML package
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   links: []
   message: Code using this package should be replaced with code using the org.apache.xml
@@ -71,10 +71,10 @@
   description: WebLogic TransactionManager usage
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - transactions
   links:
@@ -92,10 +92,10 @@
   description: WebLogic TransactionManager usage of resume method
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - transactions
   links: []
@@ -121,10 +121,10 @@
   description: WebLogic TransactionManager usage of suspend method
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - transactions
   links: []
@@ -149,10 +149,10 @@
   description: WebLogic TxHelper usage
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - transactions
   links: []
@@ -169,10 +169,10 @@
   description: WebLogic ClientTxHelper
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - transactions
   links: []
@@ -198,10 +198,10 @@
   description: WebLogic proprietary Clob JDBC object (OracleThinClob)
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - jdbc
   links:
@@ -220,10 +220,10 @@
   description: WebLogic JDBC code
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - jdbc
   links:
@@ -242,10 +242,10 @@
   description: WebLogic proprietary logger (NonCatalogLogger)
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - logging
   links:
@@ -270,10 +270,10 @@
   description: WebLogic Oracle FCF JDBC property
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - jdbc
   links:
@@ -296,10 +296,10 @@
   description: WebLogic side-by-side redeployment configuration
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   links:
   - title: Replace WebLogic side-by-side production redeployment in EAP 6
@@ -319,10 +319,10 @@
   description: WebLogic Oracle Wallet
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   links:
   - title: Replace WebLogic Oracle Wallets When Migrating to EAP 6
@@ -341,10 +341,10 @@
   description: WebLogic InitialContextFactory
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - configuration
   links:
@@ -366,10 +366,10 @@
   description: WebLogic T3 JNDI binding
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - configuration
   links:

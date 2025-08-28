@@ -4,9 +4,9 @@
     to TLSv1.3.
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.19+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.19+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_19.html#_camel_ftp
@@ -26,9 +26,9 @@
   description: camel-kafka default TLS protocol is TLSv1.2,TLSv1.3
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.19+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.19+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_19.html#_camel_kafka
@@ -49,9 +49,9 @@
   description: camel-netty default TLS protocol is TLSv1.2,TLSv1.3
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.19+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.19+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_19.html#_camel_netty_camel_netty_http
@@ -71,9 +71,9 @@
   description: camel-netty-http default TLS protocol is TLSv1.2,TLSv1.3
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.19+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.19+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_19.html#_camel_netty_camel_netty_http
@@ -93,9 +93,9 @@
   description: camel-ahc component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.19+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.19+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_19.html#_deprecated_components
@@ -114,9 +114,9 @@
   description: camel-ahc-ws component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.19+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.19+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_19.html#_deprecated_components

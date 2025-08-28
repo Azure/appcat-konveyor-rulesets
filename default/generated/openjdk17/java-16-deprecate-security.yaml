@@ -3,12 +3,17 @@
   description: Deprecated the java.security.cert APIs That Represent DNs as Principal or String Objects
   effort: 3
   labels:
-  - konveyor.io/source=openjdk16-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk16+
-  - konveyor.io/target=openjdk
+  - source=openjdk16-
+  - source=openjdk
+  - capability=openjdk16+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Deprecated the java.security.cert APIs That Represent DNs as Principal or String Objects
     url: https://www.oracle.com/java/technologies/javase/16-relnote-issues.html#JDK-8241003

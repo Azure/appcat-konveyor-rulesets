@@ -3,10 +3,14 @@
   description: Ant build tool found
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=java-upgrade
   - category=build-tool
+  - os=windows
+  - os=linux
   links: []
   message: |-
     Ant build tool detected in the project. It lacks standard conventions and dependency management, making it less suitable for modern cloud-native development and CI/CD practices.
@@ -24,10 +28,14 @@
   description: Eclipse project found
   effort: 3
   labels:
-    - konveyor.io/target=cloud-readiness
-    - konveyor.io/source
-      - domain=java-upgrade
-    - category=build-tool
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
+  - domain=java-upgrade
+  - category=build-tool
+  - os=windows
+  - os=linux
   links: []
   message: |-
     Eclipse project detected. This project appears to use Eclipse-specific configurations, such as WTP or JEM natures, which can make build and deployment less portable in cloud environments.

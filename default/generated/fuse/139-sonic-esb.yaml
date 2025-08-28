@@ -3,9 +3,9 @@
   description: Sonic ESB Service
   effort: 4
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links:
@@ -28,9 +28,9 @@
   description: Reference to com.sonicsw.xq.XQServiceContext
   effort: 4
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -77,9 +77,9 @@
   description: Reference to com.sonicsw.xq.XQInitContext
   effort: 4
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   - spring
@@ -111,9 +111,9 @@
   description: Call of com.sonicsw.xq.XQInitContext.getParameters
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -128,9 +128,9 @@
   description: Call of com.sonicsw.xq.XQParameters.getParameter
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   - spring
@@ -146,9 +146,9 @@
   description: Reference to com.sonicsw.xq.XQParameters
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   - spring
@@ -168,9 +168,9 @@
   description: Reference to com.sonicsw.xq.XQParameters
   effort: 3
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   - spring
@@ -190,9 +190,9 @@
   description: Reference to com.sonicsw.xq.XQMessage
   effort: 3
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -211,9 +211,9 @@
   description: Call of com.sonicsw.xq.XQMessage.getHeaderValue
   effort: 3
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -228,9 +228,9 @@
   description: Call of com.sonicsw.xq.XQMessage.setHeaderValue
   effort: 3
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -245,9 +245,9 @@
   description: Call of com.sonicsw.xq.XQMessage.getHeaderNames
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -262,9 +262,9 @@
   description: Reference to com.sonicsw.xq.XQPart
   effort: 3
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -283,9 +283,9 @@
   description: Call of com.sonicsw.xq.XQMessage.getPartCount
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -300,9 +300,9 @@
   description: Call of com.sonicsw.xq.XQMessage.getPart
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -317,9 +317,9 @@
   description: Reference to com.sonicsw.xq.XQLog
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   - slf4j
@@ -339,9 +339,9 @@
   description: 'Reference to com.sonicsw.xq.XQServiceException '
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -363,9 +363,9 @@
   description: Call of com.sonicsw.xq.XQMessage.getCorrelationId
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -383,9 +383,9 @@
   description: Call of com.sonicsw.xq.XQAddressFactory.createEndpointAddress
   effort: 3
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -405,9 +405,9 @@
   description: Call of com.sonicsw.xq.XQServiceContext.addOutgoing
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -426,9 +426,9 @@
   description: Reference to com.sonicsw.xq.XQEnvelope
   effort: 3
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []
@@ -447,9 +447,9 @@
   description: Call of com.sonicsw.xq.XQEnvelope.getMessage
   effort: 1
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   - camel
   links: []

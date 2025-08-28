@@ -3,12 +3,17 @@
   description: Retired the Deprecated SSLSession.getPeerCertificateChain() Method Implementation
   effort: 3
   labels:
-  - konveyor.io/source=openjdk15-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk15+
-  - konveyor.io/target=openjdk
+  - source=openjdk15-
+  - source=openjdk
+  - capability=openjdk15+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Retired the Deprecated SSLSession.getPeerCertificateChain() Method Implementation
     url: https://www.oracle.com/java/technologies/javase/15-relnote-issues.html#JDK-8241039
@@ -27,12 +32,17 @@
   description: Removal of com.sun.net.ssl.internal.ssl.Provider Name
   effort: 3
   labels:
-  - konveyor.io/source=openjdk15-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk15+
-  - konveyor.io/target=openjdk
+  - source=openjdk15-
+  - source=openjdk
+  - capability=openjdk15+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of com.sun.net.ssl.internal.ssl.Provider Name
     url: https://www.oracle.com/java/technologies/javase/15-relnote-issues.html#JDK-8219989

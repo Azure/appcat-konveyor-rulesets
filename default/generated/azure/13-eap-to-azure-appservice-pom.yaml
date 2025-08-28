@@ -3,12 +3,14 @@
   description: Get started with JBoss EAP on App Service
   effort: 1
   labels:
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=azure-appservice
+  - source=eap7
+  - source=eap
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=eap-migration
   - Azure
+  - os=windows
+  - os=linux
   links:
   - title: Get the Azure CLI
     url: https://aka.ms/azure-cli

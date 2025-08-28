@@ -3,10 +3,10 @@
   description: camel-activemq component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -23,10 +23,10 @@
   description: camel-any23 component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -42,10 +42,10 @@
   description: camel-atmos component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -61,10 +61,10 @@
   description: camel-caffeine-lrucache component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -81,10 +81,10 @@
   description: camel-cdi component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -101,10 +101,10 @@
   description: camel-directvm component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -121,10 +121,10 @@
   description: camel-dozer component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -141,10 +141,10 @@
   description: camel-elasticsearch-rest component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -161,10 +161,10 @@
   description: camel-gora component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -180,10 +180,10 @@
   description: camel-hbase component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -199,10 +199,10 @@
   description: camel-iota component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -218,10 +218,10 @@
   description: camel-ipfs component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -237,10 +237,10 @@
   description: camel-jbpm component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -256,10 +256,10 @@
   description: camel-jclouds component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -275,10 +275,10 @@
   description: camel-johnzon component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -295,10 +295,10 @@
   description: camel-microprofile-metrics component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -315,10 +315,10 @@
   description: camel-milo component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -334,10 +334,10 @@
   description: camel-opentracing component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -354,10 +354,10 @@
   description: camel-optaplanner component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -373,10 +373,10 @@
   description: camel-rabbitmq component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -393,10 +393,10 @@
   description: camel-rest-swagger component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -413,10 +413,10 @@
   description: camel-restdsl-swagger-plugin component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -433,10 +433,10 @@
   description: camel-resteasy component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -453,10 +453,10 @@
   description: camel-spark component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -472,10 +472,10 @@
   description: camel-spring-integration component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -492,10 +492,10 @@
   description: camel-swift component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -511,10 +511,10 @@
   description: camel-swagger-java component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -531,10 +531,10 @@
   description: camel-websocket component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -551,10 +551,10 @@
   description: camel-websocket-jsr356 component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -571,10 +571,10 @@
   description: camel-vertx-kafka component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -591,10 +591,10 @@
   description: camel-vm component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -611,10 +611,10 @@
   description: camel-xstream component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -631,10 +631,10 @@
   description: camel-zipkin component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_removed_components
@@ -652,10 +652,10 @@
     to use Spring HTTP server directly
   effort: 3
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_camel_platform_http_starter
@@ -675,10 +675,10 @@
     with dynamic values.
   effort: 2
   labels:
-  - konveyor.io/source=camel3
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4+
-  - konveyor.io/target=camel
+  - source=camel3
+  - source=camel
+  - target=camel4+
+  - target=camel
   links:
   - title: 'Camel 4 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-4-migration-guide.html#_camel_micrometer

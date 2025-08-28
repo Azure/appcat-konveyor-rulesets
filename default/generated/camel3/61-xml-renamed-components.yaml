@@ -3,10 +3,10 @@
   description: '`org.apache.camel:camel-http4` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -22,10 +22,10 @@
   description: '`org.apache.camel:camel-http4-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -41,10 +41,10 @@
   description: '`org.apache.camel:camel-rxjava2` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -60,10 +60,10 @@
   description: '`org.apache.camel:camel-rxjava2-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Renamed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -79,10 +79,10 @@
   description: 'The `org.apache.camel:camel-*starter` artifacts have been renamed in Apache Camel 3.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: the Maven `groupId` for the Camel Spring Boot
       starters have changed'
@@ -100,10 +100,10 @@
   description: '`org.apache.camel:camel-mongodb3` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -120,10 +120,10 @@
   description: '`org.apache.camel:camel-mongodb3-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -141,10 +141,10 @@
   description: '`org.apache.camel:camel-hdfs2` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -161,10 +161,10 @@
   description: '`org.apache.camel:camel-hdfs2-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -181,10 +181,10 @@
   description: '`org.apache.camel:camel-hdfs` artifact has been replaced'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -201,10 +201,10 @@
   description: '`org.apache.camel:camel-hdfs-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -220,10 +220,10 @@
   description: '`org.apache.camel:camel-mina2` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -240,10 +240,10 @@
   description: '`org.apache.camel:camel-mina2-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -260,10 +260,10 @@
   description: '`org.apache.camel:camel-mina` artifact has been replaced'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -280,10 +280,10 @@
   description: '`org.apache.camel:camel-mina-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -299,10 +299,10 @@
   description: '`org.apache.camel:camel-netty4` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -319,10 +319,10 @@
   description: '`org.apache.camel:camel-netty4-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -339,10 +339,10 @@
   description: '`org.apache.camel:camel-netty` artifact has been replaced'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -359,10 +359,10 @@
   description: '`org.apache.camel:camel-netty-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -378,10 +378,10 @@
   description: '`org.apache.camel:camel-netty4-http` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -398,10 +398,10 @@
   description: '`org.apache.camel:camel-netty4-http-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -418,10 +418,10 @@
   description: '`org.apache.camel:camel-netty-http` artifact has been replaced'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -438,10 +438,10 @@
   description: '`org.apache.camel:camel-netty-http-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -458,10 +458,10 @@
   description: '`org.apache.camel:camel-quartz2` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -478,10 +478,10 @@
   description: '`org.apache.camel:camel-quartz2-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -499,10 +499,10 @@
   description: '`org.apache.camel:camel-quartz` artifact has been replaced'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -519,10 +519,10 @@
   description: '`org.apache.camel:camel-quartz-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -538,10 +538,10 @@
   description: '`org.apache.camel:camel-jetty9` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -556,10 +556,10 @@
   description: '`org.apache.camel:camel-jetty9-starter` artifact has been renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Renamed Components
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_renamed_components
@@ -574,10 +574,10 @@
   description: '`org.apache.activemq:activemq-camel` artifact has been moved'
   effort: 3
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - ActiveMQ
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_activemq

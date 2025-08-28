@@ -3,9 +3,9 @@
   description: Dumping routes to JMX no longer includes customId=true in the XML nodes.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: 'Camel 4.1 - Migration Guide: Camel Management'
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_management
@@ -23,9 +23,9 @@
     null body.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: 'Camel 4.1 - Migration Guide: Camel Scheduler'
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_scheduler
@@ -46,9 +46,9 @@
     and null body.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: 'Camel 4.1 - Migration Guide: Camel Timer'
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_timer
@@ -69,9 +69,9 @@
     CamelAwsStepFunctionsOperation
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -96,9 +96,9 @@
     CamelAwsStepFunctionsStateMachinesMaxResults
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -123,9 +123,9 @@
     replaced with CamelAwsStepFunctionsActivityName
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -151,9 +151,9 @@
     replaced with CamelAwsStepFunctionsActivityArn
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -179,9 +179,9 @@
     with CamelAwsStepFunctionsActivitiesMaxResults
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -207,9 +207,9 @@
     CamelAwsStepFunctionsExecutionArn
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -235,9 +235,9 @@
     with CamelAwsStepFunctionsExecutionName
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -263,9 +263,9 @@
     with CamelAwsStepFunctionsExecutionInput
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -291,9 +291,9 @@
     with CamelAwsStepFunctionsExecutionTraceHeader
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -319,9 +319,9 @@
     replaced with CamelAwsStepFunctionsExecutionHistoryMaxResults
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -347,9 +347,9 @@
     has been replaced with CamelAwsStepFunctionsExecutionHistoryIncludeExecutionData
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -375,9 +375,9 @@
     been replaced with CamelAwsStepFunctionsExecutionHistoryReverseOrder
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -403,9 +403,9 @@
     with CamelAwsStepFunctionsExecutionMaxResults
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: Camel 4.1 - Camel AWS Step Functions
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_step_functions
@@ -430,9 +430,9 @@
   description: The queueUrl parameter has been replaced by the queueArn parameter.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: 'Camel 4.1 - Migration Guide: Camel Management'
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_aws2_sns
@@ -448,9 +448,9 @@
   description: The Camel-PDF component has been updated to Apache PDFBox 3.0.0.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: 'Camel 4.1 - Migration Guide: Camel Management'
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_pdf
@@ -470,9 +470,9 @@
     while the default value for consumerRequestTimeoutMs has been updated to 30000.
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel4.1+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel4.1+
+  - target=camel
   links:
   - title: 'Camel 4.1 - Migration Guide: Camel Management'
     url: https://camel.apache.org/manual/camel-4x-upgrade-guide-4_1.html#_camel_kafka

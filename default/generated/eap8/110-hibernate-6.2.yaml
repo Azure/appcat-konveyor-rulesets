@@ -3,13 +3,13 @@
   description: EntityPersister#multiload method has changed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6.2+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6.2+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - Changes in integration contracts (SPIs)
@@ -28,13 +28,13 @@
   description: Executable#afterDeserialize method has changed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6.2+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6.2+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - Changes in integration contracts (SPIs)
@@ -53,13 +53,13 @@
   description: JdbcType#getJdbcRecommendedJavaTypeMapping() method has changed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6.2+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6.2+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - Changes in integration contracts (SPIs)
@@ -79,13 +79,13 @@
   description: Classes within the 'org.hibernate.cfg' package have been moved
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6.2+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6.2+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - API/SPI/Internal distinction
@@ -104,13 +104,13 @@
   description: Classes within the 'org.hibernate.loader' package have been moved
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6.2+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6.2+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate 6 migration guide - API/SPI/Internal distinction

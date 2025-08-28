@@ -3,10 +3,10 @@
   description: '`hystrix()` has been renamed.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide - Hystrix EIP
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_hystrix_eip

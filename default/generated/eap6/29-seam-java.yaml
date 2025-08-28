@@ -1,15 +1,15 @@
 - customVariables: []
   description: Seam API
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   links:
   - title: Migration from Seam 2 to Java EE and Alternatives
@@ -56,15 +56,15 @@
   description: Seam API - org.jboss.seam.core.Conversation
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -81,15 +81,15 @@
   description: Seam API - org.jboss.seam.Seam
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -110,15 +110,15 @@
   description: Seam API - org.jboss.seam.annotations.Name
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -140,15 +140,15 @@
   description: Seam API - org.jboss.seam.annotations.Scope
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -169,15 +169,15 @@
   description: Seam API - org.jboss.seam.annotations.In
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -194,15 +194,15 @@
   description: Seam API - org.jboss.seam.annotations.AutoCreate
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -220,15 +220,15 @@
   description: Seam API - org.jboss.seam.annotations.Out
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -254,15 +254,15 @@
   description: Seam API - org.jboss.seam.annotations.Factory
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -289,15 +289,15 @@
   description: Seam API - org.jboss.seam.annotations.Startup
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   links:
   - title: Java EE 7 - Startup annotation
@@ -318,15 +318,15 @@
   description: Seam API - org.jboss.seam.annotations.Create
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - javaee
   links:
@@ -345,15 +345,15 @@
   description: Seam API - org.jboss.seam.annotations.Destroy
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - javaee
   links:
@@ -372,15 +372,15 @@
   description: Seam API - org.jboss.seam.faces.Switcher
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   - conversation
@@ -398,15 +398,15 @@
   description: Seam API - org.jboss.seam.Component calls
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -429,15 +429,15 @@
   description: Seam API - org.jboss.seam.annotations.Redirect
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   links: []
   message: Refactor to have annotated error handler which redirect to a viewID page
@@ -452,15 +452,15 @@
   description: Seam API - org.jboss.seam.annotations.Install
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -486,15 +486,15 @@
   description: Seam API - org.jboss.seam.web.AbstractFilter
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - javaee
   links:
@@ -511,15 +511,15 @@
   description: Seam API - org.jboss.seam.annotations.web.Filter
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - javaee
   - servlet
@@ -538,15 +538,15 @@
   description: Seam API - org.jboss.seam.contexts.Contexts
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   links:
   - title: JBoss EAP 6 - Contexts, Scopes, and Dependencies
@@ -560,15 +560,15 @@
 - customVariables: []
   description: Seam integration with jBPM
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   links:
   - title: JBoss BPM Suite 6 - CDI integration
@@ -590,15 +590,15 @@
   description: Seam API - org.jboss.seam.core.ConversationEntry
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -614,15 +614,15 @@
   description: Seam API - org.jboss.seam.annotations.Begin
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -639,15 +639,15 @@
   description: Seam API - org.jboss.seam.annotations.End
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -664,15 +664,15 @@
   description: Seam API - org.jboss.seam.annotations.web.RequestParameter
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -695,15 +695,15 @@
   description: Seam API - org.jboss.seam.annotations.Logger
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -731,15 +731,15 @@
   description: The Seam API's `@DataModel\*` functionality should be replaced with the evolved Expression Language Specification in Java EE
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -759,15 +759,15 @@
   description: Seam API - firing and observing events
   effort: 0
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - cdi
   links:
@@ -796,15 +796,15 @@
   description: Seam API - Interceptors
   effort: 0
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - javaee
   links:
@@ -826,15 +826,15 @@
   description: Seam API - Asynchronous annotation
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - javaee
   links:
@@ -851,15 +851,15 @@
   description: Seam API - org.jboss.seam.annotations.Transactional annotation
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - javaee
   links:

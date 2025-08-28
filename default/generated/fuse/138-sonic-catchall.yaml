@@ -9,11 +9,11 @@
   description: Sonic proprietary type reference in the 'com' package needs to be migrated to a compatible API
   effort: 0
   labels:
-  - konveyor.io/source=sonic
-  - konveyor.io/target=camel2+
-  - konveyor.io/target=camel
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonic
+  - target=camel2+
+  - target=camel
+  - target=fuse6+
+  - target=fuse
   - sonic
   - catchall
   links: []

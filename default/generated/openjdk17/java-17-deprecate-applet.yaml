@@ -3,14 +3,19 @@
   description: Deprecate the Applet API for Removal
   effort: 5
   labels:
-  - konveyor.io/source=openjdk17-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk17+
-  - konveyor.io/target=openjdk
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
+  - source=openjdk17-
+  - source=openjdk
+  - capability=openjdk17+
+  - capability=openjdk
+  - source=spring5
+  - capability=spring6+
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Deprecate the Applet API for Removal
     url: https://www.oracle.com/java/technologies/javase/17all-relnotes.html#JDK-8256145

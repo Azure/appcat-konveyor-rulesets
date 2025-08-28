@@ -3,12 +3,17 @@
   description: sun.reflect.Reflection class was deprecated in Java 9
   effort: 3
   labels:
-  - konveyor.io/source=openjdk9-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk9+
-  - konveyor.io/target=openjdk
+  - source=openjdk9-
+  - source=openjdk
+  - capability=openjdk9+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Example changeset
     url: https://github.com/openjdk/jfx/commit/d647521fa83f0cebe9532642ee97ffc4356c8bb3
@@ -31,12 +36,17 @@
   description: sun.reflect.CallerSensitive annotation was deprecated in Java 9
   effort: 3
   labels:
-  - konveyor.io/source=openjdk9-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk9+
-  - konveyor.io/target=openjdk
+  - source=openjdk9-
+  - source=openjdk
+  - capability=openjdk9+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Example changeset
     url: https://github.com/openjdk/jfx/commit/d647521fa83f0cebe9532642ee97ffc4356c8bb3

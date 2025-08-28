@@ -1,11 +1,11 @@
 - customVariables: []
   description: Dependency entries in MANIFEST.MF
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   links: []
@@ -22,11 +22,11 @@
 - customVariables: []
   description: 'Apache CFX integration with JBoss '
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   links: []
@@ -48,11 +48,11 @@
   description: Entity EJB
   effort: 5
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - cmp
@@ -73,11 +73,11 @@
 - customVariables: []
   description: JBoss Web Valve
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   links: []
@@ -101,11 +101,11 @@
   description: JSR 88 deployment plan not supported
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - configuration
@@ -125,11 +125,11 @@
   description: Outdated HA Singleton
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - singleton
@@ -146,11 +146,11 @@
   description: Stateful Session EJB Clustering changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - cluster
@@ -172,11 +172,11 @@
 - customVariables: []
   description: HornetQ was removed in EAP 7
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   links:
@@ -203,11 +203,11 @@
   description: JBoss deprecated logging annotations
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - logging

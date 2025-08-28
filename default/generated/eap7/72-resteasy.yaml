@@ -3,15 +3,15 @@
   description: Deprecated class SimpleServerCache in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=eap7+
+  - target=eap
+  - target=resteasy3+
+  - target=resteasy
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes

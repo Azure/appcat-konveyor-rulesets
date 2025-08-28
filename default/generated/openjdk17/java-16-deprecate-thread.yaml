@@ -3,12 +3,17 @@
   description: Terminally Deprecated ThreadGroup stop, destroy, isDestroyed, setDaemon and isDaemon
   effort: 1
   labels:
-  - konveyor.io/source=openjdk16-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk16+
-  - konveyor.io/target=openjdk
+  - source=openjdk16-
+  - source=openjdk
+  - capability=openjdk16+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Terminally Deprecated ThreadGroup stop, destroy, isDestroyed, setDaemon and isDaemon
     url: https://www.oracle.com/java/technologies/javase/16-relnote-issues.html#JDK-8256643

@@ -16,14 +16,16 @@
   description: MongoDB connection found in configuration file
   effort: 5
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=database-migration
   - database
   - mongodb
+  - os=windows
+  - os=linux
   links:
   - title: MongoDB connection string found in configuration file
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#databases

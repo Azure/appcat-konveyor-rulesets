@@ -3,10 +3,10 @@
   description: 'Hibernate: Deprecated ''string'' CLOB data type'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
   - hibernate
   - configuration
   links: []
@@ -31,10 +31,10 @@
     provider
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
   - hibernate
   - configuration
   links: []
@@ -59,10 +59,10 @@
   description: 'Hibernate: Removed package org.hibernate.connection'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
   - hibernate
   - configuration
   links: []
@@ -77,10 +77,10 @@
 - customVariables: []
   description: 'Hibernate: Deprecated dtd configuration namespace'
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
   - hibernate
   - configuration
   links:
@@ -100,10 +100,10 @@
 - customVariables: []
   description: 'Hibernate: Deprecated dtd mapping namespace'
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
   - hibernate
   - configuration
   links:

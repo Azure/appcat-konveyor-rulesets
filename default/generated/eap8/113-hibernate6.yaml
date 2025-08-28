@@ -4,13 +4,13 @@
     identifier generation has changed
   effort: 3
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Implicit Identifier Sequence and Table
@@ -39,13 +39,13 @@
   description: Approaches for specifying Types to use which are string-based have been removed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Type System
@@ -67,13 +67,13 @@
   description: String-based approaches for specifying Types to use have been removed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Type System
@@ -97,13 +97,13 @@
   description: Basic mappings are no longer configurable through the BasicType contract
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Type System
@@ -121,13 +121,13 @@
   description: StandardBasicTypes class now exposes fields of type BasicTypeReference
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Basic Types
@@ -143,13 +143,13 @@
   description: Renaming of JavaTypeDescriptor contract
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Type System
@@ -165,13 +165,13 @@
   description: Renaming of SqlTypeDescriptor contract
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Type System
@@ -187,13 +187,13 @@
   description: The CompositeUserType interface has been reimplemented
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - CompositeUserType
@@ -209,13 +209,13 @@
   description: Property hibernate.hql.bulk_id_strategy has changed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Multi-table Mutation Queries
@@ -233,13 +233,13 @@
   description: Stream#close() must be called explicitly to close the underlying resources
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Stream
@@ -261,13 +261,13 @@
   description: The signature of the Interceptor#onSave method has been changed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Interceptor
@@ -285,13 +285,13 @@
   description: The contents of the loader.collection package have been restructured
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of org.hibernate.loader
@@ -308,13 +308,13 @@
   description: The contents of the loader.custom package have been moved
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of org.hibernate.loader
@@ -331,13 +331,13 @@
     removed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of org.hibernate.loader
@@ -357,13 +357,13 @@
   description: The contents of sql.ordering have moved
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of the SQL package
@@ -383,13 +383,13 @@
     SQL were removed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of the SQL package
@@ -406,13 +406,13 @@
   description: Support for basic property mappings with multiple columns was removed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - hbm.xml multiple <column/> now disallowed
@@ -438,13 +438,13 @@
   description: Legacy Hibernate Criteria API has been removed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Legacy hibernate criteria API
@@ -463,13 +463,13 @@
   description: The Query#iterate() method has been removed
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Iterate
@@ -486,13 +486,13 @@
     supported
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Callable via NativeQuery
@@ -527,13 +527,13 @@
     supported
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - HQL fetch all properties clause
@@ -558,13 +558,13 @@
     with JMX environments
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - JMX integration
@@ -582,13 +582,13 @@
     with JACC environments
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - JACC integration
@@ -605,13 +605,13 @@
   description: Removed hibernate classloader properties
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Previously deprecated features
@@ -627,13 +627,13 @@
   description: Removed hibernate properties
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Previously deprecated features
@@ -650,13 +650,13 @@
   description: Renamed hibernate property hibernate.ejb.metamodel.population
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
@@ -673,13 +673,13 @@
   description: Renamed hibernate property hibernate.ejb.cfgfile
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
@@ -695,13 +695,13 @@
   description: Renamed hibernate property hibernate.ejb.xml_files
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
@@ -717,13 +717,13 @@
   description: Renamed hibernate property hibernate.hbmxml.files
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
@@ -739,13 +739,13 @@
   description: Renamed hibernate property hibernate.ejb.loaded.classes
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
@@ -762,13 +762,13 @@
   description: The hibernate property under 'hibernate.ejb' has been renamed.
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
@@ -784,13 +784,13 @@
   description: Renamed hibernate property hibernate.ejb.entitymanager_factory_name
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
@@ -807,13 +807,13 @@
   description: Community dialects moved to a separate module
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Community dialects
@@ -836,13 +836,13 @@
   description: Multitenancy in Hibernate ORM has been simplified
   effort: 1
   labels:
-  - konveyor.io/target=hibernate6+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=hibernate6+
+  - target=hibernate
+  - target=eap8+
+  - target=eap
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   links:
   - title: Hibernate ORM 6 migration guide - Multitenancy simplification

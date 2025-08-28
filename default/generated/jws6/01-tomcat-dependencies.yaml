@@ -3,9 +3,9 @@
   description: Version of the tomcat artifact not compatible with JWS 6
   effort: 1
   labels:
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source
+  - target=jws6+
+  - target=jws
+  - source
   links: []
   message: Version 10.1.0 is the minimum version recommended
   ruleID: upgrade-tomcat-dependencies-00001

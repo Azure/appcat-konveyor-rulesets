@@ -3,12 +3,17 @@
   description: Deprecated Subject::doAs for Removal
   effort: 3
   labels:
-  - konveyor.io/source=openjdk18-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk18+
-  - konveyor.io/target=openjdk
+  - source=openjdk18-
+  - source=openjdk
+  - capability=openjdk18+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Deprecated Subject::doAs for Removal
     url: https://www.oracle.com/java/technologies/javase/18all-relnotes.html#JDK-8267108

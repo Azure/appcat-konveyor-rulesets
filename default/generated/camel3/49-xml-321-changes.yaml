@@ -4,9 +4,9 @@
     from camel-console to camel-support
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.21+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.21+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_21.html#_camel_console
@@ -22,9 +22,9 @@
   description: camel-java-joor-dsl can no longer load routes defined in class files
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.21+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.21+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_21.html#_camel_java_joor_dsl
@@ -46,9 +46,9 @@
   description: camel-dozer has been deprecated and removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.21+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.21+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Deprecated components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_21.html#_deprecated_components
@@ -67,9 +67,9 @@
   description: camel-cmis has been deprecated and removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.21+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.21+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Deprecated components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_21.html#_deprecated_components
@@ -89,9 +89,9 @@
     to use Spring HTTP server directly.
   effort: 2
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.21+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.21+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Changed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_21.html#_camel_platform_http_starter

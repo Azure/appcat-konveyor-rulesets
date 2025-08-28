@@ -3,12 +3,17 @@
   description: Local HTTP Calls
   effort: 7
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=local-resource-access
   - localhost
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: The app is trying to access local resource by HTTP, please try to migrate
     the resource to cloud
@@ -22,12 +27,17 @@
   description: Local JDBC Calls
   effort: 7
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=local-resource-access
   - localhost
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: The app is trying to access local resource by JDBC, please try to migrate
     the resource to cloud
@@ -41,12 +51,17 @@
   description: Local WebSocket Calls
   effort: 7
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=local-resource-access
   - localhost
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: The app is trying to access local resource using WebSocket, please try
     to migrate the resource to cloud
@@ -60,12 +75,17 @@
   description: Localhost Usage
   effort: 7
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=local-resource-access
   - localhost
   - containerization
+  - os=windows
+  - os=linux
   links: []
   message: The app is trying to use localhost, please try to migrate the resource to cloud
   ruleID: localhost-00004

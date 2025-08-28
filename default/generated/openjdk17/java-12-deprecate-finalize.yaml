@@ -3,12 +3,17 @@
   description: Removal of finalize Methods from FileInputStream and FileOutputStream
   effort: 1
   labels:
-  - konveyor.io/source=openjdk12-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk12+
-  - konveyor.io/target=openjdk
+  - source=openjdk12-
+  - source=openjdk
+  - capability=openjdk12+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of finalize Methods from FileInputStream and FileOutputStream
     url: https://www.oracle.com/java/technologies/javase/12all-relnotes.html#JDK-8192939
@@ -30,12 +35,17 @@
   description: Removal of finalize Method in java.util.ZipFile/Inflator/Deflator
   effort: 1
   labels:
-  - konveyor.io/source=openjdk12-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk12+
-  - konveyor.io/target=openjdk
+  - source=openjdk12-
+  - source=openjdk
+  - capability=openjdk12+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of finalize Method in java.util.ZipFile/Inflator/Deflator
     url: https://www.oracle.com/java/technologies/javase/12all-relnotes.html#JDK-8212129

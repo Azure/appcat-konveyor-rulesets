@@ -6,8 +6,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.jdbc.AbstractDataSourceInitializer
@@ -41,8 +41,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.jdbc.AbstractDataSourceInitializer
@@ -76,8 +76,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.batch.BatchDataSourceInitializer
@@ -108,8 +108,8 @@
   category: mandatory
   effort: 4
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.context.config.ConfigFileApplicationListener
@@ -142,8 +142,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.elasticsearch.ElasticsearchRestHealthIndicator
@@ -173,8 +173,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.integration.IntegrationDataSourceInitializer
@@ -208,8 +208,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.session.JdbcSessionDataSourceInitializer
@@ -240,8 +240,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.quartz.QuartzDataSourceInitializer
@@ -273,8 +273,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
@@ -309,8 +309,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties.Cookie
@@ -348,8 +348,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties.Session
@@ -401,8 +401,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.jdbc.DataSourceInitializationMode
@@ -458,8 +458,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.endpoint.expose.IncludeExcludeEndpointFilter.DefaultIncludes
@@ -512,8 +512,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties.SameSite
@@ -569,8 +569,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.web.server.LocalManagementPort
@@ -631,8 +631,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.rsocket.context.LocalRSocketServerPort
@@ -693,8 +693,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.web.server.LocalServerPort
@@ -755,8 +755,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.test.context.assertj.ApplicationContextAssertProvider.assertThat()
@@ -812,8 +812,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
@@ -842,8 +842,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.web.embedded.netty.SslServerCustomizer
@@ -863,8 +863,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties.Cookie
@@ -890,8 +890,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties.Session
@@ -924,8 +924,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.jdbc.DataSourceInitializationMode
@@ -959,8 +959,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.web.server.LocalManagementPort
@@ -988,8 +988,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.rsocket.context.LocalRSocketServerPort
@@ -1016,8 +1016,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.web.server.LocalServerPort
@@ -1052,8 +1052,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.test.json.JsonContent.assertThat()
@@ -1079,8 +1079,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint.configureObjectMapper
@@ -1120,8 +1120,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.Launcher.createClassLoader
@@ -1158,8 +1158,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.builder.SpringApplicationBuilder.createSpringApplication
@@ -1184,8 +1184,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.archive.Archive.forEach
@@ -1229,8 +1229,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.jdbc.DatabaseDriver.fromDataSource
@@ -1253,8 +1253,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.Launcher.getClassPathArchives
@@ -1280,8 +1280,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.getContentType
@@ -1308,8 +1308,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.getDateFormat()
@@ -1335,8 +1335,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.OnEndpointElementCondition.getDefaultEndpointsOutcome()
@@ -1361,8 +1361,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace.DynatraceProperties.getDeviceId()
@@ -1385,8 +1385,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler.getErrorAttributes
@@ -1422,8 +1422,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace.DynatraceProperties.getGroup()
@@ -1448,8 +1448,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties.Registration.getIdentityprovider()
@@ -1476,8 +1476,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties.Jwt.getJwsAlgorithm()
@@ -1504,8 +1504,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.archive.Archive.getNestedArchives(org.springframework.boot.loader.archive.Archive.EntryFilter)
@@ -1532,8 +1532,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.context.config.ConfigData.getOptions()
@@ -1556,8 +1556,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.getOracleKerberosConfigFile()
@@ -1582,8 +1582,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia.GangliaProperties.getProtocolVersion()
@@ -1609,8 +1609,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia.GangliaProperties.getRateUnits
@@ -1631,8 +1631,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace.DynatraceProperties.getTechnologyType()
@@ -1656,8 +1656,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.ServerProperties.Undertow.isAllowEncodedSlash
@@ -1681,8 +1681,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.isAllowRequestOverride
@@ -1709,8 +1709,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.isAllowSessionOverride
@@ -1733,8 +1733,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.isCache
@@ -1758,8 +1758,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.isExposeRequestAttributes
@@ -1785,8 +1785,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.isExposeSessionAttributes
@@ -1810,8 +1810,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.isExposeSpringMacroHelpers
@@ -1835,8 +1835,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.Contentnegotiation.isFavorPathExtension
@@ -1858,8 +1858,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.isIgnoreFutureMigrations
@@ -1885,8 +1885,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.isIgnoreIgnoredMigrations
@@ -1909,8 +1909,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.isIgnoreMissingMigrations
@@ -1936,8 +1936,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.isIgnorePendingMigrations
@@ -1965,8 +1965,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.kafka.KafkaProperties.Listener.isOnlyLogRecordMetadata
@@ -1991,8 +1991,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.Pathmatch.isUseRegisteredSuffixPattern
@@ -2016,8 +2016,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.Pathmatch.isUseSuffixPattern
@@ -2042,8 +2042,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.archive.JarFileArchive.iterator
@@ -2070,8 +2070,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.archive.Archive.iterator
@@ -2111,8 +2111,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.archive.ExplodedArchive.iterator
@@ -2141,8 +2141,8 @@
   category: mandatory
   effort: 4
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.jooq.JooqAutoConfiguration.DslContextConfiguration.jooqProvidersDefaultConfigurationCustomizer
@@ -2167,8 +2167,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.loadConfiguration(java.lang.String, org.springframework.boot.logging.LogFile)
@@ -2202,8 +2202,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.test.context.runner.AbstractApplicationContextRunner.newInstance(*)
@@ -2232,8 +2232,8 @@
   category: mandatory
   effort: 4
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.test.context.runner.ApplicationContextRunner.newInstance
@@ -2266,8 +2266,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.test.context.runner.ReactiveWebApplicationContextRunner.newInstance
@@ -2291,8 +2291,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.test.context.runner.WebApplicationContextRunner.newInstance
@@ -2324,8 +2324,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.SpringApplicationRunListener.running
@@ -2359,8 +2359,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.env.EnvironmentEndpoint.sanitize
@@ -2383,8 +2383,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.ServerProperties.Undertow.setAllowEncodedSlash
@@ -2407,8 +2407,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.setAllowRequestOverride
@@ -2434,8 +2434,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.setAllowSessionOverride
@@ -2461,8 +2461,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.setCache
@@ -2490,8 +2490,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.setContentType
@@ -2518,8 +2518,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.setDateFormat
@@ -2545,8 +2545,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace.DynatraceProperties.setDeviceId
@@ -2567,8 +2567,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.setExposeRequestAttributes
@@ -2593,8 +2593,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.setExposeSessionAttributes
@@ -2619,8 +2619,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.mustache.MustacheProperties.setExposeSpringMacroHelpers
@@ -2648,8 +2648,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.ContentNegotiation.setFavorPathExtension
@@ -2681,8 +2681,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace.DynatraceProperties.setGroup
@@ -2707,8 +2707,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.setIgnoreFutureMigrations
@@ -2733,8 +2733,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.setIgnoreIgnoredMigrations
@@ -2755,8 +2755,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.setIgnoreMissingMigrations
@@ -2782,8 +2782,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.setIgnorePendingMigrations
@@ -2809,8 +2809,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties.Jwt.setJwsAlgorithm
@@ -2839,8 +2839,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.kafka.KafkaProperties.Listener.setOnlyLogRecordMetadata
@@ -2865,8 +2865,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.flyway.FlywayProperties.setOracleKerberosConfigFile
@@ -2893,8 +2893,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia.GangliaProperties.setProtocolVersion
@@ -2924,8 +2924,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.amqp.AbstractRabbitListenerContainerFactoryConfigurer.setRabbitProperties(org.springframework.boot.autoconfigure.amqp.RabbitProperties)
@@ -2961,8 +2961,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.amqp.RabbitTemplateConfigurer.setRabbitProperties
@@ -3003,8 +3003,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.ganglia.GangliaProperties.setRateUnits
@@ -3024,8 +3024,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.metrics.export.dynatrace.DynatraceProperties.setTechnologyType
@@ -3050,8 +3050,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.Pathmatch.setUseRegisteredSuffixPattern
@@ -3079,8 +3079,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.Pathmatch.setUseSuffixPattern
@@ -3106,8 +3106,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.archive.Archive.spliterator
@@ -3134,8 +3134,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.SpringApplicationRunListener.started
@@ -3169,8 +3169,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.test.context.runner.AbstractApplicationContextRunner
@@ -3194,8 +3194,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.amqp.AbstractRabbitListenerContainerFactoryConfigurer
@@ -3222,8 +3222,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.context.event.ApplicationReadyEvent
@@ -3253,8 +3253,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.context.event.ApplicationStartedEvent
@@ -3278,8 +3278,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.amqp.DirectRabbitListenerContainerFactoryConfigurer
@@ -3306,8 +3306,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.health.HealthEndpoint
@@ -3337,8 +3337,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.health.HealthEndpointWebExtension
@@ -3365,8 +3365,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.autoconfigure.endpoint.expose.IncludeExcludeEndpointFilter(java.lang.Class, org.springframework.core.env.Environment, java.lang.String, org.springframework.boot.actuate.autoconfigure.endpoint.expose.IncludeExcludeEndpointFilter.DefaultIncludes)
@@ -3392,8 +3392,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.tools.Packager
@@ -3418,8 +3418,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.amqp.RabbitTemplateConfigurer
@@ -3444,8 +3444,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.actuate.health.ReactiveHealthEndpointWebExtension
@@ -3471,8 +3471,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.loader.tools.Repackager
@@ -3497,8 +3497,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.devtools.restart.classloader.RestartClassLoader
@@ -3523,8 +3523,8 @@
   category: mandatory
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.autoconfigure.amqp.SimpleRabbitListenerContainerFactoryConfigurer
@@ -3557,8 +3557,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.boot.jdbc.DatabaseDriver.GAE

@@ -3,8 +3,8 @@
   description: Replace the Spring Web artifact with Quarkus 'spring-web' extension
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Spring Web Guide
     url: https://quarkus.io/guides/spring-web
@@ -29,8 +29,8 @@
   description: Add the Quarkus 'quarkus-resteasy-reactive-jackson' dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Migration Guide 2.5
     url: https://github.com/quarkusio/quarkus/wiki/Migration-Guide-2.5#spring-web

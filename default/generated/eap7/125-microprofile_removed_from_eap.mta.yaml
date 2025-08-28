@@ -3,9 +3,9 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile Config
   effort: 1
   labels:
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap7
+  - target=eap
+  - source
   - EclipseMicroProfile
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and
@@ -24,9 +24,9 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile Health
   effort: 1
   labels:
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap7
+  - target=eap
+  - source
   - EclipseMicroProfile
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and
@@ -45,9 +45,9 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile Metrics
   effort: 1
   labels:
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap7
+  - target=eap
+  - source
   - EclipseMicroProfile
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and
@@ -66,9 +66,9 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile REST Client
   effort: 1
   labels:
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap7
+  - target=eap
+  - source
   - EclipseMicroProfile
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and
@@ -87,9 +87,9 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile Opentracing
   effort: 1
   labels:
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap7
+  - target=eap
+  - source
   - EclipseMicroProfile
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and

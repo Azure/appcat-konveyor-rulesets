@@ -4,9 +4,9 @@
     has customer auto configuration options for all its components
   effort: 5
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.13+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.13+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_13.html#_camel_hazelcast_starter
@@ -26,9 +26,9 @@
   description: org.apache.camel:camel-mllp starter has been refactored
   effort: 3
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.13+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.13+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_13.html#_camel_mllp

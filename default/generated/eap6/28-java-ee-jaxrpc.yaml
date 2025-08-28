@@ -1,9 +1,9 @@
 - customVariables: []
   description: JAX-RPC Generic Handler
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - jax-rpc
   - soap
   links:

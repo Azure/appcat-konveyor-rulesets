@@ -3,13 +3,15 @@
   description: Detect OpenLiberty Server File Path Configurations
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected file path configurations in OpenLiberty server that need to be migrated to Azure storage solutions.
     
@@ -48,13 +50,15 @@
   description: Detect Web.xml File Path Environment Entries
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected environment entries in web.xml defining file paths that need to be updated for Azure storage solutions.
     
@@ -99,13 +103,15 @@
   description: Detect File Path Resource Injections
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected @Resource annotations for file path injections that need to be updated for Azure storage migration.
     
@@ -144,13 +150,15 @@
   description: Detect ServletContext Path Usage
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Detected usage of ServletContext.getRealPath() which needs to be reconsidered in containerized environments.
     

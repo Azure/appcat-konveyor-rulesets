@@ -1,9 +1,9 @@
 - customVariables: []
   description: Oracle Application Platform EJB Descriptor
   labels:
-  - konveyor.io/source=orion
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=orion
+  - target=eap6+
+  - target=eap
   - web-app
   - orion
   - configuration
@@ -23,9 +23,9 @@
 - customVariables: []
   description: Oracle Application Platform Web Descriptor
   labels:
-  - konveyor.io/source=orion
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=orion
+  - target=eap6+
+  - target=eap
   - web-app
   - orion
   - configuration
@@ -49,9 +49,9 @@
 - customVariables: []
   description: Oracle Application EAR configuration file
   labels:
-  - konveyor.io/source=orion
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=orion
+  - target=eap6+
+  - target=eap
   - web-app
   - orion
   - configuration
