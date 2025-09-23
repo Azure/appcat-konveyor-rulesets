@@ -38,12 +38,12 @@ jobs:
       run: |
         cd test
         python -m unittest test_mandatory_category.py -v 2>&1 | tee test_output.log
-        echo "exit_code=$?" >> $GITHUB_OUTPUT
+        echo "exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
       continue-on-error: true
         
     - name: Upload test results
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: test-results
         path: test/test_output.log
