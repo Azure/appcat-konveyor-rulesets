@@ -312,3 +312,82 @@
         nameregex: org\.apache\.activemq\.([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)activemq([a-zA-Z0-9._-]*)$
+- category: optional
+  customVariables: []
+  description: Java EE or Jakarta EE application using RabbitMQ AMQP found
+  effort: 7
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - message-queue
+  - RabbitMQ Client
+  - JavaEE
+  - JakartaEE
+  - os=windows
+  - os=linux
+  links:
+  - title: Azure Service Bus documentation
+    url: https://learn.microsoft.com/azure/service-bus-messaging
+  message: |-
+    The application is a Java EE or Jakarta EE project using RabbitMQ AMQP for messaging. To migrate this application to Azure, you can follow these recommendations:
+
+     * **Provision Azure Service Bus**: Replace RabbitMQ with Azure Service Bus, a fully managed messaging service that offers reliable message queuing and publish/subscribe capabilities with JMS 2.0 support.
+
+     * **Update messaging dependencies**: Replace RabbitMQ AMQP client dependencies with Azure Service Bus JMS libraries. For Jakarta EE applications, ensure you use the appropriate Jakarta namespace dependencies.
+
+     * **Migrate JMS configuration**: Update your application's JMS configuration to connect to Azure Service Bus instead of RabbitMQ. This includes updating connection factories, destination configurations, and any JNDI lookups.
+
+     * **Handle namespace migration**: If migrating from Java EE to Jakarta EE on Azure, ensure all javax.* namespace references are updated to jakarta.* namespace, including JMS-related imports.
+
+     * **Configure Azure Service Bus queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
+
+     * **Connect using Service Connector**: Create service connections using **Service Connector** to connect your Azure Service Bus to your Azure app. This automates connection configuration and reduces manual setup.
+
+     * **Passwordless connections**: Consider using passwordless connections for Azure services to provide an additional layer of security and convenience by eliminating the need for passwords.
+  ruleID: azure-message-queue-javaee-rabbitmq-amqp-01000
+  when:
+    and:
+    - or:
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: .*:javaee-api
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: .*:jakarta\.jakartaee-api
+    - or:
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: com\.rabbitmq\.amqp-client.*
+      - builtin.filecontent:
+          filePattern: (/|\\)(application|bootstrap|web)(-[a-zA-Z0-9]+)*?\.(properties|xml|yaml|yml)$
+          pattern: rabbitmq\.(.*\.)?(addresses|host|virtual-host|username|password)
+      - java.referenced:
+          location: PACKAGE
+          pattern: com.rabbitmq.client*
+    - not:
+        or:
+        - java.dependency:
+            lowerbound: 0.0.0
+            nameregex: javax\.jms.*
+        - java.dependency:
+            lowerbound: 0.0.0
+            nameregex: jakarta\.jms.*
+        - java.dependency:
+            lowerbound: 0.0.0
+            nameregex: com\.rabbitmq\.jms.*
+        - java.dependency:
+            lowerbound: 0.0.0
+            name: org.springframework.boot.spring-boot-starter-amqp
+        - java.dependency:
+            lowerbound: 0.0.0
+            name: org.springframework.amqp.spring-rabbit
+        - java.dependency:
+            lowerbound: 0.0.0
+            nameregex: org\.springframework\.amqp.*
+        - java.referenced:
+            location: PACKAGE
+            pattern: org.springframework.amqp.rabbit*
