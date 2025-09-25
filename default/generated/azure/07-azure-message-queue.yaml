@@ -340,7 +340,6 @@
      * **Update messaging dependencies**: Replace RabbitMQ AMQP client dependencies with Azure Service Bus JMS libraries. For Jakarta EE applications, ensure you use the appropriate Jakarta namespace dependencies.
 
      * **Configure Azure Service Bus queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
-
   ruleID: azure-message-queue-java-ee-rabbitmq-amqp-01000
   when:
     and:
