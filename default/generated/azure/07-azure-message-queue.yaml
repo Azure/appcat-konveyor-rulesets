@@ -96,7 +96,7 @@
     resources in Azure by eliminating the need for passwords. This way you can reduce
     the risk of password-related vulnerabilities, such as weak passwords or password
     theft."
-  ruleID: azure-message-queue-config-rabbitmq-01000
+  ruleID: azure-m-config-rabbitmq-01000
   when:
     builtin.filecontent:
       filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
@@ -368,32 +368,3 @@
       - java.referenced:
           location: PACKAGE
           pattern: com.rabbitmq.client*
-    - and:
-      - not:
-          java.dependency:
-            lowerbound: 0.0.0
-            nameregex: javax\.jms.*
-      - not:
-          java.dependency:
-            lowerbound: 0.0.0
-            nameregex: jakarta\.jms.*
-      - not:
-          java.dependency:
-            lowerbound: 0.0.0
-            nameregex: com\.rabbitmq\.jms.*
-      - not:
-          java.dependency:
-            lowerbound: 0.0.0
-            name: org.springframework.boot.spring-boot-starter-amqp
-      - not:
-          java.dependency:
-            lowerbound: 0.0.0
-            name: org.springframework.amqp.spring-rabbit
-      - not:
-          java.dependency:
-            lowerbound: 0.0.0
-            nameregex: org\.springframework\.amqp.*
-      - not:
-          java.referenced:
-            location: PACKAGE
-            pattern: org.springframework.amqp.rabbit*
