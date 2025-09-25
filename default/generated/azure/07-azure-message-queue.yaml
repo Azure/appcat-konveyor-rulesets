@@ -317,18 +317,16 @@
   description: Java EE or Jakarta EE application using RabbitMQ AMQP found
   effort: 7
   labels:
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source
+  - konveyor.io/target=azure-appservice
+  - konveyor.io/target=azure-aks
+  - konveyor.io/target=azure-container-apps
+  - konveyor.io/source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
   - RabbitMQ Client
   - JavaEE
   - JakartaEE
-  - os=windows
-  - os=linux
   links:
   - title: Azure Service Bus documentation
     url: https://learn.microsoft.com/azure/service-bus-messaging
