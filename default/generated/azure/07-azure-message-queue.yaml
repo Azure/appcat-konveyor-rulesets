@@ -344,14 +344,14 @@
     - or:
       - java.dependency:
           lowerbound: 0.0.0
-          nameregex: .*:javaee-api
+          nameregex: ([a-zA-Z0-9._-]*)jakarta.jakartaee-api([a-zA-Z0-9._-]*)
       - java.dependency:
           lowerbound: 0.0.0
-          nameregex: .*:jakarta\.jakartaee-api
+          nameregex: ([a-zA-Z0-9._-]*)javaee-api([a-zA-Z0-9._-]*)
     - or:
       - java.dependency:
           lowerbound: 0.0.0
-          nameregex: com\.rabbitmq\.amqp-client.*
+          nameregex: ([a-zA-Z0-9._-]*)amqp-client([a-zA-Z0-9._-]*)
       - builtin.filecontent:
           filePattern: (/|\\)(application|bootstrap|web)(-[a-zA-Z0-9]+)*?\.(properties|xml|yaml|yml)$
           pattern: rabbitmq\.(.*\.)?(addresses|host|virtual-host|username|password)
