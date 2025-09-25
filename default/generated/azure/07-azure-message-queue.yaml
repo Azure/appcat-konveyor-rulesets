@@ -368,26 +368,32 @@
       - java.referenced:
           location: PACKAGE
           pattern: com.rabbitmq.client*
-    - not:
-        or:
-        - java.dependency:
+    - and:
+      - not:
+          java.dependency:
             lowerbound: 0.0.0
             nameregex: javax\.jms.*
-        - java.dependency:
+      - not:
+          java.dependency:
             lowerbound: 0.0.0
             nameregex: jakarta\.jms.*
-        - java.dependency:
+      - not:
+          java.dependency:
             lowerbound: 0.0.0
             nameregex: com\.rabbitmq\.jms.*
-        - java.dependency:
+      - not:
+          java.dependency:
             lowerbound: 0.0.0
             name: org.springframework.boot.spring-boot-starter-amqp
-        - java.dependency:
+      - not:
+          java.dependency:
             lowerbound: 0.0.0
             name: org.springframework.amqp.spring-rabbit
-        - java.dependency:
+      - not:
+          java.dependency:
             lowerbound: 0.0.0
             nameregex: org\.springframework\.amqp.*
-        - java.referenced:
+      - not:
+          java.referenced:
             location: PACKAGE
             pattern: org.springframework.amqp.rabbit*
