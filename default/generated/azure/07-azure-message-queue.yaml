@@ -348,7 +348,7 @@
      * **Connect using Service Connector**: Create service connections using **Service Connector** to connect your Azure Service Bus to your Azure app. This automates connection configuration and reduces manual setup.
 
      * **Passwordless connections**: Consider using passwordless connections for Azure services to provide an additional layer of security and convenience by eliminating the need for passwords.
-  ruleID: azure-message-queue-javaee-rabbitmq-amqp-01000
+  ruleID: azure-message-queue-java-ee-rabbitmq-amqp-01000
   when:
     and:
     - or:
