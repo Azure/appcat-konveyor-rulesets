@@ -56,19 +56,6 @@
 			<artifactId>kafka-clients</artifactId>
 			<version>3.5.1</version>
 		</dependency>
-		
-		<dependency>
-			<groupId>jakarta.platform</groupId>
-			<artifactId>jakarta.jakartaee-api</artifactId>
-			<version>9.0.0</version>
-			<scope>provided</scope>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.rabbitmq</groupId>
-			<artifactId>amqp-client</artifactId>
-			<version>5.18.0</version>
-		</dependency>
 	</dependencies>
 
 	<build>

@@ -96,7 +96,7 @@
     resources in Azure by eliminating the need for passwords. This way you can reduce
     the risk of password-related vulnerabilities, such as weak passwords or password
     theft."
-  ruleID: azure-m-config-rabbitmq-01000
+  ruleID: azure-message-queue-config-rabbitmq-01000
   when:
     builtin.filecontent:
       filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
@@ -315,7 +315,7 @@
 - category: optional
   customVariables: []
   description: Java EE or Jakarta EE application using RabbitMQ AMQP found
-  effort: 7
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
