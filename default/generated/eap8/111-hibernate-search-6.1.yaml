@@ -4,13 +4,13 @@
     the 5.6.x family.
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -34,13 +34,13 @@
     moved
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -59,13 +59,13 @@
     has moved
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -85,13 +85,13 @@
     has moved
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -110,13 +110,13 @@
   description: org.hibernate.search.engine.common.timing.spi.Deadline has moved
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -135,13 +135,13 @@
     has moved
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -159,13 +159,13 @@
   description: URLEncodedString#fromJsonString was removed
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -183,13 +183,13 @@
   description: FieldPaths#absolutize(String, String, String) has been removed
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -208,13 +208,13 @@
   description: IndexManagerImplementor#createIndexingPlan has changed
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -233,13 +233,13 @@
   description: IndexIndexingPlan#executeAndReport has changed
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -258,13 +258,13 @@
   description: IndexSchemaObjectNodeBuilder has changed
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -282,13 +282,13 @@
   description: IndexSchemaObjectNodeBuilder has changed
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -306,13 +306,13 @@
   description: IndexSchemaObjectNodeBuilder has changed
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -330,13 +330,13 @@
   description: FromDocumentFieldValueConverter has been deprecated
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -354,13 +354,13 @@
   description: ToDocumentFieldValueConverter has been deprecated
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -378,13 +378,13 @@
   description: MassIndexingFailureHandler has been deprecated
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -402,13 +402,13 @@
   description: MassIndexingMonitor has been deprecated
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:
@@ -426,13 +426,13 @@
   description: Deprecated configuration settings
   effort: 1
   labels:
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
-  - konveyor.io/target=hibernate6.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=quarkus3+
-  - konveyor.io/target=quarkus
-  - konveyor.io/source
+  - target=eap8+
+  - target=eap
+  - target=hibernate6.1+
+  - target=hibernate
+  - target=quarkus3+
+  - target=quarkus
+  - source
   - hibernate
   - eap8
   links:

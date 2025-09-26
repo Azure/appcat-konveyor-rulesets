@@ -3,12 +3,17 @@
   description: The Runtime.exec(String, ...) method is error-prone and should not be used
   effort: 1
   labels:
-  - konveyor.io/source=openjdk18-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk18+
-  - konveyor.io/target=openjdk
+  - source=openjdk18-
+  - source=openjdk
+  - capability=openjdk18+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: The Runtime.exec(String, ...) method is error-prone and should not be used
     url: https://cr.openjdk.org/~iris/se/18/latestSpec/api/deprecated-list.html

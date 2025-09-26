@@ -3,12 +3,17 @@
   description: Removal of sun.misc.Unsafe::defineAnonymousClass
   effort: 3
   labels:
-  - konveyor.io/source=openjdk17-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk17+
-  - konveyor.io/target=openjdk
+  - source=openjdk17-
+  - source=openjdk
+  - capability=openjdk17+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of sun.misc.Unsafe::defineAnonymousClass
     url: https://www.oracle.com/java/technologies/javase/17all-relnotes.html#JDK-8243287

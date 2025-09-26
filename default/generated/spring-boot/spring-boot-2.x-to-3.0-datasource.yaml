@@ -2,8 +2,8 @@
   category: potential
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     builtin.filecontent:
       filePattern: .*\.properties
@@ -21,8 +21,8 @@
   category: potential
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.dependency:
       name: org.flywaydb.flyway-core
@@ -49,8 +49,8 @@
   category: mandatory
   effort: 5
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.dependency:
       name: org.flywaydb.flyway-core
@@ -78,8 +78,8 @@
   category: potential
   effort: 3
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.dependency:
       name: org.liquibase.liquibase-core
@@ -102,8 +102,8 @@
   category: potential
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.dependency:
       name: de.flapdoodle.embed.de.flapdoodle.embed.mongo
@@ -127,8 +127,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     builtin.filecontent:
       filePattern: pom\.xml
@@ -153,8 +153,8 @@
   category: mandatory
   effort: 5
   labels:
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring-boot3+
+    - source=spring-boot2
+    - target=spring-boot3+
   when:
     java.dependency:
       name: org.elasticsearch.client.elasticsearch-rest-high-level-client

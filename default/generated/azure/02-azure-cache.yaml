@@ -16,14 +16,16 @@
   description: Redis Cache connection string found
   effort: 5
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=cache-service-migration
   - cache
   - redis
+  - os=windows
+  - os=linux
   links:
   - title: Connect Azure Cache for Redis to your application in Azure Container Apps
     url: https://learn.microsoft.com/azure/container-apps/services

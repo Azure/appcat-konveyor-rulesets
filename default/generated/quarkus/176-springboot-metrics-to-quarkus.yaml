@@ -4,8 +4,8 @@
     extension
   effort: 5
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus metrics
     url: https://quarkus.io/guides/microprofile-metrics
@@ -22,8 +22,8 @@
   description: Replace Spring Prometheus Metrics endpoint mapping
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Guide - Micrometer Metrics
     url: https://quarkus.io/guides/telemetry-micrometer

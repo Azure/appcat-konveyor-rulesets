@@ -3,8 +3,8 @@
   description: Replace javax.enterprise:cdi-api dependency
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides/cdi-reference
@@ -25,8 +25,8 @@
   description: Replace javax.inject:javax.inject dependency
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus - Guide
     url: https://quarkus.io/guides/cdi-reference
@@ -47,8 +47,8 @@
   description: '`beans.xml` descriptor content is ignored'
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links: []
   message: "`beans.xml` descriptor content is ignored and it could be removed from
     the application. \n Refer to the guide referenced below to check the supported
@@ -67,8 +67,8 @@
   description: Producer annotation no longer required
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - target=quarkus
   links:
   - title: Quarkus Simplified Producer Method Declaration
     url: https://quarkus.io/guides/cdi-reference#simplified-producer-method-declaration

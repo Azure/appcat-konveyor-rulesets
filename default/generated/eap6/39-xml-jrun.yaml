@@ -1,9 +1,9 @@
 - customVariables: []
   description: JRun Web App descriptor
   labels:
-  - konveyor.io/source=jrun
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=jrun
+  - target=eap6+
+  - target=eap
   - web-app
   - jrun
   - configuration
@@ -27,9 +27,9 @@
 - customVariables: []
   description: JRun ejb-jar configuration
   labels:
-  - konveyor.io/source=jrun
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=jrun
+  - target=eap6+
+  - target=eap
   - web-app
   - jrun
   - configuration

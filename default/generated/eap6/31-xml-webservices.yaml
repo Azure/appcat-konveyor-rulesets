@@ -1,9 +1,9 @@
 - customVariables: []
   description: Apache Axis Service Group
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-01000
@@ -19,9 +19,9 @@
 - customVariables: []
   description: Apache Axis Module
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-02000
@@ -37,9 +37,9 @@
 - customVariables: []
   description: Apache Axis Configuration
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-03000
@@ -55,9 +55,9 @@
 - customVariables: []
   description: XFire 1.x Configuration
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-04000
@@ -74,9 +74,9 @@
 - customVariables: []
   description: JAX-WS Handler Chain
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-05000
@@ -96,9 +96,9 @@
   description: Use of Web Service Handler2
   effort: 0
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-06000
@@ -126,9 +126,9 @@
   description: Use of Web Service Handler2
   effort: 0
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-06001
@@ -154,9 +154,9 @@
 - customVariables: []
   description: Apache CXF Bus Extension
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-07000
@@ -173,9 +173,9 @@
 - customVariables: []
   description: WS-Policy
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-08000
@@ -192,9 +192,9 @@
 - customVariables: []
   description: SOAP Envelope
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-09000
@@ -211,9 +211,9 @@
 - customVariables: []
   description: WSDL Definition
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=java-ee
+  - target=eap6+
+  - target=eap
   - webservice
   links: []
   ruleID: xml-webservices-10000

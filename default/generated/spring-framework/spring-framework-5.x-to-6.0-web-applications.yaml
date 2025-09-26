@@ -2,10 +2,10 @@
   category: potential
   effort: 1
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source=spring-boot2
-  - konveyor.io/target=spring-boot3+
+  - source=spring5
+  - target=spring6+
+  - source=spring-boot2
+  - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.web.bind.annotation.GetMapping
@@ -56,8 +56,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     and:
       - java.referenced:
@@ -85,8 +85,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     or:
       - and:
@@ -144,8 +144,8 @@
   category: potential
   effort: 1
   labels:
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
+  - source=spring5
+  - target=spring6+
   when:
     java.referenced:
       pattern: org.springframework.http.HttpMethod

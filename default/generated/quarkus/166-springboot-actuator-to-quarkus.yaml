@@ -4,8 +4,8 @@
     extension
   effort: 5
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus - Smallrye Health
     url: https://quarkus.io/guides/smallrye-health
@@ -28,8 +28,8 @@
   description: Replace Spring Health endpoint mapping
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Guide - Smallrye Health
     url: https://quarkus.io/guides/smallrye-health

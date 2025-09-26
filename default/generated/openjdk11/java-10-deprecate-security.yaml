@@ -3,12 +3,17 @@
   description: Removal of Deprecated Pre-1.2 SecurityManager Methods and Fields
   effort: 1
   labels:
-  - konveyor.io/source=openjdk10-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk10+
-  - konveyor.io/target=openjdk
+  - source=openjdk10-
+  - source=openjdk
+  - capability=openjdk10+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of Deprecated Pre-1.2 SecurityManager Methods and Fields
     url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8186535
@@ -36,12 +41,17 @@
   description: Removal of Deprecated Classes in com.sun.security.auth.**
   effort: 1
   labels:
-  - konveyor.io/source=openjdk10-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk10+
-  - konveyor.io/target=openjdk
+  - source=openjdk10-
+  - source=openjdk
+  - capability=openjdk10+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of Deprecated Classes in com.sun.security.auth.**
     url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html
@@ -65,12 +75,17 @@
   customVariables: []
   description: java.security.{Certificate,Identity,IdentityScope,Signer} APIs Deprecated forRemoval
   labels:
-  - konveyor.io/source=openjdk10-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk10+
-  - konveyor.io/target=openjdk
+  - source=openjdk10-
+  - source=openjdk
+  - capability=openjdk10+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: java.security.{Certificate,Identity,IdentityScope,Signer} APIs Deprecated forRemoval
     url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8175091
@@ -86,12 +101,17 @@
   customVariables: []
   description: java.security.acl APIs Deprecated forRemoval
   labels:
-  - konveyor.io/source=openjdk10-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk10+
-  - konveyor.io/target=openjdk
+  - source=openjdk10-
+  - source=openjdk
+  - capability=openjdk10+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: java.security.acl APIs Deprecated forRemoval
     url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8175094
@@ -107,12 +127,17 @@
   customVariables: []
   description: javax.security.auth.Policy API Deprecated forRemoval
   labels:
-  - konveyor.io/source=openjdk10-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk10+
-  - konveyor.io/target=openjdk
+  - source=openjdk10-
+  - source=openjdk
+  - capability=openjdk10+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: javax.security.auth.Policy API Deprecated forRemoval
     url: https://www.oracle.com/java/technologies/javase/10-relnote-issues.html#JDK-8159535

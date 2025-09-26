@@ -3,9 +3,9 @@
   description: Remove Maven dependency on org.jboss.spec.javax.rmi:jboss-rmi-api_1.0_spec
   effort: 1
   labels:
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap7
+  - target=eap
+  - source
   - rmi
   links: []
   message: If you migrate your application to JBoss EAP 7.3 (or later), and want to

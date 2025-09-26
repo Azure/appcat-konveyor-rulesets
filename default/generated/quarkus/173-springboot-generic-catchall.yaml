@@ -3,8 +3,8 @@
   description: Spring component requires investigation for compatibility with Quarkus extensions or possibility of code rewrite.
   effort: 5
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   - springboot
   - catchall
   links: []

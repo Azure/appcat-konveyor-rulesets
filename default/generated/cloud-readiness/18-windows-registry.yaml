@@ -3,14 +3,18 @@
   description: Using Windows registry to store Application Settings
   effort: 3
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - capability=containerization
+  - source
   - domain=cloud-readiness
   - category=configuration-management
   - containerization
+  - os=windows
   links: []
   message: |-
-    Application settings must not be defined in OS-specific storage such as Windows Registry, as in the Cloud the operating system is not guaranteed to be the same from a server to another. In addition, on Windows-based Cloud resources, write-access to the registry is generally blocked, including access to any per-user registry keys. From the app s perspective, write access to the registry should never be relied upon in the Cloud environment since apps can (and do) get migrated across different virtual machines. These application settings should be stored in a Cloud-based and OS-agnostic service.
+    Application settings must not be defined in OS-specific storage such as Windows Registry, as in the Cloud the operating system is not guaranteed to be the same from a server to another. In addition, on Windows-based Cloud resources, write-access to the registry is generally blocked, including access to any per-user registry keys. From the app's perspective, write access to the registry should never be relied upon in the Cloud environment since apps can (and do) get migrated across different virtual machines. These application settings should be stored in a Cloud-based and OS-agnostic service.
   ruleID: windows-registry-00000
   when:
     or:

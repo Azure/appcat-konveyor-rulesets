@@ -4,9 +4,9 @@
     org.apache.camel.http.common to camel-attachments package org.apache.camel.attachment
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.6+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.6+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_6.html#_camelfiledatasource
@@ -22,9 +22,9 @@
   description: camel-hipchat component has been removed
   effort: 7
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.6+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.6+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_6.html#_camel_hipchat

@@ -7,12 +7,12 @@
     pattern: (?P<package>com.ibm(\..*)?\.(mqe).*.)?(?P<type>[^.]+)
   description: IBM MQe client API
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - messaging
   - websphere
@@ -33,12 +33,12 @@
   description: IBM MQe adapters are provided for plug-in communications or data storage for queue managers. These can be deployed to JBoss EAP.
   effort: 3
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - messaging
   - websphere
@@ -58,12 +58,12 @@
   description: The JMS destinations in IBM MQe administration API can be configured with the JBoss Admin CLI in JBoss EAP 7
   effort: 3
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - messaging
   - websphere
@@ -83,12 +83,12 @@
   description: IBM MQe com.ibm.mqe.jms.MQeJMSAuthenticator
   effort: 5
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - messaging
   - websphere
@@ -107,12 +107,12 @@
   description: IBM MQe com.ibm.mqe.jms.MQeJMSMsgFieldNames
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - messaging
   - websphere

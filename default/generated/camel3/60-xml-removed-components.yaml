@@ -3,10 +3,10 @@
   description: '`org.apache.camel:camel-linkedin` artifact has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_removed_components
@@ -22,10 +22,10 @@
   description: '`org.apache.camel:camel-linkedin-starter` artifact has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_removed_components
@@ -41,10 +41,10 @@
   description: '`org.apache.camel:camel-script` artifact has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_javax_script
@@ -61,10 +61,10 @@
   description: '`org.apache.camel:camel-script-starter` artifact has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: JAVAX.SCRIPT'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_javax_script
@@ -81,10 +81,10 @@
   description: '`org.apache.camel:camel-jibx` artifact has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_removed_components
@@ -100,10 +100,10 @@
   description: '`org.apache.camel:camel-jibx-starter` artifact has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_removed_components
@@ -119,10 +119,10 @@
   description: '`org.apache.camel:camel-boon` artifact has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_removed_components
@@ -138,10 +138,10 @@
   description: '`org.apache.camel:camel-boon-starter` artifact has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_removed_components
@@ -158,10 +158,10 @@
   description: '`twitter-streaming` component has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_removed_components
@@ -187,10 +187,10 @@
   description: '`org.apache.camel:camel-restlet` artifact has been removed'
   effort: 3
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Removed components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_removed_components
@@ -209,10 +209,10 @@
   description: '`org.apache.camel:camel-core-starter` artifact has been removed'
   effort: 7
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Camel Core'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_modularization_of_camel_core
@@ -229,10 +229,10 @@
   description: '`org.apache.camel:camel-maven-plugin` has been split'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Camel Maven Plugin'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_migrating_camel_maven_plugins

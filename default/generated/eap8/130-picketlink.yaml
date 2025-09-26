@@ -3,9 +3,9 @@
   description: Legacy Vault configuration must be removed
   effort: 1
   labels:
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap8
+  - target=eap
+  - source
   links:
   - title: 'Developing Jakarta XML Web Services: Apache CXF Support'
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html-single/developing_web_services_applications/index#ws_trust_sts_apache_CXF_support
@@ -28,9 +28,9 @@
   description: Replace legacy PicketLink configuration with RH-SSO
   effort: 1
   labels:
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/source
+  - target=eap8
+  - target=eap
+  - source
   links: []
   message: Configure an RH-SSO SAML client and then generate a keycloak-saml.xml file
     using the RH-SSO admin console. Add the keycloak-saml.xml file to the deployment’s

@@ -3,12 +3,17 @@
   description: PSSParameterSpec(int) Constructor and DEFAULT Static Constant Are Deprecated
   effort: 1
   labels:
-  - konveyor.io/source=openjdk19-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk19+
-  - konveyor.io/target=openjdk
+  - source=openjdk19-
+  - source=openjdk
+  - capability=openjdk19+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: PSSParameterSpec(int) Constructor and DEFAULT Static Constant Are Deprecated
     url: https://www.oracle.com/java/technologies/javase/19-relnote-issues.html#JDK-8254935
@@ -29,12 +34,17 @@
   description: OAEPParameterSpec.DEFAULT Static Constant Is Deprecated
   effort: 1
   labels:
-  - konveyor.io/source=openjdk19-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk19+
-  - konveyor.io/target=openjdk
+  - source=openjdk19-
+  - source=openjdk
+  - capability=openjdk19+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: OAEPParameterSpec.DEFAULT Static Constant Is Deprecated
     url: https://www.oracle.com/java/technologies/javase/19-relnote-issues.html#JDK-8284553

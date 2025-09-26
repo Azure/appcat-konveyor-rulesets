@@ -6,14 +6,14 @@
   description: RESTEasy 3 Cache Client package change
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -30,14 +30,14 @@
   description: Deprecated class ClientRequest in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -72,14 +72,14 @@
   description: Deprecated class ClientResponse in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -97,14 +97,14 @@
   description: Deprecated classes in `org.jboss.resteasy.client` package in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -119,14 +119,14 @@
   description: Deprecated class EntityTypeFactory in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -146,14 +146,14 @@
   description: Deprecated interface ClientExecutor in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -169,14 +169,14 @@
   description: Deprecated class ClientRequestFactory in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -192,14 +192,14 @@
   description: Deprecated exception ClientResponseFailure in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -216,14 +216,14 @@
   description: RESTEasy 3 SPI Application Change for StringConverter
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -240,14 +240,14 @@
   description: RESTEasy 3 SPI Application Changes for InjectorFactory
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -264,14 +264,14 @@
   description: Deprecated interface MessageBodyWriterInterceptor in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -290,14 +290,14 @@
   description: Deprecated interface MessageBodyReaderInterceptor in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -316,14 +316,14 @@
   description: Deprecated interface MessageBodyWriterContext in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -342,14 +342,14 @@
   description: Deprecated class InterceptorRegistry in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -367,14 +367,14 @@
   description: Deprecated interface InterceptorRegistryListener in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -392,14 +392,14 @@
   description: Removed class ApacheHttpClientExecutor from in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -416,14 +416,14 @@
   description: Deprecated interface AcceptedByMethod in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -441,14 +441,14 @@
   description: Removed annotation ServerCached in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy removes additional classes
@@ -468,14 +468,14 @@
   description: Deprecated class Link in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   - jax-rs
   links:
@@ -493,14 +493,14 @@
   description: Deprecated interface ClientExecutionContext in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -518,14 +518,14 @@
   description: Deprecated interface ClientExecutionInterceptor in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -542,14 +542,14 @@
   description: ResteasyProviderFactory#add* methods were removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy removed/protected methods on ResteasyProviderFactory class
@@ -570,14 +570,14 @@
   description: Deprecated interface MessageBodyReaderContext in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -596,14 +596,14 @@
   description: Deprecated interface PostProcessInterceptor in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -622,14 +622,14 @@
   description: Deprecated interface PreProcessInterceptor in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -648,14 +648,14 @@
   description: RESTEasy 3 SPI Registry changed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -672,14 +672,14 @@
   description: Deprecated exception ForbiddenException in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   - jax-rs
   links:
@@ -697,14 +697,14 @@
   description: Deprecated exception MethodNotAllowedException in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   - jax-rs
   links:
@@ -722,14 +722,14 @@
   description: Deprecated exception NotAcceptableException in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   - jax-rs
   links:
@@ -747,14 +747,14 @@
   description: Deprecated exception NotFoundException in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   - jax-rs
   links:
@@ -772,14 +772,14 @@
   description: Deprecated exception UnauthorizedException in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   - jax-rs
   links:
@@ -797,14 +797,14 @@
   description: Deprecated exception UnsupportedMediaTypeException in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   - jax-rs
   links:
@@ -822,14 +822,14 @@
   description: Deprecated method ServerCookie#checkName in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -847,14 +847,14 @@
   description: Deprecated method JAXBContextWrapper#createValidator in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -870,14 +870,14 @@
   description: Deprecated method ResteasyHttpServletResponseWrapper#encodeRedirectUrl
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -896,14 +896,14 @@
   description: Deprecated ResteasyHttpServletResponseWrapper#encodeUrl method
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -923,14 +923,14 @@
     3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -949,14 +949,14 @@
   description: Deprecated method MultipartFormDataInput#getFormData in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -976,14 +976,14 @@
     in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1002,14 +1002,14 @@
   description: Deprecated method SecureUnmarshaller#isValidating in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1028,14 +1028,14 @@
   description: Deprecated method ServerCookie#maybeQuote in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1055,14 +1055,14 @@
   description: Deprecated method SecureUnmarshaller#setAdapter in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1082,14 +1082,14 @@
     3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1109,14 +1109,14 @@
   description: Deprecated method SecureUnmarshaller#setValidating in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1135,14 +1135,14 @@
   description: Deprecated method OAuthValidator#validateMessage in RESTEasy 3
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1161,14 +1161,14 @@
   description: Resteasy Yaml Provider is deprecated and disabled by default
   effort: 3
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   - yaml
   links: []
@@ -1192,14 +1192,14 @@
   description: Resteasy SerializableProvider is disabled by default
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   links: []
   message: "Deserializing Java objects from untrusted sources is not safe. For this
@@ -1230,14 +1230,14 @@
   description: RESTEasy Text default charset response changed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/source=resteasy2
-  - konveyor.io/source=resteasy
-  - konveyor.io/target=resteasy3+
-  - konveyor.io/target=resteasy
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - source=resteasy2
+  - source=resteasy
+  - target=resteasy3+
+  - target=resteasy
+  - target=eap7
+  - target=eap
   - resteasy
   - charset
   links:

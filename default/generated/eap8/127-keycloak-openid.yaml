@@ -3,11 +3,11 @@
   description: Update the 'auth-method' configuration from KEYCLOAK to OIDC
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   links: []
   message: In order to add support for EAP native OpenID Connect, the `auth-method`
     must be updated to `OIDC`.
@@ -23,11 +23,11 @@
   description: Rename the keycloak.json configuration file to oidc.json
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   links: []
   message: In order to add support for EAP native OpenID Connect, the `WEB-INF/keycloak.json`
     file must be renamed to `WEB-INF/oidc.json`.

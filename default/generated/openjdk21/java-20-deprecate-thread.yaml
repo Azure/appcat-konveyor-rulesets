@@ -3,12 +3,17 @@
   description: Thread.suspend/resume Changed to Throw UnsupportedOperationException
   effort: 5
   labels:
-  - konveyor.io/source=openjdk20-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk20+
-  - konveyor.io/target=openjdk
+  - source=openjdk20-
+  - source=openjdk
+  - capability=openjdk20+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Thread.suspend/resume Changed to Throw UnsupportedOperationException
     url: https://www.oracle.com/java/technologies/javase/20-relnote-issues.html#JDK-8249627
@@ -28,12 +33,17 @@
   description: Thread.stop Changed to Throw UnsupportedOperationException
   effort: 5
   labels:
-  - konveyor.io/source=openjdk20-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk20+
-  - konveyor.io/target=openjdk
+  - source=openjdk20-
+  - source=openjdk
+  - capability=openjdk20+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Thread.stop Changed to Throw UnsupportedOperationException
     url: https://www.oracle.com/java/technologies/javase/20-relnote-issues.html#JDK-8289610
@@ -50,12 +60,17 @@
   description: ThreadDeath is deprecated for removal
   effort: 3
   labels:
-  - konveyor.io/source=openjdk20-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk20+
-  - konveyor.io/target=openjdk
+  - source=openjdk20-
+  - source=openjdk
+  - capability=openjdk20+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: ThreadDeath is deprecated for removal
     url: https://cr.openjdk.org/~iris/se/20/latestSpec/api/deprecated-list.html

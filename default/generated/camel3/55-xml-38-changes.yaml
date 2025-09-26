@@ -3,9 +3,9 @@
   description: camel.springboot.xml-routes configuration key has been renamed to camel.springboot.routes-include-pattern
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.8+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.8+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_8.html#_configuration_changes
@@ -21,9 +21,9 @@
     to camel.springboot.routes-include-pattern
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.8+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.8+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_8.html#_configuration_changes
@@ -39,9 +39,9 @@
   description: camel.springboot.xml-rests configuration key has been renamed to camel.springboot.routes-include-pattern
   effort: 1
   labels:
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3.8+
-  - konveyor.io/target=camel
+  - source=camel
+  - target=camel3.8+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Spring Boot Starters'
     url: https://camel.apache.org/manual/camel-3x-upgrade-guide-3_8.html#_configuration_changes

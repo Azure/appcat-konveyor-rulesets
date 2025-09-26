@@ -3,14 +3,15 @@
   description: Datasource driver found in configuration file
   effort: 3
   labels:
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
+  - source=eap7
+  - source=eap
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=eap-migration
   - password
   - security
+  - os=windows
+  - os=linux
   links:
   - title: Migrate JBoss EAP applications to JBoss EAP on Azure App Service - Datasources
     url: https://docs.microsoft.com/azure/developer/java/migration/migrate-jboss-eap-to-jboss-eap-on-azure-app-service#datasources

@@ -1,10 +1,10 @@
 - customVariables: []
   description: WebLogic EAR application descriptor (weblogic-application.xml)
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -31,10 +31,10 @@
 - customVariables: []
   description: WebLogic Entity EJB configuration
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -60,10 +60,10 @@
   description: WebLogic EJB XML (weblogic-ejb-jar.xml) delay-updates-until-end-of-tx
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -88,10 +88,10 @@
   description: WebLogic EJB XML (weblogic-ejb-jar.xml)
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -124,10 +124,10 @@
   description: WebLogic Stateful Session Bean (SFSB)
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -148,10 +148,10 @@
 - customVariables: []
   description: WebLogic SOAP client mapping
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -169,10 +169,10 @@
 - customVariables: []
   description: WebLogic Java to WSDL Mapping
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -190,10 +190,10 @@
 - customVariables: []
   description: WebLogic web service policy
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -214,10 +214,10 @@
   description: Webservice Type
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -244,10 +244,10 @@
 - customVariables: []
   description: WebLogic JMS descriptor
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -273,10 +273,10 @@
 - customVariables: []
   description: WebLogic web application descriptor (weblogic.xml)
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -310,10 +310,10 @@
 - customVariables: []
   description: WebLogic RMI XML version 1.x
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -329,10 +329,10 @@
 - customVariables: []
   description: WebLogic web service type mapping
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -350,10 +350,10 @@
 - customVariables: []
   description: WebLogic services configuration
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -373,10 +373,10 @@
 - customVariables: []
   description: WebLogic specific webservice ant tasks
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -397,10 +397,10 @@
 - customVariables: []
   description: WebLogic annotation manifest
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -421,10 +421,10 @@
 - customVariables: []
   description: WebLogic plan.xml deployment descriptor
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration
@@ -449,10 +449,10 @@
   description: WebLogic EJB XML (weblogic-ejb-jar.xml) trans-timeout-seconds
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - descriptor
   - configuration

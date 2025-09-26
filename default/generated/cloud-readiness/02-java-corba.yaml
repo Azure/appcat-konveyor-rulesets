@@ -3,11 +3,15 @@
   description: CORBA
   effort: 5
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=remote-communication
   - corba
+  - os=windows
+  - os=linux
   links: []
   message: Common Object Request Broker Architecture (CORBA) found in the application.
     CORBA is not recommended in cloud environments. Try to replace it with a more

@@ -3,8 +3,8 @@
   description: Replace the Spring Parent POM with Quarkus BOM
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus - Building applications with Maven Guide
     url: https://quarkus.io/guides/maven-tooling#build-tool-maven

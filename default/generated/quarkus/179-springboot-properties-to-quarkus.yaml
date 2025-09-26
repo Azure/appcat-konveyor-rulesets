@@ -4,8 +4,8 @@
     extension
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Spring Configuration Properties Guide
     url: https://quarkus.io/guides/spring-boot-properties
@@ -25,8 +25,8 @@
     Quarkus properties file
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Configuring Your Application Guide
     url: https://quarkus.io/guides/config#configuration-profiles
@@ -46,8 +46,8 @@
   description: Replace Spring datasource property key/value pairs with Quarkus properties
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Datasources Guide
     url: https://quarkus.io/guides/datasource
@@ -65,8 +65,8 @@
   description: Replace Spring log level property with Quarkus property
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Configuring Logging Guide
     url: https://quarkus.io/guides/logging#runtime-configuration
@@ -84,8 +84,8 @@
   description: Replace Spring JPA Hiberate property with Quarkus property
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Hibernate ORM and JPA Guide
     url: https://quarkus.io/guides/hibernate-orm
@@ -100,8 +100,8 @@
   description: Replace Spring Swagger endpoint mapping
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Guide - using OpenAPI and Swagger
     url: https://quarkus.io/guides/openapi-swaggerui
@@ -118,8 +118,8 @@
   description: Replace Spring OpenAPI endpoint mapping
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Guide - using OpenAPI and Swagger
     url: https://quarkus.io/guides/openapi-swaggerui

@@ -3,13 +3,15 @@
   description: Detect OpenLiberty Server Logging Configurations
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     OpenLiberty server logging configurations detected that require optimization for Azure Monitor integration and containerized deployment.
 
@@ -47,13 +49,15 @@
   description: Detect OpenLiberty Log File Location Configurations
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=java-ee
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - domain=cloud-readiness
   - category=openliberty-migration
   - openliberty
+  - os=windows
+  - os=linux
   message: |
     Custom log file location configurations detected that require containerization and Azure storage integration.
 

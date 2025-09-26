@@ -3,14 +3,14 @@
   description: 'Hibernate: Deprecated property hibernate.transaction.factory_class'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7+
+  - target=eap
   - hibernate
   - configuration
   - transaction
@@ -39,14 +39,14 @@
   description: Classes from the 'org.hibernate.id' package were removed or deprecated in Hibernate 5
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7+
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -63,14 +63,14 @@
   description: Some Identifier generators were removed or deprecated in Hibernate 5.
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7+
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -95,14 +95,14 @@
   description: TemporaryTableBulkIdStrategy was replaced in Hibernate 5
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7+
+  - target=eap
   - hibernate
   - configuration
   links: []
@@ -127,14 +127,14 @@
   description: Class PersistentTableBulkIdStrategy was moved in Hibernate 5
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7+
+  - target=eap
   - hibernate
   - configuration
   links: []

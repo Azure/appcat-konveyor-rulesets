@@ -3,8 +3,8 @@
   description: Unsupported version of AMQP SpringBoot starter
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links:
   - title: RHOAR Spring Boot Supported Configurations
     url: https://access.redhat.com/articles/3349341
@@ -22,8 +22,8 @@
   description: Unsupported version of CXF JAXRS SpringBoot starter
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links:
   - title: RHOAR Spring Boot Supported Configurations
     url: https://access.redhat.com/articles/3349341
@@ -41,8 +41,8 @@
   description: Unsupported version of Resteasy SpringBoot starter
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links:
   - title: RHOAR Spring Boot Supported Configurations
     url: https://access.redhat.com/articles/3349341
@@ -60,8 +60,8 @@
   description: Unsupported version of Infinispan SpringBoot starter
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links:
   - title: RHOAR Spring Boot Supported Configurations
     url: https://access.redhat.com/articles/3349341
@@ -79,8 +79,8 @@
   description: Unsupported version of Keycloak SpringBoot starter
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links:
   - title: RHOAR Spring Boot Supported Configurations
     url: https://access.redhat.com/articles/3349341
@@ -98,8 +98,8 @@
   description: Unsupported version of Narayana SpringBoot starter
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links:
   - title: RHOAR Spring Boot Supported Configurations
     url: https://access.redhat.com/articles/3349341
@@ -117,8 +117,8 @@
   description: Unsupported version of OpenTracing Spring Jaeger SpringBoot web starter
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links:
   - title: RHOAR Spring Boot Supported Configurations
     url: https://access.redhat.com/articles/3349341
@@ -136,8 +136,8 @@
   description: Migrate to a supported AMQP dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links: []
   message: Migrate `org.amqphub.spring:amqp-10-jms-spring-boot-starter` dependency
     to a version compatible with the supported versions of the RHOAR components provided
@@ -158,8 +158,8 @@
   description: Migrate to a supported CXF JAX-RS dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links: []
   message: Migrate `org.apache.cxf:cxf-spring-boot-starter-jaxrs` dependency to a
     version compatible with the supported versions of the RHOAR components provided
@@ -179,8 +179,8 @@
   description: Migrate to a supported RestEasy dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links: []
   message: Migrate `org.jboss.resteasy:resteasy-spring-boot-starter` dependency to
     a version compatible with the supported versions of the RHOAR components provided
@@ -200,8 +200,8 @@
   description: Migrate to a supported Infinispan embedded dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links: []
   message: Migrate `org.infinispan:infinispan-spring-boot-starter-embedded` dependency
     to a version compatible with the supported versions of the RHOAR components provided
@@ -222,8 +222,8 @@
   description: Migrate to a supported Infinispan remote dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links: []
   message: Migrate `org.infinispan:infinispan-spring-boot-starter-remote` dependency
     to a version compatible with the supported versions of the RHOAR components provided
@@ -244,8 +244,8 @@
   description: Migrate to a supported Keycloak dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links: []
   message: Migrate `org.keycloak:keycloak-spring-boot-starter` dependency to a version
     compatible with the supported versions of the RHOAR components provided in the
@@ -265,8 +265,8 @@
   description: Migrate to a supported Narayana dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links: []
   message: Migrate `me.snowdrop:narayana-spring-boot-starter` dependency to a version
     compatible with the supported versions of the RHOAR components provided in the
@@ -286,8 +286,8 @@
   description: Migrate to a supported Spring Jaeger dependency
   effort: 1
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=rhr
+  - source=springboot
+  - target=rhr
   links: []
   message: Migrate `io.opentracing.contrib:opentracing-spring-jaeger-web-starter`
     dependency to a version compatible with the supported versions of the RHOAR components

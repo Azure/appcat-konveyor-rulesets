@@ -3,10 +3,10 @@
   description: '`zip` and `gzip` dataformat was renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Zip and Gzip dafaformats'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_zip_and_gzip_dataformat
@@ -27,10 +27,10 @@
   description: '`custom` load balancer was renamed `customLoadBalancer`'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_xml_dsl_migration
@@ -51,10 +51,10 @@
   description: '`zipFile` data format was renamed to `zipfile`'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_xml_dsl_migration
@@ -83,10 +83,10 @@
   description: '`keyOrTrustStoreParametersId` attribute was renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_xml_dsl_migration
@@ -107,10 +107,10 @@
   description: '`hystrix` was renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_xml_dsl_migration
@@ -133,10 +133,10 @@
   description: '`completionSize` in aggregate was renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide - Aggregate EIP changes
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_aggregate_eip_in_xml_dsl
@@ -159,10 +159,10 @@
   description: '`completionTimeout` in aggregate was renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide - Aggregate EIP changes
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_aggregate_eip_in_xml_dsl
@@ -186,10 +186,10 @@
   description: '`headerName` attribute was renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide - Aggregate EIP changes
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_setheader_and_setproperty_in_xml_dsl
@@ -210,10 +210,10 @@
   description: '`propertyName` attribute was renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide - Aggregate EIP changes
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_setheader_and_setproperty_in_xml_dsl

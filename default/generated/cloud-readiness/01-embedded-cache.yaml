@@ -3,10 +3,14 @@
   description: Caching - Ehcache embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links:
   - title: Azure Cache for Redis documentation
     url: https://learn.microsoft.com/azure/azure-cache-for-redis
@@ -29,10 +33,14 @@
   description: Caching - Coherence embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds a Coherence library.
@@ -49,10 +57,14 @@
   description: Caching - Apache Commons JCS embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds an Apache Commons JCS library.
@@ -69,10 +81,14 @@
   description: Caching - Dynacache embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds a Dynacache library.
@@ -89,10 +105,14 @@
   description: Caching - Embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds a library that provides caching.
@@ -109,10 +129,14 @@
   description: Caching - Hazelcast embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds a Hazelcast library.
@@ -129,10 +153,14 @@
   description: Caching - Apache Ignite embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds an Apache Ignite library.
@@ -149,10 +177,14 @@
   description: Caching - Infinispan embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds an Infinispan library.
@@ -169,10 +201,14 @@
   description: Caching - JBoss Cache embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embedds a JBoss Cache library.
@@ -189,10 +225,14 @@
   description: Caching - JCache embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds a JCache library.
@@ -209,10 +249,14 @@
   description: Caching - Memcached client embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds a Memcached client library.
@@ -229,10 +273,14 @@
   description: Caching - Oscache embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds an Oscache library.
@@ -249,10 +297,14 @@
   description: Caching - ShiftOne (Java Object Cache) embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds a ShiftOne library (Java Object Cache or JOCache).
@@ -269,10 +321,14 @@
   description: Caching - SwarmCache embedded library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds a SwarmCache library.
@@ -289,10 +345,14 @@
   description: Caching - Spring Boot Cache library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=embedded-cache-management
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application embeds the Spring Boot Cache library.
@@ -311,10 +371,14 @@
   description: Caching - Redis Cache library
   effort: 5
   labels:
-  - konveyor.io/target=cloud-readiness
-  - konveyor.io/source
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - source
   - domain=cloud-readiness
   - category=cache-service-migration
+  - os=windows
+  - os=linux
   links:
   - title: Azure Cache for Redis documentation
     url: https://learn.microsoft.com/azure/azure-cache-for-redis

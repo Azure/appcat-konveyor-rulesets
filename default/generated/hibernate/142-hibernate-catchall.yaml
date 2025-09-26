@@ -7,12 +7,12 @@
     pattern: org.hibernate.(?P<packageRemainder>(.*)?.)?(?P<type>[^.]+)
   description: Hibernate
   labels:
-  - konveyor.io/source=hibernate3.9-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate4+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap
+  - source=hibernate3.9-
+  - source=hibernate
+  - target=hibernate4+
+  - target=hibernate
+  - target=eap6
+  - target=eap
   - hibernate
   links: []
   message: This is a Hibernate type and it will need to be verified for compatibility

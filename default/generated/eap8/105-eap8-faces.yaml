@@ -3,11 +3,11 @@
   description: Dependency on JSF artifacts must be updated
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta Faces 4.0 specification
@@ -31,11 +31,11 @@
   description: Source reference to `javax.faces.bean.ManagedProperty` must be updated
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta Faces ManagedProperty api
@@ -59,11 +59,11 @@
   description: JSF ManagedBean has been removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta EE9 Faces ManagedBean api (Deprecated)
@@ -92,11 +92,11 @@
   description: Annotation `javax.faces.bean.ViewScoped` removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta Faces ViewScoped api
@@ -119,11 +119,11 @@
   description: Annotations under 'javax.faces.bean' are removed.
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: jakarta.enterprise.context package javadoc
@@ -143,11 +143,11 @@
   description: Annotation `javax.faces.bean.CustomScoped` removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: jakarta.enterprise.context.spi.Context javadoc
@@ -167,11 +167,11 @@
   description: Annotation `javax.faces.bean.NoneScoped` removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: jakarta.enterprise.context.Dependent javadoc
@@ -191,11 +191,11 @@
   description: ResourceResolvers have been removed
   effort: 3
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: 'Faces 4.0: remove deprecated ResourceResolver'
@@ -217,11 +217,11 @@
   description: JSP support has been removed in Jakarta EE 10
   effort: 5
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta EE Faces 4.0 Facelets

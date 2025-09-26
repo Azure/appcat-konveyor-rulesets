@@ -3,9 +3,9 @@
   description: '@Stateless annotation must be replaced'
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - source=jakarta-ee
+  - target=quarkus
   links:
   - title: Quarkus CDI reference
     url: https://quarkus.io/guides/cdi-reference
@@ -25,9 +25,9 @@
   description: '@Stateful annotation must be replaced'
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - source=jakarta-ee
+  - target=quarkus
   links:
   - title: Quarkus CDI reference
     url: https://quarkus.io/guides/cdi-reference
@@ -52,9 +52,9 @@
   description: Method should be marked as @Transactional
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=jakarta-ee
-  - konveyor.io/target=quarkus
+  - source=java-ee
+  - source=jakarta-ee
+  - target=quarkus
   links:
   - title: Quarkus CDI reference
     url: https://quarkus.io/guides/cdi-reference

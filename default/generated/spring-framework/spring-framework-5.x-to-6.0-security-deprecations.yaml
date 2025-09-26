@@ -3,12 +3,12 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/source=spring-security5
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
-    - konveyor.io/target=spring-security6+
+    - source=spring5
+    - source=spring-boot2
+    - source=spring-security5
+    - target=spring6+
+    - target=spring-boot3+
+    - target=spring-security6+
   when:
     java.referenced:
       pattern: org.springframework.security.oauth2.client.web.reactive.function.client.ServletOAuth2AuthorizedClientExchangeFilterFunction.setAccessTokenExpiresSkew
@@ -55,8 +55,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     java.referenced:
       pattern: org.springframework.security.oauth2.client.web.reactive.function.client.ServletOAuth2AuthorizedClientExchangeFilterFunction.setClientCredentialsTokenResponseClient
@@ -117,8 +117,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     java.referenced:
       pattern: phoneNumberVerified(String)
@@ -161,10 +161,10 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.oauth2.core.ClaimAccessor.containsClaim
@@ -202,10 +202,10 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.oauth2.client.oidc.web.logout.OidcClientInitiatedLogoutSuccessHandler.setPostLogoutRedirectUri
@@ -251,10 +251,10 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: removeAuthorizationRequest(HttpServletRequest)
@@ -288,8 +288,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     java.referenced:
       pattern: getRedirectUriTemplate
@@ -332,10 +332,10 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: redirectUriTemplate
@@ -382,8 +382,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     java.referenced:
       pattern: org.springframework.security.oauth2.core.http.converter.OAuth2AccessTokenResponseHttpMessageConverter.setTokenResponseConverter
@@ -428,10 +428,10 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.oauth2.core.http.converter.OAuth2AccessTokenResponseHttpMessageConverter.setTokenResponseParametersConverter
@@ -474,8 +474,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     java.referenced:
       pattern: AbstractOAuth2AuthorizationGrantRequest(AuthorizationGrantType)
@@ -518,8 +518,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     java.referenced:
       pattern: org.springframework.security.oauth2.client.endpoint.NimbusAuthorizationCodeTokenResponseClient
@@ -547,8 +547,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     or:
     - java.referenced:
@@ -573,8 +573,8 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     or:
     - java.referenced:
@@ -609,10 +609,10 @@
   category: mandatory
   effort: 1
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/source=spring-boot2
-    - konveyor.io/target=spring6+
-    - konveyor.io/target=spring-boot3+
+    - source=spring5
+    - source=spring-boot2
+    - target=spring6+
+    - target=spring-boot3+
   when:
     java.referenced:
       pattern: org.springframework.security.oauth2.client.web.HttpSessionOAuth2AuthorizationRequestRepository.setAllowMultipleAuthorizationRequests
@@ -635,8 +635,8 @@
   category: mandatory
   effort: 2
   labels:
-    - konveyor.io/source=spring5
-    - konveyor.io/target=spring6+
+    - source=spring5
+    - target=spring6+
   when:
     or:
     - java.referenced:

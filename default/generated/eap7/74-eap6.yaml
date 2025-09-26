@@ -3,10 +3,10 @@
   description: Remote JNDI Provider URL has changed in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jndi
   - configuration
   - ejb
@@ -41,10 +41,10 @@
   description: jboss-ejb-client.properties - Default Remote Connection Port changes
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jndi
   - configuration
   - ejb
@@ -83,10 +83,10 @@
   description: Java - Default Remote Connection Port has changed in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jndi
   - configuration
   - ejb
@@ -119,10 +119,10 @@
   description: JSF FaceletContext.FACELET_CONTEXT_KEY changed value
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jsf
   links:
   - title: Compatibility Issue Between JSF 2.1 and JSF 2.2
@@ -146,10 +146,10 @@
   description: HTTPS URL hostname check against a service’s Common Name (CN) changed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - certificate
   - https
   links:

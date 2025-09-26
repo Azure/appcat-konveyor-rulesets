@@ -5,10 +5,10 @@
   description: JBoss ESB 5 Action Handler
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: "\n                            \n                                Custom
@@ -33,10 +33,10 @@
 - customVariables: []
   description: JBoss ESB Deployment Descriptor
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   ruleID: soa-p-5-02000
@@ -50,10 +50,10 @@
 - customVariables: []
   description: JBoss ESB Pipeline Configuration
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links:
   - title: Action Pipeline Migration
@@ -69,10 +69,10 @@
 - customVariables: []
   description: Smooks Configuration
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links:
   - title: Smooks Development Guide
@@ -89,10 +89,10 @@
   description: JMS Gateway Listener
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -110,10 +110,10 @@
   description: ESB-Aware Listener (non-gateway)
   effort: 1
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: An ESB-aware listener is no longer required in Fuse Service Works.
@@ -126,10 +126,10 @@
   description: JBoss SOA-P Service
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -148,10 +148,10 @@
   description: JBoss SOA-P Action Pipeline
   effort: 5
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -170,10 +170,10 @@
   description: 'Service Binding: Hibernate Bus'
   effort: 13
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -194,10 +194,10 @@
   description: JMS Bus Definition
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -217,10 +217,10 @@
   description: FTP Bus Definition
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -238,10 +238,10 @@
   description: Camel Bus Definition
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   - camel
   links: []
@@ -260,10 +260,10 @@
   description: UDP Listener Configuration
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links:
   - title: TCP/UDP Gateway
@@ -280,10 +280,10 @@
   description: JMS JCA Provider
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links:
   - title: JCA Gateway Binding
@@ -300,10 +300,10 @@
   description: HTTP Provider
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   - soa-p
   links: []
@@ -322,10 +322,10 @@
   description: Cron Schedule
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -343,10 +343,10 @@
   description: FTP Gateway Listener
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -364,10 +364,10 @@
   description: Camel Gateway Listener
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   - camel
   links: []
@@ -387,10 +387,10 @@
   description: HTTP Gateway Listener
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -407,10 +407,10 @@
   description: Smooks Transformation Action
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   - smooks
   links: []
@@ -430,10 +430,10 @@
   description: Smooks Config
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   - smooks
   links: []
@@ -451,10 +451,10 @@
   description: Smooks Result Type
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   - smooks
   links: []
@@ -475,10 +475,10 @@
   description: ESB SOAP Proxy
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -497,10 +497,10 @@
   description: ESB SystemPrintln Action
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -518,10 +518,10 @@
   description: ESB Static Router
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -539,10 +539,10 @@
   description: ESB JMS Router
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -560,10 +560,10 @@
   description: ESB Test Message Store
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -582,10 +582,10 @@
   description: ESB GroovyActionProcessor
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -603,10 +603,10 @@
   description: ESB BpmProcessor
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -624,10 +624,10 @@
   description: ESB Filesystem Bus
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -644,10 +644,10 @@
   description: ESB Notifier Action
   effort: 7
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -700,10 +700,10 @@
   description: ESB ByteArrayToString
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links:
   - title: Camel convertBodyTo
@@ -722,10 +722,10 @@
   description: ESB LongToDateConverter
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links:
   - title: Camel Type Converters
@@ -743,10 +743,10 @@
   description: ESB ObjectToCSVString
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -764,10 +764,10 @@
   description: ESB ObjectInvoke
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links:
   - title: Fuse Service Works Bean Component
@@ -784,10 +784,10 @@
   description: ESB ObjectToXStream
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -805,10 +805,10 @@
   description: ESB XStreamToObject
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -826,10 +826,10 @@
   description: ESB XsltAction
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -847,10 +847,10 @@
   description: ESB SmooksTransformer
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links:
   - title: Smooks Development Guide
@@ -870,10 +870,10 @@
   description: ESB MessagePersister
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -888,10 +888,10 @@
   description: ESB EJBProcessor
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links:
   - title: Fuse Service Works Bean Component
@@ -908,10 +908,10 @@
   description: ESB ScriptingAction
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -929,10 +929,10 @@
   description: JBoss ESB message aggregation must be changed to Camel routing
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -950,10 +950,10 @@
   description: ESB HTTP Router
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -970,10 +970,10 @@
   description: ESB Email Router
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -990,10 +990,10 @@
   description: ESB ContentBasedRouter
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -1010,10 +1010,10 @@
   description: ESB StaticWiretap
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -1028,10 +1028,10 @@
   description: ESB Static Router
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -1047,10 +1047,10 @@
   description: ESB SOAPProcessor
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-
@@ -1067,10 +1067,10 @@
   description: ESB SOAPClient
   effort: 3
   labels:
-  - konveyor.io/source=soa-p5-
-  - konveyor.io/source=soa-p
-  - konveyor.io/target=fsw6+
-  - konveyor.io/target=fsw
+  - source=soa-p5-
+  - source=soa-p
+  - target=fsw6+
+  - target=fsw
   - jboss-esb
   links: []
   message: |-

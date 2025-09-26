@@ -6,10 +6,10 @@
   description: 'The `context` attribute has been removed from annotations due to support for only one CamelContext per deployment.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: multiple CamelContexts per application not
       supported'
@@ -34,10 +34,10 @@
   description: 'Support for multiple CamelContexts has been removed'
   effort: 3
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: multiple CamelContexts per application not
       supported'

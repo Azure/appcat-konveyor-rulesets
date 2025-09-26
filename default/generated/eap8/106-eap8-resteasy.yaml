@@ -3,11 +3,11 @@
   description: The org.jboss.resteasy.resteasy-jettison-provider module has been removed
   effort: 13
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy.resteasy-jettison-provider` module has been removed.
@@ -27,11 +27,11 @@
     removed
   effort: 13
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy:resteasy-jettison-provider` artifact has been removed.
@@ -46,11 +46,11 @@
   description: The org.jboss.resteasy.resteasy-yaml-provider module has been removed
   effort: 13
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy.resteasy-yaml-provider` module has been removed.
@@ -69,11 +69,11 @@
   description: The org.jboss.resteasy resteasy-yaml-provider artifact has been removed
   effort: 13
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy:resteasy-yaml-provider` artifact has been removed.
@@ -88,11 +88,11 @@
   description: The org.jboss.resteasy resteasy-spring artifact has been renamed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy:resteasy-spring` artifact has been renamed to `org.jboss.resteasy.spring:resteasy-spring`
@@ -106,11 +106,11 @@
   description: org.jboss.resteasy.spi.StringConverter has been removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: '`org.jboss.resteasy.spi.StringConverter` has been removed. Replace with
@@ -129,11 +129,11 @@
   description: org.jboss.resteasy.spi.AsynchronousResponse has been removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: '`org.jboss.resteasy.spi.AsynchronousResponse` has been removed. Replace
@@ -155,11 +155,11 @@
   description: org.jboss.resteasy.annotations.Suspend has been removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: '`org.jboss.resteasy.annotations.Suspend` has been removed. Replace with
@@ -178,11 +178,11 @@
   description: org.jboss.resteasy.core.ResourceInvoker interface has been removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: org.jboss.resteasy.spi.ResourceInvoker
@@ -198,11 +198,11 @@
   description: org.jboss.resteasy.plugins.interceptors.encoding classes has been removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: org.jboss.resteasy.plugins.interceptors
@@ -221,11 +221,11 @@
   description: The org.jboss.resteasy.resteasy-jaxrs module has been deprecated
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy.resteasy-jaxrs` module has been deprecated and

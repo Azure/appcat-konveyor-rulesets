@@ -3,12 +3,17 @@
   description: Removal of the java.compiler System Property
   effort: 1
   labels:
-  - konveyor.io/source=openjdk21-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk21+
-  - konveyor.io/target=openjdk
+  - source=openjdk21-
+  - source=openjdk
+  - capability=openjdk21+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Removal of the java.compiler System Property
     url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8041676
@@ -27,12 +32,17 @@
   description: The java.lang.Compiler Class Has Been Removed
   effort: 1
   labels:
-  - konveyor.io/source=openjdk21-
-  - konveyor.io/source=openjdk
-  - konveyor.io/target=openjdk21+
-  - konveyor.io/target=openjdk
+  - source=openjdk21-
+  - source=openjdk
+  - capability=openjdk21+
+  - capability=openjdk
   - domain=java-upgrade
   - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: The java.lang.Compiler Class Has Been Removed
     url: https://www.oracle.com/java/technologies/javase/21-relnote-issues.html#JDK-8205129

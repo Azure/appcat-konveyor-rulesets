@@ -3,14 +3,14 @@
   description: Hibernate 5.1  - @Embeddable changes interpretation
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.0-
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap7.0-
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.0-
+  - source=hibernate
+  - source=eap7.0-
+  - source=eap
+  - target=hibernate5.1+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - Hibernate
   links:
@@ -30,14 +30,14 @@
   description: Hibernate 5.1  - Changes to schema management tooling
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.0-
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap7.0-
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5.1+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.0-
+  - source=hibernate
+  - source=eap7.0-
+  - source=eap
+  - target=hibernate5.1+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - Hibernate
   links:

@@ -3,13 +3,15 @@
   description: Non-LTS Java version
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=java-upgrade
   - category=java-version-upgrade
   - version
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application is using non-LTS Java version. It is strongly recommended to plan and execute a migration strategy to upgrade your application to a LTS Java version.
@@ -36,13 +38,15 @@
   description: Legacy Java version
   effort: 3
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=java-upgrade
   - category=java-version-upgrade
   - version
+  - os=windows
+  - os=linux
   links: []
   message: |-
     The application is using an old Java version. It is strongly recommended to plan and execute a migration strategy to upgrade your application to the latest stable Java version.

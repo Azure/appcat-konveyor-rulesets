@@ -1,9 +1,9 @@
 - customVariables: []
   description: SonicESB Service Configuration
   labels:
-  - konveyor.io/source=sonicesb
-  - konveyor.io/target=fuse6+
-  - konveyor.io/target=fuse
+  - source=sonicesb
+  - target=fuse6+
+  - target=fuse
   - sonic-esb
   links: []
   ruleID: xml-sonic-esb-01000

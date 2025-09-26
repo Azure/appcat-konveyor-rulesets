@@ -3,8 +3,8 @@
   description: SpringBoot Integration flows are not supported.
   effort: 5
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Apache Camel
     url: https://quarkus.io/guides/camel
@@ -21,8 +21,8 @@
   description: SpringBoot IntegrationFlow class usage is not supported.
   effort: 5
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=quarkus
+  - source=springboot
+  - target=quarkus
   links:
   - title: Quarkus Apache Camel
     url: https://quarkus.io/guides/camel

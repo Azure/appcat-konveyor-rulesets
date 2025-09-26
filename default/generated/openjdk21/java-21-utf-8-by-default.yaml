@@ -6,11 +6,16 @@
   description: The 'java.io' constructor defaults to UTF-8
   effort: 1
   labels:
-  - konveyor.io/target=openjdk18+
-  - konveyor.io/target=openjdk
-  - konveyor.io/source
+  - capability=openjdk18+
+  - capability=openjdk
+  - source
   - domain=cloud-readiness
   - category=default-encoding
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: 'JEP 400: UTF-8 by Default'
     url: https://openjdk.org/jeps/400
@@ -30,11 +35,16 @@
   description: The `java.util` constructor defaults to UTF-8
   effort: 1
   labels:
-  - konveyor.io/target=openjdk18+
-  - konveyor.io/target=openjdk
-  - konveyor.io/source
+  - capability=openjdk18+
+  - capability=openjdk
+  - source
   - domain=cloud-readiness
   - category=default-encoding
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: 'JEP 400: UTF-8 by Default'
     url: https://openjdk.org/jeps/400
@@ -51,11 +61,16 @@
   description: The java.net.URLEncoder.encode method uses UTF-8 by default
   effort: 1
   labels:
-  - konveyor.io/target=openjdk18+
-  - konveyor.io/target=openjdk
-  - konveyor.io/source
+  - capability=openjdk18+
+  - capability=openjdk
+  - source
   - domain=cloud-readiness
   - category=default-encoding
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: 'JEP 400: UTF-8 by Default'
     url: https://openjdk.org/jeps/400
@@ -72,11 +87,16 @@
   description: The java.net.URLDecoder.decode method uses UTF-8 by default
   effort: 1
   labels:
-  - konveyor.io/target=openjdk18+
-  - konveyor.io/target=openjdk
-  - konveyor.io/source
+  - capability=openjdk18+
+  - capability=openjdk
+  - source
   - domain=cloud-readiness
   - category=default-encoding
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: 'JEP 400: UTF-8 by Default'
     url: https://openjdk.org/jeps/400

@@ -1,9 +1,9 @@
 - customVariables: []
   description: JRun
   labels:
-  - konveyor.io/source=jrun
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=jrun
+  - target=eap6+
+  - target=eap
   - web-app
   - jrun
   links: []
@@ -19,9 +19,9 @@
 - customVariables: []
   description: JRunX
   labels:
-  - konveyor.io/source=jrun
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=jrun
+  - target=eap6+
+  - target=eap
   - web-app
   - jrun
   links: []

@@ -3,13 +3,17 @@
   description: Java Remote Method Invocation (RMI) service
   effort: 7
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=rmi
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=rmi
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=java-rmi-migration
   - cloud-readiness
   - rmi
+  - os=windows
+  - os=linux
   links:
   - title: Twelve-factor app - Backing services
     url: https://12factor.net/backing-services
@@ -36,13 +40,17 @@
   description: Java Remote Method Invocation (RMI) API
   effort: 7
   labels:
-  - konveyor.io/source=java
-  - konveyor.io/source=rmi
-  - konveyor.io/target=cloud-readiness
+  - source=java
+  - source=rmi
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
   - domain=cloud-readiness
   - category=java-rmi-migration
   - cloud-readiness
   - rmi
+  - os=windows
+  - os=linux
   links: []
   message:  |-                          
     When migrating an application that uses Java Remote Method Invocation (RMI) API to Azure, it's crucial to consider that RMI is a tightly coupled service and tight coupling is not suitable in a cloud environment because of scalability problems.

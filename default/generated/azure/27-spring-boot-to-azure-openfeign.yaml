@@ -3,13 +3,14 @@
   description: Embedded framework - Feign
   effort: 1
   labels:
-  - konveyor.io/target=azure-spring-apps
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=spring-migration
+  - os=windows
+  - os=linux
   links:
   - title: Migrate clients bypassing the service registry
     url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps

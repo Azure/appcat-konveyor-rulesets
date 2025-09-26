@@ -3,15 +3,15 @@
   description: The 'javax' groupId has been replaced by 'jakarta' group id in dependencies.
   effort: 1
   labels:
-  - konveyor.io/target=jakarta-ee9+
-  - konveyor.io/target=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source
+  - target=jakarta-ee9+
+  - target=jakarta-ee
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source=spring5
+  - target=spring6+
+  - source
   links:
   - title: Jakarta EE
     url: https://jakarta.ee/
@@ -27,15 +27,15 @@
   description: The artifactIds starting with javax.*-api must be updated to their corresponding jakarta.*-api versions in dependency files
   effort: 1
   labels:
-  - konveyor.io/target=jakarta-ee9+
-  - konveyor.io/target=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source
+  - target=jakarta-ee9+
+  - target=jakarta-ee
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source=spring5
+  - target=spring6+
+  - source
   links:
   - title: Jakarta EE
     url: https://jakarta.ee/
@@ -52,15 +52,15 @@
     jakarta.xml.bind-api
   effort: 1
   labels:
-  - konveyor.io/target=jakarta-ee9+
-  - konveyor.io/target=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source
+  - target=jakarta-ee9+
+  - target=jakarta-ee
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source=spring5
+  - target=spring6+
+  - source
   links:
   - title: Jakarta EE
     url: https://jakarta.ee/
@@ -75,15 +75,15 @@
   description: javax.activation groupId has been replaced by jakarta.activation
   effort: 1
   labels:
-  - konveyor.io/target=jakarta-ee9+
-  - konveyor.io/target=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source
+  - target=jakarta-ee9+
+  - target=jakarta-ee
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source=spring5
+  - target=spring6+
+  - source
   links:
   - title: Jakarta EE
     url: https://jakarta.ee/
@@ -99,15 +99,15 @@
     jakarta.faces
   effort: 1
   labels:
-  - konveyor.io/target=jakarta-ee9+
-  - konveyor.io/target=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source
+  - target=jakarta-ee9+
+  - target=jakarta-ee
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source=spring5
+  - target=spring6+
+  - source
   links:
   - title: Jakarta EE
     url: https://jakarta.ee/
@@ -122,15 +122,15 @@
   description: javax groupId has been replaced by jakarta.platform
   effort: 1
   labels:
-  - konveyor.io/target=jakarta-ee9+
-  - konveyor.io/target=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source
+  - target=jakarta-ee9+
+  - target=jakarta-ee
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source=spring5
+  - target=spring6+
+  - source
   links:
   - title: Jakarta EE
     url: https://jakarta.ee/
@@ -145,15 +145,15 @@
   description: javax javaee-api artifactId has been replaced by jakarta.platform jakarta.jakartaee-api
   effort: 1
   labels:
-  - konveyor.io/target=jakarta-ee9+
-  - konveyor.io/target=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source
+  - target=jakarta-ee9+
+  - target=jakarta-ee
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source=spring5
+  - target=spring6+
+  - source
   links:
   - title: Jakarta EE
     url: https://jakarta.ee/
@@ -170,15 +170,15 @@
     jakarta.jakartaee-web-api
   effort: 1
   labels:
-  - konveyor.io/target=jakarta-ee9+
-  - konveyor.io/target=jakarta-ee
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
-  - konveyor.io/source=spring5
-  - konveyor.io/target=spring6+
-  - konveyor.io/source
+  - target=jakarta-ee9+
+  - target=jakarta-ee
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source=spring5
+  - target=spring6+
+  - source
   links:
   - title: Jakarta EE
     url: https://jakarta.ee/

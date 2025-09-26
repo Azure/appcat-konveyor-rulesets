@@ -3,16 +3,19 @@
   description: Relative path found
   effort: 5
   labels:
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=eap7
+  - source=eap
+  - source=springboot
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=containerization
   - domain=cloud-readiness
   - category=file-system-management
   - file-system
   - containerization
+  - os=windows
+  - os=linux
   links:
   - title: Relative path found in the application
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#determine-whether-and-how-the-file-system-is-used
@@ -54,16 +57,19 @@
   description: Home path found
   effort: 5
   labels:
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
+  - source=eap7
+  - source=eap
+  - source=springboot
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=containerization
   - domain=cloud-readiness
   - category=file-system-management
   - file-system
   - containerization
+  - os=windows
+  - os=linux
   links:
   - title: Home path found in the application
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps#determine-whether-and-how-the-file-system-is-used

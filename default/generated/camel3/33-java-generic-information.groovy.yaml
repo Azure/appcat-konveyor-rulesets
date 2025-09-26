@@ -3,10 +3,10 @@
   description: org.apache.camel.ThreadPoolRejectedPolicy was moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: eips'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_eips
@@ -21,10 +21,10 @@
   description: SimpleRegistry was moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: generic_information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -41,10 +41,10 @@
   description: getOut/hasOut are deprecated
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: getout_on_exchange'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_getout_on_exchange
@@ -60,10 +60,10 @@
   description: Fault API on Message was removed
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: fault_api_on_message'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_fault_api_on_message
@@ -84,10 +84,10 @@
   description: Route control methods were moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: controlling_routes'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_controlling_routes
@@ -116,10 +116,10 @@
   description: getCamelContextMap,getCamelContexts methods removed
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: main_class_2'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_main_class_2
@@ -135,10 +135,10 @@
   description: org.apache.camel.util.jsse packages were moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: main_class_2'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_main_class_2
@@ -153,10 +153,10 @@
   description: org.apache.camel.util.jndi.JndiContext was moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: class'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_class
@@ -171,10 +171,10 @@
   description: Override of `createRegistry` is not necessary anymore
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: camel_test'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_camel_test
@@ -197,10 +197,10 @@
   description: org.apache.camel.management.event package was moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: class'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_class
@@ -216,10 +216,10 @@
   description: Testing with 'adviceWith' changed
   effort: 3
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: advicewith'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_advicewith

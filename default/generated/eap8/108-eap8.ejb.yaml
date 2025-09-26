@@ -3,11 +3,11 @@
   description: Methods relying on `java.security.Identity` removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta Enterprise Beans 4.0 specification
@@ -29,11 +29,11 @@
   description: javax.ejb.EJBContext.getEnvironment() method removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta Enterprise Beans 4.0 specification
@@ -51,11 +51,11 @@
   description: javax.ejb.SessionContext.getMessageContext() method removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta Enterprise Beans 4.0 specification

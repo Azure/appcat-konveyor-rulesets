@@ -4,10 +4,10 @@
     moved'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -26,10 +26,10 @@
   description: 'Classes in `org.apache.camel.impl` have been relocated to `org.apache.camel.support`.'
   effort: 3
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Migrating custom Components'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_migrating_custom_components
@@ -45,10 +45,10 @@
   description: '`zip` and `gzip` dataformat was renamed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: '`zip` and `gzip` dataformats were renamed to `zipdeflater and `gzipdeflater`'
   ruleID: java-generic-information-00002
@@ -75,10 +75,10 @@
   description: 'Classes under org.apache.camel.impl have been removed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: The class `org.apache.camel.impl.{{registry}}` has been removed. Use `org.apache.camel.support.DefaultRegistry`
     instead.
@@ -94,10 +94,10 @@
     has been removed.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -118,10 +118,10 @@
   description: 'The classes previously under `org.apache.camel` have been removed.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -137,10 +137,10 @@
   description: '`org.apache.camel.util.toolbox.AggregationStrategies` has been moved'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -156,10 +156,10 @@
   description: '`org.apache.camel.management.JmxSystemPropertyKeys` has been moved'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Generic Information'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -175,10 +175,10 @@
   description: '`includeRoutes` method has been removed'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -193,10 +193,10 @@
   description: Annotation `org.apache.camel.language.Bean` method has been moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -212,10 +212,10 @@
   description: Annotation `org.apache.camel.language.Simple` method has been moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -231,10 +231,10 @@
   description: Annotation `org.apache.camel.language.SpEL` method has been moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -253,10 +253,10 @@
   description: Annotations under `org.apache.camel` are moved to `org.apache.camel.spi`
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -272,10 +272,10 @@
   description: Annotation `org.apache.camel.Constant`has been removed
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -292,10 +292,10 @@
   description: Annotation `org.apache.camel.builder.xml.XPathBuilder`has been moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -311,10 +311,10 @@
   description: Annotation `org.apache.camel.language.XPath` has been moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -331,10 +331,10 @@
     been moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -352,10 +352,10 @@
     has been moved
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -372,10 +372,10 @@
   description: xslt method was removed from `org.apache.camel.util.toolbox.AggregationStrategies`
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Migration Guide
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_generic_information
@@ -391,10 +391,10 @@
   description: '`org.apache.camel.language.LanguageAnnotation` has been moved'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Migrating custom languages'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_migrating_custom_languages
@@ -414,10 +414,10 @@
   description: 'Classes under `org.apache.camel.util` have been moved to `org.apache.camel.support`.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: The class `org.apache.camel.util.{{moved}}` has been moved to `org.apache.camel.support.{{moved}}`.
     It has been moved out of `org.apache.camel:camel-core` and into `org.apache.camel:camel-support`
@@ -432,10 +432,10 @@
   description: '`org.apache.camel.util.ServiceHelper` has been moved.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: The class `org.apache.camel.util.ServiceHelper` has been moved to `org.apache.camel.support.service.ServiceHelper`.
     It has been moved out of `org.apache.camel:camel-core` and into `org.apache.camel:camel-api`
@@ -450,10 +450,10 @@
   description: '`org.apache.camel.spi.RestProducerFactoryHelper` has been moved.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: The class `org.apache.camel.spi.RestProducerFactoryHelper` has been moved
     to `org.apache.camel.support.RestProducerFactoryHelper`. It has been moved out
@@ -469,10 +469,10 @@
   description: '`org.apache.camel.util.ObjectHelper` has been moved.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: 'The class `org.apache.camel.util.ObjectHelper` has been moved out of the
     `org.apache.camel:camel-core` and has been split into two classes: `org.apache.camel.support.ObjectHelper`
@@ -489,10 +489,10 @@
   description: '`org.apache.camel.support.RoutePolicySupport` has been moved.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: The class `org.apache.camel.support.RoutePolicySupport` has been moved
     out of `org.apache.camel:camel-core` and into `org.apache.camel:camel-support`.
@@ -509,10 +509,10 @@
   description: '`org.apache.camel.impl.ThrottlingInflightRoutePolicy` has been moved.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links: []
   message: The class `org.apache.camel.impl.ThrottlingInflightRoutePolicy` has been
     moved to `org.apache.camel.throttling.ThrottlingInflightRoutePolicy`. It has been
@@ -528,10 +528,10 @@
   description: 'Classes under `org.apache.camel.processor.idempotent` have been moved to `org.apache.camel.support.processor.idempotent`'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Idempotent repositories'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_idempotent_repositories
@@ -549,10 +549,10 @@
   description: Annotation `org.apache.camel.FallbackConverter` has been removed
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Fallback Type Converters'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_fallback_type_converters
@@ -571,10 +571,10 @@
   description: '`org.apache.camel.util.toolbox.XsltAggregationStrategy` has been moved.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Aggregation'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_aggregation
@@ -603,10 +603,10 @@
   description: '`org.apache.camel.CamelContext` property methods have been removed.'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: CONFIGURING GLOBAL OPTIONS ON CAMELCONTEXT'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_configuring_global_options_on_camelcontext
@@ -632,10 +632,10 @@
     from DSTU3 to R4'
   effort: 0
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: FHIR'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_fhir
@@ -657,10 +657,10 @@
     artifact
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Managed Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_jmx
@@ -682,10 +682,10 @@
     functions has been removed.
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: 'Camel 3 - Migration Guide: Simple Language'
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_simple_language
@@ -720,10 +720,10 @@
   description: 'The `ref` attribute in certain annotations is removed in the latest versions'
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Pojo Annotations
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_pojo_annotations
@@ -747,10 +747,10 @@
     been moved into a new `CatalogCamelContext` interface
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Catalog Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_camelcontext
@@ -772,10 +772,10 @@
   description: The duplicate method in `org.apache.camel.CamelContext` has been removed
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Catalog Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_camelcontext
@@ -796,10 +796,10 @@
     have been moved into a new `Model` interface
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Model Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_modelcamelcontext
@@ -822,10 +822,10 @@
     have been moved into a new `ExtendedCamelContext` interface
   effort: 1
   labels:
-  - konveyor.io/source=camel2
-  - konveyor.io/source=camel
-  - konveyor.io/target=camel3+
-  - konveyor.io/target=camel
+  - source=camel2
+  - source=camel
+  - target=camel3+
+  - target=camel
   links:
   - title: Camel 3 - Extended Camel Context
     url: https://camel.apache.org/manual/latest/camel-3-migration-guide.html#_extended_camelcontext

@@ -16,13 +16,15 @@
   description: Spring Cloud version too low
   effort: 5
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-container-apps
+  - source=springboot
+  - target=azure-aks
+  - target=azure-appservice
+  - target=azure-container-apps
   - domain=java-upgrade
   - category=framework-upgrade
   - version
+  - os=windows
+  - os=linux
   links:
   - title: Migrate Spring Cloud applications to Azure Container Apps
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps
@@ -55,13 +57,15 @@
   description: spring cloud version out of support
   effort: 3
   labels:
-  - konveyor.io/source=springboot
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-container-apps
+  - source=springboot
+  - target=azure-aks
+  - target=azure-appservice
+  - target=azure-container-apps
   - domain=java-upgrade
   - category=framework-upgrade
   - version
+  - os=windows
+  - os=linux
   links:
   - title: Migrate Spring Cloud applications to Azure Container Apps
     url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps

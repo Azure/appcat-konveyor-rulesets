@@ -3,11 +3,11 @@
   description: JMS legacy javax.jms.QueueConnectionFactory
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -36,11 +36,11 @@
   description: JBoss EJB @Service annotation
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -70,11 +70,11 @@
   description: JBoss EJB @Management annotation
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -111,11 +111,11 @@
   description: org.jboss.annotation.ejb.LocalBinding
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -144,11 +144,11 @@
   description: org.jboss.annotation.ejb.Depends
   effort: 3
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -171,11 +171,11 @@
   description: org.jboss.wsf.spi.annotation has been moved to org.jboss.ws.api.annotation
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -196,11 +196,11 @@
   description: org.jboss.wsf.spi.binding has been moved to org.jboss.ws.api.binding
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -221,11 +221,11 @@
   description: org.jboss.wsf.spi.management.recording has been moved to org.jboss.ws.api.monitoring
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -246,11 +246,11 @@
   description: org.jboss.wsf.spi.tools.ant has been moved to org.jboss.ws.tools.ant
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -271,11 +271,11 @@
   description: org.jboss.wsf.spi.tools.cmd has been moved to org.jboss.ws.tools.cmd
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -296,11 +296,11 @@
   description: org.jboss.wsf.spi.tools has been moved to org.jboss.ws.api.tools
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -319,11 +319,11 @@
   description: org.jboss.wsf.spi.util.ServiceLoader has been moved to org.jboss.ws.api.util.ServiceLoader
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -343,11 +343,11 @@
   description: org.jboss.wsf.common.handler has been moved to org.jboss.ws.api.handler
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -368,11 +368,11 @@
   description: org.jboss.wsf.common.addressing has been moved to org.jboss.ws.api.addressing
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -393,11 +393,11 @@
   description: org.jboss.wsf.common.DOMUtils has been moved to org.jboss.ws.api.util.DOMUtils
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -417,11 +417,11 @@
   description: org.jboss.wsf.common has been moved to org.jboss.ws.common
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
@@ -440,11 +440,11 @@
   description: org.jboss.ws.annotation.EndpointConfig has been moved to org.jboss.ws.api.annotation.EndpointConfig
   effort: 1
   labels:
-  - konveyor.io/source=eap4
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jms
   - ejb
