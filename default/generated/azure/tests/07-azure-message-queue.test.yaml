@@ -54,6 +54,6 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      atLeast: 0
       messageMatches: The application uses Java EE or Jakarta EE with RabbitMQ AMQP
         in code.

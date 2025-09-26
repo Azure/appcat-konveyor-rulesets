@@ -317,14 +317,16 @@
   description: Java EE or Jakarta EE application using RabbitMQ AMQP found
   effort: 7
   labels:
-  - konveyor.io/target=azure-appservice
-  - konveyor.io/target=azure-aks
-  - konveyor.io/target=azure-container-apps
-  - konveyor.io/source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
-  - RabbitMQ Client
+  - AMQP Client
+  - os=windows
+  - os=linux
   - JavaEE
   - JakartaEE
   links:
@@ -358,3 +360,14 @@
       - java.referenced:
           location: PACKAGE
           pattern: com.rabbitmq.client*
+    - not: true
+      or:
+      - java.referenced:
+          location: PACKAGE
+          pattern: org.springframework.amqp.rabbit*
+      - java.dependency:
+          lowerbound: 0.0.0
+          name: org.springframework.boot.spring-boot-starter-amqp
+      - java.dependency:
+          lowerbound: 0.0.0
+          name: org.springframework.amqp.spring-rabbit
