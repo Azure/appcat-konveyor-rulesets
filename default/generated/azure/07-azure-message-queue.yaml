@@ -203,19 +203,28 @@
      * Configure Azure Service Bus **queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
   ruleID: azure-message-queue-amqp-02000
   when:
-    or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.boot.spring-boot-starter-amqp
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.amqp.spring-rabbit
-    - builtin.filecontent:
-        filePattern: (/|\\)build\.gradle$
-        pattern: spring-boot-starter-amqp
-    - builtin.filecontent:
-        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: .*amqp.*
+    and:
+      - or:
+          - java.dependency:
+              lowerbound: 0.0.0
+              name: org.springframework.boot.spring-boot-starter-amqp
+          - java.dependency:
+              lowerbound: 0.0.0
+              name: org.springframework.amqp.spring-rabbit
+          - builtin.filecontent:
+              filePattern: (/|\\)build\.gradle$
+              pattern: spring-boot-starter-amqp
+          - builtin.filecontent:
+              filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
+              pattern: .*amqp.*
+      - not: true
+        or:
+          - java.dependency:
+              lowerbound: 0.0.0
+              nameregex: ([a-zA-Z0-9._-]*)jakarta.jakartaee-api([a-zA-Z0-9._-]*)
+          - java.dependency:
+              lowerbound: 0.0.0
+              nameregex: ([a-zA-Z0-9._-]*)javaee-api([a-zA-Z0-9._-]*)
 - category: optional
   customVariables: []
   description: Spring JMS RabbitMQ dependency found
