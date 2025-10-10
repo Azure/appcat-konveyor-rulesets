@@ -50,10 +50,3 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: To migrate a Java application that uses ActiveMQ to Azure
-- ruleID: azure-message-queue-java-ee-rabbitmq-amqp-01000
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 0
-      messageMatches: The application uses Java EE or Jakarta EE with RabbitMQ AMQP
-        in code.
