@@ -203,19 +203,28 @@
      * Configure Azure Service Bus **queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
   ruleID: azure-message-queue-amqp-02000
   when:
-    or:
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.boot.spring-boot-starter-amqp
-    - java.dependency:
-        lowerbound: 0.0.0
-        name: org.springframework.amqp.spring-rabbit
-    - builtin.filecontent:
-        filePattern: (/|\\)build\.gradle$
-        pattern: spring-boot-starter-amqp
-    - builtin.filecontent:
-        filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
-        pattern: .*amqp.*
+    and:
+      - or:
+          - java.dependency:
+              lowerbound: 0.0.0
+              name: org.springframework.boot.spring-boot-starter-amqp
+          - java.dependency:
+              lowerbound: 0.0.0
+              name: org.springframework.amqp.spring-rabbit
+          - builtin.filecontent:
+              filePattern: (/|\\)build\.gradle$
+              pattern: spring-boot-starter-amqp
+          - builtin.filecontent:
+              filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
+              pattern: .*amqp.*
+      - not: true
+        or:
+          - java.dependency:
+              lowerbound: 0.0.0
+              nameregex: ([a-zA-Z0-9._-]*)jakarta.jakartaee-api([a-zA-Z0-9._-]*)
+          - java.dependency:
+              lowerbound: 0.0.0
+              nameregex: ([a-zA-Z0-9._-]*)javaee-api([a-zA-Z0-9._-]*)
 - category: optional
   customVariables: []
   description: Spring JMS RabbitMQ dependency found
@@ -312,3 +321,62 @@
         nameregex: org\.apache\.activemq\.([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)activemq([a-zA-Z0-9._-]*)$
+- category: optional
+  customVariables: []
+  description: Java EE or Jakarta EE application using RabbitMQ AMQP found
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - message-queue
+  - AMQP Client
+  - os=windows
+  - os=linux
+  - JavaEE
+  - JakartaEE
+  links:
+  - title: Azure Service Bus documentation
+    url: https://learn.microsoft.com/azure/service-bus-messaging
+  message: |-
+    The application is a Java EE or Jakarta EE project using RabbitMQ AMQP for messaging. To migrate this application to Azure, you can follow these recommendations:
+
+     * **Provision Azure Service Bus**: Replace RabbitMQ with Azure Service Bus, a fully managed messaging service that offers reliable message queuing and publish/subscribe capabilities with JMS 2.0 support.
+
+     * **Update messaging dependencies**: Replace RabbitMQ AMQP client dependencies with Azure Service Bus JMS libraries. For Jakarta EE applications, ensure you use the appropriate Jakarta namespace dependencies.
+
+     * **Configure Azure Service Bus queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
+  ruleID: azure-message-queue-java-ee-rabbitmq-amqp-01000
+  when:
+    and:
+    - or:
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: ([a-zA-Z0-9._-]*)jakarta.jakartaee-api([a-zA-Z0-9._-]*)
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: ([a-zA-Z0-9._-]*)javaee-api([a-zA-Z0-9._-]*)
+    - or:
+      - java.dependency:
+          lowerbound: 0.0.0
+          nameregex: ([a-zA-Z0-9._-]*)amqp-client([a-zA-Z0-9._-]*)
+      - builtin.filecontent:
+          filePattern: (/|\\)(application|bootstrap|web)(-[a-zA-Z0-9]+)*?\.(properties|xml|yaml|yml)$
+          pattern: rabbitmq\.(.*\.)?(addresses|host|virtual-host|username|password)
+      - java.referenced:
+          location: PACKAGE
+          pattern: com.rabbitmq.client*
+    - not: true
+      or:
+      - java.referenced:
+          location: PACKAGE
+          pattern: org.springframework.amqp.rabbit*
+      - java.dependency:
+          lowerbound: 0.0.0
+          name: org.springframework.boot.spring-boot-starter-amqp
+      - java.dependency:
+          lowerbound: 0.0.0
+          name: org.springframework.amqp.spring-rabbit

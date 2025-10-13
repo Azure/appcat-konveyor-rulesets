@@ -1,0 +1,14 @@
+rulesPath: ../07-azure-message-queue.yaml
+providers:
+- name: java
+  dataPath: ./data/07-azure-message-queue-java-ee
+- name: builtin
+  dataPath: ./data/07-azure-message-queue-java-ee
+tests:
+- ruleID: azure-message-queue-java-ee-rabbitmq-amqp-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: The application uses Java EE or Jakarta EE with RabbitMQ AMQP
+        in code.
