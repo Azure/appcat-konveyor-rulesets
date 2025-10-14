@@ -1,6 +1,6 @@
 - category: mandatory
   customVariables: []
-  description: Spring Framework version out of support
+  description: Spring Framework Version End of OSS Support
   effort: 3
   labels:
   - source=spring
@@ -18,7 +18,7 @@
   - title: Spring Framework Support Policy
     url: https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions
   message: |-
-    Your application is using the Spring Framework version out of support. 
+    Your application is using the Spring Framework version End of OSS Support. 
     Upgrading to a supported version ensures better performance, security, and compatibility with modern tools.
       1. Pick a Supported Version: Review the Spring Framework support policy and choose an actively supported version.
       2. Update Your Project: Change the Spring Framework version in your pom.xml or build.gradle.
