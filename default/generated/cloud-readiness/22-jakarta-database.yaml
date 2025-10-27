@@ -1,0 +1,111 @@
+- category: potential
+  customVariables: []
+  description: Detect Jakarta NoSQL usage
+  effort: 5
+  labels:
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - os=windows
+  - os=linux
+  links:
+  - title: Jakarta NoSQL
+    url: https://jakarta.ee/specifications/nosql/
+  - title: Azure Cosmos DB Documentation
+    url: https://learn.microsoft.com/en-us/azure/cosmos-db/
+  message: |-
+    When migrating an application that uses Jakarta NoSQL to Azure, consider leveraging Azure's managed NoSQL database services for better scalability, performance, and cloud-native features.
+     Instead of using Jakarta NoSQL specifications directly, you can migrate to Azure Cosmos DB which provides multiple NoSQL APIs and global distribution capabilities.
+
+     * **Use Azure Cosmos DB**: Azure Cosmos DB is a fully managed, globally distributed NoSQL database service that supports multiple data models including document, key-value, graph, and column-family.
+
+     * **Choose the appropriate API**: Azure Cosmos DB supports multiple APIs including NoSQL (Core SQL), MongoDB, Cassandra, Gremlin, and Table. Choose the one that best matches your current data model and access patterns.
+
+     * **Migrate data models**: Update your application's data access layer to use Azure Cosmos DB SDK or compatible drivers instead of Jakarta NoSQL APIs.
+
+     * **Configure connection**: Update your application configuration to connect to Azure Cosmos DB using connection strings and appropriate authentication methods.
+
+     * **Leverage cloud features**: Take advantage of Azure Cosmos DB's features like automatic scaling, global distribution, consistency levels, and integrated security.
+
+     * **Test performance**: Validate that your application performs well with Azure Cosmos DB and adjust throughput and consistency settings as needed.
+  ruleID: jakarta-database-00001
+  when:
+    or:
+    - java.dependency:
+        nameregex: ^jakarta\.nosql\..*
+
+- category: potential
+  customVariables: []
+  description: Detects usage of Jakarta Persistence (JPA) APIs
+  effort: 5
+  labels:
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - os=windows
+  - os=linux
+  links:
+  - title: Jakarta Persistence Specification
+    url: https://jakarta.ee/specifications/persistence/
+  - title: Prepare to choose a data store in Azure
+    url: https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-stores-getting-started#common-database-scenarios
+  message: |-
+    The application depends on **Jakarta Persistence (JPA)** APIs (`jakarta.persistence.*` or legacy `javax.persistence.*`), which are used for object-relational mapping (ORM) and database interaction in Jakarta EE or Java EE applications.
+
+    When migrating to Azure:
+    - Ensure that the database connection, JPA provider (e.g., Hibernate, EclipseLink), and dialect are compatible with your target Azure database service.
+    - Recommended database services include **Azure Database for PostgreSQL**, **Azure Database for MySQL**, or **Azure SQL Database**.
+    - For containerized deployments, these JPA-based applications can run on **Azure Kubernetes Service (AKS)** or **Azure App Service for Linux/Windows**.
+    - If using **Spring Data JPA**, verify that connection pool settings and environment variables are properly configured for the cloud environment.
+    - Consider leveraging **Azure Key Vault** for secure storage of database credentials and connection strings.
+  ruleID: jakarta-database-00002
+  when:
+    or:
+    - java.dependency:
+        nameregex: ^javax\.persistence\..*
+    - java.dependency:
+        nameregex: ^jakarta\.persistence\..*
+    - java.dependency:
+        nameregex: ^org\.eclipse\.persistence\.jakarta\.persistence.*
+
+- category: potential
+  customVariables: []
+  description: Detects usage of Jakarta Data APIs
+  effort: 5
+  labels:
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - os=windows
+  - os=linux
+  links:
+  - title: Jakarta Data
+    url: https://jakarta.ee/specifications/data/
+  - title: Prepare to choose a data store in Azure
+    url: https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-stores-getting-started#common-database-scenarios
+  message: |-
+    The application depends on **Jakarta Data** (`jakarta.data.*`) APIs, which define a standard repository-based data access model. This abstraction allows developers to perform CRUD and query operations across multiple data sources, including relational and NoSQL databases, without tightly coupling to a specific persistence technology.
+
+    When migrating to Azure:
+    - Review the underlying data storage adapters or implementations used (for example, **Eclipse JNoSQL**, **Micronaut Data**, or other Jakarta Data providers).
+    - For **relational workloads**, consider using **Azure Database for PostgreSQL**, **Azure Database for MySQL**, or **Azure SQL Database**.
+    - For **NoSQL workloads**, consider migrating to **Azure Cosmos DB**.
+    - Ensure repository configurations, connection URLs, and credentials are externalized for cloud deployment.
+    - Deploy the application on **Azure Kubernetes Service (AKS)**, **Azure App Service**, or **Azure Container Apps** depending on architecture and scaling needs.
+  ruleID: jakarta-database-00003
+  when:
+    or:
+    - java.dependency:
+        nameregex: ^jakarta\.data\..*

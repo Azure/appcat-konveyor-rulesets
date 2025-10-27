@@ -1,0 +1,72 @@
+- category: potential
+  customVariables: []
+  description: Detects usage of Jakarta WebSocket APIs
+  effort: 5
+  labels:
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - os=windows
+  - os=linux
+  links:
+  - title: Jakarta WebSocket Specification
+    url: https://jakarta.ee/specifications/websocket/
+  message: |-
+    The application depends on **Jakarta WebSocket** (`jakarta.websocket.*` or legacy `javax.websocket.*`) APIs, 
+    which enable full-duplex, real-time communication between clients and servers over a single TCP connection.
+
+    When migrating to Azure:
+    - If the application runs in a Jakarta EE container (such as Payara, WildFly, or Tomcat), it can be deployed to **Azure App Service for Java** or containerized and hosted on **Azure Kubernetes Service (AKS)**.
+    - For high-scale, event-driven, or globally distributed workloads, consider using **Azure Web PubSub Service** to manage WebSocket connections efficiently and offload real-time message delivery.
+    - If deploying on **Azure Container Apps**, you can integrate **Azure Web PubSub** for managed WebSocket support and scalability.
+    - Review and configure **sticky sessions**, **connection timeout**, and **TLS termination** settings for stable communication.
+    - Use **wss://** for secure communication, and integrate **Azure Active Directory (Entra ID)** for token-based authentication where applicable.
+  ruleID: jakarta-service-00001
+  when:
+    or:
+    - java.dependency:
+        nameregex: ^javax\.websocket\..*
+    - java.dependency:
+        nameregex: ^jakarta\.websocket\..*
+
+- category: potential
+  customVariables: []
+  description: Detects usage of Jakarta RESTful Web Services (JAX-RS) APIs
+  effort: 5
+  labels:
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - os=windows
+  - os=linux
+  links:
+  - title: Jakarta RESTful Web Services Specification
+    url: https://jakarta.ee/specifications/restful-ws/
+  message: |-
+    The application depends on **Jakarta RESTful Web Services (JAX-RS)** (`jakarta.ws.rs.*` or legacy `javax.ws.rs.*`) APIs, 
+    which provide a standard way to develop RESTful APIs and microservices in Jakarta EE or Java EE applications.
+
+    When migrating to Azure:
+    - If the application runs in a Jakarta EE or MicroProfile runtime (such as Payara, WildFly, Open Liberty, or TomEE), it can be hosted on **Azure App Service for Java**, or containerized and deployed to **Azure Kubernetes Service (AKS)**.
+    - For microservice-oriented deployments, **Azure Container Apps** is recommended for scalable, managed environments.
+    - Ensure externalized configuration (e.g., base URLs, environment variables) via **Azure App Configuration** or **Key Vault**.
+    - Integrate authentication and authorization with **Azure Active Directory (Entra ID)** or use OAuth 2.0 / OpenID Connect standards for API security.
+    - For monitoring and tracing, consider **Azure Application Insights** to capture API telemetry, latency, and request traces.
+    - Use HTTPS endpoints and secure connection strings when exposing APIs publicly.
+  ruleID: jakarta-service-00002
+  when:
+    or:
+    - java.dependency:
+        nameregex: ^javax\.ws\.rs\..*
+    - java.dependency:
+        nameregex: ^jakarta\.ws\.rs\..*
+
+
