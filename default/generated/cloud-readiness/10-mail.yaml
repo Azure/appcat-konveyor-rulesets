@@ -25,7 +25,7 @@
      In a cloud environment, mail systems should be considered backing services and treated like attached resources.
      You can either use SMTP directly, or use Azure Communication Services Email and migrate the email functionality of your application to Azure.
 
-     * Using **Azure Communication Services**: Create an Azure Communication Services resource in your Azure subscription. This will provide you with the necessary capabilities to send emails. pdate your application's email sending code to use the Azure Communication Services Email SDK or REST API. This involves integrating the Azure Communication Services Email client libraries into your application and configuring the required settings, such as the sender's email address, recipient addresses, subject, and email content.
+     * Using **Azure Communication Services**: Create an Azure Communication Services resource in your Azure subscription. This will provide you with the necessary capabilities to send emails. Update your application's email sending code to use the Azure Communication Services Email SDK or REST API. This involves integrating the Azure Communication Services Email client libraries into your application and configuring the required settings, such as the sender's email address, recipient addresses, subject, and email content.
 
      * Using **SMTP directly**: You can also use your own SMTP provider. In this case, check if port 25 is open in the App Service SKU.
   ruleID: mail-00000
@@ -34,6 +34,13 @@
     - java.referenced:
         location: PACKAGE
         pattern: javax.mail*
+    - java.dependency:
+        nameregex: ^javax\.mail\..*
+    - java.referenced:
+        location: PACKAGE
+        pattern: jakarta.mail*
+    - java.dependency:
+        nameregex: ^jakarta\.mail\..*
     - java.referenced:
         location: PACKAGE
         pattern: com.sun.mail*
