@@ -6,7 +6,7 @@ import javax.ejb.Stateless;
 import java.util.List;
 
 @Stateless
-public class PersistenceContextExample2 {
+public class JakartaPersistenceContextExample {
 
     // EntityManager injection using @PersistenceContext
     @PersistenceContext(unitName = "myPU")

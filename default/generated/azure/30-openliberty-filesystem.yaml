@@ -137,13 +137,21 @@
     url: "https://learn.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings"
   ruleID: openliberty-filesystem-00003
   when:
-    java.referenced:
-      location: ANNOTATION
-      pattern: javax.annotation.Resource
-      annotated:
-        elements:
-          - name: name
-            value: ".*(?i)(path|dir|directory|folder|file|store|upload|download|temp|cache|log|data|config).*"
+    or:
+    - java.referenced:
+        location: ANNOTATION
+        pattern: javax.annotation.Resource
+        annotated:
+          elements:
+            - name: name
+              value: ".*(?i)(path|dir|directory|folder|file|store|upload|download|temp|cache|log|data|config).*"
+    - java.referenced:
+        location: ANNOTATION
+        pattern: jakarta.annotation.Resource
+        annotated:
+          elements:
+            - name: name
+              value: ".*(?i)(path|dir|directory|folder|file|store|upload|download|temp|cache|log|data|config).*"
 
 - category: mandatory
   customVariables: []
@@ -183,6 +191,10 @@
     url: "https://docs.oracle.com/javase/tutorial/essential/io/fileio.html"
   ruleID: openliberty-filesystem-00004
   when:
-    java.referenced:
-      location: METHOD_CALL
-      pattern: javax.servlet.ServletContext.getRealPath
+    or: 
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: javax.servlet.ServletContext.getRealPath
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: jakarta.servlet.ServletContext.getRealPath

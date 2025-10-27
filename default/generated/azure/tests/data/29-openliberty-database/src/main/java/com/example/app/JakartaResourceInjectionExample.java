@@ -5,7 +5,7 @@ import javax.sql.DataSource;
 import javax.ejb.Stateless;
 
 @Stateless
-public class ResourceInjectionExample2 {
+public class JakartaResourceInjectionExample {
 
     // DataSource injection using @Resource annotation
     @Resource(name = "jdbc/mydb")
