@@ -9,5 +9,5 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 2
+      exactly: 6
       messageMatches: When migrating an application that stores data in an HTTP Session
