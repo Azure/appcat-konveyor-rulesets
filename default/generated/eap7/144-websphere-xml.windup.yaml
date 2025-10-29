@@ -1,10 +1,10 @@
 - customVariables: []
   description: IBM Process Server Rules 6.0
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   - websphere
   - configuration
   links: []
@@ -26,10 +26,10 @@
   description: WebSphere EAR Application Binding
   effort: 0
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   - websphere
   - configuration
   links:
@@ -55,10 +55,10 @@
   description: WebSphere JSP engine configuration (ibm-web-ext)
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   - websphere
   - configuration
   links: []
@@ -87,10 +87,10 @@
   description: WebSphere web application binding (ibm-web-bnd)
   effort: 3
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   - websphere
   - configuration
   links:
@@ -119,10 +119,10 @@
 - customVariables: []
   description: WebSphere web service client extension descriptor (ibm-webservicesclient-ext)
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   - websphere
   - configuration
   links:
@@ -143,10 +143,10 @@
 - customVariables: []
   description: WebSphere web service client binding descriptor (ibm-webservicesclient-bnd)
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   - websphere
   - configuration
   links:
@@ -165,10 +165,10 @@
 - customVariables: []
   description: WebSphere deployment descriptor (deployment.xml)
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   - websphere
   - configuration
   links:

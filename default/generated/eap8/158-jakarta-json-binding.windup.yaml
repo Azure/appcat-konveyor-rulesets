@@ -4,10 +4,10 @@
     annotation no longer require all parameters to be present
   effort: 1
   labels:
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
   - konveyor.io/source
   links: []
   message: |-

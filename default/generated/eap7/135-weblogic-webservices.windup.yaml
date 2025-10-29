@@ -3,10 +3,10 @@
   description: WebLogic proprietary web service implementation class
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - webservice
   - weblogic
   links:
@@ -28,10 +28,10 @@
   description: WebLogic asynchronous web service client
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - webservice
   - weblogic
   - client
@@ -53,10 +53,10 @@
   description: WebLogic proprietary web service authentication
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - webservice
   - weblogic
   - security
@@ -86,10 +86,10 @@
   description: WebLogic proprietary web services API - weblogic.wsee.context.WebServiceContext
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - webservice
   - weblogic
   - context
@@ -114,10 +114,10 @@
   description: WebLogic proprietary web services API - ContextNotFoundException
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - webservice
   - weblogic
   - context
@@ -133,10 +133,10 @@
   description: WebLogic proprietary web services generated client classes
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - webservice
   - weblogic
   - client
@@ -167,10 +167,10 @@
   description: WebLogic proprietary web service annotation @Transactional
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - webservice
   - weblogic
   links:

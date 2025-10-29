@@ -6,10 +6,10 @@
   description: IBM DB2 driver type reference
   effort: 1
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   links: []
   message: This is a reference to the IBM DB2 driver type (`com.ibm.db2.jcc.{{type}}`).
     It probably does not need to be migrated. However the IBM DB2 driver should be
@@ -30,10 +30,10 @@
   description: IBM proprietary type reference
   effort: 0
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   - catchall
   links: []
   message: |-
@@ -65,10 +65,10 @@
   description: IBM ILog proprietary type reference
   effort: 0
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=websphere
+  - target=eap7
+  - target=eap8
+  - target=eap
   - catchall
   links: []
   message: |-

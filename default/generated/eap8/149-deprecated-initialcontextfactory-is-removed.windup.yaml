@@ -4,11 +4,11 @@
     removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - JakartaEE
   links: []
   message: Replace this class with `org.wildfly.naming.client.WildFlyInitialContextFactory`.

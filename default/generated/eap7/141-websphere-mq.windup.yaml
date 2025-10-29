@@ -7,11 +7,11 @@
     pattern: (?P<package>com.ibm(\..*)?\.(mq|wmq).*.)?(?P<type>[^.]+)
   description: IBM MQ client API
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - messaging
   - websphere
@@ -36,11 +36,11 @@
   description: IBM MQ Configuration
   effort: 3
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - messaging
   - websphere
@@ -66,11 +66,11 @@
   description: IBM MQ Configuration
   effort: 3
   labels:
-  - konveyor.io/source=websphere
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
-  - konveyor.io/target=java-ee7+
-  - konveyor.io/target=java-ee
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - messaging
   - websphere

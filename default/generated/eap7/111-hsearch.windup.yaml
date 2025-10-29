@@ -1,14 +1,14 @@
 - customVariables: []
   description: Hibernate Search - API usage
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links: []
@@ -26,14 +26,14 @@
   description: Hibernate Search 5 - Renamed class SearchMappingBuilder
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -50,14 +50,14 @@
   description: Hibernate Search 5 - Package change for Environment
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -74,14 +74,14 @@
   description: Hibernate Search 5 - Package change for FullTextFilter
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -98,14 +98,14 @@
   description: Hibernate Search 5 - Package change for DirectoryBasedIndexManager
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -123,14 +123,14 @@
   description: Hibernate Search 5 - Package change for InfinispanDirectoryProvider
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -148,14 +148,14 @@
   description: Hibernate Search 5 - Package change for ProjectionConstants
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -172,14 +172,14 @@
   description: Hibernate Search 5 - Package change for SearchException
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -196,14 +196,14 @@
   description: Hibernate Search 5 - Package change for MassIndexerFactory
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -220,14 +220,14 @@
   description: Hibernate Search 5 - Deprecated interface org.hibernate.search.spi.SearchFactoryBuilder
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -246,14 +246,14 @@
   description: Hibernate Search 5 - Deprecated interface org.hibernate.search.spi.SearchFactoryIntegrator
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -273,14 +273,14 @@
   description: Hibernate Search 5 - Package change for Version
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -297,14 +297,14 @@
   description: Hibernate Search 5 - Deprecated constructor NumericFieldMapping.NumericFieldMapping
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -325,14 +325,14 @@
   description: Hibernate Search 5 - Deprecated interface org.hibernate.search.store.IndexShardingStrategy
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -352,14 +352,14 @@
   description: Hibernate Search 5 - Deprecated interface org.hibernate.search.store.Workspace
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -376,14 +376,14 @@
   description: Hibernate Search 5 - Deprecated interface org.hibernate.search.filter.FilterKey
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -403,14 +403,14 @@
   description: Hibernate Search 5 - Deprecated class org.hibernate.search.filter.StandardFilterKey
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -432,14 +432,14 @@
   description: Hibernate Search 5 - Deprecated enum FieldCacheType
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - annotation
@@ -459,14 +459,14 @@
   description: Hibernate Search 5 - Deprecated annotation CacheFromIndex
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -485,14 +485,14 @@
   description: Hibernate Search 5 - Deprecated annotation Key
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -518,14 +518,14 @@
   description: Hibernate Search 5 - Deprecated enum constant in IndexWriterSetting
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -555,14 +555,14 @@
   description: Hibernate Search 5 - Renamed SpatialMode.GRID to HASH
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -584,14 +584,14 @@
   description: Hibernate Search 5 - FullTextIndexEventListener class is now final
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -613,14 +613,14 @@
     class used
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -642,14 +642,14 @@
   description: Hibernate Search 5 - ServiceProvider implementation
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -676,14 +676,14 @@
   description: Hibernate Search 5 - Indexing of id fields of Embedded Relations
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -710,14 +710,14 @@
   description: Hibernate Search 5 - Changes in indexing numeric and date values
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -788,14 +788,14 @@
   description: Hibernate Search 5 - Changes in indexing null values
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -821,14 +821,14 @@
   description: Hibernate Search 5 - Improvements in Faceting Engine
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -858,14 +858,14 @@
   description: Hibernate Search 5 - Changes in indexing numeric values
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -891,14 +891,14 @@
           pattern: org.hibernate.search.annotations.Field
 - customVariables: []
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links: []
@@ -915,14 +915,14 @@
   description: Hibernate Search 5 - Dropped hibernate-search-analyzers maven artifact
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - maven
@@ -944,14 +944,14 @@
   description: Lucene 4.x - Changed constructor for org.apache.lucene.search.SortField
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -982,14 +982,14 @@
   description: Hibernate Search 5 - Deprecated method ContainedInMapping#numericField
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1009,14 +1009,14 @@
   description: Hibernate Search 5 - Deprecated method FullTextSharedSessionBuilder#autoClose
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1036,14 +1036,14 @@
   description: Hibernate Search 5 - Deprecated method IndexedMapping#cacheFromIndex
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1062,14 +1062,14 @@
   description: Hibernate Search 5 - Deprecated method EntityDescriptor#getCacheInMemory
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1088,14 +1088,14 @@
   description: Hibernate Search 5 - Deprecated method HSQuery#getExtendedSearchIntegrator
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1114,14 +1114,14 @@
   description: Hibernate Search 5 - Deprecated method DocumentBuilderIndexedEntity#getFieldCacheOption
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1141,14 +1141,14 @@
   description: Hibernate Search 5 - Deprecated method BuildContext#getIndexingStrategy
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1166,14 +1166,14 @@
   description: Hibernate Search 5 - Deprecated method DirectoryHelper#getVerifiedIndexDir
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1192,14 +1192,14 @@
   description: Hibernate Search 5 - Deprecated method EntityDescriptor#setCacheInMemory
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1219,14 +1219,14 @@
   description: Hibernate Search 5 - Deprecated method MassIndexer#threadsForSubsequentFetching
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1246,14 +1246,14 @@
   description: Hibernate Search 5 - Deprecated method FuzzyContext#withThreshold
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:
@@ -1275,14 +1275,14 @@
   description: Lucene 4.x - Classes repackaged to 'org.apache.lucene.queryparser.classic'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1305,14 +1305,14 @@
   description: Lucene 4.x - Renamed class org.apache.lucene.queryParser.QueryParserToken
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1335,14 +1335,14 @@
   description: Lucene 4.x - Renamed class org.apache.lucene.queryParser.QueryParserTokenMgrError
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1368,14 +1368,14 @@
   description: Lucene 4.x - Classes repackaged to 'org.apache.lucene.analysis.core'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1398,14 +1398,14 @@
   description: Lucene 4.x - Class 'PorterStemFilter' repackaged to 'org.apache.lucene.analysis.en'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1431,14 +1431,14 @@
   description: Lucene 4.x - Classes repackaged to 'org.apache.lucene.analysis.miscellaneous'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1461,14 +1461,14 @@
   description: Lucene 4.x - Class 'TeeSinkTokenFilter' repackaged to 'org.apache.lucene.analysis.sinks'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1494,14 +1494,14 @@
   description: Lucene 4.x - Classes repackaged to 'org.apache.lucene.analysis.charfilter'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1527,14 +1527,14 @@
   description: Lucene 4.x - Classes repackaged to 'org.apache.lucene.analysis.util'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1557,14 +1557,14 @@
   description: Lucene 4.x - Class 'ReusableAnalyzerBase' renamed to 'org.apache.lucene.analysis.Analyzer'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1587,14 +1587,14 @@
   description: Lucene 4.x - Class 'CharacterUtils' repackaged to 'org.apache.lucene.analysis.util'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1620,14 +1620,14 @@
   description: Lucene 4.x - Classes repackaged to 'org.apache.lucene.queries'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1650,14 +1650,14 @@
   description: Lucene 4.x - Class 'NumericIndexDocValueSource' repackaged to 'org.apache.lucene.queries.function.valuesource'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1683,14 +1683,14 @@
   description: Lucene 4.x - Classes repackaged to 'org.apache.lucene.queries.function'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1716,14 +1716,14 @@
   description: Lucene 4.x - Classes repackaged to 'org.apache.lucene.queries.function.valuesources'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1749,14 +1749,14 @@
   description: Lucene 4.x - Solr classes repackaged to 'org.apache.lucene.analysis.util'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1778,14 +1778,14 @@
   description: Hibernate Search 5 - Removed method MassIndexer#threadsForIndexWriter
   effort: 1
   labels:
-  - konveyor.io/source=hibernate-search4
-  - konveyor.io/source=hibernate-search
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate-search5+
-  - konveyor.io/target=hibernate-search
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate-search4
+  - source=hibernate-search
+  - source=eap6
+  - source=eap
+  - target=hibernate-search5+
+  - target=hibernate-search
+  - target=eap7
+  - target=eap
   - hibernate-search
   - hibernate
   links:

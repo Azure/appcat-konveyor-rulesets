@@ -3,10 +3,10 @@
   description: WS-Security WSPasswordCallback's package changed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - ws-security
   - security
   links:
@@ -28,10 +28,10 @@
   description: WS-Security SAML package changed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - ws-security
   - security
   links:
@@ -57,10 +57,10 @@
   description: WS-Security AssertionWrapper renamed and moved
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - ws-security
   - security
   links:

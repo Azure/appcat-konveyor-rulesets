@@ -3,11 +3,11 @@
   description: Stateful Session EJB Clustering configuration changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -26,11 +26,11 @@
 - customVariables: []
   description: JBoss Seam Components (components.xml)
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -54,11 +54,11 @@
 - customVariables: []
   description: JBoss Seam Pages (pages.xml)
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -84,11 +84,11 @@
 - customVariables: []
   description: JBoss Seam Page
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -112,11 +112,11 @@
 - customVariables: []
   description: JBoss web application descriptor (jboss-web.xml)
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -143,11 +143,11 @@
 - customVariables: []
   description: JBoss EJB 2 CMP Deployment descriptor (jbosscmp-jdbc.xml)
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -177,11 +177,11 @@
 - customVariables: []
   description: JBoss EJB 3 deployment descriptor (jboss-ejb3.xml)
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -203,11 +203,11 @@
 - customVariables: []
   description: JBoss web-services deployment descriptor (jboss-webservices.xml)
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -241,11 +241,11 @@
   description: CMP Entity EJB configuration
   effort: 3
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -273,11 +273,11 @@
   description: EJB 2.x BMP Entity Beans configuration
   effort: 3
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -305,11 +305,11 @@
   description: Valve is not supported in JBoss EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -330,11 +330,11 @@
   description: JAX-RPC specific configuration
   effort: 3
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -373,11 +373,11 @@
 - customVariables: []
   description: JSR-88 deployment plans are no more supported by JBoss EAP7
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -399,11 +399,11 @@
   description: Web Session Clustering config replication-trigger changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -427,11 +427,11 @@
   description: Web Session Clustering config replication-mode changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -455,11 +455,11 @@
   description: Web Session Clustering config backups changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -483,11 +483,11 @@
   description: Web Session Clustering config use-jk changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -516,11 +516,11 @@
     EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -549,11 +549,11 @@
   description: Web Session Clustering config snapshot-mode changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -579,11 +579,11 @@
   description: Web Session Clustering config snapshot-interval changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -609,11 +609,11 @@
     EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -641,11 +641,11 @@
   description: Web Session Clustering config passivation-config changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -675,11 +675,11 @@
   description: Web Session Clustering config max-active-sessions changes in EAP 7
   effort: 1
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - jboss-eap6
   - ejb

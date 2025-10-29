@@ -6,12 +6,12 @@
   description: Hibernate 5.3 - SessionImplementor parameter changed to SharedSessionContractImplementor
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -130,12 +130,12 @@
     and the Java 8 date/time types are now natively supported.
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -180,12 +180,12 @@
   description: Hibernate 5.3 - Exception Handling
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -208,12 +208,12 @@
   description: Hibernate 5.3 - SessionFactoryImplementor.getQueryCache() method removed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -232,12 +232,12 @@
     method removed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -257,12 +257,12 @@
     method removed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -282,12 +282,12 @@
     regionName) method removed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -307,12 +307,12 @@
     regionName) method removed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -336,12 +336,12 @@
     regionName) method removed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -361,12 +361,12 @@
     regionName) method removed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -386,12 +386,12 @@
     method removed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -413,12 +413,12 @@
   description: Hibernate 5.3 - RegionFactory usage
   effort: 3
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -439,12 +439,12 @@
   description: Hibernate 5.3 - org.hibernate.cache.spi.QueryCacheFactory implementations
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Hibernate ORM 5.3 Migration Guide: Second-level cache provider SPI changes'
@@ -475,12 +475,12 @@
     deprecated methods'
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Hibernate ORM 5.3 Migration Guide: Second-level cache provider SPI changes'
@@ -510,12 +510,12 @@
   description: Hibernate 5.3 - NaturalIdCacheStatistics.getEntries() deprecated method
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links: []
   message: "A change to be aware of is accessing cache entries via `NaturalIdCacheStatistics.getEntries()`.
@@ -535,12 +535,12 @@
     method
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links: []
   message: "A change to be aware of is accessing cache entries via `SecondLevelCacheStatistics.getEntries()`.
@@ -562,12 +562,12 @@
   description: SPI packages under 'org.hibernate' have changed
   effort: 3
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -593,12 +593,12 @@
     set jdbc_metadata_extraction_strategy
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links: []
   message: Define `hibernate.default_schema` or `hibernate.default_catalog` (whichever
@@ -624,12 +624,12 @@
     set jdbc_metadata_extraction_strategy
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links: []
   message: If the application uses Hibernate, please define `hibernate.default_schema`
@@ -655,12 +655,12 @@
   description: Hibernate 5.3  - @TableGenerator changes interpretation
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -681,12 +681,12 @@
   description: Hibernate 5.3 - QueryParameter.getType() renamed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate5.1-
-  - konveyor.io/source=hibernate
-  - konveyor.io/target=hibernate5.3+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate5.1-
+  - source=hibernate
+  - target=hibernate5.3+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM

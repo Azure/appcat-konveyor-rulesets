@@ -3,14 +3,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addFile()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -29,14 +29,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.add()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -55,14 +55,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addXML()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -81,14 +81,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addCacheableFile()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -107,14 +107,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addURL()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -133,14 +133,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addInputStream()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -159,14 +159,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addResource()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -185,14 +185,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addClass()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -211,14 +211,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addAnnotatedClass()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -237,14 +237,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addPackage()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -263,14 +263,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addJar()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -289,14 +289,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addDirectory()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -315,14 +315,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.registerTypeContributor()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -341,14 +341,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.registerTypeOverride()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -367,14 +367,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.setProperty()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -394,14 +394,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.setProperties()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -420,14 +420,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.addProperties()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -447,14 +447,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.setNamingStrategy()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -485,14 +485,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.configure()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -512,14 +512,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.setInterceptor()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -538,14 +538,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.setEntityNotFoundDelegate()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -565,14 +565,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.setSessionFactoryObserver()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -592,14 +592,14 @@
   description: Hibernate 5 - Deprecated method org.hibernate.cfg.Configuration.setCurrentTenantIdentifierResolver()
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -622,14 +622,14 @@
   description: In Hibernate 5, methods under 'org.hibernate.metamodel.spi' have been moved.
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -647,14 +647,14 @@
   description: Hibernate 5 - Removed class org.hibernate.cfg.AnnotationConfiguration
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -676,14 +676,14 @@
   description: Deprecated classes in Hibernate 5 under 'org.hibernate.id' are removed
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -704,14 +704,14 @@
   description: Classes under 'org.hibernate.hql.spi' in Hibernate 5 are moved to the 'org.hibernate.hql.spi.id' package
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -728,14 +728,14 @@
   description: Hibernate 5 - Moved class org.hibernate.hql.spi.PersistentTableBulkIdStrategy
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -752,14 +752,14 @@
   description: Hibernate 5 - Replaced class org.hibernate.hql.spi.TemporaryTableBulkIdStrategy
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -777,14 +777,14 @@
   description: Hibernate 5 - Changed interface org.hibernate.integrator.spi.Integrator
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -805,14 +805,14 @@
   description: Hibernate 5 - Changed class org.hibernate.engine.jdbc.spi.JdbcServices
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -833,14 +833,14 @@
   description: Hibernate 5 - Changed signature org.hibernate.id.Configurable
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -861,14 +861,14 @@
     implement ExportableProducer#registerExportables
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -891,14 +891,14 @@
   description: Hibernate 5 - Removed class org.hibernate.envers.configuration.AuditConfiguration
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -916,14 +916,14 @@
   description: Hibernate 5 - Registration needed for built-in implementations of org.hibernate.type.descriptor.sql.SqlTypeDescriptor
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links:
@@ -973,14 +973,14 @@
   description: Hibernate 5  - Oracle12cDialect maps byte[] and Byte[] to BLOB
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   - Hibernate
@@ -1024,14 +1024,14 @@
   description: Hibernate 5.3 - Dialects not supporting Limit Offset
   effort: 1
   labels:
-  - konveyor.io/source=hibernate4
-  - konveyor.io/source=hibernate
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=hibernate5+
-  - konveyor.io/target=hibernate
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=hibernate4
+  - source=hibernate
+  - source=eap6
+  - source=eap
+  - target=hibernate5+
+  - target=hibernate
+  - target=eap7
+  - target=eap
   - hibernate
   - configuration
   links: []

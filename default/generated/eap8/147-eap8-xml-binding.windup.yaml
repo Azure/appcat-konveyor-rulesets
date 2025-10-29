@@ -3,11 +3,11 @@
   description: Implementation class packages must be updated
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -32,11 +32,11 @@
   description: Marshaller property package names must be updated
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: |-
@@ -52,11 +52,11 @@
   description: The URI in the JAXB binding file should be updated
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -77,11 +77,11 @@
   description: Deprecated steps in the implementation lookup algorithm have been removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -109,11 +109,11 @@
   description: Searches for implementation class names via properties have been dropped
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links: []
   message: |-
@@ -130,11 +130,11 @@
   description: Usage of this Validator interface or retrieval method should be removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -159,11 +159,11 @@
     setAdapter() method may need to be updated
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -184,11 +184,11 @@
   description: Outdated JAXB dependency
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -209,11 +209,11 @@
     `getAdapter() method may need to be updated
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8+
+  - target=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification

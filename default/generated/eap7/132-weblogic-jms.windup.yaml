@@ -1,10 +1,10 @@
 - customVariables: []
   description: Oracle JMS
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - jms
   - weblogic
   links:
@@ -26,10 +26,10 @@
   description: Oracle JMS Session
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - jms
   - weblogic
   links:
@@ -50,10 +50,10 @@
   description: Oracle JMS Queue Browser
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - jms
   - weblogic
   links:
@@ -73,10 +73,10 @@
   description: Oracle JMS Producer
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - jms
   - weblogic
   links:
@@ -97,10 +97,10 @@
   description: Oracle JMS Consumer
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - jms
   - weblogic
   links:
@@ -120,10 +120,10 @@
   description: Oracle JMS Consumer
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - jms
   - weblogic
   links:
@@ -147,10 +147,10 @@
   description: Oracle JMS {type}Message
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - jms
   - weblogic
   links:
@@ -172,10 +172,10 @@
   description: Oracle JMS Destination
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - jms
   - weblogic
   links:
@@ -200,10 +200,10 @@
   description: Oracle JMS Connection Factory
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - jms
   - weblogic
   links:

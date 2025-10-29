@@ -3,10 +3,10 @@
   description: WebLogic Startup Service
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - startup
   links:
@@ -26,10 +26,10 @@
   description: WebLogic T3ServicesDef usage
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - webservice
   links:
@@ -51,10 +51,10 @@
   description: WebLogic proprietary logging classes
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - weblogic
   - logging
   links:

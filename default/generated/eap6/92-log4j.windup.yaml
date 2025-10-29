@@ -1,8 +1,8 @@
 - customVariables: []
   labels:
-  - konveyor.io/source=log4j
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=log4j
+  - target=eap6+
+  - target=eap
   - log4j
   links: []
   message: Deploying log4j.jar can result in non-deterministic ClassLoading issues.
@@ -15,9 +15,9 @@
 - customVariables: []
   description: Log4j Configuration
   labels:
-  - konveyor.io/source=log4j
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=log4j
+  - target=eap6+
+  - target=eap
   - log4j
   links:
   - title: How to configure Log4J in JBoss EAP 6/7
@@ -41,9 +41,9 @@
   description: Log4j ConsoleAppender Configuration - Potential Deadlock
   effort: 1
   labels:
-  - konveyor.io/source=log4j
-  - konveyor.io/target=eap6+
-  - konveyor.io/target=eap
+  - source=log4j
+  - target=eap6+
+  - target=eap
   - log4j
   links:
   - title: EAP 6 deadlocks when using ConsoleHandler and java.io.PrintStream

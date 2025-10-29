@@ -1,14 +1,14 @@
 - customVariables: []
   description: JSF Seam 2.x tag library usage
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -31,14 +31,14 @@
 - customVariables: []
   description: JSF Seam 2.3 tag library usage
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -58,14 +58,14 @@
   description: JSF Seam 2 UI control s:button
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -90,14 +90,14 @@
   description: JSF Seam 2 UI control s:link
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -122,14 +122,14 @@
   description: JSF Seam 2 UI control s:conversationId
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -152,14 +152,14 @@
   description: JSF Seam 2 UI control s:conversationPropagation
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -183,14 +183,14 @@
   description: JSF Seam 2 UI control s:taskId
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -213,14 +213,14 @@
   description: JSF Seam 2 UI control s:defaultAction
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -243,14 +243,14 @@
   description: JSF Seam 2 UI control s:convertDateTime
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -277,14 +277,14 @@
   description: JSF Seam 2 UI control s:convertEntity
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -307,14 +307,14 @@
   description: JSF Seam 2 UI control s:enumItem
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -337,14 +337,14 @@
   description: JSF Seam 2 UI control s:token
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -367,14 +367,14 @@
   description: JSF Seam 2 UI control s:formattedText
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -397,14 +397,14 @@
   description: JSF Seam 2 UI control s:cache
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -427,14 +427,14 @@
   description: JSF Seam 2 UI control s:resource
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -457,14 +457,14 @@
   description: JSF Seam 2 UI control s:download
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -487,14 +487,14 @@
   description: JSF Seam 2 UI control s:remote
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -517,14 +517,14 @@
   description: JSF Seam 2 UI control s:selectItems
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -547,14 +547,14 @@
   description: JSF Seam 2 UI control s:validate
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -577,14 +577,14 @@
   description: JSF Seam 2 UI control s:fragment
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -607,14 +607,14 @@
   description: JSF Seam 2 UI control s:convertEnum
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -640,14 +640,14 @@
   description: JSF Seam 2 UI control s:convertAtomicBoolean
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -673,14 +673,14 @@
   description: JSF Seam 2 UI control s:convertAtomicInteger
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -706,14 +706,14 @@
   description: JSF Seam 2 UI control s:convertAtomicLong
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -739,14 +739,14 @@
   description: JSF Seam 2 UI control s:validateEquality
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -776,14 +776,14 @@
   description: JSF Seam 2 UI control s:validateAll
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -808,14 +808,14 @@
   description: JSF Seam 2 UI control s:decorate
   effort: 3
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -840,14 +840,14 @@
   description: JSF Seam 2 UI control s:div
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -872,14 +872,14 @@
   description: JSF Seam 2 UI control s:span
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -904,14 +904,14 @@
   description: JSF Seam 2 UI control s:label
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -935,14 +935,14 @@
   description: JSF Seam 2 UI control s:message
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -966,14 +966,14 @@
   description: JSF Seam 2 UI control s:fileUpload
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:
@@ -998,14 +998,14 @@
   description: JSF Seam 2 UI control s:graphicImage
   effort: 1
   labels:
-  - konveyor.io/source=java-ee
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/source=seam2
-  - konveyor.io/source=seam
-  - konveyor.io/target=eap6
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap
+  - source=java-ee
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - target=eap6
+  - target=eap7
+  - target=eap
   - seam
   - jsf
   links:

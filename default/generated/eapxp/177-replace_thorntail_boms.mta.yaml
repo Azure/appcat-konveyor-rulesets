@@ -3,9 +3,9 @@
   description: Replace Thorntail BOMs - io.thorntail:bom
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:
@@ -30,9 +30,9 @@
   description: Replace Thorntail BOMs - io.thorntail:bom-certified
   effort: 1
   labels:
-  - konveyor.io/source=thorntail
-  - konveyor.io/target=eapxp2+
-  - konveyor.io/target=eapxp
+  - source=thorntail
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:

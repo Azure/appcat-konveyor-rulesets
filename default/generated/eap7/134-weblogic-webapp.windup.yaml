@@ -3,10 +3,10 @@
   description: WebLogic Virtual directory mapping
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - web-app
   - weblogic
   - file-system
@@ -27,10 +27,10 @@
   description: WebLogic proprietary servlet annotations
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - web-app
   - weblogic
   - servlet
@@ -51,10 +51,10 @@
   description: WebLogic proprietary servlet annotations
   effort: 1
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - web-app
   - weblogic
   - servlet
@@ -75,10 +75,10 @@
   description: WebLogic proprietary servlet annotations
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - web-app
   - weblogic
   - servlet
@@ -99,10 +99,10 @@
   description: WebLogic ApplicationLifecycleEvent
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - web-app
   - weblogic
   - lifecycle
@@ -134,10 +134,10 @@
   description: WebLogic ApplicationLifecycleListener
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - web-app
   - weblogic
   - lifecycle
@@ -167,10 +167,10 @@
   description: WebLogic proprietary security API
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - web-app
   - weblogic
   - security
@@ -187,10 +187,10 @@
   description: WebLogic proprietary security reference to weblogic.security.Security
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - web-app
   - weblogic
   - security
@@ -209,10 +209,10 @@
   description: WebLogic proprietary ServletAuthentication annotation
   effort: 3
   labels:
-  - konveyor.io/source=weblogic
-  - konveyor.io/target=eap7
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
+  - source=weblogic
+  - target=eap7
+  - target=eap8
+  - target=eap
   - web-app
   - weblogic
   - security

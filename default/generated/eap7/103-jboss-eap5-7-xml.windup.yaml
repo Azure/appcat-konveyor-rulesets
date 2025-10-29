@@ -1,10 +1,10 @@
 - customVariables: []
   description: JBoss Cache
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - ejb
   - seam
@@ -30,10 +30,10 @@
 - customVariables: []
   description: JBoss 5.x EAR descriptor (jboss-app.xml)
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - ejb
   - seam
@@ -58,10 +58,10 @@
   description: JBoss EAP 5 classloader configuration (jboss-classloading.xml)
   effort: 5
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - ejb
   - seam
@@ -87,10 +87,10 @@
 - customVariables: []
   description: JBoss legacy EJB XML (jboss.xml)
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - ejb
   - seam
@@ -122,10 +122,10 @@
   description: JBoss EAP security-domain configuration - java:/jaas/
   effort: 3
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - ejb
   - seam
@@ -151,10 +151,10 @@
   description: JBoss security configuration descriptor (login-config.xml)
   effort: 5
   labels:
-  - konveyor.io/source=eap5
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap5
+  - source=eap
+  - target=eap7+
+  - target=eap
   - jboss-eap5
   - ejb
   - seam

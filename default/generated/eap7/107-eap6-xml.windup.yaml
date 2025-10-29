@@ -1,10 +1,10 @@
 - customVariables: []
   description: JMS proprietary resource definitions
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - configuration
   links:
   - title: JMS migration documentation
@@ -32,10 +32,10 @@
 - customVariables: []
   description: JBoss deployment structure dependencies (jboss-deployment-structure.xml)
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap7+
-  - konveyor.io/target=eap
+  - source=eap6
+  - source=eap
+  - target=eap7+
+  - target=eap
   - configuration
   links: []
   message: Verify in advance that all the modules this application depends on still

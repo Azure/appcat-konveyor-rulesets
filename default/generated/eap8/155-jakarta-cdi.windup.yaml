@@ -3,13 +3,13 @@
   description: Method javax.enterprise.inject.spi.Bean.isNullable() has been removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
   - JakartaEE
   - eap8
   links: []
@@ -26,13 +26,13 @@
     has been removed.
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
   - JakartaEE
   - eap8
   links:
@@ -51,13 +51,13 @@
     Annotation) has been removed.
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
   - JakartaEE
   - eap8
   links:
@@ -76,13 +76,13 @@
     has been removed
   effort: 1
   labels:
-  - konveyor.io/source=eap6
-  - konveyor.io/source=eap7
-  - konveyor.io/source=eap
-  - konveyor.io/target=eap8
-  - konveyor.io/target=eap
-  - konveyor.io/target=jws6+
-  - konveyor.io/target=jws
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
   - JakartaEE
   - eap8
   links: []
