@@ -2,8 +2,8 @@
   description: JAX-RPC Generic Handler
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - jax-rpc
   - soap
   links:

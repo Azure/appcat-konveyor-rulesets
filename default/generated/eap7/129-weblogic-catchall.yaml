@@ -10,9 +10,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - catchall
   links: []
   message: This is a WebLogic proprietary type (`{{prefix}}{{remainder}}`) and needs
@@ -42,9 +42,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - catchall
   links: []
   message: |-
@@ -68,9 +68,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - catchall
   links: []
   message: This is an Oracle proprietary type (`com.tangosol{{subpackage}}.{{type}}`)
@@ -96,9 +96,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - catchall
   links: []
   message: This is an Oracle proprietary type (`{{com}}oracle{{subpackage}}.{{type}}`)
@@ -118,9 +118,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - catchall
   links: []
   message: |-

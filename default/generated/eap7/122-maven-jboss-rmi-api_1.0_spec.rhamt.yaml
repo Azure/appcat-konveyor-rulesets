@@ -3,8 +3,8 @@
   description: Remove Maven dependency on org.jboss.spec.javax.rmi:jboss-rmi-api_1.0_spec
   effort: 1
   labels:
-  - target=eap7
-  - target=eap
+  - capability=eap7
+  - capability=eap
   - konveyor.io/source
   - rmi
   links: []

@@ -10,10 +10,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -34,10 +34,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -76,10 +76,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -101,10 +101,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -123,10 +123,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -150,10 +150,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -173,10 +173,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -196,10 +196,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy Client Application Changes
@@ -220,10 +220,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -244,10 +244,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -268,10 +268,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -294,10 +294,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -320,10 +320,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -346,10 +346,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -371,10 +371,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -396,10 +396,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -420,10 +420,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -445,10 +445,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy removes additional classes
@@ -473,10 +473,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   - jax-rs
   links:
@@ -498,10 +498,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -523,10 +523,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -547,10 +547,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy removed/protected methods on ResteasyProviderFactory class
@@ -575,10 +575,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -601,10 +601,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -627,10 +627,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -653,10 +653,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -677,10 +677,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   - jax-rs
   links:
@@ -702,10 +702,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   - jax-rs
   links:
@@ -727,10 +727,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   - jax-rs
   links:
@@ -752,10 +752,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   - jax-rs
   links:
@@ -777,10 +777,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   - jax-rs
   links:
@@ -802,10 +802,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   - jax-rs
   links:
@@ -827,10 +827,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -852,10 +852,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -875,10 +875,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -901,10 +901,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -928,10 +928,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -954,10 +954,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -981,10 +981,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1007,10 +1007,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1033,10 +1033,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1060,10 +1060,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1087,10 +1087,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1114,10 +1114,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1140,10 +1140,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes
@@ -1166,10 +1166,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   - yaml
   links: []
@@ -1197,10 +1197,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   links: []
   message: "Deserializing Java objects from untrusted sources is not safe. For this
@@ -1235,10 +1235,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=resteasy3+
-  - target=resteasy
-  - target=eap7
-  - target=eap
+  - capability=resteasy3+
+  - capability=resteasy
+  - capability=eap7
+  - capability=eap
   - resteasy
   - charset
   links:

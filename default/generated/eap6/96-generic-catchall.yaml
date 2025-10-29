@@ -9,8 +9,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   links: []
   message: |-
@@ -29,8 +29,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   links: []
   message: |-
@@ -55,8 +55,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   - mule
   links: []
@@ -82,8 +82,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   - mx4j
   links: []
@@ -104,8 +104,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   - soa
   - apache-tuscany
@@ -124,8 +124,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - tibco
   - soa
   links: []
@@ -149,8 +149,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   - tibco
   links: []
@@ -176,8 +176,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   - sap
   links: []
@@ -203,8 +203,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   - iona
   links: []
@@ -227,8 +227,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   - apache
   links: []
@@ -257,8 +257,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   - jboss
   links: []
@@ -277,8 +277,8 @@
   - source=java
   - source=javaee
   - source=soa
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - catchall
   - jdbc
   links: []

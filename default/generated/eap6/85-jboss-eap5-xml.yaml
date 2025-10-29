@@ -3,8 +3,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -29,8 +29,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -50,8 +50,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -73,8 +73,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -96,8 +96,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -123,8 +123,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -144,8 +144,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -168,8 +168,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -197,8 +197,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -228,8 +228,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -252,8 +252,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -277,8 +277,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -305,8 +305,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -330,8 +330,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -359,8 +359,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -382,8 +382,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -408,8 +408,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - jboss-eap5
   - ejb
   - seam

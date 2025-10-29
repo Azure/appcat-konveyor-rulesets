@@ -1,8 +1,8 @@
 - customVariables: []
   labels:
   - source=log4j
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - log4j
   links: []
   message: Deploying log4j.jar can result in non-deterministic ClassLoading issues.
@@ -16,8 +16,8 @@
   description: Log4j Configuration
   labels:
   - source=log4j
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - log4j
   links:
   - title: How to configure Log4J in JBoss EAP 6/7
@@ -42,8 +42,8 @@
   effort: 1
   labels:
   - source=log4j
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - log4j
   links:
   - title: EAP 6 deadlocks when using ConsoleHandler and java.io.PrintStream

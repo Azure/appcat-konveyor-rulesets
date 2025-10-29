@@ -2,8 +2,8 @@
   description: JOnAS Web Descriptor
   labels:
   - source=jonas
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - jonas
   - web-app
   - configuration

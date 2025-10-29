@@ -3,10 +3,10 @@
   description: Empty import definition in a JSP
   effort: 1
   labels:
-  - target=eap6+
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - konveyor.io/source
   links: []
   message: Empty import definition in .jsp or .jspf files would fail in compilation

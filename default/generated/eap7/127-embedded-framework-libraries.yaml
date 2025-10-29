@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded library - Drools
   labels:
-  - target=eap
+  - capability=eap
   - konveyor.io/source
   links: []
   message: "\n                        The application embedds a Drools library.\n
@@ -16,7 +16,7 @@
 - customVariables: []
   description: Hibernate embedded library
   labels:
-  - target=eap
+  - capability=eap
   - konveyor.io/source
   links:
   - title: 'Red Hat JBoss EAP: Component Details'
@@ -46,7 +46,7 @@
 - customVariables: []
   description: Embedded library - JDBC
   labels:
-  - target=eap
+  - capability=eap
   - konveyor.io/source
   links: []
   message: "\n                        The application embeds a JDBC library.\n                    "
@@ -60,7 +60,7 @@
 - customVariables: []
   description: JSF embedded library
   labels:
-  - target=eap
+  - capability=eap
   - konveyor.io/source
   links:
   - title: 'Red Hat JBoss EAP: Component Details'
@@ -97,7 +97,7 @@
 - customVariables: []
   description: Seam 2 embedded library
   labels:
-  - target=eap
+  - capability=eap
   - konveyor.io/source
   links:
   - title: EAP 6 - Migrate Seam 2.2 applications

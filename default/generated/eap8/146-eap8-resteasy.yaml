@@ -6,8 +6,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy.resteasy-jettison-provider` module has been removed.
@@ -30,8 +30,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy:resteasy-jettison-provider` artifact has been removed.
@@ -49,8 +49,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy.resteasy-yaml-provider` module has been removed.
@@ -72,8 +72,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy:resteasy-yaml-provider` artifact has been removed.
@@ -91,8 +91,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy:resteasy-spring` artifact has been renamed to `org.jboss.resteasy.spring:resteasy-spring`
@@ -109,8 +109,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: '`org.jboss.resteasy.spi.StringConverter` has been removed. Replace with
@@ -132,8 +132,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: '`org.jboss.resteasy.spi.AsynchronousResponse` has been removed. Replace
@@ -158,8 +158,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: '`org.jboss.resteasy.annotations.Suspend` has been removed. Replace with
@@ -181,8 +181,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: org.jboss.resteasy.spi.ResourceInvoker
@@ -201,8 +201,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: org.jboss.resteasy.plugins.interceptors
@@ -224,8 +224,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: The `org.jboss.resteasy.resteasy-jaxrs` module has been deprecated and

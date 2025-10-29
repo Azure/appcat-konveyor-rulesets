@@ -8,10 +8,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -132,10 +132,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -182,10 +182,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -210,10 +210,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -234,10 +234,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -259,10 +259,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -284,10 +284,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -309,10 +309,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -338,10 +338,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -363,10 +363,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -388,10 +388,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -415,10 +415,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -441,10 +441,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Hibernate ORM 5.3 Migration Guide: Second-level cache provider SPI changes'
@@ -477,10 +477,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Hibernate ORM 5.3 Migration Guide: Second-level cache provider SPI changes'
@@ -512,10 +512,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links: []
   message: "A change to be aware of is accessing cache entries via `NaturalIdCacheStatistics.getEntries()`.
@@ -537,10 +537,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links: []
   message: "A change to be aware of is accessing cache entries via `SecondLevelCacheStatistics.getEntries()`.
@@ -564,10 +564,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -595,10 +595,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links: []
   message: Define `hibernate.default_schema` or `hibernate.default_catalog` (whichever
@@ -626,10 +626,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links: []
   message: If the application uses Hibernate, please define `hibernate.default_schema`
@@ -657,10 +657,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM
@@ -683,10 +683,10 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
-  - target=hibernate5.3+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.3+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   links:
   - title: 'Red Hat JBoss EAP 7.2: Migrating from Hibernate ORM 5.1 to Hibernate ORM

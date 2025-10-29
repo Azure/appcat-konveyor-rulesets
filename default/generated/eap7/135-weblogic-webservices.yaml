@@ -4,9 +4,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - webservice
   - weblogic
   links:
@@ -29,9 +29,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - webservice
   - weblogic
   - client
@@ -54,9 +54,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - webservice
   - weblogic
   - security
@@ -87,9 +87,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - webservice
   - weblogic
   - context
@@ -115,9 +115,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - webservice
   - weblogic
   - context
@@ -134,9 +134,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - webservice
   - weblogic
   - client
@@ -168,9 +168,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - webservice
   - weblogic
   links:

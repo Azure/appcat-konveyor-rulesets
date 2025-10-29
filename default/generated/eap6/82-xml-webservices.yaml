@@ -2,8 +2,8 @@
   description: Apache Axis Service Group
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-01000
@@ -20,8 +20,8 @@
   description: Apache Axis Module
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-02000
@@ -38,8 +38,8 @@
   description: Apache Axis Configuration
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-03000
@@ -56,8 +56,8 @@
   description: XFire 1.x Configuration
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-04000
@@ -75,8 +75,8 @@
   description: JAX-WS Handler Chain
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-05000
@@ -97,8 +97,8 @@
   effort: 0
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-06000
@@ -127,8 +127,8 @@
   effort: 0
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-06001
@@ -155,8 +155,8 @@
   description: Apache CXF Bus Extension
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-07000
@@ -174,8 +174,8 @@
   description: WS-Policy
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-08000
@@ -193,8 +193,8 @@
   description: SOAP Envelope
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-09000
@@ -212,8 +212,8 @@
   description: WSDL Definition
   labels:
   - source=java-ee
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - webservice
   links: []
   ruleID: xml-webservices-10000

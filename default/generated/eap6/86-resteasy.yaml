@@ -5,8 +5,8 @@
   labels:
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap
+  - capability=eap6
+  - capability=eap
   - resteasy
   links:
   - title: How to implement JAX-RS RestEASY client and server caching in EAP 6?

@@ -8,10 +8,10 @@
   description: IBM MQ client API
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - jms
   - messaging
   - websphere
@@ -37,10 +37,10 @@
   effort: 3
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - jms
   - messaging
   - websphere
@@ -67,10 +67,10 @@
   effort: 3
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - jms
   - messaging
   - websphere

@@ -7,9 +7,9 @@
   effort: 1
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   links: []
   message: This is a reference to the IBM DB2 driver type (`com.ibm.db2.jcc.{{type}}`).
     It probably does not need to be migrated. However the IBM DB2 driver should be
@@ -31,9 +31,9 @@
   effort: 0
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - catchall
   links: []
   message: |-
@@ -66,9 +66,9 @@
   effort: 0
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - catchall
   links: []
   message: |-

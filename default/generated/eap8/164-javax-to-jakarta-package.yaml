@@ -6,14 +6,14 @@
   description: The package 'javax' has been replaced by 'jakarta'.
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - source=spring5
-  - target=spring6+
+  - capability=spring6+
   - konveyor.io/source
   links: []
   message: Replace the `javax.{{renamed}}` import statement with `jakarta.{{renamed}}`

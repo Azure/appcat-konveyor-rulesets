@@ -6,8 +6,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta Faces 4.0 specification
@@ -34,8 +34,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta Faces ManagedProperty api
@@ -62,8 +62,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta EE9 Faces ManagedBean api (Deprecated)
@@ -95,8 +95,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta Faces ViewScoped api
@@ -122,8 +122,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: jakarta.enterprise.context package javadoc
@@ -146,8 +146,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: jakarta.enterprise.context.spi.Context javadoc
@@ -170,8 +170,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: jakarta.enterprise.context.Dependent javadoc
@@ -194,8 +194,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: 'Faces 4.0: remove deprecated ResourceResolver'
@@ -220,8 +220,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta EE Faces 4.0 Facelets

@@ -4,10 +4,10 @@
     method has been removed
   effort: 1
   labels:
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: The incorrectly spelled `javax.el.MethodExpression.isParmetersProvided()`
@@ -23,10 +23,10 @@
     method has been removed
   effort: 1
   labels:
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: The incorrectly spelled `jakarta.el.MethodExpression.isParmetersProvided()`

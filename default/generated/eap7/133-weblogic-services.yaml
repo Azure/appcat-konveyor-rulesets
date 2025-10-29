@@ -4,9 +4,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - startup
   links:
@@ -27,9 +27,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - webservice
   links:
@@ -52,9 +52,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - logging
   links:

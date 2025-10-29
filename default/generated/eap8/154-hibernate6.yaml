@@ -4,12 +4,12 @@
     identifier generation has changed
   effort: 3
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -39,12 +39,12 @@
   description: Approaches for specifying Types to use which are string-based have been removed
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -67,12 +67,12 @@
   description: String-based approaches for specifying Types to use have been removed
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -112,12 +112,12 @@
   description: Basic mappings are no longer configurable through the BasicType contract
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -136,12 +136,12 @@
   description: StandardBasicTypes class now exposes fields of type BasicTypeReference
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -158,12 +158,12 @@
   description: Renaming of JavaTypeDescriptor contract
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -180,12 +180,12 @@
   description: Renaming of SqlTypeDescriptor contract
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -202,12 +202,12 @@
   description: The CompositeUserType interface has been reimplemented
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -224,12 +224,12 @@
   description: Property hibernate.hql.bulk_id_strategy has changed
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -248,12 +248,12 @@
   description: Stream#close() must be called explicitly to close the underlying resources
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -276,12 +276,12 @@
   description: The signature of the Interceptor#onSave method has been changed
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -300,12 +300,12 @@
   description: The contents of the loader.collection package have been restructured
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -323,12 +323,12 @@
   description: The contents of the loader.custom package have been moved
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -346,12 +346,12 @@
     removed
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -372,12 +372,12 @@
   description: The contents of sql.ordering have moved
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -398,12 +398,12 @@
     SQL were removed
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -462,12 +462,12 @@
   description: Support for basic property mappings with multiple columns was removed
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -494,12 +494,12 @@
   description: Legacy Hibernate Criteria API has been removed
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -519,12 +519,12 @@
   description: The Query#iterate() method has been removed
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -542,12 +542,12 @@
     supported
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -583,12 +583,12 @@
     supported
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -614,12 +614,12 @@
     with JMX environments
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -638,12 +638,12 @@
     with JACC environments
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -661,12 +661,12 @@
   description: Removed hibernate classloader properties
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -683,12 +683,12 @@
   description: Removed hibernate properties
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -706,12 +706,12 @@
   description: Renamed hibernate property hibernate.ejb.metamodel.population
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -729,12 +729,12 @@
   description: Renamed hibernate property hibernate.ejb.cfgfile
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -751,12 +751,12 @@
   description: Renamed hibernate property hibernate.ejb.xml_files
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -773,12 +773,12 @@
   description: Renamed hibernate property hibernate.hbmxml.files
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -795,12 +795,12 @@
   description: Renamed hibernate property hibernate.ejb.loaded.classes
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -818,12 +818,12 @@
   description: The hibernate property under 'hibernate.ejb' has been renamed.
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -840,12 +840,12 @@
   description: Renamed hibernate property hibernate.ejb.entitymanager_factory_name
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -863,12 +863,12 @@
   description: Community dialects moved to a separate module
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -892,12 +892,12 @@
   description: Multitenancy in Hibernate ORM has been simplified
   effort: 1
   labels:
-  - target=hibernate6+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:

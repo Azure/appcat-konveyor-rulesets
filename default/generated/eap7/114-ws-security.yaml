@@ -5,8 +5,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - ws-security
   - security
   links:
@@ -30,8 +30,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - ws-security
   - security
   links:
@@ -59,8 +59,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - ws-security
   - security
   links:

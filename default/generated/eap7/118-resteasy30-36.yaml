@@ -3,10 +3,10 @@
   description: RESTEasy 3.6 - Resource Method Algorithm Switch changes
   effort: 1
   labels:
-  - target=eap7
-  - target=eap
-  - target=resteasy3+
-  - target=resteasy
+  - capability=eap7
+  - capability=eap
+  - capability=resteasy3+
+  - capability=resteasy
   - konveyor.io/source
   - resteasy
   links:

@@ -6,8 +6,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta Enterprise Beans 4.0 specification
@@ -32,8 +32,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta Enterprise Beans 4.0 specification
@@ -54,8 +54,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta Enterprise Beans 4.0 specification

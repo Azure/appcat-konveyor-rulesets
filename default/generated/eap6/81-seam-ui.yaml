@@ -6,9 +6,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -36,9 +36,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -63,9 +63,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -95,9 +95,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -127,9 +127,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -157,9 +157,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -188,9 +188,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -218,9 +218,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -248,9 +248,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -282,9 +282,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -312,9 +312,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -342,9 +342,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -372,9 +372,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -402,9 +402,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -432,9 +432,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -462,9 +462,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -492,9 +492,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -522,9 +522,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -552,9 +552,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -582,9 +582,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -612,9 +612,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -645,9 +645,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -678,9 +678,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -711,9 +711,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -744,9 +744,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -781,9 +781,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -813,9 +813,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -845,9 +845,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -877,9 +877,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -909,9 +909,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -940,9 +940,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -971,9 +971,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -1003,9 +1003,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:

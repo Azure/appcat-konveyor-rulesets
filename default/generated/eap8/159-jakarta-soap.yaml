@@ -3,10 +3,10 @@
   description: javax.xml.soap.SOAPElementFactory.newInstance() must be replaced
   effort: 1
   labels:
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`javax.xml.soap.SOAPElementFactory.newInstance()` must be replaced with
@@ -21,10 +21,10 @@
   description: javax.xml.soap.SOAPElementFactory.create() must be replaced
   effort: 1
   labels:
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`javax.xml.soap.SOAPElementFactory.create()` must be replaced with `jakarta.xml.soap.SOAPFactory.createElement()`.

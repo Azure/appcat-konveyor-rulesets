@@ -4,9 +4,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - scheduler
   - ejb
@@ -32,9 +32,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   links:
   - title: Apache Commons Lang
@@ -51,9 +51,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   links: []
   message: Code using this package should be replaced with code using the org.apache.xml
@@ -72,9 +72,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - transactions
   links:
@@ -96,9 +96,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - transactions
   links: []
@@ -125,9 +125,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - transactions
   links: []
@@ -153,9 +153,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - transactions
   links: []
@@ -173,9 +173,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - transactions
   links: []
@@ -202,9 +202,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - jdbc
   links:
@@ -224,9 +224,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - jdbc
   links:
@@ -246,9 +246,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - logging
   links:
@@ -274,9 +274,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - jdbc
   links:
@@ -300,9 +300,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   links:
   - title: Replace WebLogic side-by-side production redeployment in EAP 6
@@ -323,9 +323,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   links:
   - title: Replace WebLogic Oracle Wallets When Migrating to EAP 6
@@ -345,9 +345,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - configuration
   links:
@@ -370,9 +370,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - weblogic
   - configuration
   links:

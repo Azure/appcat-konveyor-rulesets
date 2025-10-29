@@ -4,12 +4,12 @@
     Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta EE XML Schemas
@@ -27,12 +27,12 @@
     with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta Persistence XML Schemas
@@ -50,12 +50,12 @@
     and version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta Bean Validation XML Schemas
@@ -72,12 +72,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -94,12 +94,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -115,12 +115,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -137,12 +137,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -159,12 +159,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -181,12 +181,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -203,12 +203,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -225,12 +225,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -247,12 +247,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -269,12 +269,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -291,12 +291,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -313,12 +313,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -335,12 +335,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -357,12 +357,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -379,12 +379,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -401,12 +401,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -423,12 +423,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -445,12 +445,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -467,12 +467,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -489,12 +489,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -511,12 +511,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -533,12 +533,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -554,12 +554,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -575,12 +575,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -597,12 +597,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -619,12 +619,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -641,12 +641,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -663,12 +663,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -685,12 +685,12 @@
   description: Replace the Java EE XSD with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Jakarta XML Schemas
@@ -707,12 +707,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: In the root tag, replace the `version` attribute value `2.1` with `3.0`
@@ -734,12 +734,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: In the root tag, replace the `version` attribute value `7` with `9`
@@ -761,12 +761,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`beans_1_1.xsd`: In the root tag, replace the `version` attribute value
@@ -789,12 +789,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`beans_2_0.xsd`: In the root tag, replace the `version` attribute value
@@ -817,12 +817,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`application_7.xsd`: In the root tag, replace the `version` attribute
@@ -845,12 +845,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`application_8.xsd`: In the root tag, replace the `version` attribute
@@ -873,12 +873,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`application-client_7.xsd`: In the root tag, replace the `version` attribute
@@ -901,12 +901,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`application-client_8.xsd`: In the root tag, replace the `version` attribute
@@ -929,12 +929,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`connector_1_7.xsd`: In the root tag, replace the `version` attribute
@@ -957,12 +957,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`ejb-jar_3_2.xsd`: In the root tag, replace the `version` attribute value
@@ -985,12 +985,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`javaee_web_services_1_4.xsd`: In the root tag, replace the `version`
@@ -1013,12 +1013,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`web-app_3_1`: In the root tag, replace the `version` attribute value
@@ -1041,12 +1041,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`web-app_4_0`: In the root tag, replace the `version` attribute value
@@ -1069,12 +1069,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`web-fragment_3_1`: In the root tag, replace the `version` attribute value
@@ -1097,12 +1097,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`web-fragment_4_0`: In the root tag, replace the `version` attribute value
@@ -1125,12 +1125,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`web-facesconfig_2_2`: In the root tag, replace the `version` attribute
@@ -1153,12 +1153,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`web-facesconfig_2_3`: In the root tag, replace the `version` attribute
@@ -1181,12 +1181,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`web-facelettaglibrary_2_2`: In the root tag, replace the `version` attribute
@@ -1209,12 +1209,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`web-facelettaglibrary_2_3`: In the root tag, replace the `version` attribute
@@ -1237,12 +1237,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`web-jsptaglibrary_2_1`: In the root tag, replace the `version` attribute
@@ -1265,12 +1265,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`validation-mapping-2.0`: In the root tag, replace the `version` attribute
@@ -1293,12 +1293,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`validation-configuration-2.0`: In the root tag, replace the `version`
@@ -1321,12 +1321,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`orm_2_1`: In the root tag, replace the `version` attribute value with
@@ -1349,12 +1349,12 @@
   description: Replace the Java EE version with the Jakarta equivalent
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links: []
   message: '`orm_2_2`: In the root tag, replace the `version` attribute value with

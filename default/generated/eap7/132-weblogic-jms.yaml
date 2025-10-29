@@ -2,9 +2,9 @@
   description: Oracle JMS
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - jms
   - weblogic
   links:
@@ -27,9 +27,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - jms
   - weblogic
   links:
@@ -51,9 +51,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - jms
   - weblogic
   links:
@@ -74,9 +74,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - jms
   - weblogic
   links:
@@ -98,9 +98,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - jms
   - weblogic
   links:
@@ -121,9 +121,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - jms
   - weblogic
   links:
@@ -148,9 +148,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - jms
   - weblogic
   links:
@@ -173,9 +173,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - jms
   - weblogic
   links:
@@ -201,9 +201,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - jms
   - weblogic
   links:

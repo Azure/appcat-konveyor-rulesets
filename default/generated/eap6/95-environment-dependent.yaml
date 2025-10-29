@@ -3,11 +3,11 @@
   description: Dynamic class instantiation
   effort: 0
   labels:
-  - target=eap6
-  - target=eap7
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - konveyor.io/source
   - classloader
   links:
@@ -31,11 +31,11 @@
   description: Call of JNDI lookup
   effort: 1
   labels:
-  - target=eap6
-  - target=eap7
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - konveyor.io/source
   - jndi
   links: []
@@ -65,11 +65,11 @@
   description: Proprietary InitialContext initialization
   effort: 1
   labels:
-  - target=eap6
-  - target=eap7
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - konveyor.io/source
   - jndi
   links: []
@@ -89,11 +89,11 @@
 - customVariables: []
   description: JNDI properties file
   labels:
-  - target=eap6
-  - target=eap7
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - konveyor.io/source
   links: []
   message: "\n                          \n                          The JNDI automatically
@@ -118,11 +118,11 @@
   description: JMX MBean object names may change after migration
   effort: 1
   labels:
-  - target=eap6
-  - target=eap7
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - konveyor.io/source
   - jmx
   links: []
@@ -143,11 +143,11 @@
   description: JMX API connector server address under 'javax.management' may not be present after migration
   effort: 1
   labels:
-  - target=eap6
-  - target=eap7
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - konveyor.io/source
   - jmx
   links: []
@@ -165,11 +165,11 @@
   description: JMX connection factory parameters
   effort: 1
   labels:
-  - target=eap6
-  - target=eap7
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - konveyor.io/source
   - jmx
   links: []

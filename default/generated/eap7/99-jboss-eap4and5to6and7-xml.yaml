@@ -6,9 +6,9 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   links:
   - title: JBoss EAP 6 - Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Service-style_Deployment_Changes
@@ -38,9 +38,9 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   links:
   - title: 'BarrierController service in JBoss EAP 6 '
     url: https://access.redhat.com/solutions/410953
@@ -70,9 +70,9 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   links:
   - title: How to compress remote EJB communication in JBoss EAP 6
     url: https://access.redhat.com/solutions/322953
@@ -101,9 +101,9 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   links:
   - title: Configure UsersRolesLoginModule for EAP 6 management console
     url: https://access.redhat.com/solutions/219933
@@ -124,9 +124,9 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   links:
   - title: JBoss EAP 6 - Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Configuration_File_Changes
@@ -161,9 +161,9 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   links: []
   message: "JBoss EAP 6 supports deploying SAR files, however JBoss EAP 5 and 6 do
     not share a lot of the internals. \n The class your `jboss-{{types}}.xml` file
@@ -184,9 +184,9 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   links:
   - title: JBoss EAP 5 - Custom Callback Handlers
     url: https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/5/html-single/security_guide/#Custom_Callback_Handlers

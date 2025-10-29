@@ -3,12 +3,12 @@
   description: EntityPersister#multiload method has changed
   effort: 1
   labels:
-  - target=hibernate6.2+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6.2+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -28,12 +28,12 @@
   description: Executable#afterDeserialize method has changed
   effort: 1
   labels:
-  - target=hibernate6.2+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6.2+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -53,12 +53,12 @@
   description: JdbcType#getJdbcRecommendedJavaTypeMapping() method has changed
   effort: 1
   labels:
-  - target=hibernate6.2+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6.2+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -79,12 +79,12 @@
   description: Classes within the 'org.hibernate.cfg' package have been moved
   effort: 1
   labels:
-  - target=hibernate6.2+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6.2+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:
@@ -104,12 +104,12 @@
   description: Classes within the 'org.hibernate.loader' package have been moved
   effort: 1
   labels:
-  - target=hibernate6.2+
-  - target=hibernate
-  - target=eap8+
-  - target=eap
-  - target=quarkus3+
-  - target=quarkus
+  - capability=hibernate6.2+
+  - capability=hibernate
+  - capability=eap8+
+  - capability=eap
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   links:

@@ -4,7 +4,7 @@ labels:
   - source=eap6
   - source=eap7
   - source=eap8
-  - target=eap81
+  - capability=eap81
   - source=eapxp5
-  - target=eapxp6
+  - capability=eapxp6
 

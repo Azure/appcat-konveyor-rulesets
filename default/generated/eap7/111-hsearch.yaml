@@ -5,10 +5,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links: []
@@ -30,10 +30,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -54,10 +54,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -78,10 +78,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -102,10 +102,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -127,10 +127,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -152,10 +152,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -176,10 +176,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -200,10 +200,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -224,10 +224,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -250,10 +250,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -277,10 +277,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -301,10 +301,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -329,10 +329,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -356,10 +356,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -380,10 +380,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -407,10 +407,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -436,10 +436,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - annotation
@@ -463,10 +463,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -489,10 +489,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -522,10 +522,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -559,10 +559,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -588,10 +588,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -617,10 +617,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -646,10 +646,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -680,10 +680,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -714,10 +714,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -792,10 +792,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -825,10 +825,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -862,10 +862,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -895,10 +895,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links: []
@@ -919,10 +919,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - maven
@@ -948,10 +948,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -986,10 +986,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1013,10 +1013,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1040,10 +1040,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1066,10 +1066,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1092,10 +1092,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1118,10 +1118,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1145,10 +1145,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1170,10 +1170,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1196,10 +1196,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1223,10 +1223,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1250,10 +1250,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:
@@ -1279,10 +1279,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1309,10 +1309,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1339,10 +1339,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1372,10 +1372,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1402,10 +1402,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1435,10 +1435,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1465,10 +1465,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1498,10 +1498,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1531,10 +1531,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1561,10 +1561,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1591,10 +1591,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1624,10 +1624,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1654,10 +1654,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1687,10 +1687,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1720,10 +1720,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1753,10 +1753,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1782,10 +1782,10 @@
   - source=hibernate-search
   - source=eap6
   - source=eap
-  - target=hibernate-search5+
-  - target=hibernate-search
-  - target=eap7
-  - target=eap
+  - capability=hibernate-search5+
+  - capability=hibernate-search
+  - capability=eap7
+  - capability=eap
   - hibernate-search
   - hibernate
   links:

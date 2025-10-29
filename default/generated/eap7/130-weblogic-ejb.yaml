@@ -7,8 +7,8 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - ejb
   - weblogic
   links: []
@@ -25,8 +25,8 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - ejb
   - weblogic
   links:
@@ -51,8 +51,8 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - ejb
   - weblogic
   links:
@@ -76,8 +76,8 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - ejb
   - weblogic
   links:

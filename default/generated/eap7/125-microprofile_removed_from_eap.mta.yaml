@@ -3,8 +3,8 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile Config
   effort: 1
   labels:
-  - target=eap7
-  - target=eap
+  - capability=eap7
+  - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
   links:
@@ -24,8 +24,8 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile Health
   effort: 1
   labels:
-  - target=eap7
-  - target=eap
+  - capability=eap7
+  - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
   links:
@@ -45,8 +45,8 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile Metrics
   effort: 1
   labels:
-  - target=eap7
-  - target=eap
+  - capability=eap7
+  - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
   links:
@@ -66,8 +66,8 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile REST Client
   effort: 1
   labels:
-  - target=eap7
-  - target=eap
+  - capability=eap7
+  - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
   links:
@@ -87,8 +87,8 @@
   description: Eclipse MicroProfile removed from JBoss EAP - MicroProfile Opentracing
   effort: 1
   labels:
-  - target=eap7
-  - target=eap
+  - capability=eap7
+  - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
   links:

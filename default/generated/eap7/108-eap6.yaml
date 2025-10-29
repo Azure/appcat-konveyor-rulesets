@@ -5,8 +5,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - jndi
   - configuration
   - ejb
@@ -43,8 +43,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - jndi
   - configuration
   - ejb
@@ -85,8 +85,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - jndi
   - configuration
   - ejb
@@ -121,8 +121,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - jsf
   links:
   - title: Compatibility Issue Between JSF 2.1 and JSF 2.2
@@ -148,8 +148,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - certificate
   - https
   links:

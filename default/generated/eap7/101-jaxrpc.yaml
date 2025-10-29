@@ -4,8 +4,8 @@
   effort: 5
   labels:
   - source=java-ee
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - jax-rpc
   - soap
   links:

@@ -5,8 +5,8 @@
   labels:
   - source=eap7.1-
   - source=eap
-  - target=eap7
-  - target=eap
+  - capability=eap7
+  - capability=eap
   - picketlink
   links:
   - title: JBoss EAP 7.2 Migration Guide

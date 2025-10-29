@@ -3,8 +3,8 @@
   description: JAX-WS 2.2 Requirements for WebServiceRef
   effort: 1
   labels:
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - konveyor.io/source
   - jax-ws
   links: []

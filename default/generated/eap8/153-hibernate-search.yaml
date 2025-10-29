@@ -3,12 +3,12 @@
   description: Constants for Hibernate Search configuration property keys have changed
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -29,12 +29,12 @@
   description: Property hibernate.search.analyzer not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -55,12 +55,12 @@
   description: Property hibernate.search.autoregister_listeners not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -79,12 +79,12 @@
   description: Property hibernate.search.batch_size not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -109,12 +109,12 @@
     Search 6.
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -134,12 +134,12 @@
   description: Property hibernate.search.batch_size not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -159,12 +159,12 @@
     not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -184,12 +184,12 @@
     available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -209,12 +209,12 @@
     not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -234,12 +234,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -260,12 +260,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -285,12 +285,12 @@
     not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -311,12 +311,12 @@
     not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -337,12 +337,12 @@
     not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -362,12 +362,12 @@
     not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -387,12 +387,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -412,12 +412,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -437,12 +437,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -462,12 +462,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -488,12 +488,12 @@
     available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -513,12 +513,12 @@
     available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -539,12 +539,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -563,12 +563,12 @@
   description: Property hibernate.search.*.exclusive_index_use not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -587,12 +587,12 @@
   description: Property hibernate.search.*.directory_provider not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -612,12 +612,12 @@
   description: Property hibernate.search.*.indexBase not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -637,12 +637,12 @@
   description: Property hibernate.search.*.indexName not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -662,12 +662,12 @@
   description: Property hibernate.search.*.index_flush_interval not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -687,12 +687,12 @@
   description: Property hibernate.search.*.index_metadata_complete not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -711,12 +711,12 @@
   description: Property hibernate.search.*.indexmanager not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -736,12 +736,12 @@
   description: Property hibernate.search.*.indexwriter not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -761,12 +761,12 @@
   description: Property hibernate.search.*.locking_strategy not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -788,12 +788,12 @@
   description: Property hibernate.search.*.max_queue_length not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -813,12 +813,12 @@
   description: Property hibernate.search.default_null_token not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -840,12 +840,12 @@
   description: Property hibernate.search.*.reader not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -867,12 +867,12 @@
   description: Property hibernate.search.*.retry_marker_lookup not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -893,12 +893,12 @@
   description: Property hibernate.search.*.sharding_strategy not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -919,12 +919,12 @@
   description: Property hibernate.search.*.similarity not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -945,12 +945,12 @@
   description: Property hibernate.search.*.worker.backend not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -971,12 +971,12 @@
   description: Property hibernate.search.*.worker.execution not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -998,12 +998,12 @@
   description: Property hibernate.search.*.worker not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1025,12 +1025,12 @@
     not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1052,12 +1052,12 @@
     available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1077,12 +1077,12 @@
     not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1104,12 +1104,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1133,12 +1133,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1157,12 +1157,12 @@
   description: Property hibernate.search.enable_dirty_check not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1181,12 +1181,12 @@
   description: Property hibernate.search.error_handler not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1209,12 +1209,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1239,12 +1239,12 @@
   description: Property hibernate.search.filter.cache_strategy not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1269,12 +1269,12 @@
   description: Property hibernate.search.generate_statistics not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1295,12 +1295,12 @@
   description: Property hibernate.search.index_uninverting_allowed not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1322,12 +1322,12 @@
   description: Property hibernate.search.indexing_strategy not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1348,12 +1348,12 @@
   description: Property hibernate.search.jmx_bean_suffix not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1373,12 +1373,12 @@
   description: Property hibernate.search.jmx_enabled not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1398,12 +1398,12 @@
   description: Property hibernate.search.error_handler not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1425,12 +1425,12 @@
   description: Property hibernate.search.lucene_version not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1449,12 +1449,12 @@
   description: Property hibernate.search.model_mapping not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1477,12 +1477,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1502,12 +1502,12 @@
     anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1528,12 +1528,12 @@
   description: Property hibernate.search.similarity not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1556,12 +1556,12 @@
   description: Property hibernate.search.worker.* not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1586,12 +1586,12 @@
   description: Annotation @Analyzer not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1613,12 +1613,12 @@
   description: Annotation @AnalyzerDef(s) not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1644,12 +1644,12 @@
   description: Annotation @AnalyzerDiscriminator not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1670,12 +1670,12 @@
   description: Annotation @Boost not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1695,12 +1695,12 @@
   description: Annotation @CacheFromIndex not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1717,12 +1717,12 @@
   description: Annotation @CalendarBridge not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1742,12 +1742,12 @@
   description: Annotation @CharFilterDef not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1766,12 +1766,12 @@
   description: Annotation @ClassBridge(s) not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1794,12 +1794,12 @@
   description: Annotation @ContainedIn not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1821,12 +1821,12 @@
   description: Annotation @DateBridge not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1846,12 +1846,12 @@
   description: Annotation @DocumentId has moved
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1871,12 +1871,12 @@
   description: Annotation @DynamicBoost not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1896,12 +1896,12 @@
   description: Facets have changed
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1924,12 +1924,12 @@
   description: The @Field(s) annotation has been split into multiple annotations
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1952,12 +1952,12 @@
   description: Annotation @FieldBridge not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -1976,12 +1976,12 @@
   description: The @FullTextFilterDef(s) annotation is not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2004,12 +2004,12 @@
   description: Annotation @Indexed has moved
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2029,12 +2029,12 @@
   description: Annotation @IndexedEmbedded has moved
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2054,12 +2054,12 @@
   description: The @Key annotation is not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2077,12 +2077,12 @@
   description: Annotation @Latitude has moved
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2101,12 +2101,12 @@
   description: Annotation @Longitude has moved
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2125,12 +2125,12 @@
   description: Annotation @Longitude has moved
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2150,12 +2150,12 @@
   description: Annotation @NormalizerDef(s) not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2181,12 +2181,12 @@
   description: Annotation @NumericField(s) not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2208,12 +2208,12 @@
   description: Annotation @ProvidedId is no longer available
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2230,12 +2230,12 @@
   description: Annotation @SortableField(s) not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2258,12 +2258,12 @@
   description: Annotation @Spatial(s) not available anymore
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2287,12 +2287,12 @@
   description: Annotation @TikaBridge is no longer available
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2310,12 +2310,12 @@
   description: Annotation @AnalyzerDef(s) not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2341,12 +2341,12 @@
   description: FullTextEntityManager and FullTextSession removed
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2368,12 +2368,12 @@
   description: Full text queries now done via SDL - FullTextQueries have changed
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2396,12 +2396,12 @@
     predicates
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2420,12 +2420,12 @@
     sorts
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2447,12 +2447,12 @@
   description: ProjectionConstants no longer available
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2474,12 +2474,12 @@
   description: Full text queries now done via SDL - Facets now called aggregations
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2502,12 +2502,12 @@
   description: ErrorHandler API no longer available
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2531,12 +2531,12 @@
   description: The @Factory annotation is not available anymore
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2556,12 +2556,12 @@
   description: org.hibernate.search.exception.SearchException has been moved
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2578,12 +2578,12 @@
   description: Sharding has changed in Hibernate Search 6
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2607,12 +2607,12 @@
   description: SearchFactory is no longer available
   effort: 3
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2631,12 +2631,12 @@
   description: MassIndexer has moved
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2655,12 +2655,12 @@
   description: MassIndexer has moved
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8
@@ -2679,12 +2679,12 @@
   description: Dependency must be migrated from Hibernate Search 5 to 6
   effort: 1
   labels:
-  - target=eap8+
-  - target=eap
-  - target=hibernate6+
-  - target=hibernate
-  - target=quarkus3+
-  - target=quarkus
+  - capability=eap8+
+  - capability=eap
+  - capability=hibernate6+
+  - capability=hibernate
+  - capability=quarkus3+
+  - capability=quarkus
   - konveyor.io/source
   - hibernate
   - eap8

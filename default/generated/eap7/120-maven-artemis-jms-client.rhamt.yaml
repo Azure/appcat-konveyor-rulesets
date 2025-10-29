@@ -3,8 +3,8 @@
   description: Artemis JMS Client requires wildfly-client-properties
   effort: 1
   labels:
-  - target=eap7
-  - target=eap
+  - capability=eap7
+  - capability=eap
   - konveyor.io/source
   - jms
   - JMS

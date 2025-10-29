@@ -6,10 +6,10 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - JakartaEE
   - eap8
   links: []

@@ -3,8 +3,8 @@
   description: Deprecated HA Singleton API
   effort: 1
   labels:
-  - target=eap7
-  - target=eap
+  - capability=eap7
+  - capability=eap
   - konveyor.io/source
   links:
   - title: 'Red Hat JBoss EAP 7.3: HA Singleton Service'

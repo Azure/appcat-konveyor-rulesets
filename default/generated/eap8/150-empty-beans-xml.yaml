@@ -7,8 +7,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - JakartaEE
   links:
   - title: Jakarta Contexts and Dependency Injection Bean Discovery

@@ -8,10 +8,10 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - target=eap7+
-  - target=eap
-  - target=resteasy3+
-  - target=resteasy
+  - capability=eap7+
+  - capability=eap
+  - capability=resteasy3+
+  - capability=resteasy
   - resteasy
   links:
   - title: RESTEasy SPI Application Changes

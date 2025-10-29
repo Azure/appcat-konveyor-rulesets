@@ -7,10 +7,10 @@
   - source=hibernate
   - source=eap6
   - source=eap
-  - target=hibernate5+
-  - target=hibernate
-  - target=eap7+
-  - target=eap
+  - capability=hibernate5+
+  - capability=hibernate
+  - capability=eap7+
+  - capability=eap
   - hibernate
   - configuration
   - transaction
@@ -43,10 +43,10 @@
   - source=hibernate
   - source=eap6
   - source=eap
-  - target=hibernate5+
-  - target=hibernate
-  - target=eap7+
-  - target=eap
+  - capability=hibernate5+
+  - capability=hibernate
+  - capability=eap7+
+  - capability=eap
   - hibernate
   - configuration
   links:
@@ -67,10 +67,10 @@
   - source=hibernate
   - source=eap6
   - source=eap
-  - target=hibernate5+
-  - target=hibernate
-  - target=eap7+
-  - target=eap
+  - capability=hibernate5+
+  - capability=hibernate
+  - capability=eap7+
+  - capability=eap
   - hibernate
   - configuration
   links:
@@ -99,10 +99,10 @@
   - source=hibernate
   - source=eap6
   - source=eap
-  - target=hibernate5+
-  - target=hibernate
-  - target=eap7+
-  - target=eap
+  - capability=hibernate5+
+  - capability=hibernate
+  - capability=eap7+
+  - capability=eap
   - hibernate
   - configuration
   links: []
@@ -131,10 +131,10 @@
   - source=hibernate
   - source=eap6
   - source=eap
-  - target=hibernate5+
-  - target=hibernate
-  - target=eap7+
-  - target=eap
+  - capability=hibernate5+
+  - capability=hibernate
+  - capability=eap7+
+  - capability=eap
   - hibernate
   - configuration
   links: []

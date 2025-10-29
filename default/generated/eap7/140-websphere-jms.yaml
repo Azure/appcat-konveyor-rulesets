@@ -8,10 +8,10 @@
   description: IBM JMS Client
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - jms
   - websphere
   links:
@@ -49,10 +49,10 @@
   effort: 1
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - jms
   - websphere
   links:
@@ -77,10 +77,10 @@
   effort: 1
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - jms
   - websphere
   links:
@@ -99,10 +99,10 @@
   effort: 1
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - jms
   - websphere
   links:
@@ -130,10 +130,10 @@
   effort: 1
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - jms
   - websphere
   links: []
@@ -159,10 +159,10 @@
   effort: 1
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - jms
   - websphere
   links: []

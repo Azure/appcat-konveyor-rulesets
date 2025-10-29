@@ -3,8 +3,8 @@
   description: 'JTA: JOTM usage'
   effort: 5
   labels:
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - konveyor.io/source
   - transactions
   - jta

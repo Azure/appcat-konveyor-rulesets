@@ -6,8 +6,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   links: []
   message: In order to add support for EAP native OpenID Connect, the `auth-method`
     must be updated to `OIDC`.
@@ -26,8 +26,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   links: []
   message: In order to add support for EAP native OpenID Connect, the `WEB-INF/keycloak.json`
     file must be renamed to `WEB-INF/oidc.json`.

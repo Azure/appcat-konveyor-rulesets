@@ -7,9 +7,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   links:
   - title: Migration from Seam 2 to Java EE and Alternatives
@@ -62,9 +62,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -87,9 +87,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -115,9 +115,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -145,9 +145,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -174,9 +174,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -199,9 +199,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -225,9 +225,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -259,9 +259,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -294,9 +294,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   links:
   - title: Java EE 7 - Startup annotation
@@ -323,9 +323,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - javaee
   links:
@@ -350,9 +350,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - javaee
   links:
@@ -377,9 +377,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   - conversation
@@ -403,9 +403,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -434,9 +434,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   links: []
   message: Refactor to have annotated error handler which redirect to a viewID page
@@ -457,9 +457,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -491,9 +491,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - javaee
   links:
@@ -516,9 +516,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - javaee
   - servlet
@@ -543,9 +543,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   links:
   - title: JBoss EAP 6 - Contexts, Scopes, and Dependencies
@@ -564,9 +564,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   links:
   - title: JBoss BPM Suite 6 - CDI integration
@@ -594,9 +594,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -618,9 +618,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -643,9 +643,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -668,9 +668,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -699,9 +699,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -735,9 +735,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - jsf
   links:
@@ -763,9 +763,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - cdi
   links:
@@ -800,9 +800,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - javaee
   links:
@@ -829,9 +829,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - javaee
   links:
@@ -854,9 +854,9 @@
   - source=eap
   - source=seam2
   - source=seam
-  - target=eap6
-  - target=eap7
-  - target=eap
+  - capability=eap6
+  - capability=eap7
+  - capability=eap
   - seam
   - javaee
   links:

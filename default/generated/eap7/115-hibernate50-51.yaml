@@ -7,10 +7,10 @@
   - source=hibernate
   - source=eap7.0-
   - source=eap
-  - target=hibernate5.1+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.1+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   - Hibernate
   links:
@@ -34,10 +34,10 @@
   - source=hibernate
   - source=eap7.0-
   - source=eap
-  - target=hibernate5.1+
-  - target=hibernate
-  - target=eap7
-  - target=eap
+  - capability=hibernate5.1+
+  - capability=hibernate
+  - capability=eap7
+  - capability=eap
   - hibernate
   - Hibernate
   links:

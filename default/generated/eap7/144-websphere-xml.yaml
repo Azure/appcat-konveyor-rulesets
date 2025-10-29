@@ -2,9 +2,9 @@
   description: IBM Process Server Rules 6.0
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - websphere
   - configuration
   links: []
@@ -27,9 +27,9 @@
   effort: 0
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - websphere
   - configuration
   links:
@@ -56,9 +56,9 @@
   effort: 1
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - websphere
   - configuration
   links: []
@@ -88,9 +88,9 @@
   effort: 3
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - websphere
   - configuration
   links:
@@ -120,9 +120,9 @@
   description: WebSphere web service client extension descriptor (ibm-webservicesclient-ext)
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - websphere
   - configuration
   links:
@@ -144,9 +144,9 @@
   description: WebSphere web service client binding descriptor (ibm-webservicesclient-bnd)
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - websphere
   - configuration
   links:
@@ -166,9 +166,9 @@
   description: WebSphere deployment descriptor (deployment.xml)
   labels:
   - source=websphere
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - websphere
   - configuration
   links:

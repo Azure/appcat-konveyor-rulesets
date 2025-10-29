@@ -4,9 +4,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - web-app
   - weblogic
   - file-system
@@ -28,9 +28,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - web-app
   - weblogic
   - servlet
@@ -52,9 +52,9 @@
   effort: 1
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - web-app
   - weblogic
   - servlet
@@ -76,9 +76,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - web-app
   - weblogic
   - servlet
@@ -100,9 +100,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - web-app
   - weblogic
   - lifecycle
@@ -135,9 +135,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - web-app
   - weblogic
   - lifecycle
@@ -168,9 +168,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - web-app
   - weblogic
   - security
@@ -188,9 +188,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - web-app
   - weblogic
   - security
@@ -210,9 +210,9 @@
   effort: 3
   labels:
   - source=weblogic
-  - target=eap7
-  - target=eap8
-  - target=eap
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
   - web-app
   - weblogic
   - security

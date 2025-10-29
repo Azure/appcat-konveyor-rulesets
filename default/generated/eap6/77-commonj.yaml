@@ -3,10 +3,17 @@
   labels:
   - source=weblogic
   - source=websphere
-  - target=eap6+
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - commonj
   links:
   - title: Replacement for JSR-236 (Timer Manager) and JSR-237 (Work Manager) in JBoss
@@ -27,10 +34,17 @@
   labels:
   - source=weblogic
   - source=websphere
-  - target=eap6+
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - commonj
   links:
   - title: Java EE 6 Tutorial - Using the Timer Service
@@ -51,10 +65,17 @@
   labels:
   - source=weblogic
   - source=websphere
-  - target=eap6+
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - commonj
   links: []
   message: Commonj Timer Interface is similar to the EJB 3.1 javax.ejb.Timer Interface.
@@ -67,10 +88,17 @@
   labels:
   - source=weblogic
   - source=websphere
-  - target=eap6+
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - commonj
   links:
   - title: Replacement for JSR-236 (Timer Manager) and JSR-237 (Work Manager) in JBoss
@@ -95,10 +123,17 @@
   labels:
   - source=weblogic
   - source=websphere
-  - target=eap6+
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - commonj
   links:
   - title: Ironjacamar WorkManager SPI
@@ -118,10 +153,17 @@
   labels:
   - source=weblogic
   - source=websphere
-  - target=eap6+
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - commonj
   links: []
   message: Replace commonj.work.Work{{part}} with javax.resource.spi.work.Work{{part}}.
@@ -139,10 +181,17 @@
   labels:
   - source=weblogic
   - source=websphere
-  - target=eap6+
-  - target=eap
-  - target=java-ee6+
-  - target=java-ee
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - commonj
   links: []
   message: Replace CommonJ Work related Exception with a javax.resource.spi.work.Work{{subpart}}Exception

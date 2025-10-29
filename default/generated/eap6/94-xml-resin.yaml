@@ -2,8 +2,8 @@
   description: Resin Web Application Descriptor
   labels:
   - source=resin
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - web-app
   - resin
   - configuration

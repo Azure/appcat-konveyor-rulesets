@@ -2,8 +2,8 @@
   description: Oracle Application Platform EJB Descriptor
   labels:
   - source=orion
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - web-app
   - orion
   - configuration
@@ -24,8 +24,8 @@
   description: Oracle Application Platform Web Descriptor
   labels:
   - source=orion
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - web-app
   - orion
   - configuration
@@ -50,8 +50,8 @@
   description: Oracle Application EAR configuration file
   labels:
   - source=orion
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - web-app
   - orion
   - configuration

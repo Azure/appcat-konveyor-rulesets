@@ -5,8 +5,8 @@
   labels:
   - source=eap7.1-
   - source=eap
-  - target=eap7.1+
-  - target=eap
+  - capability=eap7.1+
+  - capability=eap
   - eap7
   links:
   - title: Migrate a Naming Client Configuration to Elytron
@@ -26,8 +26,8 @@
   labels:
   - source=eap7.1-
   - source=eap
-  - target=eap7.1+
-  - target=eap
+  - capability=eap7.1+
+  - capability=eap
   - eap7
   links:
   - title: Migrate an EJB Client to Elytron

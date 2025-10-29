@@ -3,8 +3,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - configuration
   links:
   - title: JMS migration documentation
@@ -34,8 +34,8 @@
   labels:
   - source=eap6
   - source=eap
-  - target=eap7+
-  - target=eap
+  - capability=eap7+
+  - capability=eap
   - configuration
   links: []
   message: Verify in advance that all the modules this application depends on still

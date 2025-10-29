@@ -6,8 +6,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -35,8 +35,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: |-
@@ -55,8 +55,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -80,8 +80,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -112,8 +112,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links: []
   message: |-
@@ -133,8 +133,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -162,8 +162,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -187,8 +187,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification
@@ -212,8 +212,8 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
   - eap8
   links:
   - title: Jakarta XML Binding 4.0 specification

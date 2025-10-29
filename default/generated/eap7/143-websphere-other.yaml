@@ -4,10 +4,10 @@
   effort: 5
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - websphere
   - asynchronous
   links:
@@ -32,10 +32,10 @@
   effort: 4
   labels:
   - source=websphere
-  - target=eap7+
-  - target=eap
-  - target=java-ee7+
-  - target=java-ee
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
   - websphere
   - startup
   links:

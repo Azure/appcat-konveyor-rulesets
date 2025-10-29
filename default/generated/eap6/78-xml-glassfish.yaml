@@ -2,8 +2,8 @@
   description: Glassfish Web Descriptor
   labels:
   - source=glassfish
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - web-app
   - glassfish
   - configuration
@@ -20,8 +20,8 @@
   description: Glassfish EJB Descriptor
   labels:
   - source=glassfish
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - web-app
   - glassfish
   - configuration
@@ -39,8 +39,8 @@
   description: Glassfish Application EAR configuration file
   labels:
   - source=glassfish
-  - target=eap6+
-  - target=eap
+  - capability=eap6+
+  - capability=eap
   - web-app
   - glassfish
   - configuration

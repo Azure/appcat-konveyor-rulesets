@@ -3,14 +3,14 @@
   description: The javax.servlet.SingleThreadModel interface has been removed
   effort: 3
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - source=spring5
-  - target=spring6+
+  - capability=spring6+
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -33,12 +33,12 @@
     method in HttpSession have been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -62,12 +62,12 @@
   description: The javax.servlet.http.HttpUtils utility class has been removed
   effort: 3
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -87,12 +87,12 @@
   description: Method getServlet in javax.servlet.ServletContext method has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -109,12 +109,12 @@
   description: Method getServlets in javax.servlet.ServletContext has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -131,12 +131,12 @@
   description: Method getServletNames in javax.servlet.ServletContext has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -154,12 +154,12 @@
     removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -177,12 +177,12 @@
   description: Method in javax.servlet.ServletRequest has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -200,12 +200,12 @@
   description: Method in javax.servlet.ServletRequestWrapper has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -223,12 +223,12 @@
   description: Method getServlet in javax.servlet.UnavailableException has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -246,12 +246,12 @@
     has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -271,12 +271,12 @@
     has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -295,12 +295,12 @@
     has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -319,12 +319,12 @@
     has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -343,12 +343,12 @@
     removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -367,12 +367,12 @@
     has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -391,12 +391,12 @@
     has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -415,12 +415,12 @@
     been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -439,12 +439,12 @@
     has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -463,12 +463,12 @@
     has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -486,12 +486,12 @@
   description: Method getValue in javax.servlet.http.HttpSession has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -509,12 +509,12 @@
   description: Method getValueNames in javax.servlet.http.HttpSession has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -532,12 +532,12 @@
   description: Method putValue in javax.servlet.http.HttpSession has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -555,12 +555,12 @@
   description: Method removeValue in javax.servlet.http.HttpSession has been removed
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
@@ -578,12 +578,12 @@
   description: web.xml element references a javax-prefixed class name
   effort: 1
   labels:
-  - target=jakarta-ee9+
-  - target=jakarta-ee
-  - target=eap8
-  - target=eap
-  - target=jws6+
-  - target=jws
+  - capability=jakarta-ee9+
+  - capability=jakarta-ee
+  - capability=eap8
+  - capability=eap
+  - capability=jws6+
+  - capability=jws
   - konveyor.io/source
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
