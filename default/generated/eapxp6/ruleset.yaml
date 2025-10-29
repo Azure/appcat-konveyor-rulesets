@@ -1,7 +1,0 @@
-name: eapxp6/eapxp5
-description: This ruleset provides analysis of Maven built applications when migrating from EAP XP 5 to 6.
-labels:
-  - source=eapxp
-  - target=eapxp6+
-  - target=eapxp
-
