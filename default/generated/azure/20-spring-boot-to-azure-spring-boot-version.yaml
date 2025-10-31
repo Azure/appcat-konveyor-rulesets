@@ -13,7 +13,7 @@
 # limitations under the License. 
 - category: mandatory
   customVariables: []
-  description: Spring Boot version is low
+  description: Spring Boot Version is End of OSS Support
   effort: 5
   labels:
   - source=springboot
@@ -35,7 +35,7 @@
   - title: Spring Boot Support Policy
     url: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
   message: |-
-    The application is using the low version of Spring Boot. 
+    The application is using the End of OSS Support of Spring Boot Version. 
     With the officially supported new versions from Spring, you can get the best experience. Here are some steps you can take to update your application to the latest version of Spring Boot:
     
     * Choose a **supported Spring Boot version**: Check out Spring Boot Support Versions, determine the most suitable supported Spring Boot version.\n\n
@@ -48,7 +48,8 @@
   ruleID: spring-boot-to-azure-spring-boot-version-01000
   when:
     or:
-    # follow the latest supported version by Java Upgrade Extension
+    # https://spring.io/projects/spring-boot#support
+    # Also consider and follow the latest supported version by Java Upgrade Extension
     - java.dependency:
         nameregex: org\.springframework\.boot\..*
-        upperbound: "3.4.8"
+        upperbound: "3.3.13"

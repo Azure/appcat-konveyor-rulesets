@@ -31,4 +31,4 @@
         nameregex: ^javax\..*
     - java.dependency:
         nameregex: ^jakarta\.platform\..*
-        upperbound: "10.0.0"
+        upperbound: "9.1.0"
