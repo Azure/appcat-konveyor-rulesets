@@ -13,3 +13,4 @@ org.eclipse.equinox.app
 org.eclipse.equinox.launcher
 org.eclipse.osgi
 *.report
+.gradle
