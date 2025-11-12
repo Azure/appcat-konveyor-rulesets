@@ -36,7 +36,7 @@
     - java.dependency:
         lowerbound: 0.0.0
         nameregex: com\.google\.cloud\.[a-z0-9_.-]*pubsub[a-z0-9_.-]*
-- category: optional
+- category: mandatory
   customVariables: []
   description: Google Container Registry (GCR) or Artifact Registry usage detected
   effort: 3
