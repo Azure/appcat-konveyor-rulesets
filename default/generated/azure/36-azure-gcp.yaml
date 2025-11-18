@@ -20,10 +20,13 @@
     The application uses Google Cloud Pub/Sub client libraries.
 
     To align with Azure messaging services:
-      1. Review messaging requirements and choose the appropriate Azure service (Service Bus, Event Grid, or Event Hubs).
-      2. Replace Google Pub/Sub clients with the corresponding Azure SDKs.
-      3. Update configuration to use Azure credentials and connection information.
-      4. Verify message publishing and subscription flows with integration tests.
+      * Review messaging requirements and choose the appropriate Azure service (Service Bus, Event Grid, or Event Hubs).
+
+      * Replace Google Pub/Sub clients with the corresponding Azure SDKs.
+
+      * Update configuration to use Azure credentials and connection information.
+
+      * Verify message publishing and subscription flows with integration tests.
   ruleID: google-pubsub-to-azure-service-bus-01000
   when:
     or:
@@ -64,28 +67,22 @@
     * Configuration files referencing GCR endpoints
 
     **To migrate to Azure Container Registry (ACR):**
-
-    1. **Provision Azure Container Registry:**
+    * **Provision Azure Container Registry:**
        * Create an ACR instance: `az acr create --name <registry-name> --resource-group <rg> --sku Standard`
-
-    2. **Migrate container images:**
+    * **Migrate container images:**
        * Import images from GCR: `az acr import --name <acr-name> --source gcr.io/<project>/<image>:<tag> --image <image>:<tag>`
        * Or use docker pull/push: `docker pull gcr.io/<project>/<image>` then `docker push <acr-name>.azurecr.io/<image>`
-
-    3. **Update image references:**
+    * **Update image references:**
        * Replace `gcr.io/<project>/<image>` with `<acr-name>.azurecr.io/<image>`
        * Replace `<location>-docker.pkg.dev/<project>/<repo>/<image>` with `<acr-name>.azurecr.io/<image>`
        * Update all Dockerfiles, docker-compose files, Kubernetes manifests, and Helm charts
-
-    4. **Configure authentication:**
+    * **Configure authentication:**
        * **For AKS (recommended):** Enable managed identity integration: `az aks update --name <aks-cluster> --attach-acr <acr-name>`
        * **For other services:** Use Azure managed identities or service principals
        * **For local development:** Use `az acr login --name <acr-name>`
-
-    5. **Remove GCR-specific tooling:**
+    * **Remove GCR-specific tooling:**
        * Replace gcloud docker authentication with Azure CLI or service principals
-
-    6. **For language packages (if using Artifact Registry for npm/Maven/Python):**
+    * **For language packages (if using Artifact Registry for npm/Maven/Python):**
        * Use Azure Artifacts for package management instead of Google Artifact Registry
   ruleID: google-gcr-to-azure-acr-01000
   when:
