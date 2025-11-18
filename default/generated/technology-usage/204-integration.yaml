@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded library - Apache Camel
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00001
   tag:
@@ -13,7 +13,7 @@
 - customVariables: []
   description: Embedded library - Teiid
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00002
   tag:
@@ -25,7 +25,7 @@
 - customVariables: []
   description: Embedded framework - Spring Integration
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00003
   tag:
@@ -37,7 +37,7 @@
 - customVariables: []
   description: Embedded framework - Ikasan
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00004
   tag:
@@ -49,7 +49,7 @@
 - customVariables: []
   description: Embedded framework - Swagger
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00005
   tag:
@@ -61,7 +61,7 @@
 - customVariables: []
   description: Embedded framework - Apiman
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00006
   tag:
@@ -73,7 +73,7 @@
 - customVariables: []
   description: Embedded framework - 3scale
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00007
   tag:
@@ -85,7 +85,7 @@
 - customVariables: []
   description: Embedded framework - Istio
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00008
   tag:
@@ -97,7 +97,7 @@
 - customVariables: []
   description: Embedded framework - ServiceMix
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00009
   tag:
@@ -109,7 +109,7 @@
 - customVariables: []
   description: Embedded framework - Mule
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00010
   tag:
@@ -121,7 +121,7 @@
 - customVariables: []
   description: Embedded framework - Petals EIP
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00011
   tag:
@@ -133,7 +133,7 @@
 - customVariables: []
   description: Embedded framework - SwitchYard
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00012
   tag:
@@ -145,7 +145,7 @@
 - customVariables: []
   description: Embedded framework - Apache Synapse
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00013
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: Embedded framework - WSO2
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00014
   tag:
@@ -169,7 +169,7 @@
 - customVariables: []
   description: Embedded framework - Talend ESB
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00015
   tag:
@@ -181,7 +181,7 @@
 - customVariables: []
   description: Embedded framework - Spring Integration
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00016
   tag:
@@ -195,7 +195,7 @@
 - customVariables: []
   description: Embedded framework - Spring Integration
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: integration-00017
   tag:

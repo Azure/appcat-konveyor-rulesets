@@ -1,7 +1,7 @@
 - customVariables: []
   description: EHCache library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses EHCache.
   ruleID: embedded-cache-libraries-01000
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Redis Cache library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds the Redis client.\n                    "
   ruleID: embedded-cache-libraries-16000
@@ -40,7 +40,7 @@
 - customVariables: []
   description: Coherence embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Coherence library.
   ruleID: embedded-cache-libraries-02000
@@ -53,7 +53,7 @@
 - customVariables: []
   description: Apache Commons JCS embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds an Apache Commons JCS library.                    "
   ruleID: embedded-cache-libraries-03000
@@ -66,7 +66,7 @@
 - customVariables: []
   description: Dynacache embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Dynacache library.
   ruleID: embedded-cache-libraries-04000
@@ -79,7 +79,7 @@
 - customVariables: []
   description: Embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds a library that provides
     caching.\n                   "
@@ -93,7 +93,7 @@
 - customVariables: []
   description: Hazelcast embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds a Hazelcast library.\n
     \                   "
@@ -107,7 +107,7 @@
 - customVariables: []
   description: Apache Ignite embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds an Apache Ignite library.\n
     \                   "
@@ -121,7 +121,7 @@
 - customVariables: []
   description: Infinispan embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds an Infinispan library.\n
     \                   "
@@ -135,7 +135,7 @@
 - customVariables: []
   description: JBoss Cache embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embedds a JBoss Cache library.\n
     \                   "
@@ -149,7 +149,7 @@
 - customVariables: []
   description: JCache embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds a JCache library.\n                    "
   ruleID: embedded-cache-libraries-10000
@@ -162,7 +162,7 @@
 - customVariables: []
   description: Memcached client embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds a Memcached client library.\n
     \                   "
@@ -176,7 +176,7 @@
 - customVariables: []
   description: Oscache embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds an Oscache library.\n
     \                   "
@@ -190,7 +190,7 @@
 - customVariables: []
   description: ShiftOne (Java Object Cache) embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds a ShiftOne library (Java
     Object Cache or JOCache).\n                    "
@@ -204,7 +204,7 @@
 - customVariables: []
   description: SwarmCache embedded library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds a SwarmCache library.\n
     \                   "
@@ -218,7 +218,7 @@
 - customVariables: []
   description: Spring Boot Cache library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: "\n                        The application embeds the Spring Boot Cache
     library.\n                    "

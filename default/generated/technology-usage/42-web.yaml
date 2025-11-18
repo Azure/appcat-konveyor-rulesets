@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded technology - Java Server Faces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses Java Server Faces
   ruleID: web-01000
@@ -15,7 +15,7 @@
 - customVariables: []
   description: Embedded technology - Java Server Pages
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses Java Server Pages
   ruleID: technology-usage-web-01100
@@ -33,7 +33,7 @@
 - customVariables: []
   description: Embedded technology - WebSocket
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses WebSockets
   ruleID: technology-usage-web-01300
@@ -47,7 +47,7 @@
 - customVariables: []
   description: Embedded technology - Applet
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses Java Applets
   ruleID: technology-usage-web-01400
@@ -64,7 +64,7 @@
 - customVariables: []
   description: Embedded technology - JNLP
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses JNLP (Java Network Launching Protocol)
   ruleID: technology-usage-web-01500
@@ -77,7 +77,7 @@
 - customVariables: []
   description: Embedded technology - JNLP
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses JNLP (Java Network Launching Protocol)
   ruleID: technology-usage-web-01600
@@ -93,7 +93,7 @@
 - customVariables: []
   description: Embedded technology - Swing
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01700
   tag:
@@ -109,7 +109,7 @@
 - customVariables: []
   description: Embedded technology - MiGLayout
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses MyGLayout
   ruleID: technology-usage-web-01800
@@ -122,7 +122,7 @@
 - customVariables: []
   description: Embedded technology - JGoodies
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses JGoodies
   ruleID: technology-usage-web-01900
@@ -135,7 +135,7 @@
 - customVariables: []
   description: Embedded technology - FormLayoutMaker
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses FormLayouttMaker
   ruleID: technology-usage-web-02000
@@ -148,7 +148,7 @@
 - customVariables: []
   description: Embedded technology - MagicGroupLayout
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses MagicGroupLayout
   ruleID: technology-usage-web-02100
@@ -161,7 +161,7 @@
 - customVariables: []
   description: Embedded technology - Standard Widget Toolkit (SWT)
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses Standard Widget Toolkit (SWT)
   ruleID: technology-usage-web-02200
@@ -174,7 +174,7 @@
 - customVariables: []
   description: Embedded technology - JavaFX
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-02300
   tag:
@@ -186,7 +186,7 @@
 - customVariables: []
   description: Embedded technology - Eclipse RCP
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses Eclipse RCP
   ruleID: technology-usage-web-02400
@@ -206,7 +206,7 @@
 - customVariables: []
   description: Embedded technology - Java Remote Method Invocation (RMI) service
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses Java Remote Method Invocation (RMI) service
   ruleID: technology-usage-web-02500
@@ -219,7 +219,7 @@
 - customVariables: []
   description: Embedded technology - Java Remote Method Invocation (RMI) API
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses Java Remote Method Invocation (RMI) API
   ruleID: technology-usage-web-02600

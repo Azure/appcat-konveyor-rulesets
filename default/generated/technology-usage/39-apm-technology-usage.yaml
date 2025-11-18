@@ -1,7 +1,7 @@
 - customVariables: []
   description: Application Insights
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-apm-00010
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: New Relic
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-apm-00020
   tag:
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Elastic APM
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-apm-00030
   tag:
@@ -40,7 +40,7 @@
 - customVariables: []
   description: Dynatrace
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-apm-00040
   tag:
