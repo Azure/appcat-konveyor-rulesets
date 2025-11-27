@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded library - Spring Cloud Config
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds Spring Cloud Config.
   ruleID: configuration-management-0100
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Application properties file detected
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: Application properties file detected
   ruleID: configuration-management-0200
@@ -40,7 +40,7 @@
 - customVariables: []
   description: Spring datasource properties detected
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: Spring datasource properties detected
   ruleID: configuration-management-0300
@@ -54,7 +54,7 @@
 - customVariables: []
   description: Spring logging properties detected
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: Spring logging properties detected
   ruleID: configuration-management-0400
@@ -68,7 +68,7 @@
 - customVariables: []
   description: Spring configuration properties annotation detected
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: Spring configuration properties annotation detected
   ruleID: configuration-management-0500
@@ -82,7 +82,7 @@
 - customVariables: []
   description: Embedded library - Spring Cloud Vault
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds Spring Cloud Vault.
   ruleID: configuration-management-0600

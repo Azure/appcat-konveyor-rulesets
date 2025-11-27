@@ -1,7 +1,7 @@
 - customVariables: []
   description: EJB Timer
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-ejb-01400
   tag:

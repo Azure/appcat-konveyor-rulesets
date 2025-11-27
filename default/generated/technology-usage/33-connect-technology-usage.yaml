@@ -1,7 +1,7 @@
 - customVariables: []
   description: Java Connect
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01000
   tag:
@@ -19,7 +19,7 @@
 - customVariables: []
   description: JNI usage
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01100
   tag:
@@ -47,7 +47,7 @@
 - customVariables: []
   description: JNA usage
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01101
   tag:
@@ -75,7 +75,7 @@
 - customVariables: []
   description: Mail usage
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01200
   tag:
@@ -100,7 +100,7 @@
 - customVariables: []
   description: JCA usage
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01300
   tag:
@@ -133,7 +133,7 @@
 - customVariables: []
   description: Resource Adapter
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01400
   tag:
@@ -146,7 +146,7 @@
 - customVariables: []
   description: ActiveMQ
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01500
   tag:
@@ -159,7 +159,7 @@
 - customVariables: []
   description: OpenWS
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01600
   tag:
@@ -172,7 +172,7 @@
 - customVariables: []
   description: WSDL
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01700
   tag:
@@ -185,7 +185,7 @@
 - customVariables: []
   description: RabbitMQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01800
   tag:
@@ -198,7 +198,7 @@
 - customVariables: []
   description: Spring Messaging Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-01900
   tag:
@@ -211,7 +211,7 @@
 - customVariables: []
   description: Camel Messaging Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02000
   tag:
@@ -224,7 +224,7 @@
 - customVariables: []
   description: Amazon SQS Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02100
   tag:
@@ -237,7 +237,7 @@
 - customVariables: []
   description: HornetQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02200
   tag:
@@ -250,7 +250,7 @@
 - customVariables: []
   description: AMQP Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02300
   tag:
@@ -263,7 +263,7 @@
 - customVariables: []
   description: RocketMQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02400
   tag:
@@ -276,7 +276,7 @@
 - customVariables: []
   description: 0MQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02500
   tag:
@@ -289,7 +289,7 @@
 - customVariables: []
   description: JBossMQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02600
   tag:
@@ -302,7 +302,7 @@
 - customVariables: []
   description: Zbus Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02700
   tag:
@@ -315,7 +315,7 @@
 - customVariables: []
   description: Qpid Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02800
   tag:
@@ -328,7 +328,7 @@
 - customVariables: []
   description: Kafka Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-connect-02900
   tag:

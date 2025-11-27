@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded framework - Liferay
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Liferay framework.
   ruleID: 3rd-party-01000
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Embedded framework - Oracle Forms
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Oracle Forms framework.
   ruleID: 3rd-party-02000
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Embedded framework - Spring Boot
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Spring Boot framework.
   ruleID: 3rd-party-03000
@@ -44,7 +44,7 @@
 - customVariables: []
   description: Embedded framework - Elasticsearch
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Elasticsearch framework.
   ruleID: 3rd-party-04000
@@ -57,7 +57,7 @@
 - customVariables: []
   description: Embedded library - Logstash
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Logstash framework.
   ruleID: 3rd-party-05000
@@ -73,7 +73,7 @@
 - customVariables: []
   description: Embedded framework - Jetty
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Jetty framework.
   ruleID: 3rd-party-06000
@@ -86,7 +86,7 @@
 - customVariables: []
   description: Embedded framework - Tomcat
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Tomcat framework.
   ruleID: 3rd-party-07000
@@ -99,7 +99,7 @@
 - customVariables: []
   description: Embedded framework - Kibana
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Kibana framework.
   ruleID: 3rd-party-08000
@@ -112,7 +112,7 @@
 - customVariables: []
   description: Embedded framework - Apache Karaf
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Apache Karaf framework.
   ruleID: 3rd-party-09000
@@ -125,7 +125,7 @@
 - customVariables: []
   description: Embedded framework - Neo4j
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Neo4j framework.
   ruleID: 3rd-party-10000
@@ -138,7 +138,7 @@
 - customVariables: []
   description: Embedded framework - Spark
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Spark framework.
   ruleID: 3rd-party-11000
@@ -151,7 +151,7 @@
 - customVariables: []
   description: Embedded framework - Apache Hadoop
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Apache Hadoop framework.
   ruleID: 3rd-party-12000
@@ -164,7 +164,7 @@
 - customVariables: []
   description: Embedded framework - Apache Geronimo
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Apache Geronimo framework.
   ruleID: 3rd-party-13000
@@ -177,7 +177,7 @@
 - customVariables: []
   description: Embedded framework - Apache Aries
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Apache Aries framework.
   ruleID: 3rd-party-14000
@@ -190,7 +190,7 @@
 - customVariables: []
   description: Embedded framework - Cloudera
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Cloudera framework.
   ruleID: 3rd-party-15000
@@ -203,7 +203,7 @@
 - customVariables: []
   description: Embedded framework - MapR
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the MapR framework.
   ruleID: 3rd-party-16000
@@ -216,7 +216,7 @@
 - customVariables: []
   description: Embedded framework - TensorFlow
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the TensorFlow framework.
   ruleID: 3rd-party-17000
@@ -229,7 +229,7 @@
 - customVariables: []
   description: Embedded framework - Weka
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Weka framework.
   ruleID: 3rd-party-18000
@@ -242,7 +242,7 @@
 - customVariables: []
   description: Embedded framework - Apache Mahout
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Apache Mahout framework.
   ruleID: 3rd-party-19000
@@ -255,7 +255,7 @@
 - customVariables: []
   description: Embedded library - Splunk
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Splunk framework.
   ruleID: 3rd-party-20000
@@ -271,7 +271,7 @@
 - customVariables: []
   description: Embedded framework - Nacos
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Nacos framework.
   ruleID: 3rd-party-30000
@@ -292,7 +292,7 @@
 - customVariables: []
   description: Embedded framework - Sentinel
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Sentinel framework.
   ruleID: 3rd-party-30100
@@ -316,7 +316,7 @@
 - customVariables: []
   description: Embedded framework - Rocket MQ
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Rocket MQ framework.
   ruleID: 3rd-party-30200
@@ -340,7 +340,7 @@
 - customVariables: []
   description: Embedded framework - Cloud Seata
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Cloud Seata framework.
   ruleID: 3rd-party-30300
@@ -358,7 +358,7 @@
 - customVariables: []
   description: Embedded framework - Scheduler X
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Scheduler X framework.
   ruleID: 3rd-party-30400
@@ -376,7 +376,7 @@
 - customVariables: []
   description: Embedded framework - Cloud SMS
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Sentinel framework.
   ruleID: 3rd-party-30500
@@ -400,7 +400,7 @@
 - customVariables: []
   description: Embedded framework - Cloud OSS
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Cloud OSS framework.
   ruleID: 3rd-party-30600

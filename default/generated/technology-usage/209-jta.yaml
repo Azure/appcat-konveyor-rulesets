@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded library - Mycontainer JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00020
   tag:
@@ -13,7 +13,7 @@
 - customVariables: []
   description: Embedded library - Geronimo JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00030
   tag:
@@ -25,7 +25,7 @@
 - customVariables: []
   description: Embedded library - OW2 JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00040
   tag:
@@ -37,7 +37,7 @@
 - customVariables: []
   description: Embedded library - Evo JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00050
   tag:
@@ -49,7 +49,7 @@
 - customVariables: []
   description: Embedded library - AKKA JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00060
   tag:
@@ -61,7 +61,7 @@
 - customVariables: []
   description: Embedded library - KumuluzEE JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00070
   tag:
@@ -73,7 +73,7 @@
 - customVariables: []
   description: Embedded library - Ignite JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00080
   tag:
@@ -85,7 +85,7 @@
 - customVariables: []
   description: Embedded library - Nuxeo JTA/JCA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00090
   tag:
@@ -97,7 +97,7 @@
 - customVariables: []
   description: Embedded library - Everit JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00100
   tag:
@@ -109,7 +109,7 @@
 - customVariables: []
   description: Embedded library - Demoiselle JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00110
   tag:
@@ -121,7 +121,7 @@
 - customVariables: []
   description: Embedded library - Apache Meecrowave JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00120
   tag:
@@ -133,7 +133,7 @@
 - customVariables: []
   description: Embedded library - Apache Sirona JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00130
   tag:
@@ -145,7 +145,7 @@
 - customVariables: []
   description: Embedded library - Lift JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00140
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: Embedded library - WF Core JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00150
   tag:
@@ -169,7 +169,7 @@
 - customVariables: []
   description: Embedded library - Java Transaction API (JTA)
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00160
   tag:
@@ -184,7 +184,7 @@
 - customVariables: []
   description: Embedded library - JBoss Transactions
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00170
   tag:
@@ -211,7 +211,7 @@
 - customVariables: []
   description: Embedded library - GlassFish JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00180
   tag:
@@ -228,7 +228,7 @@
 - customVariables: []
   description: Embedded library - Atomikos JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00190
   tag:
@@ -245,7 +245,7 @@
 - customVariables: []
   description: Embedded library - Narayana Arjuna
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00200
   tag:
@@ -262,7 +262,7 @@
 - customVariables: []
   description: Embedded library - Spring Transactions
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: jta-00210
   tag:

@@ -1,7 +1,7 @@
 - customVariables: []
   description: Apache Wicket
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01000
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Apache Struts
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01100
   tag:
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Spring MVC
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01200
   tag:
@@ -40,7 +40,7 @@
 - customVariables: []
   description: GWT
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01300
   tag:
@@ -53,7 +53,7 @@
 - customVariables: []
   description: MyFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01400
   tag:
@@ -66,7 +66,7 @@
 - customVariables: []
   description: RichFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01500
   tag:
@@ -79,7 +79,7 @@
 - customVariables: []
   description: JSF
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01600
   tag:
@@ -92,7 +92,7 @@
 - customVariables: []
   description: Apache Tapestry
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01700
   tag:
@@ -105,7 +105,7 @@
 - customVariables: []
   description: Stripes
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01800
   tag:
@@ -118,7 +118,7 @@
 - customVariables: []
   description: Spark
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-01900
   tag:
@@ -131,7 +131,7 @@
 - customVariables: []
   description: Vaadin
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02000
   tag:
@@ -144,7 +144,7 @@
 - customVariables: []
   description: Grails
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02100
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: Play
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02200
   tag:
@@ -170,7 +170,7 @@
 - customVariables: []
   description: Oracle ADF
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02300
   tag:
@@ -183,7 +183,7 @@
 - customVariables: []
   description: PrimeFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02400
   tag:
@@ -196,7 +196,7 @@
 - customVariables: []
   description: JSTL
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02500
   tag:
@@ -209,7 +209,7 @@
 - customVariables: []
   description: OpenFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02600
   tag:
@@ -222,7 +222,7 @@
 - customVariables: []
   description: JFreeChart
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02700
   tag:
@@ -235,7 +235,7 @@
 - customVariables: []
   description: BootsFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02800
   tag:
@@ -248,7 +248,7 @@
 - customVariables: []
   description: ICEfaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-02900
   tag:
@@ -261,7 +261,7 @@
 - customVariables: []
   description: BabbageFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03000
   tag:
@@ -274,7 +274,7 @@
 - customVariables: []
   description: Portlet
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03100
   tag:
@@ -287,7 +287,7 @@
 - customVariables: []
   description: AngularFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03200
   tag:
@@ -300,7 +300,7 @@
 - customVariables: []
   description: LiferayFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03300
   tag:
@@ -313,7 +313,7 @@
 - customVariables: []
   description: Liferay
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03400
   tag:
@@ -326,7 +326,7 @@
 - customVariables: []
   description: ButterFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03500
   tag:
@@ -339,7 +339,7 @@
 - customVariables: []
   description: HighFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03600
   tag:
@@ -352,7 +352,7 @@
 - customVariables: []
   description: TieFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03700
   tag:
@@ -365,7 +365,7 @@
 - customVariables: []
   description: OmniFaces
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03800
   tag:
@@ -378,7 +378,7 @@
 - customVariables: []
   description: UberFire
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-03900
   tag:
@@ -391,7 +391,7 @@
 - customVariables: []
   description: Velocity
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-04000
   tag:
@@ -404,7 +404,7 @@
 - customVariables: []
   description: Thymeleaf
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-04100
   tag:
@@ -417,7 +417,7 @@
 - customVariables: []
   description: FreeMarker
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-0x4200
   tag:
@@ -430,7 +430,7 @@
 - customVariables: []
   description: ANTLR StringTemplate
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-04300
   tag:
@@ -443,7 +443,7 @@
 - customVariables: []
   description: Handlebars
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-04400
   tag:
@@ -456,7 +456,7 @@
 - customVariables: []
   description: JMustache
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-04500
   tag:
@@ -469,7 +469,7 @@
 - customVariables: []
   description: Jamon
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-04600
   tag:
@@ -482,7 +482,7 @@
 - customVariables: []
   description: Twirl
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-04700
   tag:
@@ -495,7 +495,7 @@
 - customVariables: []
   description: Scalate
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-04800
   tag:
@@ -508,7 +508,7 @@
 - customVariables: []
   description: Rythm Template Engine
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-04900
   tag:
@@ -521,7 +521,7 @@
 - customVariables: []
   description: Trimou
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05000
   tag:
@@ -534,7 +534,7 @@
 - customVariables: []
   description: Jetbrick Template
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05100
   tag:
@@ -547,7 +547,7 @@
 - customVariables: []
   description: Chunk Templates
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05200
   tag:
@@ -560,7 +560,7 @@
 - customVariables: []
   description: JSilver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05300
   tag:
@@ -573,7 +573,7 @@
 - customVariables: []
   description: Water Template Engine
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05400
   tag:
@@ -586,7 +586,7 @@
 - customVariables: []
   description: Ickenham
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05500
   tag:
@@ -599,7 +599,7 @@
 - customVariables: []
   description: Mixer
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05600
   tag:
@@ -612,7 +612,7 @@
 - customVariables: []
   description: Webmacro
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05700
   tag:
@@ -625,7 +625,7 @@
 - customVariables: []
   description: DVSL
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05800
   tag:
@@ -638,7 +638,7 @@
 - customVariables: []
   description: Snippetory Template Engine
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-05900
   tag:
@@ -651,7 +651,7 @@
 - customVariables: []
   description: Anakia
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-mvc-06000
   tag:

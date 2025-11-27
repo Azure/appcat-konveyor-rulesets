@@ -1,7 +1,7 @@
 - customVariables: []
   description: JSF
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01000
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: JSP
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01100
   tag:
@@ -27,7 +27,7 @@
 - customVariables: []
   description: WebXML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01200
   tag:
@@ -40,7 +40,7 @@
 - customVariables: []
   description: WebSocket
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01300
   tag:
@@ -53,7 +53,7 @@
 - customVariables: []
   description: Applet
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01400
   tag:
@@ -67,7 +67,7 @@
 - customVariables: []
   description: JNLP
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01500
   tag:
@@ -80,7 +80,7 @@
 - customVariables: []
   description: Swing
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01700
   tag:
@@ -93,7 +93,7 @@
 - customVariables: []
   description: MiGLayout
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01800
   tag:
@@ -106,7 +106,7 @@
 - customVariables: []
   description: JGoodies
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-01900
   tag:
@@ -119,7 +119,7 @@
 - customVariables: []
   description: FormLayoutMaker
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-02000
   tag:
@@ -132,7 +132,7 @@
 - customVariables: []
   description: Magicgrouplayout
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-02100
   tag:
@@ -145,7 +145,7 @@
 - customVariables: []
   description: SWT
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-02200
   tag:
@@ -158,7 +158,7 @@
 - customVariables: []
   description: JavaFX
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-02300
   tag:
@@ -171,7 +171,7 @@
 - customVariables: []
   description: Eclipse RCP
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-web-02400
   tag:

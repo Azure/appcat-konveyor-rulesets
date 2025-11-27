@@ -1,7 +1,7 @@
 - customVariables: []
   description: JDBC datasources
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01000
   tag:
@@ -15,7 +15,7 @@
 - customVariables: []
   description: JPA Entities
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01100
   tag:
@@ -36,7 +36,7 @@
 - customVariables: []
   description: JPA Queries
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01200
   tag:
@@ -78,7 +78,7 @@
 - customVariables: []
   description: Persistence Units
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01300
   tag:
@@ -91,7 +91,7 @@
 - customVariables: []
   description: HSQLDB Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01400
   tag:
@@ -104,7 +104,7 @@
 - customVariables: []
   description: MySQL Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01500
   tag:
@@ -117,7 +117,7 @@
 - customVariables: []
   description: Derby Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01600
   tag:
@@ -130,7 +130,7 @@
 - customVariables: []
   description: PostgreSQL Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01700
   tag:
@@ -143,7 +143,7 @@
 - customVariables: []
   description: H2 Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01800
   tag:
@@ -156,7 +156,7 @@
 - customVariables: []
   description: Microsoft SQL Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-01900
   tag:
@@ -169,7 +169,7 @@
 - customVariables: []
   description: SQLite Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02000
   tag:
@@ -182,7 +182,7 @@
 - customVariables: []
   description: Oracle DB Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02100
   tag:
@@ -195,7 +195,7 @@
 - customVariables: []
   description: Cassandra Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02200
   tag:
@@ -208,7 +208,7 @@
 - customVariables: []
   description: Axion Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02300
   tag:
@@ -221,7 +221,7 @@
 - customVariables: []
   description: MckoiSQLDB Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02400
   tag:
@@ -234,7 +234,7 @@
 - customVariables: []
   description: MongoDB Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02500
   tag:
@@ -247,7 +247,7 @@
 - customVariables: []
   description: Spring Data
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02600
   tag:
@@ -260,7 +260,7 @@
 - customVariables: []
   description: Morphia
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02700
   tag:
@@ -273,7 +273,7 @@
 - customVariables: []
   description: LevelDB Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02800
   tag:
@@ -286,7 +286,7 @@
 - customVariables: []
   description: Apache HBase Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-02900
   tag:
@@ -299,7 +299,7 @@
 - customVariables: []
   description: Apache Accumulo Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-03000
   tag:
@@ -312,7 +312,7 @@
 - customVariables: []
   description: Spring Data JPA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-03100
   tag:
@@ -325,7 +325,7 @@
 - customVariables: []
   description: MariaDB Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-database-03200
   tag:

@@ -1,7 +1,7 @@
 - customVariables: []
   description: Apache Axis
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-01000
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Apache Axis2
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-01010
   tag:
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Apache CXF
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-01100
   tag:
@@ -40,7 +40,7 @@
 - customVariables: []
   description: XFire
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-01200
   tag:
@@ -53,7 +53,7 @@
 - customVariables: []
   description: Jersey
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-01300
   tag:
@@ -66,7 +66,7 @@
 - customVariables: []
   description: Unirest
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-01400
   tag:
@@ -79,7 +79,7 @@
 - customVariables: []
   description: Hibernate
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-01500
   tag:
@@ -92,7 +92,7 @@
 - customVariables: []
   description: Hibernate OGM
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-01600
   tag:
@@ -105,7 +105,7 @@
 - customVariables: []
   description: EclipseLink
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-01700
   tag:
@@ -118,7 +118,7 @@
 - customVariables: []
   description: Spring Batch
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-02000
   tag:
@@ -131,7 +131,7 @@
 - customVariables: []
   description: Spring
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-02100
   tag:
@@ -144,7 +144,7 @@
 - customVariables: []
   description: AspectJ
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-02200
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: JBPM
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-02300
   tag:
@@ -170,7 +170,7 @@
 - customVariables: []
   description: iLog
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-02400
   tag:
@@ -183,7 +183,7 @@
 - customVariables: []
   description: Ehcache
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-02700
   tag:
@@ -196,7 +196,7 @@
 - customVariables: []
   description: Infinispan
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-02800
   tag:
@@ -209,7 +209,7 @@
 - customVariables: []
   description: Drools
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-02900
   tag:
@@ -222,7 +222,7 @@
 - customVariables: []
   description: Camunda
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03000
   tag:
@@ -235,7 +235,7 @@
 - customVariables: []
   description: Pega
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03100
   tag:
@@ -248,7 +248,7 @@
 - customVariables: []
   description: Blaze
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03200
   tag:
@@ -261,7 +261,7 @@
 - customVariables: []
   description: MRules
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03300
   tag:
@@ -274,7 +274,7 @@
 - customVariables: []
   description: Easy Rules
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03400
   tag:
@@ -287,7 +287,7 @@
 - customVariables: []
   description: Coherence
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03500
   tag:
@@ -300,7 +300,7 @@
 - customVariables: []
   description: Apache Commons JCS
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03600
   tag:
@@ -313,7 +313,7 @@
 - customVariables: []
   description: Dynacache
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03700
   tag:
@@ -326,7 +326,7 @@
 - customVariables: []
   description: Cache API
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03800
   tag:
@@ -339,7 +339,7 @@
 - customVariables: []
   description: Hazelcast
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-03900
   tag:
@@ -352,7 +352,7 @@
 - customVariables: []
   description: Apache Ignite
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-04000
   tag:
@@ -365,7 +365,7 @@
 - customVariables: []
   description: JBoss Cache
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-04100
   tag:
@@ -378,7 +378,7 @@
 - customVariables: []
   description: JCache
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-04200
   tag:
@@ -391,7 +391,7 @@
 - customVariables: []
   description: Memcached client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-04300
   tag:
@@ -404,7 +404,7 @@
 - customVariables: []
   description: Oscache
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-04400
   tag:
@@ -417,7 +417,7 @@
 - customVariables: []
   description: ShiftOne
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-04500
   tag:
@@ -430,7 +430,7 @@
 - customVariables: []
   description: SwarmCache
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-04600
   tag:
@@ -443,7 +443,7 @@
 - customVariables: []
   description: AOP Alliance
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-04700
   tag:
@@ -456,7 +456,7 @@
 - customVariables: []
   description: SNMP4J
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-05000
   tag:
@@ -469,7 +469,7 @@
 - customVariables: []
   description: HTTP Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-05100
   tag:
@@ -482,7 +482,7 @@
 - customVariables: []
   description: Javax Inject
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-05300
   tag:
@@ -495,7 +495,7 @@
 - customVariables: []
   description: Google Guice
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-05400
   tag:
@@ -508,7 +508,7 @@
 - customVariables: []
   description: Plexus Container
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-05600
   tag:
@@ -521,7 +521,7 @@
 - customVariables: []
   description: Weld
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-05700
   tag:
@@ -534,7 +534,7 @@
 - customVariables: []
   description: Dagger
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-05800
   tag:
@@ -547,7 +547,7 @@
 - customVariables: []
   description: GIN
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-05900
   tag:
@@ -560,7 +560,7 @@
 - customVariables: []
   description: PicoContainer
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06000
   tag:
@@ -573,7 +573,7 @@
 - customVariables: []
   description: Scaldi
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06100
   tag:
@@ -586,7 +586,7 @@
 - customVariables: []
   description: Macros
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06200
   tag:
@@ -599,7 +599,7 @@
 - customVariables: []
   description: Injekt for Kotlin
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06300
   tag:
@@ -612,7 +612,7 @@
 - customVariables: []
   description: Kodein
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06400
   tag:
@@ -625,7 +625,7 @@
 - customVariables: []
   description: Peaberry
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06500
   tag:
@@ -638,7 +638,7 @@
 - customVariables: []
   description: Sticky Configured
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06600
   tag:
@@ -651,7 +651,7 @@
 - customVariables: []
   description: Ka DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06700
   tag:
@@ -664,7 +664,7 @@
 - customVariables: []
   description: Polyforms DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06800
   tag:
@@ -677,7 +677,7 @@
 - customVariables: []
   description: JayWire
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-06900
   tag:
@@ -690,7 +690,7 @@
 - customVariables: []
   description: Silk DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07000
   tag:
@@ -703,7 +703,7 @@
 - customVariables: []
   description: Grapht DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07100
   tag:
@@ -716,7 +716,7 @@
 - customVariables: []
   description: Syringe
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07200
   tag:
@@ -729,7 +729,7 @@
 - customVariables: []
   description: Cfg Engine
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07300
   tag:
@@ -742,7 +742,7 @@
 - customVariables: []
   description: BeanInject
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07400
   tag:
@@ -755,7 +755,7 @@
 - customVariables: []
   description: Tornado Inject
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07500
   tag:
@@ -768,7 +768,7 @@
 - customVariables: []
   description: Airframe
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07600
   tag:
@@ -781,7 +781,7 @@
 - customVariables: []
   description: Winter
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07700
   tag:
@@ -794,7 +794,7 @@
 - customVariables: []
   description: KouInject
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07800
   tag:
@@ -807,7 +807,7 @@
 - customVariables: []
   description: Iroh
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-07900
   tag:
@@ -820,7 +820,7 @@
 - customVariables: []
   description: Micro DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08000
   tag:
@@ -833,7 +833,7 @@
 - customVariables: []
   description: SubCut
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08100
   tag:
@@ -846,7 +846,7 @@
 - customVariables: []
   description: Spring DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08200
   tag:
@@ -859,7 +859,7 @@
 - customVariables: []
   description: Micrometer
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08300
   tag:
@@ -872,7 +872,7 @@
 - customVariables: []
   description: Spring Web
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08400
   tag:
@@ -885,7 +885,7 @@
 - customVariables: []
   description: Spring Boot Cache
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08500
   tag:
@@ -898,7 +898,7 @@
 - customVariables: []
   description: Spring Shell
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08600
   tag:
@@ -911,7 +911,7 @@
 - customVariables: []
   description: Spring Scheduled
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08700
   tag:
@@ -924,7 +924,7 @@
 - customVariables: []
   description: Spring Cloud Function
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08800
   tag:
@@ -937,7 +937,7 @@
 - customVariables: []
   description: Quartz
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-08900
   tag:
@@ -950,7 +950,7 @@
 - customVariables: []
   description: Feign
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-09000
   tag:
@@ -963,7 +963,7 @@
 - customVariables: []
   description: Zipkin
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-embedded-framework-09100
   tag:
@@ -976,7 +976,7 @@
 - customVariables: []
   description: Redis
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-09200
   tag:
@@ -989,7 +989,7 @@
 - customVariables: []
   description: Eureka
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-embedded-framework-09300
   tag:

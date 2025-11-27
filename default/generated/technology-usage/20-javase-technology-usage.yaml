@@ -1,7 +1,7 @@
 - customVariables: []
   description: Java Threads
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javase-technology-usage-01000
   tag:

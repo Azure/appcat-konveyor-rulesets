@@ -1,7 +1,7 @@
 - customVariables: []
   description: Clustering Web Session
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: clustering-usage-00000
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Clustering EJB
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: clustering-usage-00001
   tag:

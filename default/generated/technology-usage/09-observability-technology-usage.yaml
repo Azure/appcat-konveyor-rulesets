@@ -1,7 +1,7 @@
 - customVariables: []
   description: Spring Boot Actuator
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: observability-technology-usage-0100
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Spring JMX
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: observability-technology-usage-0200
   tag:

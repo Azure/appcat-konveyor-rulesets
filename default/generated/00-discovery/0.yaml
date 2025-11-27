@@ -3,7 +3,7 @@
   tag:
   - License={{matchingText}}
   labels:
-  - konveyor.io/include=always
+  - discovery
   when:
     or:
     - builtin.filecontent:
@@ -48,7 +48,7 @@
 - ruleID: discover-properties-file
   description: "Properties file"
   labels:
-  - konveyor.io/include=always
+  - discovery
   when:
     builtin.file:
       pattern: "^.*\\.properties$"
@@ -56,7 +56,7 @@
 - ruleID: discover-manifest-file
   description: "Manifest file"
   labels:
-  - konveyor.io/include=always
+  - discovery
   when:
     builtin.file:
       pattern: "MANIFEST.MF"
@@ -64,7 +64,7 @@
 - ruleID: discover-java-files
   description: "Java source files"
   labels:
-  - konveyor.io/include=always
+  - discovery
   when:
     builtin.file:
       pattern: "*.java"
@@ -72,7 +72,7 @@
 - ruleID: discover-maven-xml
   description: "Maven XML file"
   labels:
-  - konveyor.io/include=always
+  - discovery
   when:
     builtin.file:
       pattern: "pom.xml"
@@ -80,7 +80,7 @@
 - ruleID: discover-gradle-xml
   description: "Gradle groovy file"
   labels:
-  - konveyor.io/include=always
+  - discovery
   when:
     builtin.file:
       pattern: "build.gradle"
@@ -88,7 +88,7 @@
 - ruleID: discover-gradle-kts
   description: "Gradle Kotlin file"
   labels:
-  - konveyor.io/include=always
+  - discovery
   when:
     builtin.file:
       pattern: "build.gradle.kts"
@@ -96,7 +96,7 @@
 - ruleID: discover-ejb-configuration
   description: "EJB XML Configuration"
   labels:
-  - konveyor.io/include=always
+  - discovery
   tag: ["EJB XML"]
   when:
     builtin.xml:
@@ -105,7 +105,7 @@
   description: "Spring XML Configuration"
   tag: ["Spring XML"]
   labels:
-  - konveyor.io/include=always
+  - discovery
   when:
     builtin.xml:
       xpath: "/beans"
@@ -113,7 +113,7 @@
   description: "JPA XML Configuration"
   tag: ["JPA XML"]
   labels:
-  - konveyor.io/include=always
+  - discovery
   when:
     or:
       - builtin.xml:
@@ -125,7 +125,7 @@
 - ruleID: discover-web-configuration
   description: "Web XML Configuration"
   labels:
-  - konveyor.io/include=always
+  - discovery
   tag: ["Web XML"]
   when:
     # TODO extract version as in rules-java-ee/addon/src/main/java/org/jboss/windup/rules/apps/javaee/rules/DiscoverWebXmlRuleProvider.java

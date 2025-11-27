@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded library - Apache Log4J
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00010
   tag:
@@ -13,7 +13,7 @@
 - customVariables: []
   description: Embedded library - Apache Commons Logging
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00020
   tag:
@@ -25,7 +25,7 @@
 - customVariables: []
   description: Embedded library - SLF4J
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00030
   tag:
@@ -37,7 +37,7 @@
 - customVariables: []
   description: Embedded library - tinylog
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00040
   tag:
@@ -49,7 +49,7 @@
 - customVariables: []
   description: Embedded library - Logback
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00050
   tag:
@@ -61,7 +61,7 @@
 - customVariables: []
   description: Embedded library - JBoss logging
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00080
   tag:
@@ -73,7 +73,7 @@
 - customVariables: []
   description: Embedded library - Monolog
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00090
   tag:
@@ -85,7 +85,7 @@
 - customVariables: []
   description: Embedded library - Jcabi Log
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00100
   tag:
@@ -97,7 +97,7 @@
 - customVariables: []
   description: Embedded library - NLOG4J
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00110
   tag:
@@ -109,7 +109,7 @@
 - customVariables: []
   description: Embedded library - Log4s
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00120
   tag:
@@ -121,7 +121,7 @@
 - customVariables: []
   description: Embedded library - Kotlin Logging
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00130
   tag:
@@ -133,7 +133,7 @@
 - customVariables: []
   description: Embedded library - Airlift Log Manager
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00140
   tag:
@@ -145,7 +145,7 @@
 - customVariables: []
   description: Embedded library - MinLog
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00150
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: Embedded library - Logging Utils
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00160
   tag:
@@ -169,7 +169,7 @@
 - customVariables: []
   description: Embedded library - OCPsoft Logging Utils
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00170
   tag:
@@ -181,7 +181,7 @@
 - customVariables: []
   description: Embedded library - Scribe
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00180
   tag:
@@ -193,7 +193,7 @@
 - customVariables: []
   description: Embedded library - GFC Logging
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00190
   tag:
@@ -205,7 +205,7 @@
 - customVariables: []
   description: Embedded library - Blitz4j
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00200
   tag:
@@ -217,7 +217,7 @@
 - customVariables: []
   description: Embedded library - Avalon Logkit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00210
   tag:
@@ -229,7 +229,7 @@
 - customVariables: []
   description: Embedded library - KLogger
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00220
   tag:
@@ -241,7 +241,7 @@
 - customVariables: []
   description: Embedded library - Lumberjack
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00230
   tag:
@@ -253,7 +253,7 @@
 - customVariables: []
   description: Embedded library - Log.io
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00240
   tag:
@@ -265,7 +265,7 @@
 - customVariables: []
   description: Embedded library - OPS4J Pax Logging Service
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00250
   tag:
@@ -277,7 +277,7 @@
 - customVariables: []
   description: Embedded library - OW2 Log Util
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00260
   tag:
@@ -289,7 +289,7 @@
 - customVariables: []
   description: Embedded library - Twitter Util Logging
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00270
   tag:
@@ -301,7 +301,7 @@
 - customVariables: []
   description: Embedded library - Composite Logging JCL
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00280
   tag:
@@ -313,7 +313,7 @@
 - customVariables: []
   description: Embedded library - Apache Flume
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00290
   tag:
@@ -325,7 +325,7 @@
 - customVariables: []
   description: Logging to file system
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00300
   tag:
@@ -350,7 +350,7 @@
 - customVariables: []
   description: Logging to Socket Handler
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: logging-usage-00310
   tag:

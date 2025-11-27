@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded Resource Adapter
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-01400
   tag:
@@ -13,7 +13,7 @@
 - customVariables: []
   description: ActiveMQ found
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-01500
   tag:
@@ -34,7 +34,7 @@
 - customVariables: []
   description: Embedded library - OpenWS
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-01600
   tag:
@@ -46,7 +46,7 @@
 - customVariables: []
   description: Embedded library - WSDL
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-01700
   tag:
@@ -58,7 +58,7 @@
 - customVariables: []
   description: Embedded library - RabbitMQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-01800
   tag:
@@ -92,7 +92,7 @@
 - customVariables: []
   description: Embedded library - Spring Messaging Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-01900
   tag:
@@ -107,7 +107,7 @@
 - customVariables: []
   description: Embedded library - Camel Messaging Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02000
   tag:
@@ -119,7 +119,7 @@
 - customVariables: []
   description: Embedded library - Amazon SQS Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02100
   tag:
@@ -131,7 +131,7 @@
 - customVariables: []
   description: Embedded library - HornetQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02200
   tag:
@@ -143,7 +143,7 @@
 - customVariables: []
   description: Embedded library - AMQP Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02300
   tag:
@@ -167,7 +167,7 @@
 - customVariables: []
   description: Embedded library - RocketMQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02400
   tag:
@@ -179,7 +179,7 @@
 - customVariables: []
   description: Embedded library - 0MQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02500
   tag:
@@ -194,7 +194,7 @@
 - customVariables: []
   description: Embedded library - JBossMQ Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02600
   tag:
@@ -206,7 +206,7 @@
 - customVariables: []
   description: Embedded library - Zbus Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02700
   tag:
@@ -218,7 +218,7 @@
 - customVariables: []
   description: Embedded library - Qpid Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02800
   tag:
@@ -230,7 +230,7 @@
 - customVariables: []
   description: Embedded library - Kafka Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: connect-02900
   tag:
