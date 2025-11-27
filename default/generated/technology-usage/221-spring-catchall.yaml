@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded framework - Spring
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: spring-catchall-00001
   tag:

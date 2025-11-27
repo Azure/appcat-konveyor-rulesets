@@ -1,7 +1,7 @@
 - customVariables: []
   description: Spring Boot Configuration
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-spring-03001-0
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Spring Boot Auto-configuration
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-spring-03001-1
   tag:
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Spring Boot Component Scan
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-spring-03001-2
   tag:
@@ -40,7 +40,7 @@
 - customVariables: []
   description: Spring Deployable War
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-spring-03002
   tag:

@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded framework - Spring Boot
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: 3rd-party-spring-03001
   tag:
@@ -15,7 +15,7 @@
 - customVariables: []
   description: Embedded framework - Spring Deployable War
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The Spring application can start from War
   ruleID: 3rd-party-spring-03002

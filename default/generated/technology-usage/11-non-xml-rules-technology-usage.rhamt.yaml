@@ -1,7 +1,7 @@
 - customVariables: []
   description: EJB XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-02000
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Hibernate Cfg
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-05000
   tag:
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Hibernate Mapping
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-06000
   tag:
@@ -40,7 +40,7 @@
 - customVariables: []
   description: JBoss EJB XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-12000
   tag:
@@ -53,7 +53,7 @@
 - customVariables: []
   description: JBoss Web XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-13000
   tag:
@@ -66,7 +66,7 @@
 - customVariables: []
   description: JDBC
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-14000
   tag:
@@ -79,7 +79,7 @@
 - customVariables: []
   description: JPA XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-17000
   tag:
@@ -92,7 +92,7 @@
 - customVariables: []
   description: Orion EJB XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-18000
   tag:
@@ -105,7 +105,7 @@
 - customVariables: []
   description: Orion Web XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-19000
   tag:
@@ -118,7 +118,7 @@
 - customVariables: []
   description: Properties
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-20000
   tag:
@@ -131,7 +131,7 @@
 - customVariables: []
   description: Seam
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-21000
   tag:
@@ -144,7 +144,7 @@
 - customVariables: []
   description: WebLogic Web XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-22000
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: WebSphere EJB
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-23000
   tag:
@@ -170,7 +170,7 @@
 - customVariables: []
   description: WebSphere EJB Ext
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-24000
   tag:
@@ -183,7 +183,7 @@
 - customVariables: []
   description: WebSphere Web XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-25000
   tag:
@@ -196,7 +196,7 @@
 - customVariables: []
   description: WebSphere WS Binding
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-26000
   tag:
@@ -209,7 +209,7 @@
 - customVariables: []
   description: WebSphere WS Extension
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: non-xml-technology-usage-27000
   tag:

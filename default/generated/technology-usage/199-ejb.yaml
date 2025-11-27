@@ -4,7 +4,7 @@
     pattern: javax.ejb.(?P<classes>(Schedule|ScheduleExpression|Schedules|TimedObject|Timeout|Timer|TimerConfig|TimerHandle|TimerService))
   description: EJB Timer
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: ejb-01000
   tag:

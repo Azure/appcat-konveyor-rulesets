@@ -1,7 +1,7 @@
 - customVariables: []
   description: Java EE Batch API
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00010
   tag:
@@ -17,7 +17,7 @@
 - customVariables: []
   description: Java EE Batch
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00011
   tag:
@@ -38,7 +38,7 @@
 - customVariables: []
   description: Java EE Batch API
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00012
   tag:
@@ -51,7 +51,7 @@
 - customVariables: []
   description: Java EE Batch
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00013
   tag:
@@ -64,7 +64,7 @@
 - customVariables: []
   description: JavaEE javax
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00020-javax
   tag:
@@ -80,7 +80,7 @@
 - customVariables: []
   description: JavaEE Jakarta
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00020-jakarta
   tag:
@@ -96,7 +96,7 @@
 - customVariables: []
   description: JavaEE
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00021
   tag:
@@ -109,7 +109,7 @@
 - customVariables: []
   description: Java EE JSON-P
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00030
   tag:
@@ -121,7 +121,7 @@
 - customVariables: []
   description: Java EE JSON-P
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00031
   tag:
@@ -134,7 +134,7 @@
 - customVariables: []
   description: Java Authorization Contract for Containers
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00040
   tag:
@@ -147,7 +147,7 @@
 - customVariables: []
   description: Java EE Management
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00050
   tag:
@@ -160,7 +160,7 @@
 - customVariables: []
   description: Java EE Application Deployment
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00060
   tag:
@@ -172,7 +172,7 @@
 - customVariables: []
   description: Web Services Metadata
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00070
   tag:
@@ -188,7 +188,7 @@
     pattern: javax.annotation.(?P<annotation>PreDestroy|PostConstruct|Resource|Resources)
   description: Common Annotations
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00080
   tag:
@@ -214,7 +214,7 @@
     pattern: (?P<package>java|javax.)?xml.bind.([a-zA-Z0-9._-]*)
   description: JAXB
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00090
   tag:
@@ -227,7 +227,7 @@
 - customVariables: []
   description: JAXR
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00100
   tag:
@@ -240,7 +240,7 @@
 - customVariables: []
   description: Bean Validation
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00110
   tag:
@@ -253,7 +253,7 @@
 - customVariables: []
   description: Java Servlet
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00120
   tag:
@@ -266,7 +266,7 @@
 - customVariables: []
   description: JSON Binding
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00130
   tag:
@@ -279,7 +279,7 @@
 - customVariables: []
   description: JACC
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00140
   tag:
@@ -292,7 +292,7 @@
 - customVariables: []
   description: MEJB
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00150
   tag:
@@ -305,7 +305,7 @@
 - customVariables: []
   description: EAR
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00160
   tag:
@@ -318,7 +318,7 @@
 - customVariables: []
   description: WS Metadata
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00170
   tag:
@@ -331,7 +331,7 @@
 - customVariables: []
   description: Common Annotations
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00180
   tag:
@@ -344,7 +344,7 @@
 - customVariables: []
   description: JAXB
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00190
   tag:
@@ -357,7 +357,7 @@
 - customVariables: []
   description: JAXR
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00200
   tag:
@@ -370,7 +370,7 @@
 - customVariables: []
   description: Bean Validation
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00210
   tag:
@@ -383,7 +383,7 @@
 - customVariables: []
   description: JSON-B
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00220
   tag:
@@ -396,7 +396,7 @@
 - customVariables: []
   description: Servlet
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00230
   tag:
@@ -409,7 +409,7 @@
 - customVariables: []
   description: JPA Mapping XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00902
   tag:
@@ -423,7 +423,7 @@
 - customVariables: []
   description: JPA Mapping XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00903
   tag:
@@ -437,7 +437,7 @@
 - customVariables: []
   description: CDI XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00905
   tag:
@@ -451,7 +451,7 @@
 - customVariables: []
   description: CDI XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00906
   tag:
@@ -465,7 +465,7 @@
 - customVariables: []
   description: Java EE XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00910
   tag:
@@ -479,7 +479,7 @@
 - customVariables: []
   description: Java EE XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00911
   tag:
@@ -493,7 +493,7 @@
 - customVariables: []
   description: Jakarta EE XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00912
   tag:
@@ -507,7 +507,7 @@
 - customVariables: []
   description: Java EE Client XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00913
   tag:
@@ -521,7 +521,7 @@
 - customVariables: []
   description: Java EE Client XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00914
   tag:
@@ -535,7 +535,7 @@
 - customVariables: []
   description: Jakarta EE Client XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00915
   tag:
@@ -549,7 +549,7 @@
 - customVariables: []
   description: Connector XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00916
   tag:
@@ -563,7 +563,7 @@
 - customVariables: []
   description: Connector XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00917
   tag:
@@ -577,7 +577,7 @@
 - customVariables: []
   description: Connector XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00918
   tag:
@@ -591,7 +591,7 @@
 - customVariables: []
   description: JSF XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00926
   tag:
@@ -605,7 +605,7 @@
 - customVariables: []
   description: JSF XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00927
   tag:
@@ -619,7 +619,7 @@
 - customVariables: []
   description: JSF XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00928
   tag:
@@ -633,7 +633,7 @@
 - customVariables: []
   description: WebServices XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00930
   tag:
@@ -647,7 +647,7 @@
 - customVariables: []
   description: WebServices XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00931
   tag:
@@ -661,7 +661,7 @@
 - customVariables: []
   description: WebServices XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00932
   tag:
@@ -675,7 +675,7 @@
 - customVariables: []
   description: JPA Mapping XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00950
   tag:
@@ -688,7 +688,7 @@
 - customVariables: []
   description: CDI XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00951
   tag:
@@ -701,7 +701,7 @@
 - customVariables: []
   description: Java EE XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00952
   tag:
@@ -714,7 +714,7 @@
 - customVariables: []
   description: Jakarta EE XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00953
   tag:
@@ -727,7 +727,7 @@
 - customVariables: []
   description: Java EE Client XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00954
   tag:
@@ -740,7 +740,7 @@
 - customVariables: []
   description: Jakarta EE Client XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00955
   tag:
@@ -753,7 +753,7 @@
 - customVariables: []
   description: Connector XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00956
   tag:
@@ -766,7 +766,7 @@
 - customVariables: []
   description: JSF XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00957
   tag:
@@ -779,7 +779,7 @@
 - customVariables: []
   description: WebServices XML
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javaee-technology-usage-00958
   tag:

@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded HSQLDB Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-01400
   tag:
@@ -13,7 +13,7 @@
 - customVariables: []
   description: MySQL database found
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: MySQL database found
   ruleID: database-01500
@@ -41,7 +41,7 @@
 - customVariables: []
   description: Embedded Derby Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-01600
   tag:
@@ -53,7 +53,7 @@
 - customVariables: []
   description: PostgreSQL database found
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: PostgreSQL database found
   ruleID: database-01700
@@ -81,7 +81,7 @@
 - customVariables: []
   description: Embedded H2 Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-01800
   tag:
@@ -93,7 +93,7 @@
 - customVariables: []
   description: Microsoft SQL database found
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: Microsoft SQL database found
   ruleID: database-01900
@@ -108,7 +108,7 @@
 - customVariables: []
   description: Embedded Oracle DB Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-02000
   tag:
@@ -123,7 +123,7 @@
 - customVariables: []
   description: Embedded Cassandra Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-02100
   tag:
@@ -152,7 +152,7 @@
 - customVariables: []
   description: Cassandra database found
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: Cassandra database found
   ruleID: database-02200
@@ -179,7 +179,7 @@
 - customVariables: []
   description: Embedded MckoiSQLDB Driver
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-02300
   tag:
@@ -191,7 +191,7 @@
 - customVariables: []
   description: MongoDB database found
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: MongoDB database found
   ruleID: database-02500
@@ -215,7 +215,7 @@
 - customVariables: []
   description: Embedded framework - Morphia
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-02600
   tag:
@@ -227,7 +227,7 @@
 - customVariables: []
   description: Embedded LevelDB Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-02700
   tag:
@@ -239,7 +239,7 @@
 - customVariables: []
   description: Embedded Apache HBase Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-02800
   tag:
@@ -251,7 +251,7 @@
 - customVariables: []
   description: Embedded Apache Accumulo Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-02900
   tag:
@@ -263,7 +263,7 @@
 - customVariables: []
   description: Embedded Spring Data JPA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: database-03000
   tag:
@@ -280,7 +280,7 @@
 - customVariables: []
   description: MariaDB database found
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: MariaDB database found
   ruleID: database-03200

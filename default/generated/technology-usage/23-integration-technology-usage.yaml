@@ -1,7 +1,7 @@
 - customVariables: []
   description: Apache Camel
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00001
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Teiid
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00002
   tag:
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Spring Integration
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00003
   tag:
@@ -40,7 +40,7 @@
 - customVariables: []
   description: Ikasan
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00004
   tag:
@@ -53,7 +53,7 @@
 - customVariables: []
   description: Swagger
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00005
   tag:
@@ -66,7 +66,7 @@
 - customVariables: []
   description: Apiman
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00006
   tag:
@@ -79,7 +79,7 @@
 - customVariables: []
   description: 3scale
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00007
   tag:
@@ -92,7 +92,7 @@
 - customVariables: []
   description: Istio
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00008
   tag:
@@ -105,7 +105,7 @@
 - customVariables: []
   description: ServiceMix
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00009
   tag:
@@ -118,7 +118,7 @@
 - customVariables: []
   description: Mule
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00010
   tag:
@@ -131,7 +131,7 @@
 - customVariables: []
   description: Petals EIP
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00011
   tag:
@@ -144,7 +144,7 @@
 - customVariables: []
   description: SwitchYard
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00012
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: Apache Synapse
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00013
   tag:
@@ -170,7 +170,7 @@
 - customVariables: []
   description: WSO2
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00014
   tag:
@@ -183,7 +183,7 @@
 - customVariables: []
   description: Talend ESB
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-integration-00015
   tag:
