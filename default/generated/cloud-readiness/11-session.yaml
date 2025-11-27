@@ -48,7 +48,4 @@
         pattern: jakarta.servlet.http.HttpSession.putValue
     - java.referenced:
         location: IMPORT
-        pattern: javax.servlet.http.HttpSession
-    - java.referenced:
-        location: IMPORT
-        pattern: jakarta.servlet.http.HttpSession
+        pattern: (javax|jakarta).servlet.http.HttpSession

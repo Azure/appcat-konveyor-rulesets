@@ -29,9 +29,7 @@
   when:
     or:
     - java.dependency:
-        nameregex: ^javax\.websocket\..*
-    - java.dependency:
-        nameregex: ^jakarta\.websocket\..*
+        nameregex: ^(javax|jakarta)\.websocket\..*
 
 - category: potential
   customVariables: []
@@ -65,8 +63,6 @@
   when:
     or:
     - java.dependency:
-        nameregex: ^javax\.ws\.rs\..*
-    - java.dependency:
-        nameregex: ^jakarta\.ws\.rs\..*
+        nameregex: ^(javax|jakarta)\.ws\.rs\..*
 
 

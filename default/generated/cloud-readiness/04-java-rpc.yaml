@@ -26,14 +26,9 @@
     - as: default
       java.referenced:
         location: PACKAGE
-        pattern: javax.xml.rpc*
+        pattern: (javax|jakarta).xml.rpc*
     - java.dependency:
-        nameregex: ^javax\.xml\.rpc\..*
-    - java.referenced:
-        location: PACKAGE
-        pattern: jakarta.xml.rpc*
-    - java.dependency:
-        nameregex: ^jakarta\.xml\.rpc\..*
+        nameregex: ^(javax|jakarta)\.xml\.rpc\..*
     - java.referenced:
         location: PACKAGE
         pattern: org.apache.xmlrpc*

@@ -33,14 +33,9 @@
     or:
     - java.referenced:
         location: PACKAGE
-        pattern: javax.mail*
+        pattern: (javax|jakarta).mail*
     - java.dependency:
-        nameregex: ^javax\.mail\..*
-    - java.referenced:
-        location: PACKAGE
-        pattern: jakarta.mail*
-    - java.dependency:
-        nameregex: ^jakarta\.mail\..*
+        nameregex: ^(javax|jakarta)\.mail\..*
     - java.referenced:
         location: PACKAGE
         pattern: com.sun.mail*

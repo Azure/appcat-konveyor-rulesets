@@ -140,14 +140,7 @@
     or:
     - java.referenced:
         location: ANNOTATION
-        pattern: javax.annotation.Resource
-        annotated:
-          elements:
-            - name: name
-              value: ".*(?i)(path|dir|directory|folder|file|store|upload|download|temp|cache|log|data|config).*"
-    - java.referenced:
-        location: ANNOTATION
-        pattern: jakarta.annotation.Resource
+        pattern: (javax|jakarta).annotation.Resource
         annotated:
           elements:
             - name: name

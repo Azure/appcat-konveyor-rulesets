@@ -70,9 +70,7 @@
   when:
     or:
     - java.dependency:
-        nameregex: ^javax\.persistence\..*
-    - java.dependency:
-        nameregex: ^jakarta\.persistence\..*
+        nameregex: ^(javax|jakarta)\.persistence\..*
     - java.dependency:
         nameregex: ^org\.eclipse\.persistence\.jakarta\.persistence.*
 

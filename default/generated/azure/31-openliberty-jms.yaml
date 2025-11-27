@@ -83,28 +83,14 @@
     or:
     - java.referenced:
         location: ANNOTATION
-        pattern: javax.annotation.Resource
+        pattern: (javax|jakarta).annotation.Resource
         annotated:
           elements:
             - name: name
               value: jms/[a-zA-Z0-9_-]+
     - java.referenced:
         location: ANNOTATION
-        pattern: jakarta.annotation.Resource
-        annotated:
-          elements:
-            - name: name
-              value: jms/[a-zA-Z0-9_-]+
-    - java.referenced:
-        location: ANNOTATION
-        pattern: javax.annotation.Resource
-        annotated:
-          elements:
-            - name: lookup
-              value: jms/[a-zA-Z0-9_-]+
-    - java.referenced:
-        location: ANNOTATION
-        pattern: jakarta.annotation.Resource
+        pattern: (javax|jakarta).annotation.Resource
         annotated:
           elements:
             - name: lookup
@@ -152,10 +138,7 @@
     or: 
     - java.referenced:
         location: ANNOTATION
-        pattern: javax.ejb.MessageDriven
-    - java.referenced:
-        location: ANNOTATION
-        pattern: jakarta.ejb.MessageDriven
+        pattern: (javax|jakarta).ejb.MessageDriven
 
 - category: mandatory
   customVariables: []
@@ -275,11 +258,6 @@
     or:
     - java.referenced:
         location: IMPORT
-        pattern: javax.jms*
+        pattern: (javax|jakarta).jms*
     - java.dependency:
-        nameregex: ^javax\.jms\..*
-    - java.referenced:
-        location: IMPORT
-        pattern: jakarta.jms*
-    - java.dependency:
-        nameregex: ^jakarta\.jms\..*
+        nameregex: ^(javax|jakarta)\.jms\..*

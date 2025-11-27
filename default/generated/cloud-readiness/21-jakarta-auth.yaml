@@ -31,6 +31,4 @@
   when:
     or:
     - java.dependency:
-        nameregex: ^jakarta\.authentication\..*
-    - java.dependency:
-        nameregex: ^jakarta\.authorization\..*
+        nameregex: ^jakarta\.(authentication|authorization)\..*
