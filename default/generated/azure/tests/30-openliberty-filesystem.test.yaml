@@ -23,12 +23,12 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 8
       messageMatches: Detected @Resource annotations for file path injections
 
 - ruleID: openliberty-filesystem-00004
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 4
       messageMatches: Detected usage of ServletContext.getRealPath()

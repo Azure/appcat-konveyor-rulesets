@@ -1,0 +1,19 @@
+rulesPath: ../23-jakarta-service.yaml
+providers:
+- name: java
+  dataPath: ./data/23-jakarta-service
+- name: builtin
+  dataPath: ./data/23-jakarta-service
+tests:
+- ruleID: jakarta-service-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The application depends on Jakarta WebSocket
+- ruleID: jakarta-service-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The application depends on Jakarta RESTful Web Services

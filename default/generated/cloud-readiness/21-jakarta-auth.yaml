@@ -1,0 +1,34 @@
+- category: potential
+  customVariables: []
+  description: Detects Jakarta Authentication or Authorization usage
+  effort: 5
+  labels:
+  - source=java
+  - source=java-ee
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - os=windows
+  - os=linux
+  links:
+  - title: Jakarta Authentication
+    url: https://jakarta.ee/specifications/authentication/
+  - title: Jakarta Authorization
+    url: https://jakarta.ee/specifications/authorization/
+  - title: Microsoft Entra ID Documentation
+    url: https://learn.microsoft.com/en-us/entra/identity/
+  message: |-
+    The application depends on **Jakarta Authentication** (`jakarta.authentication.*`) or **Jakarta Authorization** (`jakarta.authorization.*`) APIs. 
+    These APIs are part of the Jakarta Security ecosystem, responsible for authentication, identity stores, and access control decisions.
+    
+    When migrating to Azure, review how security and identity integration are handled:
+    - If the application uses **container-based deployment**, integrate with **Azure AD** or **Microsoft Entra ID** for user authentication.
+    - If using **Jakarta Security** in a servlet or web container (e.g., Payara, WildFly, Tomcat), ensure the container's security configuration is compatible with Azure App Service or Azure Kubernetes Service (AKS).
+    - Consider modernizing authentication to use **OpenID Connect** or **OAuth 2.0** flows backed by Azure AD for better cloud alignment.
+  ruleID: jakarta-auth-00001
+  when:
+    or:
+    - java.dependency:
+        nameregex: ^jakarta\.(authentication|authorization)\..*

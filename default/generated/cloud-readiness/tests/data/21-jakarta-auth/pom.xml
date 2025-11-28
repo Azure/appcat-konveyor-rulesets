@@ -8,17 +8,17 @@
 	<name>Sample Project</name>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/jakarta.authentication/jakarta.authentication-api -->
 		<dependency>
-		    <groupId>javax.xml.rpc</groupId>
-		    <artifactId>javax.xml.rpc-api</artifactId>
-		    <version>1.1.2</version>
+		    <groupId>jakarta.authentication</groupId>
+		    <artifactId>jakarta.authentication-api</artifactId>
+		    <version>3.1.0</version>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/jakarta.authorization/jakarta.authorization-api -->
 		<dependency>
-		    <groupId>jakarta.xml.rpc</groupId>
-		    <artifactId>jakarta.xml.rpc-api</artifactId>
-		    <version>1.1.4</version>
+		    <groupId>jakarta.authorization</groupId>
+		    <artifactId>jakarta.authorization-api</artifactId>
+		    <version>3.0.0</version>
 		</dependency>
 	</dependencies>
 </project>
-		
