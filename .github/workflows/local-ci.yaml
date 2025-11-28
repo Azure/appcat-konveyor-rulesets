@@ -4,7 +4,8 @@ on: ["push", "pull_request"]
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: windows-latest
     permissions:
       issues: write
       pull-requests: write
@@ -13,27 +14,41 @@ jobs:
 
       - name: Run appcat test
         id: appcat-test
+        shell: pwsh
         run: |
-          curl -L -o appcat.tar.gz https://aka.ms/appcat/azure-migrate-appcat-for-java-cli-linux-amd64.tar.gz
-          tar -xzf appcat.tar.gz
-          mv azure-migrate-appcat-for-java-cli-*/appcat ./appcat
-          ./appcat test ./default/generated/ | tee output.log || true
-          tail -n5 output.log > message.md
-          msg=$(grep -E '.*Rules Summary:' message.md -A1)
-          tests_pass_rate=$(grep -E '.*Rules Summary:' message.md | sed -E 's| *Rules Summary: *(.*)|\1|' | sed -E 's|.*?:||')
-          tcs_pass_rate=$(grep -E '.*Test Cases Summary:' message.md | sed -E 's| *Test Cases Summary: *(.*)|\1|' | sed -E 's|.*?:||')
+          # Ubuntu version (commented out):
+          # curl -L -o appcat.tar.gz https://aka.ms/appcat/azure-migrate-appcat-for-java-cli-linux-amd64.tar.gz
+          # tar -xzf appcat.tar.gz
+          # mv azure-migrate-appcat-for-java-cli-*/appcat ./appcat
+          # ./appcat test ./default/generated/ | tee output.log || true
+          # tail -n5 output.log > message.md
+          # msg=$(grep -E '.*Rules Summary:' message.md -A1)
+          # tests_pass_rate=$(grep -E '.*Rules Summary:' message.md | sed -E 's| *Rules Summary: *(.*)|\1|' | sed -E 's|.*?:||')
+          # tcs_pass_rate=$(grep -E '.*Test Cases Summary:' message.md | sed -E 's| *Test Cases Summary: *(.*)|\1|' | sed -E 's|.*?:||')
+
+          # Windows version:
+          Invoke-WebRequest -Uri "https://aka.ms/appcat/azure-migrate-appcat-for-java-cli-windows-amd64.zip" -OutFile "appcat.zip"
+          Expand-Archive -Path "appcat.zip" -DestinationPath "."
+          $appcatDir = Get-ChildItem -Directory -Filter "azure-migrate-appcat-for-java-cli-*" | Select-Object -First 1
+          Copy-Item "$($appcatDir.FullName)\appcat.exe" -Destination ".\appcat.exe"
+          .\appcat.exe test .\default\generated\ 2>&1 | Tee-Object -FilePath "output.log"
+          $content = Get-Content "output.log" -Tail 5
+          $content | Out-File -FilePath "message.md"
+          $msg = ($content | Select-String -Pattern "Rules Summary:" -Context 0,1) -join "`n"
+          $tests_pass_rate = ($content | Select-String -Pattern "Rules Summary:" | ForEach-Object { $_ -replace '.*Rules Summary:\s*', '' -replace '.*:', '' })
+          $tcs_pass_rate = ($content | Select-String -Pattern "Test Cases Summary:" | ForEach-Object { $_ -replace '.*Test Cases Summary:\s*', '' -replace '.*:', '' })
           
-          echo 'msg<<EOF' >> $GITHUB_OUTPUT
-          echo ${msg} >> $GITHUB_OUTPUT
-          echo 'EOF' >> $GITHUB_OUTPUT
+          "msg<<EOF" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          $msg | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          "EOF" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
 
-          echo 'tcs_pass_rate<<EOF' >> $GITHUB_OUTPUT
-          echo ${tcs_pass_rate} >> $GITHUB_OUTPUT
-          echo 'EOF' >> $GITHUB_OUTPUT
+          "tcs_pass_rate<<EOF" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          $tcs_pass_rate | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          "EOF" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
 
-          echo 'tests_pass_rate<<EOF' >> $GITHUB_OUTPUT
-          echo ${tests_pass_rate} >> $GITHUB_OUTPUT
-          echo 'EOF' >> $GITHUB_OUTPUT
+          "tests_pass_rate<<EOF" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          $tests_pass_rate | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          "EOF" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
 
       - name: Comment on the PR
         if: ${{ github.event_name == 'pull_request' }}
