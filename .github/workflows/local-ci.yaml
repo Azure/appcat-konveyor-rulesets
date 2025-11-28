@@ -27,6 +27,7 @@ jobs:
       - name: Run appcat test
         id: appcat-test
         shell: pwsh
+        continue-on-error: true
         run: |
           Invoke-WebRequest -Uri "https://aka.ms/appcat/azure-migrate-appcat-for-java-cli-windows-amd64.zip" -OutFile "appcat.zip"
           Expand-Archive -Path "appcat.zip" -DestinationPath "."
@@ -106,4 +107,7 @@ jobs:
           STATUS: ${{ steps.appcat-test.outputs.tcs_pass_rate }}
           COLOR: blue
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+
+      - name: Check test result
+        if: ${{ steps.appcat-test.outcome == 'failure' }}
+        run: exit 1
