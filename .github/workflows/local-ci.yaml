@@ -11,13 +11,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: List test files
+      - name: Check environment
         shell: pwsh
         run: |
-          Write-Host "=== All .test.yaml files under default/generated ==="
+          Write-Host "=== Java version ==="
+          java -version 2>&1
+          Write-Host ""
+          Write-Host "=== Maven version ==="
+          mvn -version 2>&1
+          Write-Host ""
+          Write-Host "=== Test files count ==="
           $testFiles = Get-ChildItem -Path ".\default\generated\" -Recurse -Filter "*.test.yaml"
-          Write-Host "Total test files found: $($testFiles.Count)"
-          $testFiles | ForEach-Object { Write-Host $_.FullName }
+          Write-Host "Total .test.yaml files: $($testFiles.Count)"
 
       - name: Run appcat test
         id: appcat-test
