@@ -4,8 +4,8 @@
   effort: 1
   labels:
   - source=thorntail
-  - capability=eapxp2+
-  - capability=eapxp
+  - target=eapxp2+
+  - target=eapxp
   - JBossEAP
   - Thorntail
   links:

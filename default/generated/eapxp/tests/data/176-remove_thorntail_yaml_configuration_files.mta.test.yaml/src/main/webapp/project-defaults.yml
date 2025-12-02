@@ -1,5 +1,0 @@
-thorntail:
-  undertow:
-    servers:
-      default:
-        default-host: myhost

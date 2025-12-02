@@ -5,8 +5,8 @@
   effort: 1
   labels:
   - source=eapxp
-  - capability=eapxp3+
-  - capability=eapxp
+  - target=eapxp3+
+  - target=eapxp
   - JBossEAP
   - EAPXP
   links:
