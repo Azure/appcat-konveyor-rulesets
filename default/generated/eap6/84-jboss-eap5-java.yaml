@@ -1,10 +1,19 @@
 - customVariables: []
   description: JBoss EAP 5 JMX ManagementBean
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -22,10 +31,19 @@
   description: JMS legacy javax.jms.QueueConnectionFactory
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -55,10 +73,19 @@
   description: The deprecated org.jboss.ejb3.annotation.Service and related annotations in singleton EJBs are replaced with the EJB3.1 @Singleton annotation
   effort: 3
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -91,10 +118,19 @@
   description: Replace JBoss EJB 3.0 `@Management` annotation with EJB3.1 spec `@Singleton` bean
   effort: 3
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -126,10 +162,19 @@
   description: org.jboss.annotation.ejb.LocalBinding
   effort: 3
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -152,10 +197,19 @@
   description: org.jboss.annotation.ejb.Depends
   effort: 3
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -178,10 +232,19 @@
   description: org.jboss.wsf.spi.annotation has been moved to org.jboss.ws.api.annotation
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -202,10 +265,19 @@
   description: org.jboss.wsf.spi.binding has been moved to org.jboss.ws.api.binding
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -226,10 +298,19 @@
   description: org.jboss.wsf.spi.management.recording has been moved to org.jboss.ws.api.monitoring
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -250,10 +331,19 @@
   description: org.jboss.wsf.spi.tools.ant has been moved to org.jboss.ws.tools.ant
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -274,10 +364,19 @@
   description: org.jboss.wsf.spi.tools.cmd has been moved to org.jboss.ws.tools.cmd
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -298,10 +397,19 @@
   description: org.jboss.wsf.spi.tools has been moved to org.jboss.ws.api.tools
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -320,10 +428,19 @@
   description: org.jboss.wsf.spi.util.ServiceLoader has been moved to org.jboss.ws.api.util.ServiceLoader
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -343,10 +460,19 @@
   description: org.jboss.wsf.common.handler has been moved to org.jboss.ws.api.handler
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -367,10 +493,19 @@
   description: org.jboss.wsf.common.addressing has been moved to org.jboss.ws.api.addressing
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -391,10 +526,19 @@
   description: org.jboss.wsf.common.DOMUtils has been moved to org.jboss.ws.api.util.DOMUtils
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -414,10 +558,19 @@
   description: org.jboss.wsf.common has been moved to org.jboss.ws.common
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb
@@ -436,10 +589,19 @@
   description: org.jboss.ws.annotation.EndpointConfig has been moved to org.jboss.ws.api.annotation.EndpointConfig
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=eap5
   - source=eap
   - capability=eap6
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jboss-eap5
   - jms
   - ejb

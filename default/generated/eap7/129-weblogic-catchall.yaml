@@ -14,6 +14,15 @@
   - capability=eap8
   - capability=eap
   - catchall
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: This is a WebLogic proprietary type (`{{prefix}}{{remainder}}`) and needs
     to be migrated to a compatible API. There is currently no detailed information
@@ -46,6 +55,15 @@
   - capability=eap8
   - capability=eap
   - catchall
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     This is an Oracle proprietary SQL type (`oracle.sql.{{remainder}}`).
@@ -72,6 +90,15 @@
   - capability=eap8
   - capability=eap
   - catchall
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: This is an Oracle proprietary type (`com.tangosol{{subpackage}}.{{type}}`)
     and needs to be migrated to a compatible API. There is currently no detailed information
@@ -100,6 +127,15 @@
   - capability=eap8
   - capability=eap
   - catchall
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: This is an Oracle proprietary type (`{{com}}oracle{{subpackage}}.{{type}}`)
     and needs to be migrated to a compatible API. There is currently no detailed information
@@ -122,6 +158,15 @@
   - capability=eap8
   - capability=eap
   - catchall
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     This is an Oracle proprietary JDBC type (`oracle.sql.{{remainder}}`).

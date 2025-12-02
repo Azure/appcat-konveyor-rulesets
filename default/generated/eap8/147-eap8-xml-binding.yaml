@@ -9,6 +9,15 @@
   - capability=eap8+
   - capability=eap
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Jakarta XML Binding 4.0 specification
     url: https://jakarta.ee/specifications/xml-binding/4.0/jakarta-xml-binding-spec-4.0.html
@@ -38,6 +47,15 @@
   - capability=eap8+
   - capability=eap
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: |-
     Marshaller property package names must be updated to Jakarta XML Binding 4.0 for EAP8.
@@ -58,6 +76,15 @@
   - capability=eap8+
   - capability=eap
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Jakarta XML Binding 4.0 specification
     url: https://jakarta.ee/specifications/xml-binding/4.0/jakarta-xml-binding-spec-4.0.html
@@ -83,6 +110,15 @@
   - capability=eap8+
   - capability=eap
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Jakarta XML Binding 4.0 specification
     url: https://jakarta.ee/specifications/xml-binding/4.0/
@@ -115,6 +151,15 @@
   - capability=eap8+
   - capability=eap
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: |-
     Searches for implementation class names through `javax.xml.bind.context.factory` and `javax.xml.bind.JAXBContext` properties have been dropped in Jakarta XML Binding 4.0 for EAP8.
@@ -136,6 +181,15 @@
   - capability=eap8+
   - capability=eap
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Jakarta XML Binding 4.0 specification
     url: https://jakarta.ee/specifications/xml-binding/4.0/jakarta-xml-binding-spec-4.0.html
@@ -165,6 +219,15 @@
   - capability=eap8+
   - capability=eap
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Jakarta XML Binding 4.0 specification
     url: https://jakarta.ee/specifications/xml-binding/4.0/jakarta-xml-binding-spec-4.0.html
@@ -190,6 +253,15 @@
   - capability=eap8+
   - capability=eap
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Jakarta XML Binding 4.0 specification
     url: https://jakarta.ee/specifications/xml-binding/4.0/jakarta-xml-binding-spec-4.0.html
@@ -215,6 +287,15 @@
   - capability=eap8+
   - capability=eap
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Jakarta XML Binding 4.0 specification
     url: https://jakarta.ee/specifications/xml-binding/4.0/jakarta-xml-binding-spec-4.0.html

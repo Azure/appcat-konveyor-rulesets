@@ -6,6 +6,15 @@
   - capability=eap7+
   - capability=eap
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JMS migration documentation
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_messaging_application_jms_deployment_descriptors
@@ -37,6 +46,15 @@
   - capability=eap7+
   - capability=eap
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: Verify in advance that all the modules this application depends on still
     exist.

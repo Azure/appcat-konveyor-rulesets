@@ -10,6 +10,15 @@
   - capability=eap8+
   - capability=eap
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: Replace this class with `org.wildfly.naming.client.WildFlyInitialContextFactory`.
   ruleID: deprecated-initialcontextfactory-is-removed-00001

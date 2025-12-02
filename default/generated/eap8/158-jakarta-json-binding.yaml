@@ -9,6 +9,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: |-
     By default, types annotated with the `jakarta.json.bind.annotation.JsonbCreator` annotation no longer require all parameters to be present in the JSON content. Default values will be used if the JSON being parsed is missing one of the parameters.

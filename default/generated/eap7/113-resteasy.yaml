@@ -15,6 +15,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -39,6 +48,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -81,6 +99,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -106,6 +133,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -128,6 +164,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -155,6 +200,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -178,6 +232,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -201,6 +264,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -225,6 +297,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -249,6 +330,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#injectorfactory_and_registry
@@ -273,6 +363,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -299,6 +398,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -325,6 +433,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -351,6 +468,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -376,6 +502,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -401,6 +536,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -425,6 +569,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -450,6 +603,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy removes additional classes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#additional_classes_removed_from_resteasy_3
@@ -479,6 +641,15 @@
   - capability=eap
   - resteasy
   - jax-rs
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -503,6 +674,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -528,6 +708,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -552,6 +741,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy removed/protected methods on ResteasyProviderFactory class
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#resteasyproviderfactory_add_methods
@@ -580,6 +778,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -606,6 +813,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -632,6 +848,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -658,6 +883,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#injectorfactory_and_registry
@@ -683,6 +917,15 @@
   - capability=eap
   - resteasy
   - jax-rs
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -708,6 +951,15 @@
   - capability=eap
   - resteasy
   - jax-rs
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -733,6 +985,15 @@
   - capability=eap
   - resteasy
   - jax-rs
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -758,6 +1019,15 @@
   - capability=eap
   - resteasy
   - jax-rs
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -783,6 +1053,15 @@
   - capability=eap
   - resteasy
   - jax-rs
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -808,6 +1087,15 @@
   - capability=eap
   - resteasy
   - jax-rs
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Client Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#application_migration_changes
@@ -832,6 +1120,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -857,6 +1154,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -880,6 +1186,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -906,6 +1221,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -933,6 +1257,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -959,6 +1292,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -986,6 +1328,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -1012,6 +1363,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -1038,6 +1398,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -1065,6 +1434,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -1092,6 +1470,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -1119,6 +1506,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -1145,6 +1541,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy SPI Application Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_resteasy_deprecated_classes
@@ -1172,6 +1577,15 @@
   - capability=eap
   - resteasy
   - yaml
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: "The resteasy-yaml-provider module is not recommended to use due security
     issue in SnakeYAML library used by RESTEasy for unmarshaling. \n If you would
@@ -1202,6 +1616,15 @@
   - capability=eap7
   - capability=eap
   - resteasy
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: "Deserializing Java objects from untrusted sources is not safe. For this
     reason, \n the `org.jboss.resteasy.plugins.providers.SerializableProvider` class
@@ -1241,6 +1664,15 @@
   - capability=eap
   - resteasy
   - charset
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: RESTEasy Default Charset UTF-8 in Content-Type Header
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/migration_guide/application_migration_changes#migrate_resteasy_default_charset_utf8_in_content_type_header

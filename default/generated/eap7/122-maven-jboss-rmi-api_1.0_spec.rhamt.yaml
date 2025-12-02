@@ -7,6 +7,15 @@
   - capability=eap
   - konveyor.io/source
   - rmi
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: If you migrate your application to JBoss EAP 7.3 (or later), and want to
     ensure its Maven building, running or testing works as expected, remove any dependency

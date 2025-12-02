@@ -14,6 +14,15 @@
   - hibernate
   - configuration
   - transaction
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate 5 redesigned Transactions SPI
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_transactions
@@ -49,6 +58,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate 5 Removed and deprecated classes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_deprecations
@@ -73,6 +91,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate 5 Removed and deprecated classes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_deprecations
@@ -105,6 +132,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: Since Hibernate 5, the `org.hibernate.hql.spi.TemporaryTableBulkIdStrategy`
     class was replaced by `org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy`
@@ -137,6 +173,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: Since Hibernate 5, the `org.hibernate.hql.spi.PersistentTableBulkIdStrategy`
     class was moved to new package and you should use it as `org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy`.

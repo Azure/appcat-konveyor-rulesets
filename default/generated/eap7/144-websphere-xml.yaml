@@ -7,6 +7,15 @@
   - capability=eap
   - websphere
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: WBI is a WebSphere proprietary business integration solution. This needs
     to be migrated to JBoss Drools or JBPM/BRMS.
@@ -32,6 +41,15 @@
   - capability=eap
   - websphere
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate IBM WebSphere Application Server Web Application Extension or Binding
       Files
@@ -61,6 +79,15 @@
   - capability=eap
   - websphere
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     This file contains WebSphere proprietary JSP engine configuration.
@@ -93,6 +120,15 @@
   - capability=eap
   - websphere
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Configure the EAP 7 Web Server (Undertow)
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/configuration_guide/#configuring_the_web_server_undertow
@@ -125,6 +161,15 @@
   - capability=eap
   - websphere
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Developing JAX-WS Web Services
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html/developing_web_services_applications/developing_jax_ws_web_services
@@ -149,6 +194,15 @@
   - capability=eap
   - websphere
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Developing JAX-WS Web Services
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html/developing_web_services_applications/developing_jax_ws_web_services
@@ -171,6 +225,15 @@
   - capability=eap
   - websphere
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: IBM WebSphere configuration document descriptions
     url: https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/rcfg_rconfdoc_descriptions.html

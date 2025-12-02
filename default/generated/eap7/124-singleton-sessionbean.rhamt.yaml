@@ -6,6 +6,15 @@
   - capability=eap7
   - capability=eap
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: "When a singleton EJB bean class implements `javax.ejb.SessionBean` interface,
     this interface should be removed from the implements clause. \n All methods declared

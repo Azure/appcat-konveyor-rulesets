@@ -12,6 +12,15 @@
   - source=spring5
   - capability=spring6+
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Jakarta EE
     url: https://jakarta.ee/

@@ -10,6 +10,15 @@
   - capability=eap7
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: This is a reference to the IBM DB2 driver type (`com.ibm.db2.jcc.{{type}}`).
     It probably does not need to be migrated. However the IBM DB2 driver should be
@@ -35,6 +44,15 @@
   - capability=eap8
   - capability=eap
   - catchall
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     This is an IBM proprietary type (`{{package}}.{{type}}`) and needs to be migrated to a compatible API. There is currently no detailed
@@ -70,6 +88,15 @@
   - capability=eap8
   - capability=eap
   - catchall
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     This is an IBM ILog proprietary type (`ilog.{{subpackage}}.{{type}}`) and needs to be migrated to a compatible API. There is currently no detailed

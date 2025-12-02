@@ -7,6 +7,15 @@
   - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and
       unsupported features'
@@ -28,6 +37,15 @@
   - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and
       unsupported features'
@@ -49,6 +67,15 @@
   - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and
       unsupported features'
@@ -70,6 +97,15 @@
   - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and
       unsupported features'
@@ -91,6 +127,15 @@
   - capability=eap
   - konveyor.io/source
   - EclipseMicroProfile
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.4 Migration Guide: Review the list of deprecated and
       unsupported features'

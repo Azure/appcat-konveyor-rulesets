@@ -12,6 +12,15 @@
   - source=spring5
   - capability=spring6+
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -40,6 +49,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -69,6 +87,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -94,6 +121,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -116,6 +152,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -138,6 +183,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -161,6 +215,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -184,6 +247,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -207,6 +279,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -230,6 +311,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -253,6 +343,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -278,6 +377,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -302,6 +410,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -326,6 +443,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -350,6 +476,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -374,6 +509,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -398,6 +542,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -422,6 +575,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -446,6 +608,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -470,6 +641,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -493,6 +673,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -516,6 +705,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -539,6 +737,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -562,6 +769,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet
@@ -585,6 +801,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Red Hat JBoss EAP Application Migration from Jakarta EE 8 to EE 10 - Jakarta
       Servlet

@@ -1,8 +1,17 @@
 - customVariables: []
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=log4j
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - log4j
   links: []
   message: Deploying log4j.jar can result in non-deterministic ClassLoading issues.
@@ -15,9 +24,18 @@
 - customVariables: []
   description: Log4j Configuration
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=log4j
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - log4j
   links:
   - title: How to configure Log4J in JBoss EAP 6/7
@@ -41,9 +59,18 @@
   description: Log4j ConsoleAppender Configuration - Potential Deadlock
   effort: 1
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=log4j
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - log4j
   links:
   - title: EAP 6 deadlocks when using ConsoleHandler and java.io.PrintStream

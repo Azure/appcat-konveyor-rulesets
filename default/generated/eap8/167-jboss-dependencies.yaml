@@ -7,6 +7,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -26,6 +35,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -45,6 +63,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -64,6 +91,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -83,6 +119,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -102,6 +147,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -122,6 +176,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -142,6 +205,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -162,6 +234,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -181,6 +262,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -200,6 +290,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -220,6 +319,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -240,6 +348,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -259,6 +376,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -279,6 +405,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -298,6 +433,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -317,6 +461,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -337,6 +490,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -357,6 +519,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -377,6 +548,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -396,6 +576,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -416,6 +605,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -435,6 +633,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -455,6 +662,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -475,6 +691,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -494,6 +719,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -514,6 +748,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -533,6 +776,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -552,6 +804,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -571,6 +832,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017
@@ -590,6 +860,15 @@
   - source=jakarta-ee
   - capability=eap8
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
     url: https://access.redhat.com/articles/6980017

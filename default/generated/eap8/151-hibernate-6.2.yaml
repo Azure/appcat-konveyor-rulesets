@@ -11,6 +11,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate 6 migration guide - Changes in integration contracts (SPIs)
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#spi-multiLoad
@@ -36,6 +45,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate 6 migration guide - Changes in integration contracts (SPIs)
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#spi-afterDeserialize
@@ -61,6 +79,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate 6 migration guide - Changes in integration contracts (SPIs)
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#spi-JdbcType
@@ -87,6 +114,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate 6 migration guide - API/SPI/Internal distinction
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#api-internal-cfg
@@ -112,6 +148,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate 6 migration guide - API/SPI/Internal distinction
     url: https://docs.jboss.org/hibernate/orm/6.2/migration-guide/migration-guide.html#api-internal-loader

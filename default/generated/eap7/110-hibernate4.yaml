@@ -13,6 +13,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -39,6 +48,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -65,6 +83,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -91,6 +118,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -117,6 +153,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -143,6 +188,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -169,6 +223,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -195,6 +258,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -221,6 +293,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -247,6 +328,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -273,6 +363,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -299,6 +398,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -325,6 +433,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -351,6 +468,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -377,6 +503,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -404,6 +539,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -430,6 +574,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -457,6 +610,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -495,6 +657,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -522,6 +693,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -548,6 +728,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -575,6 +764,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -602,6 +800,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Configuration for Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#re-purposing-of-configuration
@@ -632,6 +839,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate 5 - Other changes to classes/packages
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_other_classes
@@ -657,6 +873,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Removed or deprecated types in Hibernate 5
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#deprecations
@@ -686,6 +911,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Removed and Deprecated Classes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_deprecations
@@ -714,6 +948,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate 5 Misc changes
     url: https://github.com/hibernate/hibernate-orm/blob/5.0/migration-guide.adoc#misc
@@ -738,6 +981,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Other Hibernate ORM 5 changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_miscellaneous
@@ -762,6 +1014,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Other Hibernate ORM 5 changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_miscellaneous
@@ -787,6 +1048,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate 5 - Other changes to classes/packages
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_other_classes
@@ -815,6 +1085,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate 5 - Other changes to classes/packages
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_other_classes
@@ -843,6 +1122,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate 5 - Other changes to classes/packages
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_other_classes
@@ -871,6 +1159,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: HIbernate 5 - Other changes to classes/packages
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_other_classes
@@ -901,6 +1198,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Other Hibernate ORM 5 changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_miscellaneous
@@ -926,6 +1232,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate 5 Type Handling
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migration_hibernate_orm_changes_type_handling
@@ -984,6 +1299,15 @@
   - hibernate
   - configuration
   - Hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     Previous versions of Hibernate have mapped `byte[]` and `Byte[]` to Oracle’s `LONG RAW` data type (via the JDBC `LONGVARBINARY` type). Oracle have deprecated the `LONG RAW` data type for many releases - possibly as far back as 8i.
@@ -1034,6 +1358,15 @@
   - capability=eap
   - hibernate
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: If the migration is from JBoss EAP 6 or Hibernate 4 then the dialect {{param_dialects}}
     does not support limit offset therefore as `setFirstResult` is used then `hibernate.legacy_limit_handler=true`

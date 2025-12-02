@@ -10,6 +10,15 @@
   - konveyor.io/source
   - JakartaEE
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Support for @Context Injection
     url: https://jakarta.ee/specifications/restful-ws/3.1/jakarta-restful-ws-spec-3.1.html#context-injection

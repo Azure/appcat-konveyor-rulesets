@@ -7,6 +7,15 @@
   - capability=eap
   - jms
   - weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Oracle 9i JMS Documentation
     url: http://docs.oracle.com/cd/B10501_01/appdev.920/a96609/toc.htm
@@ -32,6 +41,15 @@
   - capability=eap
   - jms
   - weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Java EE 7 - JMS Session
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEN
@@ -56,6 +74,15 @@
   - capability=eap
   - jms
   - weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Java EE 7 - JMS Queue Browser
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEY
@@ -79,6 +106,15 @@
   - capability=eap
   - jms
   - weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Java EE 7 - JMS Message Producer
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEO
@@ -103,6 +139,15 @@
   - capability=eap
   - jms
   - weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Java EE 7 - JMS Message Consumer
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEP
@@ -126,6 +171,15 @@
   - capability=eap
   - jms
   - weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Java EE 7 - JMS Connections
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEM
@@ -153,6 +207,15 @@
   - capability=eap
   - jms
   - weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Java EE 7 - JMS Message API
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCES
@@ -178,6 +241,15 @@
   - capability=eap
   - jms
   - weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Java EE 7 - JMS Destinations
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEL
@@ -206,6 +278,15 @@
   - capability=eap
   - jms
   - weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Java EE 7 - JMS Connection factories
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEK

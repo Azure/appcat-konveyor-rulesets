@@ -8,6 +8,15 @@
   - capability=eap7
   - capability=eap
   - picketlink
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss EAP 7.2 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html/migration_guide/application_migration_changes#migrate_ejb_client_code_to_eap_72

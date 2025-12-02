@@ -13,6 +13,15 @@
   - capability=eap
   - hibernate
   - Hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 5.1 Features
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html-single/migration_guide/application_migration_changes#hibernate_5_1_features
@@ -40,6 +49,15 @@
   - capability=eap
   - hibernate
   - Hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Schema Management Tooling Changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html-single/migration_guide/application_migration_changes#schema_management_tooling_changes

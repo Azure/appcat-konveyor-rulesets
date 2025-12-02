@@ -13,6 +13,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#requirements
@@ -42,6 +51,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -66,6 +84,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -91,6 +118,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -115,6 +151,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -139,6 +184,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -162,6 +216,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -185,6 +248,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -208,6 +280,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -232,6 +313,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -256,6 +346,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -279,6 +378,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -302,6 +410,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#spi
@@ -325,6 +442,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#api
@@ -349,6 +475,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#api
@@ -373,6 +508,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#api
@@ -397,6 +541,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#api
@@ -421,6 +574,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6.1 - Migration Guide from 6.0
     url: https://docs.jboss.org/hibernate/search/6.1/migration/html_single/#api

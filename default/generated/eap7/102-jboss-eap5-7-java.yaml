@@ -11,6 +11,15 @@
   - jboss-eap5
   - jms
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss EAP 7 - Basic Messaging Configuration
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html/configuring_messaging/getting_started#connection_factories
@@ -44,6 +53,15 @@
   - jboss-eap5
   - jms
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss EJB 3.0 extensions
     url: https://docs.jboss.org/ejb3/docs/reference/build/reference/en/html/jboss_extensions.html
@@ -80,6 +98,15 @@
   - ejb
   - jmx
   - singleton
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss EJB 3.0 extensions
     url: https://docs.jboss.org/ejb3/docs/reference/build/reference/en/html/jboss_extensions.html
@@ -119,6 +146,15 @@
   - jboss-eap5
   - jms
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss EJB 3.0 extensions
     url: https://docs.jboss.org/ejb3/docs/reference/build/reference/en/html/jboss_extensions.html
@@ -152,6 +188,15 @@
   - jboss-eap5
   - jms
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss EJB 3.0 extensions
     url: https://docs.jboss.org/ejb3/docs/reference/build/reference/en/html/jboss_extensions.html
@@ -180,6 +225,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
@@ -205,6 +259,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
@@ -230,6 +293,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
@@ -255,6 +327,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
@@ -280,6 +361,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
@@ -305,6 +395,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     This package has been relocated to `org.jboss.ws.api.tools` as specified in the
@@ -328,6 +427,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
@@ -352,6 +460,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
@@ -377,6 +494,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
@@ -402,6 +528,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
@@ -426,6 +561,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     This package has been relocated to `org.jboss.ws.common` as specified in the
@@ -449,6 +593,15 @@
   - jms
   - ejb
   - jbossws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes

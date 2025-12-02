@@ -12,6 +12,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Implicit Identifier Sequence and Table
       Name
@@ -47,6 +56,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Type System
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#type-system
@@ -75,6 +93,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Type System
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#type-system
@@ -120,6 +147,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Type System
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#basic-types
@@ -144,6 +180,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Basic Types
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#basic-types
@@ -166,6 +211,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Type System
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#renaming-of-javatypedescriptor-contract
@@ -188,6 +242,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Type System
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#renaming-of-sqltypedescriptor-contract
@@ -210,6 +273,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - CompositeUserType
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#compositeusertype-changes
@@ -232,6 +304,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Multi-table Mutation Queries
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#multi-table-mutation-queries
@@ -256,6 +337,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Stream
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#stream
@@ -284,6 +374,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Interceptor
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#interceptor
@@ -308,6 +407,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of org.hibernate.loader
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#restructuring-of-orghibernateloader
@@ -331,6 +439,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of org.hibernate.loader
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#restructuring-of-orghibernateloader
@@ -354,6 +471,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of org.hibernate.loader
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#restructuring-of-orghibernateloader
@@ -380,6 +506,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of the SQL package
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#restructuring-of-the-sql-package
@@ -406,6 +541,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Restructuring of the SQL package
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#restructuring-of-the-sql-package
@@ -470,6 +614,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - hbm.xml multiple <column/> now disallowed
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#hbmxml-multiple-column-now-disallowed
@@ -502,6 +655,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Legacy hibernate criteria API
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#legacy-hibernate-criteria-api
@@ -527,6 +689,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Iterate
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#iterate
@@ -550,6 +721,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Callable via NativeQuery
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#callable-via-nativequery
@@ -591,6 +771,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - HQL fetch all properties clause
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#hql-fetch-all-properties-clause
@@ -622,6 +811,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - JMX integration
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#jmx-integration
@@ -646,6 +844,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - JACC integration
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#jacc-integration
@@ -669,6 +876,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Previously deprecated features
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#previously-deprecated-features
@@ -691,6 +907,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Previously deprecated features
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#previously-deprecated-features
@@ -714,6 +939,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#configuration-property-renames
@@ -737,6 +971,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#configuration-property-renames
@@ -759,6 +1002,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#configuration-property-renames
@@ -781,6 +1033,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#configuration-property-renames
@@ -803,6 +1064,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#configuration-property-renames
@@ -826,6 +1096,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#configuration-property-renames
@@ -848,6 +1127,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Configuration property renames
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#configuration-property-renames
@@ -871,6 +1159,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Community dialects
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#community-dialects-moved-to-a-separate-module
@@ -900,6 +1197,15 @@
   - capability=quarkus
   - konveyor.io/source
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate ORM 6 migration guide - Multitenancy simplification
     url: https://github.com/hibernate/hibernate-orm/blob/6.0/migration-guide.adoc#multitenancy-simplification

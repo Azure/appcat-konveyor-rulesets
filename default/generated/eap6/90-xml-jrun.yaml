@@ -1,9 +1,18 @@
 - customVariables: []
   description: JRun Web App descriptor
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=jrun
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - web-app
   - jrun
   - configuration
@@ -27,9 +36,18 @@
 - customVariables: []
   description: JRun ejb-jar configuration
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=jrun
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - web-app
   - jrun
   - configuration

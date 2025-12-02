@@ -1,9 +1,18 @@
 - customVariables: []
   description: Glassfish Web Descriptor
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=glassfish
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - web-app
   - glassfish
   - configuration
@@ -19,9 +28,18 @@
 - customVariables: []
   description: Glassfish EJB Descriptor
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=glassfish
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - web-app
   - glassfish
   - configuration
@@ -38,9 +56,18 @@
 - customVariables: []
   description: Glassfish Application EAR configuration file
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=glassfish
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - web-app
   - glassfish
   - configuration

@@ -8,6 +8,15 @@
   - source=eap
   - capability=eap8+
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: In order to add support for EAP native OpenID Connect, the `auth-method`
     must be updated to `OIDC`.
@@ -28,6 +37,15 @@
   - source=eap
   - capability=eap8+
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: In order to add support for EAP native OpenID Connect, the `WEB-INF/keycloak.json`
     file must be renamed to `WEB-INF/oidc.json`.

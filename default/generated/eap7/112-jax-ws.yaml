@@ -7,6 +7,15 @@
   - capability=eap
   - konveyor.io/source
   - jax-ws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: "EAP 7 uses JAX-WS 2.2 style constructors with the `javax.xml.ws.WebServiceFeature`
     class to build clients that are injected into web service references (i.e. using

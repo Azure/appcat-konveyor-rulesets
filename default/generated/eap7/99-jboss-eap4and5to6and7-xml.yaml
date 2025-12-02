@@ -9,6 +9,15 @@
   - capability=eap6
   - capability=eap7
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss EAP 6 - Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Service-style_Deployment_Changes
@@ -41,6 +50,15 @@
   - capability=eap6
   - capability=eap7
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'BarrierController service in JBoss EAP 6 '
     url: https://access.redhat.com/solutions/410953
@@ -73,6 +91,15 @@
   - capability=eap6
   - capability=eap7
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: How to compress remote EJB communication in JBoss EAP 6
     url: https://access.redhat.com/solutions/322953
@@ -104,6 +131,15 @@
   - capability=eap6
   - capability=eap7
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Configure UsersRolesLoginModule for EAP 6 management console
     url: https://access.redhat.com/solutions/219933
@@ -127,6 +163,15 @@
   - capability=eap6
   - capability=eap7
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss EAP 6 - Migration Guide
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Configuration_File_Changes
@@ -164,6 +209,15 @@
   - capability=eap6
   - capability=eap7
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: "JBoss EAP 6 supports deploying SAR files, however JBoss EAP 5 and 6 do
     not share a lot of the internals. \n The class your `jboss-{{types}}.xml` file
@@ -187,6 +241,15 @@
   - capability=eap6
   - capability=eap7
   - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss EAP 5 - Custom Callback Handlers
     url: https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/5/html-single/security_guide/#Custom_Callback_Handlers

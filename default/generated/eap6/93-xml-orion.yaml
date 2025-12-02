@@ -1,9 +1,18 @@
 - customVariables: []
   description: Oracle Application Platform EJB Descriptor
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=orion
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - web-app
   - orion
   - configuration
@@ -23,9 +32,18 @@
 - customVariables: []
   description: Oracle Application Platform Web Descriptor
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=orion
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - web-app
   - orion
   - configuration
@@ -49,9 +67,18 @@
 - customVariables: []
   description: Oracle Application EAR configuration file
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=orion
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - web-app
   - orion
   - configuration

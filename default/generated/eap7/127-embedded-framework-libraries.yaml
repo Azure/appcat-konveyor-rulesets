@@ -3,6 +3,15 @@
   labels:
   - capability=eap
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: "\n                        The application embedds a Drools library.\n
     \                   "
@@ -18,6 +27,15 @@
   labels:
   - capability=eap
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP: Component Details'
     url: https://access.redhat.com/articles/112673
@@ -48,6 +66,15 @@
   labels:
   - capability=eap
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: "\n                        The application embeds a JDBC library.\n                    "
   ruleID: embedded-framework-libraries-04000
@@ -62,6 +89,15 @@
   labels:
   - capability=eap
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP: Component Details'
     url: https://access.redhat.com/articles/112673
@@ -99,6 +135,15 @@
   labels:
   - capability=eap
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 6 - Migrate Seam 2.2 applications
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/index#sect-Migrate_Seam_2.2_Applications

@@ -12,6 +12,15 @@
   - capability=jws
   - JakartaEE
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: The `@Produces` annotation for instantiating `FacesContext` is not necessary
     anymore, as CDI injection for `FacesContext` works out of the box.

@@ -1,9 +1,18 @@
 - customVariables: []
   description: JAX-RPC Generic Handler
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java-ee
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - jax-rpc
   - soap
   links:

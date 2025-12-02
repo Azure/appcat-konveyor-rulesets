@@ -6,11 +6,20 @@
   description: Doug Lea Concurrency util
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   links: []
   message: |-
@@ -26,11 +35,20 @@
   description: backport-util-concurrent type reference
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   links: []
   message: |-
@@ -52,11 +70,20 @@
   description: Mule API reference
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   - mule
   links: []
@@ -79,11 +106,20 @@
   description: MX4J type reference
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   - mx4j
   links: []
@@ -101,11 +137,20 @@
   description: Apache Tuscany type reference
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   - soa
   - apache-tuscany
@@ -121,11 +166,20 @@
   description: Tibco ActiveMatrix Stub
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - tibco
   - soa
   links: []
@@ -146,11 +200,20 @@
   description: Tibco type reference
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   - tibco
   links: []
@@ -173,11 +236,20 @@
   description: SAP CrystalReports type reference
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   - sap
   links: []
@@ -200,11 +272,20 @@
   description: IONA type reference
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   - iona
   links: []
@@ -224,11 +305,20 @@
   description: Reference to an Apache org.apache type was found.
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   - apache
   links: []
@@ -254,11 +344,20 @@
   description: JBoss API reference
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   - jboss
   links: []
@@ -274,11 +373,20 @@
   description: java.sql.DriverManager type reference
   effort: 0
   labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - source=java
   - source=javaee
   - source=soa
   - capability=eap6+
   - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
   - catchall
   - jdbc
   links: []

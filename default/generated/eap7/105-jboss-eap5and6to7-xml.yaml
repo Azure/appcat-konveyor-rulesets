@@ -13,6 +13,15 @@
   - ejb
   - cluster
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: The `clustered` element is ignored in EAP 7 and is not useful. In case
     the application is started using HA profile, the replication will be done automatically.
@@ -34,6 +43,15 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Context and dependency injection - CDI
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/development_guide/#contexts_and_dependency_injection_cdi
@@ -62,6 +80,15 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Seam 2 Framework Reference
     url: https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/5/html-single/seam_reference_guide/
@@ -92,6 +119,15 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   ruleID: jboss-eap5and6to7-xml-07000
   tag:
@@ -120,6 +156,15 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: jboss-web.xml Configuration Reference
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/development_guide/#jboss-webxml_Configuration_Reference
@@ -151,6 +196,15 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate Entity Beans to JPA
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_entity_beans_to_jpa
@@ -185,6 +239,15 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: jboss-ejb3.xml Deployment Descriptor Reference
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/development_guide/index#jboss-ejb3xml_Deployment_Descriptor_Reference
@@ -211,6 +274,15 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: JBoss web-services changes
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_service_application_changes
@@ -251,6 +323,15 @@
   - ejb
   - jpa
   - cmp
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     CMP entity beans are no longer supported in JBoss EAP 7. User is requested to use JPA entities that fully replaced the functionality provided by CMP beans.
@@ -283,6 +364,15 @@
   - ejb
   - jpa
   - bmp
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: |-
     BMP entity beans are no longer supported in JBoss EAP 7. User is requested to use JPA entities that fully replaced the functionality provided by BMP beans.
@@ -314,6 +404,15 @@
   - jboss-eap6
   - ejb
   - web
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: JBoss Web was replaced by Undertow, which does not contain support for
     the Valve functionality. It may be needed to migrate to Undertow handlers.
@@ -340,6 +439,15 @@
   - ejb
   - rpc
   - jax-ws
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: JAX-RPC support was removed in JBoss EAP 7. All the RPC calls will need
     to be migrated to JAX-WS.
@@ -381,6 +489,15 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate Deployment plan configurations
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_deployment_plan_configurations
@@ -410,6 +527,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
@@ -438,6 +564,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
@@ -466,6 +601,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
@@ -494,6 +638,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
@@ -527,6 +680,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
@@ -560,6 +722,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
@@ -590,6 +761,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
@@ -620,6 +800,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
@@ -652,6 +841,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes
@@ -686,6 +884,15 @@
   - cluster
   - web
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Web Session Clustering config migration changes in EAP 7
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_web_session_clustering_changes

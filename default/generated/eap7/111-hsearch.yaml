@@ -11,6 +11,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: Hibernate Search library API used in application.
   ruleID: hsearch-00000
@@ -36,6 +45,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Advanced Integrator Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_advanced_integrator_changes
@@ -60,6 +78,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -84,6 +111,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -108,6 +144,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Advanced Integrator Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_advanced_integrator_changes
@@ -133,6 +178,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -158,6 +212,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -182,6 +245,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -206,6 +278,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Advanced Integrator Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_advanced_integrator_changes
@@ -230,6 +311,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Advanced Integrator Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_advanced_integrator_changes
@@ -256,6 +346,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Advanced Integrator Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_advanced_integrator_changes
@@ -283,6 +382,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -307,6 +415,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.x Deprecated Constructors
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_deprecated_constructors
@@ -335,6 +452,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -362,6 +488,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -386,6 +521,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -413,6 +557,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -443,6 +596,15 @@
   - hibernate-search
   - hibernate
   - annotation
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -469,6 +631,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_changes
@@ -495,6 +666,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscelanous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -528,6 +708,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Advanced Integrator Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_advanced_integrator_changes
@@ -565,6 +754,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscelanous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -594,6 +792,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscelanous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -623,6 +830,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscelanous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -652,6 +868,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscelanous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -686,6 +911,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscelanous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -720,6 +954,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Number and Date Index Formatting Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_number_and_date_index_formatting_changes
@@ -798,6 +1041,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscellaneous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -831,6 +1083,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscellaneous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -868,6 +1129,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscellaneous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -901,6 +1171,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: Maven artifact org.hibernate:hibernate-search-analyzers was removed from
     Hibernate Search 5. We recommend to depend on the appropriate Lucene artifact
@@ -926,6 +1205,15 @@
   - hibernate-search
   - hibernate
   - maven
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Miscelanous Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_miscellaneous_hibernate_search_changes
@@ -955,6 +1243,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#sorting-options
@@ -992,6 +1289,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#api-changes
@@ -1019,6 +1325,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#api-changes
@@ -1046,6 +1361,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#api-changes
@@ -1072,6 +1396,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#api-changes
@@ -1098,6 +1431,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#api-changes
@@ -1124,6 +1466,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#api-changes
@@ -1151,6 +1502,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Advanced Integrator Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_advanced_integrator_changes
@@ -1176,6 +1536,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Advanced Integrator Changes in Hibernate Search 5.x
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_advanced_integrator_changes
@@ -1202,6 +1571,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#api-changes
@@ -1229,6 +1607,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#api-changes
@@ -1256,6 +1643,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search 5.4 to 5.5 migration
     url: http://hibernate.org/search/documentation/migrate/5.5/#api-changes
@@ -1286,6 +1682,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1316,6 +1721,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1346,6 +1760,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1379,6 +1802,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1409,6 +1841,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1442,6 +1883,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1472,6 +1922,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1505,6 +1964,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1538,6 +2006,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1568,6 +2045,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1598,6 +2084,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1631,6 +2126,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1661,6 +2165,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1694,6 +2207,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1727,6 +2249,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1760,6 +2291,15 @@
   - hibernate-search
   - hibernate
   - lucene
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Apache Lucene Migration Guide
     url: http://lucene.apache.org/core/4_10_2/MIGRATE.html
@@ -1788,6 +2328,15 @@
   - capability=eap
   - hibernate-search
   - hibernate
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Hibernate Search Removed Methods
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate_hibernate_search_deprecated_methods

@@ -8,6 +8,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Migrate Oracle WebLogic configuration files to JBoss EAP 6 or 7 '
     url: https://access.redhat.com/articles/1326803
@@ -38,6 +47,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate Oracle WebLogic Server Configuration Files and Descriptors to JBoss
       EAP 6 or 7
@@ -70,6 +88,15 @@
   - performance
   - ejb
   - database
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Map delay-updates-until-end-of-tx element from weblogic-ejb-jar.xml Elements
       to the JBoss Enterprise Application Platform Equivalent
@@ -96,6 +123,15 @@
   - descriptor
   - configuration
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate the weblogic-ejb-jar.xml
     url: https://access.redhat.com/articles/1326823
@@ -132,6 +168,15 @@
   - descriptor
   - configuration
   - ejb
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Java EE 7 annotation @AccessTimeout
     url: http://docs.oracle.com/javaee/7/api/javax/ejb/AccessTimeout.html
@@ -155,6 +200,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   ruleID: weblogic-xml-descriptor-eap7-07000
   tag:
@@ -176,6 +230,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   ruleID: weblogic-xml-descriptor-eap7-08000
   tag:
@@ -197,6 +260,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   ruleID: weblogic-xml-descriptor-eap7-09000
   tag:
@@ -221,6 +293,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: WebLogic webservices can be migrated to `jboss-webservices.xml` descriptor
     or to a Java EE standard Annotation based configuration. Reference the JBoss EAP
@@ -250,6 +331,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: EAP 7 Overview of the Messaging subsystem configuration
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/configuring_messaging/#intro_messaging_config
@@ -279,6 +369,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate Oracle WebLogic configuration files to JBoss EAP
     url: https://access.redhat.com/articles/1326803
@@ -316,6 +415,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   ruleID: weblogic-xml-descriptor-eap7-13000
   tag:
@@ -335,6 +443,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   ruleID: weblogic-xml-descriptor-eap7-14000
   tag:
@@ -356,6 +473,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: WebLogic specific configuration of web services runtime parameters
   ruleID: weblogic-xml-descriptor-eap7-15000
@@ -379,6 +505,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   ruleID: weblogic-xml-descriptor-eap7-16000
   tag:
@@ -403,6 +538,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: "\n                        In this file, the value set for a property by
     a metadata annotation can be overridden. (It does not override the values set
@@ -427,6 +571,15 @@
   - weblogic
   - descriptor
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Replace the WebLogic plan.xml deployment descriptor configuration
     url: https://access.redhat.com/articles/1329173
@@ -457,6 +610,15 @@
   - configuration
   - ejb
   - database
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: WebLogic Server Deployment Elements
     url: https://docs.oracle.com/middleware/1221/wls/WLMDB/summary.htm#r35c1-t4

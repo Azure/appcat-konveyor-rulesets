@@ -8,6 +8,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: '`javax.xml.soap.SOAPElementFactory.newInstance()` must be replaced with
     `jakarta.xml.soap.SOAPFactory.newInstance()`.'
@@ -26,6 +35,15 @@
   - capability=jws6+
   - capability=jws
   - konveyor.io/source
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: '`javax.xml.soap.SOAPElementFactory.create()` must be replaced with `jakarta.xml.soap.SOAPFactory.createElement()`.
     If `javax.xml.soap.Name` is passed as a parameter, it must be replaced with `jakarta.xml.soap.Name`.'

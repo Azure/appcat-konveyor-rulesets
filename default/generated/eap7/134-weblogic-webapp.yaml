@@ -10,6 +10,15 @@
   - web-app
   - weblogic
   - file-system
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Detailed description of how to migrate virtual directories.
     url: https://access.redhat.com/articles/1332613
@@ -34,6 +43,15 @@
   - web-app
   - weblogic
   - servlet
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate WebLogic Proprietary Servlet Annotations
     url: https://access.redhat.com/articles/1249423
@@ -58,6 +76,15 @@
   - web-app
   - weblogic
   - servlet
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate WebLogic Proprietary Servlet Annotations
     url: https://access.redhat.com/articles/1249423
@@ -82,6 +109,15 @@
   - web-app
   - weblogic
   - servlet
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate WebLogic Proprietary Servlet Annotations
     url: https://access.redhat.com/articles/1249423
@@ -106,6 +142,15 @@
   - web-app
   - weblogic
   - lifecycle
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate WebLogic ApplicationLifecycleEvent to standard EJB with JBoss EAP
     url: https://access.redhat.com/articles/1326703
@@ -141,6 +186,15 @@
   - web-app
   - weblogic
   - lifecycle
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate Oracle WebLogic Server ApplicationLifecycleListener Code to Red
       Hat JBoss EAP 6+
@@ -174,6 +228,15 @@
   - web-app
   - weblogic
   - security
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links: []
   message: The usage of the WebLogic proprietary security API should be replaced by
     standard Java EE mechanisms or the ones provided by JBoss EAP.
@@ -194,6 +257,15 @@
   - web-app
   - weblogic
   - security
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Security Context - JBoss EAP 7
     url: https://access.redhat.com/webassets/avalon/d/red-hat-jboss-enterprise-application-platform/7.0.0/javadocs/org/jboss/security/SecurityContextAssociation.html
@@ -216,6 +288,15 @@
   - web-app
   - weblogic
   - security
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate Oracle WebLogic programmatic login to JBoss EAP 7
     url: https://access.redhat.com/articles/1329213

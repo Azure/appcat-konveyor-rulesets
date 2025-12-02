@@ -8,6 +8,15 @@
   - capability=eap7.1+
   - capability=eap
   - eap7
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate a Naming Client Configuration to Elytron
     url: https://access.redhat.com/documentation/es-es/red_hat_jboss_enterprise_application_platform/7.2/html/migration_guide/migrating_to_elytron#migrate_naming_client_configuration_to_elytron
@@ -29,6 +38,15 @@
   - capability=eap7.1+
   - capability=eap
   - eap7
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: Migrate an EJB Client to Elytron
     url: https://access.redhat.com/documentation/es-es/red_hat_jboss_enterprise_application_platform/7.2/html/migration_guide/migrating_to_elytron#migrate_security_ejb_client_to_elytron

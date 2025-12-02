@@ -12,6 +12,15 @@
   - capability=jws
   - JakartaEE
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: Replace this method call with `false` (which is the value that CDI implementations
     have returned for many years now).
@@ -35,6 +44,15 @@
   - capability=jws
   - JakartaEE
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Obtaining an InjectionTarget for a class
     url: https://jakarta.ee/specifications/cdi/3.0/jakarta-cdi-spec-3.0.html#bm_obtain_injectiontarget
@@ -60,6 +78,15 @@
   - capability=jws
   - JakartaEE
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Firing an event
     url: https://jakarta.ee/specifications/cdi/3.0/jakarta-cdi-spec-3.0.html#bm_fire_event
@@ -85,6 +112,15 @@
   - capability=jws
   - JakartaEE
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: If you application is calling method BeforeBeanDiscovery.addAnnotatedType(AnnotatedType)
     replace it with BeforeBeanDiscovery.addAnnotatedType(AnnotatedType, (String) null)

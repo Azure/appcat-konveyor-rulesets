@@ -15,6 +15,13 @@
   - jms
   - messaging
   - websphere
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Java EE 7 JMS Tutorial
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEH
@@ -45,6 +52,13 @@
   - messaging
   - websphere
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: The Embedded ActiveMQ Artemis Messaging Broker
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/configuring_messaging/#the_integrated_activemq_artemis_messaging_broker
@@ -75,6 +89,13 @@
   - messaging
   - websphere
   - configuration
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   links:
   - title: Configuring Single-Node Messaging Systems
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/configuring_messaging/#basic_configuration

@@ -10,6 +10,15 @@
   - capability=eap8+
   - capability=eap
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Jakarta Contexts and Dependency Injection Bean Discovery
     url: https://access.redhat.com/articles/6980265#cdi_bean_discovery

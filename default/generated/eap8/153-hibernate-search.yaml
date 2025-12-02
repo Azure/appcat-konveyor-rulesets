@@ -12,6 +12,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Constants for Property Keys'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#_constants_for_property_keys
@@ -38,6 +47,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -64,6 +82,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -88,6 +115,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -118,6 +154,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -143,6 +188,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -168,6 +222,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -193,6 +256,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -218,6 +290,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -243,6 +324,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -269,6 +359,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -294,6 +393,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -320,6 +428,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -346,6 +463,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -371,6 +497,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -396,6 +531,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -421,6 +565,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -446,6 +599,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -471,6 +633,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -497,6 +668,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -522,6 +702,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -548,6 +737,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -572,6 +770,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -596,6 +803,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -621,6 +837,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -646,6 +871,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -671,6 +905,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -696,6 +939,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -720,6 +972,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -745,6 +1006,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -770,6 +1040,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -797,6 +1076,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -822,6 +1110,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -849,6 +1146,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -876,6 +1182,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -902,6 +1217,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -928,6 +1252,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -954,6 +1287,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -980,6 +1322,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1007,6 +1358,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1034,6 +1394,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1061,6 +1430,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1086,6 +1464,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1113,6 +1500,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1142,6 +1538,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1166,6 +1571,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1190,6 +1604,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1218,6 +1641,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1248,6 +1680,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1278,6 +1719,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1304,6 +1754,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1331,6 +1790,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1357,6 +1825,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1382,6 +1859,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1407,6 +1893,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1434,6 +1929,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1458,6 +1962,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1486,6 +1999,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1511,6 +2033,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1537,6 +2068,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1565,6 +2105,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Configuration Property Reference'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#configuration-property-reference
@@ -1595,6 +2144,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 6 Reference: Custom analyzers and normalizers'
     url: https://docs.jboss.org/hibernate/search/6.0/reference/en-US/html_single/#backend-lucene-analysis-analyzers
@@ -1622,6 +2180,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 6 Reference: Custom analyzers and normalizers'
     url: https://docs.jboss.org/hibernate/search/6.0/reference/en-US/html_single/#backend-lucene-analysis-analyzers
@@ -1653,6 +2220,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 6 Reference: Mapping multiple alternatives'
     url: https://docs.jboss.org/hibernate/search/6.0/reference/en-US/html_single/#mapper-orm-alternatives
@@ -1679,6 +2255,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 6 Reference: Query-time boosting'
     url: https://docs.jboss.org/hibernate/search/6.0/reference/en-US/html_single/#search-dsl-predicate-common-boost
@@ -1704,6 +2289,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: This annotation was deprecated and non-functional in Hibernate Search 5.
     It is no longer available in Hibernate Search 6.
@@ -1726,6 +2320,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @CalendarBridge'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#calendarbridge
@@ -1751,6 +2354,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @CharFilterDef'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#charfilterdef
@@ -1775,6 +2387,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Bridges'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#bridges
@@ -1803,6 +2424,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Automatic indexing across associations
       by defaults'
@@ -1830,6 +2460,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @DateBridge'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#datebridge
@@ -1855,6 +2494,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @DocumentId'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#documentid
@@ -1880,6 +2528,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 6 Reference: Boosting the score of a predicate'
     url: https://docs.jboss.org/hibernate/search/6.0/reference/en-US/html_single/#search-dsl-predicate-common-boost
@@ -1905,6 +2562,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 6 Reference: @Facet(s)'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#facet
@@ -1933,6 +2599,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 6 Reference: @Field(s)'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#field
@@ -1961,6 +2636,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Bridges'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#bridges
@@ -1985,6 +2669,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Full-text filter'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#full-text-filter
@@ -2013,6 +2706,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @Indexed'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#indexed
@@ -2038,6 +2740,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @IndexedEmbedded'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#indexedembeded
@@ -2063,6 +2774,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Full-text filter'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#full-text-filter
@@ -2086,6 +2806,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @Latitude'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#latitude
@@ -2110,6 +2839,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @Longitude'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#longitude
@@ -2134,6 +2872,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 6 Reference: Lucene analysis configurer'
     url: https://docs.jboss.org/hibernate/search/6.0/reference/en-US/html_single/#backend-lucene-analysis-analyzers
@@ -2159,6 +2906,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 6 Reference: Custom analyzers and normalizers'
     url: https://docs.jboss.org/hibernate/search/6.0/reference/en-US/html_single/#backend-lucene-analysis-analyzers
@@ -2190,6 +2946,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: |-
     @NumericField no longer exists in Hibernate Search 6.
@@ -2217,6 +2982,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links: []
   message: '`@ProvidedId` was deprecated in Hibernate Search 5. It no longer exists
     in Hibernate Search 6.'
@@ -2239,6 +3013,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @SortableField(s)'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#sortablefield
@@ -2267,6 +3050,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @Spatial'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#spatial
@@ -2296,6 +3088,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @TikaBridge'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#tikabridge
@@ -2319,6 +3120,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @TokenFilterDef'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#tokenfilterdef
@@ -2350,6 +3160,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: FullTextEntityManager/FullTextSession'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#fulltextsession
@@ -2377,6 +3196,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: FullTextQuery'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#searching-fulltextquery
@@ -2405,6 +3233,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: org.apache.lucene.search.Query -> SearchPredicate'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#queries
@@ -2429,6 +3266,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: org.apache.lucene.search.Sort/SortField
       -> SearchSort'
@@ -2456,6 +3302,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Projections'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#projections
@@ -2483,6 +3338,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Facets'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#searching-facet
@@ -2511,6 +3375,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: ErrorHandler'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#error-handler
@@ -2540,6 +3413,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: @Factory'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#factory
@@ -2565,6 +3447,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: SearchException'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#searchexception
@@ -2587,6 +3478,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6 Reference - Sharding and routing
     url: https://docs.jboss.org/hibernate/search/6.0/reference/en-US/html_single/#concepts-sharding-routing
@@ -2616,6 +3516,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6 Reference - SearchFactory
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#_searchfactory
@@ -2640,6 +3549,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6 Reference - MassIndexer
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#massindexer
@@ -2664,6 +3582,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: Hibernate Search 6 Reference - MassIndexingJob
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#jsr352
@@ -2688,6 +3615,15 @@
   - konveyor.io/source
   - hibernate
   - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Hibernate Search 5 to 6 Migration: Maven coordinates'
     url: https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#maven-coordinates
