@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded library - Spring Boot Actuator
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: observability-0100
   tag:
@@ -21,7 +21,7 @@
 - customVariables: []
   description: Spring JMX configuration detected
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: observability-0200
   tag:

@@ -1,7 +1,7 @@
 - customVariables: []
   description: Liferay
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-01000
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Oracle Forms
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-02000
   tag:
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Spring Boot
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-03000
   tag:
@@ -40,7 +40,7 @@
 - customVariables: []
   description: Elasticsearch
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-04000
   tag:
@@ -53,7 +53,7 @@
 - customVariables: []
   description: Logstash
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-05000
   tag:
@@ -66,7 +66,7 @@
 - customVariables: []
   description: Jetty
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-06000
   tag:
@@ -79,7 +79,7 @@
 - customVariables: []
   description: Tomcat
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-08000
   tag:
@@ -92,7 +92,7 @@
 - customVariables: []
   description: Kibana
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-09000
   tag:
@@ -105,7 +105,7 @@
 - customVariables: []
   description: Apache Karaf
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-10000
   tag:
@@ -118,7 +118,7 @@
 - customVariables: []
   description: Neo4j
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-11000
   tag:
@@ -131,7 +131,7 @@
 - customVariables: []
   description: Spark
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-12000
   tag:
@@ -144,7 +144,7 @@
 - customVariables: []
   description: Apache Hadoop
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-13000
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: Apache Geronimo
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-14000
   tag:
@@ -170,7 +170,7 @@
 - customVariables: []
   description: Apache Aries
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-15000
   tag:
@@ -183,7 +183,7 @@
 - customVariables: []
   description: Cloudera
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-16000
   tag:
@@ -196,7 +196,7 @@
 - customVariables: []
   description: MapR
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-17000
   tag:
@@ -209,7 +209,7 @@
 - customVariables: []
   description: TensorFlow
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-18000
   tag:
@@ -222,7 +222,7 @@
 - customVariables: []
   description: Weka
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-19000
   tag:
@@ -235,7 +235,7 @@
 - customVariables: []
   description: Apache Mahout
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-20000
   tag:
@@ -248,7 +248,7 @@
 - customVariables: []
   description: Splunk
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-3rd-party-21000
   tag:

@@ -1,0 +1,25 @@
+rulesPath: ../22-jakarta-database.yaml
+providers:
+- name: java
+  dataPath: ./data/22-jakarta-database
+- name: builtin
+  dataPath: ./data/22-jakarta-database
+tests:
+- ruleID: jakarta-database-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: When migrating an application that uses Jakarta NoSQL to Azure
+- ruleID: jakarta-database-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The application depends on Jakarta Persistence (JPA) APIs
+- ruleID: jakarta-database-00003
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: The application depends on Jakarta Data

@@ -4,7 +4,7 @@
     pattern: java.lang.(?P<classes>(Thread|ThreadDeath|ThreadGroup|ThreadLocal))
   description: Threads
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javase-01000
   tag:
@@ -19,7 +19,7 @@
     pattern: java.util.concurrent.(?P<classes>(ExecutorService|Executors|Executor|ScheduledExecutorService))
   description: Threads
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: javase-01100
   tag:

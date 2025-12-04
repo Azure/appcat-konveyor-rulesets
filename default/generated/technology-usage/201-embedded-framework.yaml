@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded framework - Apache Axis
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Apache Axis framework.
   ruleID: embedded-framework-01000
@@ -14,7 +14,7 @@
 - customVariables: []
   description: Embedded framework - Apache Axis2
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Apache Axis2 framework.
   ruleID: embedded-framework-01010
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Embedded framework - Apache CXF
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Apache CXF framework.
   ruleID: embedded-framework-01100
@@ -40,7 +40,7 @@
 - customVariables: []
   description: Embedded framework - XFire
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the XFire framework.
   ruleID: embedded-framework-01200
@@ -53,7 +53,7 @@
 - customVariables: []
   description: Embedded framework - Jersey
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Jersey framework.
   ruleID: embedded-framework-01300
@@ -66,7 +66,7 @@
 - customVariables: []
   description: Embedded framework - Unirest
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Unirest framework.
   ruleID: embedded-framework-01400
@@ -79,7 +79,7 @@
 - customVariables: []
   description: Embedded framework - Hibernate
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Hibernate framework.
   ruleID: embedded-framework-01500
@@ -92,7 +92,7 @@
 - customVariables: []
   description: Embedded framework - Hibernate OGM
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Hibernate OGM framework.
   ruleID: embedded-framework-01600
@@ -105,7 +105,7 @@
 - customVariables: []
   description: Embedded framework - EclipseLink
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the EclipseLink framework.
   ruleID: embedded-framework-01700
@@ -118,7 +118,7 @@
 - customVariables: []
   description: Embedded framework - Spring Batch
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Spring Batch framework.
   ruleID: embedded-framework-02000
@@ -131,7 +131,7 @@
 - customVariables: []
   description: Embedded framework - AspectJ
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the AspectJ framework.
   ruleID: embedded-framework-02200
@@ -144,7 +144,7 @@
 - customVariables: []
   description: Embedded framework - JBPM
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the JBPM framework.
   ruleID: embedded-framework-02300
@@ -157,7 +157,7 @@
 - customVariables: []
   description: Embedded framework - iLog
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the iLog framework.
   ruleID: embedded-framework-02400
@@ -170,7 +170,7 @@
 - customVariables: []
   description: Embedded framework - Camunda
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Camunda framework.
   ruleID: embedded-framework-03000
@@ -183,7 +183,7 @@
 - customVariables: []
   description: Embedded framework - Pega
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Pega framework.
   ruleID: embedded-framework-03100
@@ -196,7 +196,7 @@
 - customVariables: []
   description: Embedded framework - Blaze
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Blaze framework.
   ruleID: embedded-framework-03200
@@ -209,7 +209,7 @@
 - customVariables: []
   description: Embedded framework - MRules
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the MRules framework.
   ruleID: embedded-framework-03300
@@ -222,7 +222,7 @@
 - customVariables: []
   description: Embedded framework - Easy Rules
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Easy Rules framework.
   ruleID: embedded-framework-03400
@@ -235,7 +235,7 @@
 - customVariables: []
   description: Embedded framework - AOP Alliance
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the AOP Alliance library.
   ruleID: embedded-framework-04700
@@ -248,7 +248,7 @@
 - customVariables: []
   description: Embedded framework - SNMP4J
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds SNMP4J.
   ruleID: embedded-framework-05000
@@ -261,7 +261,7 @@
 - customVariables: []
   description: Embedded framework - HTTP Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a HTTP client.
   ruleID: embedded-framework-05100
@@ -274,7 +274,7 @@
 - customVariables: []
   description: Embedded framework - Javax Inject
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Javax Inject library.
   ruleID: embedded-framework-05300
@@ -290,7 +290,7 @@
 - customVariables: []
   description: Embedded framework - Google Guice
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Google Guice library.
   ruleID: embedded-framework-05400
@@ -303,7 +303,7 @@
 - customVariables: []
   description: Embedded framework - CDI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a CDI library.
   ruleID: embedded-framework-05500
@@ -316,7 +316,7 @@
 - customVariables: []
   description: Embedded framework - Plexus Container
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Plexus Container library.
   ruleID: embedded-framework-05600
@@ -329,7 +329,7 @@
 - customVariables: []
   description: Embedded framework - Weld
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Weld library.
   ruleID: embedded-framework-05700
@@ -342,7 +342,7 @@
 - customVariables: []
   description: Embedded framework - Dagger
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Dagger library.
   ruleID: embedded-framework-05800
@@ -355,7 +355,7 @@
 - customVariables: []
   description: Embedded framework - GIN
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a GIN (GWT INjection) library.
   ruleID: embedded-framework-05900
@@ -368,7 +368,7 @@
 - customVariables: []
   description: Embedded framework - PicoContainer
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a PicoContainer library.
   ruleID: embedded-framework-06000
@@ -381,7 +381,7 @@
 - customVariables: []
   description: Embedded framework - Scaldi
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Scaldi library.
   ruleID: embedded-framework-06100
@@ -394,7 +394,7 @@
 - customVariables: []
   description: Embedded framework - Macros
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Macros library.
   ruleID: embedded-framework-06200
@@ -407,7 +407,7 @@
 - customVariables: []
   description: Embedded framework - Injekt for Kotlin
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Injekt for Kotlin library.
   ruleID: embedded-framework-06300
@@ -420,7 +420,7 @@
 - customVariables: []
   description: Embedded framework - Kodein
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Kodein library.
   ruleID: embedded-framework-06400
@@ -433,7 +433,7 @@
 - customVariables: []
   description: Embedded framework - Peaberry
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Peaberry library.
   ruleID: embedded-framework-06500
@@ -446,7 +446,7 @@
 - customVariables: []
   description: Embedded framework - Sticky Configured
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Sticky Configured library.
   ruleID: embedded-framework-06600
@@ -459,7 +459,7 @@
 - customVariables: []
   description: Embedded framework - Ka DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Ka DI library.
   ruleID: embedded-framework-06700
@@ -472,7 +472,7 @@
 - customVariables: []
   description: Embedded framework - Polyforms DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Polyforms DI library.
   ruleID: embedded-framework-06800
@@ -485,7 +485,7 @@
 - customVariables: []
   description: Embedded framework - JayWire
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a JayWire library.
   ruleID: embedded-framework-06900
@@ -498,7 +498,7 @@
 - customVariables: []
   description: Embedded framework - Silk DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Silk DI library.
   ruleID: embedded-framework-07000
@@ -511,7 +511,7 @@
 - customVariables: []
   description: Embedded framework - Grapht DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Grapht DI library.
   ruleID: embedded-framework-07100
@@ -524,7 +524,7 @@
 - customVariables: []
   description: Embedded framework - Syringe
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Syringe library.
   ruleID: embedded-framework-07200
@@ -537,7 +537,7 @@
 - customVariables: []
   description: Embedded framework - Cfg Engine
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Cfg Engine library.
   ruleID: embedded-framework-07300
@@ -550,7 +550,7 @@
 - customVariables: []
   description: Embedded framework - BeanInject
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a BeanInject library.
   ruleID: embedded-framework-07400
@@ -563,7 +563,7 @@
 - customVariables: []
   description: Embedded framework - Tornado Inject
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Tornado Inject library.
   ruleID: embedded-framework-07500
@@ -576,7 +576,7 @@
 - customVariables: []
   description: Embedded framework - Airframe
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Airframe library.
   ruleID: embedded-framework-07600
@@ -589,7 +589,7 @@
 - customVariables: []
   description: Embedded framework - Winter
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Winter library.
   ruleID: embedded-framework-07700
@@ -602,7 +602,7 @@
 - customVariables: []
   description: Embedded framework - KouInject
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a KouInject library.
   ruleID: embedded-framework-07800
@@ -615,7 +615,7 @@
 - customVariables: []
   description: Embedded framework - Iroh
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds an Iroh library.
   ruleID: embedded-framework-07900
@@ -628,7 +628,7 @@
 - customVariables: []
   description: Embedded framework - Micro DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Micro DI library.
   ruleID: embedded-framework-08000
@@ -641,7 +641,7 @@
 - customVariables: []
   description: Embedded framework - SubCut
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a SubCut library.
   ruleID: embedded-framework-08100
@@ -654,7 +654,7 @@
 - customVariables: []
   description: Embedded framework - Spring DI
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Spring DI library.
   ruleID: embedded-framework-08200
@@ -668,7 +668,7 @@
 - customVariables: []
   description: Embedded framework - Micrometer
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Micrometer library.
   ruleID: embedded-framework-08300
@@ -682,7 +682,7 @@
 - customVariables: []
   description: Embedded framework - Spring Web
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Spring Web framework.
   ruleID: embedded-framework-08400
@@ -700,7 +700,7 @@
 - customVariables: []
   description: Embedded framework - Spring Shell
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds a Spring Shell library.
   ruleID: embedded-framework-08500
@@ -714,7 +714,7 @@
 - customVariables: []
   description: Embedded framework - Spring Boot Flo
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds Spring Boot Flo.
   ruleID: embedded-framework-08600
@@ -728,7 +728,7 @@
 - customVariables: []
   description: Embedded framework - Spring Scheduled
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds Spring Scheduled.
   ruleID: embedded-framework-08700
@@ -742,7 +742,7 @@
 - customVariables: []
   description: Embedded framework - Spring Cloud Function
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds Spring Cloud Function.
   ruleID: embedded-framework-08800
@@ -757,7 +757,7 @@
 - customVariables: []
   description: Embedded framework - Quartz
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application embeds the Quartz framework.
   ruleID: embedded-framework-08900
@@ -770,7 +770,7 @@
 - customVariables: []
   description: Embedded framework - Feign
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-09000
   tag:
@@ -788,7 +788,7 @@
 - customVariables: []
   description: Embedded framework - Zipkin
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-09100
   tag:
@@ -806,7 +806,7 @@
 - customVariables: []
   description: Embedded framework - Eureka Client
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-09300
   tag:
@@ -824,7 +824,7 @@
 - customVariables: []
   description: Embedded framework - Eureka Server
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: embedded-framework-09400
   tag:

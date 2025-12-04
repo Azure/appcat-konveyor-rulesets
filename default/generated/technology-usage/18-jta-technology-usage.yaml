@@ -1,7 +1,7 @@
 - customVariables: []
   description: JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00010
   tag:
@@ -13,7 +13,7 @@
 - customVariables: []
   description: Mycontainer JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00020
   tag:
@@ -26,7 +26,7 @@
 - customVariables: []
   description: Geronimo JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00030
   tag:
@@ -39,7 +39,7 @@
 - customVariables: []
   description: OW2 JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00040
   tag:
@@ -52,7 +52,7 @@
 - customVariables: []
   description: Evo JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00050
   tag:
@@ -65,7 +65,7 @@
 - customVariables: []
   description: AKKA JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00060
   tag:
@@ -78,7 +78,7 @@
 - customVariables: []
   description: KumuluzEE JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00070
   tag:
@@ -91,7 +91,7 @@
 - customVariables: []
   description: Ignite JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00080
   tag:
@@ -104,7 +104,7 @@
 - customVariables: []
   description: Nuxeo JTA/JCA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00090
   tag:
@@ -117,7 +117,7 @@
 - customVariables: []
   description: Everit JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00100
   tag:
@@ -130,7 +130,7 @@
 - customVariables: []
   description: Demoiselle JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00110
   tag:
@@ -143,7 +143,7 @@
 - customVariables: []
   description: Apache Meecrowave JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00120
   tag:
@@ -156,7 +156,7 @@
 - customVariables: []
   description: Apache Sirona JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00130
   tag:
@@ -169,7 +169,7 @@
 - customVariables: []
   description: Lift JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00140
   tag:
@@ -182,7 +182,7 @@
 - customVariables: []
   description: WF Core JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00150
   tag:
@@ -195,7 +195,7 @@
 - customVariables: []
   description: Java Transaction API
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00160
   tag:
@@ -208,7 +208,7 @@
 - customVariables: []
   description: JBoss Transactions
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00170
   tag:
@@ -221,7 +221,7 @@
 - customVariables: []
   description: GlassFish JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00180
   tag:
@@ -234,7 +234,7 @@
 - customVariables: []
   description: Atomikos JTA
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00190
   tag:
@@ -247,7 +247,7 @@
 - customVariables: []
   description: Narayana Arjuna
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00200
   tag:
@@ -260,7 +260,7 @@
 - customVariables: []
   description: Spring Transactions
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-jta-00210
   tag:

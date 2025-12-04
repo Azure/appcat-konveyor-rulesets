@@ -83,14 +83,14 @@
     or:
     - java.referenced:
         location: ANNOTATION
-        pattern: javax.annotation.Resource
+        pattern: (javax|jakarta).annotation.Resource
         annotated:
           elements:
             - name: name
               value: jms/[a-zA-Z0-9_-]+
     - java.referenced:
         location: ANNOTATION
-        pattern: javax.annotation.Resource
+        pattern: (javax|jakarta).annotation.Resource
         annotated:
           elements:
             - name: lookup
@@ -135,9 +135,10 @@
     url: "https://docs.microsoft.com/en-us/azure/architecture/microservices/design/interservice-communication"
   ruleID: openliberty-jms-00003
   when:
-    java.referenced:
-      location: ANNOTATION
-      pattern: javax.ejb.MessageDriven
+    or: 
+    - java.referenced:
+        location: ANNOTATION
+        pattern: (javax|jakarta).ejb.MessageDriven
 
 - category: mandatory
   customVariables: []
@@ -254,6 +255,9 @@
     url: "https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/messaging"
   ruleID: openliberty-jms-00005
   when:
-    java.referenced:
-      location: IMPORT
-      pattern: javax.jms*
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: (javax|jakarta).jms*
+    - java.dependency:
+        nameregex: ^(javax|jakarta)\.jms\..*

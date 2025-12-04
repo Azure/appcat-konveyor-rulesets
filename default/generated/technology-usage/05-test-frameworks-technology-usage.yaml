@@ -1,7 +1,7 @@
 - customVariables: []
   description: EasyMock
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00010
   tag:
@@ -14,7 +14,7 @@
 - customVariables: []
   description: PowerMock
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00020
   tag:
@@ -27,7 +27,7 @@
 - customVariables: []
   description: Mockito
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00030
   tag:
@@ -40,7 +40,7 @@
 - customVariables: []
   description: TestNG
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00040
   tag:
@@ -53,7 +53,7 @@
 - customVariables: []
   description: Hamcrest
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00050
   tag:
@@ -66,7 +66,7 @@
 - customVariables: []
   description: Spock
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00060
   tag:
@@ -79,7 +79,7 @@
 - customVariables: []
   description: XMLUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00070
   tag:
@@ -92,7 +92,7 @@
 - customVariables: []
   description: Akka Testkit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00080
   tag:
@@ -105,7 +105,7 @@
 - customVariables: []
   description: REST Assured
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00090
   tag:
@@ -118,7 +118,7 @@
 - customVariables: []
   description: DbUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00100
   tag:
@@ -131,7 +131,7 @@
 - customVariables: []
   description: Mule Functional Test Framework
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00110
   tag:
@@ -144,7 +144,7 @@
 - customVariables: []
   description: Guava Testing
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00120
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: RandomizedTesting Runner
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00130
   tag:
@@ -170,7 +170,7 @@
 - customVariables: []
   description: HttpUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00140
   tag:
@@ -183,7 +183,7 @@
 - customVariables: []
   description: JCunit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00150
   tag:
@@ -196,7 +196,7 @@
 - customVariables: []
   description: JPA Matchers
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00160
   tag:
@@ -209,7 +209,7 @@
 - customVariables: []
   description: MultithreadedTC
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00170
   tag:
@@ -222,7 +222,7 @@
 - customVariables: []
   description: Specsy
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00180
   tag:
@@ -235,7 +235,7 @@
 - customVariables: []
   description: JFunk
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00190
   tag:
@@ -248,7 +248,7 @@
 - customVariables: []
   description: Restito
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00200
   tag:
@@ -261,7 +261,7 @@
 - customVariables: []
   description: Test Interface
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00210
   tag:
@@ -274,7 +274,7 @@
 - customVariables: []
   description: Play Test
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00220
   tag:
@@ -287,7 +287,7 @@
 - customVariables: []
   description: Arquillian
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00230
   tag:
@@ -300,7 +300,7 @@
 - customVariables: []
   description: Cactus
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00240
   tag:
@@ -313,7 +313,7 @@
 - customVariables: []
   description: Concordion
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00250
   tag:
@@ -326,7 +326,7 @@
 - customVariables: []
   description: Cucumber
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00260
   tag:
@@ -339,7 +339,7 @@
 - customVariables: []
   description: EtlUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00270
   tag:
@@ -352,7 +352,7 @@
 - customVariables: []
   description: HavaRunner
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00280
   tag:
@@ -365,7 +365,7 @@
 - customVariables: []
   description: JBehave
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00290
   tag:
@@ -378,7 +378,7 @@
 - customVariables: []
   description: JMock
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00300
   tag:
@@ -391,7 +391,7 @@
 - customVariables: []
   description: JMockit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00310
   tag:
@@ -404,7 +404,7 @@
 - customVariables: []
   description: Jukito
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00320
   tag:
@@ -417,7 +417,7 @@
 - customVariables: []
   description: Needle
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00330
   tag:
@@ -430,7 +430,7 @@
 - customVariables: []
   description: OpenPojo
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00340
   tag:
@@ -443,7 +443,7 @@
 - customVariables: []
   description: Unitils
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00350
   tag:
@@ -456,7 +456,7 @@
 - customVariables: []
   description: Spring Test
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00360
   tag:
@@ -469,7 +469,7 @@
 - customVariables: []
   description: JUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: technology-usage-test-frameworks-00370
   tag:

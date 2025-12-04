@@ -1,7 +1,7 @@
 - customVariables: []
   description: Embedded framework - EasyMock
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00010
   tag:
@@ -13,7 +13,7 @@
 - customVariables: []
   description: Embedded framework - PowerMock
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00020
   tag:
@@ -25,7 +25,7 @@
 - customVariables: []
   description: Embedded framework - Mockito
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00030
   tag:
@@ -37,7 +37,7 @@
 - customVariables: []
   description: Embedded framework - TestNG
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00040
   tag:
@@ -49,7 +49,7 @@
 - customVariables: []
   description: Embedded framework - Hamcrest
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00050
   tag:
@@ -61,7 +61,7 @@
 - customVariables: []
   description: Embedded framework - Spring Test
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00060
   tag:
@@ -73,7 +73,7 @@
 - customVariables: []
   description: Embedded framework - Spock
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00070
   tag:
@@ -85,7 +85,7 @@
 - customVariables: []
   description: Embedded framework - XMLUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00080
   tag:
@@ -97,7 +97,7 @@
 - customVariables: []
   description: Embedded framework - Akka Testkit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00090
   tag:
@@ -109,7 +109,7 @@
 - customVariables: []
   description: Embedded framework - REST Assured
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00100
   tag:
@@ -121,7 +121,7 @@
 - customVariables: []
   description: Embedded library - DbUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00110
   tag:
@@ -133,7 +133,7 @@
 - customVariables: []
   description: Embedded framework - Mule Functional Test Framework (TCK)
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00120
   tag:
@@ -145,7 +145,7 @@
 - customVariables: []
   description: Embedded framework - Guava Testing Library
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00130
   tag:
@@ -157,7 +157,7 @@
 - customVariables: []
   description: Embedded framework - RandomizedTesting Randomized Runner
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00140
   tag:
@@ -169,7 +169,7 @@
 - customVariables: []
   description: Embedded framework - HttpUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00150
   tag:
@@ -181,7 +181,7 @@
 - customVariables: []
   description: Embedded framework - JCUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00160
   tag:
@@ -193,7 +193,7 @@
 - customVariables: []
   description: Embedded framework - JPA Matchers
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00170
   tag:
@@ -205,7 +205,7 @@
 - customVariables: []
   description: Embedded framework - MultithreadedTC
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00180
   tag:
@@ -217,7 +217,7 @@
 - customVariables: []
   description: Embedded framework - Specsy
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00190
   tag:
@@ -229,7 +229,7 @@
 - customVariables: []
   description: Embedded framework - JFunk
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00200
   tag:
@@ -241,7 +241,7 @@
 - customVariables: []
   description: Embedded framework - Restito
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00210
   tag:
@@ -253,7 +253,7 @@
 - customVariables: []
   description: Embedded framework - Test Interface
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00220
   tag:
@@ -265,7 +265,7 @@
 - customVariables: []
   description: Embedded framework - Play Test
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00230
   tag:
@@ -277,7 +277,7 @@
 - customVariables: []
   description: Embedded framework - Arquillian
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00240
   tag:
@@ -289,7 +289,7 @@
 - customVariables: []
   description: Embedded framework - Cactus
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00560
   tag:
@@ -301,7 +301,7 @@
 - customVariables: []
   description: Embedded framework - Concordion
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00260
   tag:
@@ -313,7 +313,7 @@
 - customVariables: []
   description: Embedded framework - Cucumber
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00270
   tag:
@@ -325,7 +325,7 @@
 - customVariables: []
   description: Embedded framework - EtlUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00280
   tag:
@@ -337,7 +337,7 @@
 - customVariables: []
   description: Embedded framework - HavaRunner
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00290
   tag:
@@ -349,7 +349,7 @@
 - customVariables: []
   description: Embedded framework - JBehave
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00300
   tag:
@@ -361,7 +361,7 @@
 - customVariables: []
   description: Embedded framework - JMock
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00310
   tag:
@@ -373,7 +373,7 @@
 - customVariables: []
   description: Embedded framework - JMockit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00320
   tag:
@@ -385,7 +385,7 @@
 - customVariables: []
   description: Embedded framework - Jukito
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00330
   tag:
@@ -397,7 +397,7 @@
 - customVariables: []
   description: Embedded framework - Needle
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00340
   tag:
@@ -409,7 +409,7 @@
 - customVariables: []
   description: Embedded framework - OpenPojo
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00350
   tag:
@@ -421,7 +421,7 @@
 - customVariables: []
   description: Embedded framework - Unitils
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00360
   tag:
@@ -433,7 +433,7 @@
 - customVariables: []
   description: Embedded framework - JUnit
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   ruleID: test-frameworks-sauge-00370
   tag:

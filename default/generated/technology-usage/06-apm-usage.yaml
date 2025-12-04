@@ -1,7 +1,7 @@
 - customVariables: []
   description: Application Performance Management (APM) tool - Application Insights
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application uses Application Insights.
   ruleID: apm-usage-00000
@@ -17,7 +17,7 @@
 - customVariables: []
   description: Application Performance Management (APM) tool - New Relic
   labels:
-  - konveyor.io/include=always
+  - discovery
   links: []
   message: The application use New Relic.
   ruleID: apm-usage-00001
@@ -34,7 +34,7 @@
 - customVariables: []
   description: Application Performance Management (APM) tool - Elastic APM
   labels:
-  - konveyor.io/include=always
+  - discovery
   - apm
   - os=windows
   - os=linux
@@ -54,7 +54,7 @@
 - customVariables: []
   description: Application Performance Management (APM) tool - Dynatrace
   labels:
-  - konveyor.io/include=always
+  - discovery
   - apm
   - os=windows
   - os=linux

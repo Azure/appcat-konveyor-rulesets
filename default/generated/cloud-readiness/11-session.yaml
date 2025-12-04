@@ -40,3 +40,12 @@
     - java.referenced:
         location: METHOD_CALL
         pattern: javax.servlet.http.HttpSession.putValue
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: jakarta.servlet.http.HttpSession.setAttribute
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: jakarta.servlet.http.HttpSession.putValue
+    - java.referenced:
+        location: IMPORT
+        pattern: (javax|jakarta).servlet.http.HttpSession
