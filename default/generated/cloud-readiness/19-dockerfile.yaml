@@ -47,7 +47,7 @@
   when:
     or:
     - builtin.filecontent:
-        filePattern: ^Dockerfile$
+        filePattern: Dockerfile$
         pattern: (?i)\bapt-get\s+upgrade\b
 
 - category: optional
@@ -71,7 +71,7 @@
   when:
     or:
     - builtin.filecontent:
-        filePattern: ^Dockerfile$
+        filePattern: Dockerfile$
         pattern: ^\s*(from|run|cmd|label|maintainer|expose|env|add|copy|entrypoint|volume|user|workdir|arg|onbuild|stopsignal|healthcheck|shell)\b
 
 - category: optional
@@ -96,5 +96,5 @@
   when:
     or:
     - builtin.filecontent:
-        filePattern: ^Dockerfile$
+        filePattern: Dockerfile$
         pattern: ^\s*(?i:env|label|arg)\s+\S+\s+=\s*
