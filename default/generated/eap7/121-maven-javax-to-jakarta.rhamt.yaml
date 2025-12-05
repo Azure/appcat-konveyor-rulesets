@@ -3,13 +3,22 @@
   description: Move to Jakarta EE Maven Artifacts - com.sun.mail:javax.mail
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -27,13 +36,22 @@
   description: Move to Jakarta EE Maven Artifacts - replace groupId javax.activation
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -51,13 +69,22 @@
   description: Move to Jakarta EE Maven Artifacts - replace artifactId activation
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -75,13 +102,22 @@
   description: The groupId 'javax' has been replaced by 'jakarta' in JBoss EAP 7.3, or later
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -99,13 +135,22 @@
   description: The artifactId for javax packages has been replaced by its corresponding jakarta equivalent.
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -123,13 +168,22 @@
   description: Move to Jakarta EE Maven Artifacts - replace artifactId cdi-api
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -147,13 +201,22 @@
   description: Move to Jakarta EE Maven Artifacts - replace artifactId validation-api
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -171,13 +234,22 @@
   description: Move to Jakarta EE Maven Artifacts - replace artifactId javax.inject
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -195,13 +267,22 @@
   description: Move to Jakarta EE Maven Artifacts - org.jboss.spec.javax.xml.soap:jboss-saaj-api_1.3_spec
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -220,13 +301,22 @@
   description: Move to Jakarta EE Maven Artifacts - org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Maven Artifact Changes for Jakarta
       EE'
@@ -245,13 +335,22 @@
   description: Move to JBoss EAP Jakarta EE BOMs - org.jboss.bom:jboss-eap-javaee8
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Changes to BOMs for Jakarta EE
       8'
@@ -269,13 +368,22 @@
   description: Move to JBoss EAP Jakarta EE BOMs - org.jboss.bom:jboss-eap-javaee8-with-spring4
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Changes to BOMs for Jakarta EE
       8'
@@ -293,13 +401,22 @@
   description: Move to JBoss EAP Jakarta EE BOMs - org.jboss.bom:jboss-eap-javaee8-with-tools
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Changes to BOMs for Jakarta EE
       8'
@@ -317,13 +434,22 @@
   description: Move to JBoss Jakarta EE BOMs - org.jboss.spec:jboss-javaee-8.0
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Changes to BOMs for Jakarta EE
       8'
@@ -341,13 +467,22 @@
   description: Move to JBoss Jakarta EE BOMs - org.jboss.spec:jboss-javaee-web-8.0
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Changes to BOMs for Jakarta EE
       8'
@@ -365,13 +500,22 @@
   description: Move to JBoss Jakarta EE BOMs - org.jboss.spec:jboss-javaee-all-8.0
   effort: 1
   labels:
-  - target=eap7
-  - target=eap8
-  - target=eap
-  - target=jakarta-ee8
-  - target=jakarta-ee
-  - source
+  - capability=eap7
+  - capability=eap8
+  - capability=eap
+  - capability=jakarta-ee8
+  - capability=jakarta-ee
+  - konveyor.io/source
   - JakartaEE
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
   links:
   - title: 'Red Hat JBoss EAP 7.3 Migration Guide: Changes to BOMs for Jakarta EE
       8'

@@ -1,0 +1,56 @@
+- customVariables: []
+  description: JRun
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=jrun
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - web-app
+  - jrun
+  - discovery
+  links: []
+  ruleID: jrun-catchall-00000
+  tag:
+  - catchall
+  - jrun
+  - JRun
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: jrun*
+- customVariables: []
+  description: JRunX
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=jrun
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - web-app
+  - jrun
+  - discovery
+  links: []
+  ruleID: jrun-catchall-00001
+  tag:
+  - catchall
+  - jrun
+  - JRunX
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: jrunx*

@@ -6,8 +6,17 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
@@ -28,9 +37,6 @@
       - java.dependency:
           lowerbound: 0.0.0
           name: log4j.log4j
-      - java.dependency:
-          lowerbound: 0.0.0
-          name: log4j.log4j
       - builtin.file:
           pattern: log4j\.jar
     - java.referenced:
@@ -44,15 +50,24 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
   message: Log4j usage without including `log4j.jar`
   ruleID: log4j-removed-00002
   when:
-    and:
+    or:
     - java.referenced:
         location: IMPORT
         pattern: org.apache.log4j.Logger
@@ -74,17 +89,31 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
   message: Log4j configuration without including `log4j.jar`
   ruleID: log4j-removed-00003
   when:
-    and:
-    - builtin.file:
-        pattern: (log4j\.xml|log4j\.properties|jboss-log4j\.xml)
+    or:
+    - or:
+      - builtin.file:
+          pattern: log4j\.xml
+      - builtin.file:
+          pattern: log4j\.properties
+      - builtin.file:
+          pattern: jboss-log4j\.xml
     - not: true
       or:
       - java.dependency:
@@ -103,8 +132,17 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
@@ -120,9 +158,6 @@
       - java.dependency:
           lowerbound: 0.0.0
           name: log4j.log4j
-      - java.dependency:
-          lowerbound: 0.0.0
-          name: log4j.log4j
       - builtin.file:
           pattern: log4j\.jar
 - category: mandatory
@@ -133,8 +168,17 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - target=eap8+
-  - target=eap
+  - capability=eap8+
+  - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee10+
+  - capability=java-ee
   links:
   - title: 'Migration: Apache Log4j version 1 is not longer provided in EAP 8'
     url: https://access.redhat.com/articles/6973120
@@ -151,9 +195,6 @@
           pattern: org.jboss.log4j.logmanager
     - not: true
       or:
-      - java.dependency:
-          lowerbound: 0.0.0
-          name: log4j.log4j
       - java.dependency:
           lowerbound: 0.0.0
           name: log4j.log4j
