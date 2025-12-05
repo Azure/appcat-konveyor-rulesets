@@ -37,6 +37,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - log4j
+  - discovery
   links:
   - title: How to configure Log4J in JBoss EAP 6/7
     url: https://access.redhat.com/solutions/405893

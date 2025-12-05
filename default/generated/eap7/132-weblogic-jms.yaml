@@ -16,6 +16,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: Oracle 9i JMS Documentation
     url: http://docs.oracle.com/cd/B10501_01/appdev.920/a96609/toc.htm

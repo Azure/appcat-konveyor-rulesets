@@ -16,6 +16,7 @@
   - web-app
   - glassfish
   - configuration
+  - discovery
   links: []
   ruleID: xml-glassfish-01000
   tag:
@@ -43,6 +44,7 @@
   - web-app
   - glassfish
   - configuration
+  - discovery
   links: []
   ruleID: xml-glassfish-02000
   tag:
@@ -71,6 +73,7 @@
   - web-app
   - glassfish
   - configuration
+  - discovery
   links: []
   ruleID: xml-glassfish-03000
   tag:

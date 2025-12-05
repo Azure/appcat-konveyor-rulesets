@@ -17,6 +17,7 @@
   - jboss-eap5
   - jms
   - ejb
+  - discovery
   links: []
   ruleID: jboss-eap5-java-01000
   tag:

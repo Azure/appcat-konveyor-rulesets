@@ -14,6 +14,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-01000
   tag:
@@ -41,6 +42,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-02000
   tag:
@@ -68,6 +70,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-03000
   tag:
@@ -95,6 +98,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-04000
   tag:
@@ -123,6 +127,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-05000
   tag:
@@ -154,6 +159,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-06000
   tag:
@@ -193,6 +199,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-06001
   tag:
@@ -230,6 +237,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-07000
   tag:
@@ -258,6 +266,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-08000
   tag:
@@ -286,6 +295,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-09000
   tag:
@@ -314,6 +324,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - webservice
+  - discovery
   links: []
   ruleID: xml-webservices-10000
   tag:

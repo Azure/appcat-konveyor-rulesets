@@ -16,6 +16,7 @@
   - web-app
   - resin
   - configuration
+  - discovery
   links: []
   message: "An Resin specific file defining an application configuration. Such a file
     may define URL paths, internal resin ids, root directory path etc.\n                            This

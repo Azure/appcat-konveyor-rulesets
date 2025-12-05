@@ -20,6 +20,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - seam
+  - discovery
   links:
   - title: Migration from Seam 2 to Java EE and Alternatives
     url: https://access.redhat.com/documentation/en-us/Red_Hat_JBoss_Web_Framework_Kit/2.7/html-single/Seam_Guide/index.html#idm54350960
@@ -737,6 +738,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - seam
+  - discovery
   links:
   - title: JBoss BPM Suite 6 - CDI integration
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_bpm_suite/6.4/html-single/development_guide/index#sect_cdi_integration

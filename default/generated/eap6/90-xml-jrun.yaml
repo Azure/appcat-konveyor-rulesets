@@ -16,6 +16,7 @@
   - web-app
   - jrun
   - configuration
+  - discovery
   links: []
   ruleID: xml-jrun-01000
   tag:
@@ -51,6 +52,7 @@
   - web-app
   - jrun
   - configuration
+  - discovery
   links: []
   ruleID: xml-jrun-02000
   tag:

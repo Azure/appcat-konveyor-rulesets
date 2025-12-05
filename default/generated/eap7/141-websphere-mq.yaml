@@ -22,6 +22,7 @@
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
+  - discovery
   links:
   - title: Java EE 7 JMS Tutorial
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEH
@@ -59,6 +60,7 @@
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
+  - discovery
   links:
   - title: The Embedded ActiveMQ Artemis Messaging Broker
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/configuring_messaging/#the_integrated_activemq_artemis_messaging_broker
@@ -96,6 +98,7 @@
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
+  - discovery
   links:
   - title: Configuring Single-Node Messaging Systems
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/configuring_messaging/#basic_configuration

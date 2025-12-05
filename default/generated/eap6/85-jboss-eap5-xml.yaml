@@ -17,6 +17,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: JBoss Cache User Guide
     url: https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/5/html-single/cache_user_guide/
@@ -52,6 +53,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: JBoss EAP 5 Classloading
     url: https://access.redhat.com/documentation/en-us/JBoss_Enterprise_Application_Platform/5/html/Microcontainer_User_Guide/sect-JBoss_Microcontainer_User_Guide-The_ClassLoading_Layer-ClassLoading.html
@@ -82,6 +84,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: JBoss Seam Reference Guide - Configuring Seam components
     url: https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/5/html-single/seam_reference_guide/#xml
@@ -114,6 +117,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: Seam Framework Reference Guide
     url: https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/5/html-single/seam_reference_guide/
@@ -146,6 +150,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links: []
   ruleID: jboss-eap5-xml-07000
   tag:
@@ -182,6 +187,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: JBoss DTD's
     url: http://www.jboss.org/j2ee/dtd/
@@ -212,6 +218,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links: []
   ruleID: jboss-eap5-xml-08000
   tag:
@@ -245,6 +252,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: jboss-web.xml Configuration Reference
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/development_guide/#jboss-webxml_Configuration_Reference
@@ -284,6 +292,7 @@
   - ejb
   - seam
   - classloading
+  - discovery
   links:
   - title: JBoss EAP 6 Class Loading and Modules
     url: https://access.redhat.com/documentation/en-us/JBoss_Enterprise_Application_Platform/6.4/html/Development_Guide/chap-Class_Loading_and_Modules.html
@@ -323,6 +332,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: Class Loading and Modules
     url: https://access.redhat.com/documentation/en-us/JBoss_Enterprise_Application_Platform/6.4/html/Development_Guide/chap-Class_Loading_and_Modules.html
@@ -356,6 +366,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: JBoss EAP 5 - The jbosscmp-jdbc Structure
     url: https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/5/html-single/administration_and_configuration_guide/index#The_CMP_Engine-The_jbosscmp_jdbc_Structure
@@ -390,6 +401,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: JBoss EAP 5 - EJB References with jboss.xml and jboss-web.xml
     url: https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/5/html-single/administration_and_configuration_guide/#ENC_Usage_Conventions-EJB_References_with_jboss.xml_and_jboss_web.xml
@@ -462,6 +474,7 @@
   - ejb
   - seam
   - security
+  - discovery
   links:
   - title: JBoss EAP 6.4 - How To Configure Server Security
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/how_to_configure_server_security/
@@ -499,6 +512,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: jboss-ejb3.xml Deployment Descriptor Reference
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/development_guide/index#jboss-ejb3xml_Deployment_Descriptor_Reference
@@ -531,6 +545,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links:
   - title: JBoss web-services deployment descriptor (jboss-webservices.xml)
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/index#sect-Web_Services_Changes
@@ -566,6 +581,7 @@
   - jboss-eap5
   - ejb
   - seam
+  - discovery
   links: []
   ruleID: jboss-eap5-xml-20000
   tag:

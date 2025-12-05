@@ -21,6 +21,7 @@
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
+  - discovery
   links:
   - title: Java EE 7 JMS Tutorial
     url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEH

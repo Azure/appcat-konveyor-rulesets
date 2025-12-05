@@ -17,6 +17,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: 'Migrate Oracle WebLogic configuration files to JBoss EAP 6 or 7 '
     url: https://access.redhat.com/articles/1326803
@@ -56,6 +57,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: Migrate Oracle WebLogic Server Configuration Files and Descriptors to JBoss
       EAP 6 or 7
@@ -209,6 +211,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   ruleID: weblogic-xml-descriptor-eap7-07000
   tag:
@@ -239,6 +242,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   ruleID: weblogic-xml-descriptor-eap7-08000
   tag:
@@ -269,6 +273,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   ruleID: weblogic-xml-descriptor-eap7-09000
   tag:
@@ -340,6 +345,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: EAP 7 Overview of the Messaging subsystem configuration
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/configuring_messaging/#intro_messaging_config
@@ -378,6 +384,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: Migrate Oracle WebLogic configuration files to JBoss EAP
     url: https://access.redhat.com/articles/1326803
@@ -424,6 +431,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   ruleID: weblogic-xml-descriptor-eap7-13000
   tag:
@@ -452,6 +460,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   ruleID: weblogic-xml-descriptor-eap7-14000
   tag:
@@ -482,6 +491,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   message: WebLogic specific configuration of web services runtime parameters
   ruleID: weblogic-xml-descriptor-eap7-15000
@@ -514,6 +524,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   ruleID: weblogic-xml-descriptor-eap7-16000
   tag:
@@ -547,6 +558,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   message: "\n                        In this file, the value set for a property by
     a metadata annotation can be overridden. (It does not override the values set
@@ -580,6 +592,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: Replace the WebLogic plan.xml deployment descriptor configuration
     url: https://access.redhat.com/articles/1329173

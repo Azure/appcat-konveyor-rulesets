@@ -20,6 +20,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   message: Hibernate Search library API used in application.
   ruleID: hsearch-00000

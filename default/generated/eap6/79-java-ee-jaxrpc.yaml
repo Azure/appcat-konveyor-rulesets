@@ -15,6 +15,7 @@
   - capability=java-ee
   - jax-rpc
   - soap
+  - discovery
   links:
   - title: Java EE RPC Generic Handler API
     url: http://docs.oracle.com/cd/E17802_01/webservices/webservices/docs/1.6/api/javax/xml/rpc/handler/GenericHandler.html

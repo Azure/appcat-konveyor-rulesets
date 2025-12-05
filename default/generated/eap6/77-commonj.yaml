@@ -15,6 +15,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - commonj
+  - discovery
   links:
   - title: Replacement for JSR-236 (Timer Manager) and JSR-237 (Work Manager) in JBoss
       EAP
@@ -100,6 +101,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - commonj
+  - discovery
   links:
   - title: Replacement for JSR-236 (Timer Manager) and JSR-237 (Work Manager) in JBoss
       EAP

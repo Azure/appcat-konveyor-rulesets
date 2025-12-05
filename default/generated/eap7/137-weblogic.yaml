@@ -20,6 +20,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: Java EE 7 - Using TimerService
     url: https://docs.oracle.com/javaee/7/tutorial/ejb-basicexamples004.htm

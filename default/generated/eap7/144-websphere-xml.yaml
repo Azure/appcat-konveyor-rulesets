@@ -16,6 +16,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links: []
   message: WBI is a WebSphere proprietary business integration solution. This needs
     to be migrated to JBoss Drools or JBPM/BRMS.
@@ -50,6 +51,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: Migrate IBM WebSphere Application Server Web Application Extension or Binding
       Files
@@ -170,6 +172,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: Developing JAX-WS Web Services
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html/developing_web_services_applications/developing_jax_ws_web_services
@@ -203,6 +206,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: Developing JAX-WS Web Services
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html/developing_web_services_applications/developing_jax_ws_web_services
@@ -234,6 +238,7 @@
   - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
+  - discovery
   links:
   - title: IBM WebSphere configuration document descriptions
     url: https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/rcfg_rconfdoc_descriptions.html

@@ -123,6 +123,7 @@
   - capability=java-ee6+
   - capability=java-ee
   - konveyor.io/source
+  - discovery
   links: []
   message: "\n                          \n                          The JNDI automatically
     reads the application resource files from all components in the applications'

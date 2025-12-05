@@ -16,6 +16,7 @@
   - web-app
   - orion
   - configuration
+  - discovery
   links: []
   message: ' Orion specific ejb configuration file used to configure EJBs, map them
     to jndi names etc.'
@@ -47,6 +48,7 @@
   - web-app
   - orion
   - configuration
+  - discovery
   links: []
   message: ' Oracle Application Platform Web Descriptor configuriation is defined
     in files by convention named global-web-application.xml and orion-web.xml. It
@@ -82,6 +84,7 @@
   - web-app
   - orion
   - configuration
+  - discovery
   links: []
   message: ' Orion-application file is an orion specific EAR configuration file used
     to configure default data sources for CMP beans, security user manager, jndi authorization
