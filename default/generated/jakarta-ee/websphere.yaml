@@ -1,0 +1,81 @@
+- category: mandatory
+  customVariables: []
+  description: Migrate WebSphere applications to JBoss EAP on Azure App Service
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - source=websphere
+  links:
+  - title: Migrate WebSphere applications to JBoss EAP on Azure App Service
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-websphere-to-jboss-eap-on-azure-app-service
+  message: |-
+    This rule identifies Java projects that are using WebSphere and may need to be migrated to JBoss EAP on Azure App Service.
+    You can follow the guidance in the linked documentation to migrate the application.
+  ruleID: websphere-to-azure-app-service
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: websphere|was
+    - java.dependency:
+        nameregex: com\.ibm\.ws.*
+    - java.dependency:
+        nameregex: com\.ibm\.websphere.*
+
+- category: mandatory
+  customVariables: []
+  description: Migrate WebSphere applications to Azure Kubernetes Service
+  effort: 5
+  labels:
+  - target=azure-aks
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - source=websphere
+  links:
+  - title: Migrate WebSphere applications to Azure Kubernetes Service
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-websphere-to-azure-kubernetes-service
+  message: |-
+    This rule identifies Java projects that are using WebSphere and may need to be migrated to Azure Kubernetes Service.
+    You can follow the guidance in the linked documentation to migrate the application.
+  ruleID: websphere-to-aks
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: websphere|was
+    - java.dependency:
+        nameregex: com\.ibm\.ws.*
+    - java.dependency:
+        nameregex: com\.ibm\.websphere.*
+
+- category: 
+  customVariables: []
+  description: Migrate WebSphere applications to Azure Container Apps
+  effort: 5
+  labels:
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - source=websphere
+  links: []
+  message: |-
+    This rule identifies Java projects that are using WebSphere and may need to be migrated to Azure Container Apps.
+    You can follow the guidance in the linked documentation to migrate the application.
+  ruleID: websphere-to-azure-container-apps
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: websphere|was
+    - java.dependency:
+        nameregex: com\.ibm\.ws.*
+    - java.dependency:
+        nameregex: com\.ibm\.websphere.*

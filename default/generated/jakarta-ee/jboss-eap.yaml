@@ -1,0 +1,82 @@
+- category: mandatory
+  customVariables: []
+  description: Migrate JBoss EAP applications to JBoss EAP on Azure App Service
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - source=jboss-eap
+  links:
+  - title: Migrate JBoss EAP applications to JBoss EAP on Azure App Service
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-jboss-eap-to-jboss-eap-on-azure-app-service
+  message: |-
+    This rule identifies Java projects that are using JBoss EAP and may need to be migrated to JBoss EAP on Azure App Service.
+    You can follow the guidance in the linked documentation to migrate the application.
+  ruleID: jboss-eap-to-azure-app-service
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: eap-maven-plugin
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: jboss-eap-bom
+    - java.dependency:
+        nameregex: org\.jboss\.eap.*
+
+- category: mandatory
+  customVariables: []
+  description: Migrate JBoss EAP applications to Azure Kubernetes Service
+  effort: 5
+  labels:
+  - target=azure-aks
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - source=jboss-eap
+  links: []
+  message: |-
+    This rule identifies Java projects that are using JBoss EAP and may need to be migrated to Azure Kubernetes Service.
+    You can follow the guidance in the linked documentation to migrate the application.
+  ruleID: jboss-eap-to-aks
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: eap-maven-plugin
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: jboss-eap-bom
+    - java.dependency:
+        nameregex: org\.jboss\.eap.*
+
+- category: 
+  customVariables: []
+  description: Migrate JBoss EAP applications to Azure Container Apps
+  effort: 5
+  labels:
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - source=jboss-eap
+  links: []
+  message: |-
+    This rule identifies Java projects that are using JBoss EAP and may need to be migrated to Azure Container Apps.
+    You can follow the guidance in the linked documentation to migrate the application.
+  ruleID: jboss-eap-to-azure-container-apps
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: eap-maven-plugin
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: jboss-eap-bom
+    - java.dependency:
+        nameregex: org\.jboss\.eap.*
