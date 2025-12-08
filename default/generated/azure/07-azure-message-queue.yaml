@@ -380,3 +380,42 @@
       - java.dependency:
           lowerbound: 0.0.0
           name: org.springframework.amqp.spring-rabbit
+- category: optional
+  customVariables: []
+  description: IBM MQ usage detected
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - message-queue
+  - ibm-mq
+  - os=windows
+  - os=linux
+  links:
+  - title: Use JMS in Spring to access Azure Service Bus
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-service-bus
+  - title: Use Azure Service Bus with JMS
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/spring-jms-support
+  - title: Azure Service Bus JMS 2.0 developer guide
+    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/jms-developer-guide
+  - title: Use Java Message Service 2.0 API with Azure Service Bus Premium
+    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/how-to-use-java-message-service-20
+  message: |-
+    The application uses IBM MQ JMS. Consider migrating to Azure Service Bus.
+
+    Azure Service Bus provides a reliable cloud messaging service between applications and services.
+
+    You will need to replace IBM MQ specific code and dependencies with Azure Service Bus SDK or JMS with Service Bus.
+  ruleID: azure-message-queue-ibm-jms-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: com\.ibm\.mq\.allclient
+    - java.dependency:
+        nameregex: mq-jms-spring-boot-starter
+    - java.referenced:
+        pattern: com.ibm.mq.jms.*
