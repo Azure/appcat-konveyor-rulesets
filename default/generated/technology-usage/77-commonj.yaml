@@ -1,0 +1,46 @@
+- customVariables: []
+  description: Commonj Timer Manager API
+  labels:
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - commonj
+  - discovery
+  links:
+  - title: Replacement for JSR-236 (Timer Manager) and JSR-237 (Work Manager) in JBoss
+      EAP
+    url: https://access.redhat.com/solutions/199183
+  ruleID: commonj-01000
+  tag:
+  - commonj
+  - Commonj Timer Manager API
+  when:
+    java.referenced:
+      location: IMPORT
+      pattern: commonj.timers*
+- customVariables: []
+  description: Commonj WorkManager API
+  labels:
+  - capability=eap6+
+  - capability=eap
+  - capability=java-ee6+
+  - capability=java-ee
+  - commonj
+  - discovery
+  links:
+  - title: Replacement for JSR-236 (Timer Manager) and JSR-237 (Work Manager) in JBoss
+      EAP
+    url: https://access.redhat.com/solutions/199183
+  - title: Java EE 6 documentation for javax.resource.spi.work package
+    url: http://docs.oracle.com/javaee/6/api/index.html?javax/resource/spi/work/package-summary.html
+  - title: IronJacamar javax.resource.spi.work.* API
+    url: http://www.ironjacamar.org/doc/api/spec/1.7/index.html?javax/resource/spi/work/package-summary.html
+  ruleID: commonj-04000
+  tag:
+  - commonj
+  - Commonj WorkManager API
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: commonj.work*

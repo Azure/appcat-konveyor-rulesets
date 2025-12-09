@@ -21,32 +21,6 @@
     java.dependency:
       lowerbound: 0.0.0
       name: log4j.log4j
-- customVariables: []
-  description: Log4j Configuration
-  labels:
-  - capability=eap6+
-  - capability=eap
-  - capability=java-ee6+
-  - capability=java-ee
-  - log4j
-  - discovery
-  links:
-  - title: How to configure Log4J in JBoss EAP 6/7
-    url: https://access.redhat.com/solutions/405893
-  - title: How to separate Log4J application logging from the 'server.log' in JBoss
-      EAP 6
-    url: https://access.redhat.com/solutions/105653
-  - title: Use my own 'log4j.xml' with EAP 6.1
-    url: https://access.redhat.com/discussions/478983
-  - title: EAP 6 deadlocks on a ConsoleHandler and java.io.PrintStream
-    url: https://access.redhat.com/solutions/375273
-  ruleID: log4j-02000
-  tag:
-  - Log4j Configuration
-  when:
-    builtin.filecontent:
-      filePattern: log4j\.xml
-      pattern: .*
 - category: optional
   customVariables: []
   description: Log4j ConsoleAppender Configuration - Potential Deadlock

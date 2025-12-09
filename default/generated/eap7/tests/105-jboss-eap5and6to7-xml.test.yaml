@@ -11,29 +11,6 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: The .*clustered.* element is ignored in EAP 7 and is not useful.
-- ruleID: jboss-eap5and6to7-xml-05000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - JBoss Seam Components
-- ruleID: jboss-eap5and6to7-xml-06000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - JBoss Seam Pages
-  - name: tc-2
-    hasTags:
-    - JBoss Seam Page
-- ruleID: jboss-eap5and6to7-xml-09000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - JBoss web application descriptor (jboss-web.xml)
-- ruleID: jboss-eap5and6to7-xml-12000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - JBoss EJB 2 CMP Deployment descriptor.*
 - ruleID: jboss-eap5and6to7-xml-31000
   testCases:
   - name: tc-1
@@ -61,11 +38,6 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: JAX-RPC support was removed in JBoss EAP 7.
-- ruleID: jboss-eap5and6to7-xml-34000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - JSR-88 deployment plans are no more supported by JBoss EAP7
 - ruleID: jboss-eap5and6to7-xml-38000
   testCases:
   - name: tc-1

@@ -5,11 +5,6 @@ providers:
 - name: builtin
   dataPath: ./data/77-commonj
 tests:
-- ruleID: commonj-01000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - Commonj Timer Manager API
 - ruleID: commonj-02000
   testCases:
   - name: tc-1
@@ -22,11 +17,6 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: .*Commonj Timer Interface is similar.*
-- ruleID: commonj-04000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - Commonj WorkManager API
 - ruleID: commonj-05000
   testCases:
   - name: tc-1

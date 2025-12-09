@@ -5,21 +5,6 @@ providers:
 - name: builtin
   dataPath: ./data/81-seam-ui
 tests:
-# FIXME: ignored until found a solution
-#- ruleID: seam-ui-jsf-00001
-#  testCases:
-#  - name: tc-1
-#    hasTags:
-#    - JSF Seam 2.x tag library usage
-#  - name: tc-2
-#    hasIncidents:
-#      atLeast: 1
-#      messageMatches: .*Seam UI's `<s:button>`.*
-- ruleID: seam-ui-jsf-00002
-  testCases:
-  - name: tc-1
-    hasTags:
-    - JSF Seam 2.3 tag library usage
 - ruleID: seam-ui-jsf-01000
   testCases:
   - name: tc-1

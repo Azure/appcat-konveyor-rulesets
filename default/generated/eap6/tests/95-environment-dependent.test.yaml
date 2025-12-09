@@ -25,11 +25,6 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: .*InitialContext.* should be instantiated with no arguments.*
-- ruleID: environment-dependent-calls-03500
-  testCases:
-  - name: tc-1
-    hasTags:
-    - JNDI properties file
 - ruleID: environment-dependent-calls-04000
   testCases:
   - name: tc-1

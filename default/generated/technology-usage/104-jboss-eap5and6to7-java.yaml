@@ -1,0 +1,98 @@
+- customVariables: []
+  description: Dependency entries in MANIFEST.MF
+  labels:
+  - jboss-eap5
+  - jboss-eap6
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
+  - discovery
+  links: []
+  message: Verify in advance that all the modules this application depends on still
+    exist.
+  ruleID: jboss-eap5and6to7-java-01000
+  tag:
+  - configuration
+  - Dependency entries in MANIFEST.MF
+  when:
+    builtin.filecontent:
+      filePattern: MANIFEST\.MF
+      pattern: 'Dependencies:'
+- customVariables: []
+  description: 'Apache CFX integration with JBoss '
+  labels:
+  - jboss-eap5
+  - jboss-eap6
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
+  - discovery
+  links: []
+  message: Migrate all functionality specified in such XML descriptor. It is mostly
+    already supported by the JAX-WS specification, included in Java EE 7. For specific
+    functionality consult the Apache CFX documentation link provided.
+  ruleID: jboss-eap5and6to7-java-02000
+  tag:
+  - webservices
+  - jbossws
+  - cxf
+  - configuration
+  - 'Apache CFX integration with JBoss '
+  when:
+    builtin.file:
+      pattern: jbossws-cxf\.xml
+- customVariables: []
+  description: JBoss Web Valve
+  labels:
+  - jboss-eap5
+  - jboss-eap6
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
+  - discovery
+  links: []
+  message: JBoss Web was replaced by Undertow, which does not contain support for
+    the Valve functionality. It may be needed to migrate to Undertow handlers.
+  ruleID: jboss-eap5and6to7-java-04000
+  tag:
+  - web
+  - undertow
+  - JBoss Web Valve
+  when:
+    or:
+    - java.referenced:
+        location: IMPLEMENTS_TYPE
+        pattern: org.apache.catalina.Valve
+    - java.referenced:
+        location: INHERITANCE
+        pattern: org.apache.catalina.valves.ValveBase
+- customVariables: []
+  description: HornetQ was removed in EAP 7
+  labels:
+  - jboss-eap5
+  - jboss-eap6
+  - capability=eap7+
+  - capability=eap
+  - capability=java-ee7+
+  - capability=java-ee
+  - discovery
+  links:
+  - title: What's new in JBoss EAP 7
+    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#whats_new_in_eap
+  - title: ActiveMQ Artemis Migration
+    url: https://activemq.apache.org/artemis/migration.html
+  message: HornetQ was replaced by ActiveMQ Artemis in EAP 7. You should replace all
+    references to `org.hornetq.*` with JMS API or ActiveMQ Artemis API.
+  ruleID: jboss-eap5and6to7-java-08000
+  tag:
+  - hornetq
+  - jms
+  - HornetQ was removed in EAP 7
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: org.hornetq*
+

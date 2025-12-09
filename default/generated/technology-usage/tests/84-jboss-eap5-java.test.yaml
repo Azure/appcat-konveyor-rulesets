@@ -1,0 +1,12 @@
+rulesPath: ../84-jboss-eap5-java.yaml
+providers:
+- name: java
+  dataPath: ./data/84-jboss-eap5-java
+- name: builtin
+  dataPath: ./data/84-jboss-eap5-java
+tests:
+- ruleID: jboss-eap5-java-01000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - JBoss EAP 5 JMX ManagementBean

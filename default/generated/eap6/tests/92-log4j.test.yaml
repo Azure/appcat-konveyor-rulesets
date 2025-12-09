@@ -12,11 +12,6 @@ tests:
       atLeast: 1
       messageMatches: Deploying log4j.jar can result in non-deterministic ClassLoading
         issues.*
-- ruleID: log4j-02000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - Log4j Configuration
 # FIXME: must fix this rule, comes broken from windup
 #- ruleID: log4j-03000
 #  testCases:

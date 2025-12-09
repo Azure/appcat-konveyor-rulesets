@@ -1,0 +1,12 @@
+rulesPath: ../95-environment-dependent.yaml
+providers:
+- name: java
+  dataPath: ./data/95-environment-dependent
+- name: builtin
+  dataPath: ./data/95-environment-dependent
+tests:
+- ruleID: environment-dependent-calls-03500
+  testCases:
+  - name: tc-1
+    hasTags:
+    - JNDI properties file

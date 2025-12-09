@@ -107,30 +107,6 @@
     java.referenced:
       location: CONSTRUCTOR_CALL
       pattern: InitialContext(Hashtable)
-- customVariables: []
-  description: JNDI properties file
-  labels:
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
-  - capability=java-ee6+
-  - capability=java-ee
-  - discovery
-  links: []
-  message: "\n                          \n                          The JNDI automatically
-    reads the application resource files from all components in the applications'
-    classpaths.\n                          The JNDI then makes the properties from
-    these files available to the service providers.\n\n                          Please
-    ensure the property values listed in this file are available to JBoss EAP.\n                          \n
-    \                       "
-  ruleID: environment-dependent-calls-03500
-  tag:
-  - webservice
-  - JNDI properties file
-  when:
-    as: default
-    builtin.file:
-      pattern: jndi\.properties
 - category: mandatory
   customVariables:
   - name: suffix

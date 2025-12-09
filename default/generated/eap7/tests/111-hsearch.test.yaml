@@ -5,11 +5,6 @@ providers:
 - name: builtin
   dataPath: ./data/111-hsearch
 tests:
-- ruleID: hsearch-00000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - Hibernate Search - API usage
 - ruleID: hsearch-00001
   testCases:
   - name: tc-1

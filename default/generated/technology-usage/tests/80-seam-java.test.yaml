@@ -1,0 +1,17 @@
+rulesPath: ../80-seam-java.yaml
+providers:
+- name: java
+  dataPath: ./data/80-seam-java
+- name: builtin
+  dataPath: ./data/80-seam-java
+tests:
+- ruleID: seam-java-00000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Seam API
+- ruleID: seam-java-00170
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Seam integration with jBPM
