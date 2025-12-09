@@ -2,14 +2,6 @@
   description: Embedded library - Drools
   labels:
   - capability=eap
-  - konveyor.io/source
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -27,14 +19,6 @@
   description: Hibernate embedded library
   labels:
   - capability=eap
-  - konveyor.io/source
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -67,14 +51,6 @@
   description: Embedded library - JDBC
   labels:
   - capability=eap
-  - konveyor.io/source
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -91,14 +67,6 @@
   description: JSF embedded library
   labels:
   - capability=eap
-  - konveyor.io/source
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -138,14 +106,6 @@
   description: Seam 2 embedded library
   labels:
   - capability=eap
-  - konveyor.io/source
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
   - discovery

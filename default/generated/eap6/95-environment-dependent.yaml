@@ -110,19 +110,11 @@
 - customVariables: []
   description: JNDI properties file
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - capability=eap6
   - capability=eap7
   - capability=eap
   - capability=java-ee6+
   - capability=java-ee
-  - konveyor.io/source
   - discovery
   links: []
   message: "\n                          \n                          The JNDI automatically

@@ -1,14 +1,6 @@
 - customVariables: []
   description: Apache Axis Service Group
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -29,14 +21,6 @@
 - customVariables: []
   description: Apache Axis Module
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -57,14 +41,6 @@
 - customVariables: []
   description: Apache Axis Configuration
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -85,14 +61,6 @@
 - customVariables: []
   description: XFire 1.x Configuration
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -114,14 +82,6 @@
 - customVariables: []
   description: JAX-WS Handler Chain
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -146,14 +106,6 @@
   description: Use of Web Service Handler2
   effort: 0
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -186,14 +138,6 @@
   description: Use of Web Service Handler2
   effort: 0
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -224,14 +168,6 @@
 - customVariables: []
   description: Apache CXF Bus Extension
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -253,14 +189,6 @@
 - customVariables: []
   description: WS-Policy
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -282,14 +210,6 @@
 - customVariables: []
   description: SOAP Envelope
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -311,14 +231,6 @@
 - customVariables: []
   description: WSDL Definition
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=java-ee
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+

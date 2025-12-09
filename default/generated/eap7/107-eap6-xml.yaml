@@ -1,18 +1,9 @@
 - customVariables: []
   description: JMS proprietary resource definitions
   labels:
-  - source=eap6
-  - source=eap
+  - configuration
   - capability=eap7+
   - capability=eap
-  - configuration
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -41,18 +32,9 @@
 - customVariables: []
   description: JBoss deployment structure dependencies (jboss-deployment-structure.xml)
   labels:
-  - source=eap6
-  - source=eap
+  - configuration
   - capability=eap7+
   - capability=eap
-  - configuration
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
   - discovery

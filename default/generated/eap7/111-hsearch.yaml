@@ -1,23 +1,12 @@
 - customVariables: []
   description: Hibernate Search - API usage
   labels:
-  - source=hibernate-search4
-  - source=hibernate-search
-  - source=eap6
-  - source=eap
+  - hibernate-search
+  - hibernate
   - capability=hibernate-search5+
   - capability=hibernate-search
   - capability=eap7
   - capability=eap
-  - hibernate-search
-  - hibernate
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
   - discovery

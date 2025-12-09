@@ -1,20 +1,11 @@
 - customVariables: []
   description: JBoss Cache
   labels:
-  - source=eap5
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - ejb
   - seam
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -40,20 +31,11 @@
 - customVariables: []
   description: JBoss 5.x EAR descriptor (jboss-app.xml)
   labels:
-  - source=eap5
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - ejb
   - seam
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -78,21 +60,12 @@
   description: JBoss EAP 5 classloader configuration (jboss-classloading.xml)
   effort: 5
   labels:
-  - source=eap5
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - ejb
   - seam
   - classloading
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -117,20 +90,11 @@
 - customVariables: []
   description: JBoss legacy EJB XML (jboss.xml)
   labels:
-  - source=eap5
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - ejb
   - seam
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -200,21 +164,12 @@
   description: JBoss security configuration descriptor (login-config.xml)
   effort: 5
   labels:
-  - source=eap5
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - ejb
   - seam
   - security
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery

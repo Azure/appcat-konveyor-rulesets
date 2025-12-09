@@ -1,20 +1,10 @@
 - customVariables: []
   description: Dependency entries in MANIFEST.MF
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -32,20 +22,10 @@
 - customVariables: []
   description: 'Apache CFX integration with JBoss '
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -102,20 +82,10 @@
 - customVariables: []
   description: JBoss Web Valve
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -238,20 +208,10 @@
 - customVariables: []
   description: HornetQ was removed in EAP 7
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery

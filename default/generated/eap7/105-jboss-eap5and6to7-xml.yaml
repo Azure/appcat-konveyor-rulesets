@@ -35,21 +35,11 @@
 - customVariables: []
   description: JBoss Seam Components (components.xml)
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -73,21 +63,11 @@
 - customVariables: []
   description: JBoss Seam Pages (pages.xml)
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -113,21 +93,11 @@
 - customVariables: []
   description: JBoss Seam Page
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -151,21 +121,11 @@
 - customVariables: []
   description: JBoss web application descriptor (jboss-web.xml)
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -192,21 +152,11 @@
 - customVariables: []
   description: JBoss EJB 2 CMP Deployment descriptor (jbosscmp-jdbc.xml)
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -236,21 +186,11 @@
 - customVariables: []
   description: JBoss EJB 3 deployment descriptor (jboss-ejb3.xml)
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -272,21 +212,11 @@
 - customVariables: []
   description: JBoss web-services deployment descriptor (jboss-webservices.xml)
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -488,21 +418,11 @@
 - customVariables: []
   description: JSR-88 deployment plans are no more supported by JBoss EAP7
   labels:
-  - source=eap5
-  - source=eap6
-  - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
+  - capability=eap7+
+  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery

@@ -1,15 +1,6 @@
 - customVariables: []
   description: JBoss EAP 5 JMX ManagementBean
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+

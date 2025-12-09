@@ -1,15 +1,6 @@
 - customVariables: []
   description: JBoss Cache
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -37,15 +28,6 @@
 - customVariables: []
   description: JBoss Classloading configuration, typically in jboss-classloading.xml.
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -68,15 +50,6 @@
 - customVariables: []
   description: JBoss Seam Components (components.xml)
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -101,15 +74,6 @@
 - customVariables: []
   description: JBoss Seam Pages
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -134,15 +98,6 @@
 - customVariables: []
   description: JBoss Seam Page
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -171,15 +126,6 @@
 - customVariables: []
   description: JBoss 5.x EAR descriptor
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -202,15 +148,6 @@
 - customVariables: []
   description: JBoss EAR descriptor
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -236,15 +173,6 @@
 - customVariables: []
   description: JBoss web application descriptor (jboss-web.xml)
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -275,15 +203,6 @@
   description: JBoss 5 classloader configuration (jboss-classloading.xml)
   effort: 5
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -316,15 +235,6 @@
 - customVariables: []
   description: JBoss module and classloading configuration (jboss-deployment-structure.xml)
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -350,15 +260,6 @@
 - customVariables: []
   description: JBoss EJB 2 CMP Deployment descriptor (jbosscmp-jdbc.xml)
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -385,15 +286,6 @@
 - customVariables: []
   description: JBoss EJB XML deployment descriptor prior to EAP 6
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -457,15 +349,6 @@
   description: JBoss security configuration descriptor (prior to AS 7 / EAP 6)
   effort: 5
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -496,15 +379,6 @@
 - customVariables: []
   description: JBoss EJB 3 deployment descriptor (jboss-ejb3.xml)
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -529,15 +403,6 @@
 - customVariables: []
   description: JBoss web-services deployment descriptor (jboss-webservices.xml)
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+
@@ -565,15 +430,6 @@
 - customVariables: []
   description: JBoss EAP 4 JMS configuration
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=eap5
-  - source=eap
   - capability=eap6
   - capability=eap
   - capability=java-ee6+

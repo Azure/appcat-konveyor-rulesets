@@ -1,15 +1,6 @@
 - customVariables: []
   description: Commonj Timer Manager API
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=weblogic
-  - source=websphere
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
@@ -87,15 +78,6 @@
 - customVariables: []
   description: Commonj WorkManager API
   labels:
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - source=weblogic
-  - source=websphere
   - capability=eap6+
   - capability=eap
   - capability=java-ee6+
