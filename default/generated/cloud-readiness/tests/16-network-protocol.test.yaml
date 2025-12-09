@@ -15,7 +15,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 6
+      exactly: 8
       messageMatches: This patterns verifies in source code and configuration files the presence of hardcoded URLs using the HTTP protocol (HTTP/HTTPS).
 - ruleID: hardcoded-urls-00002
   testCases:
