@@ -43,12 +43,6 @@ tests:
   - name: tc-1
     hasTags:
     - JBoss web application descriptor (jboss-web.xml)
-- ruleID: jboss-eap5-7-xml-10000
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: In JBoss EAP 6, the classloading configuration is not done through.*
 - ruleID: jboss-eap5-xml-11000
   testCases:
   - name: tc-1
@@ -69,11 +63,6 @@ tests:
   - name: tc-1
     hasTags:
     - JBoss security configuration descriptor.*
-  - name: tc-2
-    hasIncidents:
-      atLeast: 1
-      messageMatches: Before JBoss EAP 6, authentication security domains and login
-        modules could be configured in a .*
 - ruleID: jboss-eap5-xml-20000
   testCases:
   - name: tc-1

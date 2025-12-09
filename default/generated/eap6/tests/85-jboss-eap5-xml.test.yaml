@@ -11,3 +11,16 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: '`java:/jaas/` is a JBoss EAP `security-domain` URI.'
+- ruleID: jboss-eap5-7-xml-10000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: In JBoss EAP 6, the classloading configuration is not done through.*
+- ruleID: jboss-eap5-xml-16000
+  testCases:
+  - name: tc-2
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Before JBoss EAP 6, authentication security domains and login
+        modules could be configured in a .*
