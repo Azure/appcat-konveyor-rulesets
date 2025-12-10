@@ -9,8 +9,6 @@
   - source=eap
   - capability=hibernate5.1+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - Hibernate
   - domain=java-upgrade
@@ -45,8 +43,6 @@
   - source=eap
   - capability=hibernate5.1+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - Hibernate
   - domain=java-upgrade

@@ -1,8 +1,6 @@
 - customVariables: []
   description: JRun
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - web-app
@@ -11,8 +9,6 @@
   links: []
   ruleID: jrun-catchall-00000
   tag:
-  - catchall
-  - jrun
   - JRun
   when:
     java.referenced:
@@ -21,7 +17,6 @@
 - customVariables: []
   description: JRunX
   labels:
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - web-app
@@ -30,8 +25,6 @@
   links: []
   ruleID: jrun-catchall-00001
   tag:
-  - catchall
-  - jrun
   - JRunX
   when:
     java.referenced:

@@ -1,8 +1,6 @@
 - customVariables: []
   description: Glassfish Web Descriptor
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - web-app
@@ -12,7 +10,6 @@
   links: []
   ruleID: xml-glassfish-01000
   tag:
-  - configuration
   - Glassfish Web Descriptor
   when:
     builtin.xmlPublicID:
@@ -21,8 +18,6 @@
 - customVariables: []
   description: Glassfish EJB Descriptor
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - web-app
@@ -32,7 +27,6 @@
   links: []
   ruleID: xml-glassfish-02000
   tag:
-  - configuration
   - Glassfish EJB Descriptor
   when:
     as: default
@@ -42,8 +36,6 @@
 - customVariables: []
   description: Glassfish Application EAR configuration file
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - web-app
@@ -53,7 +45,6 @@
   links: []
   ruleID: xml-glassfish-03000
   tag:
-  - configuration
   - Glassfish Application EAR configuration file
   when:
     as: default

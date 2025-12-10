@@ -1,8 +1,6 @@
 - customVariables: []
   description: Log4j Configuration
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - log4j

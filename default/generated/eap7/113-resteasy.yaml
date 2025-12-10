@@ -12,8 +12,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -45,8 +43,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -96,8 +92,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -130,8 +124,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -161,8 +153,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -197,8 +187,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -229,8 +217,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -261,8 +247,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -294,8 +278,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -327,8 +309,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -360,8 +340,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -395,8 +373,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -430,8 +406,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -465,8 +439,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -499,8 +471,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -533,8 +503,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -566,8 +534,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -600,8 +566,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -637,8 +601,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - jax-rs
   - domain=java-upgrade
@@ -671,8 +633,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -705,8 +665,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -738,8 +696,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -775,8 +731,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -810,8 +764,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -845,8 +797,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -880,8 +830,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -913,8 +861,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - jax-rs
   - domain=java-upgrade
@@ -947,8 +893,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - jax-rs
   - domain=java-upgrade
@@ -981,8 +925,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - jax-rs
   - domain=java-upgrade
@@ -1015,8 +957,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - jax-rs
   - domain=java-upgrade
@@ -1049,8 +989,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - jax-rs
   - domain=java-upgrade
@@ -1083,8 +1021,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - jax-rs
   - domain=java-upgrade
@@ -1117,8 +1053,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1151,8 +1085,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1183,8 +1115,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1218,8 +1148,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1254,8 +1182,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1289,8 +1215,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1325,8 +1249,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1360,8 +1282,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1395,8 +1315,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1431,8 +1349,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1467,8 +1383,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1503,8 +1417,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1538,8 +1450,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1573,8 +1483,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - yaml
   - domain=java-upgrade
@@ -1613,8 +1521,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis
@@ -1660,8 +1566,6 @@
   - source=resteasy
   - capability=resteasy3+
   - capability=resteasy
-  - capability=eap7
-  - capability=eap
   - resteasy
   - charset
   - domain=java-upgrade

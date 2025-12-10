@@ -1,8 +1,6 @@
 - customVariables: []
   description: JRun Web App descriptor
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - web-app
@@ -12,8 +10,6 @@
   links: []
   ruleID: xml-jrun-01000
   tag:
-  - configuration
-  - jrun
   - JRun Web App descriptor
   when:
     or:
@@ -29,8 +25,6 @@
 - customVariables: []
   description: JRun ejb-jar configuration
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - web-app
@@ -40,8 +34,6 @@
   links: []
   ruleID: xml-jrun-02000
   tag:
-  - configuration
-  - jrun
   - JRun ejb-jar configuration
   when:
     or:

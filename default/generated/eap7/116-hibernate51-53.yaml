@@ -8,10 +8,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -141,10 +140,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -200,10 +198,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -237,10 +234,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -270,10 +266,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -304,10 +299,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -338,10 +332,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -372,10 +365,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -410,10 +402,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -444,10 +435,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -478,10 +468,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -514,10 +503,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -549,10 +537,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -594,10 +581,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -638,10 +624,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -672,10 +657,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -708,10 +692,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -748,10 +731,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -788,10 +770,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -828,10 +809,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis
@@ -863,10 +843,9 @@
   labels:
   - source=hibernate5.1-
   - source=hibernate
+  - source=eap
   - capability=hibernate5.3+
   - capability=hibernate
-  - capability=eap7
-  - capability=eap
   - hibernate
   - domain=java-upgrade
   - category=deprecated-apis

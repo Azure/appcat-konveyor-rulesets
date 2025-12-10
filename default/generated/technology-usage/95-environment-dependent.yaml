@@ -1,9 +1,6 @@
 - customVariables: []
   description: JNDI properties file
   labels:
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - discovery
@@ -16,7 +13,6 @@
     \                       "
   ruleID: environment-dependent-calls-03500
   tag:
-  - webservice
   - JNDI properties file
   when:
     as: default

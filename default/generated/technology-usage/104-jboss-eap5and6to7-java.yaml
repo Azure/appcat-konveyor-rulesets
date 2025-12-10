@@ -3,8 +3,6 @@
   labels:
   - jboss-eap5
   - jboss-eap6
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -13,7 +11,6 @@
     exist.
   ruleID: jboss-eap5and6to7-java-01000
   tag:
-  - configuration
   - Dependency entries in MANIFEST.MF
   when:
     builtin.filecontent:
@@ -24,8 +21,6 @@
   labels:
   - jboss-eap5
   - jboss-eap6
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -35,11 +30,7 @@
     functionality consult the Apache CFX documentation link provided.
   ruleID: jboss-eap5and6to7-java-02000
   tag:
-  - webservices
-  - jbossws
-  - cxf
-  - configuration
-  - 'Apache CFX integration with JBoss '
+  - Apache CFX integration with JBoss
   when:
     builtin.file:
       pattern: jbossws-cxf\.xml
@@ -48,8 +39,6 @@
   labels:
   - jboss-eap5
   - jboss-eap6
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -58,8 +47,6 @@
     the Valve functionality. It may be needed to migrate to Undertow handlers.
   ruleID: jboss-eap5and6to7-java-04000
   tag:
-  - web
-  - undertow
   - JBoss Web Valve
   when:
     or:
@@ -74,8 +61,6 @@
   labels:
   - jboss-eap5
   - jboss-eap6
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -88,8 +73,6 @@
     references to `org.hornetq.*` with JMS API or ActiveMQ Artemis API.
   ruleID: jboss-eap5and6to7-java-08000
   tag:
-  - hornetq
-  - jms
   - HornetQ was removed in EAP 7
   when:
     java.referenced:

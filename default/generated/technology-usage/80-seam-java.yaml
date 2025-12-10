@@ -1,9 +1,6 @@
 - customVariables: []
   description: Seam API
   labels:
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -29,9 +26,6 @@
     3. Switch to standard CDI beans and migrate to JSF 2.2 if your server platform is EAP 7+. This will require significant migration effort.
   ruleID: seam-java-00000
   tag:
-  - cdi
-  - seam
-  - jsf
   - Seam API
   when:
     java.referenced:
@@ -40,9 +34,6 @@
 - customVariables: []
   description: Seam integration with jBPM
   labels:
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -54,9 +45,6 @@
     presented directly in Drools - jBPM
   ruleID: seam-java-00170
   tag:
-  - cdi
-  - seam
-  - jbpm
   - Seam integration with jBPM
   when:
     java.referenced:

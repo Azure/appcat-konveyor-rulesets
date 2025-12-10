@@ -5,8 +5,6 @@
   - hibernate
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -14,7 +12,6 @@
   message: Hibernate Search library API used in application.
   ruleID: hsearch-00000
   tag:
-  - hibernate-search
   - Hibernate Search - API usage
   when:
     java.referenced:

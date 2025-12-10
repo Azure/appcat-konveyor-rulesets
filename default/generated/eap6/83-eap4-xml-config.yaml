@@ -12,8 +12,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -67,8 +65,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -124,8 +120,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -180,8 +174,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -228,8 +220,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -272,8 +262,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -331,8 +319,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -372,8 +358,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -419,8 +403,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -461,8 +443,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -502,8 +482,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -543,8 +521,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -587,8 +563,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -640,8 +614,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -684,8 +656,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -727,8 +697,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -771,8 +739,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web
@@ -815,8 +781,6 @@
   - target=azure-container-apps
   - source=eap4
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-web

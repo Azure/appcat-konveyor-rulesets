@@ -4,8 +4,6 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -18,8 +16,6 @@
     technology.
   ruleID: jboss-eap5and6to7-xml-05000
   tag:
-  - seam2
-  - jboss-eap5
   - JBoss Seam Components (components.xml)
   when:
     builtin.xml:
@@ -32,8 +28,6 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -48,8 +42,6 @@
     through JSF Flow.\n                    "
   ruleID: jboss-eap5and6to7-xml-06000
   tag:
-  - seam
-  - jboss-eap5
   - JBoss Seam Pages (pages.xml)
   when:
     builtin.xml:
@@ -62,16 +54,12 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
   links: []
   ruleID: jboss-eap5and6to7-xml-07000
   tag:
-  - seam
-  - jboss-eap5
   - JBoss Seam Page
   when:
     or:
@@ -90,8 +78,6 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -103,11 +89,6 @@
     extension to standard `web.xml`.\n                    "
   ruleID: jboss-eap5and6to7-xml-09000
   tag:
-  - web
-  - configuration
-  - deployment
-  - descriptor
-  - jboss-eap5
   - JBoss web application descriptor (jboss-web.xml)
   when:
     builtin.xml:
@@ -121,8 +102,6 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -138,10 +117,6 @@
     to use Java Persistence API (JPA) entities.\n                    "
   ruleID: jboss-eap5and6to7-xml-12000
   tag:
-  - jdbc
-  - ejb2
-  - jboss-eap5
-  - jpa
   - JBoss EJB 2 CMP Deployment descriptor (jbosscmp-jdbc.xml)
   when:
     builtin.xml:
@@ -155,8 +130,6 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -167,7 +140,6 @@
     extensions of Java EE EJB 3.\n                    "
   ruleID: jboss-eap5and6to7-xml-17000
   tag:
-  - jboss-eap5
   - JBoss EJB 3 deployment descriptor (jboss-ejb3.xml)
   when:
     builtin.xml:
@@ -181,8 +153,6 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -200,10 +170,6 @@
     \                   "
   ruleID: jboss-eap5and6to7-xml-18000
   tag:
-  - jboss-ws
-  - descriptor
-  - webservice
-  - jboss-eap5
   - JBoss web-services deployment descriptor (jboss-webservices.xml)
   when:
     builtin.xml:
@@ -217,8 +183,6 @@
   - jboss-eap5
   - jboss-eap6
   - ejb
-  - capability=eap7+
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -230,7 +194,6 @@
     such functionality.
   ruleID: jboss-eap5and6to7-xml-34000
   tag:
-  - configuration
   - JSR-88 deployment plans are no more supported by JBoss EAP7
   when:
     builtin.file:

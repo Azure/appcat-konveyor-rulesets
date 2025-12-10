@@ -5,8 +5,6 @@
   labels:
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jndi
   - configuration
   - ejb
@@ -52,8 +50,6 @@
   labels:
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jndi
   - configuration
   - ejb
@@ -103,8 +99,6 @@
   labels:
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jndi
   - configuration
   - ejb
@@ -148,8 +142,6 @@
   labels:
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jsf
   - domain=java-upgrade
   - category=deprecated-apis
@@ -184,8 +176,6 @@
   labels:
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - certificate
   - https
   - domain=java-upgrade

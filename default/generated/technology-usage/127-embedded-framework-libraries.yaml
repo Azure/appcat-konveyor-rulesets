@@ -1,7 +1,6 @@
 - customVariables: []
   description: Embedded library - Drools
   labels:
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -10,7 +9,6 @@
     \                   "
   ruleID: embedded-framework-libraries-01000
   tag:
-  - Drools
   - Embedded library - Drools
   when:
     builtin.file:
@@ -18,7 +16,6 @@
 - customVariables: []
   description: Hibernate embedded library
   labels:
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -42,7 +39,6 @@
     to enable alternative versions for both EAP 6 and 7.\n                    "
   ruleID: embedded-framework-libraries-02000
   tag:
-  - Hibernate
   - Hibernate embedded library
   when:
     builtin.file:
@@ -50,7 +46,6 @@
 - customVariables: []
   description: Embedded library - JDBC
   labels:
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -58,7 +53,6 @@
   message: "\n                        The application embeds a JDBC library.\n                    "
   ruleID: embedded-framework-libraries-04000
   tag:
-  - JDBC
   - Embedded library - JDBC
   when:
     builtin.file:
@@ -66,7 +60,6 @@
 - customVariables: []
   description: JSF embedded library
   labels:
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -94,7 +87,6 @@
     versions for both EAP 6 and 7.\n                    "
   ruleID: embedded-framework-libraries-05000
   tag:
-  - JSF
   - JSF embedded library
   when:
     or:
@@ -105,7 +97,6 @@
 - customVariables: []
   description: Seam 2 embedded library
   labels:
-  - capability=eap
   - capability=java-ee7+
   - capability=java-ee
   - discovery
@@ -131,7 +122,6 @@
     7\n                    "
   ruleID: embedded-framework-libraries-06000
   tag:
-  - Seam
   - Seam 2 embedded library
   when:
     builtin.file:

@@ -12,8 +12,6 @@
   - target=azure-container-apps
   - source=weblogic
   - source=websphere
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - commonj
@@ -43,8 +41,6 @@
   - target=azure-container-apps
   - source=weblogic
   - source=websphere
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - commonj
@@ -68,8 +64,6 @@
   - target=azure-container-apps
   - source=weblogic
   - source=websphere
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - commonj
@@ -98,8 +92,6 @@
   - target=azure-container-apps
   - source=weblogic
   - source=websphere
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - commonj
@@ -126,8 +118,6 @@
   - target=azure-container-apps
   - source=weblogic
   - source=websphere
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - commonj

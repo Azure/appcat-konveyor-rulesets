@@ -1,1 +1,0 @@
-Included JSP content

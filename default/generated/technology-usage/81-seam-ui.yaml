@@ -1,9 +1,6 @@
 - customVariables: []
   description: JSF Seam 2.x tag library usage
   labels:
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -18,8 +15,6 @@
     url: https://access.redhat.com/solutions/2773121
   ruleID: seam-ui-jsf-00001
   tag:
-  - seam
-  - jsf
   - JSF Seam 2.x tag library usage
   when:
 #    TODO: this doesn't seem to work
@@ -29,9 +24,6 @@
 - customVariables: []
   description: JSF Seam 2.3 tag library usage
   labels:
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -42,8 +34,6 @@
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#migrate-eap5-component-upgrade-reference
   ruleID: seam-ui-jsf-00002
   tag:
-  - seam
-  - jsf
   - JSF Seam 2.3 tag library usage
   when:
     builtin.xml:

@@ -3,8 +3,6 @@
   description: RESTful Web Services @Context annotation has been deprecated
   effort: 0
   labels:
-  - capability=eap8
-  - capability=eap
   - capability=jws6+
   - capability=jws
   - konveyor.io/source

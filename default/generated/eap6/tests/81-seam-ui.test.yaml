@@ -11,30 +11,6 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: .*should be replaced by `<h:link>`.*
-- ruleID: seam-ui-jsf-01001
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:conversationId>`.*
-- ruleID: seam-ui-jsf-01002
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:conversationPropagation>`.*
-- ruleID: seam-ui-jsf-01003
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:taskId>`.*
-- ruleID: seam-ui-jsf-01004
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:defaultAction>`.*
 - ruleID: seam-ui-jsf-01005
   testCases:
   - name: tc-1
@@ -47,48 +23,6 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: .*Seam UI's `<s:convertEntity>` should be replaced by .*
-- ruleID: seam-ui-jsf-01007
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:enumItem>`.*
-- ruleID: seam-ui-jsf-01008
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:token>`.*
-- ruleID: seam-ui-jsf-01009
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:formattedText>`.*
-- ruleID: seam-ui-jsf-01010
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:cache>`.*
-- ruleID: seam-ui-jsf-01011
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:resource>`.*
-- ruleID: seam-ui-jsf-01012
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:download>`.*
-- ruleID: seam-ui-jsf-01013
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      atLeast: 1
-      messageMatches: .*There is no direct mapping for `<s:remote>`.*
 - ruleID: seam-ui-jsf-01014
   testCases:
   - name: tc-1

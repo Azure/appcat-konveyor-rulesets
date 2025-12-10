@@ -9,8 +9,6 @@
   - source=eap
   - capability=hibernate5+
   - capability=hibernate
-  - capability=eap7+
-  - capability=eap
   - hibernate
   - configuration
   - transaction
@@ -54,8 +52,6 @@
   - source=eap
   - capability=hibernate5+
   - capability=hibernate
-  - capability=eap7+
-  - capability=eap
   - hibernate
   - configuration
   - domain=java-upgrade
@@ -87,8 +83,6 @@
   - source=eap
   - capability=hibernate5+
   - capability=hibernate
-  - capability=eap7+
-  - capability=eap
   - hibernate
   - configuration
   - domain=java-upgrade
@@ -128,8 +122,6 @@
   - source=eap
   - capability=hibernate5+
   - capability=hibernate
-  - capability=eap7+
-  - capability=eap
   - hibernate
   - configuration
   - domain=java-upgrade
@@ -169,8 +161,6 @@
   - source=eap
   - capability=hibernate5+
   - capability=hibernate
-  - capability=eap7+
-  - capability=eap
   - hibernate
   - configuration
   - domain=java-upgrade

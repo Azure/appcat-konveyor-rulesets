@@ -5,8 +5,6 @@
   labels:
   - source=eap5
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - ejb
   - seam
@@ -38,35 +36,6 @@
       xpath: //*[local-name()='security-domain' and starts-with(text(), 'java:/jaas/')]
 - category: mandatory
   customVariables: []
-  description: JBoss EAP 5 classloader configuration (jboss-classloading.xml)
-  effort: 5
-  labels:
-  - jboss-eap5
-  - ejb
-  - seam
-  - classloading
-  - capability=eap7+
-  - capability=eap
-  - capability=java-ee7+
-  - capability=java-ee
-  - discovery
-  links:
-  - title: JBoss EAP 7 Class Loading and Modules
-    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/development_guide/#class_loading_and_modules
-  - title: JBoss EAP 5 Class Loading and Modules
-    url: https://access.redhat.com/documentation/en-us/JBoss_Enterprise_Application_Platform/5/html/Microcontainer_User_Guide/sect-JBoss_Microcontainer_User_Guide-The_ClassLoading_Layer-ClassLoading.html
-  - title: JBoss EAP 7 Class Loading and Modules
-    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/development_guide/#class_loading_and_modules
-  message: The `jboss-classloading.xml` file allows customization of classloading
-    in JBoss EAP 5.
-  ruleID: jboss-eap5-7-xml-10000
-  when:
-    builtin.xml:
-      namespaces:
-        jbc: urn:jboss:classloading:1.0
-      xpath: /jbc:classloading
-- category: mandatory
-  customVariables: []
   description: JBoss security configuration descriptor (login-config.xml)
   effort: 5
   labels:
@@ -74,11 +43,16 @@
   - ejb
   - seam
   - security
-  - capability=eap7+
-  - capability=eap
+  - source=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
   - capability=java-ee7+
   - capability=java-ee
-  - discovery
   links:
   - title: JBoss EAP 7 - How To Configure Server Security
     url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html-single/how_to_configure_server_security/

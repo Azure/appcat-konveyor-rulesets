@@ -7,8 +7,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - JakartaEE
   - domain=java-upgrade
   - category=deprecated-apis

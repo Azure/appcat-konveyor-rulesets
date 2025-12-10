@@ -5,8 +5,6 @@
   labels:
   - source=eap7.1-
   - source=eap
-  - capability=eap7.1+
-  - capability=eap
   - eap7
   - domain=java-upgrade
   - category=deprecated-apis
@@ -35,8 +33,6 @@
   labels:
   - source=eap7.1-
   - source=eap
-  - capability=eap7.1+
-  - capability=eap
   - eap7
   - domain=java-upgrade
   - category=deprecated-apis

@@ -12,8 +12,6 @@
   - target=azure-container-apps
   - source=eap5
   - source=eap
-  - capability=eap6
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-eap5
@@ -37,8 +35,15 @@
   description: JBoss 5 classloader configuration (jboss-classloading.xml)
   effort: 5
   labels:
-  - capability=eap6
-  - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=eap5
+  - source=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-eap5
@@ -68,8 +73,15 @@
   description: JBoss security configuration descriptor (prior to AS 7 / EAP 6)
   effort: 5
   labels:
-  - capability=eap6
-  - capability=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=eap5
+  - source=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-eap5

@@ -5,8 +5,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -33,8 +32,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -61,8 +59,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -89,8 +86,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -117,8 +113,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -145,8 +140,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -174,8 +168,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -203,8 +196,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -232,8 +224,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -260,8 +251,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -288,8 +278,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -317,8 +306,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -346,8 +334,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -374,8 +361,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -403,8 +389,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -431,8 +416,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -459,8 +443,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -488,8 +471,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -517,8 +499,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -546,8 +527,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -574,8 +554,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -603,8 +582,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -631,8 +609,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -660,8 +637,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -689,8 +665,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -717,8 +692,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -746,8 +720,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -774,8 +747,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -802,8 +774,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -830,8 +801,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -858,8 +828,7 @@
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee
-  - capability=eap8
-  - capability=eap
+  - source=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows

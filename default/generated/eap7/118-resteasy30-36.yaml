@@ -3,11 +3,9 @@
   description: RESTEasy 3.6 - Resource Method Algorithm Switch changes
   effort: 1
   labels:
-  - capability=eap7
-  - capability=eap
   - capability=resteasy3+
   - capability=resteasy
-  - konveyor.io/source
+  - source=eap
   - resteasy
   - domain=java-upgrade
   - category=deprecated-apis

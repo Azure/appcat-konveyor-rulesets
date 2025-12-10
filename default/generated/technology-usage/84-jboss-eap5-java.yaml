@@ -1,8 +1,6 @@
 - customVariables: []
   description: JBoss EAP 5 JMX ManagementBean
   labels:
-  - capability=eap6
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - jboss-eap5
@@ -12,7 +10,6 @@
   links: []
   ruleID: jboss-eap5-java-01000
   tag:
-  - jmx
   - JBoss EAP 5 JMX ManagementBean
   when:
     java.referenced:

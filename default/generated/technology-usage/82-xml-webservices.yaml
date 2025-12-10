@@ -1,8 +1,6 @@
 - customVariables: []
   description: Apache Axis Service Group
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -10,8 +8,6 @@
   links: []
   ruleID: xml-webservices-01000
   tag:
-  - apache-axis
-  - webservice
   - Apache Axis Service Group
   when:
     as: default
@@ -21,8 +17,6 @@
 - customVariables: []
   description: Apache Axis Module
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -30,8 +24,6 @@
   links: []
   ruleID: xml-webservices-02000
   tag:
-  - apache-axis
-  - webservice
   - Apache Axis Module
   when:
     as: default
@@ -41,8 +33,6 @@
 - customVariables: []
   description: Apache Axis Configuration
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -50,8 +40,6 @@
   links: []
   ruleID: xml-webservices-03000
   tag:
-  - apache-axis
-  - webservice
   - Apache Axis Configuration
   when:
     as: default
@@ -61,8 +49,6 @@
 - customVariables: []
   description: XFire 1.x Configuration
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -70,8 +56,6 @@
   links: []
   ruleID: xml-webservices-04000
   tag:
-  - xfire
-  - webservice
   - XFire 1.x Configuration
   when:
     as: default
@@ -82,8 +66,6 @@
 - customVariables: []
   description: JAX-WS Handler Chain
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -91,7 +73,6 @@
   links: []
   ruleID: xml-webservices-05000
   tag:
-  - webservice
   - JAX-WS Handler Chain
   when:
     as: default
@@ -106,8 +87,6 @@
   description: Use of Web Service Handler2
   effort: 0
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -138,8 +117,6 @@
   description: Use of Web Service Handler2
   effort: 0
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -168,8 +145,6 @@
 - customVariables: []
   description: Apache CXF Bus Extension
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -177,8 +152,6 @@
   links: []
   ruleID: xml-webservices-07000
   tag:
-  - webservice
-  - apache-cxf
   - Apache CXF Bus Extension
   when:
     as: default
@@ -189,8 +162,6 @@
 - customVariables: []
   description: WS-Policy
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -198,8 +169,6 @@
   links: []
   ruleID: xml-webservices-08000
   tag:
-  - webservice
-  - security
   - WS-Policy
   when:
     as: default
@@ -210,8 +179,6 @@
 - customVariables: []
   description: SOAP Envelope
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -219,8 +186,6 @@
   links: []
   ruleID: xml-webservices-09000
   tag:
-  - soap
-  - webservice
   - SOAP Envelope
   when:
     as: default
@@ -231,8 +196,6 @@
 - customVariables: []
   description: WSDL Definition
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - webservice
@@ -240,8 +203,6 @@
   links: []
   ruleID: xml-webservices-10000
   tag:
-  - webservice
-  - wsdl
   - WSDL Definition
   when:
     as: default

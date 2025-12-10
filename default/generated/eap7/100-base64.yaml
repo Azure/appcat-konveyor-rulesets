@@ -5,8 +5,6 @@
   labels:
   - source=java-ee
   - source=eap
-  - capability=eap6+
-  - capability=eap
   - eap7
   - base64
   - domain=java-upgrade

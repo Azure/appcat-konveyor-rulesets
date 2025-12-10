@@ -9,8 +9,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -42,8 +40,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -75,8 +71,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -108,8 +102,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -142,8 +134,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -176,8 +166,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -209,8 +197,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -242,8 +228,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -275,8 +259,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -310,8 +292,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -346,8 +326,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -379,8 +357,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -416,8 +392,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -452,8 +426,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -485,8 +457,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -521,8 +491,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -559,8 +527,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - annotation
@@ -595,8 +561,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -630,8 +594,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -672,8 +634,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -718,8 +678,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -756,8 +714,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -794,8 +750,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -832,8 +786,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -875,8 +827,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -918,8 +868,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1005,8 +953,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1047,8 +993,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1093,8 +1037,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1137,8 +1079,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1170,8 +1110,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - maven
@@ -1208,8 +1146,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1255,8 +1191,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1291,8 +1225,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1327,8 +1259,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1362,8 +1292,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1397,8 +1325,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1432,8 +1358,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1468,8 +1392,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1502,8 +1424,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1537,8 +1457,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1573,8 +1491,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1609,8 +1525,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade
@@ -1647,8 +1561,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1686,8 +1598,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1725,8 +1635,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1767,8 +1675,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1806,8 +1712,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1848,8 +1752,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1887,8 +1789,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1929,8 +1829,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -1971,8 +1869,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -2010,8 +1906,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -2049,8 +1943,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -2091,8 +1983,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -2130,8 +2020,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -2172,8 +2060,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -2214,8 +2100,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -2256,8 +2140,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - lucene
@@ -2294,8 +2176,6 @@
   - source=eap
   - capability=hibernate-search5+
   - capability=hibernate-search
-  - capability=eap7
-  - capability=eap
   - hibernate-search
   - hibernate
   - domain=java-upgrade

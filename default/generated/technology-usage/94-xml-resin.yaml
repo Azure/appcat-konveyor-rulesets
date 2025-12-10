@@ -1,8 +1,6 @@
 - customVariables: []
   description: Resin Web Application Descriptor
   labels:
-  - capability=eap6+
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - web-app
@@ -15,8 +13,6 @@
     is Resin specific and needs to be migrated to web.xml or jboss-web.xml\n                        "
   ruleID: xml-resin-01000
   tag:
-  - configuration
-  - resin
   - Resin Web Application Descriptor
   when:
     as: default

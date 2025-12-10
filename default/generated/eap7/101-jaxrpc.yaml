@@ -4,8 +4,7 @@
   effort: 5
   labels:
   - source=java-ee
-  - capability=eap7+
-  - capability=eap
+  - source=eap
   - jax-rpc
   - soap
   - domain=java-upgrade

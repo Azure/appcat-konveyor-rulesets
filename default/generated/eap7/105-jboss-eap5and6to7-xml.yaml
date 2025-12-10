@@ -6,8 +6,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -40,8 +38,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -81,8 +77,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -122,8 +116,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -156,8 +148,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -210,8 +200,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -247,8 +235,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -284,8 +270,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -321,8 +305,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -363,8 +345,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -405,8 +385,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -444,8 +422,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -483,8 +459,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -524,8 +498,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb
@@ -567,8 +539,6 @@
   - source=eap5
   - source=eap6
   - source=eap
-  - capability=eap7+
-  - capability=eap
   - jboss-eap5
   - jboss-eap6
   - ejb

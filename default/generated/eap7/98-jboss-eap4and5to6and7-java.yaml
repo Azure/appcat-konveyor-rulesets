@@ -6,9 +6,6 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -38,9 +35,6 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows
@@ -76,9 +70,6 @@
   - source=eap4
   - source=eap5
   - source=eap
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - domain=java-upgrade
   - category=deprecated-apis
   - os=windows

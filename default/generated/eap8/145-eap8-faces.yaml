@@ -6,8 +6,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - eap8
   - domain=java-upgrade
   - category=deprecated-apis
@@ -43,8 +41,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - eap8
   - domain=java-upgrade
   - category=deprecated-apis
@@ -80,8 +76,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - eap8
   - domain=java-upgrade
   - category=deprecated-apis
@@ -122,8 +116,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - eap8
   - domain=java-upgrade
   - category=deprecated-apis
@@ -158,8 +150,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - eap8
   - domain=java-upgrade
   - category=deprecated-apis
@@ -191,8 +181,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - eap8
   - domain=java-upgrade
   - category=deprecated-apis
@@ -224,8 +212,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - eap8
   - domain=java-upgrade
   - category=deprecated-apis
@@ -257,8 +243,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - eap8
   - domain=java-upgrade
   - category=deprecated-apis
@@ -292,8 +276,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=eap8+
-  - capability=eap
   - eap8
   - domain=java-upgrade
   - category=deprecated-apis

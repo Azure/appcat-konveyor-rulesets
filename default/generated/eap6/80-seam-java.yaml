@@ -16,9 +16,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -53,9 +50,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -89,9 +83,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -127,9 +118,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -165,9 +153,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -199,9 +184,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -234,9 +216,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -276,9 +255,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -320,9 +296,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -358,9 +331,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -394,9 +364,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -430,9 +397,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -465,9 +429,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -505,9 +466,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -537,9 +495,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -580,9 +535,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -614,9 +566,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -650,9 +599,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -682,9 +628,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -715,9 +658,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -749,9 +689,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -783,9 +720,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -823,9 +757,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -868,9 +799,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -905,9 +833,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -951,9 +876,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -989,9 +911,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam
@@ -1023,9 +942,6 @@
   - source=eap
   - source=seam2
   - source=seam
-  - capability=eap6
-  - capability=eap7
-  - capability=eap
   - capability=java-ee6+
   - capability=java-ee
   - seam

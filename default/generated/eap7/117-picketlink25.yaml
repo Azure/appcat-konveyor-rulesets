@@ -5,8 +5,6 @@
   labels:
   - source=eap7.1-
   - source=eap
-  - capability=eap7
-  - capability=eap
   - picketlink
   - domain=java-upgrade
   - category=deprecated-apis

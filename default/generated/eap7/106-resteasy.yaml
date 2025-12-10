@@ -8,8 +8,6 @@
   - source=eap
   - source=resteasy2
   - source=resteasy
-  - capability=eap7+
-  - capability=eap
   - capability=resteasy3+
   - capability=resteasy
   - resteasy
