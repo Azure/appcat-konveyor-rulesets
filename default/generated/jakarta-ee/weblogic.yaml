@@ -13,8 +13,7 @@
   - title: Migrate WebLogic Server applications to JBoss EAP on Azure App Service
     url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-weblogic-to-jboss-eap-on-azure-app-service
   message: |-
-    This rule identifies Java projects that are using WebLogic Server and may need to be migrated to JBoss EAP on Azure App Service.
-    You can follow the guidance in the linked documentation to migrate the application.
+    To migrate Java applications using WebLogic Server to JBoss EAP on Azure App Service, you can follow the guidance in the linked documentation.
   ruleID: weblogic-to-azure-app-service
   when:
     or:
@@ -39,8 +38,7 @@
   - title: Migrate WebLogic Server applications to Azure Kubernetes Service
     url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-weblogic-to-azure-kubernetes-service
   message: |-
-    This rule identifies Java projects that are using WebLogic Server and may need to be migrated to Azure Kubernetes Service.
-    You can follow the guidance in the linked documentation to migrate the application.
+    To migrate Java applications using WebLogic Server to Azure Kubernetes Service, you can follow the guidance in the linked documentation.
   ruleID: weblogic-to-aks
   when:
     or:
@@ -53,7 +51,7 @@
 - category: 
   customVariables: []
   description: Migrate WebLogic Server applications to Azure Container Apps
-  effort: 5
+  effort: 7
   labels:
   - target=azure-container-apps
   - os=windows
@@ -63,8 +61,12 @@
   - source=weblogic
   links: []
   message: |-
-    This rule identifies Java projects that are using WebLogic Server and may need to be migrated to Azure Container Apps.
-    You can follow the guidance in the linked documentation to migrate the application.
+    To migrate Java applications using WebLogic to Azure Container Apps, you can consider two options:
+    1. Lift-and-Shift with WebLogic
+    Use Oracle WebLogic container images as the base for your application, and package your Java application together with WebLogic in a container image. Deploy the container to Azure Container Apps and configure settings for networking, scaling, secrets, and environment variables.
+    
+    2. Refactor to Remove WebLogic
+    Decouple your application from WebLogic and migrate to a lighter runtime (e.g., Spring Boot, Quarkus, or Micronaut). This reduces complexity and improves cloud-native compatibility. Then package your Java application in a container image and deploy to Azure Container Apps, leveraging its built-in features for autoscaling, traffic splitting, and secure configuration.
   ruleID: weblogic-to-azure-container-apps
   when:
     or:
