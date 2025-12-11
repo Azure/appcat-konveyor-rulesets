@@ -19,12 +19,7 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\)(pom|build)\.(xml|gradle)$
-        pattern: eap-maven-plugin
-    - builtin.filecontent:
-        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
-        pattern: jboss-eap-bom
-    - java.dependency:
-        nameregex: org\.jboss\.eap.*
+        pattern: eap-maven-plugin|eap-runtime-artifacts|org\.boss\.bom
 
 - category: mandatory
   customVariables: []
@@ -50,12 +45,7 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\)(pom|build)\.(xml|gradle)$
-        pattern: eap-maven-plugin
-    - builtin.filecontent:
-        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
-        pattern: jboss-eap-bom
-    - java.dependency:
-        nameregex: org\.jboss\.eap.*
+        pattern: eap-maven-plugin|eap-runtime-artifacts|org\.boss\.bom
 
 - category: mandatory
   customVariables: []
@@ -81,9 +71,4 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\)(pom|build)\.(xml|gradle)$
-        pattern: eap-maven-plugin
-    - builtin.filecontent:
-        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
-        pattern: jboss-eap-bom
-    - java.dependency:
-        nameregex: org\.jboss\.eap.*
+        pattern: eap-maven-plugin|eap-runtime-artifacts|org\.boss\.bom
