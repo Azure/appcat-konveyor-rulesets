@@ -1,0 +1,33 @@
+- category: mandatory
+  customVariables: []
+  description: IBM MQ Configuration
+  effort: 3
+  labels:
+  - source=websphere
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
+  - jms
+  - messaging
+  - websphere
+  - configuration
+  links:
+  - title: The Embedded ActiveMQ Artemis Messaging Broker
+    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/configuring_messaging/#the_integrated_activemq_artemis_messaging_broker
+  - title: Java EE 7 JMS Tutorial
+    url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEH
+  message: "The WebSphere MQ client API is used to communicate with the MQ server
+    from client-side applications.\n                        This
+    needs to be replaced with standard Java EE 7 JMS API, or with ActiveMQ Artemis
+    client API.\n                    "
+  ruleID: websphere-mq-eap7-01000
+  when:
+    builtin.filecontent:
+      filePattern: .*\.(java|properties|xml)
+      pattern: com.ibm.mq.jms.context.WMQInitialContextFactory

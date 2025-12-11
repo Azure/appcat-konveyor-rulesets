@@ -1,2 +1,0 @@
-Manifest-Version: 1.0
-Dependencies: org.jboss.resteasy.resteasy-jaxrs,org.jboss.resteasy.resteasy-jettison-provider,org.jboss.resteasy.resteasy-yaml-provider 
