@@ -19,9 +19,7 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\)(pom|build)\.(xml|gradle)$
-        pattern: websphere|was
-    - java.dependency:
-        nameregex: com\.ibm\.ws.*
+        pattern: websphere
     - java.dependency:
         nameregex: com\.ibm\.websphere.*
 
@@ -46,9 +44,7 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\)(pom|build)\.(xml|gradle)$
-        pattern: websphere|was
-    - java.dependency:
-        nameregex: com\.ibm\.ws.*
+        pattern: websphere
     - java.dependency:
         nameregex: com\.ibm\.websphere.*
 
@@ -76,8 +72,6 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\)(pom|build)\.(xml|gradle)$
-        pattern: websphere|was
-    - java.dependency:
-        nameregex: com\.ibm\.ws.*
+        pattern: websphere
     - java.dependency:
         nameregex: com\.ibm\.websphere.*
