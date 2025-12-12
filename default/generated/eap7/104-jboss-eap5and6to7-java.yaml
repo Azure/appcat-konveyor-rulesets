@@ -161,3 +161,32 @@
     java.referenced:
       location: ANNOTATION
       pattern: org.jboss.logging.(Cause|Field|FormatWith|LoggingClass|LogMessage|Message|MessageBundle|MessageLogger|Param|Property)
+- customVariables: []
+  description: HornetQ was removed in EAP 7
+  effort: 3
+  labels:
+  - jboss-eap5
+  - jboss-eap6
+  - source=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=java-ee7+
+  - capability=java-ee
+  - discovery
+  links:
+  - title: What's new in JBoss EAP 7
+    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html-single/migration_guide/#whats_new_in_eap
+  - title: ActiveMQ Artemis Migration
+    url: https://activemq.apache.org/artemis/migration.html
+  message: HornetQ was replaced by ActiveMQ Artemis in EAP 7. You should replace all
+    references to `org.hornetq.*` with JMS API or ActiveMQ Artemis API.
+  ruleID: jboss-eap5and6to7-java-08000
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: org.hornetq*

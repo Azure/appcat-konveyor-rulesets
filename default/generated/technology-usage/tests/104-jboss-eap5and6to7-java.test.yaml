@@ -20,9 +20,4 @@ tests:
   - name: tc-1
     hasTags:
     - JBoss Web Valve
-- ruleID: jboss-eap5and6to7-java-08000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - HornetQ was removed in EAP 7
 

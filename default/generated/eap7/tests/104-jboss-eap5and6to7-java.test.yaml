@@ -31,6 +31,12 @@ tests:
       atLeast: 1
       messageMatches: The .*@Clustered.* annotation is ignored in EAP 7 and is not
         useful.
+- ruleID: jboss-eap5and6to7-java-08000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: HornetQ was replaced by ActiveMQ Artemis
 - ruleID: jboss-eap5and6to7-java-09000
   testCases:
   - name: tc-1
