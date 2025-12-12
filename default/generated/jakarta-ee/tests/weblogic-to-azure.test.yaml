@@ -1,0 +1,25 @@
+rulesPath: ../weblogic-to-azure.yaml
+providers:
+- name: java
+  dataPath: ./data/weblogic-to-azure
+- name: builtin
+  dataPath: ./data/weblogic-to-azure
+tests:
+- ruleID: weblogic-to-azure-app-service
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: To migrate Java applications using WebLogic to JBoss EAP on Azure App Service
+- ruleID: weblogic-to-aks
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: To migrate Java applications using WebLogic to Azure Kubernetes Service
+- ruleID: weblogic-to-azure-container-apps
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: To migrate Java applications using WebLogic to Azure Container Apps
