@@ -1,0 +1,25 @@
+rulesPath: ../websphere-to-azure.yaml
+providers:
+- name: java
+  dataPath: ./data/websphere-to-azure
+- name: builtin
+  dataPath: ./data/websphere-to-azure
+tests:
+- ruleID: websphere-to-azure-app-service
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: To migrate Java applications using WebSphere to JBoss EAP on Azure App Service
+- ruleID: websphere-to-aks
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: To migrate Java applications using WebSphere to Azure Kubernetes Service
+- ruleID: websphere-to-azure-container-apps
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: To migrate Java applications using WebSphere to Azure Container Apps
