@@ -10,19 +10,21 @@
   when:
     builtin.file:
       pattern: .*hibernate.*\.jar$
+
 - customVariables: []
   description: Embedded library - JDBC
   labels:
   - capability=jakarta-ee
   - discovery
   links: []
-  message: "\n                        The application embeds a JDBC library.\n                    "
+  message: "The application embeds a JDBC library."
   ruleID: embedded-framework-libraries-04000
   tag:
   - Embedded library - JDBC
   when:
     builtin.file:
       pattern: .*jdbc.*\.jar$
+
 - customVariables: []
   description: Seam 2 embedded library
   labels:
