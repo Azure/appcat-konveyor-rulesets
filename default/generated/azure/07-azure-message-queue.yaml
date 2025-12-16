@@ -380,3 +380,178 @@
       - java.dependency:
           lowerbound: 0.0.0
           name: org.springframework.amqp.spring-rabbit
+
+- category: optional
+  customVariables: []
+  description: Amazon SNS usage detected
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - amazon-sns
+  - azure-service-bus
+  links:
+  - title: Use the Azure portal to create a Service Bus topic and subscriptions to the topic
+    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quickstart-topics-subscriptions-portal
+  - title: Get started with Service Bus topics and subscriptions (Java)
+    url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
+  - title: Azure Service Bus client library for Java (azure-messaging-servicebus)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-servicebus-readme
+  - title: Messaging services on Azure and AWS
+    url: https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging
+  message: |-
+    The application uses Amazon SNS for pub/sub messaging. Consider migrating to Azure Service Bus.
+    Azure Service Bus Topics and Subscriptions provide durable, reliable pub/sub messaging with filtering and dead-lettering.
+    You will need to replace AWS SNS SDK usage (publishing, subscription management, credentials/config) with Azure Service Bus topic/subscription entities and the Azure Service Bus SDK (or an appropriate framework integration).
+  ruleID: amazon-sns-to-azure-servicebus-01000
+  when:
+    or:
+    - java.dependency:
+        name: software.amazon.awssdk.sns
+    - java.dependency:
+        name: com.amazonaws.aws-java-sdk-sns
+    - java.dependency:
+        name: io.awspring.cloud.spring-cloud-aws-sns
+    - java.dependency:
+        name: io.awspring.cloud.spring-cloud-aws-starter-sns
+
+- category: optional
+  customVariables: []
+  description: Google Cloud Pub/Sub usage detected
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - google-cloud-pubsub
+  - azure-service-bus
+  links:
+  - title: Use the Azure portal to create a Service Bus topic and subscriptions to the topic
+    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quickstart-topics-subscriptions-portal
+  - title: Get started with Service Bus topics and subscriptions (Java)
+    url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
+  - title: Azure Service Bus client library for Java (azure-messaging-servicebus)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-servicebus-readme
+  - title: Messaging services on Azure and AWS
+    url: https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging
+  message: |-
+    The application uses Google Cloud Pub/Sub for pub/sub messaging. Consider migrating to Azure Service Bus Topics.
+    Azure Service Bus Topics and Subscriptions provide durable pub/sub messaging with at-least-once delivery, filtering, and dead-lettering.
+    You will need to replace Google Cloud Pub/Sub client usage (publish/subscribe, subscription administration, authentication and configuration) with Azure Service Bus topic/subscription entities and the Azure Service Bus SDK (or an appropriate framework integration).
+  ruleID: gcp-pubsub-to-azure-servicebus-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.google.cloud.google-cloud-pubsub
+    - java.dependency:
+        name: com.google.cloud.spring-cloud-gcp-starter-pubsub
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-gcp-pubsub
+    - java.dependency:
+        name: com.google.cloud.spring-cloud-gcp-pubsub
+    - java.dependency:
+        nameregex: com.google.api.grpc.grpc-google-cloud-pubsub-v1
+
+- category: optional
+  customVariables: []
+  description: TIBCO EMS JMS usage detected
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - tibco-ems-jms
+  - azure-service-bus-jms
+  links:
+  - title: Use JMS in Spring to access Azure Service Bus
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-service-bus
+  - title: Use Azure Service Bus with JMS
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/spring-jms-support
+  - title: Azure Service Bus JMS 2.0 developer guide
+    url: https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide
+  - title: Use Java Message Service 2.0 API with Azure Service Bus Premium
+    url: https://learn.microsoft.com/azure/service-bus-messaging/how-to-use-java-message-service-20
+  message: |-
+    The application uses TIBCO EMS via the Java Message Service (JMS) API. Consider migrating to Azure Service Bus with JMS.
+    Azure Service Bus Premium provides full JMS 2.0 API support, enabling a drop-in replacement approach for many JMS-based applications.
+    You will need to replace TIBCO EMS client libraries, connection factories/JNDI configuration, and broker-specific settings with Azure Service Bus JMS connection settings and supported JMS features.
+  ruleID: tibco-ems-jms-to-azure-servicebus-jms-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.tibco.tibjms.tibjms
+    - java.dependency:
+        name: com.tibco.tibjms
+    - java.dependency:
+        name: com.tibco.tibjmsadmin
+    - builtin.file:
+        pattern: tibjms\.jar
+    - java.referenced:
+        location: IMPORT
+        pattern: com.tibco.tibjms*
+    - java.referenced:
+        pattern: com.tibco.tibjms.admin*
+    - java.referenced:
+        pattern: com.tibco.tibjms.naming*
+
+- category: optional
+  customVariables: []
+  description: Solace PubSub+ usage detected
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - solace-pubsubplus
+  - azure-service-bus
+  links:
+  - title: Use the Azure portal to create a Service Bus topic and subscriptions to the topic
+    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quickstart-topics-subscriptions-portal
+  - title: Get started with Service Bus topics and subscriptions (Java)
+    url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
+  - title: Azure Service Bus client library for Java (azure-messaging-servicebus)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-servicebus-readme
+  - title: Messaging services on Azure and AWS
+    url: https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging
+  message: |-
+    The application uses Solace PubSub+ for enterprise messaging. Consider migrating to Azure Service Bus.
+    Azure Service Bus supports equivalent enterprise messaging patterns including queues (point-to-point), topics/subscriptions (pub/sub), and request/reply-style workflows, with AMQP 1.0 support and JMS 2.0 support (Premium).
+    You will need to replace Solace PubSub+ client libraries and broker-specific configuration (sessions, endpoints/queues, topics, authentication, connection properties) with Azure Service Bus entities and either the Azure Service Bus SDK, AMQP, or JMS (depending on your application integration style).
+  ruleID: solace-pubsubplus-to-azure-servicebus-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.solacesystems.sol-jms
+    - java.dependency:
+        name: com.solacesystems.sol-jcsmp
+    - java.dependency:
+        name: com.solacesystems.sol-common
+    - java.dependency:
+        name: com.solacesystems.sol-jms-jakarta
+    - java.dependency:
+        name: com.solace.spring.cloud.spring-cloud-starter-stream-solace
+    - java.dependency:
+        name: com.solace.spring.cloud.spring-cloud-stream-binder-solace
+    - java.referenced:
+        location: IMPORT
+        pattern: com.solacesystems.jms*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.solacesystems.jcsmp*

@@ -56,6 +56,112 @@
 			<artifactId>kafka-clients</artifactId>
 			<version>3.5.1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/software.amazon.awssdk/sns -->
+		<dependency>
+		    <groupId>software.amazon.awssdk</groupId>
+		    <artifactId>sns</artifactId>
+		    <version>2.40.8</version>
+		    <scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-sns -->
+		<dependency>
+		    <groupId>com.amazonaws</groupId>
+		    <artifactId>aws-java-sdk-sns</artifactId>
+		    <version>1.12.795</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.awspring.cloud/spring-cloud-aws-sns -->
+		<dependency>
+		    <groupId>io.awspring.cloud</groupId>
+		    <artifactId>spring-cloud-aws-sns</artifactId>
+		    <version>3.4.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.awspring.cloud/spring-cloud-aws-starter-sns -->
+		<dependency>
+		    <groupId>io.awspring.cloud</groupId>
+		    <artifactId>spring-cloud-aws-starter-sns</artifactId>
+		    <version>3.4.2</version>
+		    <scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-pubsub -->
+		<dependency>
+		    <groupId>com.google.cloud</groupId>
+		    <artifactId>google-cloud-pubsub</artifactId>
+		    <version>1.144.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.cloud/spring-cloud-gcp-starter-pubsub -->
+		<dependency>
+		    <groupId>com.google.cloud</groupId>
+		    <artifactId>spring-cloud-gcp-starter-pubsub</artifactId>
+		    <version>7.4.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-gcp-pubsub -->
+		<dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-gcp-pubsub</artifactId>
+		    <version>1.2.8.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.cloud/spring-cloud-gcp-pubsub -->
+		<dependency>
+		    <groupId>com.google.cloud</groupId>
+		    <artifactId>spring-cloud-gcp-pubsub</artifactId>
+		    <version>7.4.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.api.grpc/grpc-google-cloud-pubsub-v1 -->
+		<dependency>
+		    <groupId>com.google.api.grpc</groupId>
+		    <artifactId>grpc-google-cloud-pubsub-v1</artifactId>
+		    <version>1.126.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.tibco/tibjms -->
+		<dependency>
+		    <groupId>com.tibco</groupId>
+		    <artifactId>tibjms</artifactId>
+		    <version>4.4.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.tibco/tibjmsadmin -->
+		<dependency>
+		    <groupId>com.tibco</groupId>
+		    <artifactId>tibjmsadmin</artifactId>
+		    <version>5.1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solacesystems/sol-jms -->
+		<dependency>
+		    <groupId>com.solacesystems</groupId>
+		    <artifactId>sol-jms</artifactId>
+		    <version>10.29.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solacesystems/sol-jcsmp -->
+		<dependency>
+		    <groupId>com.solacesystems</groupId>
+		    <artifactId>sol-jcsmp</artifactId>
+		    <version>10.29.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solacesystems/sol-common -->
+		<dependency>
+		    <groupId>com.solacesystems</groupId>
+		    <artifactId>sol-common</artifactId>
+		    <version>10.29.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solacesystems/sol-jms-jakarta -->
+		<dependency>
+		    <groupId>com.solacesystems</groupId>
+		    <artifactId>sol-jms-jakarta</artifactId>
+		    <version>10.29.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solace.spring.cloud/spring-cloud-starter-stream-solace -->
+		<dependency>
+		    <groupId>com.solace.spring.cloud</groupId>
+		    <artifactId>spring-cloud-starter-stream-solace</artifactId>
+		    <version>5.11.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solace.spring.cloud/spring-cloud-stream-binder-solace -->
+		<dependency>
+		    <groupId>com.solace.spring.cloud</groupId>
+		    <artifactId>spring-cloud-stream-binder-solace</artifactId>
+		    <version>5.11.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>

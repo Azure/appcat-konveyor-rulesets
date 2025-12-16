@@ -50,3 +50,27 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: To migrate a Java application that uses ActiveMQ to Azure
+- ruleID: amazon-sns-to-azure-servicebus-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The application uses Amazon SNS for pub/sub messaging
+- ruleID: gcp-pubsub-to-azure-servicebus-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 5
+      messageMatches: The application uses Google Cloud Pub/Sub for pub/sub messaging
+- ruleID: amazon-sns-to-azure-servicebus-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The application uses Amazon SNS for pub/sub messaging
+- ruleID: solace-pubsubplus-to-azure-servicebus-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 8
+      messageMatches: The application uses Solace PubSub+ for enterprise messaging
