@@ -1,0 +1,85 @@
+- category: mandatory
+  customVariables: []
+  description: Legacy javax.* spec artifacts detected
+  effort: 1
+  labels:
+  - source=jakarta-ee7+
+  - source=jakarta-ee
+  - source=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee
+  - maven
+  - jakarta
+  links:
+  - title: Jakarta EE Platform Specification
+    url: https://jakarta.ee/specifications/platform/
+  - title: Migrating a JBoss EAP Application's Maven Project to EAP 8
+    url: https://access.redhat.com/articles/6980017
+  message: |-
+    Detected legacy Java EE (`javax.*`) spec artifacts and pre-Jakarta coordinates.
+    For Jakarta EE 10 / EAP 8, migrate to the corresponding Jakarta API artifacts (`jakarta.*`) and prefer BOM-managed versions.
+
+    Recommended migration:
+    - Replace `org.jboss.spec.javax.*:*_spec` with the matching Jakarta API artifacts (e.g., `jakarta.annotation:jakarta.annotation-api`,
+      `jakarta.ejb:jakarta.ejb-api`, `jakarta.transaction:jakarta.transaction-api`, `jakarta.ws.rs:jakarta.ws.rs-api`, etc.)
+    - Replace `com.sun.activation:jakarta.activation` with `jakarta.activation:jakarta.activation-api`
+    - Replace `com.sun.mail:jakarta.mail` with `jakarta.mail:jakarta.mail-api`
+    - Replace `javax.jws:jsr181-api` with a Jakarta XML Web Services API provided by the target runtime/BOM
+
+    Note:
+    - On EAP, most Jakarta EE APIs should be `provided` (avoid bundling API jars into the application unless you have a specific reason).
+  ruleID: jboss-dependencies-00006
+  when:
+    or:
+    - java.dependency:
+        name: com.sun.activation.jakarta.activation
+    - java.dependency:
+        name: com.sun.mail.jakarta.mail
+    - java.dependency:
+        name: javax.jws.jsr181-api
+    - java.dependency:
+        name: org.jboss.spec.javax.annotation.jboss-annotations-api_1.3_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.security.auth.message.jboss-jaspi-api_1.0_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.security.jacc.jboss-jacc-api_1.5_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.batch.jboss-batch-api_1.0_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.ejb.jboss-ejb-api_3.2_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.el.jboss-el-api_3.0_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.enterprise.concurrent.jboss-concurrency-api_1.0_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.faces.jboss-jsf-api_2.3_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.interceptor.jboss-interceptors-api_1.2_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.jms.jboss-jms-api_2.0_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.resource.jboss-connector-api_1.7_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.servlet.jboss-servlet-api_4.0_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.servlet.jsp.jboss-jsp-api_2.3_spec
+    - java.dependency:
+        name: org.apache.taglibs.taglibs-standard-spec
+    - java.dependency:
+        name: org.jboss.spec.javax.transaction.jboss-transaction-api_1.3_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.xml.ws.jboss-jaxws-api_2.3_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.websocket.jboss-websocket-api_1.1_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec
+    - java.dependency:
+        name: org.jboss.spec.javax.xml.soap.jboss-saaj-api_1.4_spec

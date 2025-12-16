@@ -1,19 +1,4 @@
 - customVariables: []
-  description: Embedded library - Drools
-  labels:
-  - capability=java-ee7+
-  - capability=java-ee
-  - discovery
-  links: []
-  message: "\n                        The application embedds a Drools library.\n
-    \                   "
-  ruleID: embedded-framework-libraries-01000
-  tag:
-  - Embedded library - Drools
-  when:
-    builtin.file:
-      pattern: .*drools.*\.jar$
-- customVariables: []
   description: Hibernate embedded library
   labels:
   - capability=java-ee7+
@@ -57,43 +42,6 @@
   when:
     builtin.file:
       pattern: .*jdbc.*\.jar$
-- customVariables: []
-  description: JSF embedded library
-  labels:
-  - capability=java-ee7+
-  - capability=java-ee
-  - discovery
-  links:
-  - title: 'Red Hat JBoss EAP: Component Details'
-    url: https://access.redhat.com/articles/112673
-  - title: 'Red Hat JBoss EAP 6: JavaServer Faces (JSF) Code Changes'
-    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-JSF_changes
-  - title: How to use JSF 1.2 with EAP 6
-    url: https://access.redhat.com/solutions/690953
-  - title: 'Red Hat JBoss EAP 7: JavaServer Faces (JSF) Code Changes'
-    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.0/html/migration_guide/application_migration_changes#migrate_jsf_code_changes
-  - title: How to use JSF 1.2 with EAP 7?
-    url: https://access.redhat.com/solutions/2773121
-  message: "\n                        The application has a JSF library embedded.\n\n
-    \                       Red Hat JBoss EAP includes JSF as a module with a version
-    that has been tested and is supported by Red Hat.\n                        There
-    are two options for using the JSF library:\n\n                        1. Keep
-    it embedded as it is now. This approach is low effort but the application will
-    not use a tested and supported library.\n                        2. Switch to
-    use the JSF library in the EAP module. This will require effort to remove the
-    embedded library and configure the application to use the module's library, but
-    then the application will rely on a tested and supported version of the JSF library.\n\n
-    \                       In the links below there are instructions to enable alternative
-    versions for both EAP 6 and 7.\n                    "
-  ruleID: embedded-framework-libraries-05000
-  tag:
-  - JSF embedded library
-  when:
-    or:
-    - builtin.file:
-        pattern: .*jsf-[(api)|(impl)].*\.jar$
-    - builtin.file:
-        pattern: .*myfaces-[(api)|(impl)|(bundle)].*\.jar$
 - customVariables: []
   description: Seam 2 embedded library
   labels:

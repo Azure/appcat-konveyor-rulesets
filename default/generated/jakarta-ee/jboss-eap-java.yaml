@@ -1,0 +1,189 @@
+- category: mandatory
+  customVariables: []
+  description: JBoss EJB3 extension annotations detected
+  effort: 3
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - jboss-eap5
+  - ejb
+  - jmx
+  - capability=jakarta-ee
+  links:
+  - title: Jakarta Enterprise Beans Specification
+    url: https://jakarta.ee/specifications/enterprise-beans/
+  - title: Jakarta Contexts and Dependency Injection (CDI)
+    url: https://jakarta.ee/specifications/cdi/
+  message: |-
+    Detected JBoss-specific EJB3 extension annotations. These are not portable and commonly break when moving to non-JBoss runtimes (or newer generations).
+
+    Recommended migration:
+    - `@Service` / `@Management`:
+      - Prefer standard components: `jakarta.ejb.Singleton` (optionally `jakarta.ejb.Startup`) or an equivalent CDI-based startup/managed component pattern.
+      - If you relied on JMX/MBean exposure, re-implement using target runtime/platform management capabilities (avoid JBoss-only annotations).
+    - `@LocalBinding`:
+      - Avoid vendor-specific JNDI binding annotations; prefer `@EJB` / CDI `@Inject` and portable lookup/injection patterns.
+    - `@Depends`:
+      - If the intent is Singleton startup ordering, use `jakarta.ejb.DependsOn` (Singleton beans only).
+      - Otherwise, remove and refactor initialization ordering to a portable pattern.
+  ruleID: jboss-eap5-7-java-03000
+  when:
+    or:
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.ejb3.annotation.Service
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.ejb3.annotation.Management
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.annotation.ejb.(Management|LocalBinding|Service|Depends)
+
+- category: mandatory
+  customVariables: []
+  description: JBossWS internal APIs detected
+  effort: 1
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - jboss-eap5
+  - jbossws
+  - webservice
+  - capability=jakarta-ee
+  links:
+  - title: EAP 6 Migration Guide - Web Services Changes
+    url: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html-single/migration_guide/#sect-Web_Services_Changes
+  message: |-
+    Detected usage of JBossWS internal APIs (`org.jboss.wsf.*`) or legacy JBoss WS annotations.
+    These are container-internal and reduce portability.
+
+    Recommended migration:
+    - Prefer portable, runtime-supported SOAP/Web Services APIs (availability depends on the target runtime), or migrate to an external SOAP stack/library when the runtime does not provide a compatible API set.
+    - If you must stay within the JBoss ecosystem temporarily, follow the migration guide and move away from `org.jboss.wsf.*` toward supported `org.jboss.ws.*` APIs.
+  ruleID: jboss-eap5-7-java-08000
+  when:
+    or:
+    - java.referenced:
+        location: PACKAGE
+        pattern: org.jboss.wsf.*
+    - java.referenced:
+        pattern: org.jboss.wsf.spi.util.ServiceLoader
+    - java.referenced:
+        pattern: org.jboss.wsf.common.DOMUtils
+    - java.referenced:
+        pattern: org.jboss.ws.annotation.EndpointConfig
+
+- category: mandatory
+  customVariables: []
+  description: JBoss proprietary @SecurityDomain annotation detected
+  effort: 2
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - capability=jakarta-ee
+  - security
+  - jakarta
+  links:
+  - title: Jakarta Security Specification
+    url: https://jakarta.ee/specifications/security/
+  message: |-
+    Detected `org.jboss.security.annotation.SecurityDomain` (JBoss-specific). This hard-codes container security wiring and is not portable.
+
+    Recommended migration:
+    - Keep authorization portable in code using standard annotations such as `jakarta.annotation.security.RolesAllowed` / `PermitAll` / `DenyAll`.
+    - Configure realms/identity stores/security domains in the target runtime/platform (server-side configuration), not via JBoss-only annotations.
+
+    If you are staying on JBoss EAP and need an annotation-based mapping temporarily, migrate to the EAP-supported:
+    - `org.jboss.ejb3.annotation.SecurityDomain`
+  ruleID: jboss-eap4and5to6and7-java-01000
+  when:
+    java.referenced:
+      location: ANNOTATION
+      pattern: org.jboss.security.annotation.SecurityDomain
+
+- category: mandatory
+  customVariables: []
+  description: HornetQ client APIs detected
+  effort: 3
+  labels:
+  - jboss-eap5
+  - jboss-eap6
+  - source=eap
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee
+  - jms
+  - messaging
+  links:
+  - title: Jakarta Messaging Specification
+    url: https://jakarta.ee/specifications/messaging/
+  - title: ActiveMQ Artemis Migration
+    url: https://activemq.apache.org/components/artemis/documentation/migration.html
+  message: |-
+    Detected HornetQ client API usage (`org.hornetq.*`). HornetQ was replaced by ActiveMQ Artemis in newer EAP/WildFly runtimes.
+
+    Recommended migration:
+    - Prefer the standard JMS API (`jakarta.jms.*`) for application code.
+    - Use ActiveMQ Artemis client APIs only when you need provider-specific features.
+    - If migrating to Jakarta EE 9+, also migrate `javax.jms.*` -> `jakarta.jms.*`.
+  ruleID: jboss-eap5and6to7-java-08000
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: org.hornetq*
+
+- category: mandatory
+  customVariables: []
+  description: Replace org.jboss.util.Base64 with JDK Base64
+  effort: 1
+  labels:
+  - source=java-ee
+  - source=eap
+  - eap7
+  - base64
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee
+  links:
+  - title: java.util.Base64 (JDK)
+    url: https://docs.oracle.com/javase/8/docs/api/java/util/Base64.html
+  message: |-
+    `org.jboss.util.Base64` is not a public/stable API. Replace it with `java.util.Base64`.
+  ruleID: base64-01000
+  when:
+    java.referenced:
+      pattern: org.jboss.util.Base64

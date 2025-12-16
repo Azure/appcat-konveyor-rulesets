@@ -11,7 +11,6 @@
     url: https://access.redhat.com/solutions/199183
   ruleID: commonj-01000
   tag:
-  - commonj
   - Commonj Timer Manager API
   when:
     java.referenced:
@@ -34,7 +33,6 @@
     url: http://www.ironjacamar.org/doc/api/spec/1.7/index.html?javax/resource/spi/work/package-summary.html
   ruleID: commonj-04000
   tag:
-  - commonj
   - Commonj WorkManager API
   when:
     java.referenced:

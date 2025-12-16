@@ -1,0 +1,42 @@
+- category: mandatory
+  customVariables: []
+  description: Oracle AQ JMS APIs detected
+  effort: 3
+  labels:
+  - source=weblogic
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee
+  - jms
+  - weblogic
+  - jakarta
+  links:
+  - title: Jakarta Messaging Specification
+    url: https://jakarta.ee/specifications/messaging/
+  message: |-
+    Detected usage of Oracle AQ JMS classes (`oracle.jms.AQjms*`). These are vendor-specific and reduce portability.
+
+    Recommended migration:
+    - Migrate messaging code to the Jakarta Messaging standard APIs: `jakarta.jms.*`
+    - Replace Oracle-specific types with standard JMS types, for example:
+      - `oracle.jms.AQjmsConnectionFactory` / `AQjmsQueueConnectionFactory` / `AQjmsTopicConnectionFactory` -> `jakarta.jms.ConnectionFactory`
+      - `oracle.jms.AQjmsConnection` -> `jakarta.jms.Connection`
+      - `oracle.jms.AQjmsSession` -> `jakarta.jms.Session` (or prefer `jakarta.jms.JMSContext` where applicable)
+      - `oracle.jms.AQjmsProducer` -> `jakarta.jms.MessageProducer`
+      - `oracle.jms.AQjmsConsumer` -> `jakarta.jms.MessageConsumer`
+      - `oracle.jms.AQjmsQueueBrowser` -> `jakarta.jms.QueueBrowser`
+      - `oracle.jms.AQjms*Message` -> corresponding `jakarta.jms.*Message`
+      - `oracle.jms.AQjmsDestination` -> `jakarta.jms.Destination`
+
+    Notes:
+    - Also migrate `javax.jms.*` -> `jakarta.jms.*` when moving to Jakarta EE 9+.
+    - Validate provider-specific features (e.g., AQ-specific extensions) and re-implement them using portable patterns or isolate them behind an adapter.
+  ruleID: weblogic-jms-eap7-01000
+  when:
+    java.referenced:
+      pattern: oracle.jms.AQjms.*

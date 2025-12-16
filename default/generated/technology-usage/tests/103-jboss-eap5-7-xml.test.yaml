@@ -10,18 +10,3 @@ tests:
   - name: tc-1
     hasTags:
     - JBoss Cache
-#- ruleID: jboss-eap5-7-xml-02000
-#  testCases:
-#  - name: tc-1
-#    hasTags:
-#    - JBoss 5.x EAR descriptor
-- ruleID: jboss-eap5-7-xml-13000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - JBoss legacy EJB XML (jboss.xml)
-- ruleID: jboss-eap5-7-xml-16000
-  testCases:
-  - name: tc-1
-    hasTags:
-    - JBoss security configuration descriptor.*

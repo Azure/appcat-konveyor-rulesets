@@ -1,0 +1,32 @@
+rulesPath: ../jboss-eap-seam.yaml
+providers:
+- name: java
+  dataPath: ./data/jboss-eap-seam
+- name: builtin
+  dataPath: ./data/jboss-eap-seam
+tests:
+- ruleID: seam-java-00010
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Seam 2 conversation APIs are legacy and should be refactored to CDI conversations.
+- ruleID: seam-java-00030
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Replace Seam static/programmatic APIs with CDI injection and CDI SPI only where necessary.
+- ruleID: seam-java-00070
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Refactor Seam bijection/outjection patterns to CDI producers + scoped beans.
+- ruleID: seam-java-00080
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Replace Seam execution-related annotations with Jakarta EE alternatives 
+

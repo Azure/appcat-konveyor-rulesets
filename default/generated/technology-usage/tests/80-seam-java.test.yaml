@@ -10,8 +10,3 @@ tests:
   - name: tc-1
     hasTags:
     - Seam API
-- ruleID: seam-java-00170
-  testCases:
-  - name: tc-1
-    hasTags:
-    - Seam integration with jBPM

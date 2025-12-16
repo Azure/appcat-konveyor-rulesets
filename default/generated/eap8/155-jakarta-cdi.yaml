@@ -1,34 +1,5 @@
 - category: mandatory
   customVariables: []
-  description: Method javax.enterprise.inject.spi.Bean.isNullable() has been removed
-  effort: 1
-  labels:
-  - source=eap6
-  - source=eap7
-  - source=eap
-  - capability=jws6+
-  - capability=jws
-  - JakartaEE
-  - eap8
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - capability=jakarta-ee10+
-  - capability=java-ee
-  links: []
-  message: Replace this method call with `false` (which is the value that CDI implementations
-    have returned for many years now).
-  ruleID: jakarta-cdi-00001
-  when:
-    java.referenced:
-      location: METHOD_CALL
-      pattern: javax.enterprise.inject.spi.Bean.isNullable
-- category: mandatory
-  customVariables: []
   description: Method jakarta.enterprise.inject.spi.BeanManager.createInjectionTarget(AnnotatedType)
     has been removed.
   effort: 1
@@ -47,8 +18,7 @@
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
-  - capability=jakarta-ee10+
-  - capability=java-ee
+  - capability=jakarta-ee
   links:
   - title: Obtaining an InjectionTarget for a class
     url: https://jakarta.ee/specifications/cdi/3.0/jakarta-cdi-spec-3.0.html#bm_obtain_injectiontarget
@@ -79,8 +49,7 @@
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
-  - capability=jakarta-ee10+
-  - capability=java-ee
+  - capability=jakarta-ee
   links:
   - title: Firing an event
     url: https://jakarta.ee/specifications/cdi/3.0/jakarta-cdi-spec-3.0.html#bm_fire_event
@@ -91,33 +60,3 @@
     java.referenced:
       location: METHOD_CALL
       pattern: jakarta.enterprise.inject.spi.BeanManager.fireEvent
-- category: potential
-  customVariables: []
-  description: Method javax.enterprise.inject.spi.BeforeBeanDiscovery.addAnnotatedType(AnnotatedType)
-    has been removed
-  effort: 1
-  labels:
-  - source=eap6
-  - source=eap7
-  - source=eap
-  - capability=jws6+
-  - capability=jws
-  - JakartaEE
-  - eap8
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - capability=jakarta-ee10+
-  - capability=java-ee
-  links: []
-  message: If you application is calling method BeforeBeanDiscovery.addAnnotatedType(AnnotatedType)
-    replace it with BeforeBeanDiscovery.addAnnotatedType(AnnotatedType, (String) null)
-  ruleID: jakarta-cdi-00004
-  when:
-    java.referenced:
-      location: METHOD_CALL
-      pattern: javax.enterprise.inject.spi.BeforeBeanDiscovery.addAnnotatedType

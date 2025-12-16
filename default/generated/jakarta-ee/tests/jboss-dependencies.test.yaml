@@ -1,0 +1,13 @@
+rulesPath: ../jboss-dependencies.yaml
+providers:
+- name: java
+  dataPath: ./data/jboss-dependencies
+- name: builtin
+  dataPath: ./data/jboss-dependencies
+tests:
+- ruleID: jboss-dependencies-00006
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected legacy Java EE (`javax.*`) spec artifacts and pre-Jakarta coordinates.
