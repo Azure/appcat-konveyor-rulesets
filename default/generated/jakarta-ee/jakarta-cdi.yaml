@@ -6,8 +6,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=jws6+
-  - capability=jws
   - JakartaEE
   - eap8
   - domain=java-upgrade
@@ -37,8 +35,6 @@
   - source=eap6
   - source=eap7
   - source=eap
-  - capability=jws6+
-  - capability=jws
   - JakartaEE
   - eap8
   - domain=java-upgrade
