@@ -1,8 +1,7 @@
 - customVariables: []
   description: Log4j Configuration
   labels:
-  - capability=java-ee6+
-  - capability=java-ee
+  - capability=jakarta-ee
   - log4j
   - discovery
   links:

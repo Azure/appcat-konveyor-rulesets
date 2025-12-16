@@ -1,8 +1,7 @@
 - customVariables: []
   description: Seam API
   labels:
-  - capability=java-ee6+
-  - capability=java-ee
+  - capability=jakarta-ee
   - seam
   - discovery
   links: []

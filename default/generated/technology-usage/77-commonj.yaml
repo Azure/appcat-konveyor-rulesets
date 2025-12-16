@@ -1,8 +1,7 @@
 - customVariables: []
   description: Commonj Timer Manager API
   labels:
-  - capability=java-ee6+
-  - capability=java-ee
+  - capability=jakarta-ee
   - commonj
   - discovery
   links:
@@ -19,8 +18,7 @@
 - customVariables: []
   description: Commonj WorkManager API
   labels:
-  - capability=java-ee6+
-  - capability=java-ee
+  - capability=jakarta-ee
   - commonj
   - discovery
   links:

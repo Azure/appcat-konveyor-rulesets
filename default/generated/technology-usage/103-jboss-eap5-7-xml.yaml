@@ -4,8 +4,7 @@
   - jboss-eap5
   - ejb
   - seam
-  - capability=java-ee7+
-  - capability=java-ee
+  - capability=jakarta-ee
   - discovery
   links:
   - title: Infinispan documentation
