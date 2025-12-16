@@ -1,0 +1,13 @@
+rulesPath: ../websphere-jms.yaml
+providers:
+- name: java
+  dataPath: ./data/websphere-jms
+- name: builtin
+  dataPath: ./data/websphere-jms
+tests:
+- ruleID: websphere-jms-eap7-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected IBM proprietary JMS APIs

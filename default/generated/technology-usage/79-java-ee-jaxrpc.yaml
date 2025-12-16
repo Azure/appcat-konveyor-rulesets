@@ -1,0 +1,17 @@
+- customVariables: []
+  description: JAX-RPC Generic Handler
+  labels:
+  - capability=jakarta-ee
+  - jax-rpc
+  - soap
+  - discovery
+  links:
+  - title: Java EE RPC Generic Handler API
+    url: http://docs.oracle.com/cd/E17802_01/webservices/webservices/docs/1.6/api/javax/xml/rpc/handler/GenericHandler.html
+  ruleID: java-ee-jaxrpc-00000
+  tag:
+  - JAX-RPC Generic Handler
+  when:
+    java.referenced:
+      location: INHERITANCE
+      pattern: javax.xml.rpc.handler.GenericHandler

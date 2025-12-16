@@ -1,0 +1,17 @@
+rulesPath: ../77-commonj.yaml
+providers:
+- name: java
+  dataPath: ./data/77-commonj
+- name: builtin
+  dataPath: ./data/77-commonj
+tests:
+- ruleID: commonj-01000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Commonj Timer Manager API
+- ruleID: commonj-04000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Commonj WorkManager API

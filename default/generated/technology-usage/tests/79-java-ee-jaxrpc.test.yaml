@@ -1,0 +1,12 @@
+rulesPath: ../79-java-ee-jaxrpc.yaml
+providers:
+- name: java
+  dataPath: ./data/79-java-ee-jaxrpc
+- name: builtin
+  dataPath: ./data/79-java-ee-jaxrpc
+tests:
+- ruleID: java-ee-jaxrpc-00000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - JAX-RPC Generic Handler

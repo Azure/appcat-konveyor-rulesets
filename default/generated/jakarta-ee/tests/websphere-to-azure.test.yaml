@@ -9,17 +9,17 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 1
+      exactly: 2
       messageMatches: To migrate Java applications using WebSphere to JBoss EAP on Azure App Service
 - ruleID: websphere-to-aks
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 1
+      exactly: 2
       messageMatches: To migrate Java applications using WebSphere to Azure Kubernetes Service
 - ruleID: websphere-to-azure-container-apps
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 1
+      exactly: 2
       messageMatches: To migrate Java applications using WebSphere to Azure Container Apps

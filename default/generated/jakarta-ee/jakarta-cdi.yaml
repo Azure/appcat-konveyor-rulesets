@@ -1,0 +1,57 @@
+- category: mandatory
+  customVariables: []
+  description: Method jakarta.enterprise.inject.spi.BeanManager.createInjectionTarget(AnnotatedType) has been removed.
+  effort: 1
+  labels:
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - JakartaEE
+  - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee
+  links:
+  - title: Obtaining an InjectionTarget for a class
+    url: https://jakarta.ee/specifications/cdi/3.0/jakarta-cdi-spec-3.0.html#bm_obtain_injectiontarget
+  message: Replace this method call with with BeanManager.getInjectionTargetFactory(AnnotatedType)
+    and use the returned factory to create injection targets.
+  ruleID: jakarta-cdi-00002
+  when:
+    java.referenced:
+      location: METHOD_CALL
+      pattern: jakarta.enterprise.inject.spi.BeanManager.createInjectionTarget
+- category: mandatory
+  customVariables: []
+  description: Method jakarta.enterprise.inject.spi.BeanManager.fireEvent(Object,
+    Annotation) has been removed.
+  effort: 1
+  labels:
+  - source=eap6
+  - source=eap7
+  - source=eap
+  - JakartaEE
+  - eap8
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee
+  links:
+  - title: Firing an event
+    url: https://jakarta.ee/specifications/cdi/3.0/jakarta-cdi-spec-3.0.html#bm_fire_event
+  message: jakarta.enterprise.inject.spi.BeanManager.fireEvent(Object, Annotation)
+    has been removed. Use BeanManager.getEvent() as an entry point to a similar API.
+  ruleID: jakarta-cdi-00003
+  when:
+    java.referenced:
+      location: METHOD_CALL
+      pattern: jakarta.enterprise.inject.spi.BeanManager.fireEvent
