@@ -1,0 +1,25 @@
+- category: mandatory
+  customVariables:
+  - name: renamed
+    nameOfCaptureGroup: renamed
+    pattern: javax.(?P<renamed>(activation|annotation|batch|decorator|ejb|el|enterprise|faces|inject|interceptor|jms|json|jws|mail|persistence|resource|security|servlet|transaction|validation|websocket|ws|xml))?.*
+  description: The package 'javax' has been replaced by 'jakarta'.
+  effort: 1
+  labels:
+  - target=jakarta-ee9+
+  - target=jakarta-ee
+  - target=eap8
+  - target=eap
+  - target=jws6+
+  - target=jws
+  - source=spring5
+  - target=spring6+
+  - source
+  links: []
+  message: Replace the `javax.{{renamed}}` import statement with `jakarta.{{renamed}}`
+  ruleID: javax-to-jakarta-import-00001
+  when:
+    as: javaClass
+    java.referenced:
+      location: IMPORT
+      pattern: javax.(activation|annotation|batch|decorator|ejb|el|enterprise|faces|inject|interceptor|jms|json|jws|mail|persistence|resource|security|servlet|transaction|validation|websocket|ws|xml)*

@@ -1,44 +1,175 @@
-- category: mandatory
-  customVariables: []
-  description: IBM WebSphere / MQ proprietary JMS APIs detected
-  effort: 3
+- customVariables:
+  - name: package
+    nameOfCaptureGroup: package
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?(?P<type>[^.]+)
+  - name: type
+    nameOfCaptureGroup: type
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?(?P<type>[^.]+)
+  description: IBM JMS Client
   labels:
   - source=websphere
-  - domain=java-upgrade
-  - category=deprecated-apis
-  - os=windows
-  - os=linux
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - capability=jakarta-ee
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
   - jms
   - websphere
-  - jakarta
   links:
-  - title: Jakarta Messaging Specification
-    url: https://jakarta.ee/specifications/messaging/
+  - title: Java EE 7 JMS Tutorial
+    url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEH
+  - title: ActiveMQ Artemis User Manual
+    url: http://activemq.apache.org/artemis/docs/1.5.0/messaging-concepts.html
+  - title: ActiveMQ Artemis Core Client API Javadoc
+    url: http://activemq.apache.org/artemis/docs/javadocs/javadoc-1.5.0/org/apache/activemq/artemis/api/core/client/package-summary.html
+  message: "WebSphere MQ client API is used to communicate with the MQ server from
+    client-side applications.\n                        For JBoss EAP 7, this needs
+    to be replaced with standard Java EE 7 JMS API, or with ActiveMQ Artemis client
+    API.\n                    "
+  ruleID: websphere-jms-eap7-00000
+  tag:
+  - jms
+  - websphere
+  - IBM JMS Client
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: com.ibm.*jms*
+- category: mandatory
+  customVariables:
+  - name: prefix
+    nameOfCaptureGroup: prefix
+    pattern: (?P<package>com.ibm(\.[^.]*)*\.jms.)?(?P<prefix>(Jms|MQeJNDI|MQe|MQ)?)?(?P<type>[^.]*?)?ConnectionFactory
+  - name: type
+    nameOfCaptureGroup: type
+    pattern: (?P<package>com.ibm(\.[^.]*)*\.jms.)?(?P<prefix>(Jms|MQeJNDI|MQe|MQ)?)?(?P<type>[^.]*?)?ConnectionFactory
+  - name: package
+    nameOfCaptureGroup: package
+    pattern: (?P<package>com.ibm(\.[^.]*)*\.jms.)?(?P<prefix>(Jms|MQeJNDI|MQe|MQ)?)?(?P<type>[^.]*?)?ConnectionFactory
+  description: IBM {prefix}{type}ConnectionFactory reference
+  effort: 1
+  labels:
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
+  - jms
+  - websphere
+  links:
+  - title: Java EE JMS Documentation
+    url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEH
   message: |-
-    Migration recommendation (Jakarta EE):
-    Detected IBM proprietary JMS APIs (`com.ibm.*jms.*` / `com.ibm.mqe.jms.*`). These types are vendor-specific and reduce portability.
-
-    Recommended migration:
-    - Migrate messaging code to the Jakarta Messaging standard APIs: `jakarta.jms.*`
-    - Replace IBM-specific types with standard JMS types, for example:
-      - `*ConnectionFactory` -> `jakarta.jms.ConnectionFactory`
-      - `*Connection` -> `jakarta.jms.Connection` (or prefer `jakarta.jms.JMSContext` where applicable)
-      - `*Session` -> `jakarta.jms.Session` (or `jakarta.jms.JMSContext`)
-      - `*Destination` / `*Queue` / `*Topic` -> `jakarta.jms.Destination` / `jakarta.jms.Queue` / `jakarta.jms.Topic`
-      - `*(Text|Bytes|Map|Object|Stream)?Message` -> corresponding `jakarta.jms.*Message`
-      - Producer/Consumer style helpers -> `jakarta.jms.MessageProducer` / `jakarta.jms.MessageConsumer`
-    - Validate IBM MQ/WebSphere-specific extensions and isolate them behind an adapter if they cannot be expressed using standard JMS.
-
-    Note:
-    - If you are migrating to Jakarta EE 9+, also migrate `javax.jms.*` -> `jakarta.jms.*`.
+    IBM {{prefix}}{{type}}ConnectionFactory is a proprietary encapsulation of JMS servers to which Connections can be created for
+     message distribution. This reference should be replaced with the Java EE standard API: `javax.jms.{{type}}ConnectionFactory`.
   ruleID: websphere-jms-eap7-01000
   when:
-    or:
-    - java.referenced:
-        pattern: com.ibm.*jms.*
-    - java.referenced:
-        pattern: com.ibm.mqe.jms.*
+    java.referenced:
+      pattern: com.ibm*.jms.(Jms|MQeJNDI|MQe|MQ)?*ConnectionFactory
+- category: mandatory
+  customVariables:
+  - name: package
+    nameOfCaptureGroup: package
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?JmsMsg(?P<type>(Producer|Consumer))
+  - name: type
+    nameOfCaptureGroup: type
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?JmsMsg(?P<type>(Producer|Consumer))
+  description: IBM JMS topic/queue message
+  effort: 1
+  labels:
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
+  - jms
+  - websphere
+  links:
+  - title: Java EE JMS Documentation
+    url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEH
+  message: |-
+    IBM JMS API {{type}}s are used for sending/reading messages to/from a topic or queue. This reference should be
+     replaced with the Java EE standard API `javax.jms.Message{{type}}`.
+  ruleID: websphere-jms-eap7-02000
+  when:
+    java.referenced:
+      pattern: com.ibm.*jms.JmsMsg(Producer|Consumer)
+- category: mandatory
+  customVariables: []
+  description: WebSphere's MQe variant of JMS Queue need to be migrated to the Java EE 6 JMS standard interface 'javax.jms.Queue'
+  effort: 1
+  labels:
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
+  - jms
+  - websphere
+  links:
+  - title: Java EE 7 JMS Tutorial
+    url: https://docs.oracle.com/javaee/7/tutorial/jms-concepts003.htm#BNCEH
+  message: |-
+    `MQe{{type}}Queue` is a WebSphere implementation of a JMS `Queue` and should be migrated to
+     the Java EE 6 JMS standard interface `javax.jms.Queue`.
+  ruleID: websphere-jms-eap7-02500
+  when:
+    java.referenced:
+      pattern: com.ibm.mqe.jms.{type}Queue
+- category: mandatory
+  customVariables:
+  - name: type
+    nameOfCaptureGroup: type
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?(?P<prefix>(JMS|MQe|MQ))?(?P<type>(Text|Stream|Object|Map|Bytes)?)?Message
+  - name: prefix
+    nameOfCaptureGroup: prefix
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?(?P<prefix>(JMS|MQe|MQ))?(?P<type>(Text|Stream|Object|Map|Bytes)?)?Message
+  - name: package
+    nameOfCaptureGroup: package
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?(?P<prefix>(JMS|MQe|MQ))?(?P<type>(Text|Stream|Object|Map|Bytes)?)?Message
+  description: IBM JMS destination message
+  effort: 1
+  labels:
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
+  - jms
+  - websphere
+  links: []
+  message: |-
+    JMS `{{package}}.{{prefix}}{{type}}Message` messages represent the actual data passed through JMS destinations. This reference should be
+     replaced with the Java EE standard API `javax.jms.{{type}}Message`.
+  ruleID: websphere-jms-eap7-03000
+  when:
+    java.referenced:
+      pattern: com.ibm.*jms.(JMS|MQe|MQ)(Text|Stream|Object|Map|Bytes)?Message
+- category: mandatory
+  customVariables:
+  - name: package
+    nameOfCaptureGroup: package
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?(?P<prefix>(Jms|MQe|MQ))?(?P<type>[^.]+)
+  - name: prefix
+    nameOfCaptureGroup: prefix
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?(?P<prefix>(Jms|MQe|MQ))?(?P<type>[^.]+)
+  - name: type
+    nameOfCaptureGroup: type
+    pattern: (?P<package>com.ibm(\..*)?\.jms.)?(?P<prefix>(Jms|MQe|MQ))?(?P<type>[^.]+)
+  description: IBM JMS interface
+  effort: 1
+  labels:
+  - source=websphere
+  - target=eap7+
+  - target=eap
+  - target=java-ee7+
+  - target=java-ee
+  - jms
+  - websphere
+  links: []
+  message: '`{{package}}.{{prefix}}{{type}}` is an IBM proprietary interface and needs
+    to be migrated to the Java EE standard API `javax.jms.{{type}}`.'
+  ruleID: websphere-jms-eap7-04000
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: com.ibm.*jms.(Jms|MQe|MQ)*
