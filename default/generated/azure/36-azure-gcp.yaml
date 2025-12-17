@@ -12,14 +12,14 @@
   - os=windows
   - os=linux
   links:
-  - title: Use the Azure portal to create a Service Bus topic and subscriptions to the topic
-    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quickstart-topics-subscriptions-portal
   - title: Get started with Service Bus topics and subscriptions (Java)
     url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
   - title: Azure Service Bus client library for Java (azure-messaging-servicebus)
     url: https://learn.microsoft.com/java/api/overview/azure/messaging-servicebus-readme
   - title: Messaging services on Azure and AWS
     url: https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging
+  - title: Use Azure Service Bus in Spring applications
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/using-service-bus-in-spring-applications
   message: |-
     The application uses Google Cloud Pub/Sub for pub/sub messaging. Consider migrating to Azure Service Bus Topics.
     Azure Service Bus Topics and Subscriptions provide durable pub/sub messaging with at-least-once delivery, filtering, and dead-lettering.
