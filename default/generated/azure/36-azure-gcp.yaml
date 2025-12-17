@@ -13,14 +13,14 @@
   - os=linux
   links:
   - title: Azure for Google Cloud Professionals
-    # url: https://learn.microsoft.com/en-us/azure/architecture/gcp-professional/services#messaging-and-eventing
+    url: https://learn.microsoft.com/en-us/azure/architecture/gcp-professional/services#messaging-and-eventing
   - title: Azure Service Bus Java samples
     url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-samples
   message: |-
     The application uses Google Cloud Pub/Sub client libraries.
 
     To align with Azure messaging services:
-      # * Review messaging requirements and choose the appropriate Azure service (Service Bus, Event Grid, or Event Hubs).
+      * Review messaging requirements and choose the appropriate Azure service (Service Bus, Event Grid, or Event Hubs).
 
       * Replace Google Pub/Sub clients with the corresponding Azure SDKs.
 
@@ -55,29 +55,29 @@
   - title: Azure Container Registry documentation
     url: https://learn.microsoft.com/en-us/azure/container-registry/
   - title: Migrate from Google Container Registry to Azure Container Registry
-    # url: https://learn.microsoft.com/en-us/azure/container-registry/container-registry-import-images
+    url: https://learn.microsoft.com/en-us/azure/container-registry/container-registry-import-images
   - title: Azure Container Registry best practices
-    # url: https://learn.microsoft.com/en-us/azure/container-registry/container-registry-best-practices
+    url: https://learn.microsoft.com/en-us/azure/container-registry/container-registry-best-practices
   message: |-
-    # The application uses Google Container Registry (gcr.io) or Google Artifact Registry ([location]-docker.pkg.dev) for container images.
+    The application uses Google Container Registry (gcr.io) or Google Artifact Registry ([location]-docker.pkg.dev) for container images.
 
     **Common patterns detected may include:**
     * Container image references in Dockerfiles and docker-compose files
-    # * Kubernetes manifests (Deployments, StatefulSets, DaemonSets, Jobs, CronJobs, Pods) with GCR images
+    * Kubernetes manifests (Deployments, StatefulSets, DaemonSets, Jobs, CronJobs, Pods) with GCR images
     * Configuration files referencing GCR endpoints
 
     **To migrate to Azure Container Registry (ACR):**
     * **Provision Azure Container Registry:**
-      #  * Create an ACR instance: `az acr create --name <registry-name> --resource-group <rg> --sku Standard`
+       * Create an ACR instance: `az acr create --name <registry-name> --resource-group <rg> --sku Standard`
     * **Migrate container images:**
-      #  * Import images from GCR: `az acr import --name <acr-name> --source gcr.io/<project>/<image>:<tag> --image <image>:<tag>`
-      #  * Or use docker pull/push: `docker pull gcr.io/<project>/<image>` then `docker push <acr-name>.azurecr.io/<image>`
+       * Import images from GCR: `az acr import --name <acr-name> --source gcr.io/<project>/<image>:<tag> --image <image>:<tag>`
+       * Or use docker pull/push: `docker pull gcr.io/<project>/<image>` then `docker push <acr-name>.azurecr.io/<image>`
     * **Update image references:**
        * Replace `gcr.io/<project>/<image>` with `<acr-name>.azurecr.io/<image>`
-      #  * Replace `<location>-docker.pkg.dev/<project>/<repo>/<image>` with `<acr-name>.azurecr.io/<image>`
-      #  * Update all Dockerfiles, docker-compose files, Kubernetes manifests, and Helm charts
+       * Replace `<location>-docker.pkg.dev/<project>/<repo>/<image>` with `<acr-name>.azurecr.io/<image>`
+       * Update all Dockerfiles, docker-compose files, Kubernetes manifests, and Helm charts
     * **Configure authentication:**
-      #  * **For AKS (recommended):** Enable managed identity integration: `az aks update --name <aks-cluster> --attach-acr <acr-name>`
+       * **For AKS (recommended):** Enable managed identity integration: `az aks update --name <aks-cluster> --attach-acr <acr-name>`
        * **For other services:** Use Azure managed identities or service principals
        * **For local development:** Use `az acr login --name <acr-name>`
     * **Remove GCR-specific tooling:**
@@ -88,7 +88,7 @@
   when:
     or:
     - builtin.filecontent:
-        # # filePattern: (?i)(dockerfile|\.dockerignore|docker-compose\.ya?ml|.*\.ya?ml|.*\.json|\.properties|pom\.xml|build\.gradle|package\.json|requirements\.txt|\.npmrc|\.pypirc|Makefile|.*\.sh|.*\.ps1)$
+        filePattern: (?i)(dockerfile|\.dockerignore|docker-compose\.ya?ml|.*\.ya?ml|.*\.json|\.properties|pom\.xml|build\.gradle|package\.json|requirements\.txt|\.npmrc|\.pypirc|Makefile|.*\.sh|.*\.ps1)$
         pattern: (gcr\.io|[a-z]+-docker\.pkg\.dev)
 
 - category: optional
