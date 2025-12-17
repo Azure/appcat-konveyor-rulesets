@@ -54,5 +54,5 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 3
+      exactly: 2
       messageMatches: The application uses IBM MQ JMS.

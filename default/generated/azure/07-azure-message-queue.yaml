@@ -388,7 +388,6 @@
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
-  - source
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
@@ -414,8 +413,7 @@
   when:
     or:
     - java.dependency:
-        nameregex: com\.ibm\.mq\.allclient
+        name: com.ibm.mq.com.ibm.mq.allclient
     - java.dependency:
-        nameregex: mq-jms-spring-boot-starter
-    - java.referenced:
-        pattern: com.ibm.mq.jms.*
+        name: com.ibm.mq.mq-jms-spring-boot-starter
+
