@@ -380,20 +380,18 @@
       - java.dependency:
           lowerbound: 0.0.0
           name: org.springframework.amqp.spring-rabbit
-
 - category: optional
   customVariables: []
   description: IBM MQ usage detected
   effort: 5
   labels:
-  - source
+  - source=ibm-mq
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
   - domain=cloud-readiness
   - category=messaging-service-migration
   - message-queue
-  - ibm-mq
   - os=windows
   - os=linux
   links:
@@ -407,7 +405,9 @@
     url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/how-to-use-java-message-service-20
   message: |-
     The application uses IBM MQ JMS. Consider migrating to Azure Service Bus.
+
     Azure Service Bus provides a reliable cloud messaging service between applications and services.
+
     You will need to replace IBM MQ specific code and dependencies with Azure Service Bus SDK or JMS with Service Bus.
   ruleID: azure-message-queue-ibm-jms-01000
   when:
@@ -422,7 +422,7 @@
   description: Amazon SNS usage detected
   effort: 5
   labels:
-  - source
+  - source=amazon-sns
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
@@ -430,8 +430,6 @@
   - os=linux
   - domain=cloud-readiness
   - category=messaging-service-migration
-  - amazon-sns
-  - azure-service-bus
   links:
   - title: Get started with Service Bus topics and subscriptions (Java)
     url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
@@ -462,7 +460,7 @@
   description: TIBCO EMS JMS usage detected
   effort: 5
   labels:
-  - source
+  - source=tibco-ems-jms
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
@@ -470,8 +468,6 @@
   - os=linux
   - domain=cloud-readiness
   - category=messaging-service-migration
-  - tibco-ems-jms
-  - azure-service-bus-jms
   links:
   - title: Use JMS in Spring to access Azure Service Bus
     url: https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-service-bus
@@ -509,7 +505,7 @@
   description: Solace PubSub+ usage detected
   effort: 5
   labels:
-  - source
+  - source=solace-pubsubplus
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
@@ -517,8 +513,6 @@
   - os=linux
   - domain=cloud-readiness
   - category=messaging-service-migration
-  - solace-pubsubplus
-  - azure-service-bus
   links:
   - title: Get started with Service Bus topics and subscriptions (Java)
     url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
@@ -559,7 +553,7 @@
   description: Amazon Kinesis usage detected
   effort: 5
   labels:
-  - source
+  - source=amazon-kinesis
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
@@ -567,8 +561,6 @@
   - os=linux
   - domain=cloud-readiness
   - category=messaging-service-migration
-  - amazon-kinesis
-  - azure-event-hubs
   links:
   - title: What is Azure Event Hubs?
     url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
@@ -597,7 +589,7 @@
   description: Apache Pulsar usage detected
   effort: 5
   labels:
-  - source
+  - source=apache-pulsar
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
@@ -605,8 +597,6 @@
   - os=linux
   - domain=cloud-readiness
   - category=messaging-service-migration
-  - apache-pulsar
-  - azure-event-hubs
   links:
   - title: What is Azure Event Hubs?
     url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
