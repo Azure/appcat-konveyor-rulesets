@@ -37,6 +37,7 @@
       location: INHERITANCE
       pattern: java.rmi.Remote
 - customVariables: []
+  category: mandatory
   description: Java Remote Method Invocation (RMI) API
   effort: 7
   labels:
