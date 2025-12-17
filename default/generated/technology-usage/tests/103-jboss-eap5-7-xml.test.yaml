@@ -1,0 +1,12 @@
+rulesPath: ../103-jboss-eap5-7-xml.yaml
+providers:
+- name: java
+  dataPath: ./data/103-jboss-eap5-7-xml
+- name: builtin
+  dataPath: ./data/103-jboss-eap5-7-xml
+tests:
+- ruleID: jboss-eap5-7-xml-01000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - JBoss Cache

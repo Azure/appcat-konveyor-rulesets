@@ -1,0 +1,43 @@
+- category: mandatory
+  customVariables: []
+  description: IBM WebSphere / MQ proprietary JMS APIs detected
+  effort: 3
+  labels:
+  - source=websphere
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - capability=jakarta-ee
+  - jms
+  - websphere
+  - jakarta
+  links:
+  - title: Jakarta Messaging Specification
+    url: https://jakarta.ee/specifications/messaging/
+  message: |-
+    Detected IBM proprietary JMS APIs (`com.ibm.*jms.*` / `com.ibm.mqe.jms.*`). These types are vendor-specific and reduce portability.
+
+    Recommended migration:
+    - Migrate messaging code to the Jakarta Messaging standard APIs: `jakarta.jms.*`
+    - Replace IBM-specific types with standard JMS types, for example:
+      - `*ConnectionFactory` -> `jakarta.jms.ConnectionFactory`
+      - `*Connection` -> `jakarta.jms.Connection` (or prefer `jakarta.jms.JMSContext` where applicable)
+      - `*Session` -> `jakarta.jms.Session` (or `jakarta.jms.JMSContext`)
+      - `*Destination` / `*Queue` / `*Topic` -> `jakarta.jms.Destination` / `jakarta.jms.Queue` / `jakarta.jms.Topic`
+      - `*(Text|Bytes|Map|Object|Stream)?Message` -> corresponding `jakarta.jms.*Message`
+      - Producer/Consumer style helpers -> `jakarta.jms.MessageProducer` / `jakarta.jms.MessageConsumer`
+    - Validate IBM MQ/WebSphere-specific extensions and isolate them behind an adapter if they cannot be expressed using standard JMS.
+
+    Note:
+    - If you are migrating to Jakarta EE 9+, also migrate `javax.jms.*` -> `jakarta.jms.*`.
+  ruleID: websphere-jms-eap7-01000
+  when:
+    or:
+    - java.referenced:
+        pattern: com.ibm.*jms.*
+    - java.referenced:
+        pattern: com.ibm.mqe.jms.*

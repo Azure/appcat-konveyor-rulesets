@@ -50,6 +50,7 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: To migrate a Java application that uses ActiveMQ to Azure
+
 - ruleID: amazon-sns-to-azure-servicebus-01000
   testCases:
   - name: tc-1
@@ -80,3 +81,11 @@ tests:
     hasIncidents:
       exactly: 3
       messageMatches: The application uses Apache Pulsar for real-time messaging/streaming
+
+- ruleID: azure-message-queue-ibm-jms-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The application uses IBM MQ JMS.
+

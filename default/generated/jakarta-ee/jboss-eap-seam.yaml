@@ -1,0 +1,239 @@
+- category: mandatory
+  customVariables: []
+  description: Seam API - Conversation (org.jboss.seam.*)
+  effort: 2
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - capability=jakarta-ee
+  - seam
+  - cdi
+  - conversation
+  links:
+  - title: Jakarta CDI API - Conversation
+    url: https://javadoc.io/doc/jakarta.enterprise/jakarta.enterprise.cdi-api/latest/jakarta/enterprise/context/Conversation.html
+  - title: Jakarta CDI API - ConversationScoped
+    url: https://javadoc.io/doc/jakarta.enterprise/jakarta.enterprise.cdi-api/latest/jakarta/enterprise/context/ConversationScoped.html
+  message: |-
+    Seam 2 conversation APIs are legacy and should be refactored to CDI conversations.
+
+    Guidance:
+    - Replace `@Begin`/`@End` with explicit `Conversation.begin()` / `Conversation.end()` (typically from a `@ConversationScoped` bean).
+    - Guard lifecycle transitions to avoid errors (e.g., check `conversation.isTransient()` before `begin()`; end only when non-transient).
+    - Conversation id propagation/navigation is framework-specific; there is no direct replacement for `org.jboss.seam.faces.Switcher`.
+  ruleID: seam-java-00010
+  when:
+    or:
+    - java.referenced:
+        pattern: org.jboss.seam.core.Conversation*
+    - java.referenced:
+        pattern: org.jboss.seam.core.ConversationEntry
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.seam.annotations.(Begin|End)
+    - java.referenced:
+        pattern: org.jboss.seam.faces.Switcher
+
+- category: mandatory
+  customVariables: []
+  description: Seam API - core component annotations
+  effort: 2
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - capability=jakarta-ee
+  - seam
+  - cdi
+  - jsf
+  links:
+  - title: Jakarta Inject API - Inject
+    url: https://javadoc.io/doc/jakarta.inject/jakarta.inject-api/latest/jakarta/inject/Inject.html
+  - title: Jakarta Inject API - Named
+    url: https://javadoc.io/doc/jakarta.inject/jakarta.inject-api/latest/jakarta/inject/Named.html
+  - title: Jakarta Annotations API - PostConstruct
+    url: https://javadoc.io/doc/jakarta.annotation/jakarta.annotation-api/latest/jakarta/annotation/PostConstruct.html
+  - title: Jakarta Annotations API - PreDestroy
+    url: https://javadoc.io/doc/jakarta.annotation/jakarta.annotation-api/latest/jakarta/annotation/PreDestroy.html
+  message: |-
+    Migrate Seam component model annotations to CDI/Jakarta EE.
+
+    Mappings:
+    - `@In` -> `@jakarta.inject.Inject`
+    - `@Name("x")` -> `@jakarta.inject.Named("x")` (keep the same EL name if the UI/EL depends on it)
+    - `@Scope(ScopeType.*)` -> CDI scopes (`@RequestScoped`, `@SessionScoped`, `@ApplicationScoped`, `@ConversationScoped`, `@Dependent`)
+      - For passivating scopes (e.g., `@SessionScoped`, `@ConversationScoped`), ensure the bean is passivation-capable (often means `Serializable`).
+    - `@AutoCreate` -> remove (CDI creates on demand)
+    - `@Create` -> `@jakarta.annotation.PostConstruct`
+    - `@Destroy` -> `@jakarta.annotation.PreDestroy`
+    - `@RequestParameter` -> no CDI standard equivalent:
+      - JSF: prefer `<f:viewParam>` / framework mechanism
+      - JAX-RS: use `@QueryParam` / `@PathParam` where applicable
+  ruleID: seam-java-00040
+  when:
+    or:
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.seam.annotations.(In|Name|Scope|AutoCreate|Create|Destroy)
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.seam.annotations.web.RequestParameter
+
+- category: mandatory
+  customVariables: []
+  description: Seam API - bijection/factory/logger
+  effort: 3
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - capability=jakarta-ee
+  - seam
+  - cdi
+  links:
+  - title: Jakarta CDI API - Produces
+    url: https://javadoc.io/doc/jakarta.enterprise/jakarta.enterprise.cdi-api/latest/jakarta/enterprise/inject/Produces.html
+  - title: Jakarta CDI API - InjectionPoint
+    url: https://javadoc.io/doc/jakarta.enterprise/jakarta.enterprise.cdi-api/latest/jakarta/enterprise/inject/spi/InjectionPoint.html
+  message: |-
+    Refactor Seam bijection/outjection patterns to CDI producers + scoped beans.
+
+    Guidance:
+    - Replace `@Factory` with `@Produces` (often combined with `@Named` and an explicit scope if the value is contextual).
+    - Replace `@Out` usage with an explicit scoped bean/state holder; CDI producers do not replicate Seam per-invocation "outjection".
+    - Replace Seam `@Logger` with your logging framework + an optional CDI producer.
+  ruleID: seam-java-00070
+  when:
+    or:
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.seam.annotations.(Out|Factory|Logger)
+
+- category: mandatory
+  customVariables: []
+  description: Seam API - programmatic access (Seam/Component/Contexts)
+  effort: 2
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - capability=jakarta-ee
+  - seam
+  - cdi
+  links:
+  - title: Jakarta CDI API - Instance
+    url: https://javadoc.io/doc/jakarta.enterprise/jakarta.enterprise.cdi-api/latest/jakarta/enterprise/inject/Instance.html
+  - title: Jakarta CDI API - BeanManager
+    url: https://javadoc.io/doc/jakarta.enterprise/jakarta.enterprise.cdi-api/latest/jakarta/enterprise/inject/spi/BeanManager.html
+  - title: Jakarta CDI API - CDI
+    url: https://javadoc.io/doc/jakarta.enterprise/jakarta.enterprise.cdi-api/latest/jakarta/enterprise/inject/spi/CDI.html
+  message: |-
+    Replace Seam static/programmatic APIs with CDI injection and CDI SPI only where necessary.
+
+    Guidance:
+    - `org.jboss.seam.Component` lookups -> prefer `@Inject` or `jakarta.enterprise.inject.Instance<T>`; for dynamic selection use `CDI.current().select(...)`.
+    - `org.jboss.seam.contexts.Contexts` -> remove static context access; move state to CDI-scoped beans and inject them.
+    - `org.jboss.seam.Seam` -> refactor away from framework metadata access; if unavoidable, use CDI `BeanManager` sparingly.
+  ruleID: seam-java-00030
+  when:
+    or:
+    - java.referenced:
+        pattern: org.jboss.seam.Seam*
+    - java.referenced:
+        pattern: org.jboss.seam.Component*
+    - java.referenced:
+        pattern: org.jboss.seam.contexts.Contexts*
+
+- category: mandatory
+  customVariables: []
+  description: Seam API - transactional/async/startup
+  effort: 2
+  labels:
+  - domain=java-upgrade
+  - category=deprecated-apis
+  - os=windows
+  - os=linux
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - source=java-ee
+  - source=eap4
+  - source=eap5
+  - source=eap
+  - source=seam2
+  - source=seam
+  - capability=jakarta-ee
+  - seam
+  - javaee
+  links:
+  - title: Jakarta Transactions API - Transactional
+    url: https://javadoc.io/doc/jakarta.transaction/jakarta.transaction-api/latest/jakarta/transaction/Transactional.html
+  - title: Jakarta EJB API - Asynchronous
+    url: https://javadoc.io/doc/jakarta.ejb/jakarta.ejb-api/latest/jakarta/ejb/Asynchronous.html
+  - title: Jakarta EJB API - Startup
+    url: https://javadoc.io/doc/jakarta.ejb/jakarta.ejb-api/latest/jakarta/ejb/Startup.html
+  - title: Jakarta EJB API - Singleton
+    url: https://javadoc.io/doc/jakarta.ejb/jakarta.ejb-api/latest/jakarta/ejb/Singleton.html
+  message: |-
+    Replace Seam execution-related annotations with Jakarta EE alternatives (semantics may differ; validate with tests).
+
+    Mappings:
+    - `org.jboss.seam.annotations.Transactional` -> `@jakarta.transaction.Transactional` (requires JTA-capable runtime)
+    - `org.jboss.seam.annotations.async.Asynchronous` ->
+      prefer Jakarta Concurrency (`ManagedExecutorService`) when available; otherwise use EJB `@Asynchronous` if you are already using EJBs.
+      Avoid unmanaged threads (`new Thread(...)`).
+    - `org.jboss.seam.annotations.Startup` ->
+      prefer CDI startup observer patterns (e.g., observe application context initialization) or use EJB `@Singleton` + `@Startup` where EJB is in use.
+  ruleID: seam-java-00080
+  when:
+    or:
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.seam.annotations.Transactional
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.seam.annotations.async.Asynchronous
+    - java.referenced:
+        location: ANNOTATION
+        pattern: org.jboss.seam.annotations.Startup

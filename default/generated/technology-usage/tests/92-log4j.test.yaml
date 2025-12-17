@@ -1,0 +1,12 @@
+rulesPath: ../92-log4j.yaml
+providers:
+- name: java
+  dataPath: ./data/92-log4j
+- name: builtin
+  dataPath: ./data/92-log4j
+tests:
+- ruleID: log4j-02000
+  testCases:
+  - name: tc-1
+    hasTags:
+    - Log4j Configuration

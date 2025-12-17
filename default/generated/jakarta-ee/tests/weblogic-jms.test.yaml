@@ -1,0 +1,13 @@
+rulesPath: ../weblogic-jms.yaml
+providers:
+- name: java
+  dataPath: ./data/weblogic-jms
+- name: builtin
+  dataPath: ./data/weblogic-jms
+tests:
+- ruleID: weblogic-jms-eap7-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected usage of Oracle AQ JMS classes

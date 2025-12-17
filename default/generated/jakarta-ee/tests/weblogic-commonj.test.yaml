@@ -1,0 +1,36 @@
+rulesPath: ../weblogic-commonj.yaml
+providers:
+- name: java
+  dataPath: ./data/weblogic-commonj
+- name: builtin
+  dataPath: ./data/weblogic-commonj
+tests:
+- ruleID: commonj-weblogic-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: .*Commonj Timer Manager API is similar.*
+- ruleID: commonj-weblogic-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: .*Commonj Timer Interface is similar.*
+- ruleID: commonj-weblogic-05000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: .*The CommonJ WorkManager can be replaced with a JCA Resource
+        Adapter
+  - name: tc-2
+    hasIncidents:
+      atLeast: 1
+      messageMatches: .*Replace CommonJ Work.*
+- ruleID: commonj-weblogic-06000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: .*Replace commonj.work.Work.*

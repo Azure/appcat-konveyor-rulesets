@@ -56,6 +56,7 @@
 			<artifactId>kafka-clients</artifactId>
 			<version>3.5.1</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/software.amazon.awssdk/sns -->
 		<dependency>
 		    <groupId>software.amazon.awssdk</groupId>
@@ -181,6 +182,17 @@
 		    <groupId>io.streamnative.pulsar</groupId>
 		    <artifactId>pulsar-broker-auth-oauth2</artifactId>
 		    <version>2.9.1.0-rc2</version>
+
+		<dependency>
+			<groupId>com.ibm.mq</groupId>
+			<artifactId>com.ibm.mq.allclient</artifactId>
+			<version>9.3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.mq</groupId>
+			<artifactId>mq-jms-spring-boot-starter</artifactId>
+			<version>3.0.0</version>
+
 		</dependency>
 	</dependencies>
 
