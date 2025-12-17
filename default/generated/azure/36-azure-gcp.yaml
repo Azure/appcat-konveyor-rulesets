@@ -96,7 +96,7 @@
   description: Google Cloud Storage usage detected
   effort: 5
   labels:
-  - source
+  - source=google-cloud-storage
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
@@ -104,8 +104,6 @@
   - os=linux
   - domain=cloud-readiness
   - category=storage-migration
-  - google-cloud-storage
-  - azure-blob-storage
   links:
   - title: What is Azure Blob Storage?
     url: https://learn.microsoft.com/azure/storage/blobs/storage-blobs-overview
@@ -115,6 +113,8 @@
     url: https://learn.microsoft.com/java/api/overview/azure/storage-blob-readme
   - title: Authorize access to blobs using Microsoft Entra ID
     url: https://learn.microsoft.com/azure/storage/blobs/authorize-access-azure-active-directory
+  - title: Use Spring Boot to upload a file to Azure Blob Storage
+    url: https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-storage
   message: |-
     The application uses Google Cloud Storage for object storage. Consider migrating to Azure Blob Storage.
     Azure Blob Storage provides equivalent object storage capabilities for unstructured data with multiple access tiers and enterprise security controls.
