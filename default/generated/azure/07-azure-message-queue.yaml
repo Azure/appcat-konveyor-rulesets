@@ -514,3 +514,75 @@
     - java.referenced:
         location: IMPORT
         pattern: com.solacesystems.jcsmp*
+
+- category: optional
+  customVariables: []
+  description: Amazon Kinesis usage detected
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - amazon-kinesis
+  - azure-event-hubs
+  links:
+  - title: What is Azure Event Hubs?
+    url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
+  - title: Apache Kafka developer guide for Azure Event Hubs
+    url: https://learn.microsoft.com/azure/event-hubs/apache-kafka-developer-guide
+  - title: Event Hubs client library for Java (azure-messaging-eventhubs)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-eventhubs-readme
+  message: |-
+    The application uses Amazon Kinesis for streaming data ingestion/processing. Consider migrating to Azure Event Hubs.
+    Azure Event Hubs is a high-throughput event streaming platform and supports the Kafka protocol, enabling Kafka-compatible producers/consumers to connect without changing Kafka client code.
+    You will need to replace AWS Kinesis client usage (streams, producers/consumers, checkpointing, IAM/credentials, region/endpoints) with Azure Event Hubs concepts (event hubs, consumer groups, checkpoints via Azure Storage) and either the Event Hubs SDK or the Kafka endpoint (depending on your client library).
+  ruleID: amazon-kinesis-to-azure-eventhubs-01000
+  when:
+    or:
+    - java.dependency:
+        name: software.amazon.awssdk.kinesis
+    - java.dependency:
+        name: software.amazon.kinesis.amazon-kinesis-client
+    - java.dependency:
+        name: com.amazonaws.aws-java-sdk-kinesis
+    - java.dependency:
+        name: com.amazonaws.amazon-kinesis-client
+    - java.dependency:
+        name: com.amazonaws.amazon-kinesis-producer
+
+- category: optional
+  customVariables: []
+  description: Apache Pulsar usage detected
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - apache-pulsar
+  - azure-event-hubs
+  links:
+  - title: What is Azure Event Hubs?
+    url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
+  - title: Apache Kafka developer guide for Azure Event Hubs
+    url: https://learn.microsoft.com/azure/event-hubs/apache-kafka-developer-guide
+  - title: Event Hubs client library for Java (azure-messaging-eventhubs)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-eventhubs-readme
+  message: |-
+    The application uses Apache Pulsar for real-time messaging/streaming. Consider migrating to Azure Event Hubs.
+    Azure Event Hubs is a managed event streaming platform and provides a Kafka-compatible endpoint, enabling Kafka client applications to connect using the Kafka protocol.
+    You will need to replace Pulsar client usage (producers/consumers, topics/subscriptions, authentication, and geo/multi-tenant configuration) with Azure Event Hubs concepts (event hubs, consumer groups, checkpoints via Azure Storage) and connect using either the Event Hubs SDK or Kafka clients against the Event Hubs Kafka endpoint.
+  ruleID: apache-pulsar-to-azure-eventhubs-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: org\.apache\.pulsar.*
+    - java.dependency:
+        nameregex: io\.streamnative.*pulsar.*
