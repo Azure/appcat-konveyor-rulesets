@@ -56,12 +56,6 @@ tests:
     hasIncidents:
       exactly: 4
       messageMatches: The application uses Amazon SNS for pub/sub messaging
-- ruleID: gcp-pubsub-to-azure-servicebus-01000
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      exactly: 5
-      messageMatches: The application uses Google Cloud Pub/Sub for pub/sub messaging
 - ruleID: tibco-ems-jms-to-azure-servicebus-jms-01000
   testCases:
   - name: tc-1

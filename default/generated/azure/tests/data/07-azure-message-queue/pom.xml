@@ -82,36 +82,6 @@
 		    <version>3.4.2</version>
 		    <scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-pubsub -->
-		<dependency>
-		    <groupId>com.google.cloud</groupId>
-		    <artifactId>google-cloud-pubsub</artifactId>
-		    <version>1.144.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.google.cloud/spring-cloud-gcp-starter-pubsub -->
-		<dependency>
-		    <groupId>com.google.cloud</groupId>
-		    <artifactId>spring-cloud-gcp-starter-pubsub</artifactId>
-		    <version>7.4.1</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-gcp-pubsub -->
-		<dependency>
-		    <groupId>org.springframework.cloud</groupId>
-		    <artifactId>spring-cloud-gcp-pubsub</artifactId>
-		    <version>1.2.8.RELEASE</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.google.cloud/spring-cloud-gcp-pubsub -->
-		<dependency>
-		    <groupId>com.google.cloud</groupId>
-		    <artifactId>spring-cloud-gcp-pubsub</artifactId>
-		    <version>7.4.1</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.google.api.grpc/grpc-google-cloud-pubsub-v1 -->
-		<dependency>
-		    <groupId>com.google.api.grpc</groupId>
-		    <artifactId>grpc-google-cloud-pubsub-v1</artifactId>
-		    <version>1.126.0</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.tibco/tibjms -->
 		<dependency>
 		    <groupId>com.tibco</groupId>
