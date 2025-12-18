@@ -17,3 +17,9 @@ tests:
     hasIncidents:
       exactly: 1
       messageMatches: The application uses Google Container Registry (GCR)
+- ruleID: google-cloud-storage-to-azure-blob-storage-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The application uses Google Cloud Storage for object storage.
