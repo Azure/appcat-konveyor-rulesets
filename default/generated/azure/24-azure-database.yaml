@@ -483,3 +483,123 @@
       - Spring Data JPA
     - builtin.hasTags:
       - MariaDB Driver
+
+- category: optional
+  customVariables: []
+  description: IBM Db2 usage detected
+  effort: 3
+  labels:
+  - source=ibm-db2
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Database for PostgreSQL?
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/service-overview
+  - title: Use Azure (SDK) libraries in Java to create, update, and delete an Azure Database for PostgreSQL
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-java-sdk
+  message: |-
+    The application uses IBM Db2. Consider migrating to Azure Database for PostgreSQL.
+    Azure Database for PostgreSQL is a fully managed PostgreSQL service with built-in high availability options and enterprise support.
+    You will need to replace Db2-specific SQL/features, the Db2 JDBC driver and connection configuration (for example, JDBC URL and credentials handling), and perform schema/data migration to PostgreSQL using an appropriate migration approach (such as Azure Database Migration Service where applicable and schema/data conversion tooling).
+  ruleID: ibm-db2-to-azure-postgresql-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.ibm.db2.jcc
+    - java.dependency:
+        nameregex: com\.ibm\.db2\.db2jcc.*
+    - java.dependency:
+        nameregex: com\.ibm\.db2\.jcc\.db2jcc.*
+
+- category: optional
+  customVariables: []
+  description: Sybase ASE usage detected
+  effort: 3
+  labels:
+  - source=sybase-ase
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Database for PostgreSQL?
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/service-overview
+  - title: Use Azure (SDK) libraries in Java to create, update, and delete an Azure Database for PostgreSQL
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-java-sdk
+  message: |-
+    The application uses Sybase ASE. Consider migrating to Azure Database for PostgreSQL.
+    Azure Database for PostgreSQL is a fully managed PostgreSQL service with enterprise-grade features, high availability options, and broad ecosystem support.
+    You will need to replace Sybase ASE-specific SQL/features (T-SQL dialect differences, stored procedures, triggers, and data types), the Sybase JDBC driver and connection configuration, and perform schema/data migration to PostgreSQL using an appropriate conversion and migration approach.
+  ruleID: sybase-ase-to-azure-postgresql-01000
+  when:
+    or:
+    - builtin.file:
+        pattern: jconn(3|4)\.jar
+    - java.dependency:
+        nameregex: com\.sybase(\..*)?\.(jconn|jconn3|jconn4|jConnect)
+
+- category: optional
+  customVariables: []
+  description: Firebird usage detected
+  effort: 3
+  labels:
+  - source=firebird
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Database for PostgreSQL?
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/service-overview
+  - title: Use Azure (SDK) libraries in Java to create, update, and delete an Azure Database for PostgreSQL
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-java-sdk
+  message: |-
+    The application uses Firebird. Consider migrating to Azure Database for PostgreSQL.
+    Azure Database for PostgreSQL is a fully managed PostgreSQL service with advanced SQL features and broad ecosystem support.
+    You will need to replace Firebird-specific SQL/features (data types, generators/sequences, stored procedures/triggers, and dialect differences), the Firebird JDBC driver and connection configuration, and perform schema/data migration to PostgreSQL using an appropriate conversion and migration approach.
+  ruleID: firebird-to-azure-postgresql-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: org\.firebirdsql\.jdbc\.jaybird.*
+
+- category: optional
+  customVariables: []
+  description: SQLite usage detected
+  effort: 3
+  labels:
+  - source=sqlite
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Database for PostgreSQL?
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/service-overview
+  - title: Use Azure (SDK) libraries in Java to create, update, and delete an Azure Database for PostgreSQL
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-java-sdk
+  message: |-
+    The application uses SQLite. Consider migrating to Azure Database for PostgreSQL.
+    Azure Database for PostgreSQL provides a fully managed, multi-user PostgreSQL service with advanced SQL features and scalability beyond single-file databases.
+    You will need to replace the SQLite JDBC driver and connection configuration, review SQL and schema differences (for example, data types, AUTOINCREMENT/sequence behavior, and concurrency/locking semantics), and perform schema/data migration from SQLite files to PostgreSQL.
+  ruleID: sqlite-to-azure-postgresql-01000
+  when:
+    or:
+    - java.dependency:
+        name: org.xerial.sqlite-jdbc
+    - java.dependency:
+        nameregex: com\.almworks\.sqlite4java\.sqlite4java.*

@@ -608,4 +608,4 @@
     - java.dependency:
         nameregex: org\.apache\.pulsar.*
     - java.dependency:
-        nameregex: io\.streamnative.*pulsar.*
+        nameregex: io\.streamnative\.pulsar.*

@@ -160,3 +160,41 @@
         nameregex: com\.google\.cloud\.functions\.functions-framework.*
     - java.dependency:
         name: org.springframework.cloud.spring-cloud-function-adapter-gcp
+
+- category: optional
+  customVariables: []
+  description: Google Cloud Spanner usage detected
+  effort: 5
+  labels:
+  - source=google-cloud-spanner
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Database for PostgreSQL?
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/service-overview
+  - title: Migration options for Azure Database for PostgreSQL
+    url: https://learn.microsoft.com/azure/postgresql/migrate/
+  - title: Azure Database for PostgreSQL documentation
+    url: https://learn.microsoft.com/azure/postgresql/
+  message: |-
+    The application uses Google Cloud Spanner. Consider migrating to Azure Database for PostgreSQL.
+    Azure Database for PostgreSQL is a fully managed PostgreSQL service with built-in high availability options and support for read replicas.
+    You will need to replace Spanner-specific client usage and schema/query semantics (for example, Spanner DDL/DML differences and transaction behavior) with PostgreSQL-compatible SQL, update connection/authentication configuration, and migrate schema and data to Azure Database for PostgreSQL using an appropriate migration approach.
+  ruleID: google-cloud-spanner-to-azure-postgresql-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.google.cloud.google-cloud-spanner
+    - java.dependency:
+        name: com.google.cloud.google-cloud-spanner-jdbc
+    - java.dependency:
+        nameregex: com.google.api.grpc.*google-cloud-spanner.*
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-gcp-starter-data-spanner
+    - java.dependency:
+        nameregex: .*\.spring-cloud-gcp-data-spanner

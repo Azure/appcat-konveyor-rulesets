@@ -80,5 +80,47 @@
             <artifactId>spring-cloud-function-adapter-gcp</artifactId>
             <version>5.0.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-spanner -->
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-spanner</artifactId>
+            <version>6.105.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-spanner-jdbc -->
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-spanner-jdbc</artifactId>
+            <version>2.34.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.api.grpc/proto-google-cloud-spanner-v1 -->
+        <dependency>
+            <groupId>com.google.api.grpc</groupId>
+            <artifactId>proto-google-cloud-spanner-v1</artifactId>
+            <version>6.105.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.api.grpc/grpc-google-cloud-spanner-v1 -->
+        <dependency>
+            <groupId>com.google.api.grpc</groupId>
+            <artifactId>grpc-google-cloud-spanner-v1</artifactId>
+            <version>6.105.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-gcp-starter-data-spanner -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-gcp-starter-data-spanner</artifactId>
+            <version>1.2.8.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-gcp-data-spanner -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-gcp-data-spanner</artifactId>
+            <version>1.2.8.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.cloud/spring-cloud-gcp-data-spanner -->
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>spring-cloud-gcp-data-spanner</artifactId>
+            <version>7.4.1</version>
+        </dependency>
     </dependencies>
 </project>
