@@ -75,3 +75,9 @@ tests:
     hasIncidents:
       atLeast: 2
       messageMatches: The application contains AWS Secrets Manager configuration
+- ruleID: aws-lambda-to-azure-functions-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The application uses AWS Lambda (Java)
