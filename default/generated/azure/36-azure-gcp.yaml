@@ -1,3 +1,84 @@
+- category: optional
+  customVariables: []
+  description: Google Firestore usage detected
+  effort: 5
+  labels:
+  - source=google-firestore
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Cosmos DB?
+    url: https://learn.microsoft.com/azure/cosmos-db/introduction
+  - title: Azure Cosmos DB for NoSQL client library for Java (v4)
+    url: https://learn.microsoft.com/java/api/overview/azure/cosmos-readme
+  - title: Use Azure Cosmos DB for NoSQL with Azure SDK for Java
+    url: https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-java
+  - title: Choose an Azure Cosmos DB API
+    url: https://learn.microsoft.com/azure/cosmos-db/choose-api
+  message: |-
+    The application uses Google Cloud Firestore (document database). Consider migrating to Azure Cosmos DB.
+    Azure Cosmos DB provides a globally distributed, fully managed document database with low-latency access, multi-region replication, and a change feed for building real-time event-driven patterns.
+    You will need to replace Firestore SDK usage (collections/documents, queries, transactions, security rules, authentication and project configuration) with an appropriate Azure Cosmos DB API (commonly Azure Cosmos DB for NoSQL), update the data model and query patterns where needed, and implement real-time synchronization using Cosmos DB Change Feed if your workload depends on Firestore listeners.
+  ruleID: google-firestore-to-azure-cosmosdb-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.google.cloud.google-cloud-firestore
+    - java.dependency:
+        name: com.google.firebase.firebase-firestore
+    - java.dependency:
+        nameregex: com.google.api.grpc\..*google-cloud-firestore.*
+    - java.dependency:
+        name: com.google.cloud.spring-cloud-gcp-data-firestore
+    - java.dependency:
+        name: com.google.cloud.spring-cloud-gcp-starter-data-firestore
+    - java.referenced:
+        location: IMPORT
+        pattern: com.google.cloud.firestore*
+
+- category: optional
+  customVariables: []
+  description: Google Cloud Bigtable usage detected
+  effort: 7
+  labels:
+  - source=google-cloud-bigtable
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Cosmos DB?
+    url: https://learn.microsoft.com/azure/cosmos-db/introduction
+  - title: Azure Tables client library for Java
+    url: https://learn.microsoft.com/en-us/java/api/overview/azure/data-tables-readme?view=azure-java-stable
+  - title: Use Azure Cosmos DB for Table with Azure SDK for Java
+    url: https://learn.microsoft.com/en-us/azure/cosmos-db/table/quickstart-java
+  - title: Choose an Azure Cosmos DB API
+    url: https://learn.microsoft.com/azure/cosmos-db/choose-api
+  message: |-
+    The application uses Google Cloud Bigtable (wide-column NoSQL database). Consider migrating to Azure Cosmos DB.
+    Azure Cosmos DB can support wide-column style workloads using the Table API, and provides global distribution, automatic scaling, and managed indexing/partitioning features.
+    You will need to replace Bigtable client usage (instances/tables, row keys/column families, filters, authentication and project configuration) with Azure Cosmos DB Table API concepts (accounts, tables, entities/partition keys), redesign partitioning/row-key strategy as needed, and migrate data while validating query and latency characteristics.
+  ruleID: google-cloud-bigtable-to-azure-cosmosdb-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.google.cloud.google-cloud-bigtable
+    - java.dependency:
+        name: com.google.cloud.google-cloud-bigtable-admin
+    - java.dependency:
+        nameregex: com\.google\.cloud\.bigtable\..* 
+    - java.dependency:
+        nameregex: com\.google\.api\.grpc\..*google-cloud-bigtable.*
+
 - category: mandatory
   customVariables: []
   description: Google Cloud Pub/Sub usage detected
@@ -198,3 +279,4 @@
         name: org.springframework.cloud.spring-cloud-gcp-starter-data-spanner
     - java.dependency:
         nameregex: .*\.spring-cloud-gcp-data-spanner
+
