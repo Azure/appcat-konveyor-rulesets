@@ -61,7 +61,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 4
+      exactly: 5
       messageMatches: The application uses TIBCO EMS via the Java Message Service (JMS) API
 - ruleID: solace-pubsubplus-to-azure-servicebus-01000
   testCases:

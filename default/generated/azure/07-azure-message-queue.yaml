@@ -495,10 +495,6 @@
     - java.referenced:
         location: IMPORT
         pattern: com.tibco.tibjms*
-    - java.referenced:
-        pattern: com.tibco.tibjms.admin*
-    - java.referenced:
-        pattern: com.tibco.tibjms.naming*
 
 - category: optional
   customVariables: []
