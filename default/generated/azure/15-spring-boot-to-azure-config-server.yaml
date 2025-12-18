@@ -24,7 +24,7 @@
     The application uses Spring Cloud Config for centralized configuration management. Consider migrating to Azure App Configuration.
     Azure App Configuration provides a managed, centralized store for application settings and feature flags, with Spring integration for Spring Boot applications.
     You will need to replace the Spring Cloud Config Server backend (and its repository/credentials) with Azure App Configuration, update client configuration to use the App Configuration integration, and migrate configuration keys and access control to Azure.
-  ruleID: spring-cloud-config-to-azure-app-configuration-01000
+  ruleID: spring-boot-to-azure-config-server-01000
   when:
     or:
     - java.dependency:
