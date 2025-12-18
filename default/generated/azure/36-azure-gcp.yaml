@@ -90,3 +90,43 @@
     - builtin.filecontent:
         filePattern: (?i)(dockerfile|\.dockerignore|docker-compose\.ya?ml|.*\.ya?ml|.*\.json|\.properties|pom\.xml|build\.gradle|package\.json|requirements\.txt|\.npmrc|\.pypirc|Makefile|.*\.sh|.*\.ps1)$
         pattern: (gcr\.io|[a-z]+-docker\.pkg\.dev)
+
+- category: optional
+  customVariables: []
+  description: Google Cloud Storage usage detected
+  effort: 5
+  labels:
+  - source=google-cloud-storage
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=storage-migration
+  links:
+  - title: What is Azure Blob Storage?
+    url: https://learn.microsoft.com/azure/storage/blobs/storage-blobs-overview
+  - title: Quickstart - Upload, download, and list blobs with Java
+    url: https://learn.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-java
+  - title: Azure Storage Blobs client library for Java
+    url: https://learn.microsoft.com/java/api/overview/azure/storage-blob-readme
+  - title: Authorize access to blobs using Microsoft Entra ID
+    url: https://learn.microsoft.com/azure/storage/blobs/authorize-access-azure-active-directory
+  - title: Use Spring Boot to upload a file to Azure Blob Storage
+    url: https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-storage
+  message: |-
+    The application uses Google Cloud Storage for object storage. Consider migrating to Azure Blob Storage.
+    Azure Blob Storage provides equivalent object storage capabilities for unstructured data with multiple access tiers and enterprise security controls.
+    You will need to replace GCS client usage (buckets/objects, IAM/ACLs, signed URLs, endpoints and authentication) with Azure Blob concepts (storage accounts, containers, blobs) and the Azure Storage SDK, including updating identity/access control (Microsoft Entra ID/RBAC) and URL signing (SAS) as needed.
+  ruleID: google-cloud-storage-to-azure-blob-storage-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.google.cloud.google-cloud-storage
+    - java.dependency:
+        name: com.google.apis.google-api-services-storage
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-gcp-storage
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-gcp-starter-storage
