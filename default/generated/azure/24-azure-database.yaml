@@ -602,4 +602,4 @@
     - java.dependency:
         name: org.xerial.sqlite-jdbc
     - java.dependency:
-        nameregex: com\.almworks\.sqlite4java\.sqlite4java.*
+        nameregex: com\.almworks\.sqlite4java\..*sqlite4java.*
