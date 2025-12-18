@@ -1,102 +1,35 @@
-- category: potential
+- category: optional
   customVariables: []
-  description: Explicit Config Server connection info found in configuration file
-  effort: 1
+  description: Spring Cloud Config usage detected
+  effort: 3
   labels:
-  - source=springboot
+  - source=spring-cloud-config
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
-  - domain=cloud-readiness
-  - category=spring-migration
-  - Spring Cloud Config
   - os=windows
   - os=linux
-  links:
-  - title: Migrate Spring Boot applications to Azure Container Apps - Remove restricted configurations
-    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-cloud-to-azure-container-apps#remove-restricted-configurations
-  - title: Connect to a managed Config Server for Spring in Azure Container Apps
-    url: https://learn.microsoft.com/azure/container-apps/java-config-server?tabs=azure-cli
-  message: |-
-    The application uses a Spring Cloud Config Server connection string.
-
-     If you are migrating to Azure Container Apps, the connection info of Config Server can be injected automatically upon app start.
-     Find any explicit configurations of config server connection info:
-
-     If configured in **configuration files**: they will be ignored and overrided by Azure Container Apps.
-
-     If configured in **command line parameters**, **Java system attribute**, **environment variable**: they need to be removed or you might experience conflicts and unexpected behavior.
-
-     Configure the managed Config Server after creating an Azure Container Apps environment.
-  ruleID: spring-boot-to-azure-config-server-01000
-  when:
-    builtin.filecontent:
-      filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
-      pattern: spring\.config\.import|spring\.cloud\.config\.uri
-- category: potential
-  customVariables: []
-  description: Spring Cloud Config Server found
-  effort: 1
-  labels:
-  - source=springboot
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
   - domain=cloud-readiness
   - category=spring-migration
-  - Spring Cloud Config
-  - os=windows
-  - os=linux
   links:
-  - title: Connect to a managed Config Server for Spring in Azure Container Apps
-    url: https://learn.microsoft.com/azure/container-apps/java-config-server?tabs=azure-cli
+  - title: What is Azure App Configuration?
+    url: https://learn.microsoft.com/azure/azure-app-configuration/overview
+  - title: Use Azure App Configuration with Spring Boot
+    url: https://learn.microsoft.com/azure/azure-app-configuration/quickstart-java-spring-app
+  - title: Azure App Configuration with Spring Boot (Spring Cloud Azure)
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/configuration-properties-azure-app-configuration
+  - title: Use Azure App Configuration in Azure Kubernetes Service
+    url: https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-kubernetes-service?tabs=extension
   message: |-
-    The application uses Spring Cloud Config Server.
-
-     If you are migrating to Azure Container Apps, you can just configure the managed Config Server after creating an Azure Container Apps environment
-  ruleID: spring-boot-to-azure-config-server-02000
+    The application uses Spring Cloud Config for centralized configuration management. Consider migrating to Azure App Configuration.
+    Azure App Configuration provides a managed, centralized store for application settings and feature flags, with Spring integration for Spring Boot applications.
+    You will need to replace the Spring Cloud Config Server backend (and its repository/credentials) with Azure App Configuration, update client configuration to use the App Configuration integration, and migrate configuration keys and access control to Azure.
+  ruleID: spring-cloud-config-to-azure-app-configuration-01000
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-config-server
-    - java.referenced:
-        location: IMPORT
-        pattern: org.springframework.cloud.config.server.EnableConfigServer.EnableConfigServer
-- category: potential
-  customVariables: []
-  description: Embedded library - Spring Cloud Config
-  effort: 1
-  labels:
-  - source=springboot
-  - target=azure-appservice
-  - target=azure-aks
-  - target=azure-container-apps
-  - domain=cloud-readiness
-  - category=spring-migration
-  - Spring Cloud Config
-  - os=windows
-  - os=linux
-  links:
-  - title: Connect to a managed Config Server for Spring in Azure Container Apps
-    url: https://learn.microsoft.com/en-us/azure/container-apps/java-config-server?tabs=azure-cli
-  message: |-
-    The application embeds Spring Cloud Config.
-
-     If you are migrating to Azure Container Apps, the connection info of Config Server can be injected automatically upon app start.
-     Find any explicit configurations of config server connection info:
-
-     If configured in **configuration files**: they will be ignored and overrided by Azure Container Apps.
-
-     If configured in **command line parameters**, **Java system attribute**, **environment variable**: they need to be removed or you might experience conflicts and unexpected behavior.
-
-     Configure the managed Config Server after creating an Azure Container Apps environment.
-  ruleID: spring-boot-to-azure-config-server-03000
-  when:
-    or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-config-client
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-starter-config
