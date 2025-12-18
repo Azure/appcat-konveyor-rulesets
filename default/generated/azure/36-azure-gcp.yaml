@@ -3,42 +3,40 @@
   description: Google Cloud Pub/Sub usage detected
   effort: 3
   labels:
-  - source=google-pubsub
+  - source=google-cloud-pubsub
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
   - domain=cloud-readiness
-  - category=messaging
+  - category=messaging-service-migration
   - os=windows
   - os=linux
   links:
-  - title: Azure for Google Cloud Professionals
-    url: https://learn.microsoft.com/en-us/azure/architecture/gcp-professional/services#messaging-and-eventing
-  - title: Azure Service Bus Java samples
-    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-samples
+  - title: Get started with Service Bus topics and subscriptions (Java)
+    url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
+  - title: Azure Service Bus client library for Java (azure-messaging-servicebus)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-servicebus-readme
+  - title: Messaging services on Azure and AWS
+    url: https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging
+  - title: Use Azure Service Bus in Spring applications
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/using-service-bus-in-spring-applications
   message: |-
-    The application uses Google Cloud Pub/Sub client libraries.
-
-    To align with Azure messaging services:
-      * Review messaging requirements and choose the appropriate Azure service (Service Bus, Event Grid, or Event Hubs).
-
-      * Replace Google Pub/Sub clients with the corresponding Azure SDKs.
-
-      * Update configuration to use Azure credentials and connection information.
-
-      * Verify message publishing and subscription flows with integration tests.
+    The application uses Google Cloud Pub/Sub for pub/sub messaging. Consider migrating to Azure Service Bus Topics.
+    Azure Service Bus Topics and Subscriptions provide durable pub/sub messaging with at-least-once delivery, filtering, and dead-lettering.
+    You will need to replace Google Cloud Pub/Sub client usage (publish/subscribe, subscription administration, authentication and configuration) with Azure Service Bus topic/subscription entities and the Azure Service Bus SDK (or an appropriate framework integration).
   ruleID: google-pubsub-to-azure-service-bus-01000
   when:
     or:
-    - java.referenced:
-        location: IMPORT
-        pattern: com.google.cloud.pubsub.v1*
     - java.dependency:
-        lowerbound: 0.0.0
-        name: com.google.cloud:google-cloud-pubsub
+        name: com.google.cloud.google-cloud-pubsub
     - java.dependency:
-        lowerbound: 0.0.0
-        nameregex: com\.google\.cloud\.[a-z0-9_.-]*pubsub[a-z0-9_.-]*
+        name: com.google.cloud.spring-cloud-gcp-starter-pubsub
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-gcp-pubsub
+    - java.dependency:
+        name: com.google.cloud.spring-cloud-gcp-pubsub
+    - java.dependency:
+        nameregex: com.google.api.grpc.grpc-google-cloud-pubsub-v1
 - category: mandatory
   customVariables: []
   description: Google Container Registry (GCR) or Artifact Registry usage detected

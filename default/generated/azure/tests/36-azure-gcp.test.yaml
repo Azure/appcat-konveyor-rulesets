@@ -9,8 +9,8 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 2
-      messageMatches: The application uses Google Cloud Pub/Sub client libraries
+      exactly: 5
+      messageMatches: The application uses Google Cloud Pub/Sub for pub/sub messaging
 - ruleID: google-gcr-to-azure-acr-01000
   testCases:
   - name: tc-1

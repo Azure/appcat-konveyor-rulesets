@@ -56,6 +56,133 @@
 			<artifactId>kafka-clients</artifactId>
 			<version>3.5.1</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/software.amazon.awssdk/sns -->
+		<dependency>
+		    <groupId>software.amazon.awssdk</groupId>
+		    <artifactId>sns</artifactId>
+		    <version>2.40.8</version>
+		    <scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-sns -->
+		<dependency>
+		    <groupId>com.amazonaws</groupId>
+		    <artifactId>aws-java-sdk-sns</artifactId>
+		    <version>1.12.795</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.awspring.cloud/spring-cloud-aws-sns -->
+		<dependency>
+		    <groupId>io.awspring.cloud</groupId>
+		    <artifactId>spring-cloud-aws-sns</artifactId>
+		    <version>3.4.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.awspring.cloud/spring-cloud-aws-starter-sns -->
+		<dependency>
+		    <groupId>io.awspring.cloud</groupId>
+		    <artifactId>spring-cloud-aws-starter-sns</artifactId>
+		    <version>3.4.2</version>
+		    <scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.tibco/tibjms -->
+		<dependency>
+		    <groupId>com.tibco</groupId>
+		    <artifactId>tibjms</artifactId>
+		    <version>4.4.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.tibco/tibjmsadmin -->
+		<dependency>
+		    <groupId>com.tibco</groupId>
+		    <artifactId>tibjmsadmin</artifactId>
+		    <version>5.1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solacesystems/sol-jms -->
+		<dependency>
+		    <groupId>com.solacesystems</groupId>
+		    <artifactId>sol-jms</artifactId>
+		    <version>10.29.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solacesystems/sol-jcsmp -->
+		<dependency>
+		    <groupId>com.solacesystems</groupId>
+		    <artifactId>sol-jcsmp</artifactId>
+		    <version>10.29.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solacesystems/sol-common -->
+		<dependency>
+		    <groupId>com.solacesystems</groupId>
+		    <artifactId>sol-common</artifactId>
+		    <version>10.29.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solacesystems/sol-jms-jakarta -->
+		<dependency>
+		    <groupId>com.solacesystems</groupId>
+		    <artifactId>sol-jms-jakarta</artifactId>
+		    <version>10.29.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solace.spring.cloud/spring-cloud-starter-stream-solace -->
+		<dependency>
+		    <groupId>com.solace.spring.cloud</groupId>
+		    <artifactId>spring-cloud-starter-stream-solace</artifactId>
+		    <version>5.11.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.solace.spring.cloud/spring-cloud-stream-binder-solace -->
+		<dependency>
+		    <groupId>com.solace.spring.cloud</groupId>
+		    <artifactId>spring-cloud-stream-binder-solace</artifactId>
+		    <version>5.11.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/software.amazon.awssdk/kinesis -->
+		<dependency>
+		    <groupId>software.amazon.awssdk</groupId>
+		    <artifactId>kinesis</artifactId>
+		    <version>2.40.9</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/software.amazon.kinesis/amazon-kinesis-client -->
+		<dependency>
+		    <groupId>software.amazon.kinesis</groupId>
+		    <artifactId>amazon-kinesis-client</artifactId>
+		    <version>3.2.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/amazon-kinesis-client -->
+		<dependency>
+		    <groupId>com.amazonaws</groupId>
+		    <artifactId>amazon-kinesis-client</artifactId>
+		    <version>1.15.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-kinesis -->
+		<dependency>
+		    <groupId>com.amazonaws</groupId>
+		    <artifactId>aws-java-sdk-kinesis</artifactId>
+		    <version>1.12.795</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/amazon-kinesis-producer -->
+		<dependency>
+		    <groupId>com.amazonaws</groupId>
+		    <artifactId>amazon-kinesis-producer</artifactId>
+		    <version>0.15.12</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.pulsar/pulsar-client -->
+		<dependency>
+		    <groupId>org.apache.pulsar</groupId>
+		    <artifactId>pulsar-client</artifactId>
+		    <version>4.1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.streamnative/pulsar-io-core -->
+		<dependency>
+		    <groupId>io.streamnative</groupId>
+		    <artifactId>pulsar-io-core</artifactId>
+		    <version>4.1.0.9</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.streamnative.pulsar/pulsar-broker-auth-oauth2 -->
+		<dependency>
+		    <groupId>io.streamnative.pulsar</groupId>
+		    <artifactId>pulsar-broker-auth-oauth2</artifactId>
+		    <version>2.9.1.0-rc2</version>
+		</dependency>
 		<dependency>
 			<groupId>com.ibm.mq</groupId>
 			<artifactId>com.ibm.mq.allclient</artifactId>
