@@ -5,9 +5,15 @@ providers:
 - name: builtin
   dataPath: ./data/19-spring-boot-to-azure-schedule-job
 tests:
-- ruleID: spring-boot-to-azure-schedule-job-01000
+- ruleID: quartz-scheduler-to-azure-functions-01000
   testCases:
   - name: tc-1
     hasIncidents:
       atLeast: 3
       messageMatches: The application uses Quartz scheduled jobs
+- ruleID: spring-batch-to-azure-durable-functions-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 3
+      messageMatches: The application uses Spring Batch for batch processing

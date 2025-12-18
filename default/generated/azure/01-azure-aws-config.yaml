@@ -414,3 +414,39 @@
     - builtin.filecontent:
         filePattern: ""
         pattern: aws-secretsmanager
+
+- category: optional
+  customVariables: []
+  description: AWS Lambda usage detected
+  effort: 5
+  labels:
+  - source=aws-lambda
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=scheduled-job-migration
+  links:
+  - title: What is Azure Functions
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview
+  - title: Migrate AWS Lambda workloads to Azure Functions
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/migration/migrate-aws-lambda-to-azure-functions
+  - title: Azure Functions Java developer guide
+    url: https://learn.microsoft.com/azure/azure-functions/functions-reference-java
+  message: |-
+    The application uses AWS Lambda (Java). Consider migrating to Azure Functions.
+    Azure Functions provides a managed serverless compute platform with a Java runtime and an event-driven programming model (triggers and bindings).
+    You will need to replace AWS Lambda handler interfaces/events, deployment packaging, and IAM/region configuration with Azure Functions triggers/bindings, function app deployment, and Azure identity/configuration.
+  ruleID: aws-lambda-to-azure-functions-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: com\.amazonaws\.aws-lambda-java.*
+    - java.dependency:
+        name: software.amazon.awssdk.lambda
+    - java.dependency:
+        name: com.amazonaws.aws-java-sdk-lambda
+    - java.dependency:
+        nameregex: com\.amazonaws\.serverless\.aws-serverless-java-container.*

@@ -130,3 +130,35 @@
         name: org.springframework.cloud.spring-cloud-gcp-storage
     - java.dependency:
         name: org.springframework.cloud.spring-cloud-gcp-starter-storage
+
+- category: optional
+  customVariables: []
+  description: Google Cloud Functions usage detected
+  effort: 5
+  labels:
+  - source=google-cloud-functions
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=scheduled-job-migration
+  links:
+  - title: What is Azure Functions
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview
+  - title: Timer trigger for Azure Functions
+    url: https://learn.microsoft.com/azure/azure-functions/functions-bindings-timer
+  - title: Azure Functions Java developer guide
+    url: https://learn.microsoft.com/azure/azure-functions/functions-reference-java
+  message: |-
+    The application uses Google Cloud Functions (Java). Consider migrating to Azure Functions.
+    Azure Functions provides a managed serverless compute platform with a Java runtime and an event-driven programming model (triggers and bindings).
+    You will need to replace Google Cloud Functions handlers, deployment configuration, and IAM/project configuration with Azure Functions triggers/bindings, function app deployment, and Azure identity/configuration.
+  ruleID: google-cloud-functions-to-azure-functions-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: com\.google\.cloud\.functions\.functions-framework.*
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-function-adapter-gcp

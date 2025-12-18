@@ -1,46 +1,65 @@
-- category: mandatory
+- category: optional
   customVariables: []
-  description: The application uses Quartz to scheduled jobs
+  description: Quartz Scheduler usage detected
   effort: 7
   labels:
-  - source=springboot
+  - source=quartz-scheduler
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
-  - domain=cloud-readiness
-  - category=scheduled-job-migration
-  - scheduler
-  - quartz
   - os=windows
   - os=linux
+  - domain=cloud-readiness
+  - category=scheduled-job-migration
   links:
-  - title: The application uses Quartz to scheduled jobs
-    url: https://docs.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-app-service#determine-whether-application-relies-on-scheduled-jobs
-  - title: Jobs in Azure Container Apps
-    url: https://learn.microsoft.com/azure/container-apps/jobs
-  - title: Create a job with Azure Container Apps
-    url: https://learn.microsoft.com/azure/container-apps/jobs-get-started-cli
-  message: "The application uses Quartz scheduled jobs. Scheduled jobs, such as Quartz
-    Scheduler tasks or Unix cron jobs can't be used with cloud service like Azure
-    App Service, Azure Kubernetes Service.\n These Azure services
-    won't prevent you from deploying an application containing scheduled tasks internally.\n
-    However, if your application is scaled out, the same scheduled job may run more
-    than once per scheduled period.\n This situation can lead to unintended consequences.\n
-    \n To migrate a Java application that uses scheduled jobs to Azure, you can follow
-    these recommendations:\n\n * **Identify scheduled jobs**: Inventory any scheduled
-    tasks running on the production server(s), inside or outside your application
-    code. Search the application code for references to Quartz, @Scheduled annotation,
-    or cron expressions.\n \n * **Remove scheduled jobs**: Remove the scheduled jobs.
-    If you need to run scheduled jobs, you can use Azure Container Apps jobs. Azure
-    Container Apps jobs allow you to run containerized tasks that execute for a finite
-    duration and exit. You can trigger a job manually, schedule their execution, or
-    trigger their execution based on events."
-  ruleID: spring-boot-to-azure-schedule-job-01000
+  - title: What is Azure Functions
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview
+  - title: Timer trigger for Azure Functions
+    url: https://learn.microsoft.com/azure/azure-functions/functions-bindings-timer
+  - title: Azure Functions Java developer guide
+    url: https://learn.microsoft.com/azure/azure-functions/functions-reference-java
+  message: |-
+    The application uses Quartz Scheduler for scheduled jobs. Consider migrating scheduled workloads to Azure Functions using a Timer trigger.
+    Azure Functions Timer Trigger supports NCRONTAB (cron-like) schedules and can replace many Quartz scheduling use cases while reducing infrastructure management overhead.
+    You will need to replace Quartz jobs/triggers (and any persistent job store configuration) with timer-triggered Azure Functions, and move any state/persistence to external services (for example, Azure Storage, databases, or queues) as appropriate.
+  ruleID: quartz-scheduler-to-azure-functions-01000
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: org\.quartz-scheduler\..*
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-quartz
+
+- category: optional
+  customVariables: []
+  description: Spring Batch usage detected
+  effort: 7
+  labels:
+  - source=spring-batch
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=scheduled-job-migration
+  links:
+  - title: What are Azure Durable Functions?
+    url: https://learn.microsoft.com/azure/azure-functions/durable/durable-functions-overview
+  - title: Durable Functions patterns and technical concepts
+    url: https://learn.microsoft.com/azure/azure-functions/durable/durable-functions-types-features-overview
+  - title: Create a Java Durable Functions app
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/durable/quickstart-java
+  - title: Azure Functions Java developer guide
+    url: https://learn.microsoft.com/azure/azure-functions/functions-reference-java
+  message: |-
+    The application uses Spring Batch for batch processing. Consider migrating batch workflows to Azure Durable Functions.
+    Azure Durable Functions extends Azure Functions with stateful orchestration, enabling reliable long-running workflows with retries, checkpoints, and fan-out/fan-in patterns.
+    You will need to replace Spring Batch jobs/steps (and any job repository/state management) with Durable Functions orchestrators and activity functions, and move scheduling, state, and checkpointing to supported Azure services as needed.
+  ruleID: spring-batch-to-azure-durable-functions-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: org\.springframework\.batch\.spring-batch.*
+    - java.dependency:
+        name: org.springframework.boot.spring-boot-starter-batch

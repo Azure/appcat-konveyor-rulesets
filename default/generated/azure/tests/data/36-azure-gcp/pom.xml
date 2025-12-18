@@ -43,5 +43,17 @@
             <artifactId>spring-cloud-gcp-starter-storage</artifactId>
             <version>1.2.0.M3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.cloud.functions/functions-framework-api -->
+        <dependency>
+            <groupId>com.google.cloud.functions</groupId>
+            <artifactId>functions-framework-api</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-function-adapter-gcp -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-function-adapter-gcp</artifactId>
+            <version>5.0.0</version>
+        </dependency>
     </dependencies>
 </project>
