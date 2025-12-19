@@ -5,6 +5,18 @@ providers:
 - name: builtin
   dataPath: ./data/36-azure-gcp
 tests:
+- ruleID: google-firestore-to-azure-cosmosdb-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 7
+      messageMatches: The application uses Google Cloud Firestore
+- ruleID: google-cloud-bigtable-to-azure-cosmosdb-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 6
+      messageMatches: The application uses Google Cloud Bigtable
 - ruleID: google-pubsub-to-azure-service-bus-01000
   testCases:
   - name: tc-1

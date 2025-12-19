@@ -534,17 +534,32 @@
     url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/service-overview
   - title: Use Azure (SDK) libraries in Java to create, update, and delete an Azure Database for PostgreSQL
     url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-java-sdk
+  - title: What is Azure SQL Database?
+    url: https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview?view=azuresql
+  - title: Use Java and JDBC with Azure SQL Database
+    url: https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-java?view=azuresql
+  - title: Use Spring Data JDBC with Azure SQL Database
+    url: https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-data-jdbc-with-azure-sql-server
+  - title: Use Spring Data JPA with Azure SQL Database
+    url: https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-data-jpa-with-azure-sql-server
   message: |-
-    The application uses Sybase ASE. Consider migrating to Azure Database for PostgreSQL.
-    Azure Database for PostgreSQL is a fully managed PostgreSQL service with enterprise-grade features, high availability options, and broad ecosystem support.
-    You will need to replace Sybase ASE-specific SQL/features (T-SQL dialect differences, stored procedures, triggers, and data types), the Sybase JDBC driver and connection configuration, and perform schema/data migration to PostgreSQL using an appropriate conversion and migration approach.
-  ruleID: sybase-ase-to-azure-postgresql-01000
+    The application uses Sybase ASE. Consider migrating to Azure SQL Database or Azure Database for PostgreSQL, depending on compatibility, target architecture, and modernization goals.
+
+    Azure SQL Database provides high compatibility with Sybase/T-SQL-style constructs and is often the lowest-risk migration path, especially for applications that rely heavily on stored procedures, triggers, and T-SQL-like SQL dialects.
+    
+    Azure Database for PostgreSQL is a fully managed PostgreSQL service offering strong open-source ecosystem support, extensibility, and cloud-native capabilities, and may be preferred for strategic modernization.
+    
+    Migration will require replacing Sybase ASE-specific SQL features (dialect differences, stored procedures, triggers, and data types), updating the JDBC driver and connection configuration, and performing schema and data migration using appropriate conversion and migration tools.
+  ruleID: sybase-ase-to-azure-database-01000
   when:
     or:
     - builtin.file:
         pattern: jconn(3|4)\.jar
     - java.dependency:
-        nameregex: com\.sybase(\..*)?\.(jconn|jconn3|jconn4|jConnect)
+        nameregex: (com\.sybase|com\.sap\.sybase)(\..*)?\.(jconn|jconn3|jconn4|jConnect)
+    - builtin.filecontent:
+        filePattern: (/|\\)application(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        pattern: jdbc:jtds:sybase://
 
 - category: optional
   customVariables: []
