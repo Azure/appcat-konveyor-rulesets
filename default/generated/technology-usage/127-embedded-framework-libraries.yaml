@@ -1,0 +1,39 @@
+- customVariables: []
+  description: Hibernate embedded library
+  labels:
+  - capability=jakarta-ee
+  - discovery
+  links: []
+  ruleID: embedded-framework-libraries-02000
+  tag:
+  - Hibernate embedded library
+  when:
+    builtin.file:
+      pattern: .*hibernate.*\.jar$
+
+- customVariables: []
+  description: Embedded library - JDBC
+  labels:
+  - capability=jakarta-ee
+  - discovery
+  links: []
+  message: "The application embeds a JDBC library."
+  ruleID: embedded-framework-libraries-04000
+  tag:
+  - Embedded library - JDBC
+  when:
+    builtin.file:
+      pattern: .*jdbc.*\.jar$
+
+- customVariables: []
+  description: Seam 2 embedded library
+  labels:
+  - capability=jakarta-ee
+  - discovery
+  links: []
+  ruleID: embedded-framework-libraries-06000
+  tag:
+  - Seam 2 embedded library
+  when:
+    builtin.file:
+      pattern: jboss-seam.*\.jar$

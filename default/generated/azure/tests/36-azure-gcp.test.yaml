@@ -5,15 +5,45 @@ providers:
 - name: builtin
   dataPath: ./data/36-azure-gcp
 tests:
+- ruleID: google-firestore-to-azure-cosmosdb-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 7
+      messageMatches: The application uses Google Cloud Firestore
+- ruleID: google-cloud-bigtable-to-azure-cosmosdb-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 6
+      messageMatches: The application uses Google Cloud Bigtable
 - ruleID: google-pubsub-to-azure-service-bus-01000
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 2
-      messageMatches: The application uses Google Cloud Pub/Sub client libraries
+      exactly: 5
+      messageMatches: The application uses Google Cloud Pub/Sub for pub/sub messaging
 - ruleID: google-gcr-to-azure-acr-01000
   testCases:
   - name: tc-1
     hasIncidents:
       exactly: 1
       messageMatches: The application uses Google Container Registry (GCR)
+- ruleID: google-cloud-storage-to-azure-blob-storage-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The application uses Google Cloud Storage for object storage.
+- ruleID: google-cloud-functions-to-azure-functions-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The application uses Google Cloud Functions (Java)
+- ruleID: google-cloud-spanner-to-azure-postgresql-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 7
+      messageMatches: The application uses Google Cloud Spanner

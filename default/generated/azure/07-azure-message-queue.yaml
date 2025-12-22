@@ -380,3 +380,232 @@
       - java.dependency:
           lowerbound: 0.0.0
           name: org.springframework.amqp.spring-rabbit
+- category: optional
+  customVariables: []
+  description: IBM MQ usage detected
+  effort: 5
+  labels:
+  - source=ibm-mq
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  - message-queue
+  - os=windows
+  - os=linux
+  links:
+  - title: Use JMS in Spring to access Azure Service Bus
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-service-bus
+  - title: Use Azure Service Bus with JMS
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/spring-jms-support
+  - title: Azure Service Bus JMS 2.0 developer guide
+    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/jms-developer-guide
+  - title: Use Java Message Service 2.0 API with Azure Service Bus Premium
+    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/how-to-use-java-message-service-20
+  message: |-
+    The application uses IBM MQ JMS. Consider migrating to Azure Service Bus.
+
+    Azure Service Bus provides a reliable cloud messaging service between applications and services.
+
+    You will need to replace IBM MQ specific code and dependencies with Azure Service Bus SDK or JMS with Service Bus.
+  ruleID: azure-message-queue-ibm-jms-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.ibm.mq.com.ibm.mq.allclient
+    - java.dependency:
+        name: com.ibm.mq.mq-jms-spring-boot-starter
+
+- category: optional
+  customVariables: []
+  description: Amazon SNS usage detected
+  effort: 5
+  labels:
+  - source=amazon-sns
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  links:
+  - title: Get started with Service Bus topics and subscriptions (Java)
+    url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
+  - title: Azure Service Bus client library for Java (azure-messaging-servicebus)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-servicebus-readme
+  - title: Messaging services on Azure and AWS
+    url: https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging
+  - title: Use Azure Service Bus in Spring applications
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/using-service-bus-in-spring-applications
+  message: |-
+    The application uses Amazon SNS for pub/sub messaging. Consider migrating to Azure Service Bus.
+    Azure Service Bus Topics and Subscriptions provide durable, reliable pub/sub messaging with filtering and dead-lettering.
+    You will need to replace AWS SNS SDK usage (publishing, subscription management, credentials/config) with Azure Service Bus topic/subscription entities and the Azure Service Bus SDK (or an appropriate framework integration).
+  ruleID: amazon-sns-to-azure-servicebus-01000
+  when:
+    or:
+    - java.dependency:
+        name: software.amazon.awssdk.sns
+    - java.dependency:
+        name: com.amazonaws.aws-java-sdk-sns
+    - java.dependency:
+        name: io.awspring.cloud.spring-cloud-aws-sns
+    - java.dependency:
+        name: io.awspring.cloud.spring-cloud-aws-starter-sns
+
+- category: optional
+  customVariables: []
+  description: TIBCO EMS JMS usage detected
+  effort: 5
+  labels:
+  - source=tibco-ems-jms
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  links:
+  - title: Use JMS in Spring to access Azure Service Bus
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-service-bus
+  - title: Use Azure Service Bus with JMS
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/spring-jms-support
+  - title: Azure Service Bus JMS 2.0 developer guide
+    url: https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide
+  - title: Use Java Message Service 2.0 API with Azure Service Bus Premium
+    url: https://learn.microsoft.com/azure/service-bus-messaging/how-to-use-java-message-service-20
+  message: |-
+    The application uses TIBCO EMS via the Java Message Service (JMS) API. Consider migrating to Azure Service Bus with JMS.
+    Azure Service Bus Premium provides full JMS 2.0 API support, enabling a drop-in replacement approach for many JMS-based applications.
+    You will need to replace TIBCO EMS client libraries, connection factories/JNDI configuration, and broker-specific settings with Azure Service Bus JMS connection settings and supported JMS features.
+  ruleID: tibco-ems-jms-to-azure-servicebus-jms-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.tibco.tibjms.tibjms
+    - java.dependency:
+        name: com.tibco.tibjms
+    - java.dependency:
+        name: com.tibco.tibjmsadmin
+    - builtin.file:
+        pattern: tibjms\.jar
+    - java.referenced:
+        location: IMPORT
+        pattern: com.tibco.tibjms*
+
+- category: optional
+  customVariables: []
+  description: Solace PubSub+ usage detected
+  effort: 5
+  labels:
+  - source=solace-pubsubplus
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  links:
+  - title: Get started with Service Bus topics and subscriptions (Java)
+    url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
+  - title: Azure Service Bus client library for Java (azure-messaging-servicebus)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-servicebus-readme
+  - title: Messaging services on Azure and AWS
+    url: https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging
+  - title: Spring Cloud Stream with Azure Service Bus
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-cloud-stream-binder-java-app-with-service-bus
+  message: |-
+    The application uses Solace PubSub+ for enterprise messaging. Consider migrating to Azure Service Bus.
+    Azure Service Bus supports equivalent enterprise messaging patterns including queues (point-to-point), topics/subscriptions (pub/sub), and request/reply-style workflows, with AMQP 1.0 support and JMS 2.0 support (Premium).
+    You will need to replace Solace PubSub+ client libraries and broker-specific configuration (sessions, endpoints/queues, topics, authentication, connection properties) with Azure Service Bus entities and either the Azure Service Bus SDK, AMQP, or JMS (depending on your application integration style).
+  ruleID: solace-pubsubplus-to-azure-servicebus-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.solacesystems.sol-jms
+    - java.dependency:
+        name: com.solacesystems.sol-jcsmp
+    - java.dependency:
+        name: com.solacesystems.sol-common
+    - java.dependency:
+        name: com.solacesystems.sol-jms-jakarta
+    - java.dependency:
+        name: com.solace.spring.cloud.spring-cloud-starter-stream-solace
+    - java.dependency:
+        name: com.solace.spring.cloud.spring-cloud-stream-binder-solace
+    - java.referenced:
+        location: IMPORT
+        pattern: com.solacesystems.jms*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.solacesystems.jcsmp*
+
+- category: optional
+  customVariables: []
+  description: Amazon Kinesis usage detected
+  effort: 5
+  labels:
+  - source=amazon-kinesis
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  links:
+  - title: What is Azure Event Hubs?
+    url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
+  - title: Event Hubs client library for Java (azure-messaging-eventhubs)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-eventhubs-readme
+  message: |-
+    The application uses Amazon Kinesis for streaming data ingestion/processing. Consider migrating to Azure Event Hubs.
+    Azure Event Hubs is a high-throughput event streaming platform and supports the Kafka protocol, enabling Kafka-compatible producers/consumers to connect without changing Kafka client code.
+    You will need to replace AWS Kinesis client usage (streams, producers/consumers, checkpointing, IAM/credentials, region/endpoints) with Azure Event Hubs concepts (event hubs, consumer groups, checkpoints via Azure Storage) and either the Event Hubs SDK or the Kafka endpoint (depending on your client library).
+  ruleID: amazon-kinesis-to-azure-eventhubs-01000
+  when:
+    or:
+    - java.dependency:
+        name: software.amazon.awssdk.kinesis
+    - java.dependency:
+        name: software.amazon.kinesis.amazon-kinesis-client
+    - java.dependency:
+        name: com.amazonaws.aws-java-sdk-kinesis
+    - java.dependency:
+        name: com.amazonaws.amazon-kinesis-client
+    - java.dependency:
+        name: com.amazonaws.amazon-kinesis-producer
+
+- category: optional
+  customVariables: []
+  description: Apache Pulsar usage detected
+  effort: 5
+  labels:
+  - source=apache-pulsar
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=messaging-service-migration
+  links:
+  - title: What is Azure Event Hubs?
+    url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
+  - title: Event Hubs client library for Java (azure-messaging-eventhubs)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-eventhubs-readme
+  message: |-
+    The application uses Apache Pulsar for real-time messaging/streaming. Consider migrating to Azure Event Hubs.
+    Azure Event Hubs is a managed event streaming platform and provides a Kafka-compatible endpoint, enabling Kafka client applications to connect using the Kafka protocol.
+    You will need to replace Pulsar client usage (producers/consumers, topics/subscriptions, authentication, and geo/multi-tenant configuration) with Azure Event Hubs concepts (event hubs, consumer groups, checkpoints via Azure Storage) and connect using either the Event Hubs SDK or Kafka clients against the Event Hubs Kafka endpoint.
+  ruleID: apache-pulsar-to-azure-eventhubs-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: org\.apache\.pulsar.*
+    - java.dependency:
+        nameregex: io\.streamnative\.pulsar.*

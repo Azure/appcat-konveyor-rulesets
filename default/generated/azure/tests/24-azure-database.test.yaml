@@ -47,3 +47,27 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: Oracle database found. To migrate a Java application that uses an Oracle database to Azure
+- ruleID: ibm-db2-to-azure-postgresql-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 5
+      messageMatches: The application uses IBM Db2
+- ruleID: sybase-ase-to-azure-database-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 5
+      messageMatches: The application uses Sybase ASE
+- ruleID: firebird-to-azure-postgresql-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The application uses Firebird
+- ruleID: sqlite-to-azure-postgresql-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The application uses SQLite

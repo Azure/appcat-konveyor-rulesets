@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:jtds:sybase://sybase-db.example.com:5000/my_database
+    username: dbuser
+    password: dbpassword
+    driver-class-name: net.sourceforge.jtds.jdbc.Driver

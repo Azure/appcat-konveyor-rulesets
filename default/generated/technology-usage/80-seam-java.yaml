@@ -1,0 +1,14 @@
+- customVariables: []
+  description: Seam API
+  labels:
+  - capability=jakarta-ee
+  - seam
+  - discovery
+  links: []
+  ruleID: seam-java-00000
+  tag:
+  - Seam API
+  when:
+    java.referenced:
+      location: PACKAGE
+      pattern: org.jboss.seam*

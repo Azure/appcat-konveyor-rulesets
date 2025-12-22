@@ -1,0 +1,25 @@
+rulesPath: ../jboss-eap-to-azure.yaml
+providers:
+- name: java
+  dataPath: ./data/jboss-eap-to-azure
+- name: builtin
+  dataPath: ./data/jboss-eap-to-azure
+tests:
+- ruleID: jboss-eap-to-azure-app-service
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: To migrate Java applications using JBoss EAP to JBoss EAP on Azure App Service
+- ruleID: jboss-eap-to-aks
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: To migrate Java applications using JBoss EAP to Azure Kubernetes Service
+- ruleID: jboss-eap-to-azure-container-apps
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: To migrate Java applications using JBoss EAP to Azure Container Apps

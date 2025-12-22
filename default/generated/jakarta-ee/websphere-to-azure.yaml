@@ -1,0 +1,77 @@
+- category: mandatory
+  customVariables: []
+  description: Migrate WebSphere applications to JBoss EAP on Azure App Service
+  effort: 5
+  labels:
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - source=websphere
+  links:
+  - title: Migrate WebSphere applications to JBoss EAP on Azure App Service
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-websphere-to-jboss-eap-on-azure-app-service
+  message: |-
+    To migrate Java applications using WebSphere to JBoss EAP on Azure App Service, you can follow the guidance in the linked documentation.
+  ruleID: websphere-to-azure-app-service
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: websphere
+    - java.dependency:
+        nameregex: com\.ibm\.websphere.*
+
+- category: mandatory
+  customVariables: []
+  description: Migrate WebSphere applications to Azure Kubernetes Service
+  effort: 5
+  labels:
+  - target=azure-aks
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - source=websphere
+  links:
+  - title: Migrate WebSphere applications to Azure Kubernetes Service
+    url: https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-websphere-to-azure-kubernetes-service
+  message: |-
+    To migrate Java applications using WebSphere to Azure Kubernetes Service, you can follow the guidance in the linked documentation.
+  ruleID: websphere-to-aks
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: websphere
+    - java.dependency:
+        nameregex: com\.ibm\.websphere.*
+
+- category: 
+  customVariables: []
+  description: Migrate WebSphere applications to Azure Container Apps
+  effort: 7
+  labels:
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=jakarta-migration
+  - source=websphere
+  links: []
+  message: |-
+    To migrate Java applications using WebSphere to Azure Container Apps, you can consider two options:
+    1. Lift-and-Shift with WebSphere
+    Use IBM WebSphere container images as the base for your application, and package your Java application together with WebSphere in a container image. Deploy the container to Azure Container Apps and configure settings for networking, scaling, secrets, and environment variables.
+    
+    2. Refactor to Remove WebSphere
+    Decouple your application from WebSphere and migrate to a lighter runtime (e.g., Spring Boot, Quarkus, or Micronaut). This reduces complexity and improves cloud-native compatibility. Then package your Java application in a container image and deploy to Azure Container Apps, leveraging its built-in features for autoscaling, traffic splitting, and secure configuration.
+  ruleID: websphere-to-azure-container-apps
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: (/|\\)(pom|build)\.(xml|gradle)$
+        pattern: websphere
+    - java.dependency:
+        nameregex: com\.ibm\.websphere.*

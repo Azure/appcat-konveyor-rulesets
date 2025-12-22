@@ -1,0 +1,13 @@
+rulesPath: ../21-jakarta-auth.yaml
+providers:
+- name: java
+  dataPath: ./data/21-jakarta-auth
+- name: builtin
+  dataPath: ./data/21-jakarta-auth
+tests:
+- ruleID: jakarta-auth-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The application depends on

@@ -16,7 +16,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 3
       messageMatches: Detected EntityManager usage in application code
 - ruleID: openliberty-database-00003
   testCases:
@@ -35,7 +35,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 4
       messageMatches: Detected @Resource annotations for database injection that need configuration updates
 
 - ruleID: openliberty-database-00007

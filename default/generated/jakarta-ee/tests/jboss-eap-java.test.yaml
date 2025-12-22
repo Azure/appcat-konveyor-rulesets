@@ -1,0 +1,41 @@
+rulesPath: ../jboss-eap-java.yaml
+providers:
+- name: java
+  dataPath: ./data/jboss-eap-java
+- name: builtin
+  dataPath: ./data/jboss-eap-java
+tests:
+- ruleID: base64-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: is not a public/stable API
+
+- ruleID: jboss-eap5-7-java-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected JBoss-specific EJB3 extension annotations
+
+- ruleID: jboss-eap5-7-java-08000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected usage of JBossWS internal APIs
+
+- ruleID: jboss-eap4and5to6and7-java-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected `org.jboss.security.annotation.SecurityDomain`
+
+- ruleID: jboss-eap5and6to7-java-08000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Detected HornetQ client API usage

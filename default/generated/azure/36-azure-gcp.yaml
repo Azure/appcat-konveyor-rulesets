@@ -1,44 +1,123 @@
+- category: optional
+  customVariables: []
+  description: Google Firestore usage detected
+  effort: 5
+  labels:
+  - source=google-firestore
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Cosmos DB?
+    url: https://learn.microsoft.com/azure/cosmos-db/introduction
+  - title: Azure Cosmos DB for NoSQL client library for Java (v4)
+    url: https://learn.microsoft.com/java/api/overview/azure/cosmos-readme
+  - title: Use Azure Cosmos DB for NoSQL with Azure SDK for Java
+    url: https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-java
+  - title: Choose an Azure Cosmos DB API
+    url: https://learn.microsoft.com/azure/cosmos-db/choose-api
+  message: |-
+    The application uses Google Cloud Firestore (document database). Consider migrating to Azure Cosmos DB.
+    Azure Cosmos DB provides a globally distributed, fully managed document database with low-latency access, multi-region replication, and a change feed for building real-time event-driven patterns.
+    You will need to replace Firestore SDK usage (collections/documents, queries, transactions, security rules, authentication and project configuration) with an appropriate Azure Cosmos DB API (commonly Azure Cosmos DB for NoSQL), update the data model and query patterns where needed, and implement real-time synchronization using Cosmos DB Change Feed if your workload depends on Firestore listeners.
+  ruleID: google-firestore-to-azure-cosmosdb-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.google.cloud.google-cloud-firestore
+    - java.dependency:
+        name: com.google.firebase.firebase-firestore
+    - java.dependency:
+        nameregex: com.google.api.grpc\..*google-cloud-firestore.*
+    - java.dependency:
+        name: com.google.cloud.spring-cloud-gcp-data-firestore
+    - java.dependency:
+        name: com.google.cloud.spring-cloud-gcp-starter-data-firestore
+    - java.referenced:
+        location: IMPORT
+        pattern: com.google.cloud.firestore*
+
+- category: optional
+  customVariables: []
+  description: Google Cloud Bigtable usage detected
+  effort: 7
+  labels:
+  - source=google-cloud-bigtable
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Cosmos DB?
+    url: https://learn.microsoft.com/azure/cosmos-db/introduction
+  - title: Azure Tables client library for Java
+    url: https://learn.microsoft.com/en-us/java/api/overview/azure/data-tables-readme?view=azure-java-stable
+  - title: Use Azure Cosmos DB for Table with Azure SDK for Java
+    url: https://learn.microsoft.com/en-us/azure/cosmos-db/table/quickstart-java
+  - title: Choose an Azure Cosmos DB API
+    url: https://learn.microsoft.com/azure/cosmos-db/choose-api
+  message: |-
+    The application uses Google Cloud Bigtable (wide-column NoSQL database). Consider migrating to Azure Cosmos DB.
+    Azure Cosmos DB can support wide-column style workloads using the Table API, and provides global distribution, automatic scaling, and managed indexing/partitioning features.
+    You will need to replace Bigtable client usage (instances/tables, row keys/column families, filters, authentication and project configuration) with Azure Cosmos DB Table API concepts (accounts, tables, entities/partition keys), redesign partitioning/row-key strategy as needed, and migrate data while validating query and latency characteristics.
+  ruleID: google-cloud-bigtable-to-azure-cosmosdb-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.google.cloud.google-cloud-bigtable
+    - java.dependency:
+        name: com.google.cloud.google-cloud-bigtable-admin
+    - java.dependency:
+        nameregex: com\.google\.cloud\.bigtable\..* 
+    - java.dependency:
+        nameregex: com\.google\.api\.grpc\..*google-cloud-bigtable.*
+
 - category: mandatory
   customVariables: []
   description: Google Cloud Pub/Sub usage detected
   effort: 3
   labels:
-  - source=google-pubsub
+  - source=google-cloud-pubsub
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
   - domain=cloud-readiness
-  - category=messaging
+  - category=messaging-service-migration
   - os=windows
   - os=linux
   links:
-  - title: Azure for Google Cloud Professionals
-    url: https://learn.microsoft.com/en-us/azure/architecture/gcp-professional/services#messaging-and-eventing
-  - title: Azure Service Bus Java samples
-    url: https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-samples
+  - title: Get started with Service Bus topics and subscriptions (Java)
+    url: https://learn.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
+  - title: Azure Service Bus client library for Java (azure-messaging-servicebus)
+    url: https://learn.microsoft.com/java/api/overview/azure/messaging-servicebus-readme
+  - title: Messaging services on Azure and AWS
+    url: https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging
+  - title: Use Azure Service Bus in Spring applications
+    url: https://learn.microsoft.com/azure/developer/java/spring-framework/using-service-bus-in-spring-applications
   message: |-
-    The application uses Google Cloud Pub/Sub client libraries.
-
-    To align with Azure messaging services:
-      * Review messaging requirements and choose the appropriate Azure service (Service Bus, Event Grid, or Event Hubs).
-
-      * Replace Google Pub/Sub clients with the corresponding Azure SDKs.
-
-      * Update configuration to use Azure credentials and connection information.
-
-      * Verify message publishing and subscription flows with integration tests.
+    The application uses Google Cloud Pub/Sub for pub/sub messaging. Consider migrating to Azure Service Bus Topics.
+    Azure Service Bus Topics and Subscriptions provide durable pub/sub messaging with at-least-once delivery, filtering, and dead-lettering.
+    You will need to replace Google Cloud Pub/Sub client usage (publish/subscribe, subscription administration, authentication and configuration) with Azure Service Bus topic/subscription entities and the Azure Service Bus SDK (or an appropriate framework integration).
   ruleID: google-pubsub-to-azure-service-bus-01000
   when:
     or:
-    - java.referenced:
-        location: IMPORT
-        pattern: com.google.cloud.pubsub.v1*
     - java.dependency:
-        lowerbound: 0.0.0
-        name: com.google.cloud:google-cloud-pubsub
+        name: com.google.cloud.google-cloud-pubsub
     - java.dependency:
-        lowerbound: 0.0.0
-        nameregex: com\.google\.cloud\.[a-z0-9_.-]*pubsub[a-z0-9_.-]*
+        name: com.google.cloud.spring-cloud-gcp-starter-pubsub
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-gcp-pubsub
+    - java.dependency:
+        name: com.google.cloud.spring-cloud-gcp-pubsub
+    - java.dependency:
+        nameregex: com.google.api.grpc.grpc-google-cloud-pubsub-v1
 - category: mandatory
   customVariables: []
   description: Google Container Registry (GCR) or Artifact Registry usage detected
@@ -90,3 +169,114 @@
     - builtin.filecontent:
         filePattern: (?i)(dockerfile|\.dockerignore|docker-compose\.ya?ml|.*\.ya?ml|.*\.json|\.properties|pom\.xml|build\.gradle|package\.json|requirements\.txt|\.npmrc|\.pypirc|Makefile|.*\.sh|.*\.ps1)$
         pattern: (gcr\.io|[a-z]+-docker\.pkg\.dev)
+
+- category: optional
+  customVariables: []
+  description: Google Cloud Storage usage detected
+  effort: 5
+  labels:
+  - source=google-cloud-storage
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=storage-migration
+  links:
+  - title: What is Azure Blob Storage?
+    url: https://learn.microsoft.com/azure/storage/blobs/storage-blobs-overview
+  - title: Quickstart - Upload, download, and list blobs with Java
+    url: https://learn.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-java
+  - title: Azure Storage Blobs client library for Java
+    url: https://learn.microsoft.com/java/api/overview/azure/storage-blob-readme
+  - title: Authorize access to blobs using Microsoft Entra ID
+    url: https://learn.microsoft.com/azure/storage/blobs/authorize-access-azure-active-directory
+  - title: Use Spring Boot to upload a file to Azure Blob Storage
+    url: https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-starter-java-app-with-azure-storage
+  message: |-
+    The application uses Google Cloud Storage for object storage. Consider migrating to Azure Blob Storage.
+    Azure Blob Storage provides equivalent object storage capabilities for unstructured data with multiple access tiers and enterprise security controls.
+    You will need to replace GCS client usage (buckets/objects, IAM/ACLs, signed URLs, endpoints and authentication) with Azure Blob concepts (storage accounts, containers, blobs) and the Azure Storage SDK, including updating identity/access control (Microsoft Entra ID/RBAC) and URL signing (SAS) as needed.
+  ruleID: google-cloud-storage-to-azure-blob-storage-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.google.cloud.google-cloud-storage
+    - java.dependency:
+        name: com.google.apis.google-api-services-storage
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-gcp-storage
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-gcp-starter-storage
+
+- category: optional
+  customVariables: []
+  description: Google Cloud Functions usage detected
+  effort: 5
+  labels:
+  - source=google-cloud-functions
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=scheduled-job-migration
+  links:
+  - title: What is Azure Functions
+    url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview
+  - title: Timer trigger for Azure Functions
+    url: https://learn.microsoft.com/azure/azure-functions/functions-bindings-timer
+  - title: Azure Functions Java developer guide
+    url: https://learn.microsoft.com/azure/azure-functions/functions-reference-java
+  message: |-
+    The application uses Google Cloud Functions (Java). Consider migrating to Azure Functions.
+    Azure Functions provides a managed serverless compute platform with a Java runtime and an event-driven programming model (triggers and bindings).
+    You will need to replace Google Cloud Functions handlers, deployment configuration, and IAM/project configuration with Azure Functions triggers/bindings, function app deployment, and Azure identity/configuration.
+  ruleID: google-cloud-functions-to-azure-functions-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: com\.google\.cloud\.functions\.functions-framework.*
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-function-adapter-gcp
+
+- category: optional
+  customVariables: []
+  description: Google Cloud Spanner usage detected
+  effort: 5
+  labels:
+  - source=google-cloud-spanner
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=database-migration
+  links:
+  - title: What is Azure Database for PostgreSQL?
+    url: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/service-overview
+  - title: Migration options for Azure Database for PostgreSQL
+    url: https://learn.microsoft.com/azure/postgresql/migrate/
+  - title: Azure Database for PostgreSQL documentation
+    url: https://learn.microsoft.com/azure/postgresql/
+  message: |-
+    The application uses Google Cloud Spanner. Consider migrating to Azure Database for PostgreSQL.
+    Azure Database for PostgreSQL is a fully managed PostgreSQL service with built-in high availability options and support for read replicas.
+    You will need to replace Spanner-specific client usage and schema/query semantics (for example, Spanner DDL/DML differences and transaction behavior) with PostgreSQL-compatible SQL, update connection/authentication configuration, and migrate schema and data to Azure Database for PostgreSQL using an appropriate migration approach.
+  ruleID: google-cloud-spanner-to-azure-postgresql-01000
+  when:
+    or:
+    - java.dependency:
+        name: com.google.cloud.google-cloud-spanner
+    - java.dependency:
+        name: com.google.cloud.google-cloud-spanner-jdbc
+    - java.dependency:
+        nameregex: com.google.api.grpc.*google-cloud-spanner.*
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-gcp-starter-data-spanner
+    - java.dependency:
+        nameregex: .*\.spring-cloud-gcp-data-spanner
+

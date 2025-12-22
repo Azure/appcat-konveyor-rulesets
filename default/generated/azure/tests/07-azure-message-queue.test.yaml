@@ -50,3 +50,42 @@ tests:
     hasIncidents:
       atLeast: 1
       messageMatches: To migrate a Java application that uses ActiveMQ to Azure
+
+- ruleID: amazon-sns-to-azure-servicebus-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The application uses Amazon SNS for pub/sub messaging
+- ruleID: tibco-ems-jms-to-azure-servicebus-jms-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 5
+      messageMatches: The application uses TIBCO EMS via the Java Message Service (JMS) API
+- ruleID: solace-pubsubplus-to-azure-servicebus-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 8
+      messageMatches: The application uses Solace PubSub+ for enterprise messaging
+- ruleID: amazon-kinesis-to-azure-eventhubs-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 5
+      messageMatches: The application uses Amazon Kinesis for streaming data ingestion/processing
+- ruleID: apache-pulsar-to-azure-eventhubs-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: The application uses Apache Pulsar for real-time messaging/streaming
+
+- ruleID: azure-message-queue-ibm-jms-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: The application uses IBM MQ JMS.
+
