@@ -39,7 +39,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 2
+      exactly: 3
       messageMatches: The application uses Google Cloud Functions (Java)
 - ruleID: google-cloud-spanner-to-azure-postgresql-01000
   testCases:
