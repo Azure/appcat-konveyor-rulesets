@@ -241,6 +241,8 @@
         nameregex: com\.google\.cloud\.functions\.functions-framework.*
     - java.dependency:
         name: org.springframework.cloud.spring-cloud-function-adapter-gcp
+    - java.dependency:
+        name: com.google.cloud.google-cloud-functions
 
 - category: optional
   customVariables: []
