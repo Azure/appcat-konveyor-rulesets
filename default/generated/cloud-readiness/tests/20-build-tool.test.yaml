@@ -15,5 +15,6 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 8
+      # Not condition also produces a empty incident
+      exactly: 9
       messageMatches: Eclipse project detected.

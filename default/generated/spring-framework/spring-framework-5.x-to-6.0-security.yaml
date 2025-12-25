@@ -72,7 +72,7 @@
         pattern: org.springframework.security.core.context.SecurityContextHolder.getContext()
         location: METHOD_CALL
     - java.referenced:
-        pattern: org.springframework.security.core.context.SecurityContextHolder.setContext(*)
+        pattern: org.springframework.security.core.context.SecurityContextHolder.setContext
         location: METHOD_CALL
   description: SecurityContext not automatically saved anymore
   message: |
