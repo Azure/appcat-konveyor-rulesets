@@ -17,8 +17,6 @@
   effort: 3
   labels:
   - source=springboot
-  - source=eap7
-  - source=eap
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
