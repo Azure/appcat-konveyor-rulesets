@@ -29,6 +29,7 @@
 - ruleID: hardcoded-ip-address
   description: "Hardcoded IP Address"
   labels:
+  - source
   - target=azure-aks
   - target=azure-container-apps
   - target=azure-appservice
