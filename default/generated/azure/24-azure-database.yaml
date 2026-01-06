@@ -512,6 +512,8 @@
     - java.dependency:
         name: com.ibm.db2.jcc
     - java.dependency:
+        name: com.ibm.db2jcc
+    - java.dependency:
         nameregex: com\.ibm\.db2\.db2jcc.*
     - java.dependency:
         nameregex: com\.ibm\.db2\.jcc\.db2jcc.*
