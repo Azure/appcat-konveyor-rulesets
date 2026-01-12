@@ -249,6 +249,8 @@
         pattern: ^([a-zA-Z0-9._-]*)c-star-path([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)scale7-pelops([a-zA-Z0-9._-]*)\.jar$
+    - java.dependency:
+        name: org.springframework.boot.spring-boot-starter-data-cassandra
 - category: potential
   customVariables: []
   description: MongoDB database found

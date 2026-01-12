@@ -13,8 +13,7 @@
 # limitations under the License. 
 - category: optional
   customVariables: []
-  description: Kafka connection string, username or password found in configuration
-    file
+  description: Kafka configuration found
   effort: 5
   labels:
   - target=azure-appservice
@@ -54,8 +53,7 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
-        nameregex: ([a-zA-Z0-9._-]*)kafka([a-zA-Z0-9._-]*)
+        nameregex: .*kafka.*
     - builtin.filecontent:
         filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
         pattern: (?i)(?:\.kafka\.|bootstrap\.servers|bootstrap:\s*servers)
