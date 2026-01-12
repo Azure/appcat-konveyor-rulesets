@@ -9,7 +9,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 6
       messageMatches: The application uses EHCache. 
 - ruleID: embedded-cache-02000
   testCases:
@@ -39,7 +39,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 3
       messageMatches: The application embeds a Hazelcast library.
 - ruleID: embedded-cache-07000
   testCases:
