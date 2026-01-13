@@ -50,3 +50,6 @@
     - java.referenced:
         location: IMPORT
         pattern: com.microsoft.azure*
+    - builtin.filecontent: # for groovy projects
+        filePattern: .*\.(groovy|gradle|toml)$
+        pattern: com\.microsoft\.azure
