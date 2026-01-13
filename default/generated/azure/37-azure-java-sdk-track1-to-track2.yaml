@@ -52,4 +52,4 @@
         pattern: com.microsoft.azure*
     - builtin.filecontent: # for groovy projects
         filePattern: .*\.(groovy|gradle|toml)$
-        pattern: com\.microsoft\.azure
+        pattern: com.microsoft.azure*
