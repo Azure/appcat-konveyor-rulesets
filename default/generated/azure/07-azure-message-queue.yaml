@@ -208,6 +208,9 @@
           - java.dependency:
               name: org.springframework.amqp.spring-rabbit
           - builtin.filecontent:
+              filePattern: (/|\\)build\.gradle$
+              pattern: spring-boot-starter-amqp
+          - builtin.filecontent:
               filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
               pattern: .*amqp.*
       - not: true
