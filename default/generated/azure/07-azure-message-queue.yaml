@@ -204,24 +204,17 @@
     and:
       - or:
           - java.dependency:
-              lowerbound: 0.0.0
               name: org.springframework.boot.spring-boot-starter-amqp
           - java.dependency:
-              lowerbound: 0.0.0
               name: org.springframework.amqp.spring-rabbit
-          - builtin.filecontent:
-              filePattern: (/|\\)build\.gradle$
-              pattern: spring-boot-starter-amqp
           - builtin.filecontent:
               filePattern: (/|\\)([a-zA-Z0-9._-]+)\.(xml|properties|yaml|yml)$
               pattern: .*amqp.*
       - not: true
         or:
           - java.dependency:
-              lowerbound: 0.0.0
               nameregex: ([a-zA-Z0-9._-]*)jakarta.jakartaee-api([a-zA-Z0-9._-]*)
           - java.dependency:
-              lowerbound: 0.0.0
               nameregex: ([a-zA-Z0-9._-]*)javaee-api([a-zA-Z0-9._-]*)
 - category: optional
   customVariables: []
@@ -256,10 +249,8 @@
   when:
     and:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: org\.springframework.*jms
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: com\.rabbitmq.*\.rabbitmq-jms
 - category: potential
   customVariables: []
@@ -312,10 +303,8 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-activemq
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: org\.apache\.activemq\.([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)activemq([a-zA-Z0-9._-]*)$
@@ -352,14 +341,11 @@
     and:
     - or:
       - java.dependency:
-          lowerbound: 0.0.0
           nameregex: ([a-zA-Z0-9._-]*)jakarta.jakartaee-api([a-zA-Z0-9._-]*)
       - java.dependency:
-          lowerbound: 0.0.0
           nameregex: ([a-zA-Z0-9._-]*)javaee-api([a-zA-Z0-9._-]*)
     - or:
       - java.dependency:
-          lowerbound: 0.0.0
           nameregex: ([a-zA-Z0-9._-]*)amqp-client([a-zA-Z0-9._-]*)
       - builtin.filecontent:
           filePattern: (/|\\)(application|bootstrap|web)(-[a-zA-Z0-9]+)*?\.(properties|xml|yaml|yml)$
@@ -373,10 +359,8 @@
           location: PACKAGE
           pattern: org.springframework.amqp.rabbit*
       - java.dependency:
-          lowerbound: 0.0.0
           name: org.springframework.boot.spring-boot-starter-amqp
       - java.dependency:
-          lowerbound: 0.0.0
           name: org.springframework.amqp.spring-rabbit
 - category: optional
   customVariables: []

@@ -10,13 +10,10 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-actuator
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-actuator
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-actuator-autoconfigure
 - customVariables: []
   description: Spring JMX configuration detected

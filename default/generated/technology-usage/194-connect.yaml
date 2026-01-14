@@ -21,10 +21,8 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-activemq
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: org\.apache\.activemq\.([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)activemq([a-zA-Z0-9._-]*)$
@@ -84,10 +82,8 @@
         pattern: org.springframework.amqp.rabbit*
     - and:
       - java.dependency:
-          lowerbound: 0.0.0
           nameregex: org\.springframework.*jms
       - java.dependency:
-          lowerbound: 0.0.0
           nameregex: com\.rabbitmq.*\.rabbitmq-jms
 - customVariables: []
   description: Embedded library - Spring Messaging Client
@@ -152,10 +148,8 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-amqp
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.amqp.spring-rabbit
     - builtin.filecontent:
         filePattern: (/|\\)build\.gradle$

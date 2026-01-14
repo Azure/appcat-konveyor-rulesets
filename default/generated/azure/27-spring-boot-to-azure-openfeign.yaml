@@ -24,10 +24,8 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: com\.netflix\.feign\.([a-zA-Z0-9._-]*)
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.cloud.spring-cloud-starter-feign
     - builtin.file:
         pattern: ^feign-([a-zA-Z0-9._-]*)\.jar$

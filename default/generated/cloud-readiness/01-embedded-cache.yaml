@@ -373,7 +373,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-cache
 - category: mandatory
   customVariables: []
@@ -415,16 +414,12 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-data-redis
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.data.spring-data-redis
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.session.spring-session-data-redis
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.integration.spring-integration-redis
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)redis([a-zA-Z0-9._-]*)\.jar$
