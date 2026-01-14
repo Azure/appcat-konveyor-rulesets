@@ -140,7 +140,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)logstash([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)logstash([a-zA-Z0-9._-]*)\.jar$
@@ -178,7 +177,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)splunk([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)splunk([a-zA-Z0-9._-]*)\.jar$
@@ -214,10 +212,8 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-cloud-starter-zipkin
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: io\.zipkin([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)zipkin([a-zA-Z0-9._-]*)\.jar$

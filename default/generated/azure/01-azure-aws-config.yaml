@@ -114,10 +114,8 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.amazonaws.aws-java-sdk-s3
     - java.dependency:
-        lowerbound: 0.0.0
         name: io.awspring.cloud.spring-cloud-aws-starter-s3
     - builtin.filecontent:
         filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
@@ -171,7 +169,6 @@
   ruleID: azure-aws-config-s3-03001
   when:
     java.dependency:
-      lowerbound: 0.0.0
       name: software.amazon.awssdk.s3
 - category: mandatory
   customVariables: []
@@ -248,7 +245,6 @@
   ruleID: azure-aws-config-sqs-04000
   when:
     java.dependency:
-      lowerbound: 0.0.0
       name: com.amazonaws.aws-java-sdk-sqs
 - category: mandatory
   customVariables: []
@@ -310,7 +306,6 @@
   ruleID: azure-aws-config-sqs-04002
   when:
     java.dependency:
-      lowerbound: 0.0.0
       name: software.amazon.awssdk.sqs
 - category: mandatory
   customVariables: []
