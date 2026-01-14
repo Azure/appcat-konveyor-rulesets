@@ -1,0 +1,54 @@
+# Copyright (c) Microsoft Corporation.   
+
+# Licensed under the Apache License, Version 2.0 (the "License"); 
+# you may not use this file except in compliance with the License. 
+# You may obtain a copy of the License at 
+#     http://www.apache.org/licenses/LICENSE-2.0  
+
+# Unless required by applicable law or agreed to in writing, software 
+# distributed under the License is distributed on an "AS IS" BASIS, 
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+
+# See the License for the specific language governing permissions and 
+# limitations under the License. 
+- category: mandatory
+  customVariables: []
+  description: Azure legacy Java SDK (`com.microsoft.azure.*`) reached end of support on 31-March-2022
+  effort: 5
+  labels:
+  - source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - domain=cloud-readiness
+  - category=sdk-legacy-migration
+  - os=windows
+  - os=linux
+  links:
+  - title: Azure SDK for Java migration guide (`com.microsoft.azure.**` -> `com.azure.**`)
+    url: https://aka.ms/java-track2-migration-guide
+  - title: Azure for Java developer documentation
+    url: https://learn.microsoft.com/azure/developer/java/
+  - title: Azure SDK lifecycle and support policy
+    url: https://azure.github.io/azure-sdk/policies_support.html
+  message: |-
+    The application is using deprecated Azure legacy Java SDKs (`com.microsoft.azure.*`). These libraries reached end of support on 31-Mar-2022, so you should migrate to the supported Azure SDKs (`com.azure.*`) for security fixes and new capabilities. Follow these steps:
+
+    * **Inventory legacy dependencies**: Use tools such as `mvn dependency:tree` or `gradlew dependencies` to find every `com.microsoft.azure.*` artifact and map each one to its modern counterpart under `com.azure.*`.
+
+    * **Adopt supported packages**: Replace the legacy dependencies with their modern equivalents in your `pom.xml` or `build.gradle`, following the migration guide to align feature parity and new package names.
+
+    * **Update application code**: Refactor your code to the builder-based APIs, updated authentication flows (Azure Identity), and modern async or reactive patterns required by the latest clients. Add concise comments explaining non-obvious changes.
+
+    * **Test thoroughly**: Run unit, integration, and end-to-end tests to validate that the modern clients behave as expected, focusing on authentication, retry, and serialization differences.
+  ruleID: azure-java-sdk-legacy-migration-01000
+  when:
+    or:
+    - java.dependency:
+        nameregex: com\.microsoft\.azure\..*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.microsoft.azure*
+    - builtin.filecontent: # for groovy projects
+        filePattern: .*\.(groovy|gradle|toml)$
+        pattern: com.microsoft.azure*
