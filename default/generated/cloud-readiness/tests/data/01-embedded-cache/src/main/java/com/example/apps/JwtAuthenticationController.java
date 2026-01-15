@@ -1,0 +1,58 @@
+package com.example.apps;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.Cache;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.DisabledException;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
+import java.util.Map;
+
+@RestController
+@CrossOrigin
+public class JwtAuthenticationController {
+    @Autowired
+    AuthService authService;
+
+    @Autowired
+    JwtUserDetailsService userDetailsService;
+
+    private String username;
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public ResponseEntity<?> login(@RequestBody JwtRequest authenticationRequest) throws Exception {
+
+        final String token = authService.login(authenticationRequest.getUsername(),authenticationRequest.getPassword());
+        return ResponseEntity.ok(new JwtResponse(token));
+    }
+
+    @RequestMapping(value = "/log-out", method = RequestMethod.POST)
+    public ResponseEntity<?> logout(@RequestHeader("Authorization") String authorization) throws Exception {
+        authorization = authorization.substring(7);
+        return ResponseEntity.ok(authService.logout(authorization));
+    }
+
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public ResponseEntity<?> saveUser(@RequestBody UserDTO user) throws Exception {
+        return ResponseEntity.ok(userDetailsService.save(user));
+    }
+   // @RequestMapping(value="/hello", method = RequestMethod.GET)
+
+
+    @RequestMapping(value="/verify", method = RequestMethod.POST)
+    public String verify(@RequestHeader ("Authorization") String token) throws Exception {
+        token = token.substring(7);
+        return authService.verify(token);
+    }
+}

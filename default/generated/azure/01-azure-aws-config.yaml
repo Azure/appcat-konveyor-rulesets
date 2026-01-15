@@ -403,12 +403,21 @@
   ruleID: azure-aws-config-secret-manager-05000
   when:
     or:
-    - builtin.filecontent:
-        filePattern: ""
-        pattern: aws\.secretsmanager
-    - builtin.filecontent:
-        filePattern: ""
-        pattern: aws-secretsmanager
+    - java.dependency:
+        name: io.awspring.cloud.spring-cloud-aws-starter-secrets-manager
+    - java.dependency:
+        name: io.awspring.cloud.spring-cloud-starter-aws-secrets-manager-config
+    - java.dependency:
+        name: org.springframework.cloud.spring-cloud-starter-aws-secrets-manager-config
+    - java.dependency:
+        name: software.amazon.awssdk.secretsmanager
+    - java.dependency:
+        name: software.amazon.awscdk.secretsmanager
+    - java.dependency:
+        name: com.amazonaws.aws-java-sdk-secretsmanager
+    - java.referenced:
+        location: IMPORT
+        pattern: software.amazon.awssdk.services.secretsmanager*
 
 - category: optional
   customVariables: []

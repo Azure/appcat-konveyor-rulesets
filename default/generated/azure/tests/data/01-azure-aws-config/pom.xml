@@ -59,5 +59,47 @@
             <artifactId>aws-serverless-java-container-core</artifactId>
             <version>2.1.5</version>
         </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/io.awspring.cloud/spring-cloud-aws-starter-secrets-manager -->
+        <dependency>
+            <groupId>io.awspring.cloud</groupId>
+            <artifactId>spring-cloud-aws-starter-secrets-manager</artifactId>
+            <version>3.4.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/io.awspring.cloud/spring-cloud-starter-aws-secrets-manager-config -->
+        <dependency>
+            <groupId>io.awspring.cloud</groupId>
+            <artifactId>spring-cloud-starter-aws-secrets-manager-config</artifactId>
+            <version>2.4.4</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-aws-secrets-manager-config -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-aws-secrets-manager-config</artifactId>
+            <version>2.2.6.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/software.amazon.awssdk/secretsmanager -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>secretsmanager</artifactId>
+            <version>2.41.7</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/software.amazon.awscdk/secretsmanager -->
+        <dependency>
+            <groupId>software.amazon.awscdk</groupId>
+            <artifactId>secretsmanager</artifactId>
+            <version>1.204.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-secretsmanager -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-secretsmanager</artifactId>
+            <version>1.12.797</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>
