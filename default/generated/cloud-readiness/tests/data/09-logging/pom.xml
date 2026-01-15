@@ -161,6 +161,19 @@
             <artifactId>spring-cloud-starter-zipkin</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/io.zipkin.zipkin2/zipkin -->
+        <dependency>
+            <groupId>io.zipkin.zipkin2</groupId>
+            <artifactId>zipkin</artifactId>
+            <version>3.5.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/com.splunk/splunk -->
+        <dependency>
+            <groupId>com.splunk</groupId>
+            <artifactId>splunk</artifactId>
+            <version>1.9.5</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>
-		
