@@ -93,7 +93,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 6
       messageMatches: The application embeds the Spring Boot Cache library.
 - ruleID: embedded-cache-16000
   testCases:

@@ -374,6 +374,9 @@
     or:
     - java.dependency:
         name: org.springframework.boot.spring-boot-starter-cache
+    - java.referenced:
+        location: IMPORT
+        pattern: org.springframework.cache*
 - category: mandatory
   customVariables: []
   description: Caching - Redis Cache library
