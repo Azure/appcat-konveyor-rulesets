@@ -21,7 +21,7 @@
   - target=azure-aks
   - target=azure-container-apps
   - domain=cloud-readiness
-  - category=sdk-legacy-migration
+  - category=deprecated-apis
   - os=windows
   - os=linux
   links:
