@@ -21,7 +21,7 @@
   - target=azure-aks
   - target=azure-container-apps
   - domain=cloud-readiness
-  - category=deprecated-apis
+  - category=framework-upgrade
   - os=windows
   - os=linux
   links:
@@ -44,11 +44,30 @@
   ruleID: azure-java-sdk-legacy-migration-01000
   when:
     or:
-    - java.dependency:
-        nameregex: com\.microsoft\.azure\..*
+    - and:
+      - builtin.file:
+          pattern: pom.xml
+        as: poms
+        ignore: true
+      - builtin.xml:
+          filepaths: "{{poms.Filepaths}}"
+          from: poms
+          namespaces:
+            m: http://maven.apache.org/POM/4.0.0
+          xpath: >-
+            //m:dependency[m:groupId = 'com.microsoft.azure' and not(
+            m:artifactId = 'msal4j' or
+            m:artifactId = 'msal4j-persistence-extension' or
+            m:artifactId = 'javamsalruntime')]
     - java.referenced:
         location: IMPORT
         pattern: com.microsoft.azure*
-    - builtin.filecontent: # for groovy projects
-        filePattern: .*\.(groovy|gradle|toml)$
-        pattern: com.microsoft.azure*
+    - builtin.filecontent: # for gradle projects
+        filePattern: .*\.gradle$
+        pattern: com\.microsoft\.azure(?!:(msal4j|javamsalruntime|msal4j-persistence-extension))
+    - builtin.filecontent: # for gradle version catalogs (libs.versions.toml)
+        filePattern: .*\.toml$
+        pattern: group\s*=\s*"com\.microsoft\.azure"(?!.*name\s*=\s*"(msal4j|javamsalruntime|msal4j-persistence-extension)")
+    - builtin.filecontent: # for groovy source files
+        filePattern: .*\.groovy$
+        pattern: import\s+com\.microsoft\.azure\.(?!msal)
