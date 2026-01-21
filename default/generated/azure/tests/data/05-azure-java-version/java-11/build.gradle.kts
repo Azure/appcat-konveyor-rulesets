@@ -13,6 +13,12 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
 repositories {
     mavenCentral()
 }
