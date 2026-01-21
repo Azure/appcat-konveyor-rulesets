@@ -1,16 +1,18 @@
 /**
  * https://github.com/Azure/azure-libraries-for-java/blob/b324fabb9ba2c9687614c800c6ae69e189ce990e/azure-mgmt-resources/src/test/java/com/microsoft/azure/management/resources/core/TestBase.java
  */
-package com.microsoft.azure.management;
+package com.microsoft.azure.management.clientinitialization;
 
 import com.microsoft.azure.AzureEnvironment;
 import com.microsoft.azure.AzureResponseBuilder;
 import com.microsoft.azure.credentials.ApplicationTokenCredentials;
+import com.microsoft.azure.management.Azure;
 import com.microsoft.azure.management.resources.core.ResourceGroupTaggingInterceptor;
 import com.microsoft.azure.management.resources.fluentcore.utils.ProviderRegistrationInterceptor;
 import com.microsoft.azure.serializer.AzureJacksonAdapter;
 import com.microsoft.rest.LogLevel;
 import com.microsoft.rest.RestClient;
+import com.microsoft.azure.javamsalruntime.Account;
 
 import java.util.concurrent.TimeUnit;
 
