@@ -1,0 +1,100 @@
+name: Rule Category Validation
+
+on:
+  push:
+    branches: [ main, develop, "release-*" ]
+    paths: 
+      - 'default/generated/**'
+      - 'test/**'
+      - '.github/workflows/rule-category-validation.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths: 
+      - 'default/generated/**'
+      - 'test/**'
+      - '.github/workflows/rule-category-validation.yml'
+
+jobs:
+  validate-categories:
+    name: Validate Rule Categories
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyyaml
+        
+    - name: Run category validation tests
+      id: run_tests
+      run: |
+        cd test
+        python -m unittest test_mandatory_category.py -v 2>&1 | tee test_output.log
+        echo "exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
+      continue-on-error: true
+        
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: test/test_output.log
+        
+    - name: Comment on PR with results
+      if: github.event_name == 'pull_request' && steps.run_tests.outputs.exit_code != '0'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const testOutput = fs.readFileSync('test/test_output.log', 'utf8');
+          
+          const comment = `## ❌ Rule Category Validation Failed
+          
+          The following directories require all rules to have a \`category\` field:
+          - \`default/generated/azure\`
+          - \`default/generated/openjdk*\`
+          - \`default/generated/cloud-readiness\`
+          - \`default/generated/00-discovery\`
+          - \`default/generated/technology-usage\`
+          - \`default/generated/os\`
+          
+          ### Valid category values:
+          - \`mandatory\` - Required changes for successful migration
+          - \`potential\` - Potential issues that may require attention  
+          - \`optional\` - Optional improvements or recommendations
+          - \`information\` - Informational notes or tips
+          
+          ### Test Output:
+          \`\`\`
+          ${testOutput.slice(-2000)} // Last 2000 characters to avoid too long comments
+          \`\`\`
+          
+          Please add the missing \`category\` fields to fix this validation.`;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });
+        
+    - name: Fail job if tests failed
+      if: steps.run_tests.outputs.exit_code != '0'
+      run: |
+        echo "Category validation tests failed. Please check the test output and fix missing category fields."
+        exit 1
+        
+    - name: Success summary
+      if: steps.run_tests.outputs.exit_code == '0'
+      run: |
+        echo "## ✅ Rule Category Validation Passed" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "All rules in the mandatory directories have valid \`category\` fields." >> $GITHUB_STEP_SUMMARY
