@@ -13,6 +13,12 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_7
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(1.7))
+    }
+}
+
 repositories {
     mavenCentral()
 }

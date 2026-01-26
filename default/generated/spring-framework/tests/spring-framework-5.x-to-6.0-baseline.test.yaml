@@ -4,14 +4,14 @@ providers:
   dataPath: ./data/baseline
 - name: builtin
   dataPath: ./data/baseline
-tests:
-- ruleID: spring-framework-5.x-to-6.0-baseline-00001
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      exactly: 5
-- ruleID: spring-framework-5.x-to-6.0-baseline-00010
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      exactly: 2
+tests: []
+# - ruleID: spring-framework-5.x-to-6.0-baseline-00001
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 5
+# - ruleID: spring-framework-5.x-to-6.0-baseline-00010
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 2

@@ -13,6 +13,12 @@ java {
     targetCompatibility = JavaVersion.VERSION_19
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(19))
+    }
+}
+
 repositories {
     mavenCentral()
 }

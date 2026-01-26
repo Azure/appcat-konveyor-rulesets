@@ -3,9 +3,7 @@
   description: Relative path found
   effort: 5
   labels:
-  - source=eap7
-  - source=eap
-  - source=springboot
+  - source
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
@@ -57,9 +55,7 @@
   description: Home path found
   effort: 5
   labels:
-  - source=eap7
-  - source=eap
-  - source=springboot
+  - source
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps

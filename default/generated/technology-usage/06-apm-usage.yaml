@@ -10,7 +10,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: com\.microsoft\.azure\.([a-zA-Z0-9._-]*)applicationinsights([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^applicationinsights([a-zA-Z0-9._-]*)\.jar$
@@ -27,7 +26,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)newrelic([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^newrelic([a-zA-Z0-9._-]*)\.jar$
@@ -47,7 +45,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)elastic\.apm([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^elastic-apm([a-zA-Z0-9._-]*)\.jar$

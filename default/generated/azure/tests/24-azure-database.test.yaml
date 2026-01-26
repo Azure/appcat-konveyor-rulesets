@@ -27,7 +27,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 9
       messageMatches: To migrate a Java application that uses a Cassandra database to Azure
 - ruleID: azure-database-microsoft-mongodb-05000
   testCases:

@@ -3,8 +3,7 @@
   description: Avoid File System Logging in Java Code
   effort: 1
   labels:
-  - source=java
-  - source=java-ee
+  - source
   - target=azure-aks
   - target=azure-container-apps
   - target=azure-appservice
@@ -13,18 +12,19 @@
   - logging
   - os=windows
   - os=linux
-  links: []
+  links:
+  - title: Workspace-based Application Insights
+    url: https://learn.microsoft.com/azure/azure-monitor/app/create-workspace-resource
+  - title: Diagnostic settings
+    url: https://learn.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings
   message: |-
-    Found JAVA APIs that log to the file system. Logging to the file system is not recommended when running applications in the cloud.
-     Instead, use Azure Monitor for efficient and scalable logging.
+    Detected usage of Java APIs that write logs to the local file system. In Azure PaaS and container environments, file-based logging is discouraged because the file system is ephemeral and logs cannot be reliably aggregated across instances.
 
-     * Integrate with **Azure Monitor**: Configure your application to send logs to Azure Monitor. Azure Monitor provides a centralized platform for collecting, analyzing, and visualizing log data from various sources.
-
-     * Use **Azure Monitor Logging**: Utilize the Azure Monitor Logs feature, which enables you to query and analyze log data using the Kusto Query Language (KQL). KQL provides powerful querying capabilities to extract insights and perform advanced log analysis.
-
-     * Leverage **Log Analytics** workspaces: Create a Log Analytics workspace within Azure Monitor to store and analyze your log data effectively. Configure your application to send logs to the designated workspace, enabling centralized log storage and analysis.
-
-     * Utilize **KQL** for log analysis: Familiarize yourself with the Kusto Query Language (KQL) to write powerful queries for log analysis in Azure Monitor. KQL provides a flexible and efficient way to extract insights, perform aggregations, and create visualizations from your log data.
+    Recommendations:
+    * Prefer console logging: Configure Logback / Log4j / JUL to write logs to stdout/stderr only.
+    * Use Azure Monitor Logs: Capture console output via Azure platform diagnostic settings into workspace-based Application Insights (Log Analytics).
+    * Emit structured JSON logs to enable richer querying, aggregation, and correlation using KQL.
+    * Centralize analysis and visualization using Azure Monitor (Log Analytics).
   ruleID: logging-0000
   when:
     or:
@@ -45,8 +45,7 @@
   description: Logging to Socket Handler
   effort: 3
   labels:
-  - source=java
-  - source=java-ee
+  - source
   - target=azure-aks
   - target=azure-container-apps
   - target=azure-appservice
@@ -55,15 +54,16 @@
   - logging
   - os=windows
   - os=linux
-  links: []
+  links:
+  - title: Diagnostic settings
+    url: https://learn.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings
   message: |-
-    If an application writes logs with `SocketHandler`, an alternative method is required. Socket communication is not suitable for a cloud environment because it requires fixed communication with a target host.
+    Detected usage of `java.util.logging.SocketHandler`. Host-bound socket logging is not cloud-friendly due to fixed endpoints, firewall constraints, and fragile network dependencies in dynamic cloud environments.
 
-     Recommendations
-
-     * Use a centralized log management system.
-     * Log to standard output and allow the cloud platform to manage the logging.
-     * Use shared storage for log files.
+    Recommendations:
+    * Log to console (stdout/stderr) and let Azure capture logs via diagnostic settings.
+    * Use Azure Monitor Logs (workspace-based Application Insights) for centralized collection and querying.
+    * Prefer structured JSON output for improved search, aggregation, and correlation.
   ruleID: logging-0001
   when:
     java.referenced:
@@ -74,8 +74,7 @@
   description: Avoid File System Logging in Configuration
   effort: 1
   labels:
-  - source=java
-  - source=java-ee
+  - source
   - target=azure-aks
   - target=azure-container-apps
   - target=azure-appservice
@@ -93,10 +92,17 @@
     url: https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs
   - title: Log Analytics tutorial
     url: https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-tutorial
+  - title: Workspace-based Application Insights
+    url: https://learn.microsoft.com/azure/azure-monitor/app/create-workspace-resource
+  - title: Diagnostic settings
+    url: https://learn.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings
   message: |-
-    Found a logging configuration that logs to the file system. Logging to the file system is not recommended when running applications in the cloud.
-     Change your logging configuration to log to console.
-     We recommended you to use Azure Monitor for efficient and scalable logging.
+    Detected a logging configuration that writes logs to the local file system. In Azure environments, file-based appenders are discouraged due to ephemeral storage and lack of centralized access.
+
+    Recommendations:
+    * Switch to console appenders only (Logback / Log4j) and disable file or rolling file appenders.
+    * Collect logs using Azure Monitor Logs (workspace-based Application Insights) via diagnostic settings.
+    * Output structured JSON logs to improve KQL querying and cross-service correlation.
   ruleID: logging-0002
   when:
     or:
@@ -111,8 +117,7 @@
   description: Embedded library - Logstash
   effort: 3
   labels:
-  - source=java
-  - source=java-ee
+  - source
   - target=azure-aks
   - target=azure-container-apps
   - target=azure-appservice
@@ -129,19 +134,18 @@
   - title: Logstash EventHub plugin
     url: https://github.com/logstash-plugins/logstash-input-azure_event_hubs
   message: |-
-    The application embeds the Logstash framework. To migrate a Java application that uses LogStash/ELK Stack for log aggregation to Azure, you can follow this recommendation:
+    The application embeds the Logstash framework. In Azure, managing in-application Logstash pipelines is often unnecessary and increases operational complexity compared to Azure-native log collection.
 
-     * Ensure your logging output is routed to the console and not to files.
-
-     * Configure the diagnostic setting to stream the console output to an Azure Event Hub.
-
-     * Use the LogStash EventHub plugin to ingest logged events into LogStash.
+    Recommendations:
+    * Emit logs to console (stdout/stderr) and avoid file-based appenders.
+    * Use Azure Monitor Logs (workspace-based Application Insights) for log collection, retention, and querying.
+    * Produce structured JSON logs for improved analysis and correlation.
+    * If an existing ELK stack must be retained, stream Azure-collected logs to Event Hubs via diagnostic settings and ingest them using the Logstash Event Hubs input plugin.
   ruleID: logging-0003
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
-        nameregex: ([a-zA-Z0-9._-]*)logstash([a-zA-Z0-9._-]*)
+        name: org.logstash.logstash-core
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)logstash([a-zA-Z0-9._-]*)\.jar$
 - category: potential
@@ -149,8 +153,7 @@
   description: Embedded library - Splunk
   effort: 3
   labels:
-  - source=java
-  - source=java-ee
+  - source
   - target=azure-aks
   - target=azure-container-apps
   - target=azure-appservice
@@ -166,19 +169,20 @@
     url: https://learn.microsoft.com/azure/storage/blobs/
   - title: Splunk Add-on for Microsoft Cloud Services
     url: https://splunkbase.splunk.com/app/3757
+  - title: Azure Event Hub
+    url: https://learn.microsoft.com/azure/event-hubs/event-hubs-about
   message: |-
-    The application embeds the Splunk framework. To migrate a Java application that uses Splunk for log aggregation to Azure, you can follow this recommendation:
+    The application embeds Splunk-related libraries. In Azure, directly shipping logs from the application to Splunk is generally discouraged in favor of platform-level log collection.
 
-     * Ensure your logging output is routed to the console and not to files.
-
-     * Configure the diagnostic setting to stream the console output to Azure Blob Storage.
-
-     * Use the Splunk Add-on for Microsoft Cloud Services to ingest logged events into Splunk.
+    Recommendations:
+    * Write logs to console (stdout/stderr) and let Azure platform diagnostic settings collect them.
+    * Prefer Azure Monitor Logs (workspace-based Application Insights) for centralized collection and analysis.
+    * Emit structured JSON logs for richer querying and correlation.
+    * If Splunk is required, forward Azure-collected logs via Event Hubs or Blob Storage and ingest them using the Splunk Add-on for Microsoft Cloud Services.
   ruleID: logging-0004
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)splunk([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)splunk([a-zA-Z0-9._-]*)\.jar$
@@ -187,8 +191,7 @@
   description: Embedded framework - Zipkin
   effort: 1
   labels:
-  - source=java
-  - source=java-ee
+  - source
   - target=azure-aks
   - target=azure-container-apps
   - target=azure-appservice
@@ -204,20 +207,21 @@
     url: https://learn.microsoft.com/en-us/azure/container-apps/observability
   - title: Distributed Tracing
     url: https://learn.microsoft.com/azure/azure-monitor/app/distributed-trace-data
+  - title: Enable OpenTelemetry for Azure Monitor
+    url: https://learn.microsoft.com/azure/azure-monitor/app/opentelemetry-enable
   message: |-
-    The application embeds the Zipkin framework. To migrate a Java application that uses Zipkin to Azure, it is recommended to use Azure Monitor instead.
+    The application embeds the Zipkin framework for distributed tracing. In Azure, Azure Monitor (workspace-based Application Insights) with OpenTelemetry is the preferred approach for end-to-end observability.
 
-     * **Identify Zipkin dependencies**: Identify the Zipkin dependencies in your application.
-
-     * **Replace with Azure Monitor**: Azure Monitor provides distributed tracing capabilities. Azure services such as Azure Container Apps, Azure Kubernetes Service, Azure App Service support auto-instrumentation for Azure Monitor.
+    Recommendations:
+    * Evaluate removing or phasing out Zipkin dependencies where feasible.
+    * Adopt the OpenTelemetry SDK or agent with the Azure Monitor exporter; many Azure services support auto-instrumentation.
+    * Use W3C Trace Context and emit structured JSON logs to improve correlation across traces, logs, and metrics in Azure Monitor Logs.
   ruleID: logging-0005
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-cloud-starter-zipkin
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: io\.zipkin([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)zipkin([a-zA-Z0-9._-]*)\.jar$

@@ -29,7 +29,7 @@
 
     Note: Jakarta EE (jakarta.*) should be preferred over legacy Java EE (javax.*)
     for cloud and container-based deployments.
-  ruleID: commonj-weblogic-02000
+  ruleID: commonj-websphere-02000
   when:
     java.referenced:
       pattern: commonj.timers.TimerManager
@@ -56,7 +56,7 @@
     Jakarta EE Timer represents a container-managed scheduled task and is typically
     used together with jakarta.ejb.TimerService as the modern replacement for
     CommonJ timers in Jakarta EE applications.
-  ruleID: commonj-weblogic-03000
+  ruleID: commonj-websphere-03000
   when:
     java.referenced:
       pattern: commonj.timers.Timer
@@ -89,7 +89,7 @@
 
     JCA Resource Adapters should only be considered for legacy, full application
     server deployments.
-  ruleID: commonj-weblogic-05000
+  ruleID: commonj-websphere-05000
   when:
     java.referenced:
       pattern: commonj.work.WorkManager
@@ -114,7 +114,7 @@
   links: []
   message: |-
     Replace commonj.work.Work{{part}} with jakarta.resource.spi.work.Work{{part}}.
-  ruleID: commonj-weblogic-06000
+  ruleID: commonj-websphere-06000
   when:
     java.referenced:
       pattern: commonj.work.Work(Event|Item|Listener)?
@@ -140,7 +140,7 @@
   message: |-
     Replace CommonJ Work related exceptions with the corresponding 
     jakarta.resource.spi.work.Work{{subpart}}Exception subclass.
-  ruleID: commonj-weblogic-07000
+  ruleID: commonj-websphere-07000
   when:
     or:
     - java.referenced:

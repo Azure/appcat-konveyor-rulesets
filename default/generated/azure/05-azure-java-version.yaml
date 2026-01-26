@@ -28,10 +28,13 @@
         xpath: //m:java.version[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] | 
                //m:maven.compiler.source[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
                //m:maven.compiler.target[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
-               //m:maven.compiler.release[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] 
+               //m:maven.compiler.release[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:source[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:target[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:release[matches(text(), '(9|10|12|13|14|15|16|19|20).*')]
     - builtin.filecontent:
         filePattern: (/|\\)build\.gradle(\.kts)?$
-        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(9|10|12|13|14|15|16|18|19|20)['"]?|JavaVersion\.VERSION_(9|10|12|13|14|15|16|18|19|20)(?!\d))
+        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(9|10|12|13|14|15|16|18|19|20)['"]?|JavaVersion\.VERSION_(9|10|12|13|14|15|16|18|19|20)(?!\d))|JavaLanguageVersion\.of\((9|10|12|13|14|15|16|18|19|20)\)
 
 - category: mandatory
   customVariables: []
@@ -63,7 +66,10 @@
         xpath: //m:java.version[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
                //m:maven.compiler.source[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
                //m:maven.compiler.target[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
-               //m:maven.compiler.release[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')]
+               //m:maven.compiler.release[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:source[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:target[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:release[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')]
     - builtin.filecontent:
         filePattern: (/|\\)build\.gradle(\.kts)?$
-        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(1\.(0|1|2|3|4|5|6|7|8|9|10)|[2-8]|11)['"]?|JavaVersion\.VERSION_(1_0|1_1|1_2|1_3|1_4|1_5|1_6|1_7|1_8|1_9|1_10|2|3|4|5|6|7|8|11)(?!\d))
+        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(1\.(0|1|2|3|4|5|6|7|8|9|10)|[2-8]|11)['"]?|JavaVersion\.VERSION_(1_0|1_1|1_2|1_3|1_4|1_5|1_6|1_7|1_8|1_9|1_10|2|3|4|5|6|7|8|11)(?!\d))|JavaLanguageVersion\.of\((1(\.([0-9]|10))?|[2-8]|11)\)

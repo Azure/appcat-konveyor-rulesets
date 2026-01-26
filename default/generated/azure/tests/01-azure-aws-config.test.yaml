@@ -73,7 +73,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 2
+      exactly: 7
       messageMatches: The application contains AWS Secrets Manager configuration
 - ruleID: aws-lambda-to-azure-functions-01000
   testCases:
