@@ -4,7 +4,7 @@
     nameOfCaptureGroup: encoderDecoder
     pattern: sun.misc.BASE64(?P<encoderDecoder>(Encoder|Decoder))?.*
   description: The `sun.misc.BASE64` class has been removed.
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk11-
   - source=openjdk
@@ -43,7 +43,7 @@
 - category: mandatory
   customVariables: []
   description: The `runFinalizersOnExit` methods have been removed
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk11-
   - source=openjdk

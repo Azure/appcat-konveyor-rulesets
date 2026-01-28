@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of com.sun.awt.AWTUtilities Class
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk11-
   - source=openjdk

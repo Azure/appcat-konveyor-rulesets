@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Oracle AQ JMS APIs detected
-  effort: 3
+  effort: 5
   labels:
   - source=weblogic
   - domain=java-upgrade

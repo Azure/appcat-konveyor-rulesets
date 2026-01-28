@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Detect OpenLiberty JMS ConnectionFactory configurations
-  effort: 5
+  effort: 8
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -46,7 +46,7 @@
 - category: mandatory
   customVariables: []
   description: Detect JMS Resource injection in application code
-  effort: 5
+  effort: 8
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -99,7 +99,7 @@
 - category: mandatory
   customVariables: []
   description: Detect Message-Driven Bean implementations
-  effort: 5
+  effort: 8
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -143,7 +143,7 @@
 - category: mandatory
   customVariables: []
   description: Detect JMS resource references in web.xml/ejb-jar.xml
-  effort: 3
+  effort: 8
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -191,7 +191,7 @@
 - category: mandatory
   customVariables: []
   description: Detect JMS JNDI lookups in code
-  effort: 5
+  effort: 8
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -218,7 +218,7 @@
 - category: mandatory
   customVariables: []
   description: Detect JMS API usage in code
-  effort: 5
+  effort: 13
   labels:
   - source=java-ee
   - target=azure-appservice

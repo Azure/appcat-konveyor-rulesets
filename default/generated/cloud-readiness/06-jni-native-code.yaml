@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Java native libraries (JNI, JNA)
-  effort: 7
+  effort: 8
   labels:
   - target=azure-aks
   - target=azure-container-apps
@@ -68,7 +68,7 @@
 - category: mandatory
   customVariables: []
   description: Java Native Processes
-  effort: 7
+  effort: 8
   labels:
   - target=azure-aks
   - target=azure-container-apps

@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Terminally Deprecated ThreadGroup stop, destroy, isDestroyed, setDaemon and isDaemon
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk16-
   - source=openjdk

@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: ClassLoader Parameter Respected in javax.xml.stream Factory Methods
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk8-
   - source=openjdk

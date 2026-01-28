@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of sun.nio.ch.disableSystemWideOverlappingFileLockCheck Property
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk11-
   - source=openjdk
@@ -28,7 +28,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of sun.locale.formatasdefault Property
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk11-
   - source=openjdk

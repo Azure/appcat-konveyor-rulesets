@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Legacy javax.* spec artifacts detected
-  effort: 1
+  effort: 5
   labels:
   - source=jakarta-ee7+
   - source=jakarta-ee

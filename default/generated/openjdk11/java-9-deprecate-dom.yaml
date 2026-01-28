@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecation of common DOM APIs
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk9-
   - source=openjdk

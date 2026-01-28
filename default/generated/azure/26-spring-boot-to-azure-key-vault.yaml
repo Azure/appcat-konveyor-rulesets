@@ -1,7 +1,7 @@
 - category: potential
   customVariables: []
   description: Embedded library - Spring Cloud Vault
-  effort: 1
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks

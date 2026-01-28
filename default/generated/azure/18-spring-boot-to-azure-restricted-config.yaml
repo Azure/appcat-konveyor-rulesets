@@ -14,7 +14,7 @@
 - category: potential
   customVariables: []
   description: Restricted configurations found
-  effort: 1
+  effort: 2
   labels:
   - target=azure-container-apps
   - source=springboot

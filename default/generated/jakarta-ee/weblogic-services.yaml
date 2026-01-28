@@ -100,7 +100,7 @@
 - category: mandatory
   customVariables: []
   description: WebLogic proprietary web services APIs detected
-  effort: 3
+  effort: 5
   labels:
   - source=weblogic
   - domain=java-upgrade
@@ -145,7 +145,7 @@
 - category: mandatory
   customVariables: []
   description: WebLogic proprietary web security APIs detected
-  effort: 3
+  effort: 5
   labels:
   - source=weblogic
   - domain=java-upgrade

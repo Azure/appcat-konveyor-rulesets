@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: The netdoc URL protocol Handler is removed
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk9-
   - source=openjdk

@@ -51,7 +51,7 @@
 - category: 
   customVariables: []
   description: Migrate WebLogic Server applications to Azure Container Apps
-  effort: 7
+  effort: 8
   labels:
   - target=azure-container-apps
   - os=windows

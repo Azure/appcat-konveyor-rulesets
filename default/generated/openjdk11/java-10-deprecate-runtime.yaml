@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of Runtime.getLocalizedInputStream and getLocalizedOutputStream Methods
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk10-
   - source=openjdk

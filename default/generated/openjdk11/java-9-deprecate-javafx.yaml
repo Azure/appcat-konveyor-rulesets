@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: JavaFX builder classes have been removed
-  effort: 3
+  effort: 5
   labels:
   - source=openjdk9-
   - source=openjdk

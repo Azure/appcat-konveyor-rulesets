@@ -1,7 +1,7 @@
 - category: optional
   customVariables: []
   description: Ant build tool found
-  effort: 3
+  effort: 8
   labels:
   - target=azure-aks
   - target=azure-container-apps
@@ -26,7 +26,7 @@
 - category: optional
   customVariables: []
   description: Eclipse project found
-  effort: 3
+  effort: 8
   labels:
   - target=azure-aks
   - target=azure-container-apps

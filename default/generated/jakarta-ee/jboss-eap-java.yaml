@@ -50,7 +50,7 @@
 - category: mandatory
   customVariables: []
   description: JBossWS internal APIs detected
-  effort: 1
+  effort: 3
   labels:
   - domain=java-upgrade
   - category=deprecated-apis
@@ -92,7 +92,7 @@
 - category: mandatory
   customVariables: []
   description: JBoss proprietary @SecurityDomain annotation detected
-  effort: 2
+  effort: 3
   labels:
   - domain=java-upgrade
   - category=deprecated-apis

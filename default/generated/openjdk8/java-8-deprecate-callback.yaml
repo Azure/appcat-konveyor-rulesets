@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: The class com.sun.security.auth.callback.DialogCallbackHandler has been deprecated
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk8-
   - source=openjdk

@@ -24,7 +24,7 @@
 - category: mandatory
   customVariables: []
   description: Migrate JBoss EAP applications to Azure Kubernetes Service
-  effort: 7
+  effort: 8
   labels:
   - target=azure-aks
   - os=windows
@@ -50,7 +50,7 @@
 - category: mandatory
   customVariables: []
   description: Migrate JBoss EAP applications to Azure Container Apps
-  effort: 7
+  effort: 8
   labels:
   - target=azure-container-apps
   - os=windows

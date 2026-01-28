@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Method jakarta.enterprise.inject.spi.BeanManager.createInjectionTarget(AnnotatedType) has been removed.
-  effort: 1
+  effort: 2
   labels:
   - source=eap6
   - source=eap7
@@ -30,7 +30,7 @@
   customVariables: []
   description: Method jakarta.enterprise.inject.spi.BeanManager.fireEvent(Object,
     Annotation) has been removed.
-  effort: 1
+  effort: 2
   labels:
   - source=eap6
   - source=eap7
