@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: IBM WebSphere / MQ proprietary JMS APIs detected
-  effort: 3
+  effort: 5
   labels:
   - source=websphere
   - domain=java-upgrade

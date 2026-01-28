@@ -1,7 +1,7 @@
 - category: optional
   customVariables: []
   description: Get started with JBoss EAP on App Service
-  effort: 1
+  effort: 2
   labels:
   - source=eap7
   - source=eap

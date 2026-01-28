@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removed Deprecated java.security.acl APIs
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk14-
   - source=openjdk

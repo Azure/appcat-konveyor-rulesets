@@ -1,7 +1,7 @@
 - category: potential
   customVariables: []
   description: Java Mail API
-  effort: 3
+  effort: 5
   labels:
   - source=java
   - source=java-ee

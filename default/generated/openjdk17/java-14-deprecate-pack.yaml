@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Remove the Pack200 Tools and API
-  effort: 1
+  effort: 5
   labels:
   - source=openjdk14-
   - source=openjdk

@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Spring Framework Version End of OSS Support
-  effort: 3
+  effort: 8
   labels:
   - source=spring
   - target=azure-appservice

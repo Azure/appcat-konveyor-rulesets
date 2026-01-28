@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: javax.management.remote.rmi.RMIIIOPServerImpl Is Removed
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk21-
   - source=openjdk

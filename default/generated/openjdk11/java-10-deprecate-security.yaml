@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of Deprecated Pre-1.2 SecurityManager Methods and Fields
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk10-
   - source=openjdk
@@ -39,7 +39,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of Deprecated Classes in com.sun.security.auth.**
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk10-
   - source=openjdk

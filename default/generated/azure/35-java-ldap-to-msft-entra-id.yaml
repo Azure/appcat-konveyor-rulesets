@@ -1,7 +1,7 @@
 - category: optional
   customVariables: []
   description: Java LDAP usage detected
-  effort: 3
+  effort: 8
   labels:
   - source=java-ldap
   - target=azure-appservice

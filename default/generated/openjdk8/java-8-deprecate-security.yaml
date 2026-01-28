@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Access to com.sun.media.sound Restricted Under SecurityManager 
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk8-
   - source=openjdk
@@ -29,7 +29,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecation of SecurityPermission 'insertProvider.{name}' in Favor of 'insertProvider'
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk8-
   - source=openjdk
@@ -62,7 +62,7 @@
 - category: mandatory
   customVariables: []
   description: The SecurityManager.checkMemberAccess method is deprecated.
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk8-
   - source=openjdk
@@ -91,7 +91,7 @@
 - category: mandatory
   customVariables: []
   description: The checkTopLevelWindow, checkSystemClipboardAccess, and checkAwtEventQueueAccess methods under SecurityManager class are deprecated.
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk8-
   - source=openjdk

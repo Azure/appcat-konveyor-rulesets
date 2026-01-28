@@ -14,7 +14,7 @@
 # - category: optional
 #   customVariables: []
 #   description: External resources found in Jetty configuration file
-#   effort: 5
+#   effort: 3
 #   labels:
 #   - os=windows
 #   - os=linux

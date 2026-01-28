@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of HostServicesgetWebContext Method
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk10-
   - source=openjdk

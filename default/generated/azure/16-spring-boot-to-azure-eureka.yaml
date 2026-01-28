@@ -1,7 +1,7 @@
 - category: potential
   customVariables: []
   description: Explicit eureka connection info found in configuration file
-  effort: 1
+  effort: 2
   labels:
   - source=springboot
   - target=azure-aks
@@ -32,7 +32,7 @@
 - category: potential
   customVariables: []
   description: Embedded framework - Eureka Client
-  effort: 1
+  effort: 2
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -69,7 +69,7 @@
 - category: potential
   customVariables: []
   description: Embedded framework - Eureka Server
-  effort: 1
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks

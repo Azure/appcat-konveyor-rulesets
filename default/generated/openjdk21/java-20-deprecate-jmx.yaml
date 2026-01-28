@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecate JMX Management Applets for Removal
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk20-
   - source=openjdk

@@ -189,7 +189,7 @@
 - category: potential
   customVariables: []
   description: Embedded framework - Zipkin
-  effort: 1
+  effort: 3
   labels:
   - source
   - target=azure-aks

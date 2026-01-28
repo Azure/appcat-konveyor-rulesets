@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: References to java.awt.peer and java.awt.dnd.peer packages were removed from the public API
-  effort: 1
+  effort: 5
   labels:
   - source=openjdk9-
   - source=openjdk

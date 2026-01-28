@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Migrate commonj.timers.TimerManager to Jakarta EE jakarta.ejb.TimerService
-  effort: 7
+  effort: 8
   labels:
   - domain=java-upgrade
   - category=deprecated-apis
@@ -36,7 +36,7 @@
 - category: mandatory
   customVariables: []
   description: Migrate commonj.timers.Timer to Jakarta EE jakarta.ejb.Timer
-  effort: 7
+  effort: 8
   labels:
   - domain=java-upgrade
   - category=deprecated-apis
@@ -63,7 +63,7 @@
 - category: mandatory
   customVariables: []
   description: Migrate CommonJ WorkManager to Jakarta EE ManagedExecutorService APIs
-  effort: 7
+  effort: 8
   labels:
   - domain=java-upgrade
   - category=deprecated-apis

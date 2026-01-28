@@ -14,7 +14,7 @@
 # - category: optional
 #   customVariables: []
 #   description: Static content found in the application
-#   effort: 5
+#   effort: 2
 #   labels:
 #   - os=windows
 #   - os=linux

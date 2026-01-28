@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Local HTTP Calls
-  effort: 7
+  effort: 8
   labels:
   - target=azure-aks
   - target=azure-container-apps
@@ -25,7 +25,7 @@
 - category: mandatory
   customVariables: []
   description: Local JDBC Calls
-  effort: 7
+  effort: 8
   labels:
   - target=azure-aks
   - target=azure-container-apps
@@ -49,7 +49,7 @@
 - category: mandatory
   customVariables: []
   description: Local WebSocket Calls
-  effort: 7
+  effort: 8
   labels:
   - target=azure-aks
   - target=azure-container-apps
@@ -73,7 +73,7 @@
 - category: optional
   customVariables: []
   description: Localhost Usage
-  effort: 7
+  effort: 8
   labels:
   - target=azure-aks
   - target=azure-container-apps

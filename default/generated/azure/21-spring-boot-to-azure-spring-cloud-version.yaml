@@ -14,7 +14,7 @@
 - category: mandatory
   customVariables: []
   description: Spring Cloud version too low
-  effort: 5
+  effort: 8
   labels:
   - source=springboot
   - target=azure-aks
@@ -55,7 +55,7 @@
 - category: mandatory
   customVariables: []
   description: spring cloud version out of support
-  effort: 3
+  effort: 8
   labels:
   - source=springboot
   - target=azure-aks

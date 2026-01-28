@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Application Performance Management (APM) tool - New Relic
-  effort: 1
+  effort: 2
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -29,7 +29,7 @@
 - category: mandatory
   customVariables: []
   description: Application Performance Management (APM) tool - Elastic APM
-  effort: 3
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -63,7 +63,7 @@
 - category: mandatory
   customVariables: []
   description: Application Performance Management (APM) tool - Dynatrace
-  effort: 3
+  effort: 2
   labels:
   - target=azure-appservice
   - target=azure-aks

@@ -1,7 +1,7 @@
 - category: potential
   customVariables: []
   description: Detects Jakarta Authentication or Authorization usage
-  effort: 5
+  effort: 8
   labels:
   - source=java
   - source=java-ee

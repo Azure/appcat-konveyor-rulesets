@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecate the Socket Implementation Factory Mechanism
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk17-
   - source=openjdk

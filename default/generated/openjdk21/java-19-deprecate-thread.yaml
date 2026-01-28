@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: java.lang.ThreadGroup Is Degraded
-  effort: 3
+  effort: 5
   labels:
   - source=openjdk19-
   - source=openjdk

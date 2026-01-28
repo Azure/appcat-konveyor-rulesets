@@ -14,7 +14,7 @@
 - category: optional
   customVariables: []
   description: Environment variables/system properties
-  effort: 1
+  effort: 3
   labels:
   - target=azure-appservice
   - target=azure-aks

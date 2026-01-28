@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of finalize Methods from FileInputStream and FileOutputStream
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk12-
   - source=openjdk
@@ -33,7 +33,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of finalize Method in java.util.ZipFile/Inflator/Deflator
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk12-
   - source=openjdk

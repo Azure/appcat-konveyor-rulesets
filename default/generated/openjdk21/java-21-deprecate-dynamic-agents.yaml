@@ -1,7 +1,7 @@
 - category: potential
   customVariables: []
   description: Dynamic loading of agents will be removed at a later JDK release
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk21-
   - source=openjdk

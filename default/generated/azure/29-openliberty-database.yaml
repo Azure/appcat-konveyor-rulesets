@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Detect OpenLiberty Data Source configurations
-  effort: 3
+  effort: 5
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -95,7 +95,7 @@
 - category: potential
   customVariables: []
   description: Detect OpenLiberty Sybase Data Source configurations
-  effort: 7
+  effort: 8
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -331,7 +331,7 @@
 - category: potential
   customVariables: []
   description: Detect OpenLiberty Oracle Data Source configurations
-  effort: 5
+  effort: 8
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -393,7 +393,7 @@
 - category: potential
   customVariables: []
   description: Detect OpenLiberty PostgreSQL Data Source configurations
-  effort: 5 
+  effort: 5
   labels:
   - source=java-ee
   - target=azure-appservice

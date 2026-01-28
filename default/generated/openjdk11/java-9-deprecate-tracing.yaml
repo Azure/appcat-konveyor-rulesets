@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: com.sun.tracing APIs are removed
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk9-
   - source=openjdk
