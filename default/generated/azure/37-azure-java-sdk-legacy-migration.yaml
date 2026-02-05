@@ -55,10 +55,26 @@
           namespaces:
             m: http://maven.apache.org/POM/4.0.0
           xpath: >-
-            //m:dependency[m:groupId = 'com.microsoft.azure' and not(
-            m:artifactId = 'msal4j' or
-            m:artifactId = 'msal4j-persistence-extension' or
-            m:artifactId = 'javamsalruntime')]
+            //m:dependency[starts-with(m:groupId, 'com.microsoft.azure') and (
+            m:artifactId = 'azure-servicebus' or
+            m:artifactId = 'azure-eventhubs' or
+            m:artifactId = 'azure-eventhubs-eph' or
+            m:artifactId = 'azure-eventgrid' or
+            m:artifactId = 'azure-storage' or
+            m:artifactId = 'azure-keyvault' or
+            m:artifactId = 'azure-batch' or
+            m:artifactId = 'azure-cosmos' or
+            m:artifactId = 'azure-cosmosdb' or
+            m:artifactId = 'azure-documentdb' or
+            m:artifactId = 'azure-documentdb-rx' or
+            m:artifactId = 'azure-client-runtime' or
+            m:artifactId = 'azure-client-authentication' or
+            m:artifactId = 'adal4j' or
+            m:artifactId = 'azure-media' or
+            m:artifactId = 'azure-search' or
+            m:artifactId = 'azure' or
+            starts-with(m:artifactId, 'azure-mgmt-') or
+            starts-with(m:artifactId, 'azure-cognitiveservices-'))]
     - builtin.filecontent: # for Java source files. java.referenced doesn't seem to allow negative lookahead and will always match, e.g. com.microsoft.azuretools, somehow.
         filePattern: .*\.java$
         pattern: import\s+com\.microsoft\.azure\.(?!javamsalruntime) # msal related imports are located in com.microsoft.aad

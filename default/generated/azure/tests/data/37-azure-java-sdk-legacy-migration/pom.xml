@@ -33,6 +33,118 @@
       <artifactId>azure</artifactId>
       <version>1.36.3</version>
     </dependency>
+    <!-- Additional deprecated packages from inclusion list -->
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-servicebus</artifactId>
+      <version>3.6.7</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-eventhubs</artifactId>
+      <version>3.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-eventhubs-eph</artifactId>
+      <version>3.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-eventgrid</artifactId>
+      <version>1.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-storage</artifactId>
+      <version>8.6.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-keyvault</artifactId>
+      <version>1.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-batch</artifactId>
+      <version>11.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-cosmos</artifactId>
+      <version>3.7.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-cosmosdb</artifactId>
+      <version>2.6.15</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-documentdb</artifactId>
+      <version>2.6.5</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-documentdb-rx</artifactId>
+      <version>2.6.5</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-client-runtime</artifactId>
+      <version>1.7.14</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-client-authentication</artifactId>
+      <version>1.7.14</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>adal4j</artifactId>
+      <version>1.6.7</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-media</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-search</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-mgmt-resources</artifactId>
+      <version>1.41.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-mgmt-compute</artifactId>
+      <version>1.41.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-mgmt-storage</artifactId>
+      <version>1.41.4</version>
+    </dependency>
+    <!-- Cognitive services deprecated packages -->
+    <dependency>
+      <groupId>com.microsoft.azure.cognitiveservices</groupId>
+      <artifactId>azure-cognitiveservices-textanalytics</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure.cognitiveservices</groupId>
+      <artifactId>azure-cognitiveservices-computervision</artifactId>
+      <version>1.0.9</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure.cognitiveservices</groupId>
+      <artifactId>azure-cognitiveservices-face</artifactId>
+      <version>1.0.1</version>
+    </dependency>
     <!-- Below msal related libraries are not deprecated. See https://github.com/Azure/azure-sdk-for-java/issues/39214 -->
     <dependency>
       <groupId>com.microsoft.azure</groupId>
@@ -48,6 +160,22 @@
       <groupId>com.microsoft.azure</groupId>
       <artifactId>javamsalruntime</artifactId>
       <version>0.17.4</version>
+    </dependency>
+    <!-- Below actively maintained packages should NOT trigger alerts -->
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>applicationinsights-core</artifactId>
+      <version>3.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>applicationinsights-web</artifactId>
+      <version>3.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>qpid-proton-j-extensions</artifactId>
+      <version>1.2.5</version>
     </dependency>
     <dependency>
       <groupId>commons-net</groupId>
