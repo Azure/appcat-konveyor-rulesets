@@ -1,13 +1,13 @@
 rulesPath: ../37-azure-java-sdk-legacy-migration.yaml
 providers:
 - name: java
-  dataPath: ./data/37-azure-java-sdk-legacy-migration
+  dataPath: ./data/37-azure-java-sdk-legacy-migration/gradle
 - name: builtin
-  dataPath: ./data/37-azure-java-sdk-legacy-migration
+  dataPath: ./data/37-azure-java-sdk-legacy-migration/gradle
 tests:
 - ruleID: azure-java-sdk-legacy-migration-01000
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 32 # 20 from com.microsoft.azure + 3 from com.microsoft.azure.cognitiveservices in pom.xml + 9 in imports
+      exactly: 23 # from com.microsoft.azure in build.gradle
       messageMatches: The application is using deprecated Azure legacy Java SDKs

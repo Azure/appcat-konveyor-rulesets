@@ -1,0 +1,9 @@
+[versions]
+azure-cognitiveservices-textanalytics = "1.0.2"
+azure-cognitiveservices-computervision = "1.0.9"
+azure-cognitiveservices-face = "1.0.1"
+
+[libraries]
+azure-cognitiveservices-textanalytics = { group = "com.microsoft.azure.cognitiveservices", name = "azure-cognitiveservices-textanalytics", version.ref = "azure-cognitiveservices-textanalytics" }
+azure-cognitiveservices-computervision = { module = "com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision", version.ref = "azure-cognitiveservices-computervision" }
+azure-cognitiveservices-face = { module = "com.microsoft.azure.cognitiveservices:azure-cognitiveservices-face", version.ref = "azure-cognitiveservices-face" }
