@@ -55,37 +55,42 @@
           namespaces:
             m: http://maven.apache.org/POM/4.0.0
           xpath: >-
-            //m:dependency[starts-with(m:groupId, 'com.microsoft.azure') and (
-            m:artifactId = 'azure-servicebus' or
-            m:artifactId = 'azure-eventhubs' or
-            m:artifactId = 'azure-eventhubs-eph' or
-            m:artifactId = 'azure-eventgrid' or
-            m:artifactId = 'azure-storage' or
-            m:artifactId = 'azure-keyvault' or
-            m:artifactId = 'azure-batch' or
-            m:artifactId = 'azure-cosmos' or
-            m:artifactId = 'azure-cosmosdb' or
-            m:artifactId = 'azure-documentdb' or
-            m:artifactId = 'azure-documentdb-rx' or
-            m:artifactId = 'azure-client-runtime' or
-            m:artifactId = 'azure-client-authentication' or
-            m:artifactId = 'adal4j' or
-            m:artifactId = 'azure-media' or
-            m:artifactId = 'azure-search' or
-            m:artifactId = 'azure' or
-            starts-with(m:artifactId, 'azure-mgmt-') or
-            starts-with(m:artifactId, 'azure-cognitiveservices-'))]
+            //m:dependency[
+              (starts-with(m:groupId, 'com.microsoft.azure') and (
+                m:artifactId = 'azure-servicebus' or
+                m:artifactId = 'azure-eventhubs' or
+                m:artifactId = 'azure-eventhubs-eph' or
+                m:artifactId = 'azure-eventgrid' or
+                m:artifactId = 'azure-storage' or
+                m:artifactId = 'azure-keyvault' or
+                m:artifactId = 'azure-batch' or
+                m:artifactId = 'azure-cosmos' or
+                m:artifactId = 'azure-cosmosdb' or
+                m:artifactId = 'azure-documentdb' or
+                m:artifactId = 'azure-documentdb-rx' or
+                m:artifactId = 'azure-client-runtime' or
+                m:artifactId = 'azure-client-authentication' or
+                m:artifactId = 'adal4j' or
+                m:artifactId = 'azure-media' or
+                m:artifactId = 'azure-search' or
+                m:artifactId = 'azure' or
+                starts-with(m:artifactId, 'azure-mgmt-') or
+                starts-with(m:artifactId, 'azure-cognitiveservices-')
+              ))
+              or
+              (m:groupId = 'com.azure' and m:artifactId = 'azure-search')
+            ]
     - builtin.filecontent: # for Java source files. java.referenced doesn't seem to allow negative lookahead and will always match, e.g. com.microsoft.azuretools, somehow.
         filePattern: .*\.java$
-        pattern: import\s+com\.microsoft\.azure\.(?!javamsalruntime) # msal related imports are located in com.microsoft.aad
+        pattern: import\s+(com\.microsoft\.azure\.(?!javamsalruntime)|com\.azure\.search(?!\.documents)) # include com.azure.search but exclude search.documents; msal related imports are in com.microsoft.aad
     - builtin.filecontent: # for gradle projects
         filePattern: .*\.gradle$
         pattern: >-
-          com\.microsoft\.azure(\.cognitiveservices)?:(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventgrid|azure-storage|azure-keyvault|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+):
+          (com\.microsoft\.azure(\.cognitiveservices)?:(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventgrid|azure-storage|azure-keyvault|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+)|com\.azure:azure-search):
     - builtin.filecontent: # for gradle version catalogs (libs.versions.toml)
         filePattern: .*\.toml$
         pattern: >-
-          (group\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?"\s*,\s*name\s*=\s*"|module\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?:)(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventgrid|azure-storage|azure-keyvault|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+)"
+          ((group\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?"\s*,\s*name\s*=\s*"|module\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?:)(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventgrid|azure-storage|azure-keyvault|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+)"|group\s*=\s*"com\.azure"\s*,\s*name\s*=\s*"azure-search"|module\s*=\s*"com\.azure:azure-search")
     - builtin.filecontent: # for groovy source files
         filePattern: .*\.groovy$
-        pattern: import\s+com\.microsoft\.azure\.(?!javamsalruntime) # msal related imports are located in com.microsoft.aad
+        pattern: import\s+(com\.microsoft\.azure\.(?!javamsalruntime)|com\.azure\.search(?!\.documents)) # include com.azure.search but exclude search.documents; msal related imports are in com.microsoft.aad
