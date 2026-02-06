@@ -5,14 +5,26 @@ package com.microsoft.azure.management.clientinitialization;
 
 import com.microsoft.azure.AzureEnvironment;
 import com.microsoft.azure.AzureResponseBuilder;
+import com.microsoft.aad.adal4j.AdalAuthorizationGrant;
+import com.microsoft.azure.batch.AccountOperations;
+import com.microsoft.azure.cognitiveservices.vision.computervision.ComputerVision;
+import com.microsoft.azure.cosmosdb.rx.AsyncDocumentClient;
+import com.microsoft.azure.documentdb.AccessCondition;
+import com.microsoft.azure.eventgrid.DomainCredentials;
+import com.microsoft.azure.eventhubs.BatchOptions;
+import com.microsoft.azure.eventprocessorhost.BaseLease;
+import com.microsoft.azure.keyvault.CertificateIdentifier;
+import com.microsoft.azure.servicebus.ClientFactory;
 import com.microsoft.azure.credentials.ApplicationTokenCredentials;
 import com.microsoft.azure.management.Azure;
-import com.microsoft.azure.management.resources.core.ResourceGroupTaggingInterceptor;
-import com.microsoft.azure.management.resources.fluentcore.utils.ProviderRegistrationInterceptor;
+import com.microsoft.windowsazure.services.blob.BlobConfiguration;
 import com.microsoft.azure.serializer.AzureJacksonAdapter;
 import com.microsoft.rest.LogLevel;
 import com.microsoft.rest.RestClient;
+
 import com.microsoft.azure.javamsalruntime.Account;
+import com.microsoft.azure.management.resources.core.ResourceGroupTaggingInterceptor;
+import com.microsoft.azure.management.resources.fluentcore.utils.ProviderRegistrationInterceptor;
 
 import java.util.concurrent.TimeUnit;
 
