@@ -9,36 +9,36 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 6
-      messageMatches: Found JAVA APIs that log to the file system
+      exactly: 6
+      messageMatches: Detected usage of Java APIs that write logs to the local file system
 - ruleID: logging-0001
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
-      messageMatches: If an application writes logs with `SocketHandler`, an alternative
+      exactly: 1
+      messageMatches: Host-bound socket logging is not cloud-friendly
         method
 - ruleID: logging-0002
   testCases:
   - name: tc-1
     hasIncidents:
       exactly: 30
-      messageMatches: Found a logging configuration that logs to the file system
+      messageMatches: Detected a logging configuration that writes logs to the local file system
 - ruleID: logging-0003
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
-      messageMatches: The application embeds the Logstash framework.
+      exactly: 1
+      messageMatches: The application embeds the Logstash framework
 - ruleID: logging-0004
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
-      messageMatches: The application embeds the Splunk framework.
+      exactly: 2
+      messageMatches: The application embeds Splunk-related libraries
 - ruleID: logging-0005
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
-      messageMatches: The application embeds the Zipkin framework.
+      exactly: 3
+      messageMatches: The application embeds the Zipkin framework for distributed tracing

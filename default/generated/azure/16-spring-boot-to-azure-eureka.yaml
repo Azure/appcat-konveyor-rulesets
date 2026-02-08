@@ -63,7 +63,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)eureka-client([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)eureka-client([a-zA-Z0-9._-]*)\.jar$
@@ -96,7 +95,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)eureka-server([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)eureka-server([a-zA-Z0-9._-]*)\.jar$

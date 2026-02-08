@@ -37,7 +37,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.spring-boot
     - builtin.file:
         pattern: ^spring-boot([a-zA-Z0-9._-]*)\.jar$
@@ -66,7 +65,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)logstash([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)logstash([a-zA-Z0-9._-]*)\.jar$
@@ -264,7 +262,6 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)splunk([a-zA-Z0-9._-]*)
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)splunk([a-zA-Z0-9._-]*)\.jar$
@@ -281,13 +278,10 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.alibaba.nacos.nacos-client
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: com\.alibaba\.cloud\.spring-cloud-starter-alibaba-nacos-([a-zA-Z0-9._-]*)
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: com\.alibaba\.boot\.nacos-([a-zA-Z0-9._-]*)-spring-boot-starter
 - customVariables: []
   description: Embedded framework - Sentinel
@@ -302,16 +296,12 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: com\.alibaba\.csp\.sentinel-([a-zA-Z0-9._-]*)
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: com\.alibaba\.cloud\.spring-cloud-alibaba-sentinel-([a-zA-Z0-9._-]*)
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.alibaba.cloud.spring-cloud-starter-alibaba-sentinel
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.alibaba.cloud.spring-cloud-circuitbreaker-sentinel
 - customVariables: []
   description: Embedded framework - Rocket MQ
@@ -326,16 +316,12 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.apache.rocketmq.rocketmq-client
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.apache.rocketmq.rocketmq-acl
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.alibaba.cloud.spring-cloud-starter-stream-rocketmq
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.alibaba.cloud.spring-cloud-starter-bus-rocketmq
 - customVariables: []
   description: Embedded framework - Cloud Seata
@@ -350,10 +336,8 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: io.seata.seata-spring-boot-starter
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.alibaba.cloud.>spring-cloud-starter-alibaba-seata
 - customVariables: []
   description: Embedded framework - Scheduler X
@@ -368,10 +352,8 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.aliyun.schedulerx.schedulerx2-worker
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.aliyun.schedulerx.schedulerx2-spring-boot-starter
 - customVariables: []
   description: Embedded framework - Cloud SMS
@@ -386,16 +368,12 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.aliyun.dysmsapi20170525
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.alibaba.cloud.spring-cloud-alicloud-sms
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.alibaba.cloud.aliyun-sms-spring-boot-starter
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.alibaba.cloud.spring-cloud-starter-alicloud-sms
 - customVariables: []
   description: Embedded framework - Cloud OSS
@@ -410,17 +388,12 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.aliyun.oss.aliyun-sdk-oss
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.aliyun.oss.aliyun-sdk-oss-private
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.aliyun.oss.aliyun-sdk-oss-console
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.aliyun.oss.hadoop-aliyun
     - java.dependency:
-        lowerbound: 0.0.0
         name: com.aliyun.oss.kafka-connect-oss

@@ -43,7 +43,6 @@
     and:
     - or:
       - java.dependency:
-          lowerbound: 0.0.0
           nameregex: ([a-zA-Z0-9._-]*)mysql([a-zA-Z0-9._-]*)
       - builtin.filecontent:
           filePattern: build\.gradle$
@@ -65,7 +64,6 @@
           filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
           pattern: ([a-zA-Z0-9-]+)\.mysql\.database\.azure\.com$
       - java.dependency:
-          lowerbound: 0.0.0
           nameregex: ([a-zA-Z0-9._-]*)spring-cloud-azure-starter-jdbc-mysql([a-zA-Z0-9._-]*)
 - category: potential
   customVariables: []
@@ -112,7 +110,6 @@
     and:
     - or:
       - java.dependency:
-          lowerbound: 0.0.0
           nameregex: ([a-zA-Z0-9._-]*)postgresql([a-zA-Z0-9._-]*)
       - builtin.filecontent:
           filePattern: build\.gradle$
@@ -134,7 +131,6 @@
           filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
           pattern: ([a-zA-Z0-9-]+)\.postgres\.database\.azure\.com$
       - java.dependency:
-          lowerbound: 0.0.0
           nameregex: ([a-zA-Z0-9._-]*)spring-cloud-azure-starter-jdbc-postgresql([a-zA-Z0-9._-]*)
 - category: potential
   customVariables: []
@@ -249,6 +245,8 @@
         pattern: ^([a-zA-Z0-9._-]*)c-star-path([a-zA-Z0-9._-]*)\.jar$
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)scale7-pelops([a-zA-Z0-9._-]*)\.jar$
+    - java.dependency:
+        name: org.springframework.boot.spring-boot-starter-data-cassandra
 - category: potential
   customVariables: []
   description: MongoDB database found
@@ -402,13 +400,10 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: ([a-zA-Z0-9._-]*)ojdbc([a-zA-Z0-9._-]*)
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: com\.oracle\.database\.r2dbc.*
     - java.dependency:
-        lowerbound: 0.0.0
         nameregex: com\.oracle\.database\.jdbc.*
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)ojdbc([a-zA-Z0-9._-]*)\.jar$

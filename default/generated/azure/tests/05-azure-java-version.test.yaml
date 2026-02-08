@@ -9,11 +9,11 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 5
+      exactly: 13
       messageMatches: The application is using non-LTS Java version.
 - ruleID: azure-java-version-02000
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 10
+      exactly: 26
       messageMatches: The application is using an old Java version.

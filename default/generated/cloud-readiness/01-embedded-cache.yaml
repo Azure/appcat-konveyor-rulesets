@@ -26,8 +26,11 @@
      * **Connect to Azure Cache for Redis**: Update the connection details in your Java application to point to the Azure Cache for Redis instance. Use the connection information provided by Azure (hostname, port, access keys, etc.) to establish a connection from your application.                "
   ruleID: embedded-cache-01000
   when:
-    builtin.file:
-      pattern: ^([a-zA-Z0-9._-]*)ehcache([a-zA-Z0-9._-]*)\.jar$
+    or:
+    - builtin.file:
+        pattern: .*ehcache.*\.jar$
+    - java.dependency:
+        nameregex: .*ehcache.*
 - category: mandatory
   customVariables: []
   description: Caching - Coherence embedded library
@@ -146,8 +149,14 @@
     Recommendation: Use a cache backing service.
   ruleID: embedded-cache-06000
   when:
-    builtin.file:
-      pattern: ^([a-zA-Z0-9._-]*)hazelcast([a-zA-Z0-9._-]*)\.jar$
+    or: 
+    - builtin.file:
+        pattern: ^([a-zA-Z0-9._-]*)hazelcast([a-zA-Z0-9._-]*)\.jar$
+    - java.dependency:
+        nameregex: com\.hazelcast\.hazelcast.*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.hazelcast*
 - category: mandatory
   customVariables: []
   description: Caching - Apache Ignite embedded library
@@ -364,8 +373,10 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-cache
+    - java.referenced:
+        location: IMPORT
+        pattern: org.springframework.cache*
 - category: mandatory
   customVariables: []
   description: Caching - Redis Cache library
@@ -406,16 +417,12 @@
   when:
     or:
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.boot.spring-boot-starter-data-redis
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.data.spring-data-redis
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.session.spring-session-data-redis
     - java.dependency:
-        lowerbound: 0.0.0
         name: org.springframework.integration.spring-integration-redis
     - builtin.file:
         pattern: ^([a-zA-Z0-9._-]*)redis([a-zA-Z0-9._-]*)\.jar$
