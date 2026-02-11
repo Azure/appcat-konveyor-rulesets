@@ -116,6 +116,21 @@
     </dependency>
     <dependency>
       <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-management</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-svc-mgmt</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-svc-mgmt-compute</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-mgmt-resources</artifactId>
       <version>1.41.4</version>
     </dependency>

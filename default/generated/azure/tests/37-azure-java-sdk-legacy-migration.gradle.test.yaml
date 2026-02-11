@@ -9,5 +9,5 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 25 # from com.microsoft.azure in build.gradle/libs.versions.toml
+      exactly: 32 # 28 from build.gradle/libs.versions.toml + 4 .java files
       messageMatches: The application is using deprecated Azure legacy Java SDKs

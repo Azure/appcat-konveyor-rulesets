@@ -9,5 +9,5 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 44 # 21 from com.microsoft.azure + 3 from com.microsoft.azure.cognitiveservices in pom.xml + 20 in imports
+      exactly: 47 # 24 from com.microsoft.azure + 3 from com.microsoft.azure.cognitiveservices in pom.xml + 20 in imports
       messageMatches: The application is using deprecated Azure legacy Java SDKs

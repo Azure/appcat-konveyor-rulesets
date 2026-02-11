@@ -14,7 +14,7 @@ java {
 }
 
 application {
-    mainClass = 'com.microsoft.azure.management.clientinitialization.AzureInitialization'
+    mainClass = 'com.example.AzureLegacyService'
 }
 
 repositories {
@@ -43,7 +43,10 @@ dependencies {
     implementation 'com.microsoft.azure:azure-mgmt-resources:1.41.4'
     implementation 'com.microsoft.azure:azure-mgmt-compute:1.41.4'
     implementation 'com.microsoft.azure:azure-mgmt-storage:1.41.4'
+    implementation 'com.microsoft.azure:azure-management:0.8.0'
     implementation 'com.microsoft.azure:azure-keyvault-core:1.2.6'
+    implementation 'com.microsoft.azure:azure-svc-mgmt:0.8.0'
+    implementation 'com.microsoft.azure:azure-svc-mgmt-compute:0.8.0'
     // Cognitive services deprecated packages
     implementation libs.azure.cognitiveservices.textanalytics
     implementation libs.azure.cognitiveservices.computervision
