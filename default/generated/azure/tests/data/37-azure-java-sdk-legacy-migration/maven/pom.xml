@@ -145,6 +145,11 @@
       <artifactId>azure-cognitiveservices-faceapi</artifactId>
       <version>1.0.2-beta</version>
     </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-keyvault-core</artifactId>
+      <version>1.2.6</version>
+    </dependency>
     <!-- Below msal related libraries are not deprecated. See https://github.com/Azure/azure-sdk-for-java/issues/39214 -->
     <dependency>
       <groupId>com.microsoft.azure</groupId>

@@ -2,8 +2,10 @@
 azure-cognitiveservices-textanalytics = "1.0.2-beta"
 azure-cognitiveservices-computervision = "1.0.9-beta"
 azure-cognitiveservices-faceapi = "1.0.2-beta"
+azure-keyvault-core = "1.2.6"
 
 [libraries]
 azure-cognitiveservices-textanalytics = { group = "com.microsoft.azure.cognitiveservices", name = "azure-cognitiveservices-textanalytics", version.ref = "azure-cognitiveservices-textanalytics" }
 azure-cognitiveservices-computervision = { module = "com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision", version.ref = "azure-cognitiveservices-computervision" }
 azure-cognitiveservices-faceapi = { module = "com.microsoft.azure.cognitiveservices:azure-cognitiveservices-faceapi", version.ref = "azure-cognitiveservices-faceapi" }
+azure-keyvault-core = { module = "com.microsoft.azure:azure-keyvault-core", version.ref = "azure-keyvault-core" }

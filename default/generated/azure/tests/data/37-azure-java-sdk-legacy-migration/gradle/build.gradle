@@ -43,6 +43,7 @@ dependencies {
     implementation 'com.microsoft.azure:azure-mgmt-resources:1.41.4'
     implementation 'com.microsoft.azure:azure-mgmt-compute:1.41.4'
     implementation 'com.microsoft.azure:azure-mgmt-storage:1.41.4'
+    implementation 'com.microsoft.azure:azure-keyvault-core:1.2.6'
     // Cognitive services deprecated packages
     implementation libs.azure.cognitiveservices.textanalytics
     implementation libs.azure.cognitiveservices.computervision
