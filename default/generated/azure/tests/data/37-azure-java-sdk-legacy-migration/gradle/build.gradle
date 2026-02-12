@@ -47,6 +47,7 @@ dependencies {
     implementation 'com.microsoft.azure:azure-keyvault-core:1.2.6'
     implementation 'com.microsoft.azure:azure-svc-mgmt:0.8.0'
     implementation 'com.microsoft.azure:azure-svc-mgmt-compute:0.8.0'
+    implementation 'com.microsoft.azure.postgresql.v2017_12_01:azure-mgmt-postgresql:1.0.0-beta-5'
     // Cognitive services deprecated packages
     implementation libs.azure.cognitiveservices.textanalytics
     implementation libs.azure.cognitiveservices.computervision

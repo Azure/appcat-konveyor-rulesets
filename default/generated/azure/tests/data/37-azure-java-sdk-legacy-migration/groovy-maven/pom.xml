@@ -60,6 +60,11 @@
       <artifactId>azure-svc-mgmt-compute</artifactId>
       <version>0.8.0</version>
     </dependency>
+    <dependency>
+      <groupId>com.microsoft.azure.postgresql.v2017_12_01</groupId>
+      <artifactId>azure-mgmt-postgresql</artifactId>
+      <version>1.0.0-beta-5</version>
+    </dependency>
     <!-- Non-legacy dependencies that should NOT trigger alerts -->
     <dependency>
       <groupId>com.microsoft.azure</groupId>
