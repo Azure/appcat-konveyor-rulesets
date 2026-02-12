@@ -14,6 +14,7 @@ import com.microsoft.azure.eventgrid.DomainCredentials;
 import com.microsoft.azure.eventhubs.BatchOptions;
 import com.microsoft.azure.eventprocessorhost.BaseLease;
 import com.microsoft.azure.keyvault.CertificateIdentifier;
+import com.microsoft.azure.management.batch.implementation.BatchManager;
 import com.microsoft.azure.servicebus.ClientFactory;
 import com.microsoft.azure.credentials.ApplicationTokenCredentials;
 import com.microsoft.azure.management.Azure;
@@ -54,5 +55,10 @@ public class AzureInitialization {
 
         Azure.Authenticated azureAuthed = Azure.authenticate(builder.build(), subscriptionId, credentials.domain());
         Azure azure = azureAuthed.withSubscription(subscriptionId);
+
+        BatchManager batchManager = BatchManager.configure()
+            .withLogLevel(LogLevel.BASIC)
+            .withInterceptor(new ProviderRegistrationInterceptor(credentials))
+            .authenticate(credentials, subscriptionId);
     }
 }

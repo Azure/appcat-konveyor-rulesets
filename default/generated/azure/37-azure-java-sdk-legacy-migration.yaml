@@ -27,12 +27,26 @@
   links:
   - title: Azure SDK for Java migration guide (`com.microsoft.azure.**` -> `com.azure.**`)
     url: https://aka.ms/java-track2-migration-guide
-  - title: Azure for Java developer documentation
-    url: https://learn.microsoft.com/azure/developer/java/
   - title: Azure SDK for Java (Deprecated) | Azure SDKs
     url: https://azure.github.io/azure-sdk/releases/deprecated/java.html
   - title: Azure SDK lifecycle and support policy
     url: https://azure.github.io/azure-sdk/policies_support.html
+  - title: Migrate to com.azure:azure-messaging-servicebus from com.microsoft.azure:azure-servicebus
+    url: https://aka.ms/azsdk/java/migrate/sb
+  - title: Migrate to azure-messaging-eventhubs from azure-eventhubs and azure-eventhubs-eph
+    url: https://aka.ms/azsdk/java/migrate/eh
+  - title: Migrate to azure-messaging-eventgrid from microsoft-azure-eventgrid
+    url: https://aka.ms/azsdk/java/migrate/eg
+  - title: Migrate to azure-security-keyvault-secrets from azure-keyvault
+    url: https://aka.ms/azsdk/java/migrate/kv-secrets
+  - title: Migrate to azure-security-keyvault-keys from azure-keyvault
+    url: https://aka.ms/azsdk/java/migrate/kv-keys
+  - title: Migrate to azure-security-keyvault-certificates from azure-keyvault
+    url: https://aka.ms/azsdk/java/migrate/kv-cert
+  - title: Migrate to azure-monitor-query from azure-loganalytics and azure-applicationinsights-query
+    url: https://aka.ms/azsdk/java/migrate/monitorquery
+  - title: Azure for Java developer documentation
+    url: https://learn.microsoft.com/azure/developer/java/
   message: |-
     The application is identified using legacy Azure SDKs for Java (`com.microsoft.azure.*`). These libraries reached end of support in 2023. They are not recommended for use in production, should be migrated to the latest Azure SDKs with the latest security patches and new capabilities support. 
     
@@ -51,7 +65,7 @@
     # java.referenced – detect legacy Azure SDK imports in Java source files
     - java.referenced:
         location: IMPORT
-        pattern: com.microsoft.azure.(batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|servicebus|credentials|management|serializer)*
+        pattern: com.microsoft.azure.(batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|servicebus|credentials|management|serializer|storage)*
     - java.referenced:
         location: IMPORT
         pattern: com.microsoft.(windowsazure|rest|aad.adal4j)*
