@@ -21,7 +21,7 @@
   - target=azure-aks
   - target=azure-container-apps
   - domain=java-upgrade
-  - category=azure-sdks-version-upgrade
+  - category=azure-sdks-version-upgrade-java
   - os=windows
   - os=linux
   links:
@@ -84,7 +84,7 @@
     - builtin.filecontent: # for Java, Groovy, and Kotlin source files
         filePattern: .*\.(java|groovy|kt)$
         pattern: >-
-          (import\s+(?:static\s+)?(com\.azure\.search(?!\.documents)|com\.microsoft\.(?:aad\.adal4j|windowsazure|rest|azure\.(?:batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|servicebus|credentials|management|serializer))))
+          (import\s+(?:static\s+)?(com\.azure\.search(?!\.documents)|com\.microsoft\.(?:aad\.adal4j|windowsazure|rest|azure\.(?:batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|servicebus|credentials|management|serializer|storage))))
     - builtin.filecontent: # for gradle projects
         filePattern: .*\.gradle(\.kts)?$
         pattern: >-
