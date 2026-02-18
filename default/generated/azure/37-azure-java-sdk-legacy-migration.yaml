@@ -65,13 +65,13 @@
     # java.referenced – detect legacy Azure SDK imports in Java source files
     - java.referenced:
         location: IMPORT
-        pattern: com.microsoft.azure.(batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|servicebus|credentials|management|serializer|storage)*
+        pattern: com.microsoft.azure.(applicationinsights|batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|loganalytics|servicebus|credentials|management|serializer|storage)*
     - java.referenced:
         location: IMPORT
         pattern: com.microsoft.(windowsazure|rest|aad.adal4j)*
     # java.dependency – detect legacy Azure SDK artifacts in Maven/Gradle
     - java.dependency:
-        nameregex: com\.microsoft\.azure\.(azure-(servicebus|eventhubs|eventhubs-eph|eventgrid|storage|keyvault.*|batch|cosmos|cosmosdb|documentdb|documentdb-rx|client-runtime|client-authentication|media|search|svc-mgmt.*|mgmt-.*)|adal4j|azure)|com\.microsoft\.azure\.cognitiveservices\.azure-cognitiveservices-.*|com\.azure\.azure-search|com\.microsoft\.azure\.[a-z]+\.v[\d_]+\.azure-mgmt-[a-z]+
+        nameregex: com\.microsoft\.azure\.(azure-(servicebus|eventhubs|eventhubs-eph|eventhubs-extensions|eventgrid|storage[-a-z]*|keyvault.*|batch|cosmos|cosmosdb|documentdb|documentdb-rx|client-runtime|client-authentication|media|search|applicationinsights-query|loganalytics|svc-mgmt.*|mgmt-.*)|adal4j|azure)|com\.microsoft\.azure\.cognitiveservices\.(azure-cognitiveservices-.*|azure-faceapi)|com\.azure\.azure-search|com\.microsoft\.azure\.[-a-z0-9_.]+\.azure-mgmt-[a-z]+|com\.microsoft\.azure\.profile_2018_03_01_hybrid\.azure|com\.microsoft\.azure\.msi_auth_token_provider\.azure-authentication-msi-token-provider
     # azure-management(-*) artifacts are relocated, thus won't be caught by java.dependency, and builtin.filecontent will omit pom.xml if java.dependency is present, so we need builtin.xml to catch azure-management(-*) artifacts in pom.xml
     - builtin.xml:
         filepaths:
@@ -84,12 +84,12 @@
     - builtin.filecontent: # for Java, Groovy, and Kotlin source files
         filePattern: .*\.(java|groovy|kt)$
         pattern: >-
-          (import\s+(?:static\s+)?(com\.azure\.search(?!\.documents)|com\.microsoft\.(?:aad\.adal4j|windowsazure|rest|azure\.(?:batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|servicebus|credentials|management|serializer|storage))))
+          (import\s+(?:static\s+)?(com\.azure\.search(?!\.documents)|com\.microsoft\.(?:aad\.adal4j|windowsazure|rest|azure\.(?:applicationinsights|batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|loganalytics|servicebus|credentials|management|serializer|storage))))
     - builtin.filecontent: # for gradle projects
         filePattern: .*\.gradle(\.kts)?$
         pattern: >-
-          (com\.microsoft\.azure(\.cognitiveservices)?:(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventgrid|azure-storage|azure-keyvault[a-z-]*|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure-management|azure-svc-mgmt[a-z-]*|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+)|com\.azure:azure-search|com\.microsoft\.azure\.[a-z]+\.v[\d_]+:azure-mgmt-[a-z]+):
+          (com\.microsoft\.azure(\.cognitiveservices)?:(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventhubs-extensions|azure-eventgrid|azure-storage[-a-z]*|azure-keyvault[a-z-]*|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure-applicationinsights-query|azure-loganalytics|azure-management|azure-svc-mgmt[a-z-]*|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+|azure-faceapi|azure-authentication-msi-token-provider)|com\.azure:azure-search|com\.microsoft\.azure\.[-a-z0-9_.]+:(azure-mgmt-[a-z]+|azure|azure-authentication-msi-token-provider)):
     - builtin.filecontent: # for gradle version catalogs (libs.versions.toml)
         filePattern: .*\.toml$
         pattern: >-
-          ((group\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?"\s*,\s*name\s*=\s*"|module\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?:)(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventgrid|azure-storage|azure-keyvault[a-z-]*|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure-management|azure-svc-mgmt[a-z-]*|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+)"|group\s*=\s*"com\.azure"\s*,\s*name\s*=\s*"azure-search"|module\s*=\s*"com\.azure:azure-search"|group\s*=\s*"com\.microsoft\.azure\.[a-z]+\.v[\d_]+"\s*,\s*name\s*=\s*"azure-mgmt-[a-z]+"|module\s*=\s*"com\.microsoft\.azure\.[a-z]+\.v[\d_]+:azure-mgmt-[a-z]+")
+          ((group\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?"\s*,\s*name\s*=\s*"|module\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?:)(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventhubs-extensions|azure-eventgrid|azure-storage[-a-z]*|azure-keyvault[a-z-]*|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure-applicationinsights-query|azure-loganalytics|azure-management|azure-svc-mgmt[a-z-]*|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+|azure-faceapi|azure-authentication-msi-token-provider)"|group\s*=\s*"com\.azure"\s*,\s*name\s*=\s*"azure-search"|module\s*=\s*"com\.azure:azure-search"|group\s*=\s*"com\.microsoft\.azure\.[-a-z0-9_.]+"\s*,\s*name\s*=\s*"(azure-mgmt-[a-z]+|azure|azure-authentication-msi-token-provider)"|module\s*=\s*"com\.microsoft\.azure\.[-a-z0-9_.]+:(azure-mgmt-[a-z]+|azure|azure-authentication-msi-token-provider)")

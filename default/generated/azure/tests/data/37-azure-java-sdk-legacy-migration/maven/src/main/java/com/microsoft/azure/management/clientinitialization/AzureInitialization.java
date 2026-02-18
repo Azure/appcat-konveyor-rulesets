@@ -16,6 +16,8 @@ import com.microsoft.azure.eventprocessorhost.BaseLease;
 import com.microsoft.azure.keyvault.CertificateIdentifier;
 import com.microsoft.azure.management.batch.implementation.BatchManager;
 import com.microsoft.azure.servicebus.ClientFactory;
+import com.microsoft.azure.applicationinsights.query.ApplicationInsightsDataClient;
+import com.microsoft.azure.loganalytics.LogAnalyticsDataClient;
 import com.microsoft.azure.credentials.ApplicationTokenCredentials;
 import com.microsoft.azure.management.Azure;
 import com.microsoft.windowsazure.services.blob.BlobConfiguration;

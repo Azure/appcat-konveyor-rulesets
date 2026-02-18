@@ -9,5 +9,5 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 15 # 10 from java.dependency (pom.xml) + 5 from builtin.filecontent (.groovy imports)
+      exactly: 27 # 20 from pom.xml (java.dependency + builtin.xml) + 7 from builtin.filecontent (.groovy imports)
       messageMatches: The application is using deprecated Azure legacy Java SDKs

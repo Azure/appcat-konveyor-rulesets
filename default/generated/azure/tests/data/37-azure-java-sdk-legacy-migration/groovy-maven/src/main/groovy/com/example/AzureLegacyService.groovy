@@ -5,6 +5,8 @@ import com.microsoft.azure.keyvault.CertificateIdentifier
 import com.microsoft.azure.servicebus.ClientFactory
 import com.microsoft.azure.management.Azure
 import com.microsoft.azure.storage.CloudStorageAccount
+import com.microsoft.azure.applicationinsights.query.ApplicationInsightsDataClient
+import com.microsoft.azure.loganalytics.LogAnalyticsDataClient
 
 // Non-legacy import that should NOT trigger alerts
 import com.microsoft.azure.msal4j.PublicClientApplication
