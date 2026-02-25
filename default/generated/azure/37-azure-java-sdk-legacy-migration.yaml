@@ -1,0 +1,95 @@
+# Copyright (c) Microsoft Corporation.   
+
+# Licensed under the Apache License, Version 2.0 (the "License"); 
+# you may not use this file except in compliance with the License. 
+# You may obtain a copy of the License at 
+#     http://www.apache.org/licenses/LICENSE-2.0  
+
+# Unless required by applicable law or agreed to in writing, software 
+# distributed under the License is distributed on an "AS IS" BASIS, 
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+
+# See the License for the specific language governing permissions and 
+# limitations under the License. 
+- category: mandatory
+  customVariables: []
+  description: Legacy Azure SDKs for Java ("com.microsoft.azure.*") reached the end of support.
+  effort: 5
+  labels:
+  - source
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - domain=java-upgrade
+  - category=azure-sdks-version-upgrade-java
+  - os=windows
+  - os=linux
+  links:
+  - title: Azure SDK for Java migration guide (`com.microsoft.azure.**` -> `com.azure.**`)
+    url: https://aka.ms/java-track2-migration-guide
+  - title: Azure SDK for Java (Deprecated) | Azure SDKs
+    url: https://azure.github.io/azure-sdk/releases/deprecated/java.html
+  - title: Azure SDK lifecycle and support policy
+    url: https://azure.github.io/azure-sdk/policies_support.html
+  - title: Migrate to com.azure:azure-messaging-servicebus from com.microsoft.azure:azure-servicebus
+    url: https://aka.ms/azsdk/java/migrate/sb
+  - title: Migrate to azure-messaging-eventhubs from azure-eventhubs and azure-eventhubs-eph
+    url: https://aka.ms/azsdk/java/migrate/eh
+  - title: Migrate to azure-messaging-eventgrid from microsoft-azure-eventgrid
+    url: https://aka.ms/azsdk/java/migrate/eg
+  - title: Migrate to azure-security-keyvault-secrets from azure-keyvault
+    url: https://aka.ms/azsdk/java/migrate/kv-secrets
+  - title: Migrate to azure-security-keyvault-keys from azure-keyvault
+    url: https://aka.ms/azsdk/java/migrate/kv-keys
+  - title: Migrate to azure-security-keyvault-certificates from azure-keyvault
+    url: https://aka.ms/azsdk/java/migrate/kv-cert
+  - title: Migrate to azure-monitor-query from azure-loganalytics and azure-applicationinsights-query
+    url: https://aka.ms/azsdk/java/migrate/monitorquery
+  - title: Azure for Java developer documentation
+    url: https://learn.microsoft.com/azure/developer/java/
+  message: |-
+    The application is identified using legacy Azure SDKs for Java (`com.microsoft.azure.*`). These libraries reached end of support in 2023. They are not recommended for use in production, should be migrated to the latest Azure SDKs with the latest security patches and new capabilities support. 
+    
+    Follow these steps:
+
+    * **Inventory legacy dependencies**: Use tools such as `mvn dependency:tree` or `gradlew dependencies` to find every `com.microsoft.azure.*` SDK and map each one to its modern counterpart under `com.azure.*`.
+
+    * **Adopt supported SDKs**: Replace the legacy dependencies with their modern equivalents in your `pom.xml` or `build.gradle`, following the migration guide to align feature parity and new SDK names.
+
+    * **Update application code**: Refactor your code to the builder-based APIs, updated authentication flows (Azure Identity), and modern async or reactive patterns required by the latest SDKs. Add concise comments explaining non-obvious changes.
+
+    * **Test thoroughly**: Run unit, integration, and end-to-end tests to validate that the modern SDKs behave as expected, focusing on authentication, retry, and serialization differences.
+  ruleID: azure-java-sdk-legacy-migration-01000
+  when:
+    or:
+    # java.referenced – detect legacy Azure SDK imports in Java source files
+    - java.referenced:
+        location: IMPORT
+        pattern: com.microsoft.azure.(applicationinsights|batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|loganalytics|servicebus|credentials|management|serializer|storage)*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.microsoft.(windowsazure|rest|aad.adal4j)*
+    # java.dependency – detect legacy Azure SDK artifacts in Maven/Gradle
+    - java.dependency:
+        nameregex: com\.microsoft\.azure\.(azure-(servicebus|eventhubs|eventhubs-eph|eventhubs-extensions|eventgrid|storage[-a-z]*|keyvault.*|batch|cosmos|cosmosdb|documentdb|documentdb-rx|client-runtime|client-authentication|media|search|applicationinsights-query|loganalytics|svc-mgmt.*|mgmt-.*)|adal4j|azure)|com\.microsoft\.azure\.cognitiveservices\.(azure-cognitiveservices-.*|azure-faceapi)|com\.azure\.azure-search|com\.microsoft\.azure\.[-a-z0-9_.]+\.azure-mgmt-[a-z]+|com\.microsoft\.azure\.profile_2018_03_01_hybrid\.azure|com\.microsoft\.azure\.msi_auth_token_provider\.azure-authentication-msi-token-provider
+    # azure-management(-*) artifacts are relocated, thus won't be caught by java.dependency, and builtin.filecontent will omit pom.xml if java.dependency is present, so we need builtin.xml to catch azure-management(-*) artifacts in pom.xml
+    - builtin.xml:
+        filepaths:
+        - pom.xml
+        namespaces:
+          m: http://maven.apache.org/POM/4.0.0
+        xpath: //m:dependency[m:groupId='com.microsoft.azure' and matches(m:artifactId,'^azure-management(-|$)')]
+    # builtin.filecontent fallbacks – catch references that java.referenced / java.dependency may miss
+    # according to test result, builtin.filecontent will deduplicate with java.referenced and java.dependency, so we can keep all the patterns here for better accuracy without worrying about duplicate incidents
+    - builtin.filecontent: # for Java, Groovy, and Kotlin source files
+        filePattern: .*\.(java|groovy|kt)$
+        pattern: >-
+          (import\s+(?:static\s+)?(com\.azure\.search(?!\.documents)|com\.microsoft\.(?:aad\.adal4j|windowsazure|rest|azure\.(?:applicationinsights|batch|cognitiveservices|cosmosdb|documentdb|eventgrid|eventhubs|eventprocessorhost|keyvault|loganalytics|servicebus|credentials|management|serializer|storage))))
+    - builtin.filecontent: # for gradle projects
+        filePattern: .*\.gradle(\.kts)?$
+        pattern: >-
+          (com\.microsoft\.azure(\.cognitiveservices)?:(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventhubs-extensions|azure-eventgrid|azure-storage[-a-z]*|azure-keyvault[a-z-]*|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure-applicationinsights-query|azure-loganalytics|azure-management|azure-svc-mgmt[a-z-]*|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+|azure-faceapi|azure-authentication-msi-token-provider)|com\.azure:azure-search|com\.microsoft\.azure\.[-a-z0-9_.]+:(azure-mgmt-[a-z]+|azure|azure-authentication-msi-token-provider)):
+    - builtin.filecontent: # for gradle version catalogs (libs.versions.toml)
+        filePattern: .*\.toml$
+        pattern: >-
+          ((group\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?"\s*,\s*name\s*=\s*"|module\s*=\s*"com\.microsoft\.azure(\.cognitiveservices)?:)(azure-servicebus|azure-eventhubs|azure-eventhubs-eph|azure-eventhubs-extensions|azure-eventgrid|azure-storage[-a-z]*|azure-keyvault[a-z-]*|azure-batch|azure-cosmos|azure-cosmosdb|azure-documentdb|azure-documentdb-rx|azure-client-runtime|azure-client-authentication|adal4j|azure-media|azure-search|azure-applicationinsights-query|azure-loganalytics|azure-management|azure-svc-mgmt[a-z-]*|azure|azure-mgmt-[a-z]+|azure-cognitiveservices-[a-z]+|azure-faceapi|azure-authentication-msi-token-provider)"|group\s*=\s*"com\.azure"\s*,\s*name\s*=\s*"azure-search"|module\s*=\s*"com\.azure:azure-search"|group\s*=\s*"com\.microsoft\.azure\.[-a-z0-9_.]+"\s*,\s*name\s*=\s*"(azure-mgmt-[a-z]+|azure|azure-authentication-msi-token-provider)"|module\s*=\s*"com\.microsoft\.azure\.[-a-z0-9_.]+:(azure-mgmt-[a-z]+|azure|azure-authentication-msi-token-provider)")
