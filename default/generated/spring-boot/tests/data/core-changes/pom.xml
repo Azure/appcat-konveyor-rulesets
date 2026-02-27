@@ -92,7 +92,7 @@
 		<dependency>
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-core</artifactId>
-			<version>3.24.2</version> <!-- Replace with the version compatible with your project -->
+			<version>3.27.7</version> <!-- Replace with the version compatible with your project -->
 		</dependency>
 
 		<dependency>
