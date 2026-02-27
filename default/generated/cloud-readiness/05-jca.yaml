@@ -1,7 +1,7 @@
 - category: optional
   customVariables: []
   description: Resource adapter descriptor (ra.xml)
-  effort: 1
+  effort: 5
   labels:
   - source=java
   - source=java-ee

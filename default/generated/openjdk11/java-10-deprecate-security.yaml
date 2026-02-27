@@ -74,6 +74,7 @@
 - category: mandatory
   customVariables: []
   description: java.security.{Certificate,Identity,IdentityScope,Signer} APIs Deprecated forRemoval
+  effort: 3
   labels:
   - source=openjdk10-
   - source=openjdk
@@ -100,6 +101,7 @@
 - category: mandatory
   customVariables: []
   description: java.security.acl APIs Deprecated forRemoval
+  effort: 3
   labels:
   - source=openjdk10-
   - source=openjdk
@@ -126,6 +128,7 @@
 - category: mandatory
   customVariables: []
   description: javax.security.auth.Policy API Deprecated forRemoval
+  effort: 3
   labels:
   - source=openjdk10-
   - source=openjdk
