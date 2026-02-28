@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: The Runtime.exec(String, ...) method is error-prone and should not be used
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk18-
   - source=openjdk

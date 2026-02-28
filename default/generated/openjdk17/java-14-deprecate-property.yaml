@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of sun.nio.cs.map System Property
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk14-
   - source=openjdk
@@ -28,7 +28,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of netscape.javascript.JSObjectgetWindow Method
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk14-
   - source=openjdk

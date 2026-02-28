@@ -1,7 +1,7 @@
 - category: optional
   customVariables: []
   description: Jakarta EE version not latest stable
-  effort: 3
+  effort: 8
   labels:
   - source=jakarta-ee
   - target=azure-appservice

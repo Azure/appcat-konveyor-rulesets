@@ -1,7 +1,7 @@
 - category: potential
   customVariables: []
   description: Embedded library - SAML
-  effort: 1
+  effort: 8
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -31,7 +31,7 @@
 - category: potential
   customVariables: []
   description: Embedded library - OpenSAML
-  effort: 1
+  effort: 8
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -61,7 +61,7 @@
 - category: potential
   customVariables: []
   description: Embedded framework - Spring Security
-  effort: 1
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -94,7 +94,7 @@
 - category: potential
   customVariables: []
   description: Embedded library - OAuth 2.0
-  effort: 1
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -131,7 +131,7 @@
 - category: potential
   customVariables: []
   description: Embedded library - OpenID
-  effort: 1
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks

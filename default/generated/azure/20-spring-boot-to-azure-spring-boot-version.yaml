@@ -14,7 +14,7 @@
 - category: mandatory
   customVariables: []
   description: Spring Boot Version is End of OSS Support
-  effort: 5
+  effort: 8
   labels:
   - source=springboot
   - target=azure-appservice

@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: No Dockerfile found
-  effort: 1
+  effort: 3
   labels:
   - target=azure-aks
   - target=azure-container-apps

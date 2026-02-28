@@ -1,7 +1,7 @@
 - category: optional
   customVariables: []
   description: Socket communication
-  effort: 5
+  effort: 8
   labels:
   - source=java
   - source=java-ee
@@ -43,7 +43,7 @@
     nameOfCaptureGroup: niochannelclass
     pattern: java.nio.channels.(?P<niochannelclass>(NetworkChannel|MulticastChannel|DatagramChannel|AsynchronousSocketChannel|SocketChannel))?.*
   description: Java NIO channel
-  effort: 5
+  effort: 8
   labels:
   - source=java
   - source=java-ee

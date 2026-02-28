@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecate Stream-Based GSSContext Methods
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk11-
   - source=openjdk

@@ -1,7 +1,7 @@
 - category: potential
   customVariables: []
   description: MySQL database found
-  effort: 3
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -68,7 +68,7 @@
 - category: potential
   customVariables: []
   description: PostgreSQL database found
-  effort: 3
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -135,7 +135,7 @@
 - category: potential
   customVariables: []
   description: Microsoft SQL database found
-  effort: 3
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -191,7 +191,7 @@
 - category: potential
   customVariables: []
   description: Cassandra database found
-  effort: 3
+  effort: 8
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -250,7 +250,7 @@
 - category: potential
   customVariables: []
   description: MongoDB database found
-  effort: 3
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -303,7 +303,7 @@
 - category: potential
   customVariables: []
   description: MariaDB database found
-  effort: 3
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -357,7 +357,7 @@
 - category: potential
   customVariables: []
   description: Oracle database found
-  effort: 3
+  effort: 8
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -482,7 +482,7 @@
 - category: optional
   customVariables: []
   description: IBM Db2 usage detected
-  effort: 3
+  effort: 8
   labels:
   - source=ibm-db2
   - target=azure-appservice
@@ -516,7 +516,7 @@
 - category: optional
   customVariables: []
   description: Sybase ASE usage detected
-  effort: 3
+  effort: 8
   labels:
   - source=sybase-ase
   - target=azure-appservice
@@ -561,7 +561,7 @@
 - category: optional
   customVariables: []
   description: Firebird usage detected
-  effort: 3
+  effort: 8
   labels:
   - source=firebird
   - target=azure-appservice
@@ -589,7 +589,7 @@
 - category: optional
   customVariables: []
   description: SQLite usage detected
-  effort: 3
+  effort: 5
   labels:
   - source=sqlite
   - target=azure-appservice

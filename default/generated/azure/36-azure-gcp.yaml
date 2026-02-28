@@ -1,7 +1,7 @@
 - category: optional
   customVariables: []
   description: Google Firestore usage detected
-  effort: 5
+  effort: 8
   labels:
   - source=google-firestore
   - target=azure-appservice
@@ -44,7 +44,7 @@
 - category: optional
   customVariables: []
   description: Google Cloud Bigtable usage detected
-  effort: 7
+  effort: 8
   labels:
   - source=google-cloud-bigtable
   - target=azure-appservice
@@ -82,7 +82,7 @@
 - category: mandatory
   customVariables: []
   description: Google Cloud Pub/Sub usage detected
-  effort: 3
+  effort: 8
   labels:
   - source=google-cloud-pubsub
   - target=azure-appservice
@@ -121,7 +121,7 @@
 - category: mandatory
   customVariables: []
   description: Google Container Registry (GCR) or Artifact Registry usage detected
-  effort: 3
+  effort: 2
   labels:
   - source=google-gcr
   - target=azure-aks
@@ -173,7 +173,7 @@
 - category: optional
   customVariables: []
   description: Google Cloud Storage usage detected
-  effort: 5
+  effort: 8
   labels:
   - source=google-cloud-storage
   - target=azure-appservice
@@ -213,7 +213,7 @@
 - category: optional
   customVariables: []
   description: Google Cloud Functions usage detected
-  effort: 5
+  effort: 13
   labels:
   - source=google-cloud-functions
   - target=azure-appservice
@@ -247,7 +247,7 @@
 - category: optional
   customVariables: []
   description: Google Cloud Spanner usage detected
-  effort: 5
+  effort: 8
   labels:
   - source=google-cloud-spanner
   - target=azure-appservice

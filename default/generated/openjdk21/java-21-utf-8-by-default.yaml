@@ -4,7 +4,7 @@
     nameOfCaptureGroup: className
     pattern: java.io.(?P<className>(FileReader|FileWriter|InputStreamReader|OutputStreamWriter|PrintStream))?.*
   description: The 'java.io' constructor defaults to UTF-8
-  effort: 1
+  effort: 3
   labels:
   - capability=openjdk18+
   - capability=openjdk
@@ -33,7 +33,7 @@
     nameOfCaptureGroup: classNames
     pattern: java.util.(?P<classNames>(Formatter|Scanner))?.*
   description: The `java.util` constructor defaults to UTF-8
-  effort: 1
+  effort: 3
   labels:
   - capability=openjdk18+
   - capability=openjdk
@@ -59,7 +59,7 @@
 - category: potential
   customVariables: []
   description: The java.net.URLEncoder.encode method uses UTF-8 by default
-  effort: 1
+  effort: 3
   labels:
   - capability=openjdk18+
   - capability=openjdk
@@ -85,7 +85,7 @@
 - category: potential
   customVariables: []
   description: The java.net.URLDecoder.decode method uses UTF-8 by default
-  effort: 1
+  effort: 3
   labels:
   - capability=openjdk18+
   - capability=openjdk

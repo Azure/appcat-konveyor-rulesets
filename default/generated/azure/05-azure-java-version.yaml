@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Non-LTS Java version
-  effort: 3
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -39,7 +39,7 @@
 - category: mandatory
   customVariables: []
   description: Legacy Java version
-  effort: 3
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks

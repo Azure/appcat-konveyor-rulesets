@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Using Windows registry to store Application Settings
-  effort: 3
+  effort: 5
   labels:
   - target=azure-aks
   - target=azure-container-apps

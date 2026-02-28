@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Java Remote Method Invocation (RMI) service
-  effort: 7
+  effort: 8
   labels:
   - source=java
   - source=rmi
@@ -38,7 +38,7 @@
       pattern: java.rmi.Remote
 - customVariables: []
   description: Java Remote Method Invocation (RMI) API
-  effort: 7
+  effort: 8
   labels:
   - source=java
   - source=rmi

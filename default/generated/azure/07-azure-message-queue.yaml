@@ -258,7 +258,7 @@
 - category: potential
   customVariables: []
   description: ActiveMQ found
-  effort: 3
+  effort: 5
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -368,7 +368,7 @@
 - category: optional
   customVariables: []
   description: IBM MQ usage detected
-  effort: 5
+  effort: 8
   labels:
   - source=ibm-mq
   - target=azure-appservice
@@ -405,7 +405,7 @@
 - category: optional
   customVariables: []
   description: Amazon SNS usage detected
-  effort: 5
+  effort: 8
   labels:
   - source=amazon-sns
   - target=azure-appservice
@@ -443,7 +443,7 @@
 - category: optional
   customVariables: []
   description: TIBCO EMS JMS usage detected
-  effort: 5
+  effort: 8
   labels:
   - source=tibco-ems-jms
   - target=azure-appservice
@@ -484,7 +484,7 @@
 - category: optional
   customVariables: []
   description: Solace PubSub+ usage detected
-  effort: 5
+  effort: 8
   labels:
   - source=solace-pubsubplus
   - target=azure-appservice
@@ -532,7 +532,7 @@
 - category: optional
   customVariables: []
   description: Amazon Kinesis usage detected
-  effort: 5
+  effort: 8
   labels:
   - source=amazon-kinesis
   - target=azure-appservice
@@ -568,7 +568,7 @@
 - category: optional
   customVariables: []
   description: Apache Pulsar usage detected
-  effort: 5
+  effort: 8
   labels:
   - source=apache-pulsar
   - target=azure-appservice

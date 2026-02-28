@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Remove com.sun.security.auth.callback.DialogCallbackHandler
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk9-
   - source=openjdk
@@ -28,7 +28,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecate the java.security.acl API
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk9-
   - source=openjdk
@@ -56,7 +56,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecate the javax.security.cert API
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk9-
   - source=openjdk

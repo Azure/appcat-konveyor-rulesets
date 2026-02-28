@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: java.io.File's Canonical Path Cache Is Removed
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk21-
   - source=openjdk
@@ -37,7 +37,7 @@
 - category: mandatory
   customVariables: []
   description: com.sun.nio.file.SensitivityWatchEventModifier Is Deprecated
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk21-
   - source=openjdk
