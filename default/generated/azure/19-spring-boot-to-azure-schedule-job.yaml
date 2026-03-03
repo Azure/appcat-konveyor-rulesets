@@ -1,7 +1,7 @@
 - category: optional
   customVariables: []
   description: Quartz Scheduler usage detected
-  effort: 7
+  effort: 13
   labels:
   - source=quartz-scheduler
   - target=azure-appservice
@@ -33,7 +33,7 @@
 - category: optional
   customVariables: []
   description: Spring Batch usage detected
-  effort: 7
+  effort: 13
   labels:
   - source=spring-batch
   - target=azure-appservice

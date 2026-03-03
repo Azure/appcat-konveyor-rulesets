@@ -1,0 +1,19 @@
+[versions]
+azure-cognitiveservices-textanalytics = "1.0.2-beta"
+azure-cognitiveservices-computervision = "1.0.9-beta"
+azure-cognitiveservices-faceapi = "1.0.2-beta"
+azure-keyvault-core = "1.2.6"
+azure-faceapi = "1.0.1-beta"
+msi-token-provider = "1.0.0-beta"
+profile-hybrid-azure = "1.0.0-beta-2"
+apiservices-mgmt = "1.0.0-beta-1"
+
+[libraries]
+azure-cognitiveservices-textanalytics = { group = "com.microsoft.azure.cognitiveservices", name = "azure-cognitiveservices-textanalytics", version.ref = "azure-cognitiveservices-textanalytics" }
+azure-cognitiveservices-computervision = { module = "com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision", version.ref = "azure-cognitiveservices-computervision" }
+azure-cognitiveservices-faceapi = { module = "com.microsoft.azure.cognitiveservices:azure-cognitiveservices-faceapi", version.ref = "azure-cognitiveservices-faceapi" }
+azure-keyvault-core = { module = "com.microsoft.azure:azure-keyvault-core", version.ref = "azure-keyvault-core" }
+azure-faceapi = { group = "com.microsoft.azure.cognitiveservices", name = "azure-faceapi", version.ref = "azure-faceapi" }
+msi-token-provider = { module = "com.microsoft.azure.msi_auth_token_provider:azure-authentication-msi-token-provider", version.ref = "msi-token-provider" }
+profile-hybrid-azure = { group = "com.microsoft.azure.profile_2018_03_01_hybrid", name = "azure", version.ref = "profile-hybrid-azure" }
+apiservices-mgmt = { module = "com.microsoft.azure.apimanagement.v2018_06_01_preview:azure-mgmt-apimanagement", version.ref = "apiservices-mgmt" }

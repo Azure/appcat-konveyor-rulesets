@@ -1,0 +1,13 @@
+rulesPath: ../37-azure-java-sdk-legacy-migration.yaml
+providers:
+- name: java
+  dataPath: ./data/37-azure-java-sdk-legacy-migration/groovy-maven
+- name: builtin
+  dataPath: ./data/37-azure-java-sdk-legacy-migration/groovy-maven
+tests:
+- ruleID: azure-java-sdk-legacy-migration-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 27 # 20 from pom.xml (java.dependency + builtin.xml) + 7 from builtin.filecontent (.groovy imports)
+      messageMatches: The application is using deprecated Azure legacy Java SDKs

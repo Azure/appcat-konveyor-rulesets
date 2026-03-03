@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Detect OpenLiberty Server File Path Configurations
-  effort: 3
+  effort: 5
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -48,7 +48,7 @@
 - category: mandatory
   customVariables: []
   description: Detect Web.xml File Path Environment Entries
-  effort: 3
+  effort: 5
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -101,7 +101,7 @@
 - category: mandatory
   customVariables: []
   description: Detect File Path Resource Injections
-  effort: 3
+  effort: 8
   labels:
   - source=java-ee
   - target=azure-appservice
@@ -149,7 +149,7 @@
 - category: mandatory
   customVariables: []
   description: Detect ServletContext Path Usage
-  effort: 3
+  effort: 5
   labels:
   - source=java-ee
   - target=azure-appservice

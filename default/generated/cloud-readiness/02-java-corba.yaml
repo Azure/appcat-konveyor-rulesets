@@ -1,7 +1,7 @@
 - category: optional
   customVariables: []
   description: CORBA
-  effort: 5
+  effort: 8
   labels:
   - source=java
   - target=azure-aks

@@ -26,7 +26,7 @@
 - category: mandatory
   customVariables: []
   description: Migrate WebLogic Server applications to Azure Kubernetes Service
-  effort: 5
+  effort: 8
   labels:
   - target=azure-aks
   - os=windows
@@ -51,7 +51,7 @@
 - category: 
   customVariables: []
   description: Migrate WebLogic Server applications to Azure Container Apps
-  effort: 7
+  effort: 8
   labels:
   - target=azure-container-apps
   - os=windows

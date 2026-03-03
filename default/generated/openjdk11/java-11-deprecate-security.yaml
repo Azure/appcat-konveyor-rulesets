@@ -4,7 +4,7 @@
     nameOfCaptureGroup: methodName
     pattern: java.lang.SecurityManager.(?P<methodName>(checkAwtEventQueueAccess|checkSystemClipboardAccess|checkTopLevelWindow))?(.*)
   description: Certain methods under `java.lang.SecurityManager` tied to the AWT stack have been removed in Java 11
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk11-
   - source=openjdk
@@ -42,7 +42,7 @@
   customVariables: []
   description: SecurityManager method java.lang.SecurityManager.checkMemberAccess
     has been removed
-  effort: 1
+  effort: 3
   labels:
   - source=openjdk11-
   - source=openjdk

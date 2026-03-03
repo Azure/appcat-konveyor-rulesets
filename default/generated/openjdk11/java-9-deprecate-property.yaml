@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: sun.lang.ClassLoader.allowArraySyntax system property is no longer supported
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk9-
   - source=openjdk

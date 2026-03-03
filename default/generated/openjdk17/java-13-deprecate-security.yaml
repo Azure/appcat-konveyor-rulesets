@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Deprecated javax.security.cert APIs with forRemoval=true
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk13-
   - source=openjdk

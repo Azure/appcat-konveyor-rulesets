@@ -1,7 +1,7 @@
 - category: potential
   customVariables: []
   description: Datasource driver found in configuration file
-  effort: 3
+  effort: 5
   labels:
   - source=eap7
   - source=eap

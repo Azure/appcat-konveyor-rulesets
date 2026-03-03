@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: Removal of Runtime Trace Methods
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk13-
   - source=openjdk

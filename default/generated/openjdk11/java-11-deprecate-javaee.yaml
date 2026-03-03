@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
   description: The java.activation (JAF) module has been removed from OpenJDK 11
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk11-
   - source=openjdk
@@ -32,7 +32,7 @@
   customVariables: []
   description: The java.annotation (Common Annotations) module has been removed from
     OpenJDK 11
-  effort: 1
+  effort: 2
   labels:
   - source=openjdk11-
   - source=openjdk
