@@ -16,4 +16,4 @@ tests:
   - name: tc-1
     hasIncidents:
       exactly: 26
-      messageMatches: The application is using an old Java version.
+      messageMatches: The application is using an outdated Java version.

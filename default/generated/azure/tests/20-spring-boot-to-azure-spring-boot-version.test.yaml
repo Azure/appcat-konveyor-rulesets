@@ -10,4 +10,4 @@ tests:
   - name: tc-1
     hasIncidents:
       exactly: 8
-      messageMatches: The application is using the End of OSS Support of Spring Boot Version. 
+      messageMatches: The application is using a Spring Boot version that has reached its End of OSS Support.
