@@ -38,7 +38,7 @@
 
 - category: mandatory
   customVariables: []
-  description: Legacy Java version
+  description: End-of-Life Java Version
   effort: 5
   labels:
   - target=azure-appservice
@@ -52,7 +52,7 @@
   - os=linux
   links: []
   message: |-
-    The application is using an old Java version. It is strongly recommended to plan and execute a migration strategy to upgrade your application to the latest stable Java version.
+    The application is using an outdated Java version. It is strongly recommended to plan and execute a migration strategy to upgrade your application to the latest stable Java version.
     Older Java versions may have known security vulnerabilities that can expose your application and infrastructure to potential attacks. Migrating to a supported version ensures that you benefit from the latest security patches and updates.
   ruleID: azure-java-version-02000
   when:
