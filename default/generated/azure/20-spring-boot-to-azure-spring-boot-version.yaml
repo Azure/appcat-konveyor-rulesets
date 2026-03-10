@@ -13,7 +13,7 @@
 # limitations under the License. 
 - category: mandatory
   customVariables: []
-  description: Spring Boot Version is End of OSS Support
+  description: Spring Boot Version Has Reached the End of OSS Support
   effort: 8
   labels:
   - source=springboot
@@ -35,16 +35,16 @@
   - title: Spring Boot Support Policy
     url: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
   message: |-
-    The application is using the End of OSS Support of Spring Boot Version. 
+    The application is using a Spring Boot version that has reached its End of OSS Support.
     With the officially supported new versions from Spring, you can get the best experience. Here are some steps you can take to update your application to the latest version of Spring Boot:
-    
-    * Choose a **supported Spring Boot version**: Check out Spring Boot Support Versions, determine the most suitable supported Spring Boot version.\n\n
-    
+
+    * Choose a **supported Spring Boot version**: Check out Spring Boot Support Versions and determine the most suitable supported Spring Boot version.
+
     * **Update Spring Boot version**: Update the Spring Boot version of your application. There are automated tools like Rewrite to help you with the migration.
-    
+
     * **Address code compatibility**: Review your application's codebase for any potential compatibility issues with the target Spring Boot version. Update deprecated APIs or features, address any language or library changes, and ensure that your code follows best practices and standards.
-    
-    * **Test thoroughly**: Execute a comprehensive testing process to verify the compatibility and functionality of your application with the new Spring Boot version. Perform unit tests, integration tests, and system tests to validate that all components and dependencies work as expected."
+
+    * **Test thoroughly**: Execute a comprehensive testing process to verify the compatibility and functionality of your application with the new Spring Boot version. Perform unit tests, integration tests, and system tests to validate that all components and dependencies work as expected.
   ruleID: spring-boot-to-azure-spring-boot-version-01000
   when:
     or:
