@@ -11,7 +11,7 @@ tests: []
 #   - name: tc-1
 #     hasIncidents:
 #       exactly: 1
-#       messageMatches: Your application is using the Spring Framework version out of support. 
+#       messageMatches: Your application is using a Spring Framework version that has reached its End of OSS Support. 
 # - ruleID: spring-framework-version-02000
 #   testCases:
 #   - name: tc-1

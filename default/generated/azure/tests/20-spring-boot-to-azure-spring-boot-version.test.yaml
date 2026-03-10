@@ -11,4 +11,4 @@ tests: []
 #   - name: tc-1
 #     hasIncidents:
 #       exactly: 8
-#       messageMatches: The application is not using the latest version of Spring Boot. 
+#       messageMatches: The application is using a Spring Boot version that has reached its End of OSS Support.
