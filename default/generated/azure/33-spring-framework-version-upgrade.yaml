@@ -1,4 +1,4 @@
-- category: mandatory
+- category: optional
   customVariables: []
   description: Spring Framework Version End of OSS Support
   effort: 8
@@ -28,4 +28,4 @@
   when:
     java.dependency:
       nameregex: ^org\.springframework\.spring-.*
-      upperbound: "6.1.21"
+      upperbound: "6.1.99"

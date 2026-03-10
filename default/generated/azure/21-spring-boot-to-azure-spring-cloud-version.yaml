@@ -11,9 +11,9 @@
 
 # See the License for the specific language governing permissions and 
 # limitations under the License. 
-- category: mandatory
+- category: optional
   customVariables: []
-  description: Spring Cloud version too low
+  description: Spring Cloud Version too low
   effort: 8
   labels:
   - source=springboot
@@ -52,9 +52,10 @@
       lowerbound: Angel
       name: org.springframework.cloud.spring-cloud-dependencies
       upperbound: Edgware.9
-- category: mandatory
+
+- category: optional
   customVariables: []
-  description: spring cloud version out of support
+  description: Spring Cloud Version is End of OSS Support
   effort: 8
   labels:
   - source=springboot
@@ -92,4 +93,4 @@
     java.dependency:
       lowerbound: Finchley
       name: org.springframework.cloud.spring-cloud-dependencies
-      upperbound: "2020.99"
+      upperbound: "2024.99"

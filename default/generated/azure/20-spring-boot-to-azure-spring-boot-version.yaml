@@ -11,7 +11,7 @@
 
 # See the License for the specific language governing permissions and 
 # limitations under the License. 
-- category: mandatory
+- category: optional
   customVariables: []
   description: Spring Boot Version is End of OSS Support
   effort: 8
@@ -52,4 +52,4 @@
     # Also consider and follow the latest supported version by Java Upgrade Extension
     - java.dependency:
         nameregex: org\.springframework\.boot\..*
-        upperbound: "3.3.13"
+        upperbound: "3.4.99"
