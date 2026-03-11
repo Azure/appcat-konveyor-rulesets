@@ -10,4 +10,4 @@ tests:
   - name: tc-1
     hasIncidents:
       exactly: 2
-      messageMatches: Your application is using a Jakarta EE version lower than 10.0.0.
+      messageMatches: Your application is not using the latest Jakarta EE version.
