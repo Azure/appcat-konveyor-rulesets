@@ -19,6 +19,8 @@
 		<module>1.x</module>
 		<module>2.x</module>
 		<module>3.x</module>
+		<module>3.5.x</module>
+		<module>4.x</module>
 	</modules>
 
 	<properties>

@@ -5,7 +5,6 @@ providers:
 - name: builtin
   dataPath: ./data/33-spring-framework-version-upgrade
 tests: []
-# Passed in AppCAT CLI, but not in kantra test
 # - ruleID: spring-framework-version-01000
 #   testCases:
 #   - name: tc-1
@@ -17,4 +16,4 @@ tests: []
 #   - name: tc-1
 #     hasIncidents:
 #       exactly: 1
-#       messageMatches: Your application is using the Spring Security version out of support. 
+#       messageMatches: Your application is using a Spring Framework version that is not the latest stable release. 

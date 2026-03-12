@@ -28,4 +28,37 @@
   when:
     java.dependency:
       nameregex: ^org\.springframework\.spring-.*
-      upperbound: "6.1.21"
+      upperbound: "6.1.99"
+
+- category: optional
+  customVariables: []
+  description: Spring Framework Version is not the latest stable
+  effort: 8
+  labels:
+  - source=spring
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - domain=java-upgrade
+  - category=framework-upgrade
+  - version
+  - os=windows
+  - os=linux
+  links:
+  - title: Spring Framework Supported Versions
+    url: https://spring.io/projects/spring-framework#support
+  - title: Spring Framework Support Policy
+    url: https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions
+  message: |-
+    Your application is using a Spring Framework version that is not the latest stable release.
+    Upgrading to the latest stable version ensures better performance, security, and compatibility with modern tools.
+      1. Pick the Latest Stable Version: Review the Spring Framework support policy and choose the latest stable version.
+      2. Update Your Project: Change the Spring Framework version in your pom.xml or build.gradle.
+      3. Fix Compatibility Issues: Update deprecated code, replace removed features, and ensure dependencies are compatible with the new Spring Framework version.
+      4. Thoroughly Test: Run unit, integration, and end-to-end tests to make sure everything still works after the upgrade.
+  ruleID: spring-framework-version-02000
+  when:
+    java.dependency:
+      nameregex: ^org\.springframework\.spring-.*
+      lowerbound: 6.2.0
+      upperbound: 6.2.99

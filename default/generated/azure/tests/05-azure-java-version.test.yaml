@@ -9,11 +9,11 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 13
-      messageMatches: The application is using non-LTS Java version.
+      exactly: 39
+      messageMatches: The application is using a Java version that has reached the end of support.
 - ruleID: azure-java-version-02000
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 26
-      messageMatches: The application is using an outdated Java version.
+      exactly: 39
+      messageMatches: The application is not using the latest LTS Java version.

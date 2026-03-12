@@ -1,7 +1,7 @@
 - category: mandatory
   customVariables: []
-  description: Non-LTS Java version
-  effort: 5
+  description: Java Version Has Reached the End of Support
+  effort: 8
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -14,8 +14,8 @@
   - os=linux
   links: []
   message: |-
-    The application is using non-LTS Java version. It is strongly recommended to plan and execute a migration strategy to upgrade your application to a LTS Java version.
-    Long-term supported Java versions receive long-term support (LTS) from the Java community, including bug fixes and updates. Migrating to a supported version provides you with a stable and well-maintained platform for your application.
+    The application is using a Java version that has reached the end of support. It is strongly recommended to plan and execute a migration strategy to upgrade your application to a supported Java version.
+    Supported Java versions receive long-term support (LTS) from the Java community, including bug fixes and updates. Migrating to a supported version provides you with a stable and well-maintained platform for your application.
   ruleID: azure-java-version-01000
   when:
     or:
@@ -24,22 +24,22 @@
         - pom.xml
         namespaces:
           m: http://maven.apache.org/POM/4.0.0
-        # match: 9, 10, 12, 13, 14, 15, 16, 19, 20, optional any suffix
-        xpath: //m:java.version[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] | 
-               //m:maven.compiler.source[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
-               //m:maven.compiler.target[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
-               //m:maven.compiler.release[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
-               //m:plugin[m:artifactId='maven-compiler-plugin']//m:source[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
-               //m:plugin[m:artifactId='maven-compiler-plugin']//m:target[matches(text(), '(9|10|12|13|14|15|16|19|20).*')] |
-               //m:plugin[m:artifactId='maven-compiler-plugin']//m:release[matches(text(), '(9|10|12|13|14|15|16|19|20).*')]
+        # match: 1.0 to 1.10, 1 to 7, 9, 10, 12, 13, 14, 15, 16, 19, 20, 22, 23, 24
+        xpath: //m:java.version[matches(text(), '^(1(\.[0-9]|\.10)?|[2-7]|9|10|12|13|14|15|16|19|20|22|23|24)$')] |
+               //m:maven.compiler.source[matches(text(), '^(1(\.[0-9]|\.10)?|[2-7]|9|10|12|13|14|15|16|19|20|22|23|24)$')] |
+               //m:maven.compiler.target[matches(text(), '^(1(\.[0-9]|\.10)?|[2-7]|9|10|12|13|14|15|16|19|20|22|23|24)$')] |
+               //m:maven.compiler.release[matches(text(), '^(1(\.[0-9]|\.10)?|[2-7]|9|10|12|13|14|15|16|19|20|22|23|24)$')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:source[matches(text(), '^(1(\.[0-9]|\.10)?|[2-7]|9|10|12|13|14|15|16|19|20|22|23|24)$')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:target[matches(text(), '^(1(\.[0-9]|\.10)?|[2-7]|9|10|12|13|14|15|16|19|20|22|23|24)$')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:release[matches(text(), '^(1(\.[0-9]|\.10)?|[2-7]|9|10|12|13|14|15|16|19|20|22|23|24)$')]
     - builtin.filecontent:
         filePattern: (/|\\)build\.gradle(\.kts)?$
-        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(9|10|12|13|14|15|16|18|19|20)['"]?|JavaVersion\.VERSION_(9|10|12|13|14|15|16|18|19|20)(?!\d))|JavaLanguageVersion\.of\((9|10|12|13|14|15|16|18|19|20)\)
+        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(1\.(0|1|2|3|4|5|6|7|8|9|10)|[2-7]|9|10|12|13|14|15|16|18|19|20|22|23|24)['"]?|JavaVersion\.VERSION_(1_0|1_1|1_2|1_3|1_4|1_5|1_6|1_7|1_8|1_9|1_10|2|3|4|5|6|7|9|10|12|13|14|15|16|18|19|20|22|23|24)(?!\d))|JavaLanguageVersion\.of\((1(\.(0|1|2|3|4|5|6|7|8|9|10))?|[2-7]|9|10|12|13|14|15|16|18|19|20|22|23|24)\)
 
-- category: mandatory
+- category: optional
   customVariables: []
-  description: End-of-Life Java Version
-  effort: 5
+  description: Java Version is not the latest LTS
+  effort: 8
   labels:
   - target=azure-appservice
   - target=azure-aks
@@ -52,8 +52,8 @@
   - os=linux
   links: []
   message: |-
-    The application is using an outdated Java version. It is strongly recommended to plan and execute a migration strategy to upgrade your application to the latest stable Java version.
-    Older Java versions may have known security vulnerabilities that can expose your application and infrastructure to potential attacks. Migrating to a supported version ensures that you benefit from the latest security patches and updates.
+    The application is not using the latest LTS Java version. It is recommended to consider upgrading to the latest LTS version to take advantage of the newest language features, performance improvements, and extended support timelines.
+    Upgrading to the latest LTS version ensures your application benefits from the most recent security enhancements and a longer support lifecycle.
   ruleID: azure-java-version-02000
   when:
     or:
@@ -62,14 +62,14 @@
         - pom.xml
         namespaces:
           m: http://maven.apache.org/POM/4.0.0
-        # match: 1.0 to 1.10, 1 to 8, 11
-        xpath: //m:java.version[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
-               //m:maven.compiler.source[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
-               //m:maven.compiler.target[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
-               //m:maven.compiler.release[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
-               //m:plugin[m:artifactId='maven-compiler-plugin']//m:source[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
-               //m:plugin[m:artifactId='maven-compiler-plugin']//m:target[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')] |
-               //m:plugin[m:artifactId='maven-compiler-plugin']//m:release[matches(text(), '^(1(\.([0-9]|10))?|[2-8]|11)$')]
+        # match: 8, 11, 17, 21
+        xpath: //m:java.version[matches(text(), '^(8|11|17|21)$')] |
+               //m:maven.compiler.source[matches(text(), '^(8|11|17|21)$')] |
+               //m:maven.compiler.target[matches(text(), '^(8|11|17|21)$')] |
+               //m:maven.compiler.release[matches(text(), '^(8|11|17|21)$')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:source[matches(text(), '^(8|11|17|21)$')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:target[matches(text(), '^(8|11|17|21)$')] |
+               //m:plugin[m:artifactId='maven-compiler-plugin']//m:release[matches(text(), '^(8|11|17|21)$')]
     - builtin.filecontent:
         filePattern: (/|\\)build\.gradle(\.kts)?$
-        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(1\.(0|1|2|3|4|5|6|7|8|9|10)|[2-8]|11)['"]?|JavaVersion\.VERSION_(1_0|1_1|1_2|1_3|1_4|1_5|1_6|1_7|1_8|1_9|1_10|2|3|4|5|6|7|8|11)(?!\d))|JavaLanguageVersion\.of\((1(\.([0-9]|10))?|[2-8]|11)\)
+        pattern: (sourceCompatibility|targetCompatibility)\s*=\s*(['"]?(8|11|17|21)['"]?|JavaVersion\.VERSION_(8|11|17|21)(?!\d))|JavaLanguageVersion\.of\((8|11|17|21)\)

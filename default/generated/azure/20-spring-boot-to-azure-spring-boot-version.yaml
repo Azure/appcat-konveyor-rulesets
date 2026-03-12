@@ -49,7 +49,49 @@
   when:
     or:
     # https://spring.io/projects/spring-boot#support
+    - java.dependency:
+        nameregex: org\.springframework\.boot\..*
+        upperbound: "3.4.99"
+
+- category: optional
+  customVariables: []
+  description: Spring Boot Version is not the latest stable
+  effort: 8
+  labels:
+  - source=springboot
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - domain=java-upgrade
+  - category=framework-upgrade
+  - version
+  - os=windows
+  - os=linux
+  links:
+  - title: Migrate Spring Boot applications to Azure Container Apps
+    url: https://learn.microsoft.com/azure/developer/java/migration/migrate-spring-boot-to-azure-container-apps
+  - title: Launch your first Java microservice application with managed Java components in Azure Container Apps
+    url: https://learn.microsoft.com/azure/container-apps/java-microservice-get-started?tabs=azure-cli
+  - title: Spring Boot Supported Versions
+    url: https://spring.io/projects/spring-boot/#support
+  - title: Spring Boot Support Policy
+    url: https://github.com/spring-projects/spring-boot/wiki/Supported-Versions
+  message: |-
+    The application is using a Spring Boot version that is not the latest stable release.
+    Upgrading to the latest stable version ensures you benefit from the newest features, performance improvements, bug fixes, and security patches. Here are some steps you can take to update your application to the latest stable version of Spring Boot:
+
+    * Choose the **latest stable Spring Boot version**: Check out Spring Boot Support Versions and identify the latest stable release.
+
+    * **Update Spring Boot version**: Update the Spring Boot version of your application. There are automated tools like Rewrite to help you with the migration.
+
+    * **Address code compatibility**: Review your application's codebase for any potential compatibility issues with the target Spring Boot version. Update deprecated APIs or features, address any language or library changes, and ensure that your code follows best practices and standards.
+
+    * **Test thoroughly**: Execute a comprehensive testing process to verify the compatibility and functionality of your application with the new Spring Boot version. Perform unit tests, integration tests, and system tests to validate that all components and dependencies work as expected.
+  ruleID: spring-boot-to-azure-spring-boot-version-02000
+  when:
+    or:
     # Also consider and follow the latest supported version by Java Upgrade Extension
     - java.dependency:
         nameregex: org\.springframework\.boot\..*
-        upperbound: "3.3.13"
+        lowerbound: "3.5.0"
+        upperbound: "3.5.99"
