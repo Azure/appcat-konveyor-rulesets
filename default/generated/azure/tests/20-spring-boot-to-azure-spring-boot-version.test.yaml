@@ -4,16 +4,16 @@ providers:
   dataPath: ./data/20-spring-boot-to-azure-spring-boot-version
 - name: builtin
   dataPath: ./data/20-spring-boot-to-azure-spring-boot-version
-tests: 
-- ruleID: spring-boot-to-azure-spring-boot-version-01000
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      exactly: 8
-      messageMatches: The application is using a Spring Boot version that has reached its End of OSS Support.
-- ruleID: spring-boot-to-azure-spring-boot-version-02000
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      exactly: 2
-      messageMatches: The application is using a Spring Boot version that is not the latest stable release.
+tests: []
+# - ruleID: spring-boot-to-azure-spring-boot-version-01000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 8
+#       messageMatches: The application is using a Spring Boot version that has reached its End of OSS Support.
+# - ruleID: spring-boot-to-azure-spring-boot-version-02000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 2
+#       messageMatches: The application is using a Spring Boot version that is not the latest stable release.

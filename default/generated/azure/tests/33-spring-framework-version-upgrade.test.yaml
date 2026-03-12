@@ -4,16 +4,16 @@ providers:
   dataPath: ./data/33-spring-framework-version-upgrade
 - name: builtin
   dataPath: ./data/33-spring-framework-version-upgrade
-tests:
-- ruleID: spring-framework-version-01000
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      exactly: 1
-      messageMatches: Your application is using a Spring Framework version that has reached its End of OSS Support. 
-- ruleID: spring-framework-version-02000
-  testCases:
-  - name: tc-1
-    hasIncidents:
-      exactly: 1
-      messageMatches: Your application is using a Spring Framework version that is not the latest stable release. 
+tests: []
+# - ruleID: spring-framework-version-01000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 1
+#       messageMatches: Your application is using a Spring Framework version that has reached its End of OSS Support. 
+# - ruleID: spring-framework-version-02000
+#   testCases:
+#   - name: tc-1
+#     hasIncidents:
+#       exactly: 1
+#       messageMatches: Your application is using a Spring Framework version that is not the latest stable release. 

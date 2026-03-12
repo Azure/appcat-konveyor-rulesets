@@ -11,9 +11,9 @@
 
 # See the License for the specific language governing permissions and 
 # limitations under the License. 
-- category: optional
+- category: mandatory
   customVariables: []
-  description: Spring Cloud Version too low
+  description: Spring Cloud Version Has Reached End of OSS Support
   effort: 8
   labels:
   - source=springboot
@@ -35,9 +35,8 @@
   - title: Use Rewrite to migrate to Spring Cloud 2022
     url: https://docs.openrewrite.org/recipes/java/spring/cloud2022/upgradespringcloud_2022
   message: |-
-    The application is using a Spring Cloud version that is too low. To get the best experience, consider upgrading to a supported version of Spring Cloud.
-
-     Here are some steps you can take:
+    The application is using a Spring Cloud version that has reached its End of OSS Support.
+    With the officially supported new versions from Spring, you can get the best experience. Here are some steps you can take to update your application to a supported version of Spring Cloud:
 
      * Choose a **supported Spring Cloud version**: Check out the Spring Cloud Supported Versions page to determine the most suitable supported version.
 
@@ -55,7 +54,7 @@
 
 - category: optional
   customVariables: []
-  description: Spring Cloud Version is End of OSS Support
+  description: Spring Cloud Version is not the latest stable
   effort: 8
   labels:
   - source=springboot
@@ -77,11 +76,10 @@
   - title: Use Rewrite to migrate to Spring Cloud 2022
     url: https://docs.openrewrite.org/recipes/java/spring/cloud2022/upgradespringcloud_2022
   message: |-
-    The application is using a Spring Cloud version that is no longer supported. To get the best experience, consider upgrading to a supported version of Spring Cloud.
+    The application is using a Spring Cloud version that is not the latest stable release.
+    Upgrading to the latest stable version ensures you benefit from the newest features, performance improvements, bug fixes, and security patches. Here are some steps you can take to update your application to the latest stable version of Spring Cloud:
 
-     Here are some steps you can take to update your application to a supported version of Spring Cloud:
-
-     * Choose a **supported Spring Cloud version**: Check out the Spring Cloud Supported Versions page to determine the most suitable supported version.
+     * Choose the **latest stable Spring Cloud version**: Check out the Spring Cloud Supported Versions page and identify the latest stable release.
 
      * **Update Spring Cloud version**: Update the Spring Cloud version of your application. There are automated tools like Rewrite to help you with the migration.
 
