@@ -42,6 +42,18 @@
 			<version>2.1.1</version>
 		</dependency>
 		<dependency>
+      		<groupId>com.rabbitmq</groupId>
+      		<artifactId>amqp-client</artifactId>
+      		<version>5.16.0</version>
+    	</dependency>
+		<!-- Source: https://mvnrepository.com/artifact/org.springframework.amqp/spring-rabbit -->
+		<dependency>
+		    <groupId>org.springframework.amqp</groupId>
+		    <artifactId>spring-rabbit</artifactId>
+		    <version>4.0.2</version>
+		    <scope>compile</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-activemq</artifactId>
 			<version>3.1.3</version>
