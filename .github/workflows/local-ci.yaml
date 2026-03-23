@@ -29,7 +29,7 @@ jobs:
         shell: pwsh
         continue-on-error: true
         run: |
-          Invoke-WebRequest -Uri "https://aka.ms/appcat/azure-migrate-appcat-for-java-cli-windows-amd64.zip" -OutFile "appcat.zip"
+          Invoke-WebRequest -Uri "https://emsshare.blob.core.windows.net/ems/azure-migrate-appcat-for-java-cli-windows-amd64-7.7.0.9.zip" -OutFile "appcat.zip"
           Expand-Archive -Path "appcat.zip" -DestinationPath "."
           $appcatDir = Get-ChildItem -Directory -Filter "azure-migrate-appcat-for-java-cli-*" | Select-Object -First 1
           & "$($appcatDir.FullName)\appcat.exe" test .\default\generated\ 2>&1 | Tee-Object -FilePath "output.log"
