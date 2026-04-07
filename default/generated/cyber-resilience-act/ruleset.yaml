@@ -1,0 +1,6 @@
+name: cyber-resilience-act
+description: >-
+  This ruleset detects security issues that violate the EU Cyber Resilience Act
+  (Regulation (EU) 2024/2847) requirements. It covers weak cryptography,
+  insecure TLS/SSL configuration, hard-coded credentials, and insecure random
+  number generation as defined in Annex I of the regulation.

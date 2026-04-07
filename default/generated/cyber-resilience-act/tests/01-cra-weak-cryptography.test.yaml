@@ -1,0 +1,49 @@
+rulesPath: ../01-cra-weak-cryptography.yaml
+providers:
+- name: java
+  dataPath: ./data/01-cra-weak-cryptography
+- name: builtin
+  dataPath: ./data/01-cra-weak-cryptography
+tests:
+- ruleID: cra-weak-crypto-md5-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 4
+      messageMatches: MD5.*is a cryptographically broken hash algorithm.*
+- ruleID: cra-weak-crypto-sha1-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 5
+      messageMatches: SHA-1.*is a deprecated hash algorithm.*
+- ruleID: cra-weak-crypto-des-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 3
+      messageMatches: DES.*Data Encryption Standard.*has a 56-bit key length.*
+- ruleID: cra-weak-crypto-rc4-04000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: RC4.*is a broken stream cipher.*
+- ruleID: cra-weak-crypto-ecb-05000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: ECB.*Electronic Codebook.*mode encrypts each block independently.*
+- ruleID: cra-weak-crypto-blowfish-06000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: Blowfish.*has a 64-bit block size.*
+- ruleID: cra-weak-crypto-password-hash-07000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: Using simple hash algorithms.*for password storage is insecure.*
