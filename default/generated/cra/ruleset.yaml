@@ -1,0 +1,2 @@
+name: cra
+description: EU Cyber Resilience Act (CRA) Annex I compliance detection rules covering weak cryptography, hardcoded credentials, and insecure TLS/SSL configurations.

@@ -1,0 +1,67 @@
+rulesPath: ../01-weak-crypto.yaml
+providers:
+- name: java
+  dataPath: ./data/01-weak-crypto
+- name: builtin
+  dataPath: ./data/01-weak-crypto
+tests:
+- ruleID: cra-weak-crypto-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: uses the MD5 hash algorithm
+- ruleID: cra-weak-crypto-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: uses the SHA-1 hash algorithm
+- ruleID: cra-weak-crypto-00003
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: uses the DES encryption algorithm
+- ruleID: cra-weak-crypto-00004
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: uses 3DES
+- ruleID: cra-weak-crypto-00005
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: uses the RC4
+- ruleID: cra-weak-crypto-00006
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 3
+      messageMatches: uses ECB
+- ruleID: cra-weak-crypto-00007
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: uses the Blowfish cipher
+- ruleID: cra-weak-crypto-00008
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: initializes an asymmetric key pair with a key size smaller than 2048 bits
+- ruleID: cra-weak-crypto-00009
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: uses a weak signature algorithm
+- ruleID: cra-weak-crypto-00010
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: which is not cryptographically secure

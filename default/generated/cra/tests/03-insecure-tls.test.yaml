@@ -1,0 +1,31 @@
+rulesPath: ../03-insecure-tls.yaml
+providers:
+- name: java
+  dataPath: ./data/03-insecure-tls
+- name: builtin
+  dataPath: ./data/03-insecure-tls
+tests:
+- ruleID: cra-insecure-tls-00001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 2
+      messageMatches: uses an outdated or insecure SSL/TLS protocol version
+- ruleID: cra-insecure-tls-00002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 4
+      messageMatches: disables SSL/TLS certificate validation
+- ruleID: cra-insecure-tls-00003
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: disables SSL/TLS hostname verification
+- ruleID: cra-insecure-tls-00004
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 1
+      messageMatches: configures a custom SSLSocketFactory

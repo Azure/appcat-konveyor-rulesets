@@ -1,0 +1,138 @@
+- category: mandatory
+  customVariables: []
+  description: Use of Outdated TLS/SSL Protocol Version
+  effort: 3
+  labels:
+  - domain=cra-compliance
+  - category=insecure-transport
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: NIST SP 800-52 Rev.2 - TLS Implementation Guidelines
+    url: https://csrc.nist.gov/publications/detail/sp/800-52/rev-2/final
+  - title: RFC 8996 - Deprecating TLS 1.0 and TLS 1.1
+    url: https://www.rfc-editor.org/rfc/rfc8996
+  message: |-
+    The application uses an outdated or insecure SSL/TLS protocol version (SSL, SSLv2, SSLv3, TLS 1.0, or TLS 1.1). These protocols have known vulnerabilities (POODLE, BEAST, etc.) and have been deprecated by IETF in RFC 8996.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires state-of-the-art mechanisms for data protection in transit.
+
+    Recommendations:
+    * Use TLS 1.2 as the minimum version: `SSLContext.getInstance("TLSv1.2")`.
+    * Prefer TLS 1.3 where possible: `SSLContext.getInstance("TLSv1.3")`.
+    * Disable all SSL and TLS versions below 1.2 in server and client configurations.
+    * Configure Azure App Service / AKS to enforce minimum TLS 1.2.
+  ruleID: cra-insecure-tls-00001
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: SSLContext\.getInstance\(\s*"(SSL|SSLv2|SSLv3|TLS|TLSv1|TLSv1\.1)"
+- category: mandatory
+  customVariables: []
+  description: Trust All Certificates (Disabled Certificate Validation)
+  effort: 3
+  labels:
+  - domain=cra-compliance
+  - category=insecure-transport
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: OWASP - Improper Certificate Validation
+    url: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_TLS_SSL
+  message: |-
+    The application disables SSL/TLS certificate validation by implementing a custom TrustManager that trusts all certificates. This completely negates the security provided by TLS, making the application vulnerable to man-in-the-middle attacks.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires products to protect data confidentiality and integrity during transit.
+
+    Recommendations:
+    * Remove all custom TrustManager implementations that blindly trust certificates.
+    * Use the default JVM TrustManager which validates certificates against the system trust store.
+    * For internal/self-signed certificates, add them to a custom trust store rather than disabling validation.
+    * Use Azure-managed certificates and Azure Key Vault for certificate management.
+  ruleID: cra-insecure-tls-00002
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: .*\.java
+        pattern: TrustAllCerts|trustAllCerts|ALLOW_ALL_HOSTNAME|AllowAllHostnameVerifier|setDefaultHostnameVerifier
+    - java.referenced:
+        location: IMPORT
+        pattern: javax.net.ssl.X509TrustManager
+- category: mandatory
+  customVariables: []
+  description: Disabled Hostname Verification
+  effort: 3
+  labels:
+  - domain=cra-compliance
+  - category=insecure-transport
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: OWASP - Certificate and Public Key Pinning
+    url: https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning
+  message: |-
+    The application disables SSL/TLS hostname verification, allowing connections to any server regardless of the certificate's Common Name (CN) or Subject Alternative Name (SAN). This makes the application vulnerable to man-in-the-middle attacks.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires products to protect the confidentiality and integrity of data in transit.
+
+    Recommendations:
+    * Remove all custom HostnameVerifier implementations that return `true` unconditionally.
+    * Remove usage of `NoopHostnameVerifier` or `ALLOW_ALL_HOSTNAME_VERIFIER`.
+    * Use the default hostname verification provided by the JVM.
+    * Ensure server certificates include correct Subject Alternative Names (SANs).
+  ruleID: cra-insecure-tls-00003
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: HostnameVerifier.*return\s+true|ALLOW_ALL_HOSTNAME_VERIFIER|NoopHostnameVerifier
+- category: potential
+  customVariables: []
+  description: Custom SSLSocketFactory Configuration
+  effort: 3
+  labels:
+  - domain=cra-compliance
+  - category=insecure-transport
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: Java Secure Socket Extension (JSSE) Reference Guide
+    url: https://docs.oracle.com/en/java/javase/17/security/java-secure-socket-extension-jsse-reference-guide.html
+  message: |-
+    The application configures a custom SSLSocketFactory, which may bypass the default SSL/TLS security settings. Custom socket factories are often used to disable certificate validation or weaken TLS configuration.
+
+    This may conflict with **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires appropriate mechanisms for data protection in transit.
+
+    Recommendations:
+    * Review the custom SSLSocketFactory implementation to ensure it does not weaken security.
+    * Verify that certificate validation and hostname verification are not disabled.
+    * Prefer using the default SSLSocketFactory unless there is a specific, documented security requirement.
+    * If custom trust stores are needed, configure them properly instead of disabling validation.
+  ruleID: cra-insecure-tls-00004
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: setSSLSocketFactory|setDefaultSSLSocketFactory

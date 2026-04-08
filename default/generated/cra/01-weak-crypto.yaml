@@ -1,0 +1,320 @@
+- category: mandatory
+  customVariables: []
+  description: Use of MD5 Hash Algorithm
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: Java Security Standard Algorithm Names
+    url: https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html
+  message: |-
+    The application uses the MD5 hash algorithm (`MessageDigest.getInstance("MD5")`), which is cryptographically broken and unsuitable for security purposes. MD5 is vulnerable to collision attacks and must not be used for digital signatures, certificate validation, or integrity verification.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires products with digital elements to protect the confidentiality and integrity of data using state-of-the-art cryptographic mechanisms.
+
+    Recommendations:
+    * Replace MD5 with SHA-256 or SHA-3 for integrity checks: `MessageDigest.getInstance("SHA-256")`.
+    * For password hashing, use bcrypt, scrypt, or Argon2 instead of any raw message digest.
+    * If MD5 is used only for non-security purposes (e.g., checksums for cache keys), document the justification explicitly.
+  ruleID: cra-weak-crypto-00001
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: MessageDigest\.getInstance\(\s*"MD5"
+- category: mandatory
+  customVariables: []
+  description: Use of SHA-1 Hash Algorithm
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: SHA-1 Deprecation (NIST)
+    url: https://csrc.nist.gov/projects/hash-functions
+  message: |-
+    The application uses the SHA-1 hash algorithm (`MessageDigest.getInstance("SHA-1")`), which is cryptographically weak. SHA-1 is vulnerable to collision attacks and has been deprecated by NIST since 2011.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires state-of-the-art cryptographic mechanisms for data integrity and confidentiality.
+
+    Recommendations:
+    * Replace SHA-1 with SHA-256 or SHA-3: `MessageDigest.getInstance("SHA-256")`.
+    * Update all certificate chains and digital signatures to use SHA-256 or stronger.
+    * Audit all usages of SHA-1 in the codebase and dependencies.
+  ruleID: cra-weak-crypto-00002
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: MessageDigest\.getInstance\(\s*"SHA-?1"
+- category: mandatory
+  customVariables: []
+  description: Use of DES Encryption Algorithm
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: NIST Withdrawal of DES (FIPS 46-3)
+    url: https://csrc.nist.gov/publications/detail/fips/46/3/archive/1999-10-25
+  message: |-
+    The application uses the DES encryption algorithm, which has an effective key size of only 56 bits and can be brute-forced in hours. DES was officially withdrawn by NIST in 2005.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which mandates state-of-the-art encryption for data protection.
+
+    Recommendations:
+    * Replace DES with AES-256 in GCM mode: `Cipher.getInstance("AES/GCM/NoPadding")`.
+    * Ensure all symmetric encryption uses a key size of at least 128 bits (256 bits recommended).
+    * Migrate any stored data encrypted with DES to AES.
+  ruleID: cra-weak-crypto-00003
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: Cipher\.getInstance\(\s*"DES[/"']
+- category: mandatory
+  customVariables: []
+  description: Use of 3DES/DESede Encryption Algorithm
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: NIST SP 800-131A Rev.2 - Transitioning Cryptographic Algorithms
+    url: https://csrc.nist.gov/publications/detail/sp/800-131a/rev-2/final
+  message: |-
+    The application uses 3DES (Triple DES / DESede) encryption. While stronger than DES, 3DES has a 64-bit block size making it vulnerable to Sweet32 birthday attacks, and NIST has deprecated it after 2023.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires state-of-the-art cryptographic mechanisms.
+
+    Recommendations:
+    * Replace DESede with AES-256 in GCM mode: `Cipher.getInstance("AES/GCM/NoPadding")`.
+    * Migrate any data encrypted with 3DES to AES.
+    * Update all protocol configurations (e.g., TLS cipher suites) to exclude 3DES.
+  ruleID: cra-weak-crypto-00004
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: Cipher\.getInstance\(\s*"DESede
+- category: mandatory
+  customVariables: []
+  description: Use of RC4/ARCFOUR Stream Cipher
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: RFC 7465 - Prohibiting RC4 Cipher Suites
+    url: https://www.rfc-editor.org/rfc/rfc7465
+  message: |-
+    The application uses the RC4 (ARCFOUR) stream cipher, which has well-known biases in its keystream that enable practical attacks. RC4 has been prohibited in TLS by RFC 7465.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires state-of-the-art encryption mechanisms.
+
+    Recommendations:
+    * Replace RC4 with AES-GCM or ChaCha20-Poly1305: `Cipher.getInstance("AES/GCM/NoPadding")`.
+    * Remove all RC4 cipher suites from TLS configurations.
+    * Verify that no dependencies or libraries fall back to RC4.
+  ruleID: cra-weak-crypto-00005
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: Cipher\.getInstance\(\s*"(RC4|ARCFOUR)"
+- category: mandatory
+  customVariables: []
+  description: Use of ECB Block Cipher Mode
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: Block Cipher Modes - NIST SP 800-38A
+    url: https://csrc.nist.gov/publications/detail/sp/800-38a/final
+  message: |-
+    The application uses ECB (Electronic Codebook) block cipher mode. ECB encrypts identical plaintext blocks to identical ciphertext blocks, leaking data patterns and making it unsuitable for encrypting data larger than a single block.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires proper encryption to protect data confidentiality.
+
+    Recommendations:
+    * Use GCM (Galois/Counter Mode) for authenticated encryption: `Cipher.getInstance("AES/GCM/NoPadding")`.
+    * If authentication is handled separately, use CBC with a random IV and HMAC, or CTR mode.
+    * Never use ECB mode for encrypting multi-block data.
+  ruleID: cra-weak-crypto-00006
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: Cipher\.getInstance\(\s*"[A-Za-z]+/ECB/
+- category: potential
+  customVariables: []
+  description: Use of Blowfish Encryption Algorithm
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: NIST Approved Encryption Algorithms
+    url: https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines
+  message: |-
+    The application uses the Blowfish cipher, which has a 64-bit block size making it vulnerable to birthday attacks (Sweet32) on large data volumes. Blowfish is not NIST-approved and is considered legacy.
+
+    This may conflict with **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires state-of-the-art cryptographic mechanisms.
+
+    Recommendations:
+    * Replace Blowfish with AES-256 in GCM mode: `Cipher.getInstance("AES/GCM/NoPadding")`.
+    * If Blowfish is used for password hashing (bcrypt), this is acceptable — bcrypt's use of Blowfish is a different context.
+    * Document any non-security uses of Blowfish with explicit justification.
+  ruleID: cra-weak-crypto-00007
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: Cipher\.getInstance\(\s*"Blowfish
+- category: mandatory
+  customVariables: []
+  description: Weak RSA Key Size (< 2048 bits)
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: NIST SP 800-57 Part 1 - Key Management Recommendations
+    url: https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final
+  message: |-
+    The application initializes an asymmetric key pair with a key size smaller than 2048 bits (512, 768, or 1024 bits detected). RSA keys below 2048 bits are considered insecure and can be factored with modern computing resources.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires state-of-the-art cryptographic mechanisms.
+
+    Recommendations:
+    * Use a minimum RSA key size of 2048 bits; 4096 bits is recommended for long-term security.
+    * Consider migrating to Elliptic Curve Cryptography (ECC) with P-256 or P-384 curves for better performance.
+    * Update all key generation code: `keyPairGen.initialize(4096)`.
+  ruleID: cra-weak-crypto-00008
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: \.initialize\(\s*(512|768|1024)\s*\)
+- category: mandatory
+  customVariables: []
+  description: Weak Signature Algorithm (MD5/SHA1-based)
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: NIST Policy on Hash Functions
+    url: https://csrc.nist.gov/projects/hash-functions
+  message: |-
+    The application uses a weak signature algorithm based on MD5 or SHA-1 (e.g., `MD5withRSA`, `SHA1withRSA`, `SHA1withDSA`). These hash functions are vulnerable to collision attacks, making signatures forgeable.
+
+    This violates **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires state-of-the-art cryptographic mechanisms for data integrity.
+
+    Recommendations:
+    * Replace with SHA-256 or stronger based signatures: `Signature.getInstance("SHA256withRSA")`.
+    * For ECDSA, use `SHA256withECDSA` or `SHA384withECDSA`.
+    * Update all certificate signing to use SHA-256 or SHA-384.
+  ruleID: cra-weak-crypto-00009
+  when:
+    builtin.filecontent:
+      filePattern: .*\.java
+      pattern: Signature\.getInstance\(\s*"(MD5|SHA1)with
+- category: potential
+  customVariables: []
+  description: Use of Insecure Random Number Generator
+  effort: 5
+  labels:
+  - domain=cra-compliance
+  - category=weak-cryptography
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - security
+  - os=windows
+  - os=linux
+  links:
+  - title: "CRA Annex I - Section 1.2(c): Data Protection"
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: Java SecureRandom Documentation
+    url: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/SecureRandom.html
+  message: |-
+    The application uses `java.util.Random`, which is not cryptographically secure. Its output is predictable given enough observed values, making it unsuitable for generating security-sensitive values such as tokens, keys, nonces, or session IDs.
+
+    This may conflict with **EU Cyber Resilience Act (CRA) Annex I, Section 1.2(c)**, which requires appropriate cryptographic mechanisms.
+
+    Recommendations:
+    * Replace `java.util.Random` with `java.security.SecureRandom` for all security-sensitive random number generation.
+    * Use `SecureRandom.getInstanceStrong()` when the highest entropy is required.
+    * `java.util.Random` is acceptable for non-security purposes (e.g., simulations, shuffling UI elements).
+  ruleID: cra-weak-crypto-00010
+  when:
+    java.referenced:
+      location: CONSTRUCTOR_CALL
+      pattern: java.util.Random
