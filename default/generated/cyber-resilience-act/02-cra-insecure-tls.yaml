@@ -4,9 +4,14 @@
   effort: 5
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=insecure-tls
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -27,40 +32,24 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'SSLContext\.getInstance\(\s*"SSL"'
+        pattern: 'SSLContext\.getInstance\(\s*"(SSL|SSLv2|SSLv3)"|SSLContext\.getInstance\(\s*"TLS"\s*\)|SSLContext\.getInstance\(\s*"TLSv1(\.1)?"'
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'SSLContext\.getInstance\(\s*"SSLv2"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SSLContext\.getInstance\(\s*"SSLv3"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SSLContext\.getInstance\(\s*"TLS"\s*\)'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SSLContext\.getInstance\(\s*"TLSv1"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SSLContext\.getInstance\(\s*"TLSv1\.1"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'setEnabledProtocols.*SSLv3'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'setEnabledProtocols.*TLSv1[^.]'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'setEnabledProtocols.*TLSv1\.1'
+        pattern: 'setEnabledProtocols.*(SSLv3|TLSv1[^.]|TLSv1\.1)'
 - category: mandatory
   customVariables: []
   description: "CRA: Insecure TLS protocol in configuration"
   effort: 3
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=insecure-tls
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -80,22 +69,10 @@
     or:
     - builtin.filecontent:
         filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
-        pattern: 'ssl\.enabled-protocols.*TLSv1[^.]'
-    - builtin.filecontent:
-        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
-        pattern: 'ssl\.enabled-protocols.*TLSv1\.1'
-    - builtin.filecontent:
-        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
-        pattern: 'ssl\.enabled-protocols.*SSLv3'
+        pattern: 'ssl\.enabled-protocols.*(TLSv1[^.]|TLSv1\.1|SSLv3)'
     - builtin.filecontent:
         filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(yaml|yml)$
-        pattern: 'enabled-protocols:\s*.*TLSv1[^.]'
-    - builtin.filecontent:
-        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(yaml|yml)$
-        pattern: 'enabled-protocols:\s*.*TLSv1\.1'
-    - builtin.filecontent:
-        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(yaml|yml)$
-        pattern: 'enabled-protocols:\s*.*SSLv3'
+        pattern: 'enabled-protocols:\s*.*(TLSv1[^.]|TLSv1\.1|SSLv3)'
     - builtin.xml:
         namespaces: {}
         xpath: //*[contains(@sslProtocol,'TLSv1.1') or contains(@sslProtocol,'TLSv1') or contains(@sslProtocol,'SSLv3')]
@@ -108,9 +85,14 @@
   effort: 7
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=insecure-tls
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -131,25 +113,7 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'implements\s+X509TrustManager'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'TrustAllCerts'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'AllowAllHostnameVerifier'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'ALLOW_ALL_HOSTNAME_VERIFIER'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'NoopHostnameVerifier'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'setHostnameVerifier\(.*ALLOW_ALL'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SSLConnectionSocketFactory\.ALLOW_ALL'
+        pattern: 'implements\s+X509TrustManager|TrustAllCerts|AllowAllHostnameVerifier|ALLOW_ALL_HOSTNAME_VERIFIER|NoopHostnameVerifier|setHostnameVerifier\(.*ALLOW_ALL|SSLConnectionSocketFactory\.ALLOW_ALL'
     - java.referenced:
         location: IMPORT
         pattern: org.apache.http.conn.ssl.NoopHostnameVerifier
@@ -162,9 +126,14 @@
   effort: 7
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=insecure-tls
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -184,22 +153,21 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'new HostnameVerifier\(\)\s*\{[^}]*return\s+true'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'HostnameVerifier\s+\w+\s*=\s*\(.*\)\s*->\s*true'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'verify\(String\s+\w+,\s*SSLSession\s+\w+\)\s*\{[^}]*return\s+true'
+        pattern: 'new HostnameVerifier\(\)\s*\{[^}]*return\s+true|HostnameVerifier\s+\w+\s*=\s*\(.*\)\s*->\s*true|verify\(String\s+\w+,\s*SSLSession\s+\w+\)\s*\{[^}]*return\s+true'
 - category: mandatory
   customVariables: []
   description: "CRA: Insecure TLS cipher suites"
   effort: 5
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=insecure-tls
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -220,28 +188,4 @@
     or:
     - builtin.filecontent:
         filePattern: \.(java|properties|yaml|yml)$
-        pattern: 'SSL_NULL'
-    - builtin.filecontent:
-        filePattern: \.(java|properties|yaml|yml)$
-        pattern: 'TLS_NULL'
-    - builtin.filecontent:
-        filePattern: \.(java|properties|yaml|yml)$
-        pattern: 'SSL_RSA_WITH_NULL'
-    - builtin.filecontent:
-        filePattern: \.(java|properties|yaml|yml)$
-        pattern: '_EXPORT_'
-    - builtin.filecontent:
-        filePattern: \.(java|properties|yaml|yml)$
-        pattern: 'SSL_RSA_WITH_DES'
-    - builtin.filecontent:
-        filePattern: \.(java|properties|yaml|yml)$
-        pattern: 'SSL_RSA_WITH_RC4'
-    - builtin.filecontent:
-        filePattern: \.(java|properties|yaml|yml)$
-        pattern: 'TLS_RSA_WITH_RC4'
-    - builtin.filecontent:
-        filePattern: \.(java|properties|yaml|yml)$
-        pattern: 'SSL_DH_anon'
-    - builtin.filecontent:
-        filePattern: \.(java|properties|yaml|yml)$
-        pattern: 'TLS_DH_anon'
+        pattern: 'SSL_NULL|TLS_NULL|SSL_RSA_WITH_NULL|_EXPORT_|SSL_RSA_WITH_DES|SSL_RSA_WITH_RC4|TLS_RSA_WITH_RC4|SSL_DH_anon|TLS_DH_anon'

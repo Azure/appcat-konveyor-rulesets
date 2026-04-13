@@ -4,9 +4,14 @@
   effort: 5
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=insecure-random
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -44,9 +49,14 @@
   effort: 3
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=insecure-random
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -72,9 +82,14 @@
   effort: 3
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=insecure-random
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj

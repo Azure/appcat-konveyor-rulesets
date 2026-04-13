@@ -4,9 +4,14 @@
   effort: 5
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=weak-cryptography
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -30,28 +35,21 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'MessageDigest\.getInstance\(\s*"MD5"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'MessageDigest\.getInstance\(\s*"md5"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'DigestUtils\.md5'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'HmacMD5'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'Hashing\.md5\(\)'
+        pattern: 'MessageDigest\.getInstance\(\s*"[Mm][Dd]5"|DigestUtils\.md5|HmacMD5|Hashing\.md5\(\)'
 - category: mandatory
   customVariables: []
   description: "CRA: Use of weak hash algorithm SHA-1"
   effort: 5
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=weak-cryptography
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -71,37 +69,21 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'MessageDigest\.getInstance\(\s*"SHA-?1"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'DigestUtils\.sha1'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'DigestUtils\.getSha1Digest'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'HmacSHA1'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'Hashing\.sha1\(\)'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SHA1WithRSA'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SHA1withDSA'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SHA1WithECDSA'
+        pattern: 'MessageDigest\.getInstance\(\s*"SHA-?1"|DigestUtils\.(sha1|getSha1Digest)|HmacSHA1|Hashing\.sha1\(\)|SHA1(WithRSA|withDSA|WithECDSA)'
 - category: mandatory
   customVariables: []
   description: "CRA: Use of broken encryption algorithm DES"
   effort: 7
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=weak-cryptography
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -122,31 +104,21 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"DES[/"'']'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"DESede'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SecretKeyFactory\.getInstance\(\s*"DES"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'SecretKeyFactory\.getInstance\(\s*"DESede"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'KeyGenerator\.getInstance\(\s*"DES"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'KeyGenerator\.getInstance\(\s*"DESede"'
+        pattern: 'Cipher\.getInstance\(\s*"DES([/"'']|ede)|(SecretKeyFactory|KeyGenerator)\.getInstance\(\s*"DES(ede)?"'
 - category: mandatory
   customVariables: []
   description: "CRA: Use of broken stream cipher RC4"
   effort: 7
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=weak-cryptography
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -165,28 +137,21 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"RC4"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"ARCFOUR"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"ARC4"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'KeyGenerator\.getInstance\(\s*"RC4"'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'KeyGenerator\.getInstance\(\s*"ARCFOUR"'
+        pattern: 'Cipher\.getInstance\(\s*"(RC4|ARCFOUR|ARC4)"|KeyGenerator\.getInstance\(\s*"(RC4|ARCFOUR)"'
 - category: mandatory
   customVariables: []
   description: "CRA: Use of insecure ECB block cipher mode"
   effort: 5
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=weak-cryptography
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -206,25 +171,21 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"AES/ECB'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"DES/ECB'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"DESede/ECB'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"Blowfish/ECB'
+        pattern: 'Cipher\.getInstance\(\s*"(AES|DES|DESede|Blowfish)/ECB'
 - category: potential
   customVariables: []
   description: "CRA: Use of weak encryption algorithm Blowfish"
   effort: 5
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=weak-cryptography
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -241,19 +202,21 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'Cipher\.getInstance\(\s*"Blowfish'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'KeyGenerator\.getInstance\(\s*"Blowfish"'
+        pattern: 'Cipher\.getInstance\(\s*"Blowfish|KeyGenerator\.getInstance\(\s*"Blowfish"'
 - category: mandatory
   customVariables: []
   description: "CRA: Use of weak password hashing (plain MD5/SHA for passwords)"
   effort: 7
   labels:
   - source
-  - domain=cyber-resilience-act
+  - domain=cloud-readiness
   - category=weak-cryptography
   - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
   links:
   - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
     url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
@@ -275,19 +238,4 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
-        pattern: 'new Md5PasswordEncoder'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'new ShaPasswordEncoder'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'new LdapShaPasswordEncoder'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'new MessageDigestPasswordEncoder'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: 'NoOpPasswordEncoder\.getInstance'
-    - builtin.filecontent:
-        filePattern: \.java$
-        pattern: '{noop}'
+        pattern: 'new (Md5|Sha|LdapSha|MessageDigest)PasswordEncoder|NoOpPasswordEncoder\.getInstance|\{noop\}'
