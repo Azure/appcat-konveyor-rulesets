@@ -87,6 +87,15 @@
     - builtin.filecontent:
         filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
         pattern: 'ssl\.enabled-protocols.*SSLv3'
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(yaml|yml)$
+        pattern: 'enabled-protocols:\s*.*TLSv1[^.]'
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(yaml|yml)$
+        pattern: 'enabled-protocols:\s*.*TLSv1\.1'
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(yaml|yml)$
+        pattern: 'enabled-protocols:\s*.*SSLv3'
     - builtin.xml:
         namespaces: {}
         xpath: //*[contains(@sslProtocol,'TLSv1.1') or contains(@sslProtocol,'TLSv1') or contains(@sslProtocol,'SSLv3')]
