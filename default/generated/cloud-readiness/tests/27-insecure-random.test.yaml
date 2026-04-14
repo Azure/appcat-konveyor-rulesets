@@ -1,9 +1,9 @@
-rulesPath: ../04-cra-insecure-random.yaml
+rulesPath: ../27-insecure-random.yaml
 providers:
 - name: java
-  dataPath: ./data/04-cra-insecure-random
+  dataPath: ./data/27-insecure-random
 - name: builtin
-  dataPath: ./data/04-cra-insecure-random
+  dataPath: ./data/27-insecure-random
 tests:
 - ruleID: cra-insecure-random-01000
   testCases:

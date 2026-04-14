@@ -1,9 +1,9 @@
-rulesPath: ../02-cra-insecure-tls.yaml
+rulesPath: ../25-insecure-tls.yaml
 providers:
 - name: java
-  dataPath: ./data/02-cra-insecure-tls
+  dataPath: ./data/25-insecure-tls
 - name: builtin
-  dataPath: ./data/02-cra-insecure-tls
+  dataPath: ./data/25-insecure-tls
 tests:
 - ruleID: cra-insecure-tls-protocol-01000
   testCases:

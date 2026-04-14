@@ -1,9 +1,9 @@
-rulesPath: ../01-cra-weak-cryptography.yaml
+rulesPath: ../24-weak-cryptography.yaml
 providers:
 - name: java
-  dataPath: ./data/01-cra-weak-cryptography
+  dataPath: ./data/24-weak-cryptography
 - name: builtin
-  dataPath: ./data/01-cra-weak-cryptography
+  dataPath: ./data/24-weak-cryptography
 tests:
 - ruleID: cra-weak-crypto-md5-01000
   testCases:
