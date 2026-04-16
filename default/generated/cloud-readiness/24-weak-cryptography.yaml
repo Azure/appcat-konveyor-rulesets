@@ -35,6 +35,7 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
+        # Matches: MessageDigest.getInstance("MD5"), DigestUtils.md5*, HmacMD5, Hashing.md5()
         pattern: 'MessageDigest\.getInstance\(\s*"[Mm][Dd]5"|DigestUtils\.md5|HmacMD5|Hashing\.md5\(\)'
 - category: mandatory
   customVariables: []
@@ -69,11 +70,12 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
+        # Matches: MessageDigest.getInstance("SHA-1"/"SHA1"), DigestUtils.sha1*/getSha1Digest, HmacSHA1, Hashing.sha1(), SHA1WithRSA/withDSA/WithECDSA
         pattern: 'MessageDigest\.getInstance\(\s*"SHA-?1"|DigestUtils\.(sha1|getSha1Digest)|HmacSHA1|Hashing\.sha1\(\)|SHA1(WithRSA|withDSA|WithECDSA)'
 - category: mandatory
   customVariables: []
   description: "CRA: Use of broken encryption algorithm DES"
-  effort: 7
+  effort: 8
   labels:
   - source
   - domain=cloud-readiness
@@ -104,11 +106,12 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
+        # Matches: Cipher.getInstance("DES...") including DESede/TripleDES, SecretKeyFactory/KeyGenerator.getInstance("DES"/"DESede")
         pattern: 'Cipher\.getInstance\(\s*"DES([/"'']|ede)|(SecretKeyFactory|KeyGenerator)\.getInstance\(\s*"DES(ede)?"'
 - category: mandatory
   customVariables: []
   description: "CRA: Use of broken stream cipher RC4"
-  effort: 7
+  effort: 8
   labels:
   - source
   - domain=cloud-readiness
@@ -137,6 +140,7 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
+        # Matches: Cipher.getInstance("RC4"/"ARCFOUR"/"ARC4"), KeyGenerator.getInstance("RC4"/"ARCFOUR")
         pattern: 'Cipher\.getInstance\(\s*"(RC4|ARCFOUR|ARC4)"|KeyGenerator\.getInstance\(\s*"(RC4|ARCFOUR)"'
 - category: mandatory
   customVariables: []
@@ -171,6 +175,7 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
+        # Matches: Cipher.getInstance("AES/ECB..."), Cipher.getInstance("DES/ECB..."), etc.
         pattern: 'Cipher\.getInstance\(\s*"(AES|DES|DESede|Blowfish)/ECB'
 - category: potential
   customVariables: []
@@ -202,11 +207,12 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
+        # Matches: Cipher.getInstance("Blowfish..."), KeyGenerator.getInstance("Blowfish")
         pattern: 'Cipher\.getInstance\(\s*"Blowfish|KeyGenerator\.getInstance\(\s*"Blowfish"'
 - category: mandatory
   customVariables: []
   description: "CRA: Use of weak password hashing (plain MD5/SHA for passwords)"
-  effort: 7
+  effort: 8
   labels:
   - source
   - domain=cloud-readiness
@@ -238,4 +244,5 @@
     or:
     - builtin.filecontent:
         filePattern: \.java$
+        # Matches: Md5PasswordEncoder, ShaPasswordEncoder, LdapShaPasswordEncoder, MessageDigestPasswordEncoder, NoOpPasswordEncoder.getInstance, {noop}
         pattern: 'new (Md5|Sha|LdapSha|MessageDigest)PasswordEncoder|NoOpPasswordEncoder\.getInstance|\{noop\}'
