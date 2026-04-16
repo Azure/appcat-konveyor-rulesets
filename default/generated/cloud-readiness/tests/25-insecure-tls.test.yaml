@@ -1,0 +1,37 @@
+rulesPath: ../25-insecure-tls.yaml
+providers:
+- name: java
+  dataPath: ./data/25-insecure-tls
+- name: builtin
+  dataPath: ./data/25-insecure-tls
+tests:
+- ruleID: cra-insecure-tls-protocol-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 5
+      messageMatches: SSLv2, SSLv3, TLS 1.0 and TLS 1.1.*are deprecated protocols.*
+- ruleID: cra-insecure-tls-config-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Insecure TLS/SSL protocol versions.*were detected in configuration files.*
+- ruleID: cra-insecure-tls-trust-all-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 3
+      messageMatches: Implementing a custom.*TrustManager.*completely disables TLS certificate verification.*
+- ruleID: cra-insecure-tls-hostname-verify-04000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: Overriding the.*HostnameVerifier.*to always return.*true.*disables hostname verification.*
+- ruleID: cra-insecure-tls-cipher-suite-05000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 4
+      messageMatches: Insecure TLS cipher suites.*are present in the configuration.*

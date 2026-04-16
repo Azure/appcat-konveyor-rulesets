@@ -1,0 +1,248 @@
+- category: mandatory
+  customVariables: []
+  description: "CRA: Use of weak hash algorithm MD5"
+  effort: 5
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=weak-cryptography
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: Java Security Standard Algorithm Names
+    url: https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(c))** requires that products protect the confidentiality and integrity of data using encryption and hashing mechanisms that reflect the **state of the art**.
+
+    **MD5** is a cryptographically broken hash algorithm. It is vulnerable to collision attacks and must not be used for:
+    - Password hashing
+    - Digital signatures
+    - Data integrity verification
+    - Certificate validation
+
+    **Recommended actions:**
+    * Replace `MessageDigest.getInstance("MD5")` with `MessageDigest.getInstance("SHA-256")` or `MessageDigest.getInstance("SHA-3-256")` for general hashing.
+    * For password hashing, use **bcrypt**, **scrypt**, **Argon2**, or **PBKDF2** instead.
+    * For HMAC operations, use `HmacSHA256` or `HmacSHA3-256`.
+  ruleID: cra-weak-crypto-md5-01000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: \.java$
+        # Matches: MessageDigest.getInstance("MD5"), DigestUtils.md5*, HmacMD5, Hashing.md5()
+        pattern: 'MessageDigest\.getInstance\(\s*"[Mm][Dd]5"|DigestUtils\.md5|HmacMD5|Hashing\.md5\(\)'
+- category: mandatory
+  customVariables: []
+  description: "CRA: Use of weak hash algorithm SHA-1"
+  effort: 5
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=weak-cryptography
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: NIST Policy on Hash Functions
+    url: https://csrc.nist.gov/projects/hash-functions
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(c))** requires that products protect the confidentiality and integrity of data using **state of the art** mechanisms.
+
+    **SHA-1** is a deprecated hash algorithm. NIST has disallowed SHA-1 for digital signatures and recommends transitioning to SHA-2 or SHA-3 family algorithms.
+
+    **Recommended actions:**
+    * Replace `MessageDigest.getInstance("SHA-1")` with `MessageDigest.getInstance("SHA-256")` or `MessageDigest.getInstance("SHA-3-256")`.
+    * For HMAC operations, use `HmacSHA256` or stronger.
+    * For digital signatures, use SHA-256 or SHA-384 with RSA or ECDSA.
+  ruleID: cra-weak-crypto-sha1-02000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: \.java$
+        # Matches: MessageDigest.getInstance("SHA-1"/"SHA1"), DigestUtils.sha1*/getSha1Digest, HmacSHA1, Hashing.sha1(), SHA1WithRSA/withDSA/WithECDSA
+        pattern: 'MessageDigest\.getInstance\(\s*"SHA-?1"|DigestUtils\.(sha1|getSha1Digest)|HmacSHA1|Hashing\.sha1\(\)|SHA1(WithRSA|withDSA|WithECDSA)'
+- category: mandatory
+  customVariables: []
+  description: "CRA: Use of broken encryption algorithm DES"
+  effort: 8
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=weak-cryptography
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: NIST Recommendation for Block Cipher Modes of Operation
+    url: https://csrc.nist.gov/publications/detail/sp/800-38a/final
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(c))** requires the use of **state of the art** encryption mechanisms.
+
+    **DES** (Data Encryption Standard) has a 56-bit key length that is trivially brute-forced with modern hardware. **3DES (DESede/TripleDES)** is also deprecated by NIST as of 2023.
+
+    **Recommended actions:**
+    * Replace `Cipher.getInstance("DES/...")` with `Cipher.getInstance("AES/GCM/NoPadding")`.
+    * Replace `Cipher.getInstance("DESede/...")` with `Cipher.getInstance("AES/GCM/NoPadding")`.
+    * Use AES with a minimum key length of 128 bits (AES-256 recommended).
+    * Prefer authenticated encryption modes (GCM, CCM) over CBC.
+  ruleID: cra-weak-crypto-des-03000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: \.java$
+        # Matches: Cipher.getInstance("DES...") including DESede/TripleDES, SecretKeyFactory/KeyGenerator.getInstance("DES"/"DESede")
+        pattern: 'Cipher\.getInstance\(\s*"DES([/"'']|ede)|(SecretKeyFactory|KeyGenerator)\.getInstance\(\s*"DES(ede)?"'
+- category: mandatory
+  customVariables: []
+  description: "CRA: Use of broken stream cipher RC4"
+  effort: 8
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=weak-cryptography
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: RFC 7465 - Prohibiting RC4 Cipher Suites
+    url: https://www.rfc-editor.org/rfc/rfc7465
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(c))** requires the use of **state of the art** encryption mechanisms.
+
+    **RC4 (ARC4/ARCFOUR)** is a broken stream cipher with known statistical biases that make it vulnerable to plaintext recovery attacks. It has been prohibited in TLS by RFC 7465.
+
+    **Recommended actions:**
+    * Replace RC4 with **AES-GCM** or **ChaCha20-Poly1305**.
+    * Remove any RC4-based cipher suites from TLS configurations.
+  ruleID: cra-weak-crypto-rc4-04000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: \.java$
+        # Matches: Cipher.getInstance("RC4"/"ARCFOUR"/"ARC4"), KeyGenerator.getInstance("RC4"/"ARCFOUR")
+        pattern: 'Cipher\.getInstance\(\s*"(RC4|ARCFOUR|ARC4)"|KeyGenerator\.getInstance\(\s*"(RC4|ARCFOUR)"'
+- category: mandatory
+  customVariables: []
+  description: "CRA: Use of insecure ECB block cipher mode"
+  effort: 5
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=weak-cryptography
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: CWE-327 - Use of a Broken or Risky Cryptographic Algorithm
+    url: https://cwe.mitre.org/data/definitions/327.html
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(c))** requires the use of **state of the art** encryption mechanisms.
+
+    **ECB (Electronic Codebook)** mode encrypts each block independently, which means identical plaintext blocks produce identical ciphertext blocks. This leaks structural information about the data and is considered insecure for most use cases.
+
+    **Recommended actions:**
+    * Replace `AES/ECB/...` with `AES/GCM/NoPadding` (authenticated encryption, preferred).
+    * Alternatively, use `AES/CBC/PKCS5Padding` with a random IV and HMAC for integrity.
+    * Never reuse IVs or nonces with the same key.
+  ruleID: cra-weak-crypto-ecb-05000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: \.java$
+        # Matches: Cipher.getInstance("AES/ECB..."), Cipher.getInstance("DES/ECB..."), etc.
+        pattern: 'Cipher\.getInstance\(\s*"(AES|DES|DESede|Blowfish)/ECB'
+- category: potential
+  customVariables: []
+  description: "CRA: Use of weak encryption algorithm Blowfish"
+  effort: 5
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=weak-cryptography
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(c))** requires the use of **state of the art** encryption mechanisms.
+
+    **Blowfish** has a 64-bit block size which makes it vulnerable to birthday attacks (Sweet32) when encrypting large amounts of data. It is no longer considered state of the art for new applications.
+
+    **Recommended actions:**
+    * Replace Blowfish with **AES-GCM** (128-bit block size, authenticated encryption).
+    * Use a minimum key length of 128 bits (AES-256 recommended).
+  ruleID: cra-weak-crypto-blowfish-06000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: \.java$
+        # Matches: Cipher.getInstance("Blowfish..."), KeyGenerator.getInstance("Blowfish")
+        pattern: 'Cipher\.getInstance\(\s*"Blowfish|KeyGenerator\.getInstance\(\s*"Blowfish"'
+- category: mandatory
+  customVariables: []
+  description: "CRA: Use of weak password hashing (plain MD5/SHA for passwords)"
+  effort: 8
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=weak-cryptography
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: OWASP Password Storage Cheat Sheet
+    url: https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(b)(c))** requires robust authentication mechanisms and state of the art cryptography.
+
+    Using simple hash algorithms (MD5, SHA-1, SHA-256 without salt/iteration) for password storage is insecure. These hashes can be reversed using rainbow tables or brute-force attacks with modern GPUs.
+
+    **Recommended actions:**
+    * Use **bcrypt** (`BCryptPasswordEncoder` in Spring Security).
+    * Use **Argon2** (`Argon2PasswordEncoder` in Spring Security).
+    * Use **PBKDF2** with at least 600,000 iterations (`PBKDF2WithHmacSHA256`).
+    * Use **scrypt** (`SCryptPasswordEncoder` in Spring Security).
+    * Ensure all password hashing uses a unique salt per password.
+  ruleID: cra-weak-crypto-password-hash-07000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: \.java$
+        # Matches: Md5PasswordEncoder, ShaPasswordEncoder, LdapShaPasswordEncoder, MessageDigestPasswordEncoder, NoOpPasswordEncoder.getInstance, {noop}
+        pattern: 'new (Md5|Sha|LdapSha|MessageDigest)PasswordEncoder|NoOpPasswordEncoder\.getInstance|\{noop\}'
