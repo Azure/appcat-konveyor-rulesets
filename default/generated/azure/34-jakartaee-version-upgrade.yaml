@@ -3,7 +3,7 @@
   description: Jakarta EE Version is not the latest stable
   effort: 8
   labels:
-  - source=jakarta-ee
+  - source
   - target=azure-appservice
   - target=azure-aks
   - target=azure-container-apps
