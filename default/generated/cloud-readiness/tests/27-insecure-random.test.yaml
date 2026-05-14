@@ -1,0 +1,25 @@
+rulesPath: ../27-insecure-random.yaml
+providers:
+- name: java
+  dataPath: ./data/27-insecure-random
+- name: builtin
+  dataPath: ./data/27-insecure-random
+tests:
+- ruleID: cra-insecure-random-01000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 3
+      messageMatches: java.util.Random.*uses a linear congruential generator.*not cryptographically secure.*
+- ruleID: cra-insecure-random-math-02000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: Math.random\(\).*internally uses.*java.util.Random.*predictable.*
+- ruleID: cra-insecure-random-threadlocal-03000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 1
+      messageMatches: ThreadLocalRandom.*not cryptographically secure.*

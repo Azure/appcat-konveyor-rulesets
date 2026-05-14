@@ -1,0 +1,115 @@
+- category: mandatory
+  customVariables: []
+  description: "CRA: Use of insecure random number generator java.util.Random"
+  effort: 5
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=insecure-random
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: CWE-330 - Use of Insufficiently Random Values
+    url: https://cwe.mitre.org/data/definitions/330.html
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(c))** requires the use of **state of the art** cryptographic mechanisms, which includes the use of cryptographically secure random number generators (CSPRNG).
+
+    `java.util.Random` uses a linear congruential generator (LCG) which is **not cryptographically secure**. Its output is predictable given enough observations, making it unsuitable for:
+    - Token/session ID generation
+    - Nonce/IV generation for encryption
+    - Salt generation for password hashing
+    - Any security-sensitive random value generation
+
+    **Recommended actions:**
+    * Replace `new Random()` with `new SecureRandom()` for any security-relevant random number generation.
+    * Replace `Math.random()` with `SecureRandom.nextDouble()` for security use cases.
+    * Replace `ThreadLocalRandom.current()` with `SecureRandom` for security contexts.
+    * Use `java.security.SecureRandom` which provides a CSPRNG backed by the OS entropy source.
+  ruleID: cra-insecure-random-01000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: \.java$
+        # Matches: new Random() constructor call
+        pattern: 'new Random\('
+    - java.referenced:
+        location: IMPORT
+        pattern: java.util.Random
+    - java.referenced:
+        location: CONSTRUCTOR_CALL
+        pattern: java.util.Random*
+- category: potential
+  customVariables: []
+  description: "CRA: Use of Math.random() which is not cryptographically secure"
+  effort: 3
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=insecure-random
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  - title: CWE-338 - Use of Cryptographically Weak PRNG
+    url: https://cwe.mitre.org/data/definitions/338.html
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(c))** requires the use of **state of the art** cryptographic mechanisms.
+
+    `Math.random()` internally uses `java.util.Random` which is a **predictable** pseudo-random number generator. If this value is used for any security-sensitive purpose (tokens, session IDs, nonces, encryption keys), it must be replaced with a cryptographically secure alternative.
+
+    **Recommended actions:**
+    * Replace `Math.random()` with `SecureRandom.nextDouble()` for security-relevant use cases.
+    * Use `SecureRandom.nextBytes()` for generating random byte arrays.
+    * Evaluate whether the use of `Math.random()` in this context has security implications.
+  ruleID: cra-insecure-random-math-02000
+  when:
+    builtin.filecontent:
+      filePattern: \.java$
+      # Matches: Math.random() calls
+      pattern: 'Math\.random\(\)'
+- category: potential
+  customVariables: []
+  description: "CRA: Use of ThreadLocalRandom in potential security context"
+  effort: 3
+  labels:
+  - source
+  - domain=cloud-readiness
+  - category=insecure-random
+  - security
+  - target=azure-aks
+  - target=azure-container-apps
+  - target=azure-appservice
+  - os=windows
+  - os=linux
+  links:
+  - title: EU Cyber Resilience Act - Regulation (EU) 2024/2847
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+  message: |-
+    **EU Cyber Resilience Act (Annex I, Part I, Section 2(c))** requires the use of **state of the art** cryptographic mechanisms.
+
+    `ThreadLocalRandom` is optimized for performance in concurrent applications but is **not cryptographically secure**. If used for generating tokens, session IDs, nonces, or any security-sensitive values, it must be replaced with `SecureRandom`.
+
+    **Recommended actions:**
+    * Replace `ThreadLocalRandom.current()` with `SecureRandom` for security-relevant random number generation.
+    * `ThreadLocalRandom` remains appropriate for non-security uses such as load balancing, randomized algorithms, or game logic.
+  ruleID: cra-insecure-random-threadlocal-03000
+  when:
+    or:
+    - builtin.filecontent:
+        filePattern: \.java$
+        # Matches: ThreadLocalRandom.current() calls
+        pattern: 'ThreadLocalRandom\.current\(\)'
+    - java.referenced:
+        location: IMPORT
+        pattern: java.util.concurrent.ThreadLocalRandom

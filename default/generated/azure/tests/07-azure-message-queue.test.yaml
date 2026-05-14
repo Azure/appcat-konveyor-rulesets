@@ -15,7 +15,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
+      exactly: 3
       messageMatches: The application uses a RabbitMQ connection string, username,
         or password
 - ruleID: azure-message-queue-config-artemis-01000
@@ -29,9 +29,8 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      atLeast: 1
-      messageMatches: The application uses Spring RabbitMQ based on Spring AMQP in
-        code.
+      atLeast: 4
+      messageMatches: The application uses RabbitMQ.
 - ruleID: azure-message-queue-amqp-02000
   testCases:
   - name: tc-1

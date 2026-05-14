@@ -140,7 +140,7 @@
       pattern: artemis\.(broker-url|user|password)
 - category: optional
   customVariables: []
-  description: Spring RabbitMQ usage found in code
+  description: RabbitMQ usage found
   effort: 5
   labels:
   - target=azure-appservice
@@ -159,7 +159,7 @@
   - title: Use Azure Service Bus in Spring applications
     url: https://learn.microsoft.com/azure/developer/java/spring-framework/using-service-bus-in-spring-applications
   message: |-
-    The application uses Spring RabbitMQ based on Spring AMQP in code. To migrate a Java application that uses Spring RabbitMQ to Azure, you can follow these recommendations:
+    The application uses RabbitMQ. To migrate a Java application that uses RabbitMQ to Azure, you can follow these recommendations:
 
      * Provision **Azure Service Bus**: Replace RabbitMQ with Azure Service Bus, a fully managed messaging service that offers reliable message queuing and publish/subscribe capabilities.
 
@@ -168,9 +168,17 @@
      * Configure Azure Service Bus **queues/topics**: Create appropriate queues or topics in Azure Service Bus to align with your application's messaging requirements. Configure access control and security settings as needed.
   ruleID: azure-message-queue-rabbitmq-01000
   when:
-    java.referenced:
-      location: PACKAGE
-      pattern: org.springframework.amqp.rabbit*
+    or:
+    - java.dependency:
+        name: org.springframework.amqp.spring-rabbit
+    - java.referenced:
+        location: PACKAGE
+        pattern: org.springframework.amqp.rabbit*
+    - java.dependency:
+        name: com.rabbitmq.amqp-client
+    - java.referenced:
+        location: PACKAGE
+        pattern: com.rabbitmq.client*
 - category: optional
   customVariables: []
   description: Spring AMQP dependency found

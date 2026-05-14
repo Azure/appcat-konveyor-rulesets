@@ -1,0 +1,4 @@
+# Test data for insecure TLS configuration detection
+server:
+  ssl:
+    enabled-protocols: TLSv1,TLSv1.1,TLSv1.2
