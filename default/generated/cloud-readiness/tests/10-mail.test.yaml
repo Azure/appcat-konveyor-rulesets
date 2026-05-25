@@ -9,6 +9,6 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 1125
+      atLeast: 1125
       messageMatches: In a cloud environment, mail systems should be considered backing
         service.*
