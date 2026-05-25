@@ -50,8 +50,5 @@
     - java.referenced:
         location: IMPORT
         pattern: org.springframework.mail*
-    - java.referenced:
-        location: ANNOTATION
-        pattern: jakarta.validation.constraints.Email
     - java.dependency:
         name: org.springframework.boot.spring-boot-starter-mail
