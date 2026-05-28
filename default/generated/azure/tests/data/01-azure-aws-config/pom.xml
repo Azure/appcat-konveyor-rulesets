@@ -101,5 +101,27 @@
             <version>1.12.797</version>
             <scope>compile</scope>
         </dependency>
+        <!-- AWS Bedrock SDK v2 -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>bedrockruntime</artifactId>
+            <version>2.31.1</version>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>bedrock</artifactId>
+            <version>2.31.1</version>
+        </dependency>
+        <!-- AWS Bedrock SDK v1 -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-bedrockruntime</artifactId>
+            <version>1.12.797</version>
+        </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-bedrock</artifactId>
+            <version>1.12.797</version>
+        </dependency>
     </dependencies>
 </project>

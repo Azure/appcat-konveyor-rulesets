@@ -454,3 +454,154 @@
         name: com.amazonaws.aws-java-sdk-lambda
     - java.dependency:
         nameregex: com\.amazonaws\.serverless\.aws-serverless-java-container.*
+
+- category: optional
+  customVariables: []
+  description: AWS Bedrock SDK dependency found
+  effort: 2
+  labels:
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=ai-service-migration
+  - AWS
+  links:
+  - title: What is Azure OpenAI Service?
+    url: https://learn.microsoft.com/azure/ai-services/openai/overview
+  - title: 'Quickstart: Get started using Azure OpenAI Service'
+    url: https://learn.microsoft.com/azure/ai-services/openai/chatgpt-quickstart
+  - title: Azure OpenAI client library for Java
+    url: https://learn.microsoft.com/java/api/overview/azure/ai-openai-readme
+  - title: What is Azure AI Foundry?
+    url: https://learn.microsoft.com/azure/ai-foundry/what-is-ai-foundry
+  message: |-
+    The application contains AWS Bedrock SDK dependencies. Consider using Azure OpenAI Service or Azure AI Foundry instead.
+
+     * **Replace AWS SDK dependency**: Update the Java application's dependencies to include the Azure OpenAI client library (com.azure:azure-ai-openai). Remove the AWS Bedrock SDK dependency and add the Azure SDK for Java dependency to interact with Azure OpenAI Service.
+  ruleID: aws-bedrock-to-azure-ai-06000
+  when:
+    or:
+    - java.dependency:
+        name: software.amazon.awssdk.bedrockruntime
+    - java.dependency:
+        name: software.amazon.awssdk.bedrock
+    - java.dependency:
+        name: com.amazonaws.aws-java-sdk-bedrockruntime
+    - java.dependency:
+        name: com.amazonaws.aws-java-sdk-bedrock
+
+- category: optional
+  customVariables: []
+  description: AWS Bedrock API usage found
+  effort: 8
+  labels:
+  - source=aws-bedrock
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=ai-service-migration
+  - AWS
+  links:
+  - title: What is Azure OpenAI Service?
+    url: https://learn.microsoft.com/azure/ai-services/openai/overview
+  - title: 'Quickstart: Get started using Azure OpenAI Service'
+    url: https://learn.microsoft.com/azure/ai-services/openai/chatgpt-quickstart
+  - title: Azure OpenAI client library for Java
+    url: https://learn.microsoft.com/java/api/overview/azure/ai-openai-readme
+  - title: What is Azure AI Foundry?
+    url: https://learn.microsoft.com/azure/ai-foundry/what-is-ai-foundry
+  - title: Azure OpenAI Embeddings
+    url: https://learn.microsoft.com/azure/ai-services/openai/concepts/understand-embeddings
+  message: |-
+    The application uses AWS Bedrock API (managed generative AI service). Consider migrating to Azure OpenAI Service or Azure AI Foundry.
+
+     * **Provision Azure OpenAI Service**: Create an Azure OpenAI resource in the Azure portal. Deploy the foundation models (GPT-4, GPT-4o, etc.) that match the capabilities of the models you are using in AWS Bedrock.
+
+     * **Update application code**: Modify the Java application's code to replace AWS Bedrock SDK calls (InvokeModel, Converse, InvokeModelWithResponseStream) with the equivalent Azure OpenAI client library calls. Update the code to authenticate using Azure AD or API keys and interact with Azure OpenAI Service.
+
+     * **Map model identifiers**: Replace AWS Bedrock model IDs (e.g., anthropic.claude-3, amazon.titan-text) with Azure OpenAI deployment names. Deploy the corresponding models in your Azure OpenAI resource and reference them by deployment name.
+
+     * **Update authentication**: Replace AWS IAM-based authentication with Azure AD managed identity or Azure API key authentication. Use DefaultAzureCredential from the Azure Identity library for seamless authentication across environments.
+
+     * **Change configurations**: Update the Java application's configuration to replace the AWS Bedrock settings (endpoint, model IDs, region) with the equivalent Azure OpenAI configurations (endpoint, deployment name, API version).
+
+     * **Migrate embeddings** (if applicable): If using AWS Bedrock embedding models (Titan Embed, Cohere Embed), deploy an embedding model (text-embedding-3-small/large) in Azure OpenAI Service. Consider using Azure AI Search with integrated vectorization for RAG scenarios.
+
+     * Validate functionality and **performance**: Test the updated application to ensure that model invocations, embeddings, and any streaming responses work correctly with Azure OpenAI Service.
+  ruleID: aws-bedrock-to-azure-ai-06001
+  when:
+    or:
+    - java.referenced:
+        location: IMPORT
+        pattern: software.amazon.awssdk.services.bedrockruntime*
+    - java.referenced:
+        location: IMPORT
+        pattern: software.amazon.awssdk.services.bedrock*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.amazonaws.services.bedrockruntime*
+    - java.referenced:
+        location: IMPORT
+        pattern: com.amazonaws.services.bedrock*
+    - builtin.filecontent:
+        filePattern: (/|\\)(application|bootstrap)(-[a-zA-Z0-9]+)*?\.(properties|yaml|yml)$
+        pattern: (aws\.bedrock|bedrock:\s*)
+
+- category: optional
+  customVariables: []
+  description: AWS Bedrock streaming or async API usage found
+  effort: 13
+  labels:
+  - source=aws-bedrock
+  - target=azure-appservice
+  - target=azure-aks
+  - target=azure-container-apps
+  - os=windows
+  - os=linux
+  - domain=cloud-readiness
+  - category=ai-service-migration
+  - AWS
+  links:
+  - title: What is Azure OpenAI Service?
+    url: https://learn.microsoft.com/azure/ai-services/openai/overview
+  - title: Azure OpenAI client library for Java
+    url: https://learn.microsoft.com/java/api/overview/azure/ai-openai-readme
+  - title: 'Quickstart: Get started using Azure OpenAI Service'
+    url: https://learn.microsoft.com/azure/ai-services/openai/chatgpt-quickstart
+  - title: What is Azure AI Foundry?
+    url: https://learn.microsoft.com/azure/ai-foundry/what-is-ai-foundry
+  message: |-
+    The application uses AWS Bedrock streaming or async API (invokeModelWithResponseStream, converseStream). These are significantly more complex to migrate than synchronous calls because of differences in streaming response format, SDK usage patterns, and async handling.
+
+     * **Replace streaming calls**: Replace AWS Bedrock streaming API calls (InvokeModelWithResponseStream, ConverseStream) with Azure OpenAI streaming equivalents. Azure OpenAI supports streaming via server-sent events (SSE) with a different response format.
+
+     * **Update async handling**: AWS Bedrock uses reactive streams (Publisher/Subscriber pattern) for streaming responses. Azure OpenAI uses an iterative streaming model. Refactor async/reactive code to use the Azure OpenAI streaming API pattern.
+
+     * **Adapt response parsing**: AWS Bedrock streaming returns chunked JSON fragments via ResponseStream. Azure OpenAI returns streaming chat completion chunks. Update all response parsing and event handling logic.
+  ruleID: aws-bedrock-to-azure-ai-06002
+  when:
+    or:
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: software.amazon.awssdk.services.bedrockruntime.BedrockRuntimeAsyncClient.invokeModelWithResponseStream*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: software.amazon.awssdk.services.bedrockruntime.BedrockRuntimeAsyncClient.converseStream*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: software.amazon.awssdk.services.bedrockruntime.BedrockRuntimeClient.invokeModelWithResponseStream*
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: software.amazon.awssdk.services.bedrockruntime.BedrockRuntimeClient.converseStream*
+    - java.referenced:
+        location: IMPORT
+        pattern: software.amazon.awssdk.services.bedrockruntime.model.InvokeModelWithResponseStreamRequest*
+    - java.referenced:
+        location: IMPORT
+        pattern: software.amazon.awssdk.services.bedrockruntime.model.ConverseStreamRequest*
