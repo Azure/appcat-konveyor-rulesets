@@ -81,3 +81,21 @@ tests:
     hasIncidents:
       exactly: 4
       messageMatches: The application uses AWS Lambda (Java)
+- ruleID: aws-bedrock-to-azure-ai-06000
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      exactly: 4
+      messageMatches: The application contains AWS Bedrock SDK dependencies
+- ruleID: aws-bedrock-to-azure-ai-06001
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 4
+      messageMatches: The application uses AWS Bedrock API
+- ruleID: aws-bedrock-to-azure-ai-06002
+  testCases:
+  - name: tc-1
+    hasIncidents:
+      atLeast: 2
+      messageMatches: The application uses AWS Bedrock streaming or async API
