@@ -1,0 +1,8 @@
+schemaVersion: 0.0.1
+isProduction: true
+accountableOwners:
+  service: d626e486-27bc-48fc-8717-d8af875737de
+routing:
+  defaultAreaPath:
+    org: devdiv
+    path: DevDiv\VisualStudioChina\JavaAssessment
