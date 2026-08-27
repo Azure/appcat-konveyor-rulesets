@@ -309,7 +309,7 @@
 
      * Enable **monitoring and diagnostics**: Utilize Azure Monitor and Microsoft Defender for Cloud to monitor and detect any potential security threats or anomalies in your Azure Service Bus environment. Enable diagnostics logging and set up alerts for suspicious activities.
 
-     * Apply **security** measures: Implement Azure Active Directory (Azure AD) authentication and authorization for accessing Azure Service Bus resources. Enable TLS encryption for communication between your Java application and Azure Service Bus. Enable passwordless connections for Azure services to improve security and reduce the risk of credential theft.
+    * Apply **security** measures: Implement Microsoft Entra ID authentication and authorization for accessing Azure Service Bus resources. Enable TLS encryption for communication between your Java application and Azure Service Bus. Enable passwordless connections for Azure services to improve security and reduce the risk of credential theft.
   ruleID: azure-message-queue-activemq-01000
   when:
     or:

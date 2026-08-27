@@ -10,5 +10,4 @@ tests:
   - name: tc-1
     hasIncidents:
       exactly: 1
-      messageMatches: Dynamic loading of agents will be restricted at a later JDK
-        release.*
+      messageMatches: JDK 21 and later issue a warning when an agent is loaded dynamically.*

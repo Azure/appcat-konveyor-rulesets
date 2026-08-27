@@ -19,11 +19,11 @@
   - title: Azure Event Hubs documentation
     url: https://learn.microsoft.com/azure/event-hubs/
   message: |-
-    The application contains an embedded resource adapter descriptor ('ra.xml'), which implements the Java Connector Architecture (JCA) for certain Enterprise Information Systems (EIS).
+    The application contains a resource adapter descriptor (`ra.xml`) for a Java Connector Architecture (JCA), now Jakarta Connectors, resource adapter that integrates with an Enterprise Information System (EIS).
 
-     JCA often uses tightly coupled interactions between the connector and the application. Tight coupling is not suitable in a cloud environment because of scalability problems.
+    Resource adapters are supported by compatible Jakarta EE runtimes, including runtimes deployed in cloud environments. Migration may require runtime-specific configuration and network access to the external EIS.
 
-     Recommendation: Review the purpose of the resource adapter to determine whether it is required in a cloud environment.
+    Recommendation: Verify that the target runtime supports the required Jakarta Connectors version, externalize connection and credential settings, and validate EIS connectivity, transaction recovery, security, and scaling behavior.
   ruleID: jca-00000
   when:
     builtin.file:

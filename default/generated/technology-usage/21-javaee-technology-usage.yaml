@@ -62,7 +62,7 @@
     builtin.hasTags:
     - Java EE Batch
 - customVariables: []
-  description: JavaEE javax
+  description: Java EE (javax namespace)
   labels:
   - discovery
   links: []
@@ -78,7 +78,7 @@
         location: PACKAGE
         pattern: javax.inject*
 - customVariables: []
-  description: JavaEE Jakarta
+  description: Jakarta EE (jakarta namespace)
   labels:
   - discovery
   links: []

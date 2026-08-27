@@ -23,7 +23,7 @@
   message: |-
     The application embeds a SAML library. The Microsoft identity platform uses SAML and other protocols to enable applications to provide a Single Sign-On experience.
 
-     By migrating your SSO implementation to Azure AD with SAML, you leverage the capabilities of Azure AD for managing identities and enabling secure SSO across your applications. Azure AD offers features like multi-factor authentication, conditional access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
+    By migrating your SSO implementation to Microsoft Entra ID with SAML, you leverage Microsoft Entra ID for managing identities and enabling secure SSO across your applications. Microsoft Entra ID offers features like multifactor authentication, Conditional Access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
   ruleID: auth-00000
   when:
     builtin.file:
@@ -53,7 +53,7 @@
   message: |-
     The application embeds an OpenSAML library. The Microsoft identity platform uses SAML and other protocols to enable applications to provide a Single Sign-On experience.
 
-     By migrating your SSO implementation to Azure AD with SAML, you leverage the capabilities of Azure AD for managing identities and enabling secure SSO across your applications. Azure AD offers features like multi-factor authentication, conditional access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
+    By migrating your SSO implementation to Microsoft Entra ID with SAML, you leverage Microsoft Entra ID for managing identities and enabling secure SSO across your applications. Microsoft Entra ID offers features like multifactor authentication, Conditional Access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
   ruleID: auth-01000
   when:
     builtin.file:
@@ -83,7 +83,7 @@
   message: |-
     The application embeds a Spring Security library. Ensure that the application is configured to access the identity provider.
 
-     Consider using Azure Active Directory as an identity provider.
+    Consider using Microsoft Entra ID as an identity provider.
   ruleID: auth-02000
   when:
     or:
@@ -122,8 +122,8 @@
 
      The Microsoft identity platform uses OAuth 2.0 and other protocols to enable applications to provide a Single Sign-On experience.
 
-     By migrating your SSO implementation to Azure AD with OAuth 2.0, you leverage the capabilities of Azure AD for managing identities and enabling secure SSO across your applications.
-     Azure AD offers features like multi-factor authentication, conditional access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
+    By migrating your SSO implementation to Microsoft Entra ID with OAuth 2.0, you leverage Microsoft Entra ID for managing identities and enabling secure SSO across your applications.
+    Microsoft Entra ID offers features like multifactor authentication, Conditional Access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
   ruleID: auth-03000
   when:
     builtin.file:
@@ -155,8 +155,8 @@
   message: |-
     The application embeds an OpenID library. The Microsoft identity platform uses OpenID and other protocols to enable applications to provide a Single Sign-On experience.
 
-     By migrating your SSO implementation to Azure AD with OpenID, you leverage the capabilities of Azure AD for managing identities and enabling secure SSO across your applications.
-     Azure AD offers features like multi-factor authentication, conditional access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
+    By migrating your SSO implementation to Microsoft Entra ID with OpenID Connect, you leverage Microsoft Entra ID for managing identities and enabling secure SSO across your applications.
+    Microsoft Entra ID offers features like multifactor authentication, Conditional Access policies, and seamless integration with various SaaS applications, providing a robust and scalable solution for identity and access management in the cloud.
   ruleID: auth-04000
   when:
     or:

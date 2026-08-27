@@ -120,7 +120,7 @@
         nameregex: com.google.api.grpc.grpc-google-cloud-pubsub-v1
 - category: mandatory
   customVariables: []
-  description: Google Container Registry (GCR) or Artifact Registry usage detected
+  description: Google gcr.io or Artifact Registry usage detected
   effort: 2
   labels:
   - source=google-gcr
@@ -138,7 +138,7 @@
   - title: Azure Container Registry best practices
     url: https://learn.microsoft.com/en-us/azure/container-registry/container-registry-best-practices
   message: |-
-    The application uses Google Container Registry (gcr.io) or Google Artifact Registry ([location]-docker.pkg.dev) for container images.
+    The application references gcr.io or Google Artifact Registry ([location]-docker.pkg.dev) container images. Google Container Registry is shut down; gcr.io repositories that were upgraded are hosted by Artifact Registry.
 
     **Common patterns detected may include:**
     * Container image references in Dockerfiles and docker-compose files

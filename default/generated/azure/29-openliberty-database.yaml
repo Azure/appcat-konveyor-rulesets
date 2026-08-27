@@ -147,7 +147,7 @@
 
     * Enable **monitoring and diagnostics**: Utilize Azure Monitor to gain insights into the performance and health of your Java application and the underlying Azure SQL database. Set up metrics, alerts, and log analytics to proactively identify and resolve issues.
 
-    * Implement **security** measures: Apply security best practices including Azure AD authentication, transparent data encryption, and leverage Microsoft Defender for Cloud for threat detection and vulnerability assessments.
+    * Implement **security** measures: Apply security best practices including Microsoft Entra authentication, transparent data encryption, and leverage Microsoft Defender for Cloud for threat detection and vulnerability assessments.
 
     * **Backup** your data: Azure SQL Database and SQL Managed Instance provide automated backups by default. Configure retention periods and consider geo-redundant backups for enhanced data durability.
   ruleID: openliberty-database-00003
@@ -374,7 +374,7 @@
 
     * Enable **monitoring and diagnostics**: Utilize Azure Monitor to gain insights into the performance and health of your Java application and the underlying Azure database. Set up metrics, alerts, and log analytics to proactively identify and resolve issues.
 
-    * Implement **security** measures: Apply security best practices to protect your Java application and the database. This includes implementing authentication and authorization mechanisms, potentially with passwordless connections (e.g., Azure AD authentication for Azure SQL), and leveraging Microsoft Defender for Cloud for threat detection and vulnerability assessments.
+    * Implement **security** measures: Apply security best practices to protect your Java application and the database. This includes implementing authentication and authorization mechanisms, potentially with passwordless connections (e.g., Microsoft Entra authentication for Azure SQL), and leveraging Microsoft Defender for Cloud for threat detection and vulnerability assessments.
 
     * **Backup** your data: Azure managed database services (Azure SQL, Azure Database for PostgreSQL) provide automated backups by default. Configure retention periods and consider geo-redundant backups for enhanced data durability. For Oracle on Azure VMs, you are responsible for configuring and managing backups using Oracle tools or Azure Backup.
   ruleID: openliberty-database-00008

@@ -22,8 +22,8 @@
     url: https://learn.microsoft.com/azure/azure-monitor
   - title: Microsoft Defender for Cloud
     url: https://learn.microsoft.com/azure/defender-for-cloud
-  - title: Backup and restore in Azure Database for MySQL
-    url: https://learn.microsoft.com/azure/mysql/single-server/concepts-backup
+  - title: Backup and restore in Azure Database for MySQL Flexible Server
+    url: https://learn.microsoft.com/azure/mysql/flexible-server/concepts-backup-restore
   message: |-
     To migrate a Java application that uses a MySQL database to Azure, you can follow these recommendations:
 
@@ -316,30 +316,30 @@
   - os=windows
   - os=linux
   links:
-  - title: Azure Database for MariaDB documentation
-    url: https://learn.microsoft.com/azure/mariadb
-  - title: Azure Database Migration Service documentation
-    url: https://learn.microsoft.com/azure/dms
+  - title: Azure Database for MySQL Flexible Server documentation
+    url: https://learn.microsoft.com/azure/mysql/flexible-server/overview
+  - title: Azure Database for MariaDB retirement and migration guidance
+    url: https://techcommunity.microsoft.com/blog/adformysql/azure-database-for-mariadb-is-being-retired-on-19-september-2025/3935681
   - title: Azure Monitor documentation
     url: https://learn.microsoft.com/azure/azure-monitor
   - title: Microsoft Defender for Cloud
     url: https://learn.microsoft.com/azure/defender-for-cloud
-  - title: Backup and restore in Azure Database for MariaDB
-    url: https://learn.microsoft.com/azure/mariadb/howto-restore-server-portal
+  - title: Backup and restore in Azure Database for MySQL Flexible Server
+    url: https://learn.microsoft.com/azure/mysql/flexible-server/concepts-backup-restore
   message: |-
     To migrate a Java application that uses a MariaDB database to Azure, you can follow these recommendations:
 
-     * Use a managed **Azure Database for MariaDB**: For that create a managed MariaDB database in Azure and choose the appropriate pricing tier based on your application's requirements for performance, storage, and availability.
+    * Use **Azure Database for MySQL - Flexible Server**: Azure Database for MariaDB was retired on September 19, 2025. For a managed database on Azure, migrate the MariaDB workload to Azure Database for MySQL - Flexible Server and choose the appropriate compute, storage, availability, and backup configuration.
 
-     * **Migrate** the existing MariaDB database: For that you can use the Azure Database Migration Service (DMS) to perform an online migration with minimal downtime.
+    * **Assess compatibility and migrate the database**: Review differences between the source MariaDB version and the target MySQL version, including SQL modes, authentication, collations, storage engines, and MariaDB-specific features. Test the workload, then select a migration method from the official guidance based on the database size and downtime requirements.
 
-     * Update the application's **database connection** details: Modify the Java application's configuration to point to the newly provisioned Azure Database for MariaDB. Update the connection string, hostname, port, username, and password information accordingly.
+    * Update the application's **database connection** details: Modify the Java application's configuration to point to Azure Database for MySQL - Flexible Server. Update the JDBC or R2DBC driver and connection settings as required, and externalize the hostname, port, database name, username, and credentials.
 
-     * Enable **monitoring and diagnostics**: Utilize Azure Monitor to gain insights into the performance and health of your Java application and the underlying MariaDB database. Set up metrics, alerts, and log analytics to proactively identify and resolve issues.
+    * Enable **monitoring and diagnostics**: Use Azure Monitor to gain insights into the performance and health of your Java application and Azure Database for MySQL Flexible Server. Configure metrics, alerts, and logs to proactively identify and resolve issues.
 
-     * Implement **security** measures: Apply security best practices to protect your Java application and the MariaDB database. This includes implementing authentication and authorization mechanisms with passwordless connections and leveraging Microsoft Defender for Cloud for threat detection and vulnerability assessments.
+    * Implement **security** measures: Apply security best practices to protect your Java application and database. Prefer Microsoft Entra authentication where supported, restrict network access, use TLS, and leverage Microsoft Defender for Cloud for threat detection and vulnerability assessments.
 
-     * **Backup** your data: Azure Database for MariaDB provides automated backups by default. You can configure the retention period for backups based on your requirements. You can also enable geo-redundant backups, if needed, to enhance data durability and availability.
+    * **Configure backups**: Azure Database for MySQL Flexible Server provides automated backups. Configure the retention period and backup redundancy based on your recovery and data-residency requirements, and test point-in-time restore procedures.
   ruleID: azure-database-microsoft-mariadb-06000
   when:
     or:

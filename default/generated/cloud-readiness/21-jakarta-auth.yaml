@@ -24,9 +24,9 @@
     These APIs are part of the Jakarta Security ecosystem, responsible for authentication, identity stores, and access control decisions.
     
     When migrating to Azure, review how security and identity integration are handled:
-    - If the application uses **container-based deployment**, integrate with **Azure AD** or **Microsoft Entra ID** for user authentication.
+    - If the application uses **container-based deployment**, integrate with **Microsoft Entra ID** for user authentication.
     - If using **Jakarta Security** in a servlet or web container (e.g., Payara, WildFly, Tomcat), ensure the container's security configuration is compatible with Azure App Service or Azure Kubernetes Service (AKS).
-    - Consider modernizing authentication to use **OpenID Connect** or **OAuth 2.0** flows backed by Azure AD for better cloud alignment.
+    - Consider modernizing authentication to use **OpenID Connect** or **OAuth 2.0** flows backed by Microsoft Entra ID for better cloud alignment.
   ruleID: jakarta-auth-00001
   when:
     or:

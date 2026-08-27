@@ -23,13 +23,13 @@
     url: https://access.redhat.com/articles/6980017
   message: |-
     Detected legacy Java EE (`javax.*`) spec artifacts and pre-Jakarta coordinates.
-    For Jakarta EE 10 / EAP 8, migrate to the corresponding Jakarta API artifacts (`jakarta.*`) and prefer BOM-managed versions.
+        When targeting Jakarta EE 10 or later, including EAP 8 where applicable, migrate to the corresponding Jakarta API artifacts (`jakarta.*`) and prefer BOM-managed versions.
 
     Recommended migration:
     - Replace `org.jboss.spec.javax.*:*_spec` with the matching Jakarta API artifacts (e.g., `jakarta.annotation:jakarta.annotation-api`,
       `jakarta.ejb:jakarta.ejb-api`, `jakarta.transaction:jakarta.transaction-api`, `jakarta.ws.rs:jakarta.ws.rs-api`, etc.)
-    - Replace `com.sun.activation:jakarta.activation` with `jakarta.activation:jakarta.activation-api`
-    - Replace `com.sun.mail:jakarta.mail` with `jakarta.mail:jakarta.mail-api`
+        - If the target runtime provides Jakarta Activation, use `jakarta.activation:jakarta.activation-api` as a provided dependency; otherwise, use it with `org.eclipse.angus:angus-activation`
+        - If the target runtime provides a Jakarta Mail provider, use `jakarta.mail:jakarta.mail-api` as a provided dependency; otherwise, use it with `org.eclipse.angus:angus-mail`
     - Replace `javax.jws:jsr181-api` with a Jakarta XML Web Services API provided by the target runtime/BOM
 
     Note:

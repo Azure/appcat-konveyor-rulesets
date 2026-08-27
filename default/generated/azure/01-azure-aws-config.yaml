@@ -26,7 +26,7 @@
 
      * **Modify application code**: Update the Java application's code to retrieve the required credentials from Azure Key Vault instead of AWS. Use the appropriate Azure SDK or libraries to integrate with Azure Key Vault and fetch the credentials securely during runtime.
 
-     * Implement **Azure Active Directory (Azure AD) authentication**: If the AWS credentials are used for authentication purposes, consider migrating to Azure AD for user authentication and authorization. Implement Azure AD authentication in your Java application to ensure secure access to Azure resources.
+    * Implement **Microsoft Entra ID authentication**: If the AWS credentials are used for authentication purposes, consider migrating to Microsoft Entra ID for user authentication and authorization. Implement Microsoft Entra authentication in your Java application to ensure secure access to Azure resources.
   ruleID: azure-aws-config-credential-01000
   when:
     or:
@@ -107,7 +107,7 @@
 
      * **Migrate data** from S3 to Azure Blob Storage: Plan and execute the migration of your data from AWS S3 to Azure Blob Storage. You can use Azure Storage Data Transfer Tool, AzCopy, or other migration tools to copy the data from S3 buckets to Azure Blob Storage containers.
 
-     * Update **access permissions**: Adjust the access permissions and policies in Azure Blob Storage to match your application's requirements. Azure provides various options for controlling access, including shared access signatures (SAS), Azure AD authentication, and role-based access control (RBAC).
+    * Update **access permissions**: Adjust the access permissions and policies in Azure Blob Storage to match your application's requirements. Azure provides various options for controlling access, including shared access signatures (SAS), Microsoft Entra authentication, and role-based access control (RBAC).
 
      * Validate functionality and **performance**: Thoroughly test the updated application to ensure that it can read from and write to Azure Blob Storage correctly. Validate the performance of data transfer and any other operations to ensure they meet your application's requirements.
   ruleID: azure-aws-config-s3-03000
@@ -163,7 +163,7 @@
 
      * **Migrate data** from S3 to Azure Blob Storage: Plan and execute the migration of your data from AWS S3 to Azure Blob Storage. You can use Azure Storage Data Transfer Tool, AzCopy, or other migration tools to copy the data from S3 buckets to Azure Blob Storage containers.
 
-     * Update **access permissions**: Adjust the access permissions and policies in Azure Blob Storage to match your application's requirements. Azure provides various options for controlling access, including shared access signatures (SAS), Azure AD authentication, and role-based access control (RBAC).
+    * Update **access permissions**: Adjust the access permissions and policies in Azure Blob Storage to match your application's requirements. Azure provides various options for controlling access, including shared access signatures (SAS), Microsoft Entra authentication, and role-based access control (RBAC).
 
      * Validate functionality and **performance**: Thoroughly test the updated application to ensure that it can read from and write to Azure Blob Storage correctly. Validate the performance of data transfer and any other operations to ensure they meet your application's requirements.
   ruleID: azure-aws-config-s3-03001
@@ -203,7 +203,7 @@
 
      * **Migrate data** from S3 to Azure Blob Storage: Plan and execute the migration of your data from AWS S3 to Azure Blob Storage. You can use Azure Storage Data Transfer Tool, AzCopy, or other migration tools to copy the data from S3 buckets to Azure Blob Storage containers.
 
-     * Update **access permissions**: Adjust the access permissions and policies in Azure Blob Storage to match your application's requirements. Azure provides various options for controlling access, including shared access signatures (SAS), Azure AD authentication, and role-based access control (RBAC).
+    * Update **access permissions**: Adjust the access permissions and policies in Azure Blob Storage to match your application's requirements. Azure provides various options for controlling access, including shared access signatures (SAS), Microsoft Entra authentication, and role-based access control (RBAC).
 
      * Validate functionality and **performance**: Thoroughly test the updated application to ensure that it can read from and write to Azure Blob Storage correctly. Validate the performance of data transfer and any other operations to ensure they meet your application's requirements.
   ruleID: azure-aws-config-s3-03002
@@ -399,7 +399,7 @@
 
      * **Update application code**: Modify the Java application's code to replace the AWS SDK calls with the equivalent Azure Key Vault SDK or libraries. Update the code to authenticate and retrieve secrets from Azure Key Vault using the Azure SDK for Java.
 
-     * **Secure access** to Azure Key Vault: Implement access control and security measures for Azure Key Vault. Configure Azure AD authentication, RBAC, and access policies to ensure that only authorized applications and users can access the secrets stored in Azure Key Vault.
+    * **Secure access** to Azure Key Vault: Implement access control and security measures for Azure Key Vault. Configure Microsoft Entra authentication, RBAC, and access policies to ensure that only authorized applications and users can access the secrets stored in Azure Key Vault.
   ruleID: azure-aws-config-secret-manager-05000
   when:
     or:
@@ -523,11 +523,11 @@
 
      * **Provision Azure OpenAI Service**: Create an Azure OpenAI resource in the Azure portal. Deploy the foundation models (GPT-4, GPT-4o, etc.) that match the capabilities of the models you are using in AWS Bedrock.
 
-     * **Update application code**: Modify the Java application's code to replace AWS Bedrock SDK calls (InvokeModel, Converse, InvokeModelWithResponseStream) with the equivalent Azure OpenAI client library calls. Update the code to authenticate using Azure AD or API keys and interact with Azure OpenAI Service.
+    * **Update application code**: Modify the Java application's code to replace AWS Bedrock SDK calls (InvokeModel, Converse, InvokeModelWithResponseStream) with the equivalent Azure OpenAI client library calls. Update the code to authenticate using Microsoft Entra ID or API keys and interact with Azure OpenAI Service.
 
      * **Map model identifiers**: Replace AWS Bedrock model IDs (e.g., anthropic.claude-3, amazon.titan-text) with Azure OpenAI deployment names. Deploy the corresponding models in your Azure OpenAI resource and reference them by deployment name.
 
-     * **Update authentication**: Replace AWS IAM-based authentication with Azure AD managed identity or Azure API key authentication. Use DefaultAzureCredential from the Azure Identity library for seamless authentication across environments.
+    * **Update authentication**: Replace AWS IAM-based authentication with a managed identity or Azure API key authentication. Use DefaultAzureCredential from the Azure Identity library for seamless authentication across environments.
 
      * **Change configurations**: Update the Java application's configuration to replace the AWS Bedrock settings (endpoint, model IDs, region) with the equivalent Azure OpenAI configurations (endpoint, deployment name, API version).
 

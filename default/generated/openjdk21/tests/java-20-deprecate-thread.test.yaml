@@ -10,16 +10,16 @@ tests:
   - name: tc-1
     hasIncidents:
       exactly: 2
-      messageMatches: The ability to suspend or resume a thread with the `Thread.suspend()` and `Thread.resume()` methods
+      messageMatches: In JDK 20, `Thread.suspend()` and `Thread.resume()` remain present but always throw `UnsupportedOperationException`.*
 - ruleID: java-20-deprecate-thread-00001
   testCases:
   - name: tc-1
     hasIncidents:
       exactly: 1
-      messageMatches: The ability to "stop" a thread with the `Thread.stop()` method has been removed 
+      messageMatches: In JDK 20 through JDK 25, `Thread.stop()` remains present but always throws `UnsupportedOperationException`.*
 - ruleID: java-20-deprecate-thread-00002
   testCases:
   - name: tc-1
     hasIncidents:
       exactly: 1
-      messageMatches: \`Thread.stop()` was originally specified to "stop" a victim thread by causing the victim
+      messageMatches: \`Thread.stop()` was originally specified to stop a victim thread by causing it to throw a `ThreadDeath`.*

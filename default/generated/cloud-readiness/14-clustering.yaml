@@ -23,7 +23,7 @@
   
       * **Configure multiple instances **: Deploy your Java application to Azure App Service and configure multiple instances within the same App Service Plan to create a cluster-like setup. Azure App Service automatically load-balances incoming requests across the available instances, ensuring scalability and high availability.
       
-      * **Manage sessions in a clustered environment**: Consider using an external session store such as Azure Cache for Redis. Configure your Java application to connect to the Azure Cache for Redis and to replicate sessions across the instances.
+      * **Manage sessions in a clustered environment**: Consider using an external session store such as Azure Managed Redis. Configure your Java application to store session data in Redis so that it is available across application instances.
   ruleID: clustering-00000
   when:
     builtin.xml:
