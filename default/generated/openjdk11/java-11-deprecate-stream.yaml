@@ -25,4 +25,19 @@
     or:
     - java.referenced:
         location: METHOD_CALL
-        pattern: org.ietf.jgss.GSSContext.(initSecContext|acceptSecContext|wrap|unwrap|getMIC|verifyMIC)
+        pattern: org.ietf.jgss.GSSContext.initSecContext
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: org.ietf.jgss.GSSContext.acceptSecContext
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: org.ietf.jgss.GSSContext.wrap
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: org.ietf.jgss.GSSContext.unwrap
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: org.ietf.jgss.GSSContext.getMIC
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: org.ietf.jgss.GSSContext.verifyMIC

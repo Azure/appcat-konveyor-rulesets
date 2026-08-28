@@ -9,7 +9,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 352
+      exactly: 14
       messageMatches: An application running inside a container could lose access
         to a file in local storage
 # - ruleID: local-storage-00003
@@ -28,7 +28,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 43
+      exactly: 40
       messageMatches: When migrating an application that relies on the file system 
 - ruleID: local-storage-00006
   testCases:

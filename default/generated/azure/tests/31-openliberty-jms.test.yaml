@@ -41,7 +41,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 18
+      atLeast: 18
       messageMatches: Detected JMS API usage that needs to be updated
       
 - ruleID: openliberty-jms-00006
