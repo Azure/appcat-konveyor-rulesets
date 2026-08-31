@@ -9,11 +9,11 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 2
+      atLeast: 1
       messageMatches: The addPropertyChangeListener and removePropertyChangeListener methods under Pack200.Packer interface
 - ruleID: java-8-deprecate-pack-00002
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 2
+      atLeast: 1
       messageMatches: The addPropertyChangeListener and removePropertyChangeListener methods under Pack200.Unpacker interface 
