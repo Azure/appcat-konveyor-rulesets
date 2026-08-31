@@ -1,3 +1,5 @@
+package com.example.apps;
+
 import java.security.cert.X509Certificate;
 import java.io.FileInputStream;
 import java.security.cert.CertificateFactory;
@@ -15,9 +17,8 @@ public class DeprecatedDNUsage {
         System.out.println("Issuer DN: " + cert.getIssuerDN());
         System.out.println("Subject DN: " + cert.getSubjectDN());
 
-        FileInputStream fis = new FileInputStream("crlfile.crl");
-        CertificateFactory cf = CertificateFactory.getInstance("X.509");
-        X509CRL crl = (X509CRL) cf.generateCRL(fis);
+        FileInputStream crlInputStream = new FileInputStream("crlfile.crl");
+        X509CRL crl = (X509CRL) cf.generateCRL(crlInputStream);
 
         // 🔴 Deprecated method
         System.out.println("CRL Issuer DN: " + crl.getIssuerDN());

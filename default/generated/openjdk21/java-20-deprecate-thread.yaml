@@ -18,7 +18,7 @@
   - title: Thread.suspend/resume Changed to Throw UnsupportedOperationException
     url: https://www.oracle.com/java/technologies/javase/20-relnote-issues.html#JDK-8249627
   message: |-
-    The ability to suspend or resume a thread with the `Thread.suspend()` and `Thread.resume()` methods has been removed in this release. The methods have been changed to throw UnsupportedOperationException. 
+    In JDK 20, `Thread.suspend()` and `Thread.resume()` remain present but always throw `UnsupportedOperationException`. Replace them with application-level coordination and interruption where appropriate.
   ruleID: java-20-deprecate-thread-00000
   when:
     or:
@@ -48,7 +48,7 @@
   - title: Thread.stop Changed to Throw UnsupportedOperationException
     url: https://www.oracle.com/java/technologies/javase/20-relnote-issues.html#JDK-8289610
   message: |-
-    The ability to "stop" a thread with the `Thread.stop()` method has been removed in this release. The method has been changed to throw UnsupportedOperationException. 
+    In JDK 20 through JDK 25, `Thread.stop()` remains present but always throws `UnsupportedOperationException`. It was removed in JDK 26. Replace it with cooperative cancellation, typically by checking a flag or using interruption.
   ruleID: java-20-deprecate-thread-00001
   when:
     or:
@@ -75,7 +75,7 @@
   - title: ThreadDeath is deprecated for removal
     url: https://cr.openjdk.org/~iris/se/20/latestSpec/api/deprecated-list.html
   message: |-
-    `Thread.stop()` was originally specified to "stop" a victim thread by causing the victim thread to throw a `ThreadDeath`. It was inherently unsafe and deprecated in an early JDK release. The ability to "stop" a thread with `Thread.stop` has been removed and the `Thread.stop` method changed to throw an exception. Consequently, `ThreadDeath` is also deprecated, for removal.
+    `Thread.stop()` was originally specified to stop a victim thread by causing it to throw a `ThreadDeath`. It was inherently unsafe and deprecated in an early JDK release. In JDK 20, `Thread.stop()` was changed to always throw `UnsupportedOperationException`; it was removed in JDK 26. Consequently, `ThreadDeath` is also deprecated for removal.
   ruleID: java-20-deprecate-thread-00002
   when:
     or:

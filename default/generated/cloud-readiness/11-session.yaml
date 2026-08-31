@@ -20,17 +20,17 @@
     url: https://learn.microsoft.com/azure/azure-cache-for-redis/cache-java-get-started
   message: |-
     When migrating an application that stores data in an HTTP Session to Azure, it's important to consider that the HTTP Session is not a suitable mechanism for maintaining state in a cloud environment due to scaling in and out as load changes.
-     Instead, you can leverage Azure Cache for Redis to achieve session management in a cloud-native way.
+    Instead, you can use Azure Managed Redis as an external session store.
 
-     * Provide **Azure Cache for Redis**: Azure Cache for Redis is a fully managed, highly scalable, and distributed caching service. It allows you to store and manage session data in-memory, providing fast and efficient access.
+    * Provide **Azure Managed Redis**: Azure Managed Redis is a fully managed, scalable, distributed caching service. It allows you to store and manage session data in memory, providing fast and efficient access.
 
-     * **Configure** Azure Cache for Redis: Configure the cache settings, such as cache size, eviction policies, and access control.
+    * **Configure Azure Managed Redis**: Configure the cache settings, such as cache size, eviction policies, and access control.
 
-     * **Update session management**: Modify your application's session management code to use Azure Cache for Redis. Replace the usage of HTTP Session objects with the appropriate Redis-based session management implementation.
+    * **Update session management**: Configure the application to persist HTTP session data in Redis rather than in the memory of a single application instance.
 
-     * **Store and retrieve session data**: Use the Azure Cache for Redis client libraries or connectors within your application to store and retrieve session data. This ensures that session state is securely managed and accessible across multiple instances of your application.
+    * **Store and retrieve session data**: Use a supported Redis client or framework integration to store and retrieve session data. This ensures that session state is accessible across multiple instances of your application.
 
-     * **Test and validate**: Test your application to ensure that session state is maintained correctly using Azure Cache for Redis. Verify that session data is stored and retrieved accurately across multiple instances of your application.
+    * **Test and validate**: Test your application to ensure that session state is maintained correctly using Azure Managed Redis. Verify that session data is stored and retrieved accurately across multiple instances of your application.
   ruleID: session-00001
   when:
     or:

@@ -10,4 +10,4 @@ tests:
   - name: tc-1
     hasIncidents:
       exactly: 6
-      messageMatches: Due to modularisation, the methods `java.lang.SecurityManager.checkAwtEventQueueAccess()`,
+      messageMatches: The stream-based methods in `GSSContext` have been deprecated

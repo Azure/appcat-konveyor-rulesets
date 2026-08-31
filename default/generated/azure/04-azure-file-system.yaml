@@ -41,7 +41,7 @@
 
      * **Logging**: Log to standard output and use Azure Monitor to collect and analyze the logs.
 
-     * **Caching**: Use Azure Cache for Redis as a cache backing service.
+    * **Caching**: Use Azure Managed Redis as a cache backing service.
 
      * **Configuration**: Store configuration in Azure App Configuration instead of using the file system. Also store configuration settings in environment variables so that they can be updated without code changes.
   ruleID: azure-file-system-02000
@@ -93,7 +93,7 @@
 
      * **Logging**: Log to standard output and use Azure Monitor to collect and analyze the logs.
 
-     * **Caching**: Use Azure Cache for Redis as a cache backing service.
+    * **Caching**: Use Azure Managed Redis as a cache backing service.
 
      * **Configuration**: Store configuration in Azure App Configuration instead of using the file system. Also store configuration settings in environment variables so that they can be updated without code changes.
   ruleID: azure-file-system-03000

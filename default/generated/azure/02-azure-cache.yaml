@@ -40,11 +40,11 @@
   message: |-
     Redis Cache connection string, username, or password used in this application. To migrate a Java application that uses a Redis Cache connection string to Azure, you can follow these recommendations:
     
-    * **Provision an Azure Cache for Redis**: Checkout Azure Cache for Redis for a fully managed cache on Azure. You can take advantage of a managed Redis service that offers scalability, high availability, and monitoring capabilities. **Azure Cache for Redis** provides features like data persistence, automatic failover, and built-in support for Redis commands, allowing you to leverage the benefits of Redis caching in your application running on Azure. Configure the cache size and other relevant settings based on your application's requirements.
+    * **Provision Azure Managed Redis**: Use Azure Managed Redis for a fully managed cache on Azure. It offers scalability, high availability, monitoring, data persistence, automatic failover, and support for Redis commands. Configure the cache size and other relevant settings based on your application's requirements.
     
-    * **Update your Java code**: Replace the embedded Redis cache code in your Java application with the Azure Cache for Redis client libraries or SDKs. Update the code that establishes a connection to the Redis cache and performs cache-related operations.
+    * **Update your Java code**: Update the code that establishes a connection to Redis and performs cache-related operations to use the Azure Managed Redis endpoint and credentials.
     
-    * **Connect to Azure Cache for Redis**: Connect your app to Azure Cache for Redis on azure by **Service Connector**. Instead of manually configuring connection string in your applications, you can automatically connect Azure Cache for Redis to your applications. 
+    * **Connect to Azure Managed Redis**: Connect your application to Azure Managed Redis by using a supported Redis client and Microsoft Entra authentication or access keys.
   ruleID: azure-cache-redis-01000
   when:
     and:

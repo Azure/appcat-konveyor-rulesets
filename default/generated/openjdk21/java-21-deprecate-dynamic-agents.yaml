@@ -1,6 +1,6 @@
 - category: potential
   customVariables: []
-  description: Dynamic loading of agents will be removed at a later JDK release
+  description: Dynamic loading of agents is planned to be disallowed by default in a future JDK release
   effort: 3
   labels:
   - source=openjdk21-
@@ -21,8 +21,8 @@
       of Agents'
     url: https://bugs.openjdk.org/browse/JDK-8307479
   message: |-
-    Dynamic loading of agents will be restricted at a later JDK release.
-     JDKs can use the `-XX:-EnableDynamicAgentLoading` command line option starting in JDK21 to ensure that agents cannot be loaded dynamically.
+    JDK 21 and later issue a warning when an agent is loaded dynamically. OpenJDK plans to disallow dynamic agent loading by default in a future release.
+     Use `-XX:+EnableDynamicAgentLoading` to explicitly allow dynamic loading without warnings. To disallow it explicitly, use `-XX:-EnableDynamicAgentLoading`, which is available in JDK 9 and later. Agents loaded at startup with `-javaagent` or `-agentlib` are unaffected.
   ruleID: java-21-deprecate-dynamic-agents-00000
   when:
     java.referenced:

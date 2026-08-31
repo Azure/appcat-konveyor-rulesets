@@ -17,9 +17,9 @@
   - title: Spring Cloud OpenFeign
     url: https://spring.io/projects/spring-cloud-openfeign/
   message: |-
-    The application embeds the Feign framework. If you are migrating to Azure Container Apps, it is recommended to use Spring Cloud OpenFeign instead (Spring Cloud Feign has been deprecated).
+    The application embeds the Feign framework. If you are migrating to Azure Container Apps, migrate legacy Netflix Feign or Spring Cloud Netflix Feign usage to Spring Cloud OpenFeign. Spring Cloud OpenFeign is feature-complete; for new development, also consider Spring HTTP Service Clients.
 
-     When migrating to Azure Container Apps, you can provision the managed Eureka Server. Spring Cloud OpenFeign will easily discover the service registry and invoke the services.
+    When migrating to Azure Container Apps, you can provision the managed Eureka Server. Spring Cloud OpenFeign will easily discover the service registry and invoke the services.
   ruleID: spring-boot-to-azure-openfeign-01000
   when:
     or:

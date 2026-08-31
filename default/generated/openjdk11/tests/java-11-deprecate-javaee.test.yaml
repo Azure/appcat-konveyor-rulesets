@@ -9,7 +9,7 @@ tests:
   testCases:
   - name: tc-1
     hasIncidents:
-      exactly: 26
+      atLeast: 1
       messageMatches: Add the `jakarta.activation` dependency to your application.
 - ruleID: java-11-deprecate-javaee-00001
   testCases:

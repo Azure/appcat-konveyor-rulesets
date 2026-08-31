@@ -1,6 +1,6 @@
 - category: mandatory
   customVariables: []
-  description: Method jakarta.enterprise.inject.spi.BeanManager.createInjectionTarget(AnnotatedType) has been removed.
+  description: BeanManager.createInjectionTarget(AnnotatedType) is removed in CDI 4.0
   effort: 2
   labels:
   - source=eap6
@@ -19,7 +19,7 @@
   links:
   - title: Obtaining an InjectionTarget for a class
     url: https://jakarta.ee/specifications/cdi/3.0/jakarta-cdi-spec-3.0.html#bm_obtain_injectiontarget
-  message: Replace this method call with with BeanManager.getInjectionTargetFactory(AnnotatedType)
+  message: BeanManager.createInjectionTarget(AnnotatedType) was deprecated in CDI 3.0 and removed in CDI 4.0. Replace it with BeanManager.getInjectionTargetFactory(AnnotatedType)
     and use the returned factory to create injection targets.
   ruleID: jakarta-cdi-00002
   when:
@@ -28,8 +28,7 @@
       pattern: jakarta.enterprise.inject.spi.BeanManager.createInjectionTarget
 - category: mandatory
   customVariables: []
-  description: Method jakarta.enterprise.inject.spi.BeanManager.fireEvent(Object,
-    Annotation) has been removed.
+  description: BeanManager.fireEvent(Object, Annotation...) is removed in CDI 4.0
   effort: 2
   labels:
   - source=eap6
@@ -48,8 +47,7 @@
   links:
   - title: Firing an event
     url: https://jakarta.ee/specifications/cdi/3.0/jakarta-cdi-spec-3.0.html#bm_fire_event
-  message: jakarta.enterprise.inject.spi.BeanManager.fireEvent(Object, Annotation)
-    has been removed. Use BeanManager.getEvent() as an entry point to a similar API.
+  message: BeanManager.fireEvent(Object, Annotation...) was deprecated in CDI 3.0 and removed in CDI 4.0. Use BeanManager.getEvent() as the entry point for firing events.
   ruleID: jakarta-cdi-00003
   when:
     java.referenced:

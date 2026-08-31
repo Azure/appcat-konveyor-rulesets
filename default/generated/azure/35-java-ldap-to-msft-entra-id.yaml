@@ -16,7 +16,7 @@
     url: https://learn.microsoft.com/en-us/entra/fundamentals/whatis
   message: |-
     Java LDAP usage detected. This application uses direct LDAP authentication or directory queries.
-    For cloud migration, consider replacing LDAP authentication with Microsoft Entra ID (Azure AD) using OAuth 2.0 / OpenID Connect.
+    For cloud migration, consider replacing LDAP authentication with Microsoft Entra ID using OAuth 2.0 or OpenID Connect.
   ruleID: java-ldap-to-msft-entra-id-01000
   when:
     or:

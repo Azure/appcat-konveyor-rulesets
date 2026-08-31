@@ -22,7 +22,7 @@
 
     Jakarta EE TimerService provides container-managed scheduling with cron-like
     configuration via @Schedule and @Schedules and is the modern replacement for
-    CommonJ timers when migrating from WebLogic environments.
+    CommonJ timers when migrating from WebSphere environments.
 
     For non-EJB applications, consider using
     jakarta.enterprise.concurrent.ManagedScheduledExecutorService as an alternative.
@@ -87,8 +87,8 @@
     are the modern replacement for CommonJ WorkManager in Jakarta EE and
     cloud-native environments.
 
-    JCA Resource Adapters should only be considered for legacy, full application
-    server deployments.
+    Use Jakarta Connectors work-management APIs when the application is implemented
+    as a resource adapter or requires integration with a Jakarta EE connector runtime.
   ruleID: commonj-websphere-05000
   when:
     java.referenced:

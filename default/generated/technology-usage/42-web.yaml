@@ -66,7 +66,7 @@
   labels:
   - discovery
   links: []
-  message: The application uses JNLP (Java Network Launching Protocol)
+  message: The application uses JNLP (Java Network Launch Protocol)
   ruleID: technology-usage-web-01500
   tag:
   - JNLP
@@ -79,7 +79,7 @@
   labels:
   - discovery
   links: []
-  message: The application uses JNLP (Java Network Launching Protocol)
+  message: The application uses JNLP (Java Network Launch Protocol)
   ruleID: technology-usage-web-01600
   tag:
   - JNLP
@@ -111,7 +111,7 @@
   labels:
   - discovery
   links: []
-  message: The application uses MyGLayout
+  message: The application uses MiGLayout
   ruleID: technology-usage-web-01800
   tag:
   - MiGLayout
@@ -137,7 +137,7 @@
   labels:
   - discovery
   links: []
-  message: The application uses FormLayouttMaker
+  message: The application uses FormLayoutMaker
   ruleID: technology-usage-web-02000
   tag:
   - FormLayoutMaker

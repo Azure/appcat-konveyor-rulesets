@@ -35,13 +35,25 @@
     or:
     - java.referenced:
         location: METHOD_CALL
-        pattern: java.security.cert.X509Certificate.(getIssuerDN|getSubjectDN)
+        pattern: java.security.cert.X509Certificate.getIssuerDN
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.security.cert.X509Certificate.getSubjectDN
     - java.referenced:
         location: METHOD_CALL
         pattern: java.security.cert.X509CRL.getIssuerDN
     - java.referenced:
         location: METHOD_CALL
-        pattern: java.security.cert.X509CertSelector.(setIssuer|setSubject|getIssuerAsString|getSubjectAsString)
+        pattern: java.security.cert.X509CertSelector.setIssuer
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.security.cert.X509CertSelector.setSubject
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.security.cert.X509CertSelector.getIssuerAsString
+    - java.referenced:
+        location: METHOD_CALL
+        pattern: java.security.cert.X509CertSelector.getSubjectAsString
     - java.referenced:
         location: METHOD_CALL
         pattern: java.security.cert.X509CRLSelector.addIssuerName
