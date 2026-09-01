@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-    - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3.7.0
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         path: rulesets
 
@@ -36,14 +36,14 @@ jobs:
         done
         exit $rc
 
-    - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3.7.0
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         fetch-depth: 0
         repository: konveyor/tackle2-hub
         ref: ${{ github.event_name == 'push' && github.ref || github.base_ref }}
         path: tackle2-hub
 
-    - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3.7.0
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         fetch-depth: 0
         repository: konveyor/tackle2-seed
