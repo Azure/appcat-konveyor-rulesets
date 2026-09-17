@@ -44,7 +44,7 @@
 		<dependency>
       		<groupId>com.rabbitmq</groupId>
       		<artifactId>amqp-client</artifactId>
-      		<version>5.16.0</version>
+      		<version>5.34.0</version>
     	</dependency>
 		<!-- Source: https://mvnrepository.com/artifact/org.springframework.amqp/spring-rabbit -->
 		<dependency>
