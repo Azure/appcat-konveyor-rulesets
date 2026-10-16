@@ -76,7 +76,7 @@
         <dependency>
             <groupId>com.hazelcast</groupId>
             <artifactId>hazelcast</artifactId>
-            <version>5.6.0</version>
+            <version>5.7.0</version>
             <scope>compile</scope>
         </dependency>
         <!-- Source: https://mvnrepository.com/artifact/com.hazelcast/hazelcast-spring -->
